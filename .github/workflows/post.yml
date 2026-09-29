@@ -96,6 +96,7 @@ jobs:
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
           KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
           AR_CTA_KEYWORDS: ${{ secrets.AR_CTA_KEYWORDS }}
+          OFFER_URL: ${{ secrets.OFFER_URL }}
           AR_OFFER_URL: ${{ secrets.AR_OFFER_URL }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}

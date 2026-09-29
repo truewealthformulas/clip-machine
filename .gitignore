@@ -1,12 +1,6 @@
-__pycache__/
+# The video files live in a GitHub Release, never in the repository. A checkout
+# on every scheduled run must stay small; run_once.py fetches only the one clip
+# it is about to publish.
+media/
 *.pyc
-.env
-.venv/
-venv/
-*.log
-.DS_Store
-factory/stock/
-factory/transcripts/
-*.mp4
-*.mov
-.idea/
+__pycache__/

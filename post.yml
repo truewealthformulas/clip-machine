@@ -1,0 +1,169 @@
+name: post
+
+# Every 20 minutes. GitHub's cron is best-effort and can run late under load,
+# which is fine here: the schedule already carries up to 40 minutes of
+# deliberate jitter so a post never lands on the same clock minute twice.
+on:
+  schedule:
+    - cron: "*/20 * * * *"
+  workflow_dispatch:            # so a run can be forced by hand
+    inputs:
+      dry_run:
+        description: "Check everything without publishing"
+        type: boolean
+        default: true
+      trial:
+        description: "Hook test: post every variant of this SLUG as Trial Reels"
+        type: string
+        default: ""
+      measure_now:
+        description: "Sample the numbers now, without waiting for the 6h window"
+        type: boolean
+        default: false
+      diag:
+        description: "Print what Instagram will actually report for one reel"
+        type: boolean
+        default: false
+      api_version:
+        description: "Graph API version for the diagnostic"
+        type: string
+        default: "v21.0"
+
+# Never two runs at once. Two overlapping passes would each see a clip as due
+# and publish it twice - the exact duplicate-post failure this project has
+# already paid for once.
+concurrency:
+  group: post
+  cancel-in-progress: false
+
+permissions:
+  contents: write               # to commit the state file back
+  issues: write                 # queue_alarm.py emails the owner via an issue
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: pip install -r requirements.txt
+
+      # THE HOOK TEST. Seven variants of one clip, only the hook text
+      # different, all posted the same day as Instagram Trial Reels - shown to
+      # non-followers, so the account is not spammed and the measurement is
+      # clean. It used to be an HTTP route on Railway and lost its trigger in
+      # the migration; this is the trigger.
+      - name: Hook test (Trial Reels)
+        if: ${{ inputs.trial != '' }}
+        env:
+          GH_REPO: ${{ github.repository }}
+          KT_DATA: state
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          KT_MEDIA_REMOTE: "1"
+          KT_TZ: America/New_York
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+          AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+          KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
+        run: python trial.py "${{ inputs.trial }}"
+
+      # A one-off question to the API, printed raw. Guessing metric names is
+      # how two "successful" measurement passes came back empty.
+      - name: Ask Instagram what it measures
+        if: ${{ inputs.diag }}
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_API_VERSION: ${{ inputs.api_version }}
+        run: python diag_insights.py
+
+      - name: Publish what is due
+        if: ${{ inputs.trial == '' }}
+        env:
+          GH_REPO: ${{ github.repository }}
+          KT_DATA: state
+          DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
+          KT_MEDIA_REMOTE: "1"
+          KT_TZ: America/New_York
+          KT_SLOTS: ${{ secrets.KT_SLOTS }}
+          AR_SLOTS: ${{ secrets.AR_SLOTS }}
+          KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
+          KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
+          AR_CTA_KEYWORDS: ${{ secrets.AR_CTA_KEYWORDS }}
+          AR_OFFER_URL: ${{ secrets.AR_OFFER_URL }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
+          TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          TT_REFRESH_TOKEN: ${{ secrets.TT_REFRESH_TOKEN }}
+          AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+          AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+          AR_FB_PAGE_ID: ${{ secrets.AR_FB_PAGE_ID }}
+          AR_FB_ACCESS_TOKEN: ${{ secrets.AR_FB_ACCESS_TOKEN }}
+          AR_YT_CLIENT_ID: ${{ secrets.AR_YT_CLIENT_ID }}
+          AR_YT_CLIENT_SECRET: ${{ secrets.AR_YT_CLIENT_SECRET }}
+          AR_YT_REFRESH_TOKEN: ${{ secrets.AR_YT_REFRESH_TOKEN }}
+          AR_TT_CLIENT_KEY: ${{ secrets.AR_TT_CLIENT_KEY }}
+          AR_TT_CLIENT_SECRET: ${{ secrets.AR_TT_CLIENT_SECRET }}
+          AR_TT_REFRESH_TOKEN: ${{ secrets.AR_TT_REFRESH_TOKEN }}
+        run: python run_once.py
+
+      # HOW IT IS DOING. Sampled every six hours from the same cron; the
+      # script decides whether it is due. The measurement loop stopped dead in
+      # the migration on 13 Sept and nothing said so.
+      - name: Measure
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true          # a numbers pass must never block a post
+        env:
+          KT_DATA: state
+          KT_TZ: America/New_York
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          AR_IG_USER_ID: ${{ secrets.AR_IG_USER_ID }}
+          AR_IG_ACCESS_TOKEN: ${{ secrets.AR_IG_ACCESS_TOKEN }}
+          AR_FB_PAGE_ID: ${{ secrets.AR_FB_PAGE_ID }}
+          AR_FB_ACCESS_TOKEN: ${{ secrets.AR_FB_ACCESS_TOKEN }}
+          AR_YT_CLIENT_ID: ${{ secrets.AR_YT_CLIENT_ID }}
+          AR_YT_CLIENT_SECRET: ${{ secrets.AR_YT_CLIENT_SECRET }}
+          AR_YT_REFRESH_TOKEN: ${{ secrets.AR_YT_REFRESH_TOKEN }}
+        run: python measure.py ${{ inputs.measure_now && '--force' || '' }}
+
+      - name: Rebuild the calendar and the captions board
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        env:
+          KT_TZ: America/New_York
+        run: python build_pages.py
+
+      - name: Queue alarm
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KT_DATA: state
+        run: python queue_alarm.py
+
+      - name: Remember what was posted
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        run: |
+          git config user.name  "kt-machine"
+          git config user.email "noreply@github.com"
+          git add state/manifest.json state/metrics.json docs
+          # Nothing due is the normal case; an empty commit would be noise.
+          git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
+          git push

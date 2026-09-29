@@ -1,0 +1,136 @@
+# THE CLOUD CLIP FACTORY - 19 Sept 2026. Clips get made with the owner's Mac shut.
+#   stock  - HD episodes from Rumble (encrypted) + transcripts. Runs beside the rest.
+#   plan   - split pending clip plans into shards of 2 clips.
+#   build  - one server per shard, all at once ("make sure its running fast").
+#   queue  - the ONLY job that touches the posting queue: upload what passed, commit.
+name: factory
+on:
+  workflow_dispatch:
+  push:
+    paths: ["factory/plans/**"]
+  schedule:
+    - cron: "17 7 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: factory
+  cancel-in-progress: false
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Stock the month's HD episodes from Rumble (factory/source_plan.json first)
+        run: |
+          pip install -q -U "yt-dlp[default,curl-cffi]" curl_cffi
+          python factory/rumble_stock.py --max 16 --stock 20
+
+  tlist:
+    needs: stock
+    if: always()
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.l.outputs.matrix }}
+      count: ${{ steps.l.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: python factory/transcripts_index.py list
+
+  transcribe:
+    needs: tlist
+    if: always() && needs.tlist.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        vid: ${{ fromJSON(needs.tlist.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Transcribe one episode (one server each, all at once)
+        run: python factory/transcribe.py --only "${{ matrix.vid }}"
+
+  tmark:
+    needs: transcribe
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record every finished transcript (single writer)
+        run: python factory/transcripts_index.py mark
+
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.s.outputs.matrix }}
+      count: ${{ steps.s.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: s
+        run: python factory/shard.py
+
+  build:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Render and check this shard
+        run: python factory/build_shard.py "${{ matrix.plan }}" "${{ matrix.shard }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.plan }}-${{ matrix.shard }}
+          path: /tmp/shard_out
+          retention-days: 7
+
+  queue:
+    needs: [plan, build]
+    if: always() && needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - uses: actions/download-artifact@v4
+        with: { pattern: "shard-*", path: /tmp/shards }
+      - name: Queue every clip that passed
+        run: |
+          git config user.name "kt-factory"
+          git config user.email "kt-factory@users.noreply.github.com"
+          python factory/queue.py /tmp/shards
+      - name: Save
+        run: |
+          git add -A state docs factory
+          git diff --staged --quiet || git commit -q -m "factory: clips built and queued $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

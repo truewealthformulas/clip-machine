@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.log
+.DS_Store
+factory/stock/
+factory/transcripts/
+*.mp4
+*.mov
+.idea/

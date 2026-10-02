@@ -10,7 +10,7 @@ behind Cloudflare, so this poses as Chrome (curl_cffi) and retries.
 """
 import json, os, re, time
 
-CHANNEL = "https://rumble.com/c/KevinTrudeauShow/videos?page={}"
+CHANNEL = "https://rumble.com/c/TheKevinTrudeauOfficial/videos?page={}"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rumble_catalog.json")
 
 

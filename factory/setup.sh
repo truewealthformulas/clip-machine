@@ -3,7 +3,7 @@
 # runs here UNCHANGED - every script finds its tools and files where it expects.
 # 19 Sept 2026: the cloud clip factory, so clips get made with the Mac shut.
 set -euo pipefail
-K="$HOME/the owner"
+K="$HOME/ClipMachine"
 mkdir -p "$K/bin" "$K/Content/1_RAW/KT_SOURCE" "$K/POST_TODAY" "$K/work/proposals" \
          "$K/transcripts" "$K/logs" "$K/whisper.cpp/build/bin" "$K/whisper.cpp/models"
 

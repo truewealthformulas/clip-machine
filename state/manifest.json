@@ -53,11 +53,24 @@
    "caption": "Ad: Kevin Trudeau on the picture you carry of yourself, and why saying something that doesn't match it creates conflict instead of results. What does your picture say?",
    "bytes": 33212513,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "token refresh failed 400: {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'}",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026100919351810AD6968B2F599254A42'}"
+   },
    "scheduled_at": "2026-10-09T15:28",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1413918404214970/",
+    "instagram": "https://www.instagram.com/reel/DeSRTmaDNUu/"
+   },
+   "caption_at_post": "Ad: Kevin Trudeau on the picture you carry of yourself, and why saying something that doesn't match it creates conflict instead of results. What does your picture say?",
+   "posted_at": "2026-10-09T15:35"
   },
   {
    "file": "KT_MIND/01_wantingbackfires_65s.mp4",

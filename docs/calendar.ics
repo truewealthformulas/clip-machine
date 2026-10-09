@@ -9,27 +9,27 @@ REFRESH-INTERVAL;VALUE=DURATION:PT30M
 X-PUBLISHED-TTL:PT30M
 BEGIN:VEVENT
 UID:KT_MIND-01_iamamillionaire_62s.mp4@kt-machine
-DTSTAMP:20261008T235012Z
-DTSTART:20261008T235900Z
-DTEND:20261009T001400Z
-SUMMARY:[ ] OWNER - Ad: Kevin Trudeau on the exact moment you've earned the right to say "I am a millionaire" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?
-DESCRIPTION:scheduled - KT_MIND/01_iamamillionaire_62s.mp4
-STATUS:TENTATIVE
+DTSTAMP:20261009T001636Z
+DTSTART:20261009T001600Z
+DTEND:20261009T003100Z
+SUMMARY:OWNER - Ad: Kevin Trudeau on the exact moment you've earned the right to say "I am a millionaire" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?
+DESCRIPTION:POSTED - KT_MIND/01_iamamillionaire_62s.mp4\nfacebook: https://facebook.com/reel/1624031786114648/\ninstagram: https://www.instagram.com/reel/DeQMrrQDAKe/\nyoutube: https://youtube.com/shorts/UGIy4qyf9vk
+STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:queue-runout-owner@kt-machine
-DTSTAMP:20261008T235012Z
-DTSTART;VALUE=DATE:20261009
-DTEND;VALUE=DATE:20261010
-SUMMARY:!! OWNER - NO CLIPS LEFT TO POST (1 queued before this)
+DTSTAMP:20261009T001636Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:!! OWNER - NO CLIPS LEFT TO POST (0 queued before this)
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:queue-warning-owner@kt-machine
-DTSTAMP:20261008T235012Z
+DTSTAMP:20261009T001636Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
-SUMMARY:!! OWNER - clips run out in 1 day(s)\, on Fri 09 Oct - make more
+SUMMARY:!! OWNER - clips run out in 0 day(s)\, on Thu 08 Oct - make more
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

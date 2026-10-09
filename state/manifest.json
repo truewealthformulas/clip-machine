@@ -30,11 +30,23 @@
    "caption": "Ad: Kevin Trudeau on the difference between \"I will\" (someday) and \"I am in the process\" (today). What are you doing right now that proves you're in the process?",
    "bytes": 23595124,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "reel upload failed 400: {'debug_info': {'retriable': False, 'type': 'ProcessingFailedError', 'message': 'Request processing failed'}}",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "token refresh failed 400: {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'}",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026100916373551DB9F124A83B318526C'}"
+   },
    "scheduled_at": "2026-10-09T12:16",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DeR8-oAj8nq/"
+   },
+   "caption_at_post": "Ad: Kevin Trudeau on the difference between \"I will\" (someday) and \"I am in the process\" (today). What are you doing right now that proves you're in the process?",
+   "posted_at": "2026-10-09T12:37"
   },
   {
    "file": "KT_MIND/01_selfimageblocks_47s.mp4",

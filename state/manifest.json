@@ -99,11 +99,24 @@
    "caption": "Ad: Kevin Trudeau on why \"I am a millionaire\" is where you finish, not where you start. Where are you on the ladder right now?",
    "bytes": 32832433,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "token refresh failed 400: {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'}",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261009233331C8E2C35CA33283031A27'}"
+   },
    "scheduled_at": "2026-10-09T19:32",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1727317991678516/",
+    "instagram": "https://www.instagram.com/reel/DeSslVFgYFw/"
+   },
+   "caption_at_post": "Ad: Kevin Trudeau on why \"I am a millionaire\" is where you finish, not where you start. Where are you on the ladder right now?",
+   "posted_at": "2026-10-09T19:33"
   }
  ]
 }

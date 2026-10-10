@@ -1,0 +1,37 @@
+# AGENT 3 - the posting watchdog. The `post` workflow publishes (every 20 min, 5 slots a day);
+# this checks the posts really went out, retries upload glitches once, and opens an issue
+# (GitHub emails you) when a platform login breaks or the queue runs low.
+name: watch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 */4 * * *"           # every 4 hours
+permissions:
+  contents: write
+  issues: write
+# Same group as `post`: the watchdog and the poster never touch the queue file at once.
+concurrency:
+  group: post
+  cancel-in-progress: false
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      KT_TZ: America/New_York
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '5' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Agent 3 (posting watchdog)
+        run: python agents/post_watch.py
+      - name: Save
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add state/manifest.json factory/reports
+          git diff --staged --quiet && exit 0
+          git commit -q -m "watch: posting health $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

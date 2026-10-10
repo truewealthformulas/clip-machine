@@ -1,0 +1,65 @@
+# AGENTS 1 + 2 - the clipper and the rules checker.
+# Keeps 7 days of clips queued: reads Kevin's transcripts, picks stand-alone moments,
+# checks every clip against agents/AGENT_RULES.md, commits the plans, starts the factory.
+name: agents
+on:
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "Test plans: render and check, but never post"
+        type: boolean
+        default: false
+      max_episodes:
+        description: "Episodes to plan this run (max)"
+        type: string
+        default: "3"
+  workflow_run:                      # right after the factory stocks/builds
+    workflows: [factory]
+    types: [completed]
+  schedule:
+    - cron: "40 13 * * *"            # daily fallback, 08:40 Panama
+permissions:
+  contents: write
+  actions: write                     # to start the factory
+  issues: write
+concurrency:
+  group: agents
+  cancel-in-progress: false
+jobs:
+  clip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      GH_TOKEN: ${{ github.token }}
+      FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      AGENT_MODEL: ${{ vars.AGENT_MODEL || 'claude-sonnet-5-5' }}
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '5' }}
+      TARGET_DAYS: ${{ vars.TARGET_DAYS || '7' }}
+      AGENT_TEST_PLANS: ${{ inputs.test && '1' || '0' }}
+      MAX_EPISODES_PER_RUN: ${{ inputs.max_episodes || '3' }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 50 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Check the key is there
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Add the ANTHROPIC_API_KEY secret (repo Settings -> Secrets -> Actions)"; exit 1; fi
+      - run: pip install -q anthropic
+      - name: Agent 1 (clipper) + Agent 2 (rules check)
+        id: clip
+        run: python agents/clipper.py
+      - name: Save the plans and start the factory
+        if: steps.clip.outputs.written != '' && steps.clip.outputs.written != '0'
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add factory/plans factory/reports
+          git diff --staged --quiet && exit 0
+          git commit -q -m "agents: ${{ steps.clip.outputs.written }} new clip plan(s), rules-checked"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          # A push made with the workflow token does not trigger other workflows,
+          # so the factory is started explicitly.
+          gh workflow run factory.yml --ref main

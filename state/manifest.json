@@ -79,12 +79,26 @@
    "file": "KT_MIND/01_wantingbackfires_65s.mp4",
    "caption": "Ad: Kevin Trudeau on why saying \"I want to be a millionaire\" can trigger old beliefs that fight back. Which belief about money did you grow up with?",
    "bytes": 46043462,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101015350954AA5603B8E0B533329D'}"
+   },
    "scheduled_at": "2026-10-10T11:27",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2546863689171305/",
+    "instagram": "https://www.instagram.com/reel/DeUak6QjcdJ/",
+    "youtube": "https://youtube.com/shorts/U892YS361xE"
+   },
+   "caption_at_post": "Ad: Kevin Trudeau on why saying \"I want to be a millionaire\" can trigger old beliefs that fight back. Which belief about money did you grow up with?",
+   "posted_at": "2026-10-10T11:35"
   },
   {
    "file": "KT_MIND/02_firstwordwish_63s.mp4",

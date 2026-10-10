@@ -31,7 +31,7 @@ POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "5"))
 TARGET_DAYS = int(os.environ.get("TARGET_DAYS", "7"))
 MAX_EPISODES = int(sys.argv[sys.argv.index("--max-episodes") + 1]) if "--max-episodes" in sys.argv \
     else int(os.environ.get("MAX_EPISODES_PER_RUN", "3"))
-PENDING_GRACE_H = 30          # a plan not built after this long no longer blocks
+PENDING_GRACE_H = 3           # a factory build takes ~40 min; a plan still not built after 3h produced nothing and must not block
 CLIPS_PER_EPISODE = 3         # what we expect on average, for the deficit maths
 DRY = "--dry" in sys.argv
 # TEST MODE: plans are rendered and checked but never posted (CLAUDE.md step 5).

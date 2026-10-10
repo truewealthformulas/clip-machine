@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -31,8 +31,8 @@
    "bytes": 23595124,
    "done": false,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
     "youtube": "token refresh failed 400: {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'}",
     "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026100916373551DB9F124A83B318526C'}"
    },
@@ -42,13 +42,11 @@
    "cta_kind": "offer",
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DeR8-oAj8nq/"
+    "instagram": "https://www.instagram.com/reel/DeR8-oAj8nq/",
+    "facebook": "https://facebook.com/reel/1830023581777210/"
    },
    "caption_at_post": "Ad: Kevin Trudeau on the difference between \"I will\" (someday) and \"I am in the process\" (today). What are you doing right now that proves you're in the process?",
-   "posted_at": "2026-10-09T12:37",
-   "retry_only": [
-    "facebook"
-   ],
+   "posted_at": "2026-10-10T01:09",
    "agent_retried": [
     "facebook"
    ]
@@ -90,7 +88,7 @@
   },
   {
    "file": "KT_MIND/02_firstwordwish_63s.mp4",
-   "caption": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "bytes": 38724724,
    "done": false,
    "status": {},

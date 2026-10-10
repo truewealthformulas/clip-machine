@@ -29,16 +29,20 @@ so **we are legally responsible for every claim in our own posts.**
   doesn't deliver.
 
 ## C. Captions
-- Start with **"Ad: "** (FTC affiliate disclosure - required on every post).
-- 300-700 characters. Tell the idea in 3-5 short paragraphs, then end on ONE question
-  about the viewer ("What did you...?", "Which one are you...?").
-- Credit him naturally: "Kevin Trudeau on ..." or "Kevin explains ...".
-- 0-4 hashtags at the very end on their own line (e.g. #mindset #success #wealth
-  #kevintrudeau). Never more than 5.
+- **The first line is the hook** - it is all most people read before "more", and on
+  YouTube it becomes the title. 40-90 characters, a promise or a tension the clip pays
+  off ("Most people never ask this one money question." / "Why rich people say how,
+  not can't."). Never start with "Ad", "Kevin Trudeau on", a hashtag or an emoji.
+- Then 2-4 short paragraphs telling the idea (credit him naturally: "Kevin explains ..."),
+  ending on ONE question to the viewer ("Which one do you say more often?").
+- Last line: hashtags, and it MUST start with **#ad** (affiliate disclosure - the post
+  promotes his offer, so the disclosure stays, at the end instead of the start).
+  Example: `#ad #mindset #success #kevintrudeau`. Max 5 hashtags including #ad.
+- 300-700 characters total.
 - **No links, no URLs, no @handles, no "link in bio", no "comment X"**. The machine
   adds the right call to action per platform automatically. Adding one by hand
   creates duplicates and gets accounts flagged.
-- Must not copy the hook word for word.
+- Must not copy the on-screen hook word for word.
 
 ## D. Claims we never make (platform policy + FTC + Kevin's history)
 Kevin was found in contempt and imprisoned over misleading marketing claims. Every

@@ -29,7 +29,7 @@ import common as C  # noqa: E402
 MAX_WORDS, MAX_LINES = 6, 2
 MIN_SECS, MAX_SECS = 20.0, 59.0
 CAP_MIN, CAP_MAX = 250, 1200
-MAX_TAGS = 5
+MAX_TAGS = 5            # including #ad
 
 DIRECT = re.compile(r"^(how|why|what|when|where|which|the|a|an|one|two|three|four|"
                     r"five|six|seven|eight|nine|ten)\b", re.I)
@@ -88,8 +88,11 @@ def caption_problems(cap, hook=None):
     out = []
     if not isinstance(cap, str) or not cap.strip():
         return ["caption missing"]
-    if not cap.startswith("Ad: "):
-        out.append('caption must start with "Ad: " (affiliate disclosure)')
+    if re.match(r"\s*(ad\b|#ad\b|kevin trudeau on\b)", cap, re.I):
+        out.append('caption must open with a hook line, not "Ad"/"Kevin Trudeau on"')
+    last = cap.strip().split("\n")[-1].strip().lower()
+    if not last.startswith("#ad"):
+        out.append('last line must be the hashtags, starting with "#ad" (affiliate disclosure)')
     if not CAP_MIN <= len(cap) <= CAP_MAX:
         out.append(f"caption is {len(cap)} chars (want {CAP_MIN}-{CAP_MAX})")
     tags = re.findall(r"(?<!\w)#\w+", cap)
@@ -100,9 +103,9 @@ def caption_problems(cap, hook=None):
     body = re.sub(r"(?<!\w)#\w+", "", cap)
     if "?" not in body:
         out.append("caption must end on a question to the viewer")
-    first = cap[4:].split("\n")[0].strip()
-    if not 20 <= len(first) <= 200:
-        out.append("first line must be 20-200 chars (it becomes the YouTube title)")
+    first = cap.split("\n")[0].strip()
+    if not 25 <= len(first) <= 95:
+        out.append("first line (the hook, also the YouTube title) must be 25-95 chars")
     for pat, why in BANNED:
         if re.search(pat, cap, re.I):
             out.append(f"caption: {why}")

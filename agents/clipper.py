@@ -55,15 +55,17 @@ Follow the rulebook exactly. Above all:
   whose main point is health/medical, or a promise of money to the viewer.
 - hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a
   number. No full stop. Never a riddle.
-- captions: start with "Ad: ", 300-700 characters, 3-5 short paragraphs separated by
-  blank lines, end with ONE question to the viewer, then optionally a final line with
-  2-4 hashtags. No links, no @handles, no "comment X", no money amounts.
+- captions: the FIRST LINE is a scroll-stopping hook (40-90 characters, a promise or
+  tension the clip pays off; never "Ad", never "Kevin Trudeau on"). Then 2-4 short
+  paragraphs separated by blank lines, ending with ONE question to the viewer. The
+  LAST line is hashtags starting with #ad, e.g. "#ad #mindset #success". 300-700
+  characters. No links, no @handles, no "comment X", no money amounts.
 
 Reply with JSON only, no commentary:
 {"topic": "ONE_WORD_TOPIC_IN_CAPS",
  "clips": [{"slug": "lowercaseletters", "in": 123.4, "out": 170.2,
             "hook": ["Line One", "Line Two"],
-            "caption": "Ad: ...", "cta_kind": "offer" or "question"}]}
+            "caption": "Hook line...\\n\\n...\\n\\n#ad #mindset", "cta_kind": "offer" or "question"}]}
 Give 10 to 12 clips - the reviewer is strict and usually keeps about a third, so offer only moments you are sure stand alone. Alternate cta_kind: about one "offer" for every two "question"."""
 
 

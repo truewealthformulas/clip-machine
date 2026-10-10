@@ -25,6 +25,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
+      - name: Swap queued captions to hook-first
+        run: python agents/recaption.py
       - name: Agent 3 (posting watchdog)
         run: python agents/post_watch.py
       - name: Save

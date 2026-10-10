@@ -202,10 +202,25 @@ def ask(system, user, max_tokens=8000, history=None):
     import anthropic
     client = anthropic.Anthropic()
     messages = (history or []) + [{"role": "user", "content": user}]
+    # THINKING COUNTS AGAINST max_tokens. Second live run: every reply stopped at
+    # max_tokens with no text at all - the model spent the whole 8,000-token
+    # budget thinking about an hour-long transcript. So the ceiling is raised
+    # well above what the answer needs, effort is held at "medium", and the call
+    # streams (a long non-streamed request can time out).
+    max_tokens = max(max_tokens, int(os.environ.get("AGENT_MAX_TOKENS", "32000")))
+    extra = {"output_config": {"effort": os.environ.get("AGENT_EFFORT", "medium")}}
     for attempt in range(4):
         try:
-            msg = client.messages.create(model=MODEL, max_tokens=max_tokens,
-                                         system=system, messages=messages)
+            try:
+                with client.messages.stream(model=MODEL, max_tokens=max_tokens, system=system,
+                                            messages=messages, extra_body=extra) as s:
+                    msg = s.get_final_message()
+            except anthropic.BadRequestError as e:
+                if extra and "output_config" in str(e):
+                    log("  effort setting not accepted - retrying without it")
+                    extra = {}
+                    continue
+                raise
             text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
             if not text.strip():
                 log(f"  model returned no text (stop_reason={msg.stop_reason})")

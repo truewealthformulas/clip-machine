@@ -169,7 +169,7 @@ def review_plan(plan, transcript_text="", use_model=True):
         user = (C.read("AGENT_RULES.md") + "\n\n## Clips to review\n" +
                 json.dumps(items, ensure_ascii=False, indent=1))
         try:
-            got = C.json_from(C.ask(SYSTEM, user, max_tokens=6000))
+            got = C.ask_json(SYSTEM, user, max_tokens=6000)
             verdicts = {v.get("slug"): v for v in got.get("clips", [])}
         except Exception as e:
             report.append(f"- model review unavailable ({type(e).__name__}); hard checks only, unclear clips dropped")

@@ -43,10 +43,13 @@ Trudeau's teaching (with his permission) as short vertical videos. You read a fu
 episode transcript and choose the moments that will perform as stand-alone Shorts/Reels.
 
 Follow the rulebook exactly. Above all:
-- each clip STANDS ALONE: it opens on the first word of a sentence that sets up the
-  idea, and ends on the payoff sentence (the punchline / the lesson). Never end on a
-  setup or mid-thought. Use the exact start time of the opening cue and the exact end
-  time of the payoff cue from the transcript.
+- the transcript is ONE SENTENCE PER LINE: "[start-end] sentence". A clip is a run
+  of consecutive lines. "in" MUST be the start time of its first line and "out" MUST
+  be the end time of its last line - copy them exactly, never invent times.
+- each clip STANDS ALONE: the first line sets up the idea (never a line starting
+  with And / But / So / Because / That / Which / It / This that depends on what came
+  before), and the last line is the payoff (the punchline / the lesson). Never end
+  on a setup, a list in progress, or a question that is answered later.
 - 30 to 58 seconds each. Prefer methods, stories, step-by-step teaching, memorable lines.
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
@@ -106,17 +109,16 @@ def key_for(vid, topic):
 
 
 def write_plan(vid, entry, taken_brands):
-    text = C.compact(C.transcript(vid, entry))
+    text = C.sentences(C.transcript(vid, entry))
     if len(text) < 2000:
         C.log(f"  {vid}: transcript too short ({len(text)} chars) - skipped")
         return None
     user = (C.read("AGENT_RULES.md") +
             f"\n\n## Episode\nTitle: {entry.get('title', '')}\n"
             f"Duration: {float(entry.get('duration', 0)) / 60:.0f} min\n\n"
-            f"## Transcript (each line: [start-end seconds] words)\n{text}")
-    reply = C.ask(SYSTEM, user, max_tokens=8000)
+            f"## Transcript (one sentence per line: [start-end seconds] sentence)\n{text}")
     try:
-        got = C.json_from(reply)
+        got = C.ask_json(SYSTEM, user, max_tokens=8000)
     except Exception as e:
         C.log(f"  {vid}: unreadable reply ({e}) - skipped")
         return None

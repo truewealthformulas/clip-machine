@@ -154,9 +154,46 @@ def compact(srt):
     return "\n".join(lines)
 
 
+def sentences(srt):
+    """SRT -> one line per SENTENCE, '[start-end] sentence'.
+
+    Whisper cues are not sentences: a cue often starts mid-thought ("and then
+    they...") and the clipper copied those times, so the first real run had 6 of 7
+    clips rejected for opening or ending mid-sentence. Here the cue text is
+    re-joined and split on . ! ?, and each sentence gets the time of the
+    character it starts/ends on (interpolated inside its cue). The factory still
+    snaps the final cut to word level; this just puts the plan on a real sentence.
+    """
+    chars = []                                   # (char, time)
+    for line in compact(srt).splitlines():
+        m = re.match(r"\[(\d+\.?\d*)-(\d+\.?\d*)\] (.*)", line)
+        if not m:
+            continue
+        a, b, text = float(m[1]), float(m[2]), m[3].strip() + " "
+        n = max(1, len(text))
+        for i, ch in enumerate(text):
+            chars.append((ch, a + (b - a) * i / n))
+    out, buf, t0 = [], [], None
+    for i, (ch, t) in enumerate(chars):
+        if t0 is None:
+            if ch.isspace():
+                continue
+            t0 = t
+        buf.append(ch)
+        nxt = chars[i + 1][0] if i + 1 < len(chars) else " "
+        if ch in ".!?" and nxt.isspace():
+            s = "".join(buf).strip()
+            if s:
+                out.append(f"[{t0:.1f}-{t:.1f}] {s}")
+            buf, t0 = [], None
+    if buf and t0 is not None:
+        out.append(f"[{t0:.1f}-{chars[-1][1]:.1f}] {''.join(buf).strip()}")
+    return "\n".join(out)
+
+
 # ---------------------------------------------------------------- the brain
-def ask(system, user, max_tokens=8000):
-    """One call to Claude. Returns the text."""
+def ask(system, user, max_tokens=8000, history=None):
+    """One call to Claude. Returns the text. `history` = earlier turns, if any."""
     fake = os.environ.get("AGENT_FAKE_REPLY")       # tests only: a folder of replies, used in order
     if fake:
         nxt = sorted(f for f in os.listdir(fake) if not f.startswith("used_"))[0]
@@ -164,23 +201,52 @@ def ask(system, user, max_tokens=8000):
         return open(os.path.join(fake, "used_" + nxt)).read()
     import anthropic
     client = anthropic.Anthropic()
+    messages = (history or []) + [{"role": "user", "content": user}]
     for attempt in range(4):
         try:
-            msg = client.messages.create(
-                model=MODEL, max_tokens=max_tokens, system=system,
-                messages=[{"role": "user", "content": user}])
-            return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+            msg = client.messages.create(model=MODEL, max_tokens=max_tokens,
+                                         system=system, messages=messages)
+            text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+            if not text.strip():
+                log(f"  model returned no text (stop_reason={msg.stop_reason})")
+            elif msg.stop_reason == "max_tokens":
+                log("  model reply was cut off at max_tokens")
+            return text
         except Exception as e:                       # rate limit / overload
             log(f"  model call failed ({type(e).__name__}: {str(e)[:120]}), retrying")
             time.sleep(20 * (attempt + 1))
     raise RuntimeError("the model did not answer after 4 tries")
 
 
+def ask_json(system, user, max_tokens=8000):
+    """ask(), parsed as JSON. One repair round if the reply is not JSON.
+
+    First live run: two episodes came back with no JSON object at all, and the
+    reply was thrown away unseen. Now the start of a bad reply is logged, and the
+    model is asked once more for the JSON alone.
+    """
+    reply = ask(system, user, max_tokens)
+    try:
+        return json_from(reply)
+    except Exception:
+        log(f"  reply was not JSON - first 300 chars: {reply[:300]!r}")
+    history = [{"role": "user", "content": user},
+               {"role": "assistant", "content": reply.strip() or "(no answer)"}]
+    reply = ask(system, "Reply again with ONLY the JSON object in the exact format "
+                "requested - no commentary, no questions. If a moment breaks a rule, "
+                "leave it out and choose other moments.", max_tokens, history=history)
+    return json_from(reply)
+
+
 def json_from(text):
     """The first JSON object in a reply (models sometimes wrap it in ```)."""
     m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.S)
-    raw = m.group(1) if m else text[text.find("{"): text.rfind("}") + 1]
-    return json.loads(raw)
+    if m:
+        return json.loads(m.group(1))
+    a, b = text.find("{"), text.rfind("}")
+    if a < 0 or b < a:
+        raise ValueError("no JSON object in the reply")
+    return json.loads(text[a:b + 1])
 
 
 def read(name):

@@ -32,7 +32,7 @@ TARGET_DAYS = int(os.environ.get("TARGET_DAYS", "7"))
 MAX_EPISODES = int(sys.argv[sys.argv.index("--max-episodes") + 1]) if "--max-episodes" in sys.argv \
     else int(os.environ.get("MAX_EPISODES_PER_RUN", "3"))
 PENDING_GRACE_H = 30          # a plan not built after this long no longer blocks
-CLIPS_PER_EPISODE = 7         # what we expect on average, for the deficit maths
+CLIPS_PER_EPISODE = 3         # what we expect on average, for the deficit maths
 DRY = "--dry" in sys.argv
 # TEST MODE: plans are rendered and checked but never posted (CLAUDE.md step 5).
 # Turned on for the first run so the owner can watch the clips before they go live.
@@ -64,7 +64,7 @@ Reply with JSON only, no commentary:
  "clips": [{"slug": "lowercaseletters", "in": 123.4, "out": 170.2,
             "hook": ["Line One", "Line Two"],
             "caption": "Ad: ...", "cta_kind": "offer" or "question"}]}
-Give 6 to 9 clips. Alternate cta_kind: about one "offer" for every two "question"."""
+Give 10 to 12 clips - the reviewer is strict and usually keeps about a third, so offer only moments you are sure stand alone. Alternate cta_kind: about one "offer" for every two "question"."""
 
 
 def want_clips(man):
@@ -174,7 +174,7 @@ def main():
             continue
         key, plan, report = res
         C.log("  " + "\n  ".join(report))
-        if len(plan["clips"]) < 2:
+        if len(plan["clips"]) < 1:
             C.log(f"  {vid}: only {len(plan['clips'])} clip(s) approved - not worth a folder, skipped")
             continue
         taken.add(plan["brand"])

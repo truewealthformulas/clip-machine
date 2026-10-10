@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -49,12 +49,13 @@
    "posted_at": "2026-10-10T01:09",
    "agent_retried": [
     "facebook"
-   ]
+   ],
+   "style": "none"
   },
   {
    "file": "KT_MIND/01_selfimageblocks_47s.mp4",
    "caption": "Why saying the right words still gets you nowhere.\n\nKevin talks about the picture you carry of yourself. When you say something that doesn't match that picture, your mind pushes back.\n\nThe result is conflict instead of progress. The words were fine; the picture behind them was never updated.\n\nWhat does the picture you carry of yourself say right now?\n\n#ad #mindset #selfimage #kevintrudeau",
-   "bytes": 33212513,
+   "bytes": 22416232,
    "done": false,
    "status": {
     "facebook": "posted",
@@ -73,7 +74,8 @@
     "instagram": "https://www.instagram.com/reel/DeSRTmaDNUu/"
    },
    "caption_at_post": "Ad: Kevin Trudeau on the picture you carry of yourself, and why saying something that doesn't match it creates conflict instead of results. What does your picture say?",
-   "posted_at": "2026-10-09T15:35"
+   "posted_at": "2026-10-09T15:35",
+   "style": "C1"
   },
   {
    "file": "KT_MIND/01_wantingbackfires_65s.mp4",
@@ -103,7 +105,7 @@
   {
    "file": "KT_MIND/02_firstwordwish_63s.mp4",
    "caption": "The first step toward a big goal is not \"I want.\" It's smaller.\n\nKevin explains why wanting something is not where it starts. There is a smaller, simpler word that comes first, and most people skip it.\n\nIt sounds too easy to matter. That is exactly why it gets ignored.\n\nWould you be willing to say it out loud today?\n\n#ad #mindset #goals #kevintrudeau",
-   "bytes": 38724724,
+   "bytes": 26497988,
    "done": false,
    "status": {
     "facebook": "posted",
@@ -121,13 +123,14 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
-   "posted_at": "2026-10-10T08:40"
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "posted_at": "2026-10-10T08:40",
+   "style": "C1"
   },
   {
    "file": "KT_MIND/02_lastwords_47s.mp4",
    "caption": "Some words belong at the finish line, not at the start.\n\nKevin explains why the big statement about who you want to be is where you finish, not where you begin.\n\nStart with words your mind can accept today, then climb one step at a time. Jump to the top too early and your mind simply doesn't believe it.\n\nWhere are you on that ladder right now?\n\n#ad #mindset #affirmations #kevintrudeau",
-   "bytes": 32832433,
+   "bytes": 21989645,
    "done": false,
    "status": {
     "facebook": "posted",
@@ -146,205 +149,224 @@
     "instagram": "https://www.instagram.com/reel/DeSslVFgYFw/"
    },
    "caption_at_post": "Ad: Kevin Trudeau on why \"I am a millionaire\" is where you finish, not where you start. Where are you on the ladder right now?",
-   "posted_at": "2026-10-09T19:33"
+   "posted_at": "2026-10-09T19:33",
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET/01_becomewhatthink_52s.mp4",
    "caption": "The strangest secret is one sentence, and most people laugh at it.\n\nKevin recalls the classic Earl Nightingale recording: you become what you think about most of the time.\n\nHe laughed the first time he heard it, because as a young man he was always thinking about girls. The room laughed too, but they got the point. You become what you think about and feel about most of the time.\n\nThoughts are things. So control your thoughts and feelings, feel good now, and keep working on a better you.\n\nWhat do you think about most of the time?\n\n#ad #mindset #thoughts #kevintrudeau",
-   "bytes": 28069797,
+   "bytes": 18860176,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T12:37",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET/01_fivesecondmiracle_36s.mp4",
    "caption": "He waited years for a \"five-second miracle.\" It was one sentence.\n\nKevin sat on the edge of his seat, expecting something huge. The lesson: take 100 percent responsibility for everything that happens in your life, without exception and without condition.\n\nThen everyone stood, shook his hand, and it was over.\n\nKevin says it takes five seconds to hear and years to live.\n\nWhat would change if you took that sentence seriously?\n\n#ad #mindset #responsibility #kevintrudeau",
-   "bytes": 20137496,
+   "bytes": 13401170,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-10T19:52",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "C1"
   },
   {
    "file": "KT_RELATIONSHIPS/01_truthhonesty_32s.mp4",
    "caption": "Every word he said was true. He still wasn't honest.\n\nA man comes home from lunch and tells his wife where he went and what he ate. All true.\n\nWhat he leaves out is who he had lunch with. He didn't lie, but he wasn't honest either.\n\nKevin says telling the truth and being honest are not the same thing, and small omissions build a quiet wall between people.\n\nWhere have you noticed the gap between the two?\n\n#ad #relationships #communication #kevintrudeau",
-   "bytes": 20592589,
+   "bytes": 13534497,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T07:31",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "C1"
   },
   {
    "file": "KT_RELATIONSHIPS/01_yourcircle_30s.mp4",
    "caption": "Asked what he'd do with a messy roommate, his answer surprised everyone.\n\nKevin says he simply wouldn't have that roommate, because he wouldn't be in that situation.\n\nThe people around him are honest, kind, loving and good communicators. Nobody pushes his buttons.\n\nHis view: the people in your world reflect the person you are, and what you attract.\n\nWhat does your circle reflect back to you?\n\n#ad #mindset #relationships #kevintrudeau",
-   "bytes": 20665347,
+   "bytes": 13376942,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-10T16:34",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "style": "C1"
   },
   {
    "file": "KT_RELATIONSHIPS/02_soulmate_57s.mp4",
    "caption": "Is there only one person on the planet meant for you? Look at the odds.\n\nKevin gives a straight answer on the soulmate question.\n\nBelieving there is exactly one person out of billions is a stretch. He compares it to asking whether any other planet could support life.\n\nThere are likely many people you could connect with deeply, and that changes how you look for someone.\n\nDo you believe in the one, or in many?\n\n#ad #relationships #love #kevintrudeau",
-   "bytes": 35276845,
+   "bytes": 22411040,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T16:34",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/01_chargecardhistory_54s.mp4",
    "caption": "There was a time nobody carried a credit card. Here's what changed.\n\nBack then you had a charge account at the local store, or a charge card from a handful of companies. It was for convenience, so you didn't carry a lot of cash.\n\nKevin explains how different that world was from the one we live in now, and why the difference matters.\n\nWhat do you think changed most between then and today?\n\n#ad #credit #money #kevintrudeau",
-   "bytes": 34793963,
+   "bytes": 22078167,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-13T19:55",
    "cta_keyword": "GOALS",
-   "cta_variant": 8
+   "cta_variant": 8,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/01_housingtoomuch_58s.mp4",
    "caption": "The old cash rule almost nobody follows anymore.\n\nIf you can't pay for it with cash, Kevin says you can't afford it, with the possible exception of a house and a car.\n\nThen he looks at housing. Many people hand too large a share of their income to the home once you add the mortgage, insurance and upkeep.\n\nHe's not a financial planner and says so. It's common sense to apply to your own situation.\n\nWhat share of your income goes to housing?\n\n#ad #budget #money #kevintrudeau",
-   "bytes": 32421983,
+   "bytes": 19535796,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T19:25",
    "cta_keyword": "GOALS",
-   "cta_variant": 12
+   "cta_variant": 12,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/01_reportingdate_50s.mp4",
    "caption": "Paying on time may not be enough for your credit score. Here's why.\n\nMost of us think the due date is all that matters. Kevin explains the card company usually reports your balance to the credit agencies 10 to 15 days before that date.\n\nHis advice: ask your card company when they report, and pay the balance before that day.\n\nA small timing change he calls the magic secret.\n\nDid you know your report date and your due date can be different?\n\n#ad #credit #creditscore #kevintrudeau",
-   "bytes": 31667181,
+   "bytes": 19869177,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-12T19:20",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/01_strongcreditfile_47s.mp4",
    "caption": "What a strong credit file looks like, and why more cards can hurt it.\n\nKevin's picture: two installment loans, like a mortgage and a car payment, plus three revolving lines of credit. More than that can pull the score down, because it means too much available credit.\n\nHe also mentions a home equity line and a line against a stock portfolio, which can sit available without being used.\n\nWhich part of your own credit file do you understand least?\n\n#ad #credit #creditscore #kevintrudeau",
-   "bytes": 28174978,
+   "bytes": 17469656,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-12T11:31",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/02_belowmeans_33s.mp4",
    "caption": "\"Live within your means\" is advice Kevin says isn't enough.\n\nYou have to live below your means.\n\nHe points to how his father's generation handled money. Housing was a small share of income, and cars weren't financed. They paid cash, and until they could, they went without.\n\nAn old habit, and Kevin says it's still a strong one.\n\nWhat's one expense you could trim to live below your means?\n\n#ad #money #mindset #kevintrudeau",
-   "bytes": 19869344,
+   "bytes": 12137651,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-11T19:46",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/02_chargevscredit_53s.mp4",
    "caption": "Charge card or credit card? One small difference changes everything.\n\nWith a charge card, the money had to already be in your bank. Sometimes the company even checked with your bank first.\n\nWith a credit card, you can spend money you don't have. Kevin explains that one was a convenience; the other lets you spend beyond what you hold.\n\nA simple distinction worth keeping in mind.\n\nWhen you use a card, do you check your account balance first?\n\n#ad #credit #money #kevintrudeau",
-   "bytes": 33263205,
+   "bytes": 20442733,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-13T12:40",
    "cta_keyword": "GOALS",
-   "cta_variant": 6
+   "cta_variant": 6,
+   "style": "C1"
   },
   {
    "file": "KT_CREDIT/02_zerobalances_54s.mp4",
    "caption": "What it actually feels like when every card is at zero.\n\nKevin paints the picture: cards at zero, payments current, and some savings set aside for a rainy day.\n\nHe says that kind of order brings a feeling of strength and control, and the confidence carries into every other part of your life.\n\nIt's less about the numbers and more about the peace of mind.\n\nWhat would having zero balances change for you?\n\n#ad #debtfree #mindset #kevintrudeau",
-   "bytes": 33815009,
+   "bytes": 21071153,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T12:40",
    "cta_keyword": "GOALS",
-   "cta_variant": 10
+   "cta_variant": 10,
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET4/02_choosefeel_61s.mp4",
    "caption": "The biggest mistake people make in hard times starts with one word.\n\nKevin says it's calling it adversity in the first place. It is simply a situation, and nobody else makes you feel a certain way.\n\nHe shares the story of Viktor Frankl, who said others could control everything around him, but not his thoughts.\n\nThe lesson: you choose what you think, and what you think shapes how you feel.\n\nWhere in your life could you choose your thoughts on purpose?\n\n#ad #mindset #kevintrudeau",
-   "bytes": 35155629,
+   "bytes": 22324783,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-13T08:02",
    "cta_keyword": "GOALS",
-   "cta_variant": 5
+   "cta_variant": 5,
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET5/01_caddyrich_52s.mp4",
    "caption": "He became a caddy for one reason: to watch how successful people think.\n\nKevin grew up in a blue collar town. So he took a job at a country club where the members were wealthy, and he watched them closely.\n\nThey talked, thought and carried themselves differently. But they were normal people, just like his dad.\n\nThe real difference was how they thought and saw themselves. That's when he knew he could do it too.\n\nWho are you spending your time around?\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 30988723,
+   "bytes": 19251858,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T08:29",
    "cta_keyword": "GOALS",
-   "cta_variant": 9
+   "cta_variant": 9,
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET5/01_workforself_43s.mp4",
    "caption": "A welder's son learned early that he wanted to be his own boss.\n\nKevin grew up on a street where everyone worked a job, hoped to get into the union and dreamed of a government pension.\n\nHe learned early that he had to work for himself.\n\nThat lesson sent him to the library to read about people who became very successful.\n\nWhat did you learn early about work from the people around you?\n\n#ad #entrepreneur #mindset #kevintrudeau",
-   "bytes": 24858150,
+   "bytes": 15174412,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-12T08:05",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "C1"
   },
   {
    "file": "KT_MINDSET5/02_houndpain_46s.mp4",
    "caption": "Why the old dog keeps moaning but never gets up.\n\nTwo men sit on a porch. An old hound dog keeps moaning but never moves. One asks why. The other says he's lying on a nail, but it doesn't hurt him enough.\n\nKevin says people are the same. They don't like their house, their job or their situation, but the discomfort never gets big enough to force a change.\n\nChange often starts when staying put hurts more than moving.\n\nWhat's your version of the nail you keep lying on?\n\n#ad #mindset #motivation #kevintrudeau",
-   "bytes": 27079010,
+   "bytes": 17003209,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-12T15:58",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "C1"
   },
   {
    "file": "KT_WEALTH/01_concernword_49s.mp4",
    "caption": "One word kept sinking his deals, and he didn't even notice.\n\nKevin tells about a friend who taught success seminars but kept stumbling in business. On every deal he said, \"I have a concern.\"\n\nKevin points out that a concern is fear put into words. His advice: swap it for \"I have a question\" or \"there's something here we can make better.\"\n\nSame situation, but now you're the one steering the conversation.\n\nWhat word do you use out of habit without noticing?\n\n#ad #mindset #communication #kevintrudeau",
-   "bytes": 34527759,
+   "bytes": 23874318,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T15:21",
    "cta_keyword": "GOALS",
-   "cta_variant": 11
+   "cta_variant": 11,
+   "style": "C1"
   },
   {
    "file": "KT_WORDS/01_twowordsiam_56s.mp4",
    "caption": "The two most powerful words you say every day, usually without thinking.\n\nKevin explains that whatever you put after \"I am\" is taken by your mind as a statement about your whole being. \"I am a loser.\" \"I am a shy person.\"\n\nSay it often enough and it becomes a fact about yourself. It won't change until you change the words first.\n\nIt's a small habit to notice, and you can start today.\n\nWhat do you usually say after \"I am\"?\n\n#ad #mindset #words #kevintrudeau",
-   "bytes": 37329681,
+   "bytes": 25288098,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-13T15:24",
    "cta_keyword": "GOALS",
-   "cta_variant": 7
+   "cta_variant": 7,
+   "style": "C1"
   }
  ]
 }

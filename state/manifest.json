@@ -91,11 +91,24 @@
    "caption": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "bytes": 38724724,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "token refresh failed 400: {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'}",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261010124022D24F3CC271C2A9291476'}"
+   },
    "scheduled_at": "2026-10-10T08:27",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1116887407455460/",
+    "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
+   },
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "posted_at": "2026-10-10T08:40"
   },
   {
    "file": "KT_MIND/02_lastwords_47s.mp4",

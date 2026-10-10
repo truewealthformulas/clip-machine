@@ -124,7 +124,10 @@
    "bytes": 28069797,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-11T12:37",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MINDSET/01_fivesecondmiracle_36s.mp4",
@@ -132,7 +135,10 @@
    "bytes": 20137496,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-10T19:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_RELATIONSHIPS/01_truthhonesty_32s.mp4",
@@ -140,7 +146,10 @@
    "bytes": 20592589,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-11T07:31",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_RELATIONSHIPS/01_yourcircle_30s.mp4",
@@ -148,7 +157,10 @@
    "bytes": 20665347,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-10T16:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_RELATIONSHIPS/02_soulmate_57s.mp4",
@@ -156,7 +168,10 @@
    "bytes": 35276845,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-11T16:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   }
  ]
 }

@@ -1,13 +1,9 @@
-# Posting health - Sat 10 Oct 2026 01:00
+# Posting health - Sat 10 Oct 2026 04:59
 
-- Posted today: **0** (target 5)
+- Posted today: **1** (target 5)
 - Queue: **7** clip(s) = 1.4 days, folders: KT_MIND, KT_MINDSET, KT_RELATIONSHIPS
 - Login problems: tiktok, youtube
-- Retried once (upload glitches): 1
-  - KT_MIND/01_inprocess_36s.mp4 -> facebook
-
-## Glitches seen (48h)
-- KT_MIND/01_inprocess_36s.mp4 on facebook: reel upload failed 400: {'debug_info': {'retriable': False, 'type': 'ProcessingFailedError', 'message': 'Reque
+- Retried once (upload glitches): 0
 
 ## Needs you
 - [ ] **TIKTOK is not posting** (4 post(s) in 48h). TikTok login expired/invalid. Re-authorize the TikTok developer app (Content Posting API) for @thesuccessclubco, get a NEW refresh token, and paste it into the repo secret TT_REFRESH_TOKEN.

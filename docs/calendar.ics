@@ -9,7 +9,7 @@ REFRESH-INTERVAL;VALUE=DURATION:PT30M
 X-PUBLISHED-TTL:PT30M
 BEGIN:VEVENT
 UID:KT_MIND-01_iamamillionaire_62s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261009T001600Z
 DTEND:20261009T003100Z
 SUMMARY:OWNER - Ad: Kevin Trudeau on the exact moment you've earned the right to say "I am a millionaire" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?
@@ -18,7 +18,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MIND-01_inprocess_36s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261010T050900Z
 DTEND:20261010T052400Z
 SUMMARY:OWNER - Ad: Kevin Trudeau on the difference between "I will" (someday) and "I am in the process" (today). What are you doing right now that proves you're in the process?
@@ -27,7 +27,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MIND-01_selfimageblocks_47s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261009T193500Z
 DTEND:20261009T195000Z
 SUMMARY:OWNER - Ad: Kevin Trudeau on the picture you carry of yourself\, and why saying something that doesn't match it creates conflict instead of results. What does your picture say?
@@ -36,7 +36,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MIND-01_wantingbackfires_65s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261010T152700Z
 DTEND:20261010T154200Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau on why saying "I want to be a millionaire" can trigger old beliefs that fight back. Which belief about money did you grow up with?
@@ -45,7 +45,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MIND-02_firstwordwish_63s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261010T122700Z
 DTEND:20261010T124200Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau on why the very first step toward a big goal isn't "I want" — it's a much smaller word. Would you actually say it out loud?
@@ -54,7 +54,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MIND-02_lastwords_47s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261009T233300Z
 DTEND:20261009T234800Z
 SUMMARY:OWNER - Ad: Kevin Trudeau on why "I am a millionaire" is where you finish\, not where you start. Where are you on the ladder right now?
@@ -63,7 +63,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MINDSET-01_becomewhatthink_52s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261011T163700Z
 DTEND:20261011T165200Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau recalls the classic Earl Nightingale recording\, The Strangest Secret: you become what you think about most of the time.
@@ -72,7 +72,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_MINDSET-01_fivesecondmiracle_36s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261010T235200Z
 DTEND:20261011T000700Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau tells the story of the moment he was finally given what he was told was a miracle that takes only five seconds.
@@ -81,7 +81,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_RELATIONSHIPS-01_truthhonesty_32s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261011T113100Z
 DTEND:20261011T114600Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau shares a small story that shows how distance grows between two people.
@@ -90,7 +90,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_RELATIONSHIPS-01_yourcircle_30s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261010T203400Z
 DTEND:20261010T204900Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau answers what he would do if he had a roommate who was a slob.
@@ -99,7 +99,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:KT_RELATIONSHIPS-02_soulmate_57s.mp4@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART:20261011T203400Z
 DTEND:20261011T204900Z
 SUMMARY:[ ] OWNER - Ad: Kevin Trudeau gives a straight answer on whether there is only one soulmate.
@@ -108,7 +108,7 @@ STATUS:TENTATIVE
 END:VEVENT
 BEGIN:VEVENT
 UID:queue-runout-owner@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:!! OWNER - NO CLIPS LEFT TO POST (7 queued before this)
@@ -116,7 +116,7 @@ TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:queue-warning-owner@kt-machine
-DTSTAMP:20261010T100803Z
+DTSTAMP:20261010T103223Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 SUMMARY:!! OWNER - clips run out in 2 day(s)\, on Mon 12 Oct - make more

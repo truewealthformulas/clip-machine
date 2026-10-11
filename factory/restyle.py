@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""THE SUCCESS CLUB LOOK (style D): Kevin's video on top, the hook frame BELOW it.
+"""THE SUCCESS CLUB LOOK (style E): Kevin full screen, the hook in a black box for 3 s.
 
-10 Oct 2026, the owner, after style C went live: "the face of kevin is not been
-seen ... put it below the video, in all new clips". Style C laid a hook bar over
-the picture; on some clips it sat on his face. Style D never draws on the
-picture at all:
+10 Oct 2026, the owner, after style C (a bar over the picture) hid Kevin's face
+and style D (video on top, hook below) was previewed: "the black frame with
+white and gold, this will last 3 seconds and then gone, just the transcript in
+white continues".
 
-    y    0-130   black, club name
-    y  130-1230  the video: rows 40-1140 of the rendered clip (his head down to
-                 the spoken captions, which the factory burns at ~y1070)
-    y 1230-1242  gold progress bar
-    y 1242-1600  the hook frame: hook in big white + gold, gold rule, club name
-    y 1600-1920  black - where Instagram/TikTok print the caption and buttons
+So: the video stays full screen and untouched. For the first 3 seconds a black
+rounded box sits just under the spoken captions, below his face, with the hook
+in big white (line 1) and gold (line 2). Then it is gone and only the factory's
+white transcript runs. The opening frame carries the hook, so covers show it.
 
 The factory no longer burns its own small hook card (factory/setup.sh switches
 it off), so new clips arrive clean. A clip that still carries the card is never
@@ -39,13 +37,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = "D1"
+STYLE = "E1"
 W, H = 1080, 1920
 GOLD, INK, WHITE, GREY = (245, 197, 24), (12, 12, 14), (255, 255, 255), (165, 165, 165)
-HOOK_SECS = 4.5
-SRC_Y, VID_H, VID_Y = 40, 1100, 130          # rows taken from the clip / where they go
-BAR_Y = VID_Y + VID_H                        # progress bar
-FRAME_Y = BAR_Y + 12                         # hook frame
+HOOK_SECS = 4.5          # how long the FACTORY's old card stayed (used to detect it)
+CARD_SECS = 3.0          # our hook box: 3 seconds, then only the white transcript
+CARD_Y = 1165            # under the spoken captions (~y1040-1110), below his face
 
 
 def sh(*a):
@@ -101,7 +98,8 @@ def fit(d, text, size, maxw):
     return ImageFont.truetype(FONT, size)
 
 
-def frame_png(hook, out):
+def card_png(hook, out):
+    """The hook in a black box, white first line + gold second line, centred."""
     lines = [l.strip().upper() for l in hook if l.strip()][:2]
     if len(lines) == 1 and len(lines[0]) > 16:
         words = lines[0].split()
@@ -109,19 +107,17 @@ def frame_png(hook, out):
         lines = [" ".join(words[:k]), " ".join(words[k:])]
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    small = ImageFont.truetype(FONT, 30)
-    t = "THE SUCCESS CLUB"
-    d.text(((W - d.textlength(t, font=small)) / 2, 62), t, font=small, fill=GOLD + (255,))
-    f = min((fit(d, l, 92, W - 100) for l in lines), key=lambda x: x.size)
-    lh = int(f.size * 1.17)
-    y = FRAME_Y + 54
+    f = min((fit(d, l, 84, W - 170) for l in lines), key=lambda x: x.size)
+    lh = int(f.size * 1.18)
+    tw = max(d.textlength(l, font=f) for l in lines)
+    bw, bh = int(tw + 90), lh * len(lines) + 56
+    x0, y0 = (W - bw) // 2, CARD_Y
+    d.rounded_rectangle((x0, y0, x0 + bw, y0 + bh), radius=26, fill=INK + (240,))
+    y = y0 + 26
     for i, l in enumerate(lines):
         w = d.textlength(l, font=f)
         d.text(((W - w) / 2, y), l, font=f, fill=(WHITE if i == 0 and len(lines) > 1 else GOLD) + (255,))
         y += lh
-    d.rectangle((W / 2 - 90, y + 22, W / 2 + 90, y + 30), fill=GOLD + (255,))
-    t2 = "KEVIN TRUDEAU"
-    d.text(((W - d.textlength(t2, font=small)) / 2, y + 50), t2, font=small, fill=GREY + (255,))
     im.save(out)
 
 
@@ -137,20 +133,15 @@ def restyle(src, hook, dst):
         # A clip that still has it waits for a clean re-render instead.
         raise RuntimeError(f"old hook card still burned in at {card}")
     png = dst + ".png"
-    frame_png(hook, png)
+    card_png(hook, png)
     dur = duration(src)
-    clean = ""
-    fc = (f"color=c=0x0C0C0E:s={W}x{H}:r=30:d={dur:.2f}[bg];"
-          f"[0:v]{clean}crop={W}:{VID_H}:0:{SRC_Y}[vid];"
-          f"[bg][vid]overlay=0:{VID_Y}[a];"
-          f"[a][1:v]overlay=0:0[b];"
-          f"color=c=0xF5C518:s={W}x12:r=30[g];"
-          f"[b][g]overlay=x='-w+w*t/{dur:.2f}':y={BAR_Y}:shortest=1,format=yuv420p[v]")
-    sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-i", png, "-filter_complex", fc,
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-loop", "1", "-framerate", "30",
+       "-t", f"{CARD_SECS:.2f}", "-i", png, "-filter_complex",
+       f"[0:v][1:v]overlay=0:0:eof_action=pass:enable='lt(t,{CARD_SECS})',format=yuv420p[v]",
        "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-       "-c:a", "copy", "-movflags", "+faststart", "-t", f"{dur:.2f}", dst)
+       "-c:a", "copy", "-movflags", "+faststart", dst)
     os.remove(png)
-    return card
+    return None
 
 
 def hooks_index():
@@ -205,7 +196,7 @@ def main():
     if "--local" in sys.argv:
         i = sys.argv.index("--local")
         src, hook = sys.argv[i + 1], sys.argv[i + 2].split("|")
-        print(restyle(src, hook, src.replace(".mp4", "_D.mp4")))
+        print(restyle(src, hook, src.replace(".mp4", "_E.mp4")))
         return
     limit = int(os.environ.get("RESTYLE_LIMIT", "40"))
     man = json.load(open(MAN, encoding="utf-8"))

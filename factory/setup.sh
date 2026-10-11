@@ -19,6 +19,17 @@ cp factory/assets/mont_black.ttf factory/assets/yunet.onnx "$K/bin/"
 # Arial file is not ours to publish in a public repository.
 ln -sf /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf "$K/bin/arial_bold.ttf"
 cp factory/pipeline/*.py "$K/"
+# 10 Oct 2026: the club look (factory/restyle.py) puts the hook in its own frame
+# BELOW the video, so the render no longer burns the small hook card on top of
+# Kevin's face. The card is still built (other steps read its size); it is just
+# never shown.
+python3 - "$K/kt_render.py" <<'PY'
+import sys
+p = sys.argv[1]; s = open(p).read()
+old = "enable='lt(t,{HOOK_SECS})'[vv];"
+assert old in s, "kt_render changed - hook card switch not applied"
+open(p, "w").write(s.replace(old, "enable='lt(t,0)'[vv];"))
+PY
 cp factory/kt_series.json "$K/kt_series.json"
 ln -sfn "$GITHUB_WORKSPACE" "$K/kt-machine"
 

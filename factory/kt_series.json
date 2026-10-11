@@ -104,7 +104,8 @@
      "What You Think"
     ],
     "caption": "Ad: Kevin Trudeau recalls the classic Earl Nightingale recording, The Strangest Secret: you become what you think about most of the time.\n\nKevin tells how he laughed when he first heard it, because he was always thinking about girls. Everyone in the room laughed too, but they understood the distinction. You become what you think about and feel about most of the time.\n\nThoughts are things. So his advice is to control your thoughts and feelings, feel good now, and keep working on being a better you.\n\nWhat do you think about most of the time?\n\n#mindset #thoughts #kevintrudeau",
-    "cta_kind": "question"
+    "cta_kind": "question",
+    "locked": true
    }
   ]
  },
@@ -122,7 +123,8 @@
      "Truth And Honesty"
     ],
     "caption": "Ad: Kevin Trudeau shares a small story that shows how distance grows between two people.\n\nA man comes home from lunch and tells his wife where he went and what he ate. Every word is true.\n\nWhat he leaves out is who he had lunch with. He didn't lie, but he wasn't honest either.\n\nKevin says there is a real difference between telling the truth and being honest. Small omissions can build a quiet barrier between people.\n\nWhere have you noticed the gap between the two?\n\n#relationships #communication #kevintrudeau",
-    "cta_kind": "question"
+    "cta_kind": "question",
+    "locked": true
    },
    {
     "slug": "soulmate",
@@ -133,7 +135,8 @@
      "Answered"
     ],
     "caption": "Ad: Kevin Trudeau gives a straight answer on whether there is only one soulmate.\n\nHis reasoning is simple. If you think there is exactly one person on the whole planet meant for you, that's a stretch.\n\nHe compares it to asking whether any other planets could support life. Just look at the odds.\n\nKevin says there are likely many people you could connect with deeply, and that changes how you think about finding someone.\n\nDo you believe in the one, or in many?\n\n#soulmate #relationships #kevintrudeau",
-    "cta_kind": "question"
+    "cta_kind": "question",
+    "locked": true
    },
    {
     "slug": "yourcircle",
@@ -439,6 +442,24 @@
     ],
     "caption": "The biggest prayer mistake starts with a feeling, not a word.\n\nKevin explains that most people pray from desperation, lack and fear. They ask for one specific result because they believe it will finally make them feel better.\n\nThat sense of need, he says, is exactly what gets in the way of a calm, clear connection.\n\nWhen you ask for something, which feeling are you asking from?\n\n#ad #mindset #fear #kevintrudeau",
     "cta_kind": "question"
+   }
+  ]
+ },
+ "mindset_v72iprm": {
+  "source": "v72iprm.mp4",
+  "brand": "KT_MINDSET7",
+  "note": "",
+  "clips": [
+   {
+    "slug": "createreality",
+    "in": 1406.38,
+    "out": 1450.6,
+    "hook": [
+     "The Mind Creates",
+     "Your Reality"
+    ],
+    "caption": "What if your life is bigger than the years you can count?\n\nKevin explains that most people see life as the time between birth and the end of the body, and treat that as everything.\n\nAsked for one thing worth grasping, his answer is that you create your own reality. He says seeing the bigger picture can leave you feeling less stressed, less confused and less afraid.\n\nIt is a short teaching about how you see yourself and your days.\n\nWhat changes for you when you look at life as a bigger picture?\n\n#ad #mindset #success #kevintrudeau",
+    "cta_kind": "offer"
    }
   ]
  }

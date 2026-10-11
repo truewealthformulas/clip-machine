@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -477,13 +477,14 @@
   {
    "file": "KT_SUCCESS/01_dreamnextstep_46s.mp4",
    "caption": "You can dream big without living in a dream world\n\nKevin shares what a famous chef told him: have a dream, but do not be delusional about it.\n\nWant a private jet? Great, go look at them and let yourself expand. But then come back to reality and ask what the next logical step is. For someone with no job, that step is simple.\n\nDream big, then act on the one step in front of you.\n\nWhat is your next logical step today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #success",
-   "bytes": 20513881,
+   "bytes": 16577113,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-15T20:30",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "E1"
   },
   {
    "file": "KT_MINDSET6/01_choosehappy_44s.mp4",
@@ -536,9 +537,30 @@
   {
    "file": "KT_MINDSET7/01_createreality_44s.mp4",
    "caption": "What if your life is bigger than the years you can count?\n\nKevin explains that most people see life as the time between birth and the end of the body, and treat that as everything.\n\nAsked for one thing worth grasping, his answer is that you create your own reality. He says seeing the bigger picture can leave you feeling less stressed, less confused and less afraid.\n\nIt is a short teaching about how you see yourself and your days.\n\nWhat changes for you when you look at life as a bigger picture?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 26965522,
+   "bytes": 20822761,
    "done": false,
    "status": {},
+   "cta_kind": "offer",
+   "style": "E1"
+  },
+  {
+   "file": "KT_RELATIONSHIPS/91_yourcircle_30s.mp4",
+   "caption": "Asked what he'd do with a messy roommate, his answer surprised everyone.\n\nKevin says he simply wouldn't have that roommate, because he wouldn't be in that situation.\n\nThe people around him are honest, kind, loving and good communicators. Nobody pushes his buttons.\n\nHis view: the people in your world reflect the person you are, and what you attract.\n\nWhat does your circle reflect back to you?\n\n#ad #mindset #relationships #kevintrudeau",
+   "bytes": 16001590,
+   "done": false,
+   "status": {},
+   "style": "E1",
+   "repost_of": "KT_RELATIONSHIPS/01_yourcircle_30s.mp4",
+   "cta_kind": "question"
+  },
+  {
+   "file": "KT_MINDSET/91_fivesecondmiracle_36s.mp4",
+   "caption": "He waited years for a \"five-second miracle.\" It was one sentence.\n\nKevin sat on the edge of his seat, expecting something huge. The lesson: take 100 percent responsibility for everything that happens in your life, without exception and without condition.\n\nThen everyone stood, shook his hand, and it was over.\n\nKevin says it takes five seconds to hear and years to live.\n\nWhat would change if you took that sentence seriously?\n\n#ad #mindset #responsibility #kevintrudeau",
+   "bytes": 15474101,
+   "done": false,
+   "status": {},
+   "style": "E1",
+   "repost_of": "KT_MINDSET/01_fivesecondmiracle_36s.mp4",
    "cta_kind": "offer"
   }
  ]

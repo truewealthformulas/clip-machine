@@ -1,0 +1,40 @@
+{
+ "source": "v78um7w.mp4",
+ "brand": "KT_MINDSET5",
+ "test": true,
+ "note": "10 Oct 2026: clean re-render (no hook card) of queued clips for the club look - test plan, never queued; factory/restyle.py picks the files up from this build.",
+ "clips": [
+  {
+   "slug": "houndpain",
+   "in": 682.1,
+   "out": 727.2,
+   "hook": [
+    "The Hound Dog",
+    "That Wouldn't Move"
+   ],
+   "caption": "Ad: Kevin Trudeau tells the story of two men on a porch and an old hound dog that keeps moaning but never moves.\n\nWhen one man asks why the dog won't get up, the other says he's lying on a nail, but it doesn't hurt him enough.\n\nKevin says people can be the same. They don't like their house, their car or their situation, but the discomfort never gets big enough to force a change.\n\nA change often starts when staying put hurts more than moving.\n\nWhat is your version of the nail you keep lying on?\n\n#mindset #motivation #kevintrudeau",
+   "cta_kind": "offer"
+  },
+  {
+   "slug": "caddyrich",
+   "in": 398.9,
+   "out": 449.9,
+   "hook": [
+    "How A Caddy Job",
+    "Changed Everything"
+   ],
+   "caption": "Ad: Kevin Trudeau grew up in a blue collar town and wanted to learn how successful people think.\n\nHis plan was simple. He became a caddy at a country club where the members were wealthy, and he watched them closely.\n\nHe noticed they talked, thought and carried themselves differently. But they were normal human beings, just like his dad.\n\nThe real difference was how they thought and how they saw themselves. That is when he realized he could do it too.\n\nWho are you spending your time around?\n\n#success #mindset #kevintrudeau",
+   "cta_kind": "question"
+  },
+  {
+   "slug": "workforself",
+   "in": 77.1,
+   "out": 120.2,
+   "hook": [
+    "Why Work For Yourself"
+   ],
+   "caption": "Ad: Kevin Trudeau grew up in a blue collar community where his dad was a welder and his mom stayed home.\n\nEveryone on the street worked a job, hoped to get into the union and dreamed of a government pension.\n\nKevin learned early that you have to work for yourself and be your own boss.\n\nThat lesson sent him to the library to read about people who became very successful.\n\nWhat did you learn early about work from the people around you?\n\n#entrepreneur #mindset #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

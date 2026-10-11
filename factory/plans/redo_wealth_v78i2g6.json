@@ -1,0 +1,19 @@
+{
+ "source": "v78i2g6.mp4",
+ "brand": "KT_WEALTH",
+ "test": true,
+ "note": "10 Oct 2026: clean re-render (no hook card) of queued clips for the club look - test plan, never queued; factory/restyle.py picks the files up from this build.",
+ "clips": [
+  {
+   "slug": "concernword",
+   "in": 1470.3,
+   "out": 1518.7,
+   "hook": [
+    "How One Word Changed",
+    "Every Deal"
+   ],
+   "caption": "Ad: Kevin Trudeau tells a story about a friend who taught success seminars but kept stumbling in business.\n\nEvery time he looked at a deal he said, \"I have a concern.\" Kevin points out that a concern is fear in words.\n\nHis advice was to swap it for \"I have a question\" or \"there's something here we can make better.\"\n\nThe same situation, but now you are the one steering the conversation.\n\nWhat word do you use out of habit without noticing?\n\n#mindset #communication #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

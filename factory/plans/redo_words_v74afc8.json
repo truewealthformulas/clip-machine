@@ -1,0 +1,19 @@
+{
+ "source": "v74afc8.mp4",
+ "brand": "KT_WORDS",
+ "test": true,
+ "note": "10 Oct 2026: clean re-render (no hook card) of queued clips for the club look - test plan, never queued; factory/restyle.py picks the files up from this build.",
+ "clips": [
+  {
+   "slug": "twowordsiam",
+   "in": 285.0,
+   "out": 339.8,
+   "hook": [
+    "The Two Words That",
+    "Program You"
+   ],
+   "caption": "Ad: Kevin Trudeau on the two most powerful words you use: \"I am.\"\n\nKevin explains that whatever you put after \"I am\" is taken by your mind as a statement about your whole being. \"I am a loser.\" \"I am a shy person.\"\n\nSay it often enough and you have spoken it into existence as a fact about yourself. It will not change until you change it with your words first.\n\nIt is a short habit to notice, and it can start today.\n\nWhat do you usually say after \"I am\"?",
+   "cta_kind": "question"
+  }
+ ]
+}

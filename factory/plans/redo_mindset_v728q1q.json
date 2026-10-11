@@ -1,0 +1,29 @@
+{
+ "source": "v728q1q.mp4",
+ "brand": "KT_MINDSET",
+ "test": true,
+ "note": "10 Oct 2026: clean re-render (no hook card) of queued clips for the club look - test plan, never queued; factory/restyle.py picks the files up from this build.",
+ "clips": [
+  {
+   "slug": "becomewhatthink",
+   "in": 874.0,
+   "out": 924.6,
+   "hook": [
+    "Why You Become",
+    "What You Think"
+   ],
+   "caption": "Ad: Kevin Trudeau recalls the classic Earl Nightingale recording, The Strangest Secret: you become what you think about most of the time.\n\nKevin tells how he laughed when he first heard it, because he was always thinking about girls. Everyone in the room laughed too, but they understood the distinction. You become what you think about and feel about most of the time.\n\nThoughts are things. So his advice is to control your thoughts and feelings, feel good now, and keep working on being a better you.\n\nWhat do you think about most of the time?\n\n#mindset #thoughts #kevintrudeau",
+   "cta_kind": "question"
+  },
+  {
+   "slug": "fivesecondmiracle",
+   "in": 1062.4,
+   "out": 1098.2,
+   "hook": [
+    "The Five Second Miracle"
+   ],
+   "caption": "Ad: Kevin Trudeau tells the story of the moment he was finally given what he was told was a miracle that takes only five seconds.\n\nHe was sitting at the edge of his seat, expecting something huge. The lesson was a single sentence: take 100 percent responsibility for everything that happens in your life, without exception and without condition.\n\nThen everyone stood, shook his hand, and the lesson was over.\n\nKevin explains that it's quick to hear and takes years to live.\n\nWhat would change if you took that sentence seriously?\n\n#mindset #responsibility #kevintrudeau",
+   "cta_kind": "offer"
+  }
+ ]
+}

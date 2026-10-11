@@ -23,7 +23,11 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
+      # Latest main, not the commit the run was queued on: a run that waited for the
+      # `post` lock must see the manifest the previous holder just saved (10 Oct 2026:
+      # 16 caption updates were lost to a rebase conflict on a stale checkout).
       - uses: actions/checkout@v4
+        with: { ref: main }
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - name: Tools

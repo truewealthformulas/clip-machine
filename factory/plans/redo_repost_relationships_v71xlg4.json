@@ -1,0 +1,19 @@
+{
+ "source": "v71xlg4.mp4",
+ "brand": "KT_RELATIONSHIPS",
+ "test": true,
+ "note": "10 Oct 2026: clean re-render (no hook card) for the repost in the club look - test plan, never queued.",
+ "clips": [
+  {
+   "slug": "yourcircle",
+   "in": 1481.5,
+   "out": 1512.3,
+   "hook": [
+    "What Your Circle",
+    "Says About You"
+   ],
+   "caption": "Ad: Kevin Trudeau answers what he would do if he had a roommate who was a slob.\n\nHis answer: he wouldn't have that roommate, because he wouldn't be in that situation.\n\nThe people around him are honest, kind, loving and good communicators. They don't have buttons that get triggered.\n\nKevin says that's because of what he is attracting into his life. His view is that the people in your world reflect the person you are.\n\nWhat does your circle reflect back to you?\n\n#mindset #relationships #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

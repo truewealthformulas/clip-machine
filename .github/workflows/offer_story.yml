@@ -1,0 +1,68 @@
+# Daily offer story on Instagram (agents/offer_story.py): the owner's own highlight
+# stories (state/story_pool.json -> release "media" story--hl_NN) with a "Reply KEYWORD" band.
+# Mon/Thu: a reminder issue for the link-sticker story the owner posts by hand,
+# using the branded cards (factory/make_story_cards.py -> docs/stories/).
+name: offer-story
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Post today's story (off = only build the cards)"
+        type: boolean
+        default: true
+  schedule:
+    - cron: "15 16 * * *"      # 12:15 New York (EDT)
+concurrency:
+  group: post
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  story:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q pillow
+      - name: Build the cards (first run only)
+        run: |
+          if ls docs/stories/auto_training_photo.jpg >/dev/null 2>&1; then exit 0; fi
+          mkdir -p /tmp/f
+          get() { gh release download media -R "$GITHUB_REPOSITORY" -p "$1" -O /tmp/f/c.mp4 --clobber; ffmpeg -loglevel error -y -ss "$2" -i /tmp/f/c.mp4 -frames:v 1 "/tmp/f/$3"; }
+          get "KT_WORDS--01_twowordsiam_56s.mp4" 30 kev_suit.png
+          get "KT_MINDSET5--02_houndpain_46s.mp4" 35 kev_hat.png
+          get "KT_RELATIONSHIPS--02_soulmate_57s.mp4" 20 kev_blue.png
+          python factory/make_story_cards.py /tmp/f docs/stories
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add docs/stories && git commit -q -m "story cards" && git push -q
+          sleep 120   # let GitHub Pages publish them before Instagram fetches one
+      - name: Post today's offer story
+        if: github.event_name == 'schedule' || inputs.post
+        run: python agents/offer_story.py
+      - name: Link-sticker reminder (Mon + Thu)
+        if: always() && (github.event_name == 'schedule' || inputs.post)
+        run: |
+          python agents/offer_story.py --remind > /tmp/r.md
+          [ -s /tmp/r.md ] || exit 0
+          gh issue create -R "$GITHUB_REPOSITORY" --title "Story with link sticker today" --body-file /tmp/r.md
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add state/stories.json state/story_pool.json 2>/dev/null || true
+          git diff --staged --quiet && exit 0
+          git commit -q -m "offer story $(date -u +%F)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

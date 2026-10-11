@@ -43,7 +43,7 @@ RIDDLE = re.compile(r"^(some|there('s| is| are)|nobody|everyone|no one|this is w
 KEYWORDS = re.compile(r"\b(money|rich|richer|wealth|wealthy|success|successful|millionaires?|"
                       r"credit|debt|income|business|boss|mind|mindset|brain|habits?|secrets?|"
                       r"love|relationships?|marriage|partner|health|healthy|energy|happy|happiness|"
-                      r"freedom|power|confidence|goals?|fear|winners?)\b", re.I)
+                      r"freedom|power|confidence|goals?|fear|winners?|wish(es)?|nutrition)\b", re.I)
 
 BANNED = [
     # income / results promises

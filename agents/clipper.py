@@ -25,6 +25,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import common as C      # noqa: E402
+import offers as O      # noqa: E402
 import reviewer as R    # noqa: E402
 
 POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "5"))
@@ -146,6 +147,9 @@ def write_plan(vid, entry, taken_brands):
                           "cta_kind": c.get("cta_kind") if c.get("cta_kind") in ("offer", "question") else "question"})
         except (KeyError, TypeError, ValueError):
             continue
+    # Point each clip at the highlight link that fits it (agents/offers.py).
+    for c in clips:
+        c["caption"] = O.add(c["caption"], O.pick(" ".join(c["hook"]), c["caption"], topic))
     plan = {"source": f"{vid}.mp4", "brand": brand, "test": TEST, "clips": clips}
     # AGENT 2: nothing reaches the factory without passing the rules check.
     plan, report = R.review_plan(plan, transcript_text=text,

@@ -49,6 +49,13 @@ so **we are legally responsible for every claim in our own posts.**
   adds the right call to action per platform automatically. Adding one by hand
   creates duplicates and gets accounts flagged.
 - Must not copy the on-screen hook word for word.
+- The machine adds ONE line just above the hashtags naming the highlight that fits
+  the clip (agents/offers.py): money/success -> GIN, love/relationships -> the Wish
+  book, healthy habits -> the daily nutrition pick, everything else -> the free
+  Your Wish Is Your Command training. Hooks may lean toward those topics (Wish,
+  Goals, Money, Success, Love, Habits).
+- **Never** point to, mention or hint at the herpes book, and never state a health
+  benefit for the supplement. Disease/cure language is banned (section D).
 
 ## D. Claims we never make (platform policy + FTC + Kevin's history)
 Kevin was found in contempt and imprisoned over misleading marketing claims. Every

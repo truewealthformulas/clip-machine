@@ -54,7 +54,12 @@ Follow the rulebook exactly. Above all:
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
 - hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a
-  number. No full stop. Never a riddle.
+  number. No full stop. Never a riddle. EVERY hook carries one high-interest word:
+  Money, Rich, Wealth, Success, Credit, Debt, Business, Mind, Habits, Secret, Love,
+  Relationships, Health, Energy, Happiness, Freedom, Confidence, Goals, Fear.
+  ("Health" names the topic only - never a cure, disease, weight or medical claim.)
+- prefer moments ABOUT those topics: money, success, wealth, credit/debt, mindset and
+  habits, love and relationships, healthy living habits. People stop for these.
 - captions: the FIRST LINE is a scroll-stopping hook (40-90 characters, a promise or
   tension the clip pays off; never "Ad", never "Kevin Trudeau on"). Then 2-4 short
   paragraphs separated by blank lines, ending with ONE question to the viewer. The
@@ -91,7 +96,12 @@ def candidates(idx):
         out.append((vid, e))
     # Best transcripts first (punctuation density decides how clean the edges are),
     # then the newest uploads.
-    out.sort(key=lambda ve: (float(ve[1].get("stops_per_min") or 0) >= 8,
+    # Episodes whose title names a high-interest topic go first (10 Oct 2026, the
+    # owner: money, health, success - "things that people will like to see").
+    hot = re.compile(r"money|rich|wealth|success|credit|debt|business|mind|habit|secret|"
+                     r"love|relationship|marri|health|energy|happ|freedom|confiden|goal", re.I)
+    out.sort(key=lambda ve: (bool(hot.search(ve[1].get("title", ""))),
+                             float(ve[1].get("stops_per_min") or 0) >= 8,
                              ve[1].get("uploaded", "")), reverse=True)
     return out
 

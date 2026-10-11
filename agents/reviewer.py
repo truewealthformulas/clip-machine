@@ -37,6 +37,14 @@ NUMBER = re.compile(r"[\d$%]")
 RIDDLE = re.compile(r"^(some|there('s| is| are)|nobody|everyone|no one|this is what|"
                     r"it (is|was)|he|she|they|i)\b", re.I)
 
+# HIGH-INTEREST WORDS. 10 Oct 2026, the owner: put key words like money, health,
+# success - "things that people will like to see". Every hook must carry one.
+# "health" may name the topic; a health CLAIM is still banned below.
+KEYWORDS = re.compile(r"\b(money|rich|richer|wealth|wealthy|success|successful|millionaires?|"
+                      r"credit|debt|income|business|boss|mind|mindset|brain|habits?|secrets?|"
+                      r"love|relationships?|marriage|partner|health|healthy|energy|happy|happiness|"
+                      r"freedom|power|confidence|goals?|fear|winners?)\b", re.I)
+
 BANNED = [
     # income / results promises
     (r"\bguarantee", "guarantee claim"),
@@ -76,6 +84,8 @@ def hook_problems(hook):
         out.append(f'hook opens on a riddle/pronoun: "{first}"')
     elif not DIRECT.match(first) and not NUMBER.search(first):
         out.append(f'hook is not a direct promise: "{first}"')
+    if not KEYWORDS.search(" ".join(hook)):
+        out.append("hook has no high-interest word (money, success, wealth, credit, love, mind, habits, health...)")
     if hook[-1].strip().endswith((".", "!")):
         out.append("hook ends with punctuation - a hook is a headline")
     for pat, why in BANNED:

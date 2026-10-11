@@ -27,6 +27,12 @@ so **we are legally responsible for every claim in our own posts.**
   They / I / It is / This is what.
 - No full stop at the end. No question mark riddles. No clickbait that the clip
   doesn't deliver.
+- **Every hook carries one high-interest word** (the owner, 10 Oct 2026): Money, Rich,
+  Wealth, Success, Credit, Debt, Business, Mind, Habits, Secret, Love, Relationships,
+  Health, Energy, Happiness, Freedom, Confidence, Goals, Fear. "Health" names the
+  topic only; a health or medical claim is still banned (section D).
+- Pick moments about those topics first: money, success, wealth, credit and debt,
+  mindset and habits, love and relationships, healthy living habits.
 
 ## C. Captions
 - **The first line is the hook** - it is all most people read before "more", and on

@@ -157,6 +157,13 @@ def hooks_index():
         brands[key] = d.get("brand")
         for c in d.get("clips", []):
             idx.setdefault((d.get("brand"), c.get("slug")), c.get("hook"))
+    # Hook rewrites for clips already built (factory/hooks.json, "BRAND/slug": [lines]).
+    # 10 Oct 2026: every hook now carries a high-interest word (money, success, ...).
+    hp = os.path.join(ROOT, "factory", "hooks.json")
+    if os.path.exists(hp):
+        for k, v in json.load(open(hp)).items():
+            b, s = k.split("/", 1)
+            idx[(b, s)] = v
     return idx, brands
 
 

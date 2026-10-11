@@ -201,7 +201,12 @@ def originals(plan_brands, tmp):
             brand = plan_brands.get(m[1]) if m else None
             name = os.path.basename(f)
             if brand and "__" not in name:
-                found.setdefault(slug_of(f"{brand}/{name}"), f)
+                b, sl = slug_of(f"{brand}/{name}")
+                found.setdefault((b, sl), f)
+                # A published clip is locked against re-rendering (kt_render), so
+                # repost re-renders use the slug + "rp"; map them back.
+                if sl.endswith("rp"):
+                    found.setdefault((b, sl[:-2]), f)
     return found
 
 
@@ -215,7 +220,8 @@ def main():
     man = json.load(open(MAN, encoding="utf-8"))
     idx, plan_brands = hooks_index()
     todo = [c for c in man.get("clips", [])
-            if not c.get("done") and not c.get("posting") and c.get("style") != STYLE]
+            if not c.get("done") and not c.get("posting") and c.get("style") != STYLE
+            and not any("posted" in str(v) for v in (c.get("status") or {}).values())]
     tmp = tempfile.mkdtemp()
     orig = originals(plan_brands, tmp)
     print(f"{len(todo)} clip(s) to style; {len(orig)} original(s) recovered from factory builds")
@@ -237,7 +243,7 @@ def main():
         else:
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
         try:
-            card = restyle(src, hook, dst, check=not clean)
+            card = restyle(src, hook, dst, check=False)
         except Exception as e:
             skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
             continue

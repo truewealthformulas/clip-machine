@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Story Cards</title>
+<style>
+:root{--bg:#0c0c0e;--card:#17171a;--fg:#f4f4f5;--muted:#a1a1aa;--gold:#f5c518}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif;padding:20px 16px 48px}
+h1{font-size:24px;margin:0 0 4px}p{color:var(--muted);margin:0 0 18px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));max-width:1100px}
+.c{background:var(--card);border-radius:14px;padding:14px}
+.c h2{font-size:17px;margin:0 0 10px;color:var(--gold)}
+.imgs{display:flex;gap:8px}.imgs a{flex:1}.imgs img{width:100%;border-radius:8px;display:block}
+code{display:block;background:#000;color:var(--fg);padding:8px;border-radius:8px;font-size:13px;overflow-wrap:anywhere;margin:10px 0 8px}
+button{background:var(--gold);color:#000;border:0;border-radius:8px;padding:9px 14px;font-weight:700;cursor:pointer}
+ol{color:var(--muted);padding-left:20px;max-width:640px}
+</style></head><body>
+<h1>Story cards with a link sticker</h1>
+<p>Tap a card to open it full size, then save it to your phone.</p>
+<ol><li>Instagram, then new Story, then pick the saved card.</li><li>Sticker icon, then <b>Link</b>, then paste the link (Copy button below).</li><li>Put the sticker under the gold arrow, then Share.</li></ol>
+<div class="grid" id="g"></div>
+<script>
+const O=[["training","Free Your Wish training","https://freeyourwish.kevintrudeau.com/?ref=ftad8p"],
+["gin","GIN","https://signup.globalinformationnetwork.com/?ref=ftad8p"],
+["book","Your Wish book","https://getyourwishbook.com/?ref=ftad8p"],
+["daily","Daily nutrition","https://worldsbestnutritionals.com/daily?ref=ftad8p"]];
+const g=document.getElementById('g');
+for(const [k,n,u] of O){const d=document.createElement('div');d.className='c';
+d.innerHTML=`<h2>${n}</h2><div class="imgs">`+["photo","text"].map(l=>`<a href="stories/sticker_${k}_${l}.jpg" target="_blank"><img src="stories/sticker_${k}_${l}.jpg" alt="${n} card, ${l}"></a>`).join('')+`</div><code>${u}</code><button>Copy link</button>`;
+d.querySelector('button').onclick=async e=>{try{await navigator.clipboard.writeText(u);e.target.textContent='Copied'}catch(_){const r=document.createRange();r.selectNodeContents(d.querySelector('code'));getSelection().removeAllRanges();getSelection().addRange(r);e.target.textContent='Selected - copy it'}};
+g.appendChild(d)}
+</script></body></html>

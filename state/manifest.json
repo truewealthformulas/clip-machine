@@ -194,13 +194,27 @@
    "file": "KT_RELATIONSHIPS/01_truthhonesty_32s.mp4",
    "caption": "Every word he said was true. He still wasn't honest.\n\nA man comes home from lunch and tells his wife where he went and what he ate. All true.\n\nWhat he leaves out is who he had lunch with. He didn't lie, but he wasn't honest either.\n\nKevin says telling the truth and being honest are not the same thing, and small omissions build a quiet wall between people.\n\nWhere have you noticed the gap between the two?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #communication #kevintrudeau",
    "bytes": 15576641,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101111335990D7377CB8E08D78E426'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T07:31",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1578909600675773/",
+    "instagram": "https://www.instagram.com/reel/DeWjyjtChCW/",
+    "youtube": "https://youtube.com/shorts/0EY_DQCmwUI"
+   },
+   "caption_at_post": "Every word he said was true. He still wasn't honest.\n\nA man comes home from lunch and tells his wife where he went and what he ate. All true.\n\nWhat he leaves out is who he had lunch with. He didn't lie, but he wasn't honest either.\n\nKevin says telling the truth and being honest are not the same thing, and small omissions build a quiet wall between people.\n\nWhere have you noticed the gap between the two?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #communication #kevintrudeau",
+   "posted_at": "2026-10-11T07:33"
   },
   {
    "file": "KT_RELATIONSHIPS/01_yourcircle_30s.mp4",

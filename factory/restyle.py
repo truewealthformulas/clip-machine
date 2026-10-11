@@ -126,8 +126,14 @@ def duration(path):
                                 capture_output=True, text=True, check=True).stdout.strip())
 
 
-def restyle(src, hook, dst):
-    card = find_old_card(src)
+def restyle(src, hook, dst, check=True):
+    # The factory's old card always sat ABOVE the spoken captions (its bottom
+    # edge at y930), so a "card" found lower down is a caption that paused on
+    # screen, not a card (10 Oct: strongcreditfile was skipped for exactly that).
+    # Clean re-renders from redo_ builds skip the check altogether.
+    card = find_old_card(src) if check else None
+    if card and card[1] > 980:
+        card = None
     if card:
         # Painting the old card out smeared his face on real clips (10 Oct test).
         # A clip that still has it waits for a clean re-render instead.
@@ -221,15 +227,17 @@ def main():
             continue
         asset = c["file"].replace("/", "--")
         src, dst = os.path.join(tmp, asset), os.path.join(tmp, "out_" + asset)
+        clean = False
         if c.get("style") not in (None, "none"):
             if slug_of(c["file"]) not in orig:
                 skipped.append(f"{c['file']}: styled before and no clean re-render yet - left as is")
                 continue
             src = orig[slug_of(c["file"])]
+            clean = True
         else:
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
         try:
-            card = restyle(src, hook, dst)
+            card = restyle(src, hook, dst, check=not clean)
         except Exception as e:
             skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
             continue
@@ -260,7 +268,7 @@ def main():
         new = f"{brand}/" + re.sub(r"^\d+_", "91_", name)
         dst = os.path.join(tmp, "up", new.replace("/", "--"))
         os.makedirs(os.path.dirname(dst), exist_ok=True)
-        restyle(orig[slug_of(f)], hook, dst)
+        restyle(orig[slug_of(f)], hook, dst, check=False)
         sh("gh", "release", "upload", "media", dst, "-R", REPO, "--clobber")
         entry = {"file": new, "caption": old.get("caption", ""), "bytes": os.path.getsize(dst),
                  "done": False, "status": {}, "style": STYLE, "repost_of": f}

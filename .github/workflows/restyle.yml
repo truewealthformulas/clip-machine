@@ -1,4 +1,4 @@
-# The Success Club look (style C): big hook bar, gold rule, club name, gold progress bar.
+# The Success Club look (style D): video on top, hook frame below it, gold progress bar.
 # Applied to every queued clip that doesn't have it yet - after each factory run, and
 # every 6 hours as a safety net. Same lock as `post`, so a clip is never swapped
 # while it is being published.
@@ -12,6 +12,7 @@ on:
     - cron: "15 */6 * * *"
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: post
   cancel-in-progress: false

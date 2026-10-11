@@ -213,7 +213,7 @@ def main():
     todo = [c for c in man.get("clips", [])
             if not c.get("done") and not c.get("posting") and c.get("style") != STYLE]
     tmp = tempfile.mkdtemp()
-    orig = originals(plan_brands, tmp) if any(c.get("style") not in (None, "none") for c in todo) else {}
+    orig = originals(plan_brands, tmp)
     print(f"{len(todo)} clip(s) to style; {len(orig)} original(s) recovered from factory builds")
     done, skipped = 0, []
     for c in todo[:limit]:
@@ -246,6 +246,32 @@ def main():
         os.remove(up)
         with open(MAN, "w", encoding="utf-8") as f:
             json.dump(man, f, indent=1, ensure_ascii=False)
+    # REPOSTS. 10 Oct 2026, the owner: "lets reposted them ... with the new version".
+    # Clips listed in factory/repost.json go out again in the new look, as NEW
+    # queue entries (new file name, same caption), once each.
+    rp = os.path.join(ROOT, "factory", "repost.json")
+    for f in (json.load(open(rp)) if os.path.exists(rp) else []):
+        if any(c.get("repost_of") == f for c in man["clips"]):
+            continue
+        old = next((c for c in man["clips"] if c["file"] == f), None)
+        hook = idx.get(slug_of(f))
+        if not old or not hook or slug_of(f) not in orig:
+            skipped.append(f"repost {f}: not ready (clean re-render or hook missing)")
+            continue
+        brand, name = f.split("/", 1)
+        new = f"{brand}/" + re.sub(r"^\d+_", "91_", name)
+        dst = os.path.join(tmp, "up", new.replace("/", "--"))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        restyle(orig[slug_of(f)], hook, dst)
+        sh("gh", "release", "upload", "media", dst, "-R", REPO, "--clobber")
+        entry = {"file": new, "caption": old.get("caption", ""), "bytes": os.path.getsize(dst),
+                 "done": False, "status": {}, "style": STYLE, "repost_of": f}
+        if old.get("cta_kind"):
+            entry["cta_kind"] = old["cta_kind"]
+        man["clips"].append(entry)
+        with open(MAN, "w", encoding="utf-8") as fh:
+            json.dump(man, fh, indent=1, ensure_ascii=False)
+        print(f"repost queued: {new} (was {f})", flush=True)
     print(f"restyle: {done} clip(s) styled")
     for s in skipped:
         print("  skipped", s)

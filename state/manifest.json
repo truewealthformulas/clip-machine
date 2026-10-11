@@ -168,13 +168,27 @@
    "file": "KT_MINDSET/01_fivesecondmiracle_36s.mp4",
    "caption": "He waited years for a \"five-second miracle.\" It was one sentence.\n\nKevin sat on the edge of his seat, expecting something huge. The lesson: take 100 percent responsibility for everything that happens in your life, without exception and without condition.\n\nThen everyone stood, shook his hand, and it was over.\n\nKevin says it takes five seconds to hear and years to live.\n\nWhat would change if you took that sentence seriously?\n\n#ad #mindset #responsibility #kevintrudeau",
    "bytes": 13401170,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261011001449E927984F98B7C16CA0CC'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-10T19:52",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "style": "C1"
+   "style": "C1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1412036797706272/",
+    "instagram": "https://www.instagram.com/reel/DeVWF2WHBK8/",
+    "youtube": "https://youtube.com/shorts/EhhUuj09s0g"
+   },
+   "caption_at_post": "He waited years for a \"five-second miracle.\" It was one sentence.\n\nKevin sat on the edge of his seat, expecting something huge. The lesson: take 100 percent responsibility for everything that happens in your life, without exception and without condition.\n\nThen everyone stood, shook his hand, and it was over.\n\nKevin says it takes five seconds to hear and years to live.\n\nWhat would change if you took that sentence seriously?\n\n#ad #mindset #responsibility #kevintrudeau",
+   "posted_at": "2026-10-10T20:14"
   },
   {
    "file": "KT_RELATIONSHIPS/01_truthhonesty_32s.mp4",

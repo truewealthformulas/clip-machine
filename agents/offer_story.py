@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """One offer story a day on Instagram (10 Oct 2026, the owner: "do both").
 
-The API cannot put a link sticker on a story, so the daily card ends on
-"Reply <KEYWORD>" and the owner's DM auto-reply sends the link. The cards live
-on GitHub Pages (docs/stories/), built by factory/make_story_cards.py.
+The owner's own highlight stories are reposted (state/story_pool.json, built by
+the owner's 19 highlight videos + 6 photos, 11 Oct - "do it with the same pictures of my highlight").
+The API cannot put a link sticker on a story, so each carries a band "Reply
+<KEYWORD>" and the owner's DM auto-reply sends the link. If the pool has nothing
+for an offer, the branded card from docs/stories/ is used instead.
 
 Rotation (free training and GIN get the most days): training, gin, book,
 training, gin, book, daily. Photo and text looks alternate. Once per New York
@@ -22,6 +24,8 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG = os.path.join(ROOT, "state", "stories.json")
+POOL = os.path.join(ROOT, "state", "story_pool.json")
+MEDIA = f"https://github.com/{os.environ.get('GITHUB_REPOSITORY', 'truewealthformulas/clip-machine')}/releases/download/media/"
 BASE = os.environ.get("STORY_BASE_URL", "https://truewealthformulas.github.io/clip-machine/stories/")
 ROTATION = ["training", "gin", "book", "training", "gin", "book", "daily"]
 V = "v21.0"
@@ -54,6 +58,15 @@ def reminder():
             f"All cards and links: https://truewealthformulas.github.io/clip-machine/stories.html")
 
 
+def live(url):
+    """True when the release file exists (the owner uploads the highlight files by hand)."""
+    try:
+        req = urllib.request.Request(url, method="HEAD")
+        return urllib.request.urlopen(req, timeout=30).status == 200
+    except Exception:
+        return False
+
+
 def call(method, path, **params):
     data = urllib.parse.urlencode(params).encode()
     url = f"https://graph.facebook.com/{V}/{path}"
@@ -78,16 +91,24 @@ def main():
         return
     n = log["n"]
     key = ROTATION[n % len(ROTATION)]
-    look = "photo" if n % 2 == 0 else "text"
-    url = f"{BASE}auto_{key}_{look}.jpg"
+    pool = [p for p in (json.load(open(POOL)) if os.path.exists(POOL) else []) if p["offer"] == key]
+    pool = [p for p in pool if live(MEDIA + p["file"])]
+    if pool:
+        k = sum(1 for p in log["posted"] if p.get("ok") and p.get("offer") == key)
+        item = pool[k % len(pool)]
+        look, url, kind = item["file"], MEDIA + item["file"], item["type"]
+    else:
+        look = "photo" if n % 2 == 0 else "text"
+        url, kind = f"{BASE}auto_{key}_{look}.jpg", "image"
     print(f"offer story #{n}: {key} ({look}) {url}")
     if "--dry" in sys.argv:
         return
     ig, tok = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
-    c = call("POST", f"{ig}/media", media_type="STORIES", image_url=url, access_token=tok)
+    media = {"video_url": url} if kind == "video" else {"image_url": url}
+    c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok, **media)
     status = "container failed: " + str(c)[:200]
     if c.get("id"):
-        for _ in range(12):
+        for _ in range(40):
             s = call("GET", c["id"], fields="status_code", access_token=tok)
             if s.get("status_code") in ("FINISHED", "ERROR"):
                 break

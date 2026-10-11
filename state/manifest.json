@@ -334,13 +334,27 @@
    "file": "KT_CREDIT/02_belowmeans_33s.mp4",
    "caption": "\"Live within your means\" is advice Kevin says isn't enough.\n\nYou have to live below your means.\n\nHe points to how his father's generation handled money. Housing was a small share of income, and cars weren't financed. They paid cash, and until they could, they went without.\n\nAn old habit, and Kevin says it's still a strong one.\n\nWhat's one expense you could trim to live below your means?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
    "bytes": 15084092,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101123515108E56C9B4E3C7FA9255B'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-11T19:46",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2545671819243996/",
+    "instagram": "https://www.instagram.com/reel/DeX4QnxiG6n/",
+    "youtube": "https://youtube.com/shorts/lxHngKn7cl8"
+   },
+   "caption_at_post": "\"Live within your means\" is advice Kevin says isn't enough.\n\nYou have to live below your means.\n\nHe points to how his father's generation handled money. Housing was a small share of income, and cars weren't financed. They paid cash, and until they could, they went without.\n\nAn old habit, and Kevin says it's still a strong one.\n\nWhat's one expense you could trim to live below your means?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
+   "posted_at": "2026-10-11T19:51"
   },
   {
    "file": "KT_CREDIT/02_chargevscredit_53s.mp4",

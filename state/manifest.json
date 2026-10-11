@@ -260,13 +260,27 @@
    "file": "KT_RELATIONSHIPS/02_soulmate_57s.mp4",
    "caption": "Is there only one person on the planet meant for you? Look at the odds.\n\nKevin gives a straight answer on the soulmate question.\n\nBelieving there is exactly one person out of billions is a stretch. He compares it to asking whether any other planet could support life.\n\nThere are likely many people you could connect with deeply, and that changes how you look for someone.\n\nDo you believe in the one, or in many?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #love #kevintrudeau",
    "bytes": 26449320,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101120522651EA3E3A8E5CEAAA644C'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T16:34",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1478643507655080/",
+    "instagram": "https://www.instagram.com/reel/DeXjurqCsTg/",
+    "youtube": "https://youtube.com/shorts/cSo2uogls58"
+   },
+   "caption_at_post": "Is there only one person on the planet meant for you? Look at the odds.\n\nKevin gives a straight answer on the soulmate question.\n\nBelieving there is exactly one person out of billions is a stretch. He compares it to asking whether any other planet could support life.\n\nThere are likely many people you could connect with deeply, and that changes how you look for someone.\n\nDo you believe in the one, or in many?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #love #kevintrudeau",
+   "posted_at": "2026-10-11T16:52"
   },
   {
    "file": "KT_CREDIT/01_chargecardhistory_54s.mp4",

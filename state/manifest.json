@@ -310,13 +310,27 @@
    "file": "KT_CREDIT/01_reportingdate_50s.mp4",
    "caption": "Paying on time may not be enough for your credit score. Here's why.\n\nMost of us think the due date is all that matters. Kevin explains the card company usually reports your balance to the credit agencies 10 to 15 days before that date.\n\nHis advice: ask your card company when they report, and pay the balance before that day.\n\nA small timing change he calls the magic secret.\n\nDid you know your report date and your due date can be different?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #creditscore #kevintrudeau",
    "bytes": 24277989,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610122335313173380271E3A353FD8D'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-12T19:20",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2330925434413619/",
+    "instagram": "https://www.instagram.com/reel/DeabLM1ATAe/",
+    "youtube": "https://youtube.com/shorts/Cy5GBT4Hh0k"
+   },
+   "caption_at_post": "Paying on time may not be enough for your credit score. Here's why.\n\nMost of us think the due date is all that matters. Kevin explains the card company usually reports your balance to the credit agencies 10 to 15 days before that date.\n\nHis advice: ask your card company when they report, and pay the balance before that day.\n\nA small timing change he calls the magic secret.\n\nDid you know your report date and your due date can be different?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #creditscore #kevintrudeau",
+   "posted_at": "2026-10-12T19:35"
   },
   {
    "file": "KT_CREDIT/01_strongcreditfile_47s.mp4",

@@ -1,4 +1,4 @@
-# Posting health - Mon 12 Oct 2026 01:03
+# Posting health - Mon 12 Oct 2026 05:04
 
 - Posted today: **0** (target 5)
 - Queue: **23** clip(s) = 4.6 days, folders: KT_CREDIT, KT_MANIFESTING, KT_MINDSET, KT_MINDSET4, KT_MINDSET5, KT_MINDSET6, KT_MINDSET7, KT_PRAYER, KT_RELATIONSHIPS, KT_SUCCESS, KT_WEALTH, KT_WORDS
@@ -6,5 +6,5 @@
 - Retried once (upload glitches): 0
 
 ## Needs you
-- [ ] **TIKTOK is not posting** (9 post(s) in 48h). TikTok login expired/invalid. Re-authorize the TikTok developer app (Content Posting API) for @thesuccessclubco, get a NEW refresh token, and paste it into the repo secret TT_REFRESH_TOKEN.
-- [ ] **YOUTUBE is not posting** (2 post(s) in 48h). YouTube login expired/revoked. Most common cause: the Google Cloud OAuth consent screen is still in 'Testing' - tokens then die after 7 days. Google Cloud Console -> APIs & Services -> OAuth consent screen -> 'Publish app' (to Production), then create a NEW refresh token and paste it into the repo secret YT_REFRESH_TOKEN.
+- [ ] **TIKTOK is not posting** (8 post(s) in 48h). TikTok login expired/invalid. Re-authorize the TikTok developer app (Content Posting API) for @thesuccessclubco, get a NEW refresh token, and paste it into the repo secret TT_REFRESH_TOKEN.
+- [ ] **YOUTUBE is not posting** (1 post(s) in 48h). YouTube login expired/revoked. Most common cause: the Google Cloud OAuth consent screen is still in 'Testing' - tokens then die after 7 days. Google Cloud Console -> APIs & Services -> OAuth consent screen -> 'Publish app' (to Production), then create a NEW refresh token and paste it into the repo secret YT_REFRESH_TOKEN.

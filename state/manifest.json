@@ -322,13 +322,27 @@
    "file": "KT_CREDIT/01_strongcreditfile_47s.mp4",
    "caption": "What a strong credit file looks like, and why more cards can hurt it.\n\nKevin's picture: two installment loans, like a mortgage and a car payment, plus three revolving lines of credit. More than that can pull the score down, because it means too much available credit.\n\nHe also mentions a home equity line and a line against a stock portfolio, which can sit available without being used.\n\nWhich part of your own credit file do you understand least?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #creditscore #kevintrudeau",
    "bytes": 21839744,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261012154113A124F39C598B682BD931'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-12T11:31",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2957695111290337/",
+    "instagram": "https://www.instagram.com/reel/DeZk0uHlZsw/",
+    "youtube": "https://youtube.com/shorts/oJi3Sct77oM"
+   },
+   "caption_at_post": "What a strong credit file looks like, and why more cards can hurt it.\n\nKevin's picture: two installment loans, like a mortgage and a car payment, plus three revolving lines of credit. More than that can pull the score down, because it means too much available credit.\n\nHe also mentions a home equity line and a line against a stock portfolio, which can sit available without being used.\n\nWhich part of your own credit file do you understand least?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #creditscore #kevintrudeau",
+   "posted_at": "2026-10-12T11:41"
   },
   {
    "file": "KT_CREDIT/02_belowmeans_33s.mp4",

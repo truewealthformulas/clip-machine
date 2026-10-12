@@ -448,13 +448,27 @@
    "file": "KT_MINDSET5/02_houndpain_46s.mp4",
    "caption": "Why the old dog keeps moaning but never gets up.\n\nTwo men sit on a porch. An old hound dog keeps moaning but never moves. One asks why. The other says he's lying on a nail, but it doesn't hurt him enough.\n\nKevin says people are the same. They don't like their house, their job or their situation, but the discomfort never gets big enough to force a change.\n\nChange often starts when staying put hurts more than moving.\n\nWhat's your version of the nail you keep lying on?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #motivation #kevintrudeau",
    "bytes": 20226916,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610122012153072EF9CEDF2753B8C51'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-12T15:58",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4045776792395843/",
+    "instagram": "https://www.instagram.com/reel/DeaD6wbHerO/",
+    "youtube": "https://youtube.com/shorts/16lhe1aE_fs"
+   },
+   "caption_at_post": "Why the old dog keeps moaning but never gets up.\n\nTwo men sit on a porch. An old hound dog keeps moaning but never moves. One asks why. The other says he's lying on a nail, but it doesn't hurt him enough.\n\nKevin says people are the same. They don't like their house, their job or their situation, but the discomfort never gets big enough to force a change.\n\nChange often starts when staying put hurts more than moving.\n\nWhat's your version of the nail you keep lying on?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #motivation #kevintrudeau",
+   "posted_at": "2026-10-12T16:12"
   },
   {
    "file": "KT_WEALTH/01_concernword_49s.mp4",

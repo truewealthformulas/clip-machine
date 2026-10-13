@@ -388,13 +388,27 @@
    "file": "KT_CREDIT/02_chargevscredit_53s.mp4",
    "caption": "Charge card or credit card? One small difference changes everything.\n\nWith a charge card, the money had to already be in your bank. Sometimes the company even checked with your bank first.\n\nWith a credit card, you can spend money you don't have. Kevin explains that one was a convenience; the other lets you spend beyond what you hold.\n\nA simple distinction worth keeping in mind.\n\nWhen you use a card, do you check your account balance first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
    "bytes": 25219833,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610131657567C0A5C98DF53DF87BBCD'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-13T12:40",
    "cta_keyword": "GOALS",
    "cta_variant": 6,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2905879263111510/",
+    "instagram": "https://www.instagram.com/reel/DecSc4VFfy2/",
+    "youtube": "https://youtube.com/shorts/yZseMqrt7Ww"
+   },
+   "caption_at_post": "Charge card or credit card? One small difference changes everything.\n\nWith a charge card, the money had to already be in your bank. Sometimes the company even checked with your bank first.\n\nWith a credit card, you can spend money you don't have. Kevin explains that one was a convenience; the other lets you spend beyond what you hold.\n\nA simple distinction worth keeping in mind.\n\nWhen you use a card, do you check your account balance first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
+   "posted_at": "2026-10-13T12:57"
   },
   {
    "file": "KT_CREDIT/02_zerobalances_54s.mp4",

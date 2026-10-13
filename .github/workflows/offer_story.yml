@@ -12,6 +12,7 @@ on:
         default: true
   schedule:
     - cron: "15 16 * * *"      # 12:15 New York (EDT)
+    - cron: "5 13 * * *"       # 09:05 New York - only used while a call campaign runs (agents/offer_story.py)
 concurrency:
   group: post
   cancel-in-progress: false
@@ -37,7 +38,7 @@ jobs:
           pip install -q pillow
       - name: Build the cards (first run only)
         run: |
-          if ls docs/stories/auto_training_photo.jpg >/dev/null 2>&1; then exit 0; fi
+          if ls docs/stories/auto_call_photo.jpg >/dev/null 2>&1; then exit 0; fi
           mkdir -p /tmp/f
           get() { gh release download media -R "$GITHUB_REPOSITORY" -p "$1" -O /tmp/f/c.mp4 --clobber; ffmpeg -loglevel error -y -ss "$2" -i /tmp/f/c.mp4 -frames:v 1 "/tmp/f/$3"; }
           get "KT_WORDS--01_twowordsiam_56s.mp4" 30 kev_suit.png

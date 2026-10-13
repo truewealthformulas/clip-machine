@@ -412,13 +412,27 @@
    "file": "KT_MINDSET4/02_choosefeel_61s.mp4",
    "caption": "The biggest mistake people make in hard times starts with one word.\n\nKevin says it's calling it adversity in the first place. It is simply a situation, and nobody else makes you feel a certain way.\n\nHe shares the story of Viktor Frankl, who said others could control everything around him, but not his thoughts.\n\nThe lesson: you choose what you think, and what you think shapes how you feel.\n\nWhere in your life could you choose your thoughts on purpose?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #kevintrudeau",
    "bytes": 27338549,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261013122010A1E43F8957C3EA6BFB70'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-13T08:02",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1779104246663275/",
+    "instagram": "https://www.instagram.com/reel/DebyqouAbMr/",
+    "youtube": "https://youtube.com/shorts/INNtupYoy7E"
+   },
+   "caption_at_post": "The biggest mistake people make in hard times starts with one word.\n\nKevin says it's calling it adversity in the first place. It is simply a situation, and nobody else makes you feel a certain way.\n\nHe shares the story of Viktor Frankl, who said others could control everything around him, but not his thoughts.\n\nThe lesson: you choose what you think, and what you think shapes how you feel.\n\nWhere in your life could you choose your thoughts on purpose?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #kevintrudeau",
+   "posted_at": "2026-10-13T08:20"
   },
   {
    "file": "KT_MINDSET5/01_caddyrich_52s.mp4",

@@ -20,7 +20,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 W, H = 1080, 1920
-GOLD, INK, WHITE, GREY = (245, 197, 24), (12, 12, 14), (255, 255, 255), (150, 150, 150)
+GOLD, INK, WHITE, GREY = (245, 197, 24), (11, 20, 48), (255, 255, 255), (165, 172, 190)   # INK: midnight navy (owner, 12 Oct)
 
 OFFERS = {
     "training": {"kicker": "FREE TRAINING", "title": ["KEVIN'S FREE", "TRAINING"],
@@ -31,6 +31,10 @@ OFFERS = {
              "sub": "The book behind Kevin's teaching", "kw": "BOOK", "photo": "kev_blue.png"},
     "daily": {"kicker": "DAILY NUTRITION", "title": ["KEVIN'S DAILY", "NUTRITION PICK"],
               "sub": "World's Best Nutritionals", "kw": "DAILY", "photo": "kev_suit.png"},
+    # 13 Oct 2026: Kevin's free live Zoom, Sat 17 Oct 11 am CT (freecallwithkevin.com).
+    # Value + urgency, no income claim.
+    "call": {"kicker": "FREE LIVE ZOOM \u00b7 SAT OCT 17 \u00b7 11 AM CT", "title": ["KEVIN TRUDEAU", "LIVE & FREE"],
+             "sub": "His wealth-creation secrets \u00b7 Limited spots", "kw": "CALL", "photo": "kev_suit.png"},
 }
 
 

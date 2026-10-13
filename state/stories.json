@@ -1,10 +1,17 @@
 {
- "n": 1,
+ "n": 2,
  "posted": [
   {
    "date": "2026-10-12",
    "offer": "training",
    "look": "photo",
+   "ok": true,
+   "status": "posted"
+  },
+  {
+   "date": "2026-10-13",
+   "offer": "gin",
+   "look": "story--hl_01.mp4",
    "ok": true,
    "status": "posted"
   }

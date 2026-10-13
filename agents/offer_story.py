@@ -35,19 +35,32 @@ LINKS = {
     "gin": "https://signup.globalinformationnetwork.com/?ref=ftad8p",
     "book": "https://getyourwishbook.com/?ref=ftad8p",
     "daily": "https://worldsbestnutritionals.com/daily?ref=ftad8p",
+    "call": "https://freecallwithkevin.com/?ref=ftad8p",
 }
+# Kevin's free live Zoom (13 Oct 2026, the owner): until it starts, Sat 17 Oct
+# 11 am CT, the story slot promotes the call instead - twice a day (the workflow
+# also runs at 13:05 UTC) - and the sticker reminder is daily.
+CALL_END = 1792252800          # 2026-10-17 16:00 UTC
 NAMES = {"training": "Free Your Wish training", "gin": "GIN", "book": "Your Wish book",
-         "daily": "Daily nutrition"}
+         "daily": "Daily nutrition", "call": "Kevin's FREE live Zoom (Sat Oct 17, 11 am CT)"}
+
+
+def campaign():
+    return time.time() < CALL_END
 
 
 def reminder():
     """Markdown for the Mon/Thu reminder issue (GitHub emails it to the owner)."""
     now = datetime.datetime.now(ZoneInfo("America/New_York"))
-    key = {0: "training", 3: "gin"}.get(now.weekday())
+    morning = datetime.datetime.now(datetime.timezone.utc).hour < 15
+    if campaign():
+        key = "call" if morning else None          # call sticker: the 09:05 run only
+    else:
+        key = None if morning else {0: "training", 3: "gin"}.get(now.weekday())
     if not key:
         return None
     week = now.isocalendar()[1]
-    look = "photo" if week % 2 else "text"
+    look = "photo" if (week % 2 or key == "call") else "text"
     img = f"{BASE}sticker_{key}_{look}.jpg"
     return (f"Story with a LINK STICKER today: **{NAMES[key]}**\n\n"
             f"![card]({img})\n\n"
@@ -86,11 +99,21 @@ def main():
         return
     log = json.load(open(LOG)) if os.path.exists(LOG) else {"n": 0, "posted": []}
     today = datetime.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
-    if any(p.get("date") == today and p.get("ok") for p in log["posted"]):
+    n = log["n"]
+    if campaign():
+        done = sum(1 for p in log["posted"] if p.get("date") == today and p.get("ok") and p.get("offer") == "call")
+        if done >= 2:
+            print("offer story: 2 call stories already today")
+            return
+        key = "call"
+    elif any(p.get("date") == today and p.get("ok") and p.get("offer") != "call" for p in log["posted"]):
         print("offer story: already posted today")
         return
-    n = log["n"]
-    key = ROTATION[n % len(ROTATION)]
+    elif datetime.datetime.now(datetime.timezone.utc).hour < 15:
+        print("offer story: morning slot is only used for the call campaign")
+        return
+    else:
+        key = ROTATION[n % len(ROTATION)]
     pool = [p for p in (json.load(open(POOL)) if os.path.exists(POOL) else []) if p["offer"] == key]
     pool = [p for p in pool if live(MEDIA + p["file"])]
     if pool:
@@ -98,7 +121,8 @@ def main():
         item = pool[k % len(pool)]
         look, url, kind = item["file"], MEDIA + item["file"], item["type"]
     else:
-        look = "photo" if n % 2 == 0 else "text"
+        flip = sum(1 for p in log["posted"] if p.get("ok") and p.get("offer") == "call") if key == "call" else n
+        look = "photo" if flip % 2 == 0 else "text"
         url, kind = f"{BASE}auto_{key}_{look}.jpg", "image"
     print(f"offer story #{n}: {key} ({look}) {url}")
     if "--dry" in sys.argv:
@@ -118,7 +142,7 @@ def main():
     ok = status == "posted"
     log["posted"].append({"date": today, "offer": key, "look": look, "ok": ok, "status": status})
     log["posted"] = log["posted"][-60:]
-    if ok:
+    if ok and key != "call":
         log["n"] = n + 1
     os.makedirs(os.path.dirname(LOG), exist_ok=True)
     json.dump(log, open(LOG, "w"), indent=1)

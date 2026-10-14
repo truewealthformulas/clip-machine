@@ -81,6 +81,24 @@ def main():
             print(f"    REFUSED: {h}p - under the 1080p gate")
             idx[vid] = {"title": e["title"], "rumble": url, "status": "rejected", "height": h}
             continue
+        # GitHub release assets must stay under 2 GB. 14 Oct 2026: the long interview
+        # episodes (74-82 min, the ones filmed in OTHER studios - the variety the owner
+        # asked for) were downloaded fine and then failed the upload for size. Re-encode
+        # those to 1080p until they fit; 1080p is still the factory's quality gate.
+        for crf in (21, 24, 27):
+            if os.path.getsize(mp4) <= 1_900_000_000 and h <= 1440:
+                break
+            small = mp4[:-4] + ".small.mp4"
+            print(f"    {os.path.getsize(mp4) / 1e9:.1f} GB at {h}p - re-encoding to 1080p (crf {crf})", flush=True)
+            sh("ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf", "scale=-2:1080", "-c:v", "libx264",
+               "-preset", "veryfast", "-crf", str(crf), "-c:a", "aac", "-b:a", "160k",
+               "-movflags", "+faststart", small)
+            if os.path.exists(small) and height(small) >= 1080:
+                os.replace(small, mp4)
+                h = 1080
+        if os.path.getsize(mp4) > 1_990_000_000:
+            print(f"    TOO BIG even after re-encoding ({os.path.getsize(mp4) / 1e9:.1f} GB) - skipped")
+            continue
         enc = f"/tmp/{vid}.mp4.enc"
         sh("openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt", "-pass", "env:FACTORY_KEY", "-in", mp4, "-out", enc)
         u = sh("gh", "release", "upload", TAG, enc, "--clobber", "-R", REPO)

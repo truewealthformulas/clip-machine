@@ -312,13 +312,27 @@
    "file": "KT_CREDIT/01_housingtoomuch_58s.mp4",
    "caption": "The old cash rule almost nobody follows anymore.\n\nIf you can't pay for it with cash, Kevin says you can't afford it, with the possible exception of a house and a car.\n\nThen he looks at housing. Many people hand too large a share of their income to the home once you add the mortgage, insurance and upkeep.\n\nHe's not a financial planner and says so. It's common sense to apply to your own situation.\n\nWhat share of your income goes to housing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #budget #money #kevintrudeau",
    "bytes": 24538353,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610142346371A814E892A9378350468'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T19:25",
    "cta_keyword": "GOALS",
    "cta_variant": 12,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/3504223623072957/",
+    "instagram": "https://www.instagram.com/reel/Defl-hRgmac/",
+    "youtube": "https://youtube.com/shorts/TTICSk707Uc"
+   },
+   "caption_at_post": "The old cash rule almost nobody follows anymore.\n\nIf you can't pay for it with cash, Kevin says you can't afford it, with the possible exception of a house and a car.\n\nThen he looks at housing. Many people hand too large a share of their income to the home once you add the mortgage, insurance and upkeep.\n\nHe's not a financial planner and says so. It's common sense to apply to your own situation.\n\nWhat share of your income goes to housing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #budget #money #kevintrudeau",
+   "posted_at": "2026-10-14T19:46"
   },
   {
    "file": "KT_CREDIT/01_reportingdate_50s.mp4",

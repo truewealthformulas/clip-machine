@@ -286,13 +286,27 @@
    "file": "KT_CREDIT/01_chargecardhistory_54s.mp4",
    "caption": "There was a time nobody carried a credit card. Here's what changed.\n\nBack then you had a charge account at the local store, or a charge card from a handful of companies. It was for convenience, so you didn't carry a lot of cash.\n\nKevin explains how different that world was from the one we live in now, and why the difference matters.\n\nWhat do you think changed most between then and today?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
    "bytes": 26645376,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101400225986383EDD82C93F9B20AF'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-13T19:55",
    "cta_keyword": "GOALS",
    "cta_variant": 8,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1755754329050624/",
+    "instagram": "https://www.instagram.com/reel/DedFaM8EkTC/",
+    "youtube": "https://youtube.com/shorts/2Z201LHs5p4"
+   },
+   "caption_at_post": "There was a time nobody carried a credit card. Here's what changed.\n\nBack then you had a charge account at the local store, or a charge card from a handful of companies. It was for convenience, so you didn't carry a lot of cash.\n\nKevin explains how different that world was from the one we live in now, and why the difference matters.\n\nWhat do you think changed most between then and today?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
+   "posted_at": "2026-10-13T20:22"
   },
   {
    "file": "KT_CREDIT/01_housingtoomuch_58s.mp4",

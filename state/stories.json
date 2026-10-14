@@ -14,6 +14,13 @@
    "look": "story--hl_01.mp4",
    "ok": true,
    "status": "posted"
+  },
+  {
+   "date": "2026-10-13",
+   "offer": "call",
+   "look": "photo",
+   "ok": true,
+   "status": "posted"
   }
  ]
 }

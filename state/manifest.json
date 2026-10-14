@@ -428,13 +428,27 @@
    "file": "KT_CREDIT/02_zerobalances_54s.mp4",
    "caption": "What it actually feels like when every card is at zero.\n\nKevin paints the picture: cards at zero, payments current, and some savings set aside for a rainy day.\n\nHe says that kind of order brings a feeling of strength and control, and the confidence carries into every other part of your life.\n\nIt's less about the numbers and more about the peace of mind.\n\nWhat would having zero balances change for you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debtfree #mindset #kevintrudeau",
    "bytes": 26002236,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261014171245FA364B50EB72B120FF42'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T12:40",
    "cta_keyword": "GOALS",
    "cta_variant": 10,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1649392496736554/",
+    "instagram": "https://www.instagram.com/reel/Dee40b3AQl8/",
+    "youtube": "https://youtube.com/shorts/s0vR_EJ0al0"
+   },
+   "caption_at_post": "What it actually feels like when every card is at zero.\n\nKevin paints the picture: cards at zero, payments current, and some savings set aside for a rainy day.\n\nHe says that kind of order brings a feeling of strength and control, and the confidence carries into every other part of your life.\n\nIt's less about the numbers and more about the peace of mind.\n\nWhat would having zero balances change for you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debtfree #mindset #kevintrudeau",
+   "posted_at": "2026-10-14T13:12"
   },
   {
    "file": "KT_MINDSET4/02_choosefeel_61s.mp4",

@@ -320,6 +320,30 @@ ASK_LINES = [
 DEFAULT_OFFER = "https://freeyourwish.YOUR_OFFER_URL"
 
 
+# KEVIN'S FREE LIVE CALL. 13 Oct 2026, the owner: the Trudeau group opened a
+# funnel for Kevin's free Zoom on Sat 17 Oct, 11 am CT - every sign-up through
+# our link is tagged to us, purchase or not. Until the call starts, every caption
+# carries one line for it, just above the hashtags. YouTube gets the real link
+# (it is clickable there); Instagram/Facebook ask for a comment, which the owner
+# answers by hand. After 16:00 UTC on the 17th the line simply stops appearing.
+CALL_END = 1792252800          # 2026-10-17 16:00 UTC = 11 am Central
+CALL_URL = "https://freecallwithkevin.com/?ref=ftad8p"
+
+
+def with_call(platform, cap, now=None):
+    now = time.time() if now is None else now
+    if not cap or now >= CALL_END or "freecallwithkevin" in cap or "Kevin's free live Zoom" in cap:
+        return cap
+    if platform == "youtube":
+        line = f"Kevin's free live Zoom: Saturday Oct 17, 11 am CT. Limited spots. Register free: {CALL_URL}"
+    else:
+        line = "Kevin's free live Zoom: Saturday Oct 17, 11 am CT. Limited spots. Comment CALL and I'll send you the free link."
+    lines = cap.rstrip().split("\n")
+    if lines[-1].strip().startswith("#"):
+        return "\n".join(lines[:-1]).rstrip() + "\n\n" + line + "\n\n" + lines[-1].strip()
+    return cap.rstrip() + "\n\n" + line
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     """The caption rewritten for ONE platform's link rules.
 
@@ -1246,6 +1270,7 @@ def publish(clip, path, public_url, only=None):
                               clip.get("cta_keyword", ""),
                               clip.get("cta_kind", ""),
                               clip.get("cta_variant"))
+            cap = with_call(name, cap)
             res = fn(path, cap, public_url, clip)
         except Exception as e:
             res = f"{type(e).__name__}: {e}"

@@ -466,13 +466,27 @@
    "file": "KT_MINDSET5/01_caddyrich_52s.mp4",
    "caption": "He became a caddy for one reason: to watch how successful people think.\n\nKevin grew up in a blue collar town. So he took a job at a country club where the members were wealthy, and he watched them closely.\n\nThey talked, thought and carried themselves differently. But they were normal people, just like his dad.\n\nThe real difference was how they thought and saw themselves. That's when he knew he could do it too.\n\nWho are you spending your time around?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 23099338,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101413164791441222FD1B9E0A9093'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-14T08:29",
    "cta_keyword": "GOALS",
    "cta_variant": 9,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1125548420054012/",
+    "instagram": "https://www.instagram.com/reel/Deed3yHjcXr/",
+    "youtube": "https://youtube.com/shorts/eu8zLRwo9uM"
+   },
+   "caption_at_post": "He became a caddy for one reason: to watch how successful people think.\n\nKevin grew up in a blue collar town. So he took a job at a country club where the members were wealthy, and he watched them closely.\n\nThey talked, thought and carried themselves differently. But they were normal people, just like his dad.\n\nThe real difference was how they thought and saw themselves. That's when he knew he could do it too.\n\nWho are you spending your time around?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-10-14T09:16"
   },
   {
    "file": "KT_MINDSET5/01_workforself_43s.mp4",

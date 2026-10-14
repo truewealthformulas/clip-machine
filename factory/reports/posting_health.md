@@ -1,7 +1,7 @@
-# Posting health - Wed 14 Oct 2026 13:15
+# Posting health - Wed 14 Oct 2026 17:13
 
-- Posted today: **2** (target 5)
-- Queue: **13** clip(s) = 2.6 days, folders: KT_CREDIT, KT_MANIFESTING, KT_MINDSET, KT_MINDSET6, KT_MINDSET7, KT_PRAYER, KT_RELATIONSHIPS, KT_SUCCESS, KT_WEALTH
+- Posted today: **3** (target 5)
+- Queue: **12** clip(s) = 2.4 days, folders: KT_CREDIT, KT_MANIFESTING, KT_MINDSET, KT_MINDSET6, KT_MINDSET7, KT_PRAYER, KT_RELATIONSHIPS, KT_SUCCESS
 - Login problems: tiktok
 - Retried once (upload glitches): 0
 

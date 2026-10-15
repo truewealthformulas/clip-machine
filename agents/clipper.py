@@ -51,7 +51,15 @@ Follow the rulebook exactly. Above all:
   with And / But / So / Because / That / Which / It / This that depends on what came
   before), and the last line is the payoff (the punchline / the lesson). Never end
   on a setup, a list in progress, or a question that is answered later.
-- 30 to 58 seconds each. Prefer methods, stories, step-by-step teaching, memorable lines.
+- 30 to 58 seconds each, and 30-45 is best: our top reels were watched for 20-38
+  seconds on average, so a tight clip gets watched to the end. Prefer methods,
+  stories, step-by-step teaching, memorable lines.
+- WHAT OUR BEST REELS SHARE (15 Oct 2026 - 314/327 views vs ~1 for the rest):
+  a PARADOX or a DIRECT QUESTION to the viewer as the caption's first line
+  ("Every word he said was true. He still wasn't honest." / "Is there only one
+  person on the planet meant for you?" / "Paying on time may not be enough for
+  your credit score."), a surprise that flips common sense, and LOVE/RELATIONSHIPS
+  or a money rule people get wrong as the topic. Write every first line that way.
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
 - hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a

@@ -129,7 +129,11 @@ def main():
         return
     ig, tok = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
     media = {"video_url": url} if kind == "video" else {"image_url": url}
-    c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok, **media)
+    # Affiliate promotion -> Instagram's "Paid partnership" label (15 Oct 2026).
+    c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok,
+             is_paid_partnership="true", **media)
+    if not c.get("id"):
+        c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok, **media)
     status = "container failed: " + str(c)[:200]
     if c.get("id"):
         for _ in range(40):

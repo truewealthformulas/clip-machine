@@ -696,9 +696,22 @@ def instagram(path, caption, public_url, clip=None, trial=False):
         # accepted and then behaves like an ordinary reel.
         body.pop("share_to_feed", None)
         body["trial_params"] = json.dumps({"graduation_strategy": "MANUAL"})
+    # PAID PARTNERSHIP LABEL. 15 Oct 2026: Instagram flagged six reels as
+    # branded content without the label ("Tu reel parece ser contenido de
+    # marca..."). They ARE affiliate promotions, so every post carries the
+    # label from the moment it is published (Content Publishing API,
+    # is_paid_partnership, Apr 2026). If Instagram ever refuses the field,
+    # post without it rather than not at all - and say so in the status.
+    body["is_paid_partnership"] = "true"
     r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                       data=body)
     d = _j(r)
+    if not d.get("id"):                       # any refusal: try once without the label
+        body.pop("is_paid_partnership", None)
+        r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
+                          data=body)
+        d = _j(r)
+        print(f"  instagram: container refused with the paid-partnership label ({str(d)[:120]}) - retried without it", flush=True)
     if not d.get("id"):
         return f"container failed {r.status_code}: {str(d)[:200]}"
     cid = d["id"]
@@ -795,9 +808,12 @@ def instagram_story(path, public_url, clip=None):
                 story_url = alt
         except Exception:
             pass
-    r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
-                         data={"media_type": "STORIES", "video_url": story_url,
-                               "access_token": tok}))
+    sbody = {"media_type": "STORIES", "video_url": story_url, "access_token": tok,
+             "is_paid_partnership": "true"}          # same label as the reel
+    r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T, data=sbody))
+    if not r.get("id"):
+        sbody.pop("is_paid_partnership")
+        r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T, data=sbody))
     cid = r.get("id")
     if not cid:
         return f"story container failed: {str(r)[:140]}"

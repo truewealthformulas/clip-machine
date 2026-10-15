@@ -650,13 +650,27 @@
    "file": "KT_MANIFESTING/02_invisiblehill_48s.mp4",
    "caption": "If success feels this hard, there may be something you can't see.\n\nKevin uses a picture to explain counter intentions. You walk toward everything you want and wonder why it is so hard. He says it is like carrying 800 pounds on your back, or walking into a hundred mile an hour wind, and you can't see either one.\n\nHis point is that the struggle is not always about effort.\n\nWhat do you think the invisible weight in your own life might be?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 27758275,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610152052291A787938D158D73060CB'}"
+   },
    "cta_kind": "question",
    "style": "E1",
    "scheduled_at": "2026-10-15T16:35",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1745177723226829/",
+    "instagram": "https://www.instagram.com/reel/Deh222Rj3ls/",
+    "youtube": "https://youtube.com/shorts/_dSW0e3B5FU"
+   },
+   "caption_at_post": "If success feels this hard, there may be something you can't see.\n\nKevin uses a picture to explain counter intentions. You walk toward everything you want and wonder why it is so hard. He says it is like carrying 800 pounds on your back, or walking into a hundred mile an hour wind, and you can't see either one.\n\nHis point is that the struggle is not always about effort.\n\nWhat do you think the invisible weight in your own life might be?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
+   "posted_at": "2026-10-15T16:52"
   },
   {
    "file": "KT_SUCCESS/01_decisionaway_44s.mp4",

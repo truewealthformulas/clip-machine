@@ -61,8 +61,17 @@ Follow the rulebook exactly. Above all:
   ("Health" names the topic only - never a cure, disease, weight or medical claim.)
 - prefer moments ABOUT those topics: money, success, wealth, credit/debt, mindset and
   habits, love and relationships, healthy living habits. People stop for these.
+- PREFER CONTRARIAN, DEBATE-STARTING MOMENTS (15 Oct 2026, from the fan page that
+  does this best: its two top reels by far were "a mortgage is a racket" and "your
+  house is too big" - 160-227 likes and 57 comments, vs ~10 for plain advice). Look
+  for Kevin saying something most people believe is wrong, or telling a concrete
+  story with a person, a place and a number. At least half the clips must be one
+  of these. A comment section that argues is what makes Instagram show a reel.
 - captions: the FIRST LINE is a scroll-stopping hook (40-90 characters, a promise or
-  tension the clip pays off; never "Ad", never "Kevin Trudeau on"). Then 2-4 short
+  tension the clip pays off; never "Ad", never "Kevin Trudeau on"). Best: a concrete
+  scene or Kevin's bold claim in plain words ("1,200 square feet. Four people. One
+  bathroom." / "A mortgage is a racket."). The paragraphs RETELL the clip's story or
+  argument in simple sentences, with Kevin in the third person ("Kevin Trudeau says..."). Then 2-4 short
   paragraphs separated by blank lines, ending with ONE question to the viewer. The
   LAST line is hashtags starting with #ad, e.g. "#ad #mindset #success". 300-700
   characters. No links, no @handles, no "comment X", no money amounts.

@@ -760,7 +760,10 @@
    "bytes": 31214613,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-17T19:20",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   }
  ]
 }

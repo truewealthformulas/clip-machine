@@ -475,5 +475,23 @@
     "cta_kind": "offer"
    }
   ]
+ },
+ "mindset_v77l7um": {
+  "source": "v77l7um.mp4",
+  "brand": "KT_MINDSET8",
+  "note": "",
+  "clips": [
+   {
+    "slug": "threerules",
+    "in": 3752.26,
+    "out": 3797.63,
+    "hook": [
+     "3 Money Rules",
+     "Of Discipline"
+    ],
+    "caption": "Why do most people lose money? Kevin names three habits.\n\nHe explains the rules he sets before he sits down at a casino table, and they apply to any risk. First, a clear win goal, and he stops the moment he hits it. Second, a loss limit, a stop he never crosses. Third, a time limit, one hour at most.\n\nKevin calls it a mindset more than a system. Discipline is decided before the game starts.\n\nWhich of the three would you find hardest to keep?\n\n#ad #mindset #money #habits",
+    "cta_kind": "question"
+   }
+  ]
  }
 }

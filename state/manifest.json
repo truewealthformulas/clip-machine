@@ -662,13 +662,27 @@
    "file": "KT_SUCCESS/01_decisionaway_44s.mp4",
    "caption": "Why one firm decision can change how you show up\n\nKevin says the answer to many struggles comes down to choice and decision. His phrase to remember: success is a decision away.\n\nHe also shares a line from Mary Kay Ash, who founded Mary Kay Cosmetics: one person with a commitment is more powerful than a thousand people with an interest.\n\nIn Kevin's view, the moment you say \"I'm going to do it, period,\" everything else starts from there.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #goals",
    "bytes": 15578384,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261015160958D1AE7826427E9017BB62'}"
+   },
    "cta_kind": "question",
    "style": "E1",
    "scheduled_at": "2026-10-15T12:08",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1459863452673256/",
+    "instagram": "https://www.instagram.com/reel/DehWjx2H8d5/",
+    "youtube": "https://youtube.com/shorts/v6XVnEqrjiA"
+   },
+   "caption_at_post": "Why one firm decision can change how you show up\n\nKevin says the answer to many struggles comes down to choice and decision. His phrase to remember: success is a decision away.\n\nHe also shares a line from Mary Kay Ash, who founded Mary Kay Cosmetics: one person with a commitment is more powerful than a thousand people with an interest.\n\nIn Kevin's view, the moment you say \"I'm going to do it, period,\" everything else starts from there.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #goals",
+   "posted_at": "2026-10-15T12:09"
   },
   {
    "file": "KT_SUCCESS/01_dreamnextstep_46s.mp4",

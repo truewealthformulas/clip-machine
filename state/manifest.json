@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -624,13 +624,27 @@
    "file": "KT_MANIFESTING/01_failurehabits_39s.mp4",
    "caption": "Even after you drop a limiting belief, an old habit can keep running the show.\n\nKevin explains that things you have done over and over build neural pathways in the brain. If you did something one way for 10, 15 or 20 years, he says you will likely do it again tomorrow, simply because it is a habit.\n\nThat is why awareness matters as much as belief.\n\nWhat is one habit you repeat without noticing it?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #success #kevintrudeau",
    "bytes": 21511164,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610151321033668F250C9A8BD0F6164'}"
+   },
    "cta_kind": "offer",
    "style": "E1",
    "scheduled_at": "2026-10-15T08:32",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1809514856841647/",
+    "instagram": "https://www.instagram.com/reel/DehDPtiFcLL/",
+    "youtube": "https://youtube.com/shorts/QjmKeMAARuw"
+   },
+   "caption_at_post": "Even after you drop a limiting belief, an old habit can keep running the show.\n\nKevin explains that things you have done over and over build neural pathways in the brain. If you did something one way for 10, 15 or 20 years, he says you will likely do it again tomorrow, simply because it is a habit.\n\nThat is why awareness matters as much as belief.\n\nWhat is one habit you repeat without noticing it?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #success #kevintrudeau",
+   "posted_at": "2026-10-15T09:21"
   },
   {
    "file": "KT_MANIFESTING/02_invisiblehill_48s.mp4",

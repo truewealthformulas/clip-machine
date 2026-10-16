@@ -702,13 +702,27 @@
    "file": "KT_SUCCESS/01_dreamnextstep_46s.mp4",
    "caption": "You can dream big without living in a dream world\n\nKevin shares what a famous chef told him: have a dream, but do not be delusional about it.\n\nWant a private jet? Great, go look at them and let yourself expand. But then come back to reality and ask what the next logical step is. For someone with no job, that step is simple.\n\nDream big, then act on the one step in front of you.\n\nWhat is your next logical step today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #success",
    "bytes": 16577113,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610160102561E0EC1FBE58DED458E09'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-15T20:30",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1114593287729132/",
+    "instagram": "https://www.instagram.com/reel/DeiTiANiNTr/",
+    "youtube": "https://youtube.com/shorts/MaDpshDmbyg"
+   },
+   "caption_at_post": "You can dream big without living in a dream world\n\nKevin shares what a famous chef told him: have a dream, but do not be delusional about it.\n\nWant a private jet? Great, go look at them and let yourself expand. But then come back to reality and ask what the next logical step is. For someone with no job, that step is simple.\n\nDream big, then act on the one step in front of you.\n\nWhat is your next logical step today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #success",
+   "posted_at": "2026-10-15T21:02"
   },
   {
    "file": "KT_MINDSET6/01_choosehappy_44s.mp4",

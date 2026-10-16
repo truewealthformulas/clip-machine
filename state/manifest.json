@@ -754,13 +754,27 @@
    "file": "KT_MINDSET6/01_thepause_51s.mp4",
    "caption": "Your best ideas rarely show up while you are scrolling.\n\nKevin explains that breakthroughs and aha moments happen in the pause. They come right before sleep, right before waking, or in the shower, when the mind goes quiet.\n\nIn that stillness, the subconscious brings up what you need. Constant doing and thinking leaves no room for it.\n\nWhen do your best ideas usually show up?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #habits #kevintrudeau",
    "bytes": 21372784,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261016205218797C75396FC21FA38B10'}"
+   },
    "cta_kind": "question",
    "style": "E1",
    "scheduled_at": "2026-10-16T16:35",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1325878796184076/",
+    "instagram": "https://www.instagram.com/reel/DekbqgZCBxi/",
+    "youtube": "https://youtube.com/shorts/OObziq4gR3k"
+   },
+   "caption_at_post": "Your best ideas rarely show up while you are scrolling.\n\nKevin explains that breakthroughs and aha moments happen in the pause. They come right before sleep, right before waking, or in the shower, when the mind goes quiet.\n\nIn that stillness, the subconscious brings up what you need. Constant doing and thinking leaves no room for it.\n\nWhen do your best ideas usually show up?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #habits #kevintrudeau",
+   "posted_at": "2026-10-16T16:52"
   },
   {
    "file": "KT_MINDSET6/02_controlmind_51s.mp4",

@@ -778,13 +778,27 @@
    "file": "KT_PRAYER/01_fearprayer_38s.mp4",
    "caption": "The biggest prayer mistake starts with a feeling, not a word.\n\nKevin explains that most people pray from desperation, lack and fear. They ask for one specific result because they believe it will finally make them feel better.\n\nThat sense of need, he says, is exactly what gets in the way of a calm, clear connection.\n\nWhen you ask for something, which feeling are you asking from?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
    "bytes": 23444942,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610161623339A167D882B244C72C011'}"
+   },
    "cta_kind": "question",
    "style": "E1",
    "scheduled_at": "2026-10-16T12:11",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1591855932042273/",
+    "instagram": "https://www.instagram.com/reel/Dej84NclQ68/",
+    "youtube": "https://youtube.com/shorts/LMe1afoDLtc"
+   },
+   "caption_at_post": "The biggest prayer mistake starts with a feeling, not a word.\n\nKevin explains that most people pray from desperation, lack and fear. They ask for one specific result because they believe it will finally make them feel better.\n\nThat sense of need, he says, is exactly what gets in the way of a calm, clear connection.\n\nWhen you ask for something, which feeling are you asking from?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
+   "posted_at": "2026-10-16T12:23"
   },
   {
    "file": "KT_MINDSET7/01_createreality_44s.mp4",

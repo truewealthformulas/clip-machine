@@ -728,13 +728,27 @@
    "file": "KT_MINDSET6/01_choosehappy_44s.mp4",
    "caption": "If you will laugh about it later, you can laugh about it now.\n\nKevin explains that we choose whether we are happy or sad, and nobody can make that choice for us unless we allow it. He paints a picture: a car crash, rain, a deserted road, a dead phone and no help in sight.\n\nThe situation is bad either way. What changes is how you meet it. If it will be funny later, it can be funny now.\n\nWhat would change if you chose your mood first?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #happiness #mindset #kevintrudeau",
    "bytes": 18567324,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261016115125BB00E18A2DD45178741D'}"
+   },
    "cta_kind": "question",
    "style": "E1",
    "scheduled_at": "2026-10-16T07:45",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1095166710079893/",
+    "instagram": "https://www.instagram.com/reel/DejdvuujE1v/",
+    "youtube": "https://youtube.com/shorts/tM6whPExJn8"
+   },
+   "caption_at_post": "If you will laugh about it later, you can laugh about it now.\n\nKevin explains that we choose whether we are happy or sad, and nobody can make that choice for us unless we allow it. He paints a picture: a car crash, rain, a deserted road, a dead phone and no help in sight.\n\nThe situation is bad either way. What changes is how you meet it. If it will be funny later, it can be funny now.\n\nWhat would change if you chose your mood first?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #happiness #mindset #kevintrudeau",
+   "posted_at": "2026-10-16T07:51"
   },
   {
    "file": "KT_MINDSET6/01_thepause_51s.mp4",

@@ -912,13 +912,27 @@
    "file": "KT_MINDSET8/02_threerules_45s.mp4",
    "caption": "Why do most people lose money? Kevin names three habits.\n\nHe explains the rules he sets before he sits down at a casino table, and they apply to any risk. First, a clear win goal, and he stops the moment he hits it. Second, a loss limit, a stop he never crosses. Third, a time limit, one hour at most.\n\nKevin calls it a mindset more than a system. Discipline is decided before the game starts.\n\nWhich of the three would you find hardest to keep?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #money #habits",
    "bytes": 22624793,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261017233923229802617DA21A63226D'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-17T19:20",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/29143273368604062/",
+    "instagram": "https://www.instagram.com/reel/DenTlMTlL8r/",
+    "youtube": "https://youtube.com/shorts/ulT3j3RZMxY"
+   },
+   "caption_at_post": "Why do most people lose money? Kevin names three habits.\n\nHe explains the rules he sets before he sits down at a casino table, and they apply to any risk. First, a clear win goal, and he stops the moment he hits it. Second, a loss limit, a stop he never crosses. Third, a time limit, one hour at most.\n\nKevin calls it a mindset more than a system. Discipline is decided before the game starts.\n\nWhich of the three would you find hardest to keep?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #money #habits",
+   "posted_at": "2026-10-17T19:39"
   }
  ]
 }

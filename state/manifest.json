@@ -780,13 +780,27 @@
    "file": "KT_MINDSET6/02_controlmind_51s.mp4",
    "caption": "Viktor Frankl kept one freedom when everything else was taken.\n\nKevin points to Man's Search for Meaning. If we can control our thoughts, we can control our emotions, even when the conditions do not change.\n\nHe adds that there is no real good news or bad news. There is just news, and we put the label on it that makes us happy or sad.\n\nWhat label are you putting on something right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
    "bytes": 21808881,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261017010543A0343B27F8503E04D8EA'}"
+   },
    "cta_kind": "offer",
    "style": "E1",
    "scheduled_at": "2026-10-16T20:31",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1423189292636650/",
+    "instagram": "https://www.instagram.com/reel/Dek4roID1Tt/",
+    "youtube": "https://youtube.com/shorts/Ue6dMuwJka4"
+   },
+   "caption_at_post": "Viktor Frankl kept one freedom when everything else was taken.\n\nKevin points to Man's Search for Meaning. If we can control our thoughts, we can control our emotions, even when the conditions do not change.\n\nHe adds that there is no real good news or bad news. There is just news, and we put the label on it that makes us happy or sad.\n\nWhat label are you putting on something right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
+   "posted_at": "2026-10-16T21:05"
   },
   {
    "file": "KT_PRAYER/01_fearprayer_38s.mp4",

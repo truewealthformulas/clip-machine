@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -937,13 +937,14 @@
   {
    "file": "KT_MINDSET9/01_dreamvsdelusion_46s.mp4",
    "caption": "A big dream only works when you come back to earth.\n\nKevin Trudeau explains the difference between a dream that works and plain delusion. Dreaming big stretches you like a rubber band, but you can't live in the dream world.\n\nAfter you dream, Kevin says, look at where you are now and ask what the next logical step is. Then set that as your next goal and go after it.\n\nIt is a step closer, even if it is not the whole dream yet.\n\nDo you dream big and then take the next step, or only one of the two?\n\n#ad #goals #success #kevintrudeau",
-   "bytes": 17891228,
+   "bytes": 13446022,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-18T15:20",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "E1"
   },
   {
    "file": "KT_MINDSET9/01_goalsweetspot_33s.mp4",
@@ -973,24 +974,26 @@
   {
    "file": "KT_MINDSET9/01_listenmoretalkless_58s.mp4",
    "caption": "If you want to be interesting, be interested.\n\nKevin Trudeau shares a story from a lecture on Dale Carnegie's How to Win Friends and Influence People. Carnegie's point is that we have two ears and one mouth and should use them in proportion.\n\nAsk questions and listen more than you talk, because everyone's favorite subject is themselves. Get people talking about themselves and they will like you.\n\nWho is the best listener you know?\n\n#ad #relationships #love #kevintrudeau",
-   "bytes": 22698537,
+   "bytes": 17143736,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-18T19:35",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "E1"
   },
   {
    "file": "KT_MINDSET9/02_liberacebook_44s.mp4",
    "caption": "Kevin says one book turned a struggling pianist into a star.\n\nKevin Trudeau tells the story of Liberace. He was flamboyant and had a nice smile, but he was not a very good piano player and was not making it.\n\nThen he read a book called The Magic of Believing. Kevin says that within one year Liberace became one of the best-known entertainers in the world, with his own TV show.\n\nWhat's one book that changed how you think?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 16488347,
+   "bytes": 12479724,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-18T11:52",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "E1"
   }
  ]
 }

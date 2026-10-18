@@ -940,7 +940,10 @@
    "bytes": 17891228,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-18T15:20",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_MINDSET9/01_goalsweetspot_33s.mp4",
@@ -948,7 +951,10 @@
    "bytes": 14048737,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-18T07:22",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MINDSET9/01_listenmoretalkless_58s.mp4",
@@ -956,7 +962,10 @@
    "bytes": 22698537,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-18T19:35",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MINDSET9/02_liberacebook_44s.mp4",
@@ -964,7 +973,10 @@
    "bytes": 16488347,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-18T11:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

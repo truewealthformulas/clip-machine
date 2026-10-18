@@ -938,13 +938,27 @@
    "file": "KT_MINDSET9/01_dreamvsdelusion_46s.mp4",
    "caption": "A big dream only works when you come back to earth.\n\nKevin Trudeau explains the difference between a dream that works and plain delusion. Dreaming big stretches you like a rubber band, but you can't live in the dream world.\n\nAfter you dream, Kevin says, look at where you are now and ask what the next logical step is. Then set that as your next goal and go after it.\n\nIt is a step closer, even if it is not the whole dream yet.\n\nDo you dream big and then take the next step, or only one of the two?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #kevintrudeau",
    "bytes": 13446022,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261018194304BA3903B5528146A74E31'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-18T15:20",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/29919734047615549/",
+    "instagram": "https://www.instagram.com/reel/DepdTUZFYCe/",
+    "youtube": "https://youtube.com/shorts/_G20emJf20U"
+   },
+   "caption_at_post": "A big dream only works when you come back to earth.\n\nKevin Trudeau explains the difference between a dream that works and plain delusion. Dreaming big stretches you like a rubber band, but you can't live in the dream world.\n\nAfter you dream, Kevin says, look at where you are now and ask what the next logical step is. Then set that as your next goal and go after it.\n\nIt is a step closer, even if it is not the whole dream yet.\n\nDo you dream big and then take the next step, or only one of the two?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #kevintrudeau",
+   "posted_at": "2026-10-18T15:43"
   },
   {
    "file": "KT_MINDSET9/01_goalsweetspot_33s.mp4",

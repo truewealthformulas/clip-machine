@@ -949,12 +949,26 @@
    "file": "KT_MINDSET9/01_goalsweetspot_33s.mp4",
    "caption": "The right goal is big enough to excite you, small enough to hit.\n\nKevin Trudeau explains the sweet spot for a target: big enough to excite you, but small enough that you know you can actually achieve it.\n\nThat is different from the dream. A dream can be huge and far away. The target is the next step that makes you say, I can do that.\n\nIs your current goal in the sweet spot?\n\n#ad #goals #success #kevintrudeau",
    "bytes": 14048737,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101811454138397CBE2357FB91C79D'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-18T07:22",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1575627487913015/",
+    "instagram": "https://www.instagram.com/reel/Deomtz4gLar/",
+    "youtube": "https://youtube.com/shorts/Acr-irwTAC4"
+   },
+   "caption_at_post": "The right goal is big enough to excite you, small enough to hit.\n\nKevin Trudeau explains the sweet spot for a target: big enough to excite you, but small enough that you know you can actually achieve it.\n\nThat is different from the dream. A dream can be huge and far away. The target is the next step that makes you say, I can do that.\n\nIs your current goal in the sweet spot?\n\n#ad #goals #success #kevintrudeau",
+   "posted_at": "2026-10-18T07:45"
   },
   {
    "file": "KT_MINDSET9/01_listenmoretalkless_58s.mp4",

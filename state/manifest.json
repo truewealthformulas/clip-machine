@@ -987,13 +987,27 @@
    "file": "KT_MINDSET9/02_liberacebook_44s.mp4",
    "caption": "Kevin says one book turned a struggling pianist into a star.\n\nKevin Trudeau tells the story of Liberace. He was flamboyant and had a nice smile, but he was not a very good piano player and was not making it.\n\nThen he read a book called The Magic of Believing. Kevin says that within one year Liberace became one of the best-known entertainers in the world, with his own TV show.\n\nWhat's one book that changed how you think?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 12479724,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610181601065EF97DDAA87894A2BBFA'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-18T11:52",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "style": "E1"
+   "style": "E1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1400781485553026/",
+    "instagram": "https://www.instagram.com/reel/DepD4xTjH-Q/",
+    "youtube": "https://youtube.com/shorts/o0bFc1E0zRY"
+   },
+   "caption_at_post": "Kevin says one book turned a struggling pianist into a star.\n\nKevin Trudeau tells the story of Liberace. He was flamboyant and had a nice smile, but he was not a very good piano player and was not making it.\n\nThen he read a book called The Magic of Believing. Kevin says that within one year Liberace became one of the best-known entertainers in the world, with his own TV show.\n\nWhat's one book that changed how you think?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
+   "posted_at": "2026-10-18T12:01"
   }
  ]
 }

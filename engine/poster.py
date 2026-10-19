@@ -344,7 +344,56 @@ def with_call(platform, cap, now=None):
     return cap.rstrip() + "\n\n" + line
 
 
+# THE INSTAGRAM CAPTION, SHORT AND LED BY ONE ASK. 19 Oct 2026, the owner: "let
+# replicate that", after we studied the two Kevin pages that work.
+# @thecreationformula (45K): its 326K-view reel opens with
+#   Comment "AUDIO" to get instant free access to Kevin Trudeau's ... audio program
+# and drew 9,113 comments; the same page's reels without it sit at a few hundred.
+# @trudeaumanifestation (22K): one line and two or three hashtags, every day.
+# Ours buried the ask under three paragraphs, a highlight line and two questions.
+# So on Instagram (main account only): the ask FIRST, one fixed word everywhere
+# (a viewer who sees AUDIO again knows what it gets), then the hook line, then
+# the clip's question, then at most 4 hashtags with #ad first. The owner sends
+# the link to every AUDIO comment himself (his choice, 14 Oct).
+IG_KEYWORD = os.environ.get("KT_IG_KEYWORD", "AUDIO").strip().upper() or "AUDIO"
+IG_ASK = ("Comment \u201c{kw}\u201d to get access to Kevin Trudeau\u2019s legendary "
+          "audio training \U0001F525\u2b07\ufe0f")
+
+
+def ig_short(caption):
+    lines = [l.strip() for l in (caption or "").split("\n")]
+    skip = set(ASK_LINES) | {
+        "Kevin\u2019s free training, Your Wish Is Your Command, is in my highlights."}
+    try:
+        import sys as _s
+        _s.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "agents"))
+        import offers as _o
+        skip |= set(_o.LINES.values())
+    except Exception:
+        pass
+    body = [l for l in lines if l and not l.startswith("#") and l not in skip
+            and not l.lower().startswith("comment ") and "http" not in l
+            and "in my highlights" not in l and "Kevin's free live Zoom" not in l]
+    tags = " ".join(l for l in lines if l.startswith("#")).split()
+    if not body:
+        return caption
+    hook = body[0]
+    question = next((l for l in reversed(body[1:]) if l.endswith("?")), "")
+    tags = ["#ad"] + [t for t in tags if t.lower() != "#ad"][:3]
+    out = [IG_ASK.format(kw=IG_KEYWORD), "", hook]
+    if question:
+        out += ["", question]
+    return "\n".join(out + ["", " ".join(tags)])
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
+    if platform == "instagram" and cred_prefix(brand) in FALLBACK_BRANDS \
+            and os.environ.get("KT_IG_SHORT", "1") == "1":
+        return ig_short(caption)
+    return _caption_for(platform, caption, brand, keyword, ask, variant)
+
+
+def _caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     """The caption rewritten for ONE platform's link rules.
 
     3 SEPT 2026, OWNER'S CATCH AND IT IS A REAL ONE. One caption was sent to all

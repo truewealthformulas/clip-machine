@@ -28,7 +28,7 @@ import common as C      # noqa: E402
 import offers as O      # noqa: E402
 import reviewer as R    # noqa: E402
 
-POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "5"))
+POSTS_PER_DAY = int(os.environ.get("POSTS_PER_DAY", "3"))
 TARGET_DAYS = int(os.environ.get("TARGET_DAYS", "7"))
 MAX_EPISODES = int(sys.argv[sys.argv.index("--max-episodes") + 1]) if "--max-episodes" in sys.argv \
     else int(os.environ.get("MAX_EPISODES_PER_RUN", "3"))
@@ -60,6 +60,11 @@ Follow the rulebook exactly. Above all:
   person on the planet meant for you?" / "Paying on time may not be enough for
   your credit score."), a surprise that flips common sense, and LOVE/RELATIONSHIPS
   or a money rule people get wrong as the topic. Write every first line that way.
+- KEVIN TRUDEAU MUST BE THE ONE TALKING. Some episodes are interviews or other
+  people teaching his ideas; the transcript does not say who speaks. Only use
+  runs of lines that are clearly Kevin himself (first person about his own life,
+  his books, "I" stories) - never the host's questions or a guest's answer.
+  Every clip is also face-checked after rendering and dropped if it is not him.
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
 - hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a
@@ -101,13 +106,48 @@ def pending_plans():
     return [k for k in C.plan_files() if k not in done and C.plan_age_hours(k) < PENDING_GRACE_H]
 
 
+MAX_PASSES = int(os.environ.get("CLIPPER_MAX_PASSES", "4"))
+
+
+def used_ranges(vid):
+    """[(in, out), ...] already planned from this episode, by any plan."""
+    out = []
+    for k in C.plan_files():
+        try:
+            p = C.load_plan(k)
+        except Exception:
+            continue
+        if p.get("source", "")[:-4] != vid:
+            continue
+        out += [(float(c["in"]), float(c["out"])) for c in p.get("clips", []) if "in" in c]
+    return sorted(out)
+
+
+def passes(vid):
+    n = 0
+    for k in C.plan_files():
+        try:
+            n += C.load_plan(k).get("source", "")[:-4] == vid
+        except Exception:
+            pass
+    return n
+
+
 def candidates(idx):
+    """Episodes to plan: never-planned ones first, then MORE PASSES on planned ones.
+
+    19 Oct 2026: the queue ran dry. Each episode was planned once and gave ~3
+    clips, while a 30-80 minute episode holds many more moments; with Rumble
+    blocking new downloads there was nothing left to cut. An episode now gets up
+    to MAX_PASSES plans, each told which minutes are already used.
+    """
     planned = C.planned_sources()
     out = []
     for vid, e in idx.items():
         if e.get("status") != "stocked" or e.get("test") or not e.get("transcript"):
             continue
-        if vid in planned:
+        if vid in planned and (passes(vid) >= MAX_PASSES
+                               or float(e.get("duration", 0)) < 20 * 60):
             continue
         if e.get("height", 1080) < 1080:
             continue
@@ -118,7 +158,7 @@ def candidates(idx):
     # owner: money, health, success - "things that people will like to see").
     hot = re.compile(r"money|rich|wealth|success|credit|debt|business|mind|habit|secret|"
                      r"love|relationship|marri|health|energy|happ|freedom|confiden|goal", re.I)
-    out.sort(key=lambda ve: (bool(hot.search(ve[1].get("title", ""))),
+    out.sort(key=lambda ve: (ve[0] not in planned, -passes(ve[0]), bool(hot.search(ve[1].get("title", ""))),
                              float(ve[1].get("stops_per_min") or 0) >= 8,
                              ve[1].get("uploaded", "")), reverse=True)
     return out
@@ -134,18 +174,28 @@ def brand_for(topic, taken):
 
 def key_for(vid, topic):
     base = re.sub(r"[^a-z0-9]", "", (topic or "ep").lower())[:16] or "ep"
-    key = f"{base}_{vid}"
+    key, n = f"{base}_{vid}", 2
+    while os.path.exists(os.path.join(C.PLANS, f"{key}.json")):
+        key, n = f"{base}_{vid}_p{n}", n + 1
     return key
+
+
+def overlaps(c, used):
+    return any(c["in"] < b - 2 and c["out"] > a + 2 for a, b in used)
 
 
 def write_plan(vid, entry, taken_brands):
     text = C.sentences(C.transcript(vid, entry))
+    used = used_ranges(vid)
     if len(text) < 2000:
         C.log(f"  {vid}: transcript too short ({len(text)} chars) - skipped")
         return None
     user = (C.read("AGENT_RULES.md") +
             f"\n\n## Episode\nTitle: {entry.get('title', '')}\n"
             f"Duration: {float(entry.get('duration', 0)) / 60:.0f} min\n\n"
+            + (("## ALREADY USED - these parts became clips before. Choose ONLY moments "
+                "that do not overlap them:\n" + ", ".join(f"[{a:.0f}-{b:.0f}]" for a, b in used)
+                + "\n\n") if used else "") +
             f"## Transcript (one sentence per line: [start-end seconds] sentence)\n{text}")
     try:
         got = C.ask_json(SYSTEM, user, max_tokens=8000)
@@ -164,6 +214,7 @@ def write_plan(vid, entry, taken_brands):
                           "cta_kind": c.get("cta_kind") if c.get("cta_kind") in ("offer", "question") else "question"})
         except (KeyError, TypeError, ValueError):
             continue
+    clips = [c for c in clips if not overlaps(c, used)]
     # Point each clip at the highlight link that fits it (agents/offers.py).
     for c in clips:
         c["caption"] = O.add(c["caption"], O.pick(" ".join(c["hook"]), c["caption"], topic))

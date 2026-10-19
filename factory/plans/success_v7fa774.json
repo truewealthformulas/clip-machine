@@ -1,0 +1,29 @@
+{
+ "source": "v7fa774.mp4",
+ "brand": "KT_SUCCESS2",
+ "test": false,
+ "clips": [
+  {
+   "slug": "fivepeople",
+   "in": 418.8,
+   "out": 450.0,
+   "hook": [
+    "Why Five People",
+    "Set Your Money"
+   ],
+   "caption": "Why the people around you shape how you think about money.\n\nKevin explains what he says Aristotle and NASA both pointed to: you become like the five people you spend the most time with, listen to and watch.\n\nHe says you copy their speech, their thinking and even their body language without choosing to. Podcasts, audios and biographies of wealthy people, he adds, let you tap into that energy too.\n\nWho are your five?\n\n#ad #money #success #habits",
+   "cta_kind": "offer"
+  },
+  {
+   "slug": "memoryinstitute",
+   "in": 1960.1,
+   "out": 1991.0,
+   "hook": [
+    "How Memory Built",
+    "His First Business"
+   ],
+   "caption": "Knowledge is only power if you can remember it.\n\nKevin explains that the first training company he launched taught memory, because his own memory was terrible. He took the course, it helped him, and he saw a business in helping students and professionals.\n\nHis logic: knowledge only becomes power when it's used, and it can't be used unless you remember it.\n\nWhat would change if you trained your memory?\n\n#ad #business #success #habits",
+   "cta_kind": "question"
+  }
+ ]
+}

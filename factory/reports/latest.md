@@ -1,7 +1,7 @@
 ## luck_v768cno: 0 of 3 clip(s) passed every gate
 
 
-## 2026-10-19 08:07
+## 2026-10-19 09:39
 luck_v768cno__s1 (KT_LUCK): 1 of 1 passed pre-render gates
 
 RENDER luck_v768cno__s1
@@ -9,17 +9,27 @@ RENDER luck_v768cno__s1
 
 
 
-## 2026-10-19 08:13
+## 2026-10-19 09:49
   drop KT_LUCK/createluck: ending - cuts mid-sentence
   drop KT_LUCK/richpicksluck: ending - cuts mid-sentence
 luck_v768cno__s0 (KT_LUCK): 0 of 2 passed pre-render gates
 nothing to build
 
 
+## mindset_v72tj4g: 0 of 1 clip(s) passed every gate
+
+
+## 2026-10-19 09:39
+mindset_v72tj4g__s0 (KT_MINDSET10): 1 of 1 passed pre-render gates
+
+RENDER mindset_v72tj4g__s0
+  FAIL 01_nailpain_47s.mp4: [????] 01_nailpain_47s.mp4                                    only 3 pause-anchored captions - too few to judge
+
+
 ## mindset_v77w5tc: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-19 08:11
+## 2026-10-19 09:50
   drop KT_MINDSET2/raisefrequency: hook - 789px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v77w5tc__s0 (KT_MINDSET2): 1 of 2 passed pre-render gates
 
@@ -30,7 +40,7 @@ RENDER mindset_v77w5tc__s0
 ## mindset_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-19 08:18
+## 2026-10-19 09:50
   drop KT_MINDSET3/champattitude: ending - cuts mid-sentence
 mindset_v7fa774__s0 (KT_MINDSET3): 1 of 2 passed pre-render gates
 

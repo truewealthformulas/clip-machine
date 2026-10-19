@@ -34,7 +34,7 @@ jobs:
       FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       AGENT_MODEL: ${{ vars.AGENT_MODEL || 'claude-sonnet-5-5' }}
-      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '5' }}
+      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '3' }}
       TARGET_DAYS: ${{ vars.TARGET_DAYS || '7' }}
       AGENT_TEST_PLANS: ${{ inputs.test && '1' || '0' }}
       MAX_EPISODES_PER_RUN: ${{ inputs.max_episodes || '3' }}

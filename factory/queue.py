@@ -22,6 +22,8 @@ for r in results:
     by_plan.setdefault(r["plan"], []).append(r)
 sys.path.insert(0, K)
 import kt_lock  # noqa: E402  (mark published clips before anything re-renders)
+sys.path.insert(0, HERE)
+import kevin_face  # noqa: E402  (is it Kevin on screen?)
 print("locked now published:", kt_lock.sync())
 series = json.load(open(SERIES))
 done = json.load(open(os.path.join(HERE, "plans", "_done.json")))
@@ -29,7 +31,26 @@ brands, kinds, report = set(), {}, []
 for plan, rs in sorted(by_plan.items()):
     p = json.load(open(os.path.join(HERE, "plans", f"{plan}.json")))
     passed = [c for r in sorted(rs, key=lambda r: r["shard"]) for c in r["clips"]]
+    built = bool(passed)
+    # KEVIN MUST BE THE FACE ON SCREEN (factory/kevin_face.py, 19 Oct 2026): six
+    # posted clips named Kevin over another man. A clip that fails is dropped
+    # here, before it can be uploaded or queued.
+    not_him = set()
+    for r in rs:
+        for f in r["files"]:
+            if not f.endswith(".mp4") or "__" in f:
+                continue
+            c = next((c for c in passed if f"_{c['slug']}_" in f), None)
+            if not c:
+                continue
+            ok, why = kevin_face.check(os.path.join(root, f"shard-{plan}-{r['shard']}", f))
+            print(f"face check {plan}/{f}: {'Kevin' if ok else 'NOT KEVIN'} - {why}", flush=True)
+            if not ok:
+                not_him.add(c["slug"])
+                report.append(f"- dropped {f}: not Kevin on screen ({why})")
+    passed = [c for c in passed if c["slug"] not in not_him]
     report.append(f"## {plan}: {len(passed)} of {len(p['clips'])} clip(s) passed every gate"
+                  + (f" ({len(not_him)} dropped: not Kevin on screen)" if not_him else "")
                   + (" (TEST - not queued)" if p.get("test") else ""))
     for r in rs:
         rep = os.path.join(root, f"shard-{plan}-{r['shard']}", "report.md")
@@ -38,7 +59,9 @@ for plan, rs in sorted(by_plan.items()):
     # ONLY a plan that actually produced a clip (or a test) counts as built.
     # 19 Sept: an infrastructure failure marked all 8 clips done and they were
     # silently lost. A plan that yields nothing stays pending and is retried.
-    if passed or p.get("test"):
+    # A plan whose clips rendered but were all someone else is finished too -
+    # rebuilding it would only find the same faces again.
+    if built or p.get("test"):
         done.append(plan)
     if p.get("test") or not passed:
         continue
@@ -51,6 +74,8 @@ for plan, rs in sorted(by_plan.items()):
     os.makedirs(bdir, exist_ok=True)
     for r in rs:
         for f in r["files"]:
+            if any(f"_{s}_" in f for s in not_him):
+                continue
             shutil.copy(os.path.join(root, f"shard-{plan}-{r['shard']}", f), bdir)
             if f.endswith(".mp4") and "__" not in f and "cta_kind" in str(passed):
                 slug = next((c for c in passed if f"_{c['slug']}_" in f), {})

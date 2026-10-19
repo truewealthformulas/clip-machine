@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""THE SUCCESS CLUB LOOK (style E): Kevin full screen, the hook in a black box for 3 s.
+"""THE SUCCESS CLUB LOOK.
+
+STYLE T (19 Oct 2026, current): the TITLE BAR. A black band across the top with
+the hook in white + gold for the WHOLE clip; the video sits under it (90 px of
+ceiling and 240 px of desk trimmed, never his face). Copied from the two Kevin
+pages that work (@trudeaumanifestation, @thecreationformula), where the title
+stays on screen so the hook is in the grid, in the first second and all the way
+through. The owner: "let replicate that". Style E below is kept for --style E.
+
+STYLE E (10 Oct 2026): Kevin full screen, the hook in a black box for 3 s.
 
 10 Oct 2026, the owner, after style C (a bar over the picture) hid Kevin's face
 and style D (video on top, hook below) was previewed: "the black frame with
@@ -37,7 +46,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = "E1"
+STYLE = os.environ.get("RESTYLE_STYLE", "T1")
+BAND, TRIM_TOP = 330, 90  # style T: title band height; ceiling trimmed above the video
 W, H = 1080, 1920
 GOLD, INK, WHITE, GREY = (245, 197, 24), (11, 20, 48), (255, 255, 255), (165, 165, 165)   # INK: midnight navy #0B1430 (owner, 12 Oct)
 HOOK_SECS = 4.5          # how long the FACTORY's old card stayed (used to detect it)
@@ -121,6 +131,25 @@ def card_png(hook, out):
     im.save(out)
 
 
+def band_png(hook, out):
+    """Style T: the hook in the black title band, white line 1 + gold line 2."""
+    lines = [l.strip().upper() for l in hook if l.strip()][:2]
+    if len(lines) == 1 and len(lines[0]) > 16:
+        words = lines[0].split()
+        k = (len(words) + 1) // 2
+        lines = [" ".join(words[:k]), " ".join(words[k:])]
+    im = Image.new("RGBA", (W, BAND), (0, 0, 0, 255))
+    d = ImageDraw.Draw(im)
+    f = min((fit(d, l, 78, W - 120) for l in lines), key=lambda x: x.size)
+    lh = int(f.size * 1.2)
+    y = (BAND - lh * len(lines)) // 2 + 8
+    for i, l in enumerate(lines):
+        w = d.textlength(l, font=f)
+        d.text(((W - w) / 2, y), l, font=f, fill=(WHITE if i == 0 and len(lines) > 1 else GOLD) + (255,))
+        y += lh
+    im.save(out)
+
+
 def duration(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                                 capture_output=True, text=True, check=True).stdout.strip())
@@ -139,6 +168,15 @@ def restyle(src, hook, dst, check=True):
         # A clip that still has it waits for a clean re-render instead.
         raise RuntimeError(f"old hook card still burned in at {card}")
     png = dst + ".png"
+    if STYLE.startswith("T"):
+        band_png(hook, png)
+        sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-i", png, "-filter_complex",
+           f"[0:v]scale={W}:{H},crop={W}:{H - BAND}:0:{TRIM_TOP},pad={W}:{H}:0:{BAND}:black[b];"
+           f"[b][1:v]overlay=0:0,format=yuv420p[v]",
+           "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+           "-c:a", "copy", "-movflags", "+faststart", dst)
+        os.remove(png)
+        return None
     card_png(hook, png)
     dur = duration(src)
     sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-loop", "1", "-framerate", "30",

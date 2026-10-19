@@ -1043,7 +1043,10 @@
    "bytes": 24283605,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-20T13:26",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_MINDSET11/02_attitudegivesmoney_56s.mp4",
@@ -1051,7 +1054,10 @@
    "bytes": 34290270,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-20T19:18",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MINDSET11/02_causeeffectboat_36s.mp4",
@@ -1059,7 +1065,10 @@
    "bytes": 20914647,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-19T19:26",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MINDSET12/02_lovetwowhole_41s.mp4",
@@ -1067,7 +1076,10 @@
    "bytes": 29535647,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-20T07:57",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

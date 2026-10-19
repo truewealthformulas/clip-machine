@@ -1065,13 +1065,27 @@
    "file": "KT_MINDSET11/02_causeeffectboat_36s.mp4",
    "caption": "You can stop drifting once you find the key to the motor.\n\nKevin Trudeau uses a simple picture. You are in a boat with no motor and no sail, and the wind and waves push you wherever they like.\n\nThen you realize you hold the key. You turn the motor on, put the throttle down, and you are at cause over the waves instead of at effect.\n\nKevin says the same is true of life. Taking control starts with knowing you have the power.\n\nWhere in your life do you feel at the mercy of the waves?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 13940862,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101923482036AAE36778B6FD52DA4C'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-19T19:26",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2035102083835582/",
+    "instagram": "https://www.instagram.com/reel/DeseNF9FBjL/",
+    "youtube": "https://youtube.com/shorts/sPXWVNRljK8"
+   },
+   "caption_at_post": "You can stop drifting once you find the key to the motor.\n\nKevin Trudeau uses a simple picture. You are in a boat with no motor and no sail, and the wind and waves push you wherever they like.\n\nThen you realize you hold the key. You turn the motor on, put the throttle down, and you are at cause over the waves instead of at effect.\n\nKevin says the same is true of life. Taking control starts with knowing you have the power.\n\nWhere in your life do you feel at the mercy of the waves?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
+   "posted_at": "2026-10-19T19:48"
   },
   {
    "file": "KT_MINDSET12/02_lovetwowhole_41s.mp4",

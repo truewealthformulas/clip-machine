@@ -1105,7 +1105,10 @@
    "bytes": 24844128,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-21T08:41",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS3/01_picturegoals_38s.mp4",
@@ -1113,7 +1116,10 @@
    "bytes": 26753377,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-21T13:27",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_SUCCESS3/01_samefeeling_40s.mp4",
@@ -1121,7 +1127,10 @@
    "bytes": 30667717,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-21T19:22",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_SUCCESS3/02_eightwords_45s.mp4",
@@ -1129,7 +1138,10 @@
    "bytes": 29752390,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T09:08",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_SUCCESS3/02_loveyourlife_52s.mp4",
@@ -1137,7 +1149,10 @@
    "bytes": 34977892,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T13:06",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   }
  ]
 }

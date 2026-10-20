@@ -1091,13 +1091,27 @@
    "file": "KT_MINDSET12/02_lovetwowhole_41s.mp4",
    "caption": "Why being someone's better half may not be love.\n\nKevin Trudeau says you shouldn't want a partner to be your better half. Each person should be whole, not needing the other.\n\nTogether, he says, two whole people create a new entity called us. If you are fine on your own, you don't need a partner clinging to you.\n\nKevin says a power couple comes from feeling good about who you are, not needing anything to complete you.\n\nDo you see a partner as your other half or as a teammate?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #love #relationships #kevintrudeau",
    "bytes": 20988708,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026102012080395BD9627CF6F592B313A'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-20T07:57",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2558235924618886/",
+    "instagram": "https://www.instagram.com/reel/Dety11kD7KP/",
+    "youtube": "https://youtube.com/shorts/1fDKW0Wd9xU"
+   },
+   "caption_at_post": "Why being someone's better half may not be love.\n\nKevin Trudeau says you shouldn't want a partner to be your better half. Each person should be whole, not needing the other.\n\nTogether, he says, two whole people create a new entity called us. If you are fine on your own, you don't need a partner clinging to you.\n\nKevin says a power couple comes from feeling good about who you are, not needing anything to complete you.\n\nDo you see a partner as your other half or as a teammate?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #love #relationships #kevintrudeau",
+   "posted_at": "2026-10-20T08:08"
   },
   {
    "file": "KT_SUCCESS3/01_oneword_37s.mp4",

@@ -1067,13 +1067,27 @@
    "file": "KT_MINDSET11/02_attitudegivesmoney_56s.mp4",
    "caption": "Money doesn't give you the attitude. The attitude gives you the money.\n\nKevin Trudeau says most people think they will feel better once they have the car, the house and the life they want.\n\nHe says that is backwards. When he lived in a small one bedroom apartment, he still told himself he loved his life and loved being himself.\n\nA wealthy man once told him to walk into a place like he owns it. Kevin objected that he would have that attitude if he had the money. The man said the attitude comes first.\n\nCan you feel good now, before anything changes?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
    "bytes": 23037316,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610202346057A2C8E6E4AA3BF58F6F1'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-20T19:18",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1407033404423937/",
+    "instagram": "https://www.instagram.com/reel/DevCrseEzhe/",
+    "youtube": "https://youtube.com/shorts/tWBkUUdpiAQ"
+   },
+   "caption_at_post": "Money doesn't give you the attitude. The attitude gives you the money.\n\nKevin Trudeau says most people think they will feel better once they have the car, the house and the life they want.\n\nHe says that is backwards. When he lived in a small one bedroom apartment, he still told himself he loved his life and loved being himself.\n\nA wealthy man once told him to walk into a place like he owns it. Kevin objected that he would have that attitude if he had the money. The man said the attitude comes first.\n\nCan you feel good now, before anything changes?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
+   "posted_at": "2026-10-20T19:46"
   },
   {
    "file": "KT_MINDSET11/02_causeeffectboat_36s.mp4",

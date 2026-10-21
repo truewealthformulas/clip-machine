@@ -1,6 +1,6 @@
-# Posting health - Tue 20 Oct 2026 21:22
+# Posting health - Wed 21 Oct 2026 01:15
 
-- Posted today: **3** (target 5)
+- Posted today: **0** (target 5)
 - Queue: **6** clip(s) = 1.2 days, folders: KT_PRAYER2, KT_SUCCESS3
 - Login problems: tiktok
 - Retried once (upload glitches): 0

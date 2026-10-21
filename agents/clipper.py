@@ -65,6 +65,19 @@ Follow the rulebook exactly. Above all:
   runs of lines that are clearly Kevin himself (first person about his own life,
   his books, "I" stories) - never the host's questions or a guest's answer.
   Every clip is also face-checked after rendering and dropped if it is not him.
+- EMOTION DECIDES (21 Oct 2026, the owner, applying Kevin's own rule: "every
+  decision you have ever made is based on emotion, and if you transfer that
+  emotion to the person listening you can motivate them"). Stopping the scroll,
+  watching to the end, commenting and following are all decisions, so:
+  * choose moments where Kevin FEELS something and you can hear it - anger at
+    a lie, pride in a comeback, fear of being broke, love, a story with stakes -
+    over calm explanation. A clip that teaches without feeling is the last pick.
+  * the hook names a FEELING or a desire the viewer already has (fear, regret,
+    pride, being lied to, wanting more) - not a topic label.
+  * the caption's first line makes the viewer feel it first, in plain words,
+    before any explanation ("You were told debt is normal. It was never normal.").
+  * the closing question asks about THEIR life and feeling ("When did you last
+    feel completely sure of yourself?"), never a quiz about the clip.
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
 - hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a

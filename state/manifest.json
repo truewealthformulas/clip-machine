@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1171,13 +1171,27 @@
    "file": "KT_SUCCESS3/01_picturegoals_38s.mp4",
    "caption": "Most people never get precise about what they want.\n\nKevin Trudeau gives the basic manifesting formula in simple steps. First, know exactly what you want. Then see yourself in possession of it in your mind's eye, and feel it as if it were already yours.\n\nHold that for about a minute, then release attachment to the outcome. Kevin says you repeat this cycle several times a day.\n\nHow clearly can you describe what you want?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #kevintrudeau",
    "bytes": 19039683,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610211750168914BE510A99CD3071A9'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-21T13:27",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2087138068602227/",
+    "instagram": "https://www.instagram.com/reel/Dew-yicEtC-/",
+    "youtube": "https://youtube.com/shorts/SlP75m5Ybv8"
+   },
+   "caption_at_post": "Most people never get precise about what they want.\n\nKevin Trudeau gives the basic manifesting formula in simple steps. First, know exactly what you want. Then see yourself in possession of it in your mind's eye, and feel it as if it were already yours.\n\nHold that for about a minute, then release attachment to the outcome. Kevin says you repeat this cycle several times a day.\n\nHow clearly can you describe what you want?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #kevintrudeau",
+   "posted_at": "2026-10-21T13:50"
   },
   {
    "file": "KT_SUCCESS3/01_samefeeling_40s.mp4",

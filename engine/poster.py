@@ -358,9 +358,22 @@ def with_call(platform, cap, now=None):
 IG_KEYWORD = os.environ.get("KT_IG_KEYWORD", "AUDIO").strip().upper() or "AUDIO"
 IG_ASK = ("Comment \u201c{kw}\u201d to get access to Kevin Trudeau\u2019s legendary "
           "audio training \U0001F525\u2b07\ufe0f")
+# EMOTION FIRST (21 Oct 2026, the owner, on Kevin's rule that every decision is
+# emotional). The ask speaks to how the clip made them feel, then names the
+# same word and the same audio training - only the wording rotates, frozen per
+# clip by cta_variant so consecutive posts differ and a repost never changes.
+IG_ASKS = [
+    IG_ASK,
+    "If this hit you, comment \u201c{kw}\u201d and I\u2019ll send you Kevin Trudeau\u2019s "
+    "legendary audio training \U0001F525\u2b07\ufe0f",
+    "Felt that? Comment \u201c{kw}\u201d and Kevin Trudeau\u2019s legendary audio training "
+    "is yours \U0001F525\u2b07\ufe0f",
+    "Ready to stop settling? Comment \u201c{kw}\u201d for Kevin Trudeau\u2019s legendary "
+    "audio training \U0001F525\u2b07\ufe0f",
+]
 
 
-def ig_short(caption):
+def ig_short(caption, variant=None):
     lines = [l.strip() for l in (caption or "").split("\n")]
     skip = set(ASK_LINES) | {
         "Kevin\u2019s free training, Your Wish Is Your Command, is in my highlights."}
@@ -380,7 +393,8 @@ def ig_short(caption):
     hook = body[0]
     question = next((l for l in reversed(body[1:]) if l.endswith("?")), "")
     tags = ["#ad"] + [t for t in tags if t.lower() != "#ad"][:3]
-    out = [IG_ASK.format(kw=IG_KEYWORD), "", hook]
+    v = variant if isinstance(variant, int) else 0
+    out = [IG_ASKS[v % len(IG_ASKS)].format(kw=IG_KEYWORD), "", hook]
     if question:
         out += ["", question]
     return "\n".join(out + ["", " ".join(tags)])
@@ -389,7 +403,7 @@ def ig_short(caption):
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     if platform == "instagram" and cred_prefix(brand) in FALLBACK_BRANDS \
             and os.environ.get("KT_IG_SHORT", "1") == "1":
-        return ig_short(caption)
+        return ig_short(caption, variant)
     return _caption_for(platform, caption, brand, keyword, ask, variant)
 
 

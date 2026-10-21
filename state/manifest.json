@@ -1197,13 +1197,27 @@
    "file": "KT_SUCCESS3/01_samefeeling_40s.mp4",
    "caption": "A tiny trailer, an old car, heavy debt. The same joy?\n\nKevin Trudeau says that once you can truly say I love my life and I love being me, outside conditions stop being the point.\n\nHe describes it as a fun game. Whether you are in a small trailer with a beat-up car and credit card debt, or in a big house, you feel the same way.\n\nKevin says conditions can still change. They just don't run your mood.\n\nCould you feel the same with or without the things you want?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #happiness #freedom #mindset",
    "bytes": 21364779,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261021235055A087FD51DAC7524F4CA2'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-21T19:22",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1609516493354161/",
+    "instagram": "https://www.instagram.com/reel/DexoEnSEpjO/",
+    "youtube": "https://youtube.com/shorts/ZLiPxrCIoVg"
+   },
+   "caption_at_post": "A tiny trailer, an old car, heavy debt. The same joy?\n\nKevin Trudeau says that once you can truly say I love my life and I love being me, outside conditions stop being the point.\n\nHe describes it as a fun game. Whether you are in a small trailer with a beat-up car and credit card debt, or in a big house, you feel the same way.\n\nKevin says conditions can still change. They just don't run your mood.\n\nCould you feel the same with or without the things you want?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #happiness #freedom #mindset",
+   "posted_at": "2026-10-21T19:50"
   },
   {
    "file": "KT_SUCCESS3/02_eightwords_45s.mp4",

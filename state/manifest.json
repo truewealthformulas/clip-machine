@@ -1145,13 +1145,27 @@
    "file": "KT_SUCCESS3/01_oneword_37s.mp4",
    "caption": "One changed word turned a silent ad into a busy mailbox.\n\nKevin Trudeau tells a story from his early business days. He ran a classified ad and got zero orders while spending money on it.\n\nThen he says he cleared an inner block, felt it lift, changed one word in the same ad, and orders began arriving every day.\n\nKevin says he went on to build a mail order business before he turned 18.\n\nWhat small change could shift your next result?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #success #kevintrudeau",
    "bytes": 17347585,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610211306094E90169ED1802C1B9485'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-21T08:41",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "T1"
+   "style": "T1",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1065888423150015/",
+    "instagram": "https://www.instagram.com/reel/DeweRBCDiQz/",
+    "youtube": "https://youtube.com/shorts/5-bMAWhRcXo"
+   },
+   "caption_at_post": "One changed word turned a silent ad into a busy mailbox.\n\nKevin Trudeau tells a story from his early business days. He ran a classified ad and got zero orders while spending money on it.\n\nThen he says he cleared an inner block, felt it lift, changed one word in the same ad, and orders began arriving every day.\n\nKevin says he went on to build a mail order business before he turned 18.\n\nWhat small change could shift your next result?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #success #kevintrudeau",
+   "posted_at": "2026-10-21T09:06"
   },
   {
    "file": "KT_SUCCESS3/01_picturegoals_38s.mp4",

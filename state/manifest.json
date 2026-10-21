@@ -1233,7 +1233,10 @@
    "bytes": 36750426,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-23T13:28",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MINDSET15/02_beautywave_68s.mp4",
@@ -1241,7 +1244,10 @@
    "bytes": 52142382,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T08:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MINDSET16/01_snipething_52s.mp4",
@@ -1249,7 +1255,10 @@
    "bytes": 29185406,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-23T19:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",
@@ -1257,7 +1266,10 @@
    "bytes": 25659999,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-23T08:19",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MINDSET16/02_phonetrap_62s.mp4",
@@ -1265,7 +1277,10 @@
    "bytes": 34435040,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T13:08",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   }
  ]
 }

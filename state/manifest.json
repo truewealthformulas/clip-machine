@@ -1337,7 +1337,10 @@
    "bytes": 27933566,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-22T06:24",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_LUCK2/01_selfimageluck_47s.mp4",
@@ -1345,7 +1348,10 @@
    "bytes": 32263359,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T11:49",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_LUCK2/02_frequencyscience_48s.mp4",
@@ -1353,7 +1359,10 @@
    "bytes": 31993440,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-23T07:04",
+   "cta_keyword": "GOALS",
+   "cta_variant": 6
   },
   {
    "file": "KT_MINDSET19/01_orangetree_46s.mp4",
@@ -1361,7 +1370,10 @@
    "bytes": 29282699,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T09:24",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MINDSET19/01_winnersteam_55s.mp4",
@@ -1369,7 +1381,10 @@
    "bytes": 39349226,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T16:45",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_MINDSET21/01_chooseyourfeeling_46s.mp4",
@@ -1377,7 +1392,10 @@
    "bytes": 31360218,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-22T21:59",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_MINDSET21/02_acknowledgewelcome_42s.mp4",
@@ -1385,7 +1403,10 @@
    "bytes": 30236472,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-22T14:13",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   }
  ]
 }

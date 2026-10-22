@@ -1335,15 +1335,29 @@
    "file": "KT_LUCK2/01_knowwhatyouwant_40s.mp4",
    "caption": "The more specific your wish, the luckier you get.\n\nKevin Trudeau says step one of luck is knowing exactly what you desire. Wanting just \"happiness\" is a start, but the clearer you get, the better.\n\nHe uses relationships as the example: get clear on the kind of relationship you want and the kind of person you want to be with.\n\nHow clearly can you describe what you really want?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #love #kevintrudeau",
    "bytes": 18915256,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026102210524325A1D266F28AD004F40F'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-22T06:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_LUCK2--01_knowwhatyouwant_40s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1299144835641074/",
+    "instagram": "https://www.instagram.com/reel/Deyz0JRiDDZ/",
+    "youtube": "https://youtube.com/shorts/qm5lfOyfljY"
+   },
+   "caption_at_post": "The more specific your wish, the luckier you get.\n\nKevin Trudeau says step one of luck is knowing exactly what you desire. Wanting just \"happiness\" is a start, but the clearer you get, the better.\n\nHe uses relationships as the example: get clear on the kind of relationship you want and the kind of person you want to be with.\n\nHow clearly can you describe what you really want?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #love #kevintrudeau",
+   "posted_at": "2026-10-22T06:52"
   },
   {
    "file": "KT_LUCK2/01_selfimageluck_47s.mp4",

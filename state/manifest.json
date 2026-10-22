@@ -1279,15 +1279,29 @@
    "file": "KT_PRAYER2/02_feelfirst_40s.mp4",
    "caption": "The need fades when the good feeling comes first.\n\nKevin Trudeau points to the apostles asking Jesus how to pray, and to Mark 11:24, which he reads as saying what you want out loud and also forgiving. He describes a series of steps to make that connection.\n\nHis point is that once the connection is made, you stop needing the thing, because you already feel good.\n\nWhat do you think you need before you can feel good?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness",
    "bytes": 19592782,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026102223472855831EAE928F5705A83D'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T19:31",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_PRAYER2--02_feelfirst_40s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/29191033830583706/",
+    "instagram": "https://www.instagram.com/reel/De0MYwFArb6/",
+    "youtube": "https://youtube.com/shorts/nqoqT03t8N4"
+   },
+   "caption_at_post": "The need fades when the good feeling comes first.\n\nKevin Trudeau points to the apostles asking Jesus how to pray, and to Mark 11:24, which he reads as saying what you want out loud and also forgiving. He describes a series of steps to make that connection.\n\nHis point is that once the connection is made, you stop needing the thing, because you already feel good.\n\nWhat do you think you need before you can feel good?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness",
+   "posted_at": "2026-10-22T19:47"
   },
   {
    "file": "KT_MINDSET15/01_moneyrootevil_54s.mp4",

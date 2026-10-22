@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1558,46 +1558,58 @@
   {
    "file": "KT_SUCCESS4/01_whatpainmoves_64s.mp4",
    "caption": "The first step to what you want is knowing your pain.\n\nKevin Trudeau says the first step to creating what you want is knowing your pain. He asks what you are sick and tired of, and what you are completely done tolerating.\n\nHe points to places it can hide: money pressure, emotional ups and downs, fitness, or relationships that repeat the same pattern.\n\nOnce you know what you will not accept, Kevin says, you can clarify what you do want.\n\nWhat is the one thing you are finished with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 44980010,
+   "bytes": 31898576,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T07:13",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "T1",
+   "cover": "KT_SUCCESS4--01_whatpainmoves_64s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_WEALTH4/01_mastermindthird_56s.mp4",
    "caption": "What happens when two minds share one clear purpose.\n\nKevin Trudeau explains the mastermind. Your mind is yours and mine is mine, but when we come together in harmony with the same purpose, we create a separate, connected mind.\n\nHe says Henry Ford, J.P. Morgan, Andrew Carnegie and John D. Rockefeller called it the most powerful thing you can have to create wealth. Napoleon Hill wrote about it too.\n\nWho could you build a third mind with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
-   "bytes": 34763157,
+   "bytes": 22954325,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T11:25",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "T1",
+   "cover": "KT_WEALTH4--01_mastermindthird_56s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_WEALTH4/01_roomenergy_36s.mp4",
    "caption": "Ever sense someone walk in without seeing them?\n\nKevin Trudeau describes a party where your back is to the door. Someone comes in, you feel it, and you turn around to find a celebrity or a wealthy person.\n\nKevin explains it as essence. He says a big presence is so large that it fills the whole room, and everyone kind of feels it.\n\nIt is a vivid way to think about the energy people carry with them.\n\nWhen did someone's presence last change a room for you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 19394953,
+   "bytes": 12735342,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-23T22:29",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "style": "T1",
+   "cover": "KT_WEALTH4--01_roomenergy_36s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_WEALTH4/02_fivefriends_38s.mp4",
    "caption": "Why the people around you shape how you think.\n\nKevin Trudeau shares a saying that your income tends to match the average of your five best friends. He says most people hear it and think they need new friends, because the wrong crowd will drag you down.\n\nHe reminds us what our parents said: hang around that crowd and you turn out like them. Kevin says if that is true in the negative, it is true in the positive too.\n\nYou can team up with people who have big dreams and want more out of life.\n\nWho are the five people shaping you right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 22570992,
+   "bytes": 14829995,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T09:34",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "T1",
+   "cover": "KT_WEALTH4--02_fivefriends_38s__cover.jpg",
+   "cover_v": 3
   }
  ]
 }

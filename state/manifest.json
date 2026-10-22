@@ -1380,7 +1380,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-22T11:49",
+   "scheduled_at": "2026-10-22T11:59",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "style": "T1",
@@ -1533,7 +1533,10 @@
    "bytes": 44980010,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T07:13",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_WEALTH4/01_mastermindthird_56s.mp4",
@@ -1541,7 +1544,10 @@
    "bytes": 34763157,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T11:25",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_WEALTH4/01_roomenergy_36s.mp4",
@@ -1549,7 +1555,10 @@
    "bytes": 19394953,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-23T22:29",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_WEALTH4/02_fivefriends_38s.mp4",
@@ -1557,7 +1566,10 @@
    "bytes": 22570992,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T09:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ]
 }

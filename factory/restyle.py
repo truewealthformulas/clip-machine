@@ -150,6 +150,81 @@ def band_png(hook, out):
     im.save(out)
 
 
+# THE GRID COVER (21 Oct 2026, the owner: "we need to improve the cover of each
+# video to have more reach", pointing at @trudeaumanifestation). Instagram's
+# profile grid shows the MIDDLE 3:4 of a reel (rows 240-1680 of 1920), so the
+# title bar at the very top of the video is cut off there, and the cover was a
+# frame picked by timestamp - often mid-word. Each clip now gets its own cover
+# image: the hook in big white + gold inside the part the grid shows, over the
+# sharpest close-up of Kevin from the first seconds. Sent as cover_url.
+COVER_TITLE = (250, 660)      # y range of the title block (inside the grid crop)
+
+
+def _cover_lines(hook):
+    words = " ".join(h.strip() for h in hook if h.strip()).upper().split()
+    if len(" ".join(words)) <= 26 or len(words) < 3:
+        n = 2
+    else:
+        n = 3
+    n = min(n, len(words)) or 1
+    k = -(-len(words) // n)
+    return [" ".join(words[i:i + k]) for i in range(0, len(words), k)]
+
+
+def _frame_rgb(path, t):
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", path,
+                          "-frames:v", "1", "-vf", f"scale={W}:{H}", "-f", "rawvideo",
+                          "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+    return np.frombuffer(raw, np.uint8).reshape(H, W, 3) if len(raw) == W * H * 3 else None
+
+
+def cover_jpg(styled, hook, out):
+    """Grid cover from a style-T clip: title on top, Kevin's sharpest close-up below."""
+    best = None
+    for t in (3.4, 4.2, 5.0, 6.0, 7.5, 9.0, 11.0):
+        a = _frame_rgb(styled, t)
+        if a is None:
+            continue
+        crop = a[BAND + 10:BAND + 910].astype(np.float32)   # under the band, above the captions
+        g = crop.mean(2)
+        s = float(np.var(g[1:-1, 1:-1] * 4 - g[:-2, 1:-1] - g[2:, 1:-1] - g[1:-1, :-2] - g[1:-1, 2:]))
+        if best is None or s > best[0]:
+            best = (s, a[BAND + 10:BAND + 910])
+    if best is None:
+        raise RuntimeError("no frame for the cover")
+    im = Image.new("RGB", (W, H), (0, 0, 0))
+    pic = Image.fromarray(best[1]).resize((1344, 1120))
+    im.paste(pic.crop((132, 0, 132 + W, 1120)), (0, COVER_TITLE[1]))
+    fade = Image.linear_gradient("L").resize((W, 90))
+    im.paste(Image.new("RGB", (W, 90), (0, 0, 0)), (0, COVER_TITLE[1]),
+             Image.eval(fade, lambda v: 255 - v))
+    d = ImageDraw.Draw(im)
+    lines = _cover_lines(hook)
+    f = min((fit(d, l, 120, W - 110) for l in lines), key=lambda x: x.size)
+    lh = int(f.size * 1.16)
+    y = COVER_TITLE[0] + (COVER_TITLE[1] - COVER_TITLE[0] - lh * len(lines)) // 2
+    for i, l in enumerate(lines):
+        w = d.textlength(l, font=f)
+        d.text(((W - w) / 2, y), l, font=f, fill=GOLD if i == len(lines) - 1 else WHITE)
+        y += lh
+    im.save(out, quality=90)
+    return out
+
+
+def add_cover(c, hook, styled, tmp):
+    """Make, upload and record the grid cover for one queued clip. Never fatal."""
+    try:
+        name = c["file"].replace("/", "--").replace(".mp4", "__cover.jpg")
+        out = os.path.join(tmp, "covers", name)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        cover_jpg(styled, hook, out)
+        sh("gh", "release", "upload", "media", out, "-R", REPO, "--clobber")
+        c["cover"] = name
+        print(f"cover {name}", flush=True)
+    except Exception as e:
+        print(f"  no cover for {c['file']}: {type(e).__name__} {str(e)[:120]}", flush=True)
+
+
 def duration(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                                 capture_output=True, text=True, check=True).stdout.strip())
@@ -290,10 +365,30 @@ def main():
         os.replace(dst, up)
         sh("gh", "release", "upload", "media", up, "-R", REPO, "--clobber")
         c["style"] = STYLE
+        if STYLE.startswith("T"):
+            add_cover(c, hook, up, tmp)
         c["bytes"] = os.path.getsize(up)
         done += 1
         print(f"styled {c['file']}" + (f"  (old card painted out at {card})" if card else ""), flush=True)
         os.remove(up)
+        with open(MAN, "w", encoding="utf-8") as f:
+            json.dump(man, f, indent=1, ensure_ascii=False)
+    # COVERS for clips styled before covers existed (queued, style T, no cover).
+    for c in man.get("clips", []):
+        if (c.get("done") or c.get("posting") or c.get("cover") or c.get("style") != STYLE
+                or not STYLE.startswith("T")
+                or any("posted" in str(v) for v in (c.get("status") or {}).values())):
+            continue
+        hook = idx.get(slug_of(c["file"]))
+        if not hook:
+            continue
+        asset = c["file"].replace("/", "--")
+        src = os.path.join(tmp, "cv_" + asset)
+        if subprocess.run(["gh", "release", "download", "media", "-R", REPO, "-p", asset,
+                           "-O", src, "--clobber"], capture_output=True).returncode:
+            continue
+        add_cover(c, hook, src, tmp)
+        os.remove(src)
         with open(MAN, "w", encoding="utf-8") as f:
             json.dump(man, f, indent=1, ensure_ascii=False)
     # REPOSTS. 10 Oct 2026, the owner: "lets reposted them ... with the new version".

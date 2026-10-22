@@ -158,6 +158,39 @@ def band_png(hook, out):
 # image: the hook in big white + gold inside the part the grid shows, over the
 # sharpest close-up of Kevin from the first seconds. Sent as cover_url.
 COVER_TITLE = (250, 660)      # y range of the title block (inside the grid crop)
+COVER_V = 2                   # bump to redo every queued cover
+_DET = []
+
+
+def _face_score(crop):
+    """How good a cover face this is: Kevin facing the camera, eyes open, close.
+
+    21 Oct 2026, the owner: some covers caught him looking down with his eyes
+    half shut. YuNet gives the face and its eye/nose points; the nose centred
+    between level eyes means he faces the camera, and a high-contrast patch at
+    each eye means the eye is open (iris on white). Sharpness alone picked blinks.
+    """
+    import cv2
+    if not _DET:
+        _DET.append(cv2.FaceDetectorYN.create(os.path.join(ROOT, "factory", "assets", "yunet.onnx"),
+                                              "", (540, 450), 0.6))
+    small = cv2.resize(cv2.cvtColor(crop, cv2.COLOR_RGB2BGR), (540, 450))
+    _, faces = _DET[0].detect(small)
+    if faces is None:
+        return 0.0
+    f = max(faces, key=lambda r: r[2] * r[3])
+    re_, le_, nose = (f[4], f[5]), (f[6], f[7]), (f[8], f[9])
+    eyed = abs(le_[0] - re_[0]) or 1
+    frontal = max(0.0, 1 - abs((nose[0] - (re_[0] + le_[0]) / 2) / eyed) * 2)
+    level = max(0.0, 1 - abs(le_[1] - re_[1]) / eyed * 3)
+    g = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY).astype(np.float32)
+
+    def eye(px, py):
+        r = int(eyed * 0.22)
+        patch = g[max(0, int(py - r)):int(py + r), max(0, int(px - r)):int(px + r)]
+        return float(patch.std()) if patch.size else 0.0
+    eyes = (eye(*re_) + eye(*le_)) / 2
+    return float(f[14]) * frontal * level * min(1.0, eyes / 30) * min(1.0, f[2] / 200)
 
 
 def _cover_lines(hook):
@@ -181,15 +214,20 @@ def _frame_rgb(path, t):
 def cover_jpg(styled, hook, out):
     """Grid cover from a style-T clip: title on top, Kevin's sharpest close-up below."""
     best = None
-    for t in (3.4, 4.2, 5.0, 6.0, 7.5, 9.0, 11.0):
-        a = _frame_rgb(styled, t)
+    for t in np.arange(3.4, 16.0, 0.8):
+        a = _frame_rgb(styled, float(t))
         if a is None:
             continue
-        crop = a[BAND + 10:BAND + 910].astype(np.float32)   # under the band, above the captions
-        g = crop.mean(2)
-        s = float(np.var(g[1:-1, 1:-1] * 4 - g[:-2, 1:-1] - g[2:, 1:-1] - g[1:-1, :-2] - g[1:-1, 2:]))
-        if best is None or s > best[0]:
-            best = (s, a[BAND + 10:BAND + 910])
+        crop = a[BAND + 10:BAND + 910]          # under the band, above the captions
+        try:
+            s = _face_score(crop)
+        except Exception:
+            s = 0.0
+        g = crop.astype(np.float32).mean(2)
+        sharp = float(np.var(g[1:-1, 1:-1] * 4 - g[:-2, 1:-1] - g[2:, 1:-1] - g[1:-1, :-2] - g[1:-1, 2:]))
+        key = (s, sharp)                         # best face first; sharpness breaks ties
+        if best is None or key > best[0]:
+            best = (key, crop)
     if best is None:
         raise RuntimeError("no frame for the cover")
     im = Image.new("RGB", (W, H), (0, 0, 0))
@@ -220,6 +258,7 @@ def add_cover(c, hook, styled, tmp):
         cover_jpg(styled, hook, out)
         sh("gh", "release", "upload", "media", out, "-R", REPO, "--clobber")
         c["cover"] = name
+        c["cover_v"] = COVER_V
         print(f"cover {name}", flush=True)
     except Exception as e:
         print(f"  no cover for {c['file']}: {type(e).__name__} {str(e)[:120]}", flush=True)
@@ -375,7 +414,7 @@ def main():
             json.dump(man, f, indent=1, ensure_ascii=False)
     # COVERS for clips styled before covers existed (queued, style T, no cover).
     for c in man.get("clips", []):
-        if (c.get("done") or c.get("posting") or c.get("cover") or c.get("style") != STYLE
+        if (c.get("done") or c.get("posting") or c.get("cover_v") == COVER_V or c.get("style") != STYLE
                 or not STYLE.startswith("T")
                 or any("posted" in str(v) for v in (c.get("status") or {}).values())):
             continue

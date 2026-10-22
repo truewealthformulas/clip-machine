@@ -1461,15 +1461,29 @@
    "file": "KT_MINDSET19/01_winnersteam_55s.mp4",
    "caption": "You don't have to reinvent the wheel. You have to pick the right team.\n\nKevin Trudeau points to Carnegie, Morgan and Rockefeller. The people who rose beside them did it by saying \"I'm with you.\" They did not try to be the star.\n\nKevin explains that the same goes for Tom Brady or Michael Jordan. If you want to win, get on the team of someone who already wins.\n\nHe says he never had to be the guy. He just had to be on the train.\n\nWho is the winner you would want on your team?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
    "bytes": 27547172,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261022211007BA9D889EF70D6C1EF9CA'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T16:45",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "style": "T1",
    "cover": "KT_MINDSET19--01_winnersteam_55s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1653546819494220/",
+    "instagram": "https://www.instagram.com/reel/Dez6dwkFCGe/",
+    "youtube": "https://youtube.com/shorts/GVVn5aZUiYU"
+   },
+   "caption_at_post": "You don't have to reinvent the wheel. You have to pick the right team.\n\nKevin Trudeau points to Carnegie, Morgan and Rockefeller. The people who rose beside them did it by saying \"I'm with you.\" They did not try to be the star.\n\nKevin explains that the same goes for Tom Brady or Michael Jordan. If you want to win, get on the team of someone who already wins.\n\nHe says he never had to be the guy. He just had to be on the train.\n\nWho is the winner you would want on your team?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
+   "posted_at": "2026-10-22T17:10"
   },
   {
    "file": "KT_MINDSET21/01_chooseyourfeeling_46s.mp4",

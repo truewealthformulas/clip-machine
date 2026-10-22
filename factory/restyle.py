@@ -138,7 +138,7 @@ def band_png(hook, out):
         words = lines[0].split()
         k = (len(words) + 1) // 2
         lines = [" ".join(words[:k]), " ".join(words[k:])]
-    im = Image.new("RGBA", (W, BAND), (0, 0, 0, 255))
+    im = Image.new("RGBA", (W, BAND), INK + (255,))   # the owner's navy (#0B1430), not black (21 Oct)
     d = ImageDraw.Draw(im)
     f = min((fit(d, l, 78, W - 120) for l in lines), key=lambda x: x.size)
     lh = int(f.size * 1.2)
@@ -158,7 +158,7 @@ def band_png(hook, out):
 # image: the hook in big white + gold inside the part the grid shows, over the
 # sharpest close-up of Kevin from the first seconds. Sent as cover_url.
 COVER_TITLE = (250, 660)      # y range of the title block (inside the grid crop)
-COVER_V = 2                   # bump to redo every queued cover
+COVER_V = 3                   # bump to redo every queued cover
 _DET = []
 
 
@@ -230,11 +230,11 @@ def cover_jpg(styled, hook, out):
             best = (key, crop)
     if best is None:
         raise RuntimeError("no frame for the cover")
-    im = Image.new("RGB", (W, H), (0, 0, 0))
+    im = Image.new("RGB", (W, H), INK)
     pic = Image.fromarray(best[1]).resize((1344, 1120))
     im.paste(pic.crop((132, 0, 132 + W, 1120)), (0, COVER_TITLE[1]))
     fade = Image.linear_gradient("L").resize((W, 90))
-    im.paste(Image.new("RGB", (W, 90), (0, 0, 0)), (0, COVER_TITLE[1]),
+    im.paste(Image.new("RGB", (W, 90), INK), (0, COVER_TITLE[1]),
              Image.eval(fade, lambda v: 255 - v))
     d = ImageDraw.Draw(im)
     lines = _cover_lines(hook)
@@ -285,7 +285,7 @@ def restyle(src, hook, dst, check=True):
     if STYLE.startswith("T"):
         band_png(hook, png)
         sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-i", png, "-filter_complex",
-           f"[0:v]scale={W}:{H},crop={W}:{H - BAND}:0:{TRIM_TOP},pad={W}:{H}:0:{BAND}:black[b];"
+           f"[0:v]scale={W}:{H},crop={W}:{H - BAND}:0:{TRIM_TOP},pad={W}:{H}:0:{BAND}:0x0B1430[b];"
            f"[b][1:v]overlay=0:0,format=yuv420p[v]",
            "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
            "-c:a", "copy", "-movflags", "+faststart", dst)

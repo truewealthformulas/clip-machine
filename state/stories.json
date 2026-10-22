@@ -1,5 +1,5 @@
 {
- "n": 7,
+ "n": 8,
  "posted": [
   {
    "date": "2026-10-12",
@@ -103,6 +103,13 @@
    "date": "2026-10-21",
    "offer": "daily",
    "look": "story--hl_04.mp4",
+   "ok": true,
+   "status": "posted"
+  },
+  {
+   "date": "2026-10-22",
+   "offer": "training",
+   "look": "story--hl_17.mp4",
    "ok": true,
    "status": "posted"
   }

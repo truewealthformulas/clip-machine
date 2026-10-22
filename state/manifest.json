@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1446,46 +1446,58 @@
   {
    "file": "KT_DEBT/01_hypnotized_40s.mp4",
    "caption": "Why do ads make us spend money we don't have?\n\nKevin Trudeau says people get hypnotized by advertising and keep using their credit cards even when they can't afford it. He points to buying things we don't need to impress people we don't even like.\n\nHis point is that the issue is often spending habits, not only what comes in.\n\nWhat is one purchase you made just to impress someone?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #money #kevintrudeau",
-   "bytes": 24194517,
+   "bytes": 16468600,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T12:39",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "T1",
+   "cover": "KT_DEBT--01_hypnotized_40s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_DEBT/01_usuryrule_54s.mp4",
    "caption": "Interest rates used to have a legal ceiling in every state.\n\nKevin Trudeau explains that decades ago each state capped the interest a lender could charge. Charge more and it was called usury, and you were seen as a loan shark.\n\nHe says that when the rate is high enough, paying only the minimum can take 30 years and never pay it off.\n\nHave you ever checked how long minimum payments would take?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #credit #kevintrudeau",
-   "bytes": 33551948,
+   "bytes": 22902459,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-23T16:35",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "T1",
+   "cover": "KT_DEBT--01_usuryrule_54s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_DEBT/02_livebelow_52s.mp4",
    "caption": "Living below your means starts with one simple swap.\n\nKevin Trudeau quotes Jim Carrey: if you won't reduce your lifestyle for a year or two to build one that lasts, you don't deserve it. Kevin says to practice delayed gratification and live below your means.\n\nHis example is a cheaper home and a cheaper car, since insurance, fuel and utilities can drop along with them.\n\nWhat would you trim first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #freedom #debt #kevintrudeau",
-   "bytes": 30642850,
+   "bytes": 20988870,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T14:46",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "T1",
+   "cover": "KT_DEBT--02_livebelow_52s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_DEBT/02_reportdate_39s.mp4",
    "caption": "Paying on the due date and paying before the reporting date are not the same.\n\nKevin Trudeau explains that he keeps a mortgage and a car payment on purpose to support a good credit rating. He also uses a few credit cards, pays them off, and always pays before the reporting date, not the due date.\n\nHe is describing his own routine, not a promise for anyone else.\n\nDid you know your card has both dates?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
-   "bytes": 24205954,
+   "bytes": 16712334,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T10:08",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "style": "T1",
+   "cover": "KT_DEBT--02_reportdate_39s__cover.jpg",
+   "cover_v": 3
   }
  ]
 }

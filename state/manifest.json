@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1334,79 +1334,100 @@
   {
    "file": "KT_LUCK2/01_knowwhatyouwant_40s.mp4",
    "caption": "The more specific your wish, the luckier you get.\n\nKevin Trudeau says step one of luck is knowing exactly what you desire. Wanting just \"happiness\" is a start, but the clearer you get, the better.\n\nHe uses relationships as the example: get clear on the kind of relationship you want and the kind of person you want to be with.\n\nHow clearly can you describe what you really want?\n\n#ad #goals #love #kevintrudeau",
-   "bytes": 27933566,
+   "bytes": 18915256,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-22T06:24",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "style": "T1",
+   "cover": "KT_LUCK2--01_knowwhatyouwant_40s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_LUCK2/01_selfimageluck_47s.mp4",
    "caption": "The self-image that decides how lucky you feel.\n\nKevin Trudeau explains that everyone carries a mental self-image in great detail, with emotions and thoughts attached.\n\nHe compares it to the film in a projector. Whatever you project passes through that image first, so your world becomes a projection of what is inside.\n\nKevin says if you see yourself as worthy and entitled to be lucky, that is what comes back.\n\nWhat picture of yourself do you carry?\n\n#ad #confidence #mindset #kevintrudeau",
-   "bytes": 32263359,
+   "bytes": 21662120,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T11:49",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "style": "T1",
+   "cover": "KT_LUCK2--01_selfimageluck_47s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_LUCK2/02_frequencyscience_48s.mp4",
    "caption": "Everything in the universe vibrates. Even your brain.\n\nKevin Trudeau says every atom has its own frequency, and frequencies either attract or repel one another. That is why some atoms bind together and others push apart.\n\nHe adds that the brain broadcasts frequencies too, and he claims what you broadcast affects the physical world around you.\n\nWhat frequency do you think you broadcast most days?\n\n#ad #mind #energy #kevintrudeau",
-   "bytes": 31993440,
+   "bytes": 21585353,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-23T07:04",
    "cta_keyword": "GOALS",
-   "cta_variant": 6
+   "cta_variant": 6,
+   "style": "T1",
+   "cover": "KT_LUCK2--02_frequencyscience_48s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET19/01_orangetree_46s.mp4",
    "caption": "You can't plant tomato seeds and expect oranges.\n\nKevin Trudeau says success is planting seeds and cultivating the crop. If you want oranges, you have to plant an orange tree seed. Then you can't expect fruit tomorrow.\n\nYou water it, you fertilize it, you trim it as it grows, and you let it become a tree. Kevin explains that there is a time for planting and a time for harvest.\n\nThe point is to plant the right seed and give it time.\n\nWhat seed are you planting right now?\n\n#ad #success #mindset",
-   "bytes": 29282699,
+   "bytes": 20546201,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T09:24",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "style": "T1",
+   "cover": "KT_MINDSET19--01_orangetree_46s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET19/01_winnersteam_55s.mp4",
    "caption": "You don't have to reinvent the wheel. You have to pick the right team.\n\nKevin Trudeau points to Carnegie, Morgan and Rockefeller. The people who rose beside them did it by saying \"I'm with you.\" They did not try to be the star.\n\nKevin explains that the same goes for Tom Brady or Michael Jordan. If you want to win, get on the team of someone who already wins.\n\nHe says he never had to be the guy. He just had to be on the train.\n\nWho is the winner you would want on your team?\n\n#ad #success #mindset",
-   "bytes": 39349226,
+   "bytes": 27547172,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T16:45",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "style": "T1",
+   "cover": "KT_MINDSET19--01_winnersteam_55s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET21/01_chooseyourfeeling_46s.mp4",
    "caption": "Most people don't realise they can choose how they feel.\n\nKevin Trudeau says you can go through life choosing your thoughts, your words and your actions on purpose, and that lets you choose how you feel.\n\nImagine deciding to feel happy. Or giving anger one minute, then stopping.\n\nKevin says most people feel angry, sad or full of loss and never see they're in control. They let their mind control them.\n\nWhen did you last feel truly in charge of your own mind?\n\n#ad #mindset #happiness",
-   "bytes": 31360218,
+   "bytes": 21444007,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-22T21:59",
    "cta_keyword": "GOALS",
-   "cta_variant": 5
+   "cta_variant": 5,
+   "style": "T1",
+   "cover": "KT_MINDSET21--01_chooseyourfeeling_46s__cover.jpg",
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET21/02_acknowledgewelcome_42s.mp4",
    "caption": "Positive thinkers often skip this important step.\n\nKevin Trudeau says the spiritual masters did two things when hard times came. First, they acknowledged how they felt instead of denying it. Kevin says most people deny their feelings, especially positive thinkers who try to reframe everything.\n\nSecond, they welcomed the challenge instead of resisting it. What you resist will persist.\n\nAre you resisting something in your life right now, or welcoming it?\n\n#ad #mindset #confidence",
-   "bytes": 30236472,
+   "bytes": 20864465,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T14:13",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "style": "T1",
+   "cover": "KT_MINDSET21--02_acknowledgewelcome_42s__cover.jpg",
+   "cover_v": 3
   }
  ]
 }

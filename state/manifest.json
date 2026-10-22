@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1229,7 +1229,8 @@
    "scheduled_at": "2026-10-22T09:08",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_SUCCESS3--02_eightwords_45s__cover.jpg"
   },
   {
    "file": "KT_SUCCESS3/02_loveyourlife_52s.mp4",
@@ -1241,7 +1242,8 @@
    "scheduled_at": "2026-10-22T13:06",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_SUCCESS3--02_loveyourlife_52s__cover.jpg"
   },
   {
    "file": "KT_PRAYER2/02_feelfirst_40s.mp4",
@@ -1253,7 +1255,8 @@
    "scheduled_at": "2026-10-22T19:31",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_PRAYER2--02_feelfirst_40s__cover.jpg"
   },
   {
    "file": "KT_MINDSET15/01_moneyrootevil_54s.mp4",
@@ -1265,7 +1268,8 @@
    "scheduled_at": "2026-10-23T13:28",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_MINDSET15--01_moneyrootevil_54s__cover.jpg"
   },
   {
    "file": "KT_MINDSET15/02_beautywave_68s.mp4",
@@ -1277,7 +1281,8 @@
    "scheduled_at": "2026-10-24T08:32",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_MINDSET15--02_beautywave_68s__cover.jpg"
   },
   {
    "file": "KT_MINDSET16/01_snipething_52s.mp4",
@@ -1289,7 +1294,8 @@
    "scheduled_at": "2026-10-23T19:34",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_MINDSET16--01_snipething_52s__cover.jpg"
   },
   {
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",
@@ -1301,7 +1307,8 @@
    "scheduled_at": "2026-10-23T08:19",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_MINDSET16--02_laughnow_46s__cover.jpg"
   },
   {
    "file": "KT_MINDSET16/02_phonetrap_62s.mp4",
@@ -1313,7 +1320,8 @@
    "scheduled_at": "2026-10-24T13:08",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "style": "T1"
+   "style": "T1",
+   "cover": "KT_MINDSET16--02_phonetrap_62s__cover.jpg"
   }
  ]
 }

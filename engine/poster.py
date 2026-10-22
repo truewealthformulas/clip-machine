@@ -753,6 +753,13 @@ def instagram(path, caption, public_url, clip=None, trial=False):
                                                HOOK_FULL_MS))
     except Exception:
         pass                       # a cover is a nice-to-have, never a failure
+    # OUR OWN GRID COVER (21 Oct 2026, factory/restyle.py cover_jpg): the hook
+    # inside the 3:4 area the profile grid shows, over a sharp close-up. It
+    # sits next to the clip in the release, so its URL is the clip's URL with
+    # the cover's name. Replaces thumb_offset; refused -> retried without it.
+    if clip and clip.get("cover") and public_url.endswith(".mp4"):
+        body["cover_url"] = public_url.rsplit("/", 1)[0] + "/" + clip["cover"]
+        body.pop("thumb_offset", None)
     if trial:
         # share_to_feed is meaningless for a trial - it has no followers to
         # share to - and sending both is how you get a container that is
@@ -769,6 +776,11 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                       data=body)
     d = _j(r)
+    if not d.get("id") and body.get("cover_url"):   # cover refused: keep the label, drop the cover
+        body.pop("cover_url", None)
+        r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
+                          data=body)
+        d = _j(r)
     if not d.get("id"):                       # any refusal: try once without the label
         body.pop("is_paid_partnership", None)
         r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,

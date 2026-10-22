@@ -1377,15 +1377,29 @@
    "file": "KT_LUCK2/01_selfimageluck_47s.mp4",
    "caption": "The self-image that decides how lucky you feel.\n\nKevin Trudeau explains that everyone carries a mental self-image in great detail, with emotions and thoughts attached.\n\nHe compares it to the film in a projector. Whatever you project passes through that image first, so your world becomes a projection of what is inside.\n\nKevin says if you see yourself as worthy and entitled to be lucky, that is what comes back.\n\nWhat picture of yourself do you carry?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #kevintrudeau",
    "bytes": 21662120,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261022162816C4108C969881E50C9B63'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T11:59",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_LUCK2--01_selfimageluck_47s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1456665989949318/",
+    "instagram": "https://www.instagram.com/reel/DezaKdUAHZY/",
+    "youtube": "https://youtube.com/shorts/pHNQzVoTEJ8"
+   },
+   "caption_at_post": "The self-image that decides how lucky you feel.\n\nKevin Trudeau explains that everyone carries a mental self-image in great detail, with emotions and thoughts attached.\n\nHe compares it to the film in a projector. Whatever you project passes through that image first, so your world becomes a projection of what is inside.\n\nKevin says if you see yourself as worthy and entitled to be lucky, that is what comes back.\n\nWhat picture of yourself do you carry?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #kevintrudeau",
+   "posted_at": "2026-10-22T12:28"
   },
   {
    "file": "KT_LUCK2/02_frequencyscience_48s.mp4",

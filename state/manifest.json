@@ -1231,7 +1231,7 @@
    "cta_variant": 3,
    "style": "T1",
    "cover": "KT_SUCCESS3--02_eightwords_45s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_SUCCESS3/02_loveyourlife_52s.mp4",
@@ -1245,7 +1245,7 @@
    "cta_variant": 4,
    "style": "T1",
    "cover": "KT_SUCCESS3--02_loveyourlife_52s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_PRAYER2/02_feelfirst_40s.mp4",
@@ -1259,7 +1259,7 @@
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_PRAYER2--02_feelfirst_40s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET15/01_moneyrootevil_54s.mp4",
@@ -1273,7 +1273,7 @@
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_MINDSET15--01_moneyrootevil_54s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET15/02_beautywave_68s.mp4",
@@ -1287,7 +1287,7 @@
    "cta_variant": 3,
    "style": "T1",
    "cover": "KT_MINDSET15--02_beautywave_68s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET16/01_snipething_52s.mp4",
@@ -1301,7 +1301,7 @@
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_MINDSET16--01_snipething_52s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",
@@ -1315,7 +1315,7 @@
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_MINDSET16--02_laughnow_46s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   },
   {
    "file": "KT_MINDSET16/02_phonetrap_62s.mp4",
@@ -1329,7 +1329,7 @@
    "cta_variant": 4,
    "style": "T1",
    "cover": "KT_MINDSET16--02_phonetrap_62s__cover.jpg",
-   "cover_v": 2
+   "cover_v": 3
   }
  ]
 }

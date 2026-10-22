@@ -1405,15 +1405,29 @@
    "file": "KT_MINDSET19/01_orangetree_46s.mp4",
    "caption": "You can't plant tomato seeds and expect oranges.\n\nKevin Trudeau says success is planting seeds and cultivating the crop. If you want oranges, you have to plant an orange tree seed. Then you can't expect fruit tomorrow.\n\nYou water it, you fertilize it, you trim it as it grows, and you let it become a tree. Kevin explains that there is a time for planting and a time for harvest.\n\nThe point is to plant the right seed and give it time.\n\nWhat seed are you planting right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
    "bytes": 20546201,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610221514339B61F7462AF33206BA62'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-22T10:42",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_MINDSET19--01_orangetree_46s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/3218920171638304/",
+    "instagram": "https://www.instagram.com/reel/DezRuMDgODZ/",
+    "youtube": "https://youtube.com/shorts/KXL9JLfmVqw"
+   },
+   "caption_at_post": "You can't plant tomato seeds and expect oranges.\n\nKevin Trudeau says success is planting seeds and cultivating the crop. If you want oranges, you have to plant an orange tree seed. Then you can't expect fruit tomorrow.\n\nYou water it, you fertilize it, you trim it as it grows, and you let it become a tree. Kevin explains that there is a time for planting and a time for harvest.\n\nThe point is to plant the right seed and give it time.\n\nWhat seed are you planting right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
+   "posted_at": "2026-10-22T11:14"
   },
   {
    "file": "KT_MINDSET19/01_winnersteam_55s.mp4",

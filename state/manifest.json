@@ -1586,15 +1586,29 @@
    "file": "KT_DEBT/01_hypnotized_40s.mp4",
    "caption": "Why do ads make us spend money we don't have?\n\nKevin Trudeau says people get hypnotized by advertising and keep using their credit cards even when they can't afford it. He points to buying things we don't need to impress people we don't even like.\n\nHis point is that the issue is often spending habits, not only what comes in.\n\nWhat is one purchase you made just to impress someone?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #money #kevintrudeau",
    "bytes": 16468600,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610231713423C6721984579EE4D2670'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T12:39",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_DEBT--01_hypnotized_40s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/964126150104759/",
+    "instagram": "https://www.instagram.com/reel/De2EH3ljhT5/",
+    "youtube": "https://youtube.com/shorts/GhbQ9Xzc4zs"
+   },
+   "caption_at_post": "Why do ads make us spend money we don't have?\n\nKevin Trudeau says people get hypnotized by advertising and keep using their credit cards even when they can't afford it. He points to buying things we don't need to impress people we don't even like.\n\nHis point is that the issue is often spending habits, not only what comes in.\n\nWhat is one purchase you made just to impress someone?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #money #kevintrudeau",
+   "posted_at": "2026-10-23T13:13"
   },
   {
    "file": "KT_DEBT/01_usuryrule_54s.mp4",

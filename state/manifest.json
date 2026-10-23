@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1343,7 +1343,7 @@
    "cta_variant": 3,
    "style": "T1",
    "cover": "KT_MINDSET15--02_beautywave_68s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_MINDSET16/01_snipething_52s.mp4",
@@ -1357,7 +1357,7 @@
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_MINDSET16--01_snipething_52s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",
@@ -1398,7 +1398,7 @@
    "cta_variant": 4,
    "style": "T1",
    "cover": "KT_MINDSET16--02_phonetrap_62s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_LUCK2/01_knowwhatyouwant_40s.mp4",
@@ -1720,7 +1720,7 @@
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_SUCCESS4--01_whatpainmoves_64s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH4/01_mastermindthird_56s.mp4",
@@ -1734,7 +1734,7 @@
    "cta_variant": 3,
    "style": "T1",
    "cover": "KT_WEALTH4--01_mastermindthird_56s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH4/01_roomenergy_36s.mp4",
@@ -1748,7 +1748,7 @@
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_WEALTH4--01_roomenergy_36s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH4/02_fivefriends_38s.mp4",
@@ -1762,7 +1762,7 @@
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_WEALTH4--02_fivefriends_38s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_WORDS2/01_voicebrain_54s.mp4",
@@ -1776,7 +1776,7 @@
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_WORDS2--01_voicebrain_54s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_COUNTERINTENTI/01_feelslighter_34s.mp4",
@@ -1790,7 +1790,7 @@
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_COUNTERINTENTI--01_feelslighter_34s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_COUNTERINTENTI/01_poorisgood_32s.mp4",
@@ -1804,7 +1804,7 @@
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_COUNTERINTENTI--01_poorisgood_32s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   },
   {
    "file": "KT_COUNTERINTENTI/01_stopdreaming_37s.mp4",
@@ -1818,7 +1818,7 @@
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_COUNTERINTENTI--01_stopdreaming_37s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 4
   }
  ]
 }

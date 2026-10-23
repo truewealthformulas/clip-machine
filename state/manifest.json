@@ -1628,15 +1628,29 @@
    "file": "KT_DEBT/01_usuryrule_54s.mp4",
    "caption": "Interest rates used to have a legal ceiling in every state.\n\nKevin Trudeau explains that decades ago each state capped the interest a lender could charge. Charge more and it was called usury, and you were seen as a loan shark.\n\nHe says that when the rate is high enough, paying only the minimum can take 30 years and never pay it off.\n\nHave you ever checked how long minimum payments would take?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #credit #kevintrudeau",
    "bytes": 22902459,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610232055345CD0193B4FB5796AF2CF'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-23T16:35",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
    "style": "T1",
    "cover": "KT_DEBT--01_usuryrule_54s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1480860614252495/",
+    "instagram": "https://www.instagram.com/reel/De2dikQFRfz/",
+    "youtube": "https://youtube.com/shorts/KH68-Xk1VuM"
+   },
+   "caption_at_post": "Interest rates used to have a legal ceiling in every state.\n\nKevin Trudeau explains that decades ago each state capped the interest a lender could charge. Charge more and it was called usury, and you were seen as a loan shark.\n\nHe says that when the rate is high enough, paying only the minimum can take 30 years and never pay it off.\n\nHave you ever checked how long minimum payments would take?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #debt #credit #kevintrudeau",
+   "posted_at": "2026-10-23T16:55"
   },
   {
    "file": "KT_DEBT/02_livebelow_52s.mp4",

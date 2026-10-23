@@ -1728,7 +1728,10 @@
    "bytes": 19421595,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T19:49",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_COUNTERINTENTI/01_poorisgood_32s.mp4",
@@ -1736,7 +1739,10 @@
    "bytes": 22757013,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T17:04",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_COUNTERINTENTI/01_stopdreaming_37s.mp4",
@@ -1744,7 +1750,10 @@
    "bytes": 24390872,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-24T22:23",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ]
 }

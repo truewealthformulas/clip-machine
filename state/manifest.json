@@ -1307,15 +1307,29 @@
    "file": "KT_MINDSET15/01_moneyrootevil_54s.mp4",
    "caption": "An old belief about money can quietly work against you.\n\nKevin Trudeau explains that someone in a family line may have absorbed the belief that money is the root of all evil. He says that kind of belief can sit in the background for generations.\n\nIn his teaching, it works as a hidden counter intention: you say you want wealth while an old belief says wealth is bad.\n\nWhat belief about money did you grow up hearing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
    "bytes": 23433095,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261023182422D199385181E3DA41E72A'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T13:58",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "style": "T1",
    "cover": "KT_MINDSET15--01_moneyrootevil_54s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1436615584676666/",
+    "instagram": "https://www.instagram.com/reel/De2MOkcjmsY/",
+    "youtube": "https://youtube.com/shorts/MAjBJGJDOz8"
+   },
+   "caption_at_post": "An old belief about money can quietly work against you.\n\nKevin Trudeau explains that someone in a family line may have absorbed the belief that money is the root of all evil. He says that kind of belief can sit in the background for generations.\n\nIn his teaching, it works as a hidden counter intention: you say you want wealth while an old belief says wealth is bad.\n\nWhat belief about money did you grow up hearing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
+   "posted_at": "2026-10-23T14:24"
   },
   {
    "file": "KT_MINDSET15/02_beautywave_68s.mp4",

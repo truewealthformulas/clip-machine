@@ -1433,15 +1433,29 @@
    "file": "KT_LUCK2/02_frequencyscience_48s.mp4",
    "caption": "Everything in the universe vibrates. Even your brain.\n\nKevin Trudeau says every atom has its own frequency, and frequencies either attract or repel one another. That is why some atoms bind together and others push apart.\n\nHe adds that the brain broadcasts frequencies too, and he claims what you broadcast affects the physical world around you.\n\nWhat frequency do you think you broadcast most days?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mind #energy #kevintrudeau",
    "bytes": 21585353,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026102311253980002F1862AC522C52DB'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-23T07:04",
    "cta_keyword": "GOALS",
    "cta_variant": 6,
    "style": "T1",
    "cover": "KT_LUCK2--02_frequencyscience_48s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2409924553085856/",
+    "instagram": "https://www.instagram.com/reel/De1cWwiDWbx/",
+    "youtube": "https://youtube.com/shorts/BmC1m7IbUbc"
+   },
+   "caption_at_post": "Everything in the universe vibrates. Even your brain.\n\nKevin Trudeau says every atom has its own frequency, and frequencies either attract or repel one another. That is why some atoms bind together and others push apart.\n\nHe adds that the brain broadcasts frequencies too, and he claims what you broadcast affects the physical world around you.\n\nWhat frequency do you think you broadcast most days?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mind #energy #kevintrudeau",
+   "posted_at": "2026-10-23T07:25"
   },
   {
    "file": "KT_MINDSET19/01_orangetree_46s.mp4",

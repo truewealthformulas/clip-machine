@@ -1,0 +1,40 @@
+# Connect / reconnect TikTok. Run once with "code" empty to get the login link,
+# then again with the code TikTok gives back. See factory/tiktok_connect.py.
+name: tiktok-connect
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Leave empty for step 1. Step 2: paste the code from the address bar"
+        type: string
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: post
+  cancel-in-progress: false
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q requests
+      - name: Connect
+        env:
+          TT_CLIENT_KEY: ${{ secrets.TT_CLIENT_KEY }}
+          TT_CLIENT_SECRET: ${{ secrets.TT_CLIENT_SECRET }}
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+          TT_CODE: ${{ inputs.code }}
+        run: python -P factory/tiktok_connect.py      # -P: factory/queue.py shadows stdlib queue
+      - name: Save the encrypted login
+        run: |
+          [ -f state/tiktok_token.enc ] || exit 0
+          git config user.name "kt-machine"
+          git config user.email "noreply@github.com"
+          git add state/tiktok_token.enc
+          git diff --staged --quiet && exit 0
+          git commit -q -m "tiktok: login saved (encrypted)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

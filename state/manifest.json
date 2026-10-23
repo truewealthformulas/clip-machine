@@ -1503,15 +1503,29 @@
    "file": "KT_MINDSET21/01_chooseyourfeeling_46s.mp4",
    "caption": "Most people don't realise they can choose how they feel.\n\nKevin Trudeau says you can go through life choosing your thoughts, your words and your actions on purpose, and that lets you choose how you feel.\n\nImagine deciding to feel happy. Or giving anger one minute, then stopping.\n\nKevin says most people feel angry, sad or full of loss and never see they're in control. They let their mind control them.\n\nWhen did you last feel truly in charge of your own mind?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness",
    "bytes": 21444007,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '202610230225530C22F04980F05412893A'}"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-22T21:59",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
    "style": "T1",
    "cover": "KT_MINDSET21--01_chooseyourfeeling_46s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2383973345671923/",
+    "instagram": "https://www.instagram.com/reel/De0ek6xiYer/",
+    "youtube": "https://youtube.com/shorts/CP2MN0VoCAI"
+   },
+   "caption_at_post": "Most people don't realise they can choose how they feel.\n\nKevin Trudeau says you can go through life choosing your thoughts, your words and your actions on purpose, and that lets you choose how you feel.\n\nImagine deciding to feel happy. Or giving anger one minute, then stopping.\n\nKevin says most people feel angry, sad or full of loss and never see they're in control. They let their mind control them.\n\nWhen did you last feel truly in charge of your own mind?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness",
+   "posted_at": "2026-10-22T22:25"
   },
   {
    "file": "KT_MINDSET21/02_acknowledgewelcome_42s.mp4",

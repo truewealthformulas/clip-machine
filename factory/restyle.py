@@ -158,7 +158,7 @@ def band_png(hook, out):
 # image: the hook in big white + gold inside the part the grid shows, over the
 # sharpest close-up of Kevin from the first seconds. Sent as cover_url.
 COVER_TITLE = (250, 660)      # y range of the title block (inside the grid crop)
-COVER_V = 3                   # bump to redo every queued cover
+COVER_V = 4                   # bump to redo every queued cover
 _DET = []
 
 
@@ -174,10 +174,13 @@ def _face_score(crop):
     if not _DET:
         _DET.append(cv2.FaceDetectorYN.create(os.path.join(ROOT, "factory", "assets", "yunet.onnx"),
                                               "", (540, 450), 0.6))
-    small = cv2.resize(cv2.cvtColor(crop, cv2.COLOR_RGB2BGR), (540, 450))
+    hh, ww = crop.shape[:2]
+    sw, sh_ = 540, int(540 * hh / ww)
+    _DET[0].setInputSize((sw, sh_))
+    small = cv2.resize(cv2.cvtColor(crop, cv2.COLOR_RGB2BGR), (sw, sh_))
     _, faces = _DET[0].detect(small)
     if faces is None:
-        return 0.0
+        return 0.0, None
     f = max(faces, key=lambda r: r[2] * r[3])
     re_, le_, nose = (f[4], f[5]), (f[6], f[7]), (f[8], f[9])
     eyed = abs(le_[0] - re_[0]) or 1
@@ -190,7 +193,8 @@ def _face_score(crop):
         patch = g[max(0, int(py - r)):int(py + r), max(0, int(px - r)):int(px + r)]
         return float(patch.std()) if patch.size else 0.0
     eyes = (eye(*re_) + eye(*le_)) / 2
-    return float(f[14]) * frontal * level * min(1.0, eyes / 30) * min(1.0, f[2] / 200)
+    score = float(f[14]) * frontal * level * min(1.0, eyes / 30) * min(1.0, f[2] / 200)
+    return score, (f[1] + f[3] * 0.45) * hh / sh_          # face centre, full-size rows
 
 
 def _cover_lines(hook):
@@ -213,26 +217,32 @@ def _frame_rgb(path, t):
 
 def cover_jpg(styled, hook, out):
     """Grid cover from a style-T clip: title on top, Kevin's sharpest close-up below."""
+    # 22 Oct: the window is placed around HIS FACE (found by YuNet), not at a
+    # fixed height - fixed crops of tight close-ups showed only a forehead.
+    PIC = H - COVER_TITLE[1]                     # 1260 rows of picture under the title
     best = None
     for t in np.arange(3.4, 16.0, 0.8):
         a = _frame_rgb(styled, float(t))
         if a is None:
             continue
-        crop = a[BAND + 10:BAND + 910]          # under the band, above the captions
+        region = a[BAND:]                        # the video under the title band
         try:
-            s = _face_score(crop)
+            s, cy = _face_score(region)
         except Exception:
-            s = 0.0
-        g = crop.astype(np.float32).mean(2)
+            s, cy = 0.0, None
+        g = region[:900].astype(np.float32).mean(2)
         sharp = float(np.var(g[1:-1, 1:-1] * 4 - g[:-2, 1:-1] - g[2:, 1:-1] - g[1:-1, :-2] - g[1:-1, 2:]))
         key = (s, sharp)                         # best face first; sharpness breaks ties
         if best is None or key > best[0]:
-            best = (key, crop)
+            best = (key, region, cy)
     if best is None:
         raise RuntimeError("no frame for the cover")
+    # The spoken word stays on the cover: Kevin's subtitles are on screen in
+    # every frame, and the pages we copy show them on their grid too.
+    region, cy = best[1], best[2]
+    top = int(min(max((cy if cy is not None else 450) - 0.40 * 1020, 0), region.shape[0] - PIC))
     im = Image.new("RGB", (W, H), INK)
-    pic = Image.fromarray(best[1]).resize((1344, 1120))
-    im.paste(pic.crop((132, 0, 132 + W, 1120)), (0, COVER_TITLE[1]))
+    im.paste(Image.fromarray(region[top:top + PIC]), (0, COVER_TITLE[1]))
     fade = Image.linear_gradient("L").resize((W, 90))
     im.paste(Image.new("RGB", (W, 90), INK), (0, COVER_TITLE[1]),
              Image.eval(fade, lambda v: 255 - v))

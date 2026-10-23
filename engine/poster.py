@@ -31,6 +31,7 @@ import os
 import re
 import time
 
+import subprocess
 import requests
 
 T = 120
@@ -1015,10 +1016,45 @@ def facebook(path, caption, public_url, clip=None):
 
 
 # ---------------------------------------------------------------------- TikTok
+# THE TIKTOK LOGIN LIVES ENCRYPTED IN THE REPO (23 Oct 2026). The refresh token
+# pasted into the TT_REFRESH_TOKEN secret died and a GitHub job cannot write a
+# secret back, so factory/tiktok_connect.py saves the login encrypted with
+# FACTORY_KEY in state/tiktok_token.enc, and every refresh below writes back the
+# token TikTok returns - so it renews itself instead of expiring. The secret is
+# only the fallback for the main account; other brands keep their own secrets.
+TT_TOKEN_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                             os.environ.get("KT_DATA", "state"), "tiktok_token.enc")
+
+
+def _tt_saved(write=None):
+    """Read (or, with write=token, save) the encrypted TikTok refresh token."""
+    if not os.environ.get("FACTORY_KEY"):
+        return None
+    try:
+        if write is not None:
+            subprocess.run(["openssl", "enc", "-aes-256-cbc", "-pbkdf2", "-salt", "-a", "-A",
+                            "-pass", "env:FACTORY_KEY", "-out", TT_TOKEN_FILE],
+                           input=write.encode(), capture_output=True, check=True)
+            return write
+        if not os.path.exists(TT_TOKEN_FILE):
+            return None
+        r = subprocess.run(["openssl", "enc", "-d", "-aes-256-cbc", "-pbkdf2", "-a", "-A",
+                            "-pass", "env:FACTORY_KEY", "-in", TT_TOKEN_FILE],
+                           capture_output=True, check=True)
+        return r.stdout.decode().strip() or None
+    except Exception:
+        return None
+
+
 def tiktok(path, caption, public_url, clip=None):
+    brand = brand_of(clip)
+    main_acct = cred_prefix(brand) in FALLBACK_BRANDS or not brand
+    saved = _tt_saved() if main_acct else None
     (key, secret, refresh), missing = _cfg(
-        "TT_CLIENT_KEY", "TT_CLIENT_SECRET", "TT_REFRESH_TOKEN",
-        brand=brand_of(clip))
+        "TT_CLIENT_KEY", "TT_CLIENT_SECRET", "TT_REFRESH_TOKEN", brand=brand)
+    if saved:
+        refresh = saved
+        missing = [m for m in missing if "REFRESH" not in m]
     if missing:
         return "not configured: " + ", ".join(missing)
     r = requests.post("https://open.tiktokapis.com/v2/oauth/token/", timeout=T,
@@ -1027,7 +1063,10 @@ def tiktok(path, caption, public_url, clip=None):
                             "grant_type": "refresh_token", "refresh_token": refresh})
     d = _j(r)
     if "access_token" not in d:
-        return f"token refresh failed {r.status_code}: {str(d)[:160]}"
+        return (f"token refresh failed {r.status_code}: {str(d)[:160]} - reconnect with "
+                "Actions > tiktok-connect")
+    if main_acct and d.get("refresh_token") and d["refresh_token"] != refresh:
+        _tt_saved(write=d["refresh_token"])        # keep the login alive
     tok = d["access_token"]
     size = os.path.getsize(path)
     # TIKTOK'S CHUNK ARITHMETIC IS NOT ceil(), 1 Sept 2026. Six clips came back

@@ -1628,15 +1628,29 @@
    "file": "KT_DEBT/02_reportdate_39s.mp4",
    "caption": "Paying on the due date and paying before the reporting date are not the same.\n\nKevin Trudeau explains that he keeps a mortgage and a car payment on purpose to support a good credit rating. He also uses a few credit cards, pays them off, and always pays before the reporting date, not the due date.\n\nHe is describing his own routine, not a promise for anyone else.\n\nDid you know your card has both dates?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
    "bytes": 16712334,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026102315151136F56A0AFF420D454F62'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T10:41",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_DEBT--02_reportdate_39s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1429256048631641/",
+    "instagram": "https://www.instagram.com/reel/De12oJfDJGd/",
+    "youtube": "https://youtube.com/shorts/g54KkQ5WrlU"
+   },
+   "caption_at_post": "Paying on the due date and paying before the reporting date are not the same.\n\nKevin Trudeau explains that he keeps a mortgage and a car payment on purpose to support a good credit rating. He also uses a few credit cards, pays them off, and always pays before the reporting date, not the due date.\n\nHe is describing his own routine, not a promise for anyone else.\n\nDid you know your card has both dates?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #credit #money #kevintrudeau",
+   "posted_at": "2026-10-23T11:15"
   },
   {
    "file": "KT_SUCCESS4/01_whatpainmoves_64s.mp4",

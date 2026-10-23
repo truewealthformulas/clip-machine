@@ -1349,15 +1349,29 @@
    "file": "KT_MINDSET16/01_snipething_52s.mp4",
    "caption": "Are you a snipe? Zig Ziglar had a name for it.\n\nKevin Trudeau recalls his friend Zig Ziglar, author of See You at the Top. Zig warned him to beware of becoming a snipe, which stands for susceptible to the negative influence of other people.\n\nKevin says most people today are more susceptible to it than ever before in his memory. The people around you shape your thinking, whether you notice it or not.\n\nWho influences your thinking the most?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 18790156,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T19:34",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_MINDSET16--01_snipething_52s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2570675443415071/",
+    "instagram": "https://www.instagram.com/reel/De2xf63gOP6/",
+    "youtube": "https://youtube.com/shorts/hLNCwJBIf_4"
+   },
+   "caption_at_post": "Are you a snipe? Zig Ziglar had a name for it.\n\nKevin Trudeau recalls his friend Zig Ziglar, author of See You at the Top. Zig warned him to beware of becoming a snipe, which stands for susceptible to the negative influence of other people.\n\nKevin says most people today are more susceptible to it than ever before in his memory. The people around you shape your thinking, whether you notice it or not.\n\nWho influences your thinking the most?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-10-23T19:50"
   },
   {
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1642,15 +1642,29 @@
    "file": "KT_DEBT/02_livebelow_52s.mp4",
    "caption": "Living below your means starts with one simple swap.\n\nKevin Trudeau quotes Jim Carrey: if you won't reduce your lifestyle for a year or two to build one that lasts, you don't deserve it. Kevin says to practice delayed gratification and live below your means.\n\nHis example is a cheaper home and a cheaper car, since insurance, fuel and utilities can drop along with them.\n\nWhat would you trim first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #freedom #debt #kevintrudeau",
    "bytes": 20988870,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261023191523E61157F6A5F4D24E5C6F'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T14:46",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "style": "T1",
    "cover": "KT_DEBT--02_livebelow_52s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1763548348093710/",
+    "instagram": "https://www.instagram.com/reel/De2SHgxjvYf/",
+    "youtube": "https://youtube.com/shorts/HNrVLeimd4I"
+   },
+   "caption_at_post": "Living below your means starts with one simple swap.\n\nKevin Trudeau quotes Jim Carrey: if you won't reduce your lifestyle for a year or two to build one that lasts, you don't deserve it. Kevin says to practice delayed gratification and live below your means.\n\nHis example is a cheaper home and a cheaper car, since insurance, fuel and utilities can drop along with them.\n\nWhat would you trim first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #freedom #debt #kevintrudeau",
+   "posted_at": "2026-10-23T15:15"
   },
   {
    "file": "KT_DEBT/02_reportdate_39s.mp4",

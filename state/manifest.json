@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1349,15 +1349,28 @@
    "file": "KT_MINDSET16/02_laughnow_46s.mp4",
    "caption": "Upside down in a Corvette, in the rain, with no phone. Kevin Trudeau laughed.\n\nIn 1984 he and his friend Dan were headed out in Orlando when the car flipped. They got out safely, soaked, with no cars passing and no cell phones.\n\nDan was upset. Kevin told him that someday they would look back and laugh, so why wait? Whether he was happy or sad, the situation would stay the same, so he chose to enjoy the moment.\n\nWhen something goes wrong, do you choose your mood or let it choose for you?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #happiness #mindset #kevintrudeau",
    "bytes": 16498971,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "youtube": "posted",
+    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261023135625FE54FFC0F6616F38543E'}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-23T08:19",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "style": "T1",
    "cover": "KT_MINDSET16--02_laughnow_46s__cover.jpg",
-   "cover_v": 3
+   "cover_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2196533937624604/",
+    "instagram": "https://www.instagram.com/reel/De1nkNTj6mP/",
+    "youtube": "https://youtube.com/shorts/w0YBjqh8mtE"
+   },
+   "caption_at_post": "Upside down in a Corvette, in the rain, with no phone. Kevin Trudeau laughed.\n\nIn 1984 he and his friend Dan were headed out in Orlando when the car flipped. They got out safely, soaked, with no cars passing and no cell phones.\n\nDan was upset. Kevin told him that someday they would look back and laugh, so why wait? Whether he was happy or sad, the situation would stay the same, so he chose to enjoy the moment.\n\nWhen something goes wrong, do you choose your mood or let it choose for you?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #happiness #mindset #kevintrudeau",
+   "posted_at": "2026-10-23T09:56"
   },
   {
    "file": "KT_MINDSET16/02_phonetrap_62s.mp4",

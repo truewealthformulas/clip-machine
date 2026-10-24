@@ -168,6 +168,7 @@ jobs:
           git config user.email "noreply@github.com"
           git add state/manifest.json state/metrics.json docs
           if [ -f state/tiktok_token.enc ]; then git add state/tiktok_token.enc; fi
+          if [ -f state/ig_daily.json ]; then git add state/ig_daily.json; fi
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           git push

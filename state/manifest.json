@@ -1909,8 +1909,14 @@
    "file": "KT_COUNTERINTENTI/01_poorisgood_32s.mp4",
    "caption": "What if your ancestors taught you that money isn't safe?\n\nKevin Trudeau says someone in your family line may have had money stolen, lost friends over it, or been scammed. After that, they decided money is bad.\n\nOthers believed they were born on the wrong side of the tracks and didn't deserve it. Kevin says those beliefs can sit inside you without your knowing.\n\nThat is especially true, he says, if your family never had much wealth or success.\n\nWhat did your family teach you about money?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #wealth",
    "bytes": 15124958,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T17:04",
    "cta_keyword": "GOALS",
@@ -1918,7 +1924,15 @@
    "style": "T2",
    "cover": "KT_COUNTERINTENTI--01_poorisgood_32s__cover.jpg",
    "cover_v": 4,
-   "lesson": 73
+   "lesson": 73,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2961780080843481/",
+    "instagram": "https://www.instagram.com/reel/De5E-_DCPhY/",
+    "youtube": "https://youtube.com/shorts/g5kEkXZ4BuQ"
+   },
+   "caption_at_post": "What if your ancestors taught you that money isn't safe?\n\nKevin Trudeau says someone in your family line may have had money stolen, lost friends over it, or been scammed. After that, they decided money is bad.\n\nOthers believed they were born on the wrong side of the tracks and didn't deserve it. Kevin says those beliefs can sit inside you without your knowing.\n\nThat is especially true, he says, if your family never had much wealth or success.\n\nWhat did your family teach you about money?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #wealth",
+   "posted_at": "2026-10-24T17:18"
   },
   {
    "file": "KT_COUNTERINTENTI/01_stopdreaming_37s.mp4",

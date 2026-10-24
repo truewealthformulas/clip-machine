@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -1418,15 +1418,29 @@
    "file": "KT_MINDSET16/02_phonetrap_62s.mp4",
    "caption": "Look around any airport gate. Almost everyone is staring at a screen.\n\nKevin Trudeau says we are being programmed to constantly be doing and thinking. He calls the cell phone a great tool and also a great trap, because it keeps so many people hooked on the device.\n\nHe describes sitting at the airport, looking around, and not finding a single person who was not on a phone, except him.\n\nWhen did you last sit for a while with no screen at all?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
    "bytes": 21506908,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T13:08",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "style": "T1",
    "cover": "KT_MINDSET16--02_phonetrap_62s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1718899425874262/",
+    "instagram": "https://www.instagram.com/reel/De4pqCFEYE6/",
+    "youtube": "https://youtube.com/shorts/JEwTMpaHum0"
+   },
+   "caption_at_post": "Look around any airport gate. Almost everyone is staring at a screen.\n\nKevin Trudeau says we are being programmed to constantly be doing and thinking. He calls the cell phone a great tool and also a great trap, because it keeps so many people hooked on the device.\n\nHe describes sitting at the airport, looking around, and not finding a single person who was not on a phone, except him.\n\nWhen did you last sit for a while with no screen at all?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
+   "posted_at": "2026-10-24T13:20"
   },
   {
    "file": "KT_LUCK2/01_knowwhatyouwant_40s.mp4",

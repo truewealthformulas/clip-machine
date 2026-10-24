@@ -46,7 +46,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = os.environ.get("RESTYLE_STYLE", "T1")
+STYLE = os.environ.get("RESTYLE_STYLE", "T2")
+# STYLE T2 (24 Oct 2026): T1 plus what makes each clip OURS. Instagram flagged
+# the account for "duplicate content or content you don't have the rights to"
+# and stopped recommending it to non-followers - Kevin's footage is posted by
+# many pages and the copies match. T2 adds an original layer to every clip:
+# a "THE SUCCESS CLUB · LESSON #N" label in the title band for the whole clip,
+# and a 2.5 s closing card in the brand colours with the reflection question
+# from our own caption ("ASK YOURSELF ...") and a follow line. A T1 clip is
+# upgraded in place: the new band is opaque and sits exactly over the old one.
+OUTRO_SECS = 2.5
+HANDLE = os.environ.get("KT_HANDLE", "@thesuccessclubco")
 BAND, TRIM_TOP = 330, 90  # style T: title band height; ceiling trimmed above the video
 W, H = 1080, 1920
 GOLD, INK, WHITE, GREY = (245, 197, 24), (11, 20, 48), (255, 255, 255), (165, 165, 165)   # INK: midnight navy #0B1430 (owner, 12 Oct)
@@ -131,8 +141,11 @@ def card_png(hook, out):
     im.save(out)
 
 
-def band_png(hook, out):
-    """Style T: the hook in the black title band, white line 1 + gold line 2."""
+def band_png(hook, out, label=None):
+    """Style T: the hook in the navy title band, white line 1 + gold line 2.
+
+    T2 passes `label` ("THE SUCCESS CLUB · LESSON 47"): a small gold line with
+    thin rules either side across the top of the band, the hook under it."""
     lines = [l.strip().upper() for l in hook if l.strip()][:2]
     if len(lines) == 1 and len(lines[0]) > 16:
         words = lines[0].split()
@@ -140,14 +153,86 @@ def band_png(hook, out):
         lines = [" ".join(words[:k]), " ".join(words[k:])]
     im = Image.new("RGBA", (W, BAND), INK + (255,))   # the owner's navy (#0B1430), not black (21 Oct)
     d = ImageDraw.Draw(im)
-    f = min((fit(d, l, 78, W - 120) for l in lines), key=lambda x: x.size)
+    top = 0
+    if label:
+        lf = ImageFont.truetype(FONT, 30)
+        lw = d.textlength(label, font=lf)
+        ly = 26
+        d.text(((W - lw) / 2, ly), label, font=lf, fill=GOLD + (255,))
+        mid = ly + 19
+        d.line(((60, mid), ((W - lw) / 2 - 22, mid)), fill=GOLD + (170,), width=2)
+        d.line((((W + lw) / 2 + 22, mid), (W - 60, mid)), fill=GOLD + (170,), width=2)
+        top = 62
+    f = min((fit(d, l, 78 if not label else 70, W - 120) for l in lines), key=lambda x: x.size)
     lh = int(f.size * 1.2)
-    y = (BAND - lh * len(lines)) // 2 + 8
+    y = top + (BAND - top - lh * len(lines)) // 2 + 8
     for i, l in enumerate(lines):
         w = d.textlength(l, font=f)
         d.text(((W - w) / 2, y), l, font=f, fill=(WHITE if i == 0 and len(lines) > 1 else GOLD) + (255,))
         y += lh
     im.save(out)
+
+
+def question_of(caption):
+    """Our own reflection question from the caption (its last sentence ending '?')."""
+    body = "\n".join(l for l in (caption or "").splitlines()
+                     if l.strip() and not l.strip().startswith("#"))
+    qs = re.findall(r"[^.!?\n\"]*\?", body)
+    q = qs[-1].strip() if qs else ""
+    return q if 12 <= len(q) <= 110 else ""
+
+
+def _wrap(d, text, f, maxw):
+    out, cur = [], ""
+    for w in text.split():
+        t = (cur + " " + w).strip()
+        if d.textlength(t, font=f) <= maxw or not cur:
+            cur = t
+        else:
+            out.append(cur)
+            cur = w
+    return out + ([cur] if cur else [])
+
+
+def outro_png(question, out):
+    """T2 closing card: navy, gold label, our question in white, follow line."""
+    im = Image.new("RGB", (W, H), INK)
+    d = ImageDraw.Draw(im)
+    lf = ImageFont.truetype(FONT, 40)
+    y = 560
+    lab = "ASK YOURSELF" if question else "THE SUCCESS CLUB"
+    lw = d.textlength(lab, font=lf)
+    d.text(((W - lw) / 2, y), lab, font=lf, fill=GOLD)
+    d.line(((W - lw) / 2, y + 62, (W + lw) / 2, y + 62), fill=GOLD, width=3)
+    y += 120
+    text = (question or "One success principle a day changes everything.").upper()
+    for size in range(78, 44, -4):
+        f = ImageFont.truetype(FONT, size)
+        lines = _wrap(d, text, f, W - 160)
+        if len(lines) <= 5:
+            break
+    lh = int(f.size * 1.22)
+    for l in lines:
+        w = d.textlength(l, font=f)
+        d.text(((W - w) / 2, y), l, font=f, fill=WHITE)
+        y += lh
+    y += 90
+    ff = ImageFont.truetype(FONT, 44)
+    for i, l in enumerate(["FOLLOW " + HANDLE.upper(), "A NEW SUCCESS PRINCIPLE EVERY DAY"]):
+        w = d.textlength(l, font=ff if i == 0 else ImageFont.truetype(FONT, 32))
+        d.text(((W - w) / 2, y), l, font=ff if i == 0 else ImageFont.truetype(FONT, 32),
+               fill=GOLD if i == 0 else (200, 205, 220))
+        y += 70
+    im.save(out)
+
+
+def lesson_of(man, c):
+    """A stable lesson number per clip, counting on from everything already posted."""
+    if not c.get("lesson"):
+        have = [x.get("lesson") or 0 for x in man.get("clips", [])]
+        posted = sum(1 for x in man.get("clips", []) if x.get("posted_at"))
+        c["lesson"] = max(max(have or [0]), posted) + 1
+    return c["lesson"]
 
 
 # THE GRID COVER (21 Oct 2026, the owner: "we need to improve the cover of each
@@ -279,6 +364,31 @@ def duration(path):
                                 capture_output=True, text=True, check=True).stdout.strip())
 
 
+def restyle_t2(src, hook, dst, label, question, from_t1=False):
+    """T2: title band with the lesson label over the video, then the closing card.
+
+    `from_t1`: src is already a T1 clip (band on top, video under it) - only the
+    band is replaced, nothing is cropped twice."""
+    band, card = dst + ".band.png", dst + ".outro.png"
+    band_png(hook, band, label=label)
+    outro_png(question, card)
+    base = ("[0:v]scale=1080:1920,setsar=1" if from_t1 else
+            f"[0:v]scale={W}:{H},crop={W}:{H - BAND}:0:{TRIM_TOP},pad={W}:{H}:0:{BAND}:0x0B1430,setsar=1")
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", src, "-i", band,
+       "-loop", "1", "-framerate", "30", "-t", f"{OUTRO_SECS}", "-i", card,
+       "-f", "lavfi", "-t", f"{OUTRO_SECS}", "-i", "anullsrc=r=48000:cl=stereo",
+       "-filter_complex",
+       f"{base}[b];[b][1:v]overlay=0:0,fps=30,format=yuv420p[m];"
+       f"[2:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p,fade=t=in:st=0:d=0.3[o];"
+       f"[0:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a0];"
+       f"[3:a]aformat=sample_fmts=fltp:channel_layouts=stereo[a1];"
+       f"[m][a0][o][a1]concat=n=2:v=1:a=1[v][a]",
+       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+       "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    os.remove(band)
+    os.remove(card)
+
+
 def restyle(src, hook, dst, check=True):
     # The factory's old card always sat ABOVE the spoken captions (its bottom
     # edge at y930), so a "card" found lower down is a caption that paused on
@@ -396,7 +506,17 @@ def main():
         asset = c["file"].replace("/", "--")
         src, dst = os.path.join(tmp, asset), os.path.join(tmp, "out_" + asset)
         clean = False
-        if c.get("style") not in (None, "none"):
+        if STYLE == "T2" and c.get("style") == "T1":
+            # Upgrade in place: the T1 file already has the band and the crop.
+            sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
+            try:
+                restyle_t2(src, hook, dst, f"THE SUCCESS CLUB · LESSON {lesson_of(man, c)}",
+                           question_of(c.get("caption", "")), from_t1=True)
+            except Exception as e:
+                skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
+                continue
+            card = None
+        elif c.get("style") not in (None, "none"):
             if slug_of(c["file"]) not in orig:
                 skipped.append(f"{c['file']}: styled before and no clean re-render yet - left as is")
                 continue
@@ -404,11 +524,17 @@ def main():
             clean = True
         else:
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
-        try:
-            card = restyle(src, hook, dst, check=False)
-        except Exception as e:
-            skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
-            continue
+        if not (STYLE == "T2" and c.get("style") == "T1"):
+            try:
+                if STYLE == "T2":
+                    restyle_t2(src, hook, dst, f"THE SUCCESS CLUB · LESSON {lesson_of(man, c)}",
+                               question_of(c.get("caption", "")))
+                    card = None
+                else:
+                    card = restyle(src, hook, dst, check=False)
+            except Exception as e:
+                skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
+                continue
         up = os.path.join(tmp, "up", asset)
         os.makedirs(os.path.dirname(up), exist_ok=True)
         os.replace(dst, up)

@@ -1952,7 +1952,10 @@
    "bytes": 49463209,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-25T18:54",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_SUCCESS5/01_extramile_33s.mp4",
@@ -1960,7 +1963,10 @@
    "bytes": 19149550,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-25T16:48",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS5/01_whoyouwatch_37s.mp4",
@@ -1968,7 +1974,10 @@
    "bytes": 21784206,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-25T22:03",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_SUCCESS5/02_dreamnotdelusion_48s.mp4",
@@ -1976,7 +1985,10 @@
    "bytes": 29327273,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-26T09:18",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_SUCCESS5/02_titansvshippies_44s.mp4",
@@ -1984,7 +1996,10 @@
    "bytes": 25718382,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-26T07:39",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   }
  ]
 }

@@ -1346,6 +1346,65 @@ def backfill_covers(clips, media, limit=5):
     return done
 
 
+# INSTAGRAM IS HELD TO A FEW A DAY (24 Oct 2026). Instagram flagged the account
+# for "duplicate content" and stopped recommending it to non-followers while the
+# review runs. Seven reels a day of footage that other pages also post makes the
+# pattern louder, so Instagram gets IG_PER_DAY (default 3) with at least
+# IG_MIN_GAP_H hours between them; the other platforms keep all seven. A clip
+# held back is NOT retried later - it still reaches Facebook, YouTube and TikTok.
+# Set IG_PER_DAY=0 to lift the limit.
+IG_PER_DAY = int(os.environ.get("IG_PER_DAY", "3") or 0)
+IG_MIN_GAP_H = float(os.environ.get("IG_MIN_GAP_H", "4"))
+IG_COUNT_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                             os.environ.get("KT_DATA", "state"), "ig_daily.json")
+
+
+def _ig_now():
+    from datetime import datetime
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo(os.environ.get("KT_TZ", "America/New_York")))
+    except Exception:
+        return datetime.now()
+
+
+def _ig_room():
+    """(allowed, reason). Instagram budget for today in the posting time zone."""
+    if IG_PER_DAY <= 0:
+        return True, ""
+    now = _ig_now()
+    try:
+        d = json.load(open(IG_COUNT_FILE))
+    except Exception:
+        d = {}
+    today = now.strftime("%Y-%m-%d")
+    if d.get("day") != today:
+        d = {"day": today, "n": 0, "last": d.get("last", 0)}
+    if d["n"] >= IG_PER_DAY:
+        return False, f"held - Instagram limited to {IG_PER_DAY} a day while under review"
+    if now.timestamp() - float(d.get("last") or 0) < IG_MIN_GAP_H * 3600:
+        return False, f"held - Instagram spaced {IG_MIN_GAP_H:g}h apart while under review"
+    return True, ""
+
+
+def _ig_count():
+    now = _ig_now()
+    try:
+        d = json.load(open(IG_COUNT_FILE))
+    except Exception:
+        d = {}
+    today = now.strftime("%Y-%m-%d")
+    if d.get("day") != today:
+        d = {"day": today, "n": 0}
+    d["n"] = int(d.get("n", 0)) + 1
+    d["last"] = now.timestamp()
+    try:
+        with open(IG_COUNT_FILE, "w") as fh:
+            json.dump(d, fh)
+    except OSError:
+        pass
+
+
 def publish(clip, path, public_url, only=None):
     """Run every enabled adapter. Returns (status_by_platform, link_by_platform).
 
@@ -1392,6 +1451,10 @@ def publish(clip, path, public_url, only=None):
                 out[name] = "posted"
                 links[name] = live if str(live).startswith("http") else ""
                 continue
+            ok, why = _ig_room()
+            if not ok and not only:
+                out[name] = why
+                continue
         try:
             # EACH PLATFORM GETS ITS OWN CTA. See caption_for: Instagram and
             # TikTok cannot carry a clickable link, YouTube and Facebook can,
@@ -1408,6 +1471,8 @@ def publish(clip, path, public_url, only=None):
             out[name], links[name] = res[0], res[1]
         else:
             out[name] = res
+        if name == "instagram" and out.get(name) == "posted":
+            _ig_count()
         # A reel that posted also goes to stories. Bonus, never fatal - wrapped
         # so a story failure cannot turn a good reel into a bad status.
         if name == "instagram" and out.get(name) == "posted" and STORIES_ON:

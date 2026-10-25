@@ -2124,7 +2124,10 @@
    "bytes": 29178163,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-26T12:30",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MANIFESTING2/01_handwritingmind_44s.mp4",
@@ -2132,7 +2135,10 @@
    "bytes": 31042163,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-26T14:29",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MANIFESTING2/01_harvardthreepercent_54s.mp4",
@@ -2140,7 +2146,10 @@
    "bytes": 35978447,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-26T19:14",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MANIFESTING2/01_vaguegoalsnomoney_45s.mp4",
@@ -2148,7 +2157,10 @@
    "bytes": 33912136,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-26T17:02",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_MANIFESTING2/02_momentumcycle_54s.mp4",
@@ -2156,7 +2168,10 @@
    "bytes": 38036101,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-26T21:55",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   }
  ]
 }

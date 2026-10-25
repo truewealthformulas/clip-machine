@@ -1895,7 +1895,12 @@
    "caption": "What does it feel like when nothing is holding you back?\n\nKevin Trudeau says you feel lighter. You feel a sense of expansion, powerful, optimistic and in control.\n\nHe says your confidence in reaching your goals skyrockets, because you know you won't meet invisible resistance as you move toward what you want.\n\nWhen did you last feel completely sure of yourself?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #goals",
    "bytes": 11816050,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "held - Instagram spaced 4h apart while under review",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-24T19:49",
    "cta_keyword": "GOALS",
@@ -1903,7 +1908,14 @@
    "style": "T2",
    "cover": "KT_COUNTERINTENTI--01_feelslighter_34s__cover.jpg",
    "cover_v": 4,
-   "lesson": 72
+   "lesson": 72,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1116581604063286/",
+    "youtube": "https://youtube.com/shorts/lSJAbT7MFOc"
+   },
+   "caption_at_post": "What does it feel like when nothing is holding you back?\n\nKevin Trudeau says you feel lighter. You feel a sense of expansion, powerful, optimistic and in control.\n\nHe says your confidence in reaching your goals skyrockets, because you know you won't meet invisible resistance as you move toward what you want.\n\nWhen did you last feel completely sure of yourself?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #goals",
+   "posted_at": "2026-10-24T20:18"
   },
   {
    "file": "KT_COUNTERINTENTI/01_poorisgood_32s.mp4",

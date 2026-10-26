@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2265,7 +2265,6 @@
    "done": false,
    "status": {
     "facebook": "posted",
-    "instagram": "held - Instagram limited to 3 a day while under review",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2283,7 +2282,13 @@
     "youtube": "https://youtube.com/shorts/gqpWp_zzphg"
    },
    "caption_at_post": "Arnold didn't just wish. He saw it every night.\n\nKevin Trudeau points to Arnold Schwarzenegger's documentary. As a young man in Austria, Arnold put a picture of what he wanted on the wall by his bed. Every night he closed his eyes and saw himself on stage winning, with the crowd cheering. He felt as if it was real.\n\nThen, Kevin says, he got up early and went to work on the next logical step.\n\nWhat would you picture every night if you knew you'd act on it?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #mindset",
-   "posted_at": "2026-10-26T13:22"
+   "posted_at": "2026-10-26T13:22",
+   "retry_only": [
+    "instagram"
+   ],
+   "agent_retried": [
+    "instagram"
+   ]
   },
   {
    "file": "KT_MANIFESTING2/01_handwritingmind_44s.mp4",

@@ -401,11 +401,35 @@ def ig_short(caption, variant=None):
     return "\n".join(out + ["", " ".join(tags)])
 
 
+# TIKTOK POINTS AT THE PROFILE (26 Oct 2026). TikTok analytics, 19-25 Oct: 8.4K
+# video views but only 16 profile visits - people watched and nobody went to the
+# profile, where the free book is. A "comment the word" ask on TikTok has no
+# automation behind it, so the main account's TikTok captions now end on one
+# line that says why to tap the profile. KT_TT_BIO=0 brings the old ask back.
+TT_BIO_LINE = os.environ.get(
+    "KT_TT_BIO_LINE",
+    "\U0001F381 FREE Kevin Trudeau e-book → link on my profile \U0001F446")
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
     if platform == "instagram" and cred_prefix(brand) in FALLBACK_BRANDS \
             and os.environ.get("KT_IG_SHORT", "1") == "1":
         return ig_short(caption, variant)
-    return _caption_for(platform, caption, brand, keyword, ask, variant)
+    out = _caption_for(platform, caption, brand, keyword, ask, variant)
+    if (platform == "tiktok" and out and cred_prefix(brand) in FALLBACK_BRANDS
+            and os.environ.get("KT_TT_BIO", "1") == "1"):
+        out = re.sub(r"(?m)^Comment \S+ to get access\.?\s*$", TT_BIO_LINE, out)
+        # "in my highlights" is an Instagram thing; TikTok has no highlights.
+        out = re.sub(r"(?m)^.*in my highlights\.?\s*\n?", "", out)
+        out = re.sub(r"\n{3,}", "\n\n", out)
+        out = re.sub(r"(?m)^(" + re.escape(TT_BIO_LINE) + r")\n(#)", r"\1\n\n\2", out)
+        if TT_BIO_LINE not in out:
+            lines = out.rstrip().split("\n")
+            if lines[-1].strip().startswith("#"):
+                out = "\n".join(lines[:-1]).rstrip() + "\n\n" + TT_BIO_LINE + "\n\n" + lines[-1].strip()
+            else:
+                out = out.rstrip() + "\n\n" + TT_BIO_LINE
+    return out
 
 
 def _caption_for(platform, caption, brand="", keyword="", ask="", variant=None):

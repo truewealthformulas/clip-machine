@@ -2116,7 +2116,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-25T23:01",
+   "scheduled_at": "2026-10-26T00:09",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "style": "T2",
@@ -2174,7 +2174,12 @@
    "caption": "Kevin wanted to learn how winners think, so he found them.\n\nKevin Trudeau tells how a school friend introduced him to a direct-selling company. Kevin wasn't after that business. He wanted to be around motivated, positive, inspired people.\n\nThey drove Cadillacs and Rolls-Royces and flew on private jets. He figured they knew something he didn't, so he set out to learn it.\n\nWho are you spending time around right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #habits",
    "bytes": 13390124,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "held - Instagram limited to 3 a day while under review",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-25T23:00",
    "cta_keyword": "GOALS",
@@ -2182,7 +2187,14 @@
    "style": "T2",
    "cover": "KT_SUCCESS5--01_whoyouwatch_37s__cover.jpg",
    "cover_v": 4,
-   "lesson": 81
+   "lesson": 81,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1544518524137042/",
+    "youtube": "https://youtube.com/shorts/fy9IxDAUx0U"
+   },
+   "caption_at_post": "Kevin wanted to learn how winners think, so he found them.\n\nKevin Trudeau tells how a school friend introduced him to a direct-selling company. Kevin wasn't after that business. He wanted to be around motivated, positive, inspired people.\n\nThey drove Cadillacs and Rolls-Royces and flew on private jets. He figured they knew something he didn't, so he set out to learn it.\n\nWho are you spending time around right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #habits",
+   "posted_at": "2026-10-25T23:25"
   },
   {
    "file": "KT_SUCCESS5/02_dreamnotdelusion_48s.mp4",

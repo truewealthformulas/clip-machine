@@ -2330,7 +2330,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-26T19:14",
+   "scheduled_at": "2026-10-26T20:32",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
    "lesson": 86,
@@ -2342,9 +2342,11 @@
    "file": "KT_MANIFESTING2/01_vaguegoalsnomoney_45s.mp4",
    "caption": "You can answer your address instantly. But what do you want?\n\nKevin Trudeau says he asks people their name, address and phone number, and they answer in a flash. Then he asks, what do you want? They have to think about it.\n\nThat, Kevin says, is the problem. Without a specific, measurable end result, you have no target. And you can't hit a target you don't have.\n\nCould you say exactly what you want without pausing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #wealth",
    "bytes": 20080801,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2359,13 +2361,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1418510823262388/",
-    "youtube": "https://youtube.com/shorts/uPwhcg3P2UA"
+    "youtube": "https://youtube.com/shorts/uPwhcg3P2UA",
+    "instagram": "https://www.instagram.com/reel/De-fylsgQt0/"
    },
    "caption_at_post": "You can answer your address instantly. But what do you want?\n\nKevin Trudeau says he asks people their name, address and phone number, and they answer in a flash. Then he asks, what do you want? They have to think about it.\n\nThat, Kevin says, is the problem. Without a specific, measurable end result, you have no target. And you can't hit a target you don't have.\n\nCould you say exactly what you want without pausing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #wealth",
-   "posted_at": "2026-10-26T17:10",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-26T19:48",
    "agent_retried": [
     "instagram"
    ]

@@ -2294,10 +2294,13 @@
    "file": "KT_MANIFESTING2/01_handwritingmind_44s.mp4",
    "caption": "Typing leaves less of a mark on your brain than writing.\n\nKevin Trudeau explains why he asks people to write their goals on paper. He says cursive writing fires thousands of neural pathways because of the many movements of your hand.\n\nTyping, he says, uses fewer than two dozen movements, and thumbs on a phone use even fewer. So writing it by hand makes a far bigger impression in your brain.\n\nWhen did you last write something by hand that mattered?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mind #goals",
    "bytes": 19145896,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
-    "youtube": "posted"
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-26T17:55",
@@ -2310,14 +2313,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/2242774880001675/",
-    "youtube": "https://youtube.com/shorts/UEo61wVAVtU"
+    "youtube": "https://youtube.com/shorts/UEo61wVAVtU",
+    "instagram": "https://www.instagram.com/reel/De-WVbIEhbl/"
    },
    "caption_at_post": "Typing leaves less of a mark on your brain than writing.\n\nKevin Trudeau explains why he asks people to write their goals on paper. He says cursive writing fires thousands of neural pathways because of the many movements of your hand.\n\nTyping, he says, uses fewer than two dozen movements, and thumbs on a phone use even fewer. So writing it by hand makes a far bigger impression in your brain.\n\nWhen did you last write something by hand that mattered?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mind #goals",
-   "posted_at": "2026-10-26T15:55",
-   "retry_only": [
-    "tiktok",
-    "instagram"
-   ],
+   "posted_at": "2026-10-26T18:26",
    "agent_retried": [
     "instagram",
     "tiktok"
@@ -2349,7 +2349,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-26T17:55",
+   "scheduled_at": "2026-10-26T19:08",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 87,

@@ -2337,7 +2337,12 @@
    "caption": "You can answer your address instantly. But what do you want?\n\nKevin Trudeau says he asks people their name, address and phone number, and they answer in a flash. Then he asks, what do you want? They have to think about it.\n\nThat, Kevin says, is the problem. Without a specific, measurable end result, you have no target. And you can't hit a target you don't have.\n\nCould you say exactly what you want without pausing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #wealth",
    "bytes": 20080801,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 3 a day while under review"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-26T17:02",
    "cta_keyword": "GOALS",
@@ -2345,7 +2350,14 @@
    "lesson": 87,
    "style": "T2",
    "cover": "KT_MANIFESTING2--01_vaguegoalsnomoney_45s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1418510823262388/",
+    "youtube": "https://youtube.com/shorts/uPwhcg3P2UA"
+   },
+   "caption_at_post": "You can answer your address instantly. But what do you want?\n\nKevin Trudeau says he asks people their name, address and phone number, and they answer in a flash. Then he asks, what do you want? They have to think about it.\n\nThat, Kevin says, is the problem. Without a specific, measurable end result, you have no target. And you can't hit a target you don't have.\n\nCould you say exactly what you want without pausing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #wealth",
+   "posted_at": "2026-10-26T17:10"
   },
   {
    "file": "KT_MANIFESTING2/02_momentumcycle_54s.mp4",

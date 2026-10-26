@@ -408,7 +408,7 @@ def ig_short(caption, variant=None):
 # line that says why to tap the profile. KT_TT_BIO=0 brings the old ask back.
 TT_BIO_LINE = os.environ.get(
     "KT_TT_BIO_LINE",
-    "\U0001F381 FREE Kevin Trudeau e-book → link on my profile \U0001F446")
+    "\U0001F381 FREE Kevin Trudeau e-book → tap the Instagram icon on my profile \U0001F446")
 
 
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):

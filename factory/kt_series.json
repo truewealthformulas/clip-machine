@@ -1288,5 +1288,23 @@
     "cta_kind": "question"
    }
   ]
+ },
+ "mindset_v6wv03u": {
+  "source": "v6wv03u.mp4",
+  "brand": "KT_MINDSET25",
+  "note": "",
+  "clips": [
+   {
+    "slug": "buffettteach",
+    "in": 1744.1,
+    "out": 1783.99,
+    "hook": [
+     "Why Rich People Invest",
+     "In Growth"
+    ],
+    "caption": "Warren Buffett says one habit separates wealthy people from the rest.\n\nKevin Trudeau recalls it: wealthy people always put time and money into personal development, especially when they are just starting out. People who struggle tend not to.\n\nKevin says the difference is being teachable. If you want to become successful, you have to listen to the right people.\n\nWhat have you invested in yourself lately?\n\n#ad #money #habits #kevintrudeau",
+    "cta_kind": "offer"
+   }
+  ]
  }
 }

@@ -1,0 +1,18 @@
+{
+ "source": "v6vm6pp.mp4",
+ "brand": "KT_TAXES",
+ "test": false,
+ "clips": [
+  {
+   "slug": "effectivetaxrate",
+   "in": 1164.5,
+   "out": 1205.8,
+   "hook": [
+    "The Real Tax Rate",
+    "On Money"
+   ],
+   "caption": "The tax rate you hear about is rarely the one that counts.\n\nKevin explains that America once had a 90% top tax rate, yet because almost everything was deductible, people actually paid closer to 10%.\n\nHis point: the headline number hardly matters. What matters is your effective tax rate, the real share of your income that goes out in tax. Pay 27 out of every 100 and it's 27%. Pay 20 out of every 100 and it's 20%.\n\nWhen did you last look at the rate that actually applies, not the one in the headlines?\n\n#ad #money #wealth #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

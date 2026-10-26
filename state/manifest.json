@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2295,7 +2295,12 @@
    "caption": "Typing leaves less of a mark on your brain than writing.\n\nKevin Trudeau explains why he asks people to write their goals on paper. He says cursive writing fires thousands of neural pathways because of the many movements of your hand.\n\nTyping, he says, uses fewer than two dozen movements, and thumbs on a phone use even fewer. So writing it by hand makes a far bigger impression in your brain.\n\nWhen did you last write something by hand that mattered?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mind #goals",
    "bytes": 19145896,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "init failed 504: {'_raw': '<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n<hr><center>TLB</center>\\r\\n</body>\\r\\n</html>\\r\\n'}",
+    "instagram": "held - Instagram limited to 3 a day while under review"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-26T14:29",
    "cta_keyword": "GOALS",
@@ -2303,7 +2308,14 @@
    "lesson": 85,
    "style": "T2",
    "cover": "KT_MANIFESTING2--01_handwritingmind_44s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2242774880001675/",
+    "youtube": "https://youtube.com/shorts/UEo61wVAVtU"
+   },
+   "caption_at_post": "Typing leaves less of a mark on your brain than writing.\n\nKevin Trudeau explains why he asks people to write their goals on paper. He says cursive writing fires thousands of neural pathways because of the many movements of your hand.\n\nTyping, he says, uses fewer than two dozen movements, and thumbs on a phone use even fewer. So writing it by hand makes a far bigger impression in your brain.\n\nWhen did you last write something by hand that mattered?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mind #goals",
+   "posted_at": "2026-10-26T15:55"
   },
   {
    "file": "KT_MANIFESTING2/01_harvardthreepercent_54s.mp4",

@@ -164,8 +164,36 @@ def main():
             except Exception as e:
                 log(f"  could not fetch: {e}")
                 continue
+        # INSTAGRAM LIMIT, CHECKED AGAINST THE BOARD (26 Oct 2026). The counter
+        # file in poster.py did not hold on the runner - six reels on 25 Oct and
+        # two an hour apart overnight. This second gate counts what the board
+        # itself says went to Instagram today, so it cannot drift.
+        only = clip.get("retry_only")
+        held = None
+        cap = int(os.environ.get("IG_PER_DAY", "3") or 0)
+        if cap > 0 and not only and "instagram" in poster.ENABLED:
+            from datetime import datetime
+            now = engine.now_local()
+            today = now.strftime("%Y-%m-%d")
+            ig = [c.get("posted_at") or "" for c in engine.load()["clips"]
+                  if (c.get("status") or {}).get("instagram") == "posted"
+                  and (c.get("posted_at") or "").startswith(today)]
+            last = max(ig) if ig else ""
+            gap_h = float(os.environ.get("IG_MIN_GAP_H", "4"))
+            mins = ((now.replace(tzinfo=None) - datetime.strptime(last[:16], "%Y-%m-%dT%H:%M"))
+                    .total_seconds() / 60) if last else 1e9
+            if len(ig) >= cap:
+                held = f"held - Instagram limited to {cap} a day while under review"
+            elif mins < gap_h * 60:
+                held = f"held - Instagram spaced {gap_h:g}h apart while under review"
+            log(f"instagram gate: {len(ig)} today, last {last or '-'}, "
+                + (held or "allowed"))
+            if held:
+                only = [p for p in poster.ENABLED if p != "instagram"]
         result, links = poster.publish(
-            clip, path, media_url(clip["file"]), only=clip.get("retry_only"))
+            clip, path, media_url(clip["file"]), only=only)
+        if held:
+            result["instagram"] = held
         m2 = engine.load()
         engine.record(m2, i, result, links)
         engine.save(m2)

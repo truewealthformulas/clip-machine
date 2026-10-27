@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2391,10 +2391,13 @@
    "file": "KT_MANIFESTING2/02_momentumcycle_54s.mp4",
    "caption": "One small win can start a whole momentum cycle.\n\nKevin Trudeau says many people carry a poor picture of themselves, and it quietly limits the life they build.\n\nHe explains that even a small change brings small wins: a raise, a new relationship, a lucky meeting. Then a cycle starts. Success builds confidence, confidence creates activity, activity creates success habits, and those create more success.\n\nWhat is one small win that could start your cycle?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #success #habits",
    "bytes": 24691254,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
-    "youtube": "posted"
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-26T22:57",
@@ -2407,14 +2410,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1138107042036517/",
-    "youtube": "https://youtube.com/shorts/WAchSCl_1OM"
+    "youtube": "https://youtube.com/shorts/WAchSCl_1OM",
+    "instagram": "https://www.instagram.com/reel/De_GaI1CW3H/"
    },
    "caption_at_post": "One small win can start a whole momentum cycle.\n\nKevin Trudeau says many people carry a poor picture of themselves, and it quietly limits the life they build.\n\nHe explains that even a small change brings small wins: a raise, a new relationship, a lucky meeting. Then a cycle starts. Success builds confidence, confidence creates activity, activity creates success habits, and those create more success.\n\nWhat is one small win that could start your cycle?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #success #habits",
-   "posted_at": "2026-10-26T23:25",
-   "retry_only": [
-    "tiktok",
-    "instagram"
-   ],
+   "posted_at": "2026-10-27T01:27",
    "agent_retried": [
     "instagram",
     "tiktok"

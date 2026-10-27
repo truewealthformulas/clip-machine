@@ -2552,9 +2552,11 @@
    "file": "KT_SUCCESS6/02_fivehundredbooks_35s.mp4",
    "caption": "\"I've read 500 books and never heard this.\"\n\nKevin Trudeau says people who had been through big seminars and read endless success books told him exactly that. They asked why no one was talking about it.\n\nHis answer is that many teachers know about success but not how the mind actually works. In his view the real skill is learning to train and use your mind, not just your brain.\n\nWhat would change if you understood how your own mind works?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #goals",
    "bytes": 15518665,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2569,13 +2571,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/28759704220389026/",
-    "youtube": "https://youtube.com/shorts/8yIsStsb1r4"
+    "youtube": "https://youtube.com/shorts/8yIsStsb1r4",
+    "instagram": "https://www.instagram.com/reel/DfA7fECDbw6/"
    },
    "caption_at_post": "\"I've read 500 books and never heard this.\"\n\nKevin Trudeau says people who had been through big seminars and read endless success books told him exactly that. They asked why no one was talking about it.\n\nHis answer is that many teachers know about success but not how the mind actually works. In his view the real skill is learning to train and use your mind, not just your brain.\n\nWhat would change if you understood how your own mind works?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #goals",
-   "posted_at": "2026-10-27T17:13",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-27T18:28",
    "agent_retried": [
     "instagram"
    ]
@@ -2591,7 +2591,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-10-27T17:58",
+   "scheduled_at": "2026-10-27T19:12",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 95,

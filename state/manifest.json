@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2479,68 +2479,92 @@
   {
    "file": "KT_MINDSET27/02_worldmirrors_36s.mp4",
    "caption": "What if the world outside is just a mirror?\n\nKevin Trudeau quotes an old idea: as within, so without. In his view, the world you see reflects the thoughts you carry inside.\n\nHe says your ability to control your thoughts shapes your success, and that training the mind is something he believes wealthy people have in common.\n\nWhat is your mind showing you right now?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 23692886,
+   "bytes": 15990386,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-27T22:27",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "lesson": 92,
+   "style": "T2",
+   "cover": "KT_MINDSET27--02_worldmirrors_36s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS6/01_greatestsecret_52s.mp4",
    "caption": "The biggest money secret isn't a stock tip. It's who you sit next to.\n\nKevin Trudeau explains that one of the best-kept secrets in wealth is simple: spend time with people who have more than you. In his words, who you associate with determines who you become.\n\nAs kids we were told to stop hanging around the wrong crowd, because we'd turn out just like them. Kevin says it works in the other direction too: spend time with successful, happy, healthy people and it rubs off.\n\nWho are the five people you spend the most time with?\n\n#ad #success #wealth #mindset",
-   "bytes": 33498483,
+   "bytes": 21696801,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-28T06:54",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "lesson": 93,
+   "style": "T2",
+   "cover": "KT_SUCCESS6--01_greatestsecret_52s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS6/02_fivehundredbooks_35s.mp4",
    "caption": "\"I've read 500 books and never heard this.\"\n\nKevin Trudeau says people who had been through big seminars and read endless success books told him exactly that. They asked why no one was talking about it.\n\nHis answer is that many teachers know about success but not how the mind actually works. In his view the real skill is learning to train and use your mind, not just your brain.\n\nWhat would change if you understood how your own mind works?\n\n#ad #mindset #success #goals",
-   "bytes": 22801693,
+   "bytes": 15518665,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-27T16:20",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "lesson": 94,
+   "style": "T2",
+   "cover": "KT_SUCCESS6--02_fivehundredbooks_35s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS7/01_moneybeliefs_35s.mp4",
    "caption": "What if your doubts about money were handed down to you?\n\nKevin explains that people from wealthy families often carry little resistance around money. Many others grew up hearing that money is the root of all evil.\n\nHe argues that belief sits in the background. You try to earn while a quiet voice says money is bad, and that clash works against you.\n\nWhat did you hear about money growing up?\n\n#ad #money #mindset #kevintrudeau",
-   "bytes": 19918304,
+   "bytes": 13655691,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-10-27T15:10",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "lesson": 95,
+   "style": "T2",
+   "cover": "KT_SUCCESS7--01_moneybeliefs_35s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS7/02_awareness_52s.mp4",
    "caption": "You can't change a habit you never notice.\n\nKevin explains that most people are clueless about their own actions, words and thoughts.\n\nHe tells of a person at an event who arrived late to every single meeting. Even after he pointed it out several times, they showed up late again.\n\nHis point: unless you increase your self-awareness, nothing is going to change.\n\nWhich habit might you be repeating without noticing?\n\n#ad #habits #mindset #kevintrudeau",
-   "bytes": 29869921,
+   "bytes": 20085473,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-28T09:32",
    "cta_keyword": "GOALS",
-   "cta_variant": 5
+   "cta_variant": 5,
+   "lesson": 96,
+   "style": "T2",
+   "cover": "KT_SUCCESS7--02_awareness_52s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS7/02_boatmotor_47s.mp4",
    "caption": "Most people live like a boat with no motor.\n\nKevin explains that many people feel the wind and waves decide where they go.\n\nHe says there is a motor. You can turn the key, get behind the wheel and steer through the storm.\n\nOnce you accept responsibility, he says life gets more fun because you stop feeling like a victim.\n\nWhere in your life are you drifting instead of steering?\n\n#ad #freedom #confidence #kevintrudeau",
-   "bytes": 27521342,
+   "bytes": 18751820,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-10-27T19:28",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "lesson": 97,
+   "style": "T2",
+   "cover": "KT_SUCCESS7--02_boatmotor_47s__cover.jpg",
+   "cover_v": 4
   }
  ]
 }

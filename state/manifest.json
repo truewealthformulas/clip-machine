@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2424,8 +2424,11 @@
    "file": "KT_LUCK3/01_mindmatter_57s.mp4",
    "caption": "Could your thoughts shape the world around you?\n\nKevin Trudeau shares experiments he says show that thoughts affect physical matter. In one, a glass of water is shown hate, then frozen, and the ice crystal looks jagged. Show another glass love, and the crystal looks beautiful.\n\nHe adds that plants played rock music for a month die, while plants played Mozart grow twice as much.\n\nFor Kevin, this is why the frequency you put out matters.\n\nWhat kind of frequency are you broadcasting today?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #energy",
    "bytes": 24223962,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2439,14 +2442,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/rmKLMf60hPg"
+    "youtube": "https://youtube.com/shorts/rmKLMf60hPg",
+    "facebook": "https://facebook.com/reel/4820119918227713/",
+    "instagram": "https://www.instagram.com/reel/DfAalmfjl3E/"
    },
    "caption_at_post": "Could your thoughts shape the world around you?\n\nKevin Trudeau shares experiments he says show that thoughts affect physical matter. In one, a glass of water is shown hate, then frozen, and the ice crystal looks jagged. Show another glass love, and the crystal looks beautiful.\n\nHe adds that plants played rock music for a month die, while plants played Mozart grow twice as much.\n\nFor Kevin, this is why the frequency you put out matters.\n\nWhat kind of frequency are you broadcasting today?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #energy",
-   "posted_at": "2026-10-27T11:04",
-   "retry_only": [
-    "instagram",
-    "facebook"
-   ],
+   "posted_at": "2026-10-27T13:41",
    "agent_retried": [
     "facebook",
     "instagram"
@@ -2496,7 +2497,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-27T12:23",
+   "scheduled_at": "2026-10-27T14:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 91,

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2327,9 +2327,11 @@
    "file": "KT_MANIFESTING2/01_harvardthreepercent_54s.mp4",
    "caption": "Seventy percent had goals. Only 3% wrote them down.\n\nKevin Trudeau shares the story of a Harvard graduating class. Most students said they had specific goals for the next 10 to 20 years. When asked who had them on paper, only 3% raised a hand.\n\nFifteen years later, Kevin says, that small group had achieved more than the other 97% combined.\n\nHis point: a goal in your head is vague. A goal on paper is real.\n\nDo you have your biggest goal written down right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #mindset",
    "bytes": 21898714,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2344,13 +2346,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1125948566929752/",
-    "youtube": "https://youtube.com/shorts/1I2S-USdENw"
+    "youtube": "https://youtube.com/shorts/1I2S-USdENw",
+    "instagram": "https://www.instagram.com/reel/De-wdr2iYFI/"
    },
    "caption_at_post": "Seventy percent had goals. Only 3% wrote them down.\n\nKevin Trudeau shares the story of a Harvard graduating class. Most students said they had specific goals for the next 10 to 20 years. When asked who had them on paper, only 3% raised a hand.\n\nFifteen years later, Kevin says, that small group had achieved more than the other 97% combined.\n\nHis point: a goal in your head is vague. A goal on paper is real.\n\nDo you have your biggest goal written down right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #mindset",
-   "posted_at": "2026-10-26T21:22",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-26T22:14",
    "agent_retried": [
     "instagram"
    ]
@@ -2394,7 +2394,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-26T21:55",
+   "scheduled_at": "2026-10-26T22:57",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 88,

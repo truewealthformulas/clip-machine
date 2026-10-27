@@ -146,6 +146,16 @@ def passes(vid):
     return n
 
 
+# EPISODES INSTAGRAM FLAGGED (26 Oct 2026). Every reel Instagram marked as
+# "duplicate content or content you don't have the rights to" came from two
+# recordings, so nothing new is planned from them. factory/flagged_sources.json.
+try:
+    FLAGGED = {k for k in json.load(open(os.path.join(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__))), "factory", "flagged_sources.json"))) if not k.startswith("_")}
+except Exception:
+    FLAGGED = set()
+
+
 def candidates(idx):
     """Episodes to plan: never-planned ones first, then MORE PASSES on planned ones.
 
@@ -163,6 +173,8 @@ def candidates(idx):
                                or float(e.get("duration", 0)) < 20 * 60):
             continue
         if e.get("height", 1080) < 1080:
+            continue
+        if vid in FLAGGED:                     # Instagram rights match (26 Oct 2026)
             continue
         out.append((vid, e))
     # Best transcripts first (punctuation density decides how clean the edges are),

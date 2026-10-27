@@ -2471,7 +2471,10 @@
    "bytes": 23692886,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-27T22:27",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_SUCCESS6/01_greatestsecret_52s.mp4",
@@ -2479,7 +2482,10 @@
    "bytes": 33498483,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-28T06:54",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_SUCCESS6/02_fivehundredbooks_35s.mp4",
@@ -2487,7 +2493,10 @@
    "bytes": 22801693,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-27T16:20",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_SUCCESS7/01_moneybeliefs_35s.mp4",
@@ -2495,7 +2504,10 @@
    "bytes": 19918304,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-27T15:10",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS7/02_awareness_52s.mp4",
@@ -2503,7 +2515,10 @@
    "bytes": 29869921,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-28T09:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_SUCCESS7/02_boatmotor_47s.mp4",
@@ -2511,7 +2526,10 @@
    "bytes": 27521342,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-27T19:28",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ]
 }

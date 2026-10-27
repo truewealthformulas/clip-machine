@@ -2442,9 +2442,7 @@
    "done": false,
    "status": {
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "instagram": "held - this source was flagged by Instagram (rights match)",
-    "facebook": "held - this source was flagged by Instagram (rights match)"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-27T06:58",
@@ -2459,7 +2457,15 @@
     "youtube": "https://youtube.com/shorts/D_VmJjeAFZU"
    },
    "caption_at_post": "What if the way to get what you want is to stop needing it?\n\nKevin Trudeau explains his method for letting go of the outcome. Picture yourself not having what you desire, in full detail, and feel how painful it would be. Then run that movie again, and again, and again.\n\nAfter a while you get tired of it. The charge fades and you start laughing. He says you stop wanting it so desperately.\n\nOnce the fear of not getting it is gone, he says, it becomes easy to let go.\n\nWhat are you holding on to too tightly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #fear",
-   "posted_at": "2026-10-27T07:30"
+   "posted_at": "2026-10-27T07:30",
+   "retry_only": [
+    "instagram",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "instagram"
+   ]
   },
   {
    "file": "KT_MINDSET25/01_buffettteach_40s.mp4",
@@ -2478,7 +2484,7 @@
   },
   {
    "file": "KT_MINDSET27/02_worldmirrors_36s.mp4",
-   "caption": "What if the world outside is just a mirror?\n\nKevin Trudeau quotes an old idea: as within, so without. In his view, the world you see reflects the thoughts you carry inside.\n\nHe says your ability to control your thoughts shapes your success, and that training the mind is something he believes wealthy people have in common.\n\nWhat is your mind showing you right now?\n\n#ad #mindset #success #kevintrudeau",
+   "caption": "What if the world outside is just a mirror?\n\nKevin Trudeau quotes an old idea: as within, so without. In his view, the world you see reflects the thoughts you carry inside.\n\nHe says your ability to control your thoughts shapes your success, and that training the mind is something he believes wealthy people have in common.\n\nWhat is your mind showing you right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 15990386,
    "done": false,
    "status": {},
@@ -2493,7 +2499,7 @@
   },
   {
    "file": "KT_SUCCESS6/01_greatestsecret_52s.mp4",
-   "caption": "The biggest money secret isn't a stock tip. It's who you sit next to.\n\nKevin Trudeau explains that one of the best-kept secrets in wealth is simple: spend time with people who have more than you. In his words, who you associate with determines who you become.\n\nAs kids we were told to stop hanging around the wrong crowd, because we'd turn out just like them. Kevin says it works in the other direction too: spend time with successful, happy, healthy people and it rubs off.\n\nWho are the five people you spend the most time with?\n\n#ad #success #wealth #mindset",
+   "caption": "The biggest money secret isn't a stock tip. It's who you sit next to.\n\nKevin Trudeau explains that one of the best-kept secrets in wealth is simple: spend time with people who have more than you. In his words, who you associate with determines who you become.\n\nAs kids we were told to stop hanging around the wrong crowd, because we'd turn out just like them. Kevin says it works in the other direction too: spend time with successful, happy, healthy people and it rubs off.\n\nWho are the five people you spend the most time with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #wealth #mindset",
    "bytes": 21696801,
    "done": false,
    "status": {},
@@ -2508,7 +2514,7 @@
   },
   {
    "file": "KT_SUCCESS6/02_fivehundredbooks_35s.mp4",
-   "caption": "\"I've read 500 books and never heard this.\"\n\nKevin Trudeau says people who had been through big seminars and read endless success books told him exactly that. They asked why no one was talking about it.\n\nHis answer is that many teachers know about success but not how the mind actually works. In his view the real skill is learning to train and use your mind, not just your brain.\n\nWhat would change if you understood how your own mind works?\n\n#ad #mindset #success #goals",
+   "caption": "\"I've read 500 books and never heard this.\"\n\nKevin Trudeau says people who had been through big seminars and read endless success books told him exactly that. They asked why no one was talking about it.\n\nHis answer is that many teachers know about success but not how the mind actually works. In his view the real skill is learning to train and use your mind, not just your brain.\n\nWhat would change if you understood how your own mind works?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #goals",
    "bytes": 15518665,
    "done": false,
    "status": {},
@@ -2523,7 +2529,7 @@
   },
   {
    "file": "KT_SUCCESS7/01_moneybeliefs_35s.mp4",
-   "caption": "What if your doubts about money were handed down to you?\n\nKevin explains that people from wealthy families often carry little resistance around money. Many others grew up hearing that money is the root of all evil.\n\nHe argues that belief sits in the background. You try to earn while a quiet voice says money is bad, and that clash works against you.\n\nWhat did you hear about money growing up?\n\n#ad #money #mindset #kevintrudeau",
+   "caption": "What if your doubts about money were handed down to you?\n\nKevin explains that people from wealthy families often carry little resistance around money. Many others grew up hearing that money is the root of all evil.\n\nHe argues that belief sits in the background. You try to earn while a quiet voice says money is bad, and that clash works against you.\n\nWhat did you hear about money growing up?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
    "bytes": 13655691,
    "done": false,
    "status": {},
@@ -2538,7 +2544,7 @@
   },
   {
    "file": "KT_SUCCESS7/02_awareness_52s.mp4",
-   "caption": "You can't change a habit you never notice.\n\nKevin explains that most people are clueless about their own actions, words and thoughts.\n\nHe tells of a person at an event who arrived late to every single meeting. Even after he pointed it out several times, they showed up late again.\n\nHis point: unless you increase your self-awareness, nothing is going to change.\n\nWhich habit might you be repeating without noticing?\n\n#ad #habits #mindset #kevintrudeau",
+   "caption": "You can't change a habit you never notice.\n\nKevin explains that most people are clueless about their own actions, words and thoughts.\n\nHe tells of a person at an event who arrived late to every single meeting. Even after he pointed it out several times, they showed up late again.\n\nHis point: unless you increase your self-awareness, nothing is going to change.\n\nWhich habit might you be repeating without noticing?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
    "bytes": 20085473,
    "done": false,
    "status": {},
@@ -2553,7 +2559,7 @@
   },
   {
    "file": "KT_SUCCESS7/02_boatmotor_47s.mp4",
-   "caption": "Most people live like a boat with no motor.\n\nKevin explains that many people feel the wind and waves decide where they go.\n\nHe says there is a motor. You can turn the key, get behind the wheel and steer through the storm.\n\nOnce you accept responsibility, he says life gets more fun because you stop feeling like a victim.\n\nWhere in your life are you drifting instead of steering?\n\n#ad #freedom #confidence #kevintrudeau",
+   "caption": "Most people live like a boat with no motor.\n\nKevin explains that many people feel the wind and waves decide where they go.\n\nHe says there is a motor. You can turn the key, get behind the wheel and steer through the storm.\n\nOnce you accept responsibility, he says life gets more fun because you stop feeling like a victim.\n\nWhere in your life are you drifting instead of steering?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #freedom #confidence #kevintrudeau",
    "bytes": 18751820,
    "done": false,
    "status": {},

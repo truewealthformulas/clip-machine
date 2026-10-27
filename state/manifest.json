@@ -2584,9 +2584,11 @@
    "file": "KT_SUCCESS7/01_moneybeliefs_35s.mp4",
    "caption": "What if your doubts about money were handed down to you?\n\nKevin explains that people from wealthy families often carry little resistance around money. Many others grew up hearing that money is the root of all evil.\n\nHe argues that belief sits in the background. You try to earn while a quiet voice says money is bad, and that clash works against you.\n\nWhat did you hear about money growing up?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
    "bytes": 13655691,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2601,13 +2603,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1059236447139564/",
-    "youtube": "https://youtube.com/shorts/J210heHplkw"
+    "youtube": "https://youtube.com/shorts/J210heHplkw",
+    "instagram": "https://www.instagram.com/reel/DfBEi9lkxjS/"
    },
    "caption_at_post": "What if your doubts about money were handed down to you?\n\nKevin explains that people from wealthy families often carry little resistance around money. Many others grew up hearing that money is the root of all evil.\n\nHe argues that belief sits in the background. You try to earn while a quiet voice says money is bad, and that clash works against you.\n\nWhat did you hear about money growing up?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #kevintrudeau",
-   "posted_at": "2026-10-27T15:55",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-27T19:48",
    "agent_retried": [
     "instagram"
    ]
@@ -2634,7 +2634,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-27T19:28",
+   "scheduled_at": "2026-10-27T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 97,

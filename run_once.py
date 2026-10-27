@@ -190,10 +190,29 @@ def main():
                 + (held or "allowed"))
             if held:
                 only = [p for p in poster.ENABLED if p != "instagram"]
+        # FLAGGED SOURCE -> NOT ON META (26 Oct 2026). Instagram flagged every
+        # clip cut from two recordings (factory/flagged_sources.json). Clips from
+        # them still in the queue skip Instagram and Facebook; TikTok and YouTube
+        # still get them.
+        meta_held = None
+        try:
+            flagged = {k for k in json.load(open(os.path.join(HERE, "factory", "flagged_sources.json")))
+                       if not k.startswith("_")}
+            series = json.load(open(os.path.join(HERE, "factory", "kt_series.json")))
+            brand = clip["file"].split("/", 1)[0]
+            srcs = {str(v.get("source", ""))[:-4] for v in series.values() if v.get("brand") == brand}
+            if srcs & flagged and not clip.get("retry_only"):
+                meta_held = "held - this source was flagged by Instagram (rights match)"
+                only = [p for p in (only or poster.ENABLED) if p not in ("instagram", "facebook")]
+                log(f"flagged source {sorted(srcs & flagged)}: skipping Instagram and Facebook")
+        except Exception as e:
+            log(f"flagged-source check skipped: {e}")
         result, links = poster.publish(
             clip, path, media_url(clip["file"]), only=only)
         if held:
             result["instagram"] = held
+        if meta_held:
+            result["instagram"] = result["facebook"] = meta_held
         m2 = engine.load()
         engine.record(m2, i, result, links)
         engine.save(m2)

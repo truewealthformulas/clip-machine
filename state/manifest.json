@@ -2484,7 +2484,12 @@
    "caption": "Warren Buffett says one habit separates wealthy people from the rest.\n\nKevin Trudeau recalls it: wealthy people always put time and money into personal development, especially when they are just starting out. People who struggle tend not to.\n\nKevin says the difference is being teachable. If you want to become successful, you have to listen to the right people.\n\nWhat have you invested in yourself lately?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #habits #kevintrudeau",
    "bytes": 22787370,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram spaced 4h apart while under review"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-27T12:23",
    "cta_keyword": "GOALS",
@@ -2492,7 +2497,14 @@
    "lesson": 91,
    "style": "T2",
    "cover": "KT_MINDSET25--01_buffettteach_40s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2687569584979418/",
+    "youtube": "https://youtube.com/shorts/wGO8otJ0Ejs"
+   },
+   "caption_at_post": "Warren Buffett says one habit separates wealthy people from the rest.\n\nKevin Trudeau recalls it: wealthy people always put time and money into personal development, especially when they are just starting out. People who struggle tend not to.\n\nKevin says the difference is being teachable. If you want to become successful, you have to listen to the right people.\n\nWhat have you invested in yourself lately?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #habits #kevintrudeau",
+   "posted_at": "2026-10-27T12:46"
   },
   {
    "file": "KT_MINDSET27/02_worldmirrors_36s.mp4",
@@ -2590,7 +2602,10 @@
    "bytes": 38787952,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-28T11:28",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_BUSINESS/01_winorlearn_58s.mp4",
@@ -2598,7 +2613,10 @@
    "bytes": 44297473,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-28T17:13",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_WEALTH6/02_appletrust_55s.mp4",
@@ -2606,7 +2624,10 @@
    "bytes": 29426389,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-28T14:25",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2490,9 +2490,11 @@
    "file": "KT_MINDSET25/01_buffettteach_40s.mp4",
    "caption": "Warren Buffett says one habit separates wealthy people from the rest.\n\nKevin Trudeau recalls it: wealthy people always put time and money into personal development, especially when they are just starting out. People who struggle tend not to.\n\nKevin says the difference is being teachable. If you want to become successful, you have to listen to the right people.\n\nWhat have you invested in yourself lately?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #habits #kevintrudeau",
    "bytes": 22787370,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2507,13 +2509,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/2687569584979418/",
-    "youtube": "https://youtube.com/shorts/wGO8otJ0Ejs"
+    "youtube": "https://youtube.com/shorts/wGO8otJ0Ejs",
+    "instagram": "https://www.instagram.com/reel/DfAkQ4ejzdS/"
    },
    "caption_at_post": "Warren Buffett says one habit separates wealthy people from the rest.\n\nKevin Trudeau recalls it: wealthy people always put time and money into personal development, especially when they are just starting out. People who struggle tend not to.\n\nKevin says the difference is being teachable. If you want to become successful, you have to listen to the right people.\n\nWhat have you invested in yourself lately?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #habits #kevintrudeau",
-   "posted_at": "2026-10-27T12:46",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-27T15:06",
    "agent_retried": [
     "instagram"
    ]

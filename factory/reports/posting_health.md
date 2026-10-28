@@ -1,7 +1,7 @@
-# Posting health - Wed 28 Oct 2026 11:30
+# Posting health - Wed 28 Oct 2026 17:22
 
-- Posted today: **1** (target 5)
-- Queue: **13** clip(s) = 2.6 days, folders: KT_ATTITUDE, KT_BUSINESS, KT_GOALS, KT_MEMORY, KT_SUCCESS6, KT_SUCCESS7, KT_SUCCESS8, KT_SUCCESS9, KT_WEALTH6
+- Posted today: **2** (target 5)
+- Queue: **12** clip(s) = 2.4 days, folders: KT_ATTITUDE, KT_BUSINESS, KT_GOALS, KT_MEMORY, KT_SUCCESS7, KT_SUCCESS8, KT_SUCCESS9, KT_WEALTH6
 - Login problems: none
 - Retried once (upload glitches): 0
 

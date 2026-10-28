@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2647,8 +2647,14 @@
    "file": "KT_SUCCESS7/02_awareness_52s.mp4",
    "caption": "You can't change a habit you never notice.\n\nKevin explains that most people are clueless about their own actions, words and thoughts.\n\nHe tells of a person at an event who arrived late to every single meeting. Even after he pointed it out several times, they showed up late again.\n\nHis point: unless you increase your self-awareness, nothing is going to change.\n\nWhich habit might you be repeating without noticing?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
    "bytes": 13833443,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-28T13:56",
    "cta_keyword": "GOALS",
@@ -2656,7 +2662,15 @@
    "lesson": 96,
    "style": "T4",
    "cover": "KT_SUCCESS7--02_awareness_52s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1868285284333700/",
+    "instagram": "https://www.instagram.com/reel/DfDbJ_7CV-D/",
+    "youtube": "https://youtube.com/shorts/LbnFKeJTK4w"
+   },
+   "caption_at_post": "You can't change a habit you never notice.\n\nKevin explains that most people are clueless about their own actions, words and thoughts.\n\nHe tells of a person at an event who arrived late to every single meeting. Even after he pointed it out several times, they showed up late again.\n\nHis point: unless you increase your self-awareness, nothing is going to change.\n\nWhich habit might you be repeating without noticing?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
+   "posted_at": "2026-10-28T17:44"
   },
   {
    "file": "KT_SUCCESS7/02_boatmotor_47s.mp4",
@@ -2697,7 +2711,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-28T13:56",
+   "scheduled_at": "2026-10-28T18:27",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 98,
@@ -2712,7 +2726,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-28T17:13",
+   "scheduled_at": "2026-10-28T18:27",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 99,
@@ -2727,7 +2741,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-28T14:25",
+   "scheduled_at": "2026-10-28T18:27",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 100,

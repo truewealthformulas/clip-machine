@@ -46,7 +46,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = os.environ.get("RESTYLE_STYLE", "T2")
+STYLE = os.environ.get("RESTYLE_STYLE", "T4")
 # STYLE T2 (24 Oct 2026): T1 plus what makes each clip OURS. Instagram flagged
 # the account for "duplicate content or content you don't have the rights to"
 # and stopped recommending it to non-followers - Kevin's footage is posted by
@@ -310,7 +310,8 @@ def cover_jpg(styled, hook, out):
         a = _frame_rgb(styled, float(t))
         if a is None:
             continue
-        region = a[BAND:]                        # the video under the title band
+        region = (a[T4_TOP:T4_TOP + T4_VID] if STYLE == "T4"   # Kevin's window only
+                  else a[BAND:])                 # the video under the title band
         try:
             s, cy = _face_score(region)
         except Exception:
@@ -362,6 +363,241 @@ def add_cover(c, hook, styled, tmp):
 def duration(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
                                 capture_output=True, text=True, check=True).stdout.strip())
+
+
+# STYLE T3 (27 Oct 2026). The owner: "continue posting and just make a
+# differentiation". Every Kevin page posts the same full-screen clip with a
+# title on top; ours now carries our own editorial layer around it: the lesson
+# label and hook in the band, Kevin in a gold-framed window, and under him a
+# "THE LESSON" panel with our own one-line takeaway (the first line of our
+# caption, written for that clip), then the closing question card.
+VID_BOX = (60, 372, 1020, 1572)      # x0, y0, x1, y1 of Kevin's window (960x1200)
+LESSON_Y = 1610
+
+
+def frame_t3_png(hook, label, takeaway, out):
+    """The still layer of a T3 clip: band, gold frame, lesson panel."""
+    band = out + ".band.png"
+    band_png(hook, band, label=label)
+    im = Image.new("RGB", (W, H), INK)
+    im.paste(Image.open(band).convert("RGB"), (0, 0))
+    os.remove(band)
+    d = ImageDraw.Draw(im)
+    x0, y0, x1, y1 = VID_BOX
+    d.rounded_rectangle((x0 - 6, y0 - 6, x1 + 6, y1 + 6), radius=18, outline=GOLD, width=5)
+    lf = ImageFont.truetype(FONT, 34)
+    lab = "THE LESSON"
+    lw = d.textlength(lab, font=lf)
+    d.text(((W - lw) / 2, LESSON_Y), lab, font=lf, fill=GOLD)
+    d.line((90, LESSON_Y + 21, (W - lw) / 2 - 20, LESSON_Y + 21), fill=GOLD, width=2)
+    d.line(((W + lw) / 2 + 20, LESSON_Y + 21, W - 90, LESSON_Y + 21), fill=GOLD, width=2)
+    text = (takeaway or "").strip()
+    for size in range(54, 30, -2):
+        f = ImageFont.truetype(FONT, size)
+        words, lines, cur = text.split(), [], ""
+        for w_ in words:
+            t = (cur + " " + w_).strip()
+            if d.textlength(t, font=f) <= W - 140 or not cur:
+                cur = t
+            else:
+                lines.append(cur)
+                cur = w_
+        lines += [cur] if cur else []
+        if len(lines) <= 3:
+            break
+    y = LESSON_Y + 70
+    for l in lines[:3]:
+        w_ = d.textlength(l, font=f)
+        d.text(((W - w_) / 2, y), l, font=f, fill=WHITE)
+        y += int(f.size * 1.22)
+    im.save(out)
+
+
+def takeaway_of(caption):
+    """Our own one-line takeaway: the caption's first real sentence (we wrote it)."""
+    for l in (caption or "").splitlines():
+        l = l.strip()
+        if not l or l.startswith("#") or l.lower().startswith(("comment ", "ad:")):
+            continue
+        return l if len(l) <= 120 else l[:117].rsplit(" ", 1)[0] + "..."
+    return ""
+
+
+def restyle_t3(src, hook, dst, label, question, takeaway, prior=None):
+    """T3: Kevin in a gold frame between our band and our lesson panel, then the card.
+
+    `prior`: the style src already carries. A T1/T2 clip already has the band
+    (and T2 the closing card), so only the picture under the band is taken and
+    any old closing card is cut off before the new one goes on."""
+    still, card = dst + ".t3.png", dst + ".outro.png"
+    frame_t3_png(hook, label, takeaway, still)
+    outro_png(question, card)
+    full = duration(src)
+    keep = full - (OUTRO_SECS if prior == "T2" else 0)
+    # the window shows 4:5 of the picture: his face and the spoken subtitles
+    crop_y = 420 if prior in ("T1", "T2") else 160
+    sh("ffmpeg", "-loglevel", "error", "-y", "-t", f"{keep:.2f}", "-i", src, "-i", still,
+       "-loop", "1", "-framerate", "30", "-t", f"{OUTRO_SECS}", "-i", card,
+       "-f", "lavfi", "-t", f"{OUTRO_SECS}", "-i", "anullsrc=r=48000:cl=stereo",
+       "-filter_complex",
+       f"[0:v]scale={W}:{H},setsar=1,crop={W}:1350:0:{crop_y},scale=960:1200,setsar=1[k];"
+       f"[1:v][k]overlay={VID_BOX[0]}:{VID_BOX[1]},fps=30,format=yuv420p[m];"
+       f"[2:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p,fade=t=in:st=0:d=0.3[o];"
+       f"[0:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a0];"
+       f"[3:a]aformat=sample_fmts=fltp:channel_layouts=stereo[a1];"
+       f"[m][a0][o][a1]concat=n=2:v=1:a=1[v][a]",
+       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+       "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    os.remove(still)
+    os.remove(card)
+
+
+# STYLE T4 (27 Oct 2026), the owner on T3: "more professional". Editorial, not
+# loud: a quiet header (club name, lesson number, the hook set left and smaller),
+# Kevin edge to edge in a 4:5 window between two thin gold rules, and a
+# documentary lower third (name, title, our handle). No boxes, no panels.
+T4_TOP, T4_VID = 285, 1350           # header height; Kevin's window height (4:5)
+
+
+def _spaced(d, xy, text, font, fill, track=4):
+    """Text with letter spacing (PIL has none)."""
+    x, y = xy
+    for ch in text:
+        d.text((x, y), ch, font=font, fill=fill)
+        x += d.textlength(ch, font=font) + track
+    return x
+
+
+def _spaced_len(d, text, font, track=4):
+    return sum(d.textlength(ch, font=font) + track for ch in text) - track
+
+
+def frame_t4_png(hook, lesson_no, out, name="KEVIN TRUDEAU",
+                 title="Author · Your Wish Is Your Command", handle="@thesuccessclubco"):
+    im = Image.new("RGB", (W, H), INK)
+    d = ImageDraw.Draw(im)
+    m = 72                                         # side margin
+    small = ImageFont.truetype(FONT, 24)
+    _spaced(d, (m, 62), "THE SUCCESS CLUB", small, GOLD, track=5)
+    no = f"LESSON {lesson_no}" if lesson_no else ""
+    if no:
+        _spaced(d, (W - m - _spaced_len(d, no, small, 5), 62), no, small, (150, 160, 185), track=5)
+    lines = [l.strip() for l in hook if l.strip()][:2]
+    if len(lines) == 1 and len(lines[0]) > 18:
+        ws = lines[0].split()
+        k = (len(ws) + 1) // 2
+        lines = [" ".join(ws[:k]), " ".join(ws[k:])]
+    lines = [l.upper() for l in lines]
+    f = min((fit(d, l, 60, W - 2 * m) for l in lines), key=lambda x: x.size)
+    y = 118
+    for i, l in enumerate(lines):
+        d.text((m, y), l, font=f, fill=WHITE if i == 0 and len(lines) > 1 else GOLD)
+        y += int(f.size * 1.16)
+    # thin rules framing Kevin's window
+    d.line((0, T4_TOP - 2, W, T4_TOP - 2), fill=GOLD, width=2)
+    yb = T4_TOP + T4_VID
+    d.line((0, yb + 1, W, yb + 1), fill=GOLD, width=2)
+    # lower third
+    d.line((m, yb + 62, m + 64, yb + 62), fill=GOLD, width=4)
+    nf = ImageFont.truetype(FONT, 38)
+    _spaced(d, (m, yb + 84), name, nf, WHITE, track=3)
+    tf = ImageFont.truetype(FONT, 25)
+    d.text((m, yb + 140), title, font=tf, fill=(160, 170, 195))
+    hw = d.textlength(handle, font=tf)
+    d.text((W - m - hw, yb + 140), handle, font=tf, fill=GOLD)
+    im.save(out)
+
+
+# ENERGY (27 Oct 2026, the owner: "let put energy in the post, so it can become
+# viral, let beat our best post"). Our two best reels were watched to 73% and
+# 62% (36.5 s of 50, 19.8 s of 32); a typical reel is watched to ~30%. So the
+# edit keeps them watching: every pause cut out (jump cuts), a punch-in zoom
+# on every other cut so the frame keeps moving, 7% faster, and a gold
+# progress bar so the end is always in sight.
+EN_SPEED = float(os.environ.get("EN_SPEED", "1.07"))
+EN_ZOOM = 1.12
+EN_GAP = 0.32          # a silence longer than this is cut
+EN_PAD = 0.07          # breath kept either side of speech
+
+
+def _speech_spans(path, total):
+    """Spans with speech, from ffmpeg silencedetect."""
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", path, "-af",
+                        f"silencedetect=noise=-32dB:d={EN_GAP}", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", r.stderr)]
+    ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", r.stderr)]
+    spans, t = [], 0.0
+    for s, e in zip(starts, ends + [total] * (len(starts) - len(ends))):
+        if s - t > 0.15:
+            spans.append((max(0.0, t - EN_PAD), min(total, s + EN_PAD)))
+        t = e
+    if total - t > 0.15:
+        spans.append((max(0.0, t - EN_PAD), total))
+    merged = []
+    for a, b in spans:                       # join tiny gaps so it never stutters
+        if merged and a - merged[-1][1] < 0.12:
+            merged[-1] = (merged[-1][0], b)
+        else:
+            merged.append((a, b))
+    return merged or [(0.0, total)]
+
+
+def energize(src, out, crop_y, keep):
+    """Kevin's 1080x1350 window with the pauses cut, alternating punch-ins, faster."""
+    spans = _speech_spans(src, keep)
+    zw, zh = int(W / EN_ZOOM) // 2 * 2, int(T4_VID / EN_ZOOM) // 2 * 2
+    parts, labels = [], []
+    for i, (a, b) in enumerate(spans):
+        base = f"[0:v]trim={a:.3f}:{b:.3f},setpts=PTS-STARTPTS,scale={W}:{H},setsar=1,crop={W}:{T4_VID}:0:{crop_y}"
+        if i % 2:   # punch in, a little above centre so his eyes stay in frame
+            base += f",crop={zw}:{zh}:{(W - zw) // 2}:{int((T4_VID - zh) * 0.35)},scale={W}:{T4_VID}"
+        parts.append(base + f",setsar=1[v{i}];[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[a{i}]")
+        labels.append(f"[v{i}][a{i}]")
+    fc = ";".join(parts) + ";" + "".join(labels) + f"concat=n={len(spans)}:v=1:a=1[cv][ca];" \
+        f"[cv]setpts=PTS/{EN_SPEED}[sv];[ca]atempo={EN_SPEED}[sa]"
+    sh("ffmpeg", "-loglevel", "error", "-y", "-t", f"{keep:.2f}", "-i", src, "-filter_complex", fc,
+       "-map", "[sv]", "-map", "[sa]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "19",
+       "-c:a", "aac", "-b:a", "160k", out)
+    return duration(out), len(spans)
+
+
+def restyle_t4(src, hook, dst, lesson_no, question, prior=None, energy=True):
+    """T4: the editorial frame around Kevin edge to edge, then the closing card."""
+    still, card = dst + ".t4.png", dst + ".outro.png"
+    frame_t4_png(hook, lesson_no, still)
+    outro_png(question, card)
+    full = duration(src)
+    keep = full - (OUTRO_SECS if prior == "T2" else 0)
+    crop_y = 400 if prior in ("T1", "T2") else 150
+    if energy:
+        win = dst + ".win.mp4"
+        clip_len, _ = energize(src, win, crop_y, keep)
+        vin, vsel, tlim = win, "[0:v]setsar=1[k];", []
+    else:
+        clip_len = keep
+        vin, vsel, tlim = src, f"[0:v]scale={W}:{H},setsar=1,crop={W}:{T4_VID}:0:{crop_y},setsar=1[k];", \
+            ["-t", f"{keep:.2f}"]
+    bar_y = T4_TOP + T4_VID - 8
+    sh("ffmpeg", "-loglevel", "error", "-y", *tlim, "-i", vin, "-i", still,
+       "-loop", "1", "-framerate", "30", "-t", f"{OUTRO_SECS}", "-i", card,
+       "-f", "lavfi", "-t", f"{OUTRO_SECS}", "-i", "anullsrc=r=48000:cl=stereo",
+       "-f", "lavfi", "-i", f"color=c=0xF5C518:s={W}x8:r=30",
+       "-filter_complex",
+       vsel +
+       f"[1:v][k]overlay=0:{T4_TOP},fps=30[m0];"
+       # gold progress bar: slides in from the left over the length of the clip
+       f"[m0][4:v]overlay=x='-{W}+{W}*t/{clip_len:.3f}':y={bar_y}:shortest=1,format=yuv420p[m];"
+       f"[2:v]scale={W}:{H},setsar=1,fps=30,format=yuv420p,fade=t=in:st=0:d=0.3[o];"
+       f"[0:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a0];"
+       f"[3:a]aformat=sample_fmts=fltp:channel_layouts=stereo[a1];"
+       f"[m][a0][o][a1]concat=n=2:v=1:a=1[v][a]",
+       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+       "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    os.remove(still)
+    os.remove(card)
+    if energy:
+        os.remove(win)
 
 
 def restyle_t2(src, hook, dst, label, question, from_t1=False):
@@ -506,7 +742,24 @@ def main():
         asset = c["file"].replace("/", "--")
         src, dst = os.path.join(tmp, asset), os.path.join(tmp, "out_" + asset)
         clean = False
-        if STYLE == "T2" and c.get("style") == "T1":
+        if STYLE == "T4":
+            # T4 = the editorial frame + the energy edit (27 Oct 2026). A T1/T2 clip
+            # already has our band; only the picture under it is used again.
+            prior = c.get("style") if c.get("style") in ("T1", "T2") else None
+            if c.get("style") not in (None, "none", "T1", "T2"):
+                if slug_of(c["file"]) not in orig:
+                    skipped.append(f"{c['file']}: styled {c.get('style')} and no clean re-render yet - left as is")
+                    continue
+                src = orig[slug_of(c["file"])]
+            else:
+                sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
+            try:
+                restyle_t4(src, hook, dst, lesson_of(man, c), question_of(c.get("caption", "")), prior=prior)
+            except Exception as e:
+                skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
+                continue
+            card = None
+        elif STYLE == "T2" and c.get("style") == "T1":
             # Upgrade in place: the T1 file already has the band and the crop.
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
             try:
@@ -524,7 +777,7 @@ def main():
             clean = True
         else:
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
-        if not (STYLE == "T2" and c.get("style") == "T1"):
+        if STYLE != "T4" and not (STYLE == "T2" and c.get("style") == "T1"):
             try:
                 if STYLE == "T2":
                     restyle_t2(src, hook, dst, f"THE SUCCESS CLUB · LESSON {lesson_of(man, c)}",

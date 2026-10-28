@@ -2522,9 +2522,11 @@
    "file": "KT_MINDSET27/02_worldmirrors_36s.mp4",
    "caption": "What if the world outside is just a mirror?\n\nKevin Trudeau quotes an old idea: as within, so without. In his view, the world you see reflects the thoughts you carry inside.\n\nHe says your ability to control your thoughts shapes your success, and that training the mind is something he believes wealthy people have in common.\n\nWhat is your mind showing you right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 10202570,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -2539,13 +2541,11 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1902385961006735/",
-    "youtube": "https://youtube.com/shorts/m5Q638dNzjc"
+    "youtube": "https://youtube.com/shorts/m5Q638dNzjc",
+    "instagram": "https://www.instagram.com/reel/DfCTFEECROX/"
    },
    "caption_at_post": "What if the world outside is just a mirror?\n\nKevin Trudeau quotes an old idea: as within, so without. In his view, the world you see reflects the thoughts you carry inside.\n\nHe says your ability to control your thoughts shapes your success, and that training the mind is something he believes wealthy people have in common.\n\nWhat is your mind showing you right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-10-27T23:19",
-   "retry_only": [
-    "instagram"
-   ],
+   "posted_at": "2026-10-28T07:14",
    "agent_retried": [
     "instagram"
    ]
@@ -2557,7 +2557,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-28T06:54",
+   "scheduled_at": "2026-10-28T07:57",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 93,
@@ -2727,7 +2727,10 @@
    "bytes": 31874766,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-28T21:21",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_GOALS/01_howfailurehabit_32s.mp4",
@@ -2735,7 +2738,10 @@
    "bytes": 15098664,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-28T19:12",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_GOALS/02_carnegiesentence_53s.mp4",
@@ -2743,7 +2749,10 @@
    "bytes": 28510536,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-29T07:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ]
 }

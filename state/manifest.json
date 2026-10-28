@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2554,8 +2554,14 @@
    "file": "KT_SUCCESS6/01_greatestsecret_52s.mp4",
    "caption": "The biggest money secret isn't a stock tip. It's who you sit next to.\n\nKevin Trudeau explains that one of the best-kept secrets in wealth is simple: spend time with people who have more than you. In his words, who you associate with determines who you become.\n\nAs kids we were told to stop hanging around the wrong crowd, because we'd turn out just like them. Kevin says it works in the other direction too: spend time with successful, happy, healthy people and it rubs off.\n\nWho are the five people you spend the most time with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #wealth #mindset",
    "bytes": 14418990,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-28T07:57",
    "cta_keyword": "GOALS",
@@ -2563,7 +2569,15 @@
    "lesson": 93,
    "style": "T4",
    "cover": "KT_SUCCESS6--01_greatestsecret_52s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1097356129957701/",
+    "instagram": "https://www.instagram.com/reel/DfC8HcMiEQU/",
+    "youtube": "https://youtube.com/shorts/_5AzEHMHVaQ"
+   },
+   "caption_at_post": "The biggest money secret isn't a stock tip. It's who you sit next to.\n\nKevin Trudeau explains that one of the best-kept secrets in wealth is simple: spend time with people who have more than you. In his words, who you associate with determines who you become.\n\nAs kids we were told to stop hanging around the wrong crowd, because we'd turn out just like them. Kevin says it works in the other direction too: spend time with successful, happy, healthy people and it rubs off.\n\nWho are the five people you spend the most time with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #wealth #mindset",
+   "posted_at": "2026-10-28T13:14"
   },
   {
    "file": "KT_SUCCESS6/02_fivehundredbooks_35s.mp4",
@@ -2636,7 +2650,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-28T09:32",
+   "scheduled_at": "2026-10-28T13:56",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
    "lesson": 96,
@@ -2683,7 +2697,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-28T11:28",
+   "scheduled_at": "2026-10-28T13:56",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 98,
@@ -2760,7 +2774,10 @@
    "bytes": 44474665,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-29T14:05",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_SUCCESS8/01_professornobusiness_52s.mp4",
@@ -2768,7 +2785,10 @@
    "bytes": 30835425,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-29T09:04",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS8/02_moneybad_54s.mp4",
@@ -2776,7 +2796,10 @@
    "bytes": 30581447,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-29T18:50",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_SUCCESS9/01_onassisrubsoff_58s.mp4",
@@ -2784,7 +2807,10 @@
    "bytes": 36973906,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-29T16:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_SUCCESS9/02_givingrockefeller_45s.mp4",
@@ -2792,7 +2818,10 @@
    "bytes": 27839775,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-10-29T12:27",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

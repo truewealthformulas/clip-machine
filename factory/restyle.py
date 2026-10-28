@@ -46,7 +46,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = os.environ.get("RESTYLE_STYLE", "T4")
+STYLE = os.environ.get("RESTYLE_STYLE", "T2")   # back to T2 28 Oct: TikTok views fell after T4
 # STYLE T2 (24 Oct 2026): T1 plus what makes each clip OURS. Instagram flagged
 # the account for "duplicate content or content you don't have the rights to"
 # and stopped recommending it to non-followers - Kevin's footage is posted by

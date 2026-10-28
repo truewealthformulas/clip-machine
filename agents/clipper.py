@@ -80,8 +80,21 @@ Follow the rulebook exactly. Above all:
     feel completely sure of yourself?"), never a quiz about the clip.
 - skip ads, product pitches, phone numbers, calls to buy, intros/outros, and anything
   whose main point is health/medical, or a promise of money to the viewer.
-- hooks: max 6 words, max 2 lines, Title Case, start with How/Why/What/When/The/A/a
-  number. No full stop. Never a riddle. EVERY hook carries one high-interest word:
+- MONEY HOOKS WITH TENSION WIN ON TIKTOK (28 Oct 2026, TikTok analytics - our
+  top videos: "Mortgages Are a Scam (Do This Instead)" 460, "What's Blocking Your
+  Path to Wealth?" 537, "They Are in Control" 538, "...Looking for the Gold" 570;
+  calm hooks like "Why Your Voice Shapes Your Mind" sit far below). So:
+  * pick MONEY / WEALTH / CONTROL / "what they don't tell you" moments FIRST -
+    at least 6 of the clips - then success and mindset, then the rest.
+  * the hook is a BOLD CLAIM, an ENEMY or a SECRET, plus a promise of the answer:
+    "Mortgages Are a Scam", "What Banks Never Explain", "Why The Rich Never
+    Save Money", "Stop Doing This With Your Paycheck", "The Debt Trap Nobody
+    Explains". A "(Do This Instead)"-style payoff is good when the clip gives it.
+  * ONLY what Kevin actually says in that clip - the hook may sharpen his words,
+    never invent a claim, never promise the viewer money or income.
+- hooks: max 6 words (plus an optional short "(Do This Instead)"), max 2 lines,
+  Title Case. A bold statement may start with any word; a question starts with
+  How/Why/What/When. No full stop. Never a riddle. EVERY hook carries one high-interest word:
   Money, Rich, Wealth, Success, Credit, Debt, Business, Mind, Habits, Secret, Love,
   Relationships, Health, Energy, Happiness, Freedom, Confidence, Goals, Fear.
   ("Health" names the topic only - never a cure, disease, weight or medical claim.)

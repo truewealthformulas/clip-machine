@@ -34,6 +34,13 @@ MAX_TAGS = 5            # including #ad
 DIRECT = re.compile(r"^(how|why|what|when|where|which|the|a|an|one|two|three|four|"
                     r"five|six|seven|eight|nine|ten)\b", re.I)
 NUMBER = re.compile(r"[\d$%]")
+# BOLD-CLAIM HOOKS (28 Oct 2026, from TikTok analytics: "Mortgages Are a Scam (Do
+# This Instead)" and "What's Blocking Your Path to Wealth?" were our top videos).
+# A headline may open on a bold statement, not only How/Why/What - as long as it
+# carries a high-interest word. A short "(Do This Instead)" payoff is not counted.
+BOLD = re.compile(r"^(stop|never|don'?t|quit|avoid|forget|your|most|banks?|mortgages?|debt|"
+                  r"credit|rich|poor|money|wealth|millionaires?|interest|taxes|savings?|"
+                  r"school|jobs?|broke)\b", re.I)
 RIDDLE = re.compile(r"^(some|there('s| is| are)|nobody|everyone|no one|this is what|"
                     r"it (is|was)|he|she|they|i)\b", re.I)
 
@@ -43,7 +50,8 @@ RIDDLE = re.compile(r"^(some|there('s| is| are)|nobody|everyone|no one|this is w
 KEYWORDS = re.compile(r"\b(money|rich|richer|wealth|wealthy|success|successful|millionaires?|"
                       r"credit|debt|income|business|boss|mind|mindset|brain|habits?|secrets?|"
                       r"love|relationships?|marriage|partner|health|healthy|energy|happy|happiness|"
-                      r"freedom|power|confidence|goals?|fear|winners?|wish(es)?|nutrition)\b", re.I)
+                      r"freedom|power|confidence|goals?|fear|winners?|wish(es)?|nutrition|"
+                      r"mortgages?|paychecks?|banks?|taxes|savings?|retirement|invest(ing|ors?)?|loans?|broke)\b", re.I)
 
 BANNED = [
     # income / results promises
@@ -76,13 +84,13 @@ def hook_problems(hook):
         return ["hook missing"]
     if len(hook) > MAX_LINES:
         out.append(f"hook has {len(hook)} lines (max {MAX_LINES})")
-    words = sum(len(h.split()) for h in hook)
+    words = sum(len(re.sub(r"\([^)]*\)", "", h).split()) for h in hook)
     if words > MAX_WORDS:
         out.append(f"hook has {words} words (max {MAX_WORDS})")
     first = hook[0].strip()
     if RIDDLE.match(first) and not NUMBER.search(first):
         out.append(f'hook opens on a riddle/pronoun: "{first}"')
-    elif not DIRECT.match(first) and not NUMBER.search(first):
+    elif not DIRECT.match(first) and not NUMBER.search(first) and not BOLD.match(first):
         out.append(f'hook is not a direct promise: "{first}"')
     if not KEYWORDS.search(" ".join(hook)):
         out.append("hook has no high-interest word (money, success, wealth, credit, love, mind, habits, health...)")

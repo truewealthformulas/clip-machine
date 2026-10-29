@@ -356,6 +356,7 @@ def with_call(platform, cap, now=None):
 # (a viewer who sees AUDIO again knows what it gets), then the hook line, then
 # the clip's question, then at most 4 hashtags with #ad first. The owner sends
 # the link to every AUDIO comment himself (his choice, 14 Oct).
+PAID_LABEL = os.environ.get("IG_PAID_LABEL", "0") == "1"
 IG_KEYWORD = os.environ.get("KT_IG_KEYWORD", "AUDIO").strip().upper() or "AUDIO"
 IG_ASK = ("Comment \u201c{kw}\u201d to get access to Kevin Trudeau\u2019s legendary "
           "audio training \U0001F525\u2b07\ufe0f")
@@ -364,6 +365,17 @@ IG_ASK = ("Comment \u201c{kw}\u201d to get access to Kevin Trudeau\u2019s legend
 # same word and the same audio training - only the wording rotates, frozen per
 # clip by cta_variant so consecutive posts differ and a repost never changes.
 IG_ASKS = [
+    # 29 Oct 2026, the owner: the bio link goes to the free audio training, so
+    # the ask points at the bio instead of "comment the word".
+    "\U0001F3A7 FREE: Kevin Trudeau\u2019s legendary audio training \u201cYour Wish Is Your "
+    "Command\u201d \u2014 link in my bio \u2b06\ufe0f",
+    "If this hit you, get Kevin Trudeau\u2019s free audio training \u201cYour Wish Is Your "
+    "Command\u201d \u2014 link in my bio \u2b06\ufe0f",
+    "Felt that? Kevin Trudeau\u2019s audio training \u201cYour Wish Is Your Command\u201d is "
+    "free \u2014 link in my bio \u2b06\ufe0f",
+    "Ready to stop settling? Kevin Trudeau\u2019s free audio training is waiting \u2014 "
+    "link in my bio \u2b06\ufe0f",
+] if os.environ.get("KT_IG_BIO", "1") == "1" else [
     IG_ASK,
     "If this hit you, comment \u201c{kw}\u201d and I\u2019ll send you Kevin Trudeau\u2019s "
     "legendary audio training \U0001F525\u2b07\ufe0f",
@@ -408,7 +420,13 @@ def ig_short(caption, variant=None):
 # line that says why to tap the profile. KT_TT_BIO=0 brings the old ask back.
 TT_BIO_LINE = os.environ.get(
     "KT_TT_BIO_LINE",
-    "\U0001F381 FREE Kevin Trudeau e-book → tap the Instagram icon on my profile \U0001F446")
+    "\U0001F3A7 FREE Kevin Trudeau audio training \u201cYour Wish Is Your Command\u201d \u2192 "
+    "tap the Instagram icon on my profile \U0001F446")
+# Facebook points at the profile link too (29 Oct 2026); YouTube keeps its direct link.
+BIO_LINE = os.environ.get(
+    "KT_BIO_LINE",
+    "\U0001F3A7 FREE Kevin Trudeau audio training \u201cYour Wish Is Your Command\u201d \u2192 "
+    "link in my bio")
 
 
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
@@ -416,19 +434,20 @@ def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
             and os.environ.get("KT_IG_SHORT", "1") == "1":
         return ig_short(caption, variant)
     out = _caption_for(platform, caption, brand, keyword, ask, variant)
-    if (platform == "tiktok" and out and cred_prefix(brand) in FALLBACK_BRANDS
+    line = TT_BIO_LINE if platform == "tiktok" else BIO_LINE
+    if (platform in ("tiktok", "facebook") and out and cred_prefix(brand) in FALLBACK_BRANDS
             and os.environ.get("KT_TT_BIO", "1") == "1"):
-        out = re.sub(r"(?m)^Comment \S+ to get access\.?\s*$", TT_BIO_LINE, out)
-        # "in my highlights" is an Instagram thing; TikTok has no highlights.
+        out = re.sub(r"(?m)^Comment \S+ (to get access|and I.ll send)[^\n]*$", line, out)
+        # "in my highlights" lines give way to the profile link.
         out = re.sub(r"(?m)^.*in my highlights\.?\s*\n?", "", out)
         out = re.sub(r"\n{3,}", "\n\n", out)
-        out = re.sub(r"(?m)^(" + re.escape(TT_BIO_LINE) + r")\n(#)", r"\1\n\n\2", out)
-        if TT_BIO_LINE not in out:
+        out = re.sub(r"(?m)^(" + re.escape(line) + r")\n(#)", r"\1\n\n\2", out)
+        if line not in out:
             lines = out.rstrip().split("\n")
             if lines[-1].strip().startswith("#"):
-                out = "\n".join(lines[:-1]).rstrip() + "\n\n" + TT_BIO_LINE + "\n\n" + lines[-1].strip()
+                out = "\n".join(lines[:-1]).rstrip() + "\n\n" + line + "\n\n" + lines[-1].strip()
             else:
-                out = out.rstrip() + "\n\n" + TT_BIO_LINE
+                out = out.rstrip() + "\n\n" + line
     return out
 
 
@@ -797,7 +816,11 @@ def instagram(path, caption, public_url, clip=None, trial=False):
     # label from the moment it is published (Content Publishing API,
     # is_paid_partnership, Apr 2026). If Instagram ever refuses the field,
     # post without it rather than not at all - and say so in the status.
-    body["is_paid_partnership"] = "true"
+    # 29 Oct 2026, the owner: "take away the colaboracion pagada from the post and
+    # stories". Off by default now; the #ad in every caption stays as the
+    # disclosure. IG_PAID_LABEL=1 puts the label back.
+    if PAID_LABEL:
+        body["is_paid_partnership"] = "true"
     r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                       data=body)
     d = _j(r)
@@ -806,7 +829,7 @@ def instagram(path, caption, public_url, clip=None, trial=False):
         r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                           data=body)
         d = _j(r)
-    if not d.get("id"):                       # any refusal: try once without the label
+    if not d.get("id") and PAID_LABEL:        # any refusal: try once without the label
         body.pop("is_paid_partnership", None)
         r = requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T,
                           data=body)
@@ -908,10 +931,11 @@ def instagram_story(path, public_url, clip=None):
                 story_url = alt
         except Exception:
             pass
-    sbody = {"media_type": "STORIES", "video_url": story_url, "access_token": tok,
-             "is_paid_partnership": "true"}          # same label as the reel
+    sbody = {"media_type": "STORIES", "video_url": story_url, "access_token": tok}
+    if PAID_LABEL:
+        sbody["is_paid_partnership"] = "true"        # same label as the reel
     r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T, data=sbody))
-    if not r.get("id"):
+    if not r.get("id") and PAID_LABEL:
         sbody.pop("is_paid_partnership")
         r = _j(requests.post(f"https://graph.facebook.com/v21.0/{ig}/media", timeout=T, data=sbody))
     cid = r.get("id")

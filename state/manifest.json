@@ -2803,8 +2803,14 @@
    "file": "KT_ATTITUDE/01_perseverance_52s.mp4",
    "caption": "Facing a mountain? Here is a winner's answer.\n\nKevin explains perseverance as never stopping and never yielding. You make a decision, and you get back up every time you are knocked down.\n\nWhen faced with a mountain, he says you climb over it, drill through it, go around it, or stay and turn that obstacle into a gold mine.\n\nHe calls that the attitude of a winner, a champion and somebody who is wealthy.\n\nWhich of those four moves do you reach for first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 25488443,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-29T12:16",
    "cta_keyword": "GOALS",
@@ -2813,7 +2819,15 @@
    "style": "T5",
    "cover": "KT_ATTITUDE--01_perseverance_52s__cover.jpg",
    "cover_v": 4,
-   "broll": "summit_13311790"
+   "broll": "summit_13311790",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2930334444005163/",
+    "instagram": "https://www.instagram.com/reel/DfFzVHTnMr9/",
+    "youtube": "https://youtube.com/shorts/ExlAmxiwfaY"
+   },
+   "caption_at_post": "Facing a mountain? Here is a winner's answer.\n\nKevin explains perseverance as never stopping and never yielding. You make a decision, and you get back up every time you are knocked down.\n\nWhen faced with a mountain, he says you climb over it, drill through it, go around it, or stay and turn that obstacle into a gold mine.\n\nHe calls that the attitude of a winner, a champion and somebody who is wealthy.\n\nWhich of those four moves do you reach for first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-10-29T15:55"
   },
   {
    "file": "KT_GOALS/01_howfailurehabit_32s.mp4",
@@ -2822,7 +2836,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-29T12:16",
+   "scheduled_at": "2026-10-29T16:37",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 102,
@@ -2838,7 +2852,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-29T12:16",
+   "scheduled_at": "2026-10-29T16:37",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 103,
@@ -2854,7 +2868,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T14:05",
+   "scheduled_at": "2026-10-29T16:37",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 104,
@@ -2870,7 +2884,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T12:16",
+   "scheduled_at": "2026-10-29T16:37",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 105,
@@ -2918,7 +2932,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T12:27",
+   "scheduled_at": "2026-10-29T16:37",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -2943,7 +2957,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-29T12:16",
+   "scheduled_at": "2026-10-29T16:37",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   }

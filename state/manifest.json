@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2836,7 +2836,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 102,
@@ -2852,7 +2852,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 103,
@@ -2868,7 +2868,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 104,
@@ -2884,7 +2884,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 105,
@@ -2900,7 +2900,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-29T18:50",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 106,
@@ -2913,8 +2913,14 @@
    "file": "KT_SUCCESS9/01_onassisrubsoff_58s.mp4",
    "caption": "Why the richest man said success rubs off on you.\n\nKevin Trudeau tells the story of Aristotle Onassis, the shipping tycoon. Onassis said that if he lost all his money, he would go where rich and successful people gather. Asking questions helps, he said, but simply being in their presence changes you.\n\nKevin adds that who you spend time with is who you become. That is why he says a mentor or coach matters so much.\n\nWho is in your circle right now, and where is it taking you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 28142451,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-29T16:34",
    "cta_keyword": "GOALS",
@@ -2923,7 +2929,15 @@
    "style": "T5",
    "cover": "KT_SUCCESS9--01_onassisrubsoff_58s__cover.jpg",
    "cover_v": 4,
-   "broll": "road_672597"
+   "broll": "road_672597",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1490922076260334/",
+    "instagram": "https://www.instagram.com/reel/DfGOLS1D67-/",
+    "youtube": "https://youtube.com/shorts/vT18vMmHC6Y"
+   },
+   "caption_at_post": "Why the richest man said success rubs off on you.\n\nKevin Trudeau tells the story of Aristotle Onassis, the shipping tycoon. Onassis said that if he lost all his money, he would go where rich and successful people gather. Asking questions helps, he said, but simply being in their presence changes you.\n\nKevin adds that who you spend time with is who you become. That is why he says a mentor or coach matters so much.\n\nWho is in your circle right now, and where is it taking you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-10-29T19:49"
   },
   {
    "file": "KT_SUCCESS9/02_givingrockefeller_45s.mp4",
@@ -2932,7 +2946,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -2957,7 +2971,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-29T16:37",
+   "scheduled_at": "2026-10-29T20:31",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -2974,7 +2988,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T12:14",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_KARMA/02_biggestlie_52s.mp4",
@@ -2989,7 +3006,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_KARMA--02_biggestlie_52s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T19:22",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_KARMA/02_threesteps_35s.mp4",
@@ -3004,7 +3024,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T06:41",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MINDSET28/01_badreview_50s.mp4",
@@ -3019,7 +3042,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T14:33",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MINDSET28/02_resistfear_40s.mp4",
@@ -3034,7 +3060,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T09:35",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MINDSET29/01_ownvoice_49s.mp4",
@@ -3049,7 +3078,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-10-30T17:11",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   }
  ]
 }

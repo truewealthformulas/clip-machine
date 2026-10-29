@@ -37,16 +37,17 @@ import os
 import re
 import subprocess
 import sys
+import shutil
 import tempfile
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT = os.path.join(ROOT, "factory", "assets", "mont_black.ttf")
 MAN = os.path.join(ROOT, "state", "manifest.json")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-STYLE = os.environ.get("RESTYLE_STYLE", "T2")   # back to T2 28 Oct: TikTok views fell after T4
+STYLE = os.environ.get("RESTYLE_STYLE", "T5")   # T5 29 Oct: cinematic photo hook, no box (owner)
 # STYLE T2 (24 Oct 2026): T1 plus what makes each clip OURS. Instagram flagged
 # the account for "duplicate content or content you don't have the rights to"
 # and stopped recommending it to non-followers - Kevin's footage is posted by
@@ -351,7 +352,10 @@ def add_cover(c, hook, styled, tmp):
         name = c["file"].replace("/", "--").replace(".mp4", "__cover.jpg")
         out = os.path.join(tmp, "covers", name)
         os.makedirs(os.path.dirname(out), exist_ok=True)
-        cover_jpg(styled, hook, out)
+        if STYLE == "T5":
+            t5_cover_jpg(t5_photo(c, hook, tmp), hook, out)
+        else:
+            cover_jpg(styled, hook, out)
         sh("gh", "release", "upload", "media", out, "-R", REPO, "--clobber")
         c["cover"] = name
         c["cover_v"] = COVER_V
@@ -658,6 +662,253 @@ def restyle(src, hook, dst, check=True):
     return None
 
 
+
+# ---------------------------------------------------------------------------
+# STYLE T5 - THE CINEMATIC HOOK (29 Oct 2026). The owner, restarting the brand
+# around one goal (people download the free "Your Wish Is Your Command" audio or
+# join GIN): "lets do something different with images ... 3 first seconds the
+# hook, but no box with lesson". Modelled on a reel he pointed at.
+#   0-3 s  a full-screen free-license photo (Pexels, factory/assets/broll) with a
+#          slow push-in; the hook pops in word by word - white Montserrat caps
+#          with the key word in big gold Playfair italic - "KEVIN TRUDEAU" under.
+#          Kevin's voice runs from the first frame.
+#   then   Kevin full screen. No band, no label, no box.
+#   end    3.5 s free-audio card: "Your Wish Is Your Command", link in bio.
+# Cover = the hook frame (owner picked option A over a Kevin close-up).
+# ---------------------------------------------------------------------------
+T5_SANS = os.path.join(ROOT, "factory", "assets", "Montserrat.ttf")
+T5_SERIF = os.path.join(ROOT, "factory", "assets", "PlayfairDisplay-Italic.ttf")
+T5_HOOK, T5_CTA, T5_FPS = 3.0, 3.5, 30
+T5_GOLD = (232, 190, 92)
+T5_CTA_KIND = os.environ.get("T5_CTA", "audio")      # "audio" | "gin"
+T5_THEMES = [   # first match wins; words are checked against the hook
+    (r"mortgage|bank|tax|debt|loan|credit|wall street|system|government", ["wallst", "city"]),
+    (r"money|rich|wealth|cash|paycheck|millionaire|broke|income|saving|invest", ["gold", "money", "jet", "car"]),
+    (r"success|goal|win|winner|habit|discipline|confidence|power|fear", ["summit", "sunrise", "road"]),
+    (r"mind|brain|memory|think|learn|book|read|school|secret|knowledge", ["library", "chess"]),
+    (r"wish|dream|life|freedom|future|happy|love|energy|health", ["ocean", "sunrise", "road"]),
+]
+_T5_ACCENT = re.compile(r"^(money|rich|richer|wealth|wealthy|wealthiest|success|successful|millionaires?|"
+                        r"credit|debt|mind|mindset|brain|habits?|secrets?|freedom|power|goals?|fear|"
+                        r"wish(es)?|mortgages?|paychecks?|banks?|taxes|savings?|scam|broke|rich|lie|"
+                        r"truth|never|always|everything|nothing)$", re.I)
+
+
+def _t5_font(path, size, wght):
+    f = ImageFont.truetype(path, size)
+    try:
+        f.set_variation_by_axes([wght])
+    except Exception:
+        pass
+    return f
+
+
+def t5_lines(hook):
+    """Hook lines -> ["CAPS", "*accent*", "CAPS"]: one word set big in gold italic."""
+    words = " ".join(h.strip() for h in hook if h.strip()).split()
+    if not words:
+        return ["THE SUCCESS CLUB"]
+    k = next((i for i, w in enumerate(words) if _T5_ACCENT.match(re.sub(r"[^\w']", "", w))), None)
+    if k is None:
+        k = len(words) - 1
+    acc = re.sub(r"[^\w' ]", "", words[k]).lower()
+    # "(Do This Instead)" style payoffs stay in caps after the accent
+    before, after = " ".join(words[:k]), " ".join(words[k + 1:])
+    out = []
+    for part in (before,):
+        if part:
+            out += _t5_split(part)
+    out.append("*" + acc + "*")
+    if after:
+        out += _t5_split(after)
+    return out
+
+
+def _t5_split(text, maxc=22):
+    """Caps text into lines of at most ~maxc characters, balanced."""
+    w = text.split()
+    if len(text) <= maxc or len(w) < 2:
+        return [text]
+    best = None
+    for i in range(1, len(w)):
+        a, b = " ".join(w[:i]), " ".join(w[i:])
+        cost = max(len(a), len(b))
+        if best is None or cost < best[0]:
+            best = (cost, [a, b])
+    return best[1]
+
+
+def _t5_layout(lines, center_y):
+    d = ImageDraw.Draw(Image.new("RGB", (1, 1)))
+    rows = []
+    for ln in lines:
+        it = ln.startswith("*")
+        txt = ln.strip("*")
+        if it:
+            f, words, col, gap = _t5_font(T5_SERIF, 150, 700), txt.split(), T5_GOLD, 26
+        else:
+            f, words, col, gap = _t5_font(T5_SANS, 74, 800), txt.upper().split(), WHITE, 22
+        while sum(d.textlength(x, font=f) for x in words) + gap * (len(words) - 1) > W - 120 and f.size > 30:
+            f = _t5_font(f.path, f.size - 6, 700 if it else 800)
+        a, b = f.getmetrics()
+        rows.append((words, f, col, gap, a + b))
+    total = sum(r[4] for r in rows) + 18 * (len(rows) - 1)
+    y = int(center_y - total / 2)
+    out = []
+    for words, f, col, gap, lh in rows:
+        x = (W - (sum(d.textlength(x, font=f) for x in words) + gap * (len(words) - 1))) / 2
+        for wd in words:
+            out.append((wd, f, col, x, y))
+            x += d.textlength(wd, font=f) + gap
+        y += lh + 18
+    return out, y
+
+
+def _t5_cover(img, z=1.0, dy=0.0):
+    iw, ih = img.size
+    s = max(W / iw, H / ih) * z
+    im = img.resize((int(iw * s) + 1, int(ih * s) + 1), Image.LANCZOS)
+    x, y = (im.width - W) // 2, int((im.height - H) // 2 + dy)
+    return im.crop((x, y, x + W, y + H))
+
+
+_T5_SHADE = []
+
+
+def _t5_shade(im):
+    if not _T5_SHADE:
+        ov = Image.new("L", (W, H), 0)
+        d = ImageDraw.Draw(ov)
+        for y in range(H):
+            t = abs(y - H * 0.45) / (H * 0.55)
+            d.line((0, y, W, y), fill=int(150 * (1 - min(1, t)) + 70))
+        _T5_SHADE.append(ov)
+    return Image.composite(Image.new("RGB", (W, H), (5, 8, 18)), im, _T5_SHADE[0])
+
+
+def _t5_sig(d, y, alpha=235):
+    sf = _t5_font(T5_SANS, 30, 600)
+    sig = "K E V I N   T R U D E A U"
+    d.text(((W - d.textlength(sig, font=sf)) / 2, y), sig, font=sf, fill=(235, 235, 235, alpha))
+
+
+def t5_photo(c, hook, tmp):
+    """Pick and fetch a b-roll photo whose theme fits the hook; varies clip to clip."""
+    lst = os.path.join(ROOT, "factory", "assets", "broll", "list.txt")
+    pool = {}
+    for line in open(lst):
+        if line.strip() and not line.startswith("#"):
+            th, pid = line.split()[:2]
+            pool.setdefault(th, []).append(f"{th}_{pid}")
+    text = " ".join(hook).lower()
+    themes = next((t for pat, t in T5_THEMES if re.search(pat, text)), ["sunrise", "summit", "road", "ocean"])
+    names = [n for t in themes for n in pool.get(t, [])] or [n for v in pool.values() for n in v]
+    n = names[(c.get("lesson") or abs(hash(c["file"]))) % len(names)]
+    out = os.path.join(tmp, f"BROLL--{n}.jpg")
+    if not os.path.exists(out):
+        sh("gh", "release", "download", "media", "-R", REPO, "-p", f"BROLL--{n}.jpg", "-O", out, "--clobber")
+    c["broll"] = n
+    return out
+
+
+def t5_cover_jpg(photo, hook, out):
+    im = _t5_shade(_t5_cover(Image.open(photo).convert("RGB"), 1.03))
+    words, end_y = _t5_layout(t5_lines(hook), H * 0.47)
+    d = ImageDraw.Draw(im, "RGBA")
+    for wd, f, col, x, y in words:
+        d.text((x + 4, y + 5), wd, font=f, fill=(0, 0, 0, 200))
+        d.text((x, y), wd, font=f, fill=col)
+    _t5_sig(d, min(end_y + 40, 1620))
+    im.save(out, quality=92)
+    return out
+
+
+def t5_cta_png(photo, out, kind=None):
+    kind = kind or T5_CTA_KIND
+    im = _t5_cover(Image.open(photo).convert("RGB"), 1.1).filter(ImageFilter.GaussianBlur(18))
+    im = ImageEnhance.Brightness(im).enhance(0.35)
+    d = ImageDraw.Draw(im)
+
+    def ct(txt, f, y, col):
+        w = d.textlength(txt, font=f)
+        d.text(((W - w) / 2 + 2, y + 3), txt, font=f, fill=(0, 0, 0))
+        d.text(((W - w) / 2, y), txt, font=f, fill=col)
+    it = _t5_font(T5_SERIF, 128, 700)
+    if kind == "gin":
+        it = _t5_font(T5_SERIF, 112, 700)
+        ct("J O I N   T H E   C L U B", _t5_font(T5_SANS, 44, 700), 600, WHITE)
+        d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
+        ct("Learn it from", it, 730, T5_GOLD)
+        ct("the source", it, 880, T5_GOLD)
+        ct("KEVIN TRUDEAU'S GIN", _t5_font(T5_SANS, 40, 700), 1060, (225, 225, 225))
+        ct("Tap the link in my bio", _t5_font(T5_SANS, 54, 800), 1250, WHITE)
+        ct("to find out more  →", _t5_font(T5_SANS, 54, 800), 1325, WHITE)
+    else:
+        ct("F R E E   A U D I O", _t5_font(T5_SANS, 44, 700), 600, WHITE)
+        d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
+        ct("Your Wish Is", it, 730, T5_GOLD)
+        ct("Your Command", it, 880, T5_GOLD)
+        ct("BY KEVIN TRUDEAU", _t5_font(T5_SANS, 40, 700), 1060, (225, 225, 225))
+        ct("Tap the link in my bio", _t5_font(T5_SANS, 54, 800), 1250, WHITE)
+        ct("to listen free  →", _t5_font(T5_SANS, 54, 800), 1325, WHITE)
+    ct(HANDLE, _t5_font(T5_SANS, 36, 600), 1560, (200, 200, 200))
+    im.save(out)
+
+
+def restyle_t5(src, hook, dst, photo, prior=None):
+    """T5 from any earlier render. `prior` says where Kevin is in `src`."""
+    tmp = tempfile.mkdtemp()
+    if prior in ("T1", "T2"):
+        y0, y1, tail = BAND, H, (OUTRO_SECS if prior == "T2" else 0)
+    elif prior == "T4":
+        y0, y1, tail = T4_TOP, T4_TOP + T4_VID, OUTRO_SECS
+    else:
+        y0, y1, tail = 0, H, 0
+    body = duration(src) - tail
+    base = _t5_cover(Image.open(photo).convert("RGB"), 1.0)
+    src_img = Image.open(photo).convert("RGB")
+    words, end_y = _t5_layout(t5_lines(hook), H * 0.43)
+    n = int(T5_HOOK * T5_FPS)
+    step = min(0.28, 2.0 / max(1, len(words)))
+    for i in range(n):
+        t = i / T5_FPS
+        im = _t5_shade(_t5_cover(src_img, 1.0 + 0.07 * t / T5_HOOK, dy=-40 * t / T5_HOOK))
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(layer)
+        for k, (wd, f, col, x, y) in enumerate(words):
+            t0 = 0.15 + k * step
+            if t < t0:
+                continue
+            e = 1 - (1 - min(1.0, (t - t0) / 0.18)) ** 3
+            a, yy = int(255 * e), y + (1 - e) * 26
+            d.text((x + 3, yy + 4), wd, font=f, fill=(0, 0, 0, int(a * 0.55)))
+            d.text((x, yy), wd, font=f, fill=col + (a,))
+        _t5_sig(d, min(end_y + 40, 1620), int(255 * min(1, max(0, (t - 1.0) / 0.4)) * 0.85))
+        fr = Image.alpha_composite(im.convert("RGBA"), layer)
+        fr.putalpha(int(255 * min(1.0, max(0.0, (T5_HOOK - t) / 0.25))))
+        fr.save(os.path.join(tmp, f"h{i:03d}.png"))
+    del base
+    cta = os.path.join(tmp, "cta.png")
+    t5_cta_png(photo, cta)
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", src,
+       "-framerate", str(T5_FPS), "-i", os.path.join(tmp, "h%03d.png"),
+       "-loop", "1", "-framerate", str(T5_FPS), "-t", str(T5_CTA), "-i", cta,
+       "-f", "lavfi", "-t", str(T5_CTA), "-i", "anullsrc=r=48000:cl=stereo",
+       "-filter_complex",
+       f"[0:v]trim=0:{body:.3f},setpts=PTS-STARTPTS,scale={W}:{H},setsar=1,"
+       f"crop={W}:{y1 - y0}:0:{y0},scale=-2:{H},crop={W}:{H},setsar=1,fps={T5_FPS}[k];"
+       f"[k][1:v]overlay=0:0:eof_action=pass,format=yuv420p[m];"
+       f"[2:v]scale={W}:{H},setsar=1,fps={T5_FPS},format=yuv420p,fade=t=in:st=0:d=0.35,"
+       f"zoompan=z='1+0.0006*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={T5_FPS}[c];"
+       f"[0:a]atrim=0:{body:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+       f"aformat=sample_fmts=fltp:channel_layouts=stereo[a0];"
+       f"[3:a]aformat=sample_fmts=fltp:channel_layouts=stereo[a1];"
+       f"[m][a0][c][a1]concat=n=2:v=1:a=1[v][a]",
+       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+       "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    shutil.rmtree(tmp, ignore_errors=True)
+
+
 def hooks_index():
     idx, brands = {}, {}
     for p in glob.glob(os.path.join(ROOT, "factory", "plans", "*.json")):
@@ -742,7 +993,20 @@ def main():
         asset = c["file"].replace("/", "--")
         src, dst = os.path.join(tmp, asset), os.path.join(tmp, "out_" + asset)
         clean = False
-        if STYLE == "T4":
+        if STYLE == "T5":
+            prior = c.get("style") if c.get("style") in ("T1", "T2", "T4") else None
+            if c.get("style") not in (None, "none", "T1", "T2", "T4"):
+                skipped.append(f"{c['file']}: styled {c.get('style')} - left as is")
+                continue
+            try:
+                sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
+                photo = t5_photo(c, hook, tmp)
+                restyle_t5(src, hook, dst, photo, prior=prior)
+            except Exception as e:
+                skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
+                continue
+            card = None
+        elif STYLE == "T4":
             # T4 = the editorial frame + the energy edit (27 Oct 2026). A T1/T2 clip
             # already has our band; only the picture under it is used again.
             prior = c.get("style") if c.get("style") in ("T1", "T2") else None
@@ -777,7 +1041,7 @@ def main():
             clean = True
         else:
             sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
-        if STYLE != "T4" and not (STYLE == "T2" and c.get("style") == "T1"):
+        if STYLE not in ("T4", "T5") and not (STYLE == "T2" and c.get("style") == "T1"):
             try:
                 if STYLE == "T2":
                     restyle_t2(src, hook, dst, f"THE SUCCESS CLUB · LESSON {lesson_of(man, c)}",

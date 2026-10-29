@@ -95,7 +95,7 @@ jobs:
           KT_SLOTS: "07:00,09:30,12:00,14:30,17:00,19:30"
           # Instagram on every slot again (was 3 a day, 4 h apart, while under review).
           IG_PER_DAY: "6"
-          IG_MIN_GAP_H: "2"
+          IG_MIN_GAP_H: "0.75"   # under the 45-min post gap, so it never drops Instagram from a clip
           AR_SLOTS: ${{ secrets.AR_SLOTS }}
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
           KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}

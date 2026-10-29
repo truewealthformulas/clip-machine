@@ -1134,6 +1134,49 @@ def main():
         with open(MAN, "w", encoding="utf-8") as fh:
             json.dump(man, fh, indent=1, ensure_ascii=False)
         print(f"repost queued: {new} (was {f})", flush=True)
+    # T5 RE-POSTS (29 Oct 2026, the owner on the first T5 post: "correct the last
+    # post then with kevin with less zoom, maybe post it again"). Each entry in
+    # factory/repost_t5.json ({"file", "at"}) is re-rendered from its posted T5
+    # file at the corrected size and queued once as a NEW clip ("92_" name),
+    # same caption, at the New York time given in "at".
+    rp5 = os.path.join(ROOT, "factory", "repost_t5.json")
+    for e in (json.load(open(rp5)) if os.path.exists(rp5) else []):
+        f = e["file"]
+        if any(c.get("repost_of") == f for c in man["clips"]):
+            continue
+        old = next((c for c in man["clips"] if c["file"] == f), None)
+        hook = idx.get(slug_of(f))
+        if not old or not hook:
+            skipped.append(f"repost {f}: clip or hook missing")
+            continue
+        try:
+            src = os.path.join(tmp, "rp5_" + f.replace("/", "--"))
+            sh("gh", "release", "download", "media", "-R", REPO, "-p", f.replace("/", "--"), "-O", src, "--clobber")
+            brand, name = f.split("/", 1)
+            new = f"{brand}/" + re.sub(r"^\d+_", "92_", name)
+            dst = os.path.join(tmp, "up", new.replace("/", "--"))
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            zoom = H / T4_VID / 1.2 if f in T5_FROM_T4 else H / (H - BAND)
+            entry = {"file": new, "caption": old.get("caption", ""), "done": False, "status": {},
+                     "style": STYLE, "repost_of": f, "t5_v": T5_V, "t5_zoom": 1.0,
+                     "t5_from": "T4" if f in T5_FROM_T4 else "T2", "lesson": old.get("lesson"),
+                     "broll": old.get("broll")}
+            photo = t5_photo(entry, hook, tmp)
+            restyle_t5(src, hook, dst, photo, prior="T5", zoom=zoom)
+            sh("gh", "release", "upload", "media", dst, "-R", REPO, "--clobber")
+            entry["bytes"] = os.path.getsize(dst)
+            for k in ("cta_kind", "cta_variant", "cta_keyword"):
+                if old.get(k) is not None:
+                    entry[k] = old[k]
+            if e.get("at"):
+                entry["scheduled_at"] = e["at"]
+            add_cover(entry, hook, dst, tmp)
+            man["clips"].append(entry)
+            with open(MAN, "w", encoding="utf-8") as fh:
+                json.dump(man, fh, indent=1, ensure_ascii=False)
+            print(f"T5 repost queued: {new} (was {f}) at {e.get('at')}", flush=True)
+        except Exception as ex:
+            skipped.append(f"repost {f}: {type(ex).__name__} {str(ex)[:120]}")
     print(f"restyle: {done} clip(s) styled")
     for s in skipped:
         print("  skipped", s)

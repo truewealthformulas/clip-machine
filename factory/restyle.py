@@ -844,7 +844,7 @@ def t5_cta_png(photo, out, kind=None):
         ct("Tap the link in my bio", _t5_font(T5_SANS, 54, 800), 1250, WHITE)
         ct("to find out more  →", _t5_font(T5_SANS, 54, 800), 1325, WHITE)
     else:
-        ct("F R E E   A U D I O", _t5_font(T5_SANS, 44, 700), 600, WHITE)
+        ct("F R E E   A U D I O   T R A I N I N G", _t5_font(T5_SANS, 38, 700), 600, WHITE)
         d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
         ct("Your Wish Is", it, 730, T5_GOLD)
         ct("Your Command", it, 880, T5_GOLD)
@@ -855,15 +855,28 @@ def t5_cta_png(photo, out, kind=None):
     im.save(out)
 
 
-def restyle_t5(src, hook, dst, photo, prior=None):
-    """T5 from any earlier render. `prior` says where Kevin is in `src`."""
+# 29 Oct 2026, the owner on the first T5 post: "the image is too close". Kevin's
+# window was zoomed until it filled the screen (x1.42 from a T4 render). Now he
+# keeps his size - full width - and the space above and below is the same
+# picture blurred and darkened. T5_ZOOM records how much a T5 render was
+# zoomed, so the ones made before this fix can be shrunk back (T5 -> T5).
+T5_V = 2
+T5_FROM_T4 = {"KT_WEALTH6/02_appletrust_55s.mp4", "KT_BUSINESS/01_winorlearn_58s.mp4"}  # first-version T5s made from T4
+
+
+def restyle_t5(src, hook, dst, photo, prior=None, zoom=1.0):
+    """T5 from any earlier render. `prior` says where Kevin is in `src`.
+    prior "T5" = an old zoomed T5 render: its Kevin frames are scaled down by `zoom`."""
     tmp = tempfile.mkdtemp()
     if prior in ("T1", "T2"):
         y0, y1, tail = BAND, H, (OUTRO_SECS if prior == "T2" else 0)
     elif prior == "T4":
         y0, y1, tail = T4_TOP, T4_TOP + T4_VID, OUTRO_SECS
+    elif prior == "T5":
+        y0, y1, tail = 0, H, T5_CTA
     else:
         y0, y1, tail = 0, H, 0
+    fg_w = int(round(W / max(zoom, 1.0) / 2)) * 2
     body = duration(src) - tail
     base = _t5_cover(Image.open(photo).convert("RGB"), 1.0)
     src_img = Image.open(photo).convert("RGB")
@@ -896,7 +909,10 @@ def restyle_t5(src, hook, dst, photo, prior=None):
        "-f", "lavfi", "-t", str(T5_CTA), "-i", "anullsrc=r=48000:cl=stereo",
        "-filter_complex",
        f"[0:v]trim=0:{body:.3f},setpts=PTS-STARTPTS,scale={W}:{H},setsar=1,"
-       f"crop={W}:{y1 - y0}:0:{y0},scale=-2:{H},crop={W}:{H},setsar=1,fps={T5_FPS}[k];"
+       f"crop={W}:{y1 - y0}:0:{y0},setsar=1,split[ka][kb];"
+       f"[ka]scale=-2:{H},crop={W}:{H},boxblur=40:2,eq=brightness=-0.18:saturation=0.8,setsar=1[bg];"
+       f"[kb]scale={fg_w}:-2,setsar=1[fg];"
+       f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={T5_FPS}[k];"
        f"[k][1:v]overlay=0:0:eof_action=pass,format=yuv420p[m];"
        f"[2:v]scale={W}:{H},setsar=1,fps={T5_FPS},format=yuv420p,fade=t=in:st=0:d=0.35,"
        f"zoompan=z='1+0.0006*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={T5_FPS}[c];"
@@ -979,7 +995,9 @@ def main():
     man = json.load(open(MAN, encoding="utf-8"))
     idx, plan_brands = hooks_index()
     todo = [c for c in man.get("clips", [])
-            if not c.get("done") and not c.get("posting") and c.get("style") != STYLE
+            if not c.get("done") and not c.get("posting")
+            and (c.get("style") != STYLE or (STYLE == "T5" and (c.get("t5_v") or 1) < T5_V
+                                             and c["file"] in T5_FROM_T4))
             and not any("posted" in str(v) for v in (c.get("status") or {}).values())]
     tmp = tempfile.mkdtemp()
     orig = originals(plan_brands, tmp)
@@ -994,14 +1012,21 @@ def main():
         src, dst = os.path.join(tmp, asset), os.path.join(tmp, "out_" + asset)
         clean = False
         if STYLE == "T5":
-            prior = c.get("style") if c.get("style") in ("T1", "T2", "T4") else None
-            if c.get("style") not in (None, "none", "T1", "T2", "T4"):
+            prior = c.get("style") if c.get("style") in ("T1", "T2", "T4", "T5") else None
+            if c.get("style") not in (None, "none", "T1", "T2", "T4", "T5"):
                 skipped.append(f"{c['file']}: styled {c.get('style')} - left as is")
                 continue
+            # A first-version T5 render was zoomed to fill the screen: x1.42 from
+            # T4 (Kevin's 1350-row window), x1.21 from T2 (1590 rows).
+            zoom = c.get("t5_zoom") or (1.0 if prior != "T5" else
+                                        (H / T4_VID / 1.2 if (c.get("t5_from") == "T4" or c["file"] in T5_FROM_T4)
+                                         else 1.0))
             try:
                 sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
                 photo = t5_photo(c, hook, tmp)
-                restyle_t5(src, hook, dst, photo, prior=prior)
+                restyle_t5(src, hook, dst, photo, prior=prior, zoom=zoom)
+                c.setdefault("t5_from", "T4" if c["file"] in T5_FROM_T4 else prior)
+                c["t5_v"], c["t5_zoom"] = T5_V, 1.0
             except Exception as e:
                 skipped.append(f"{c['file']}: {type(e).__name__} {str(e)[:120]}")
                 continue

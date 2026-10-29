@@ -1,0 +1,31 @@
+# B-ROLL LIBRARY (29 Oct 2026). The new look opens on a full-screen photo with the
+# hook written over it. Photos are free-license Pexels images (no attribution
+# needed). This job fetches every id in factory/assets/broll/list.txt and keeps
+# it in the "media" release as BROLL--<theme>_<id>.jpg, 1080x1920.
+name: broll
+on:
+  workflow_dispatch:
+  push:
+    paths: ["factory/assets/broll/list.txt"]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch photos
+        run: |
+          mkdir -p broll
+          grep -v '^#' factory/assets/broll/list.txt | while read name id; do
+            [ -z "$id" ] && continue
+            curl -sfL -A "Mozilla/5.0" -o "broll/BROLL--${name}_${id}.jpg" \
+              "https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1080&h=1920&fit=crop" \
+              || echo "failed $name $id"
+          done
+          ls -la broll
+      - name: Keep in the media release
+        run: gh release upload media broll/*.jpg -R "$GITHUB_REPOSITORY" --clobber

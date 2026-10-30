@@ -2863,8 +2863,14 @@
    "file": "KT_GOALS/02_carnegiesentence_53s.mp4",
    "caption": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 23310536,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610301855544FEEEBE917F89E980891'}}"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-30T00:59",
    "cta_keyword": "GOALS",
@@ -2873,7 +2879,15 @@
    "style": "T5",
    "cover": "KT_GOALS--02_carnegiesentence_53s__cover.jpg",
    "cover_v": 4,
-   "broll": "sunrise_5537672"
+   "broll": "sunrise_5537672",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1846453379684261/",
+    "instagram": "https://www.instagram.com/reel/DfHajWwG9p2/",
+    "youtube": "https://youtube.com/shorts/3ABr1JoqadQ"
+   },
+   "caption_at_post": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
+   "posted_at": "2026-10-30T06:55"
   },
   {
    "file": "KT_MEMORY/02_chicagoschools_43s.mp4",
@@ -2882,7 +2896,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T00:59",
+   "scheduled_at": "2026-10-30T07:39",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 104,
@@ -2898,7 +2912,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T00:59",
+   "scheduled_at": "2026-10-30T07:39",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 105,
@@ -2914,7 +2928,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-30T00:59",
+   "scheduled_at": "2026-10-30T07:39",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 106,
@@ -2960,7 +2974,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T00:59",
+   "scheduled_at": "2026-10-30T07:39",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -2985,7 +2999,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-30T00:59",
+   "scheduled_at": "2026-10-30T07:39",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -3039,7 +3053,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T06:41",
+   "scheduled_at": "2026-10-30T07:39",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },

@@ -1672,5 +1672,34 @@
     "cta_kind": "question"
    }
   ]
+ },
+ "success_v6wv03u": {
+  "source": "v6wv03u.mp4",
+  "brand": "KT_SUCCESS11",
+  "note": "",
+  "clips": [
+   {
+    "slug": "citywalls",
+    "in": 1847.5,
+    "out": 1903.43,
+    "hook": [
+     "The Mind Test",
+     "Of Two Travelers"
+    ],
+    "caption": "Two travelers asked the same guard the same question. They got opposite answers.\n\nKevin Trudeau tells an ancient story. A man arrives at a city wall and says the people in his old city were mean and dishonest. The guard tells him he will find the same people here.\n\nAnother man says his old neighbors were wonderful and hardworking. The guard tells him he will find the same people here too.\n\nKevin's point: what you find in others starts with what you carry in your own mind.\n\nWhat do you usually expect to find in people?\n\n#ad #mindset #success #kevintrudeau",
+    "cta_kind": "question"
+   },
+   {
+    "slug": "edforman",
+    "in": 1595.74,
+    "out": 1644.75,
+    "hook": [
+     "The Success Teacher",
+     "Who Built Businesses"
+    ],
+    "caption": "Would you take success advice from someone who never built anything?\n\nKevin Trudeau tells the story of his friend Ed Forman, who trained famous speakers. Ed built real companies in oil, real estate, concrete and restaurants before he ever gave a talk on success.\n\nHe did not earn his living selling courses on how to earn. He earned it in real life.\n\nSo when he spoke, people said one thing: he knows.\n\nWho in your life really knows what they are talking about?\n\n#ad #success #business #kevintrudeau",
+    "cta_kind": "question"
+   }
+  ]
  }
 }

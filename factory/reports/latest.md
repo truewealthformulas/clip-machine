@@ -1,7 +1,17 @@
+## control_v70lzte: 0 of 1 clip(s) passed every gate
+
+
+## 2026-10-30 14:53
+control_v70lzte__s0 (KT_CONTROL): 1 of 1 passed pre-render gates
+
+RENDER control_v70lzte__s0
+  FAIL 01_awarenessfirst_45s.mp4: [????] 01_awarenessfirst_45s.mp4                              only 3 pause-anchored captions - too few to judge
+
+
 ## fasting_v6uxtgp: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:19
+## 2026-10-30 14:56
 fasting_v6uxtgp__s0 (KT_FASTING): 1 of 1 passed pre-render gates
 
 RENDER fasting_v6uxtgp__s0
@@ -11,7 +21,7 @@ RENDER fasting_v6uxtgp__s0
 ## luck_v768cno: 0 of 3 clip(s) passed every gate
 
 
-## 2026-10-30 14:20
+## 2026-10-30 14:50
 luck_v768cno__s1 (KT_LUCK): 1 of 1 passed pre-render gates
 
 RENDER luck_v768cno__s1
@@ -19,7 +29,7 @@ RENDER luck_v768cno__s1
 
 
 
-## 2026-10-30 14:30
+## 2026-10-30 14:57
   drop KT_LUCK/createluck: ending - cuts mid-sentence
   drop KT_LUCK/richpicksluck: ending - cuts mid-sentence
 luck_v768cno__s0 (KT_LUCK): 0 of 2 passed pre-render gates
@@ -29,7 +39,7 @@ nothing to build
 ## manifesting_v73yyiw_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:28
+## 2026-10-30 14:53
 manifesting_v73yyiw_p2__s0 (KT_MANIFESTING3): 1 of 1 passed pre-render gates
 
 RENDER manifesting_v73yyiw_p2__s0
@@ -39,7 +49,7 @@ RENDER manifesting_v73yyiw_p2__s0
 ## mindset_v71ktjy_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-10-30 14:30
+## 2026-10-30 15:02
   drop KT_MINDSET23/dreambeforemoney: hook - 964px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s0 (KT_MINDSET23): 1 of 2 passed pre-render gates
 
@@ -48,7 +58,7 @@ RENDER mindset_v71ktjy_p3__s0
 
 
 
-## 2026-10-30 14:26
+## 2026-10-30 14:58
   drop KT_MINDSET23/lifeisaplay: hook - 885px wide at 44px - over the 780px safe zone, will be cut off on a phone
   drop KT_MINDSET23/adversityforyou: hook - 1097px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s1 (KT_MINDSET23): 0 of 2 passed pre-render gates
@@ -58,7 +68,7 @@ nothing to build
 ## mindset_v72iprm_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:17
+## 2026-10-30 14:52
 mindset_v72iprm_p2__s0 (KT_MINDSET17): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72iprm_p2__s0
@@ -68,7 +78,7 @@ RENDER mindset_v72iprm_p2__s0
 ## mindset_v72tj4g: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:22
+## 2026-10-30 14:57
 mindset_v72tj4g__s0 (KT_MINDSET10): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g__s0
@@ -78,7 +88,7 @@ RENDER mindset_v72tj4g__s0
 ## mindset_v72tj4g_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-10-30 14:29
+## 2026-10-30 14:56
 mindset_v72tj4g_p3__s0 (KT_MINDSET18): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s0
@@ -86,7 +96,7 @@ RENDER mindset_v72tj4g_p3__s0
 
 
 
-## 2026-10-30 14:25
+## 2026-10-30 15:10
 mindset_v72tj4g_p3__s1 (KT_MINDSET18): 2 of 2 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s1
@@ -97,7 +107,7 @@ RENDER mindset_v72tj4g_p3__s1
 ## mindset_v75l4i8_p3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:27
+## 2026-10-30 14:58
 mindset_v75l4i8_p3__s0 (KT_MINDSET24): 1 of 1 passed pre-render gates
 
 RENDER mindset_v75l4i8_p3__s0
@@ -107,7 +117,7 @@ RENDER mindset_v75l4i8_p3__s0
 ## mindset_v77w5tc: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-30 14:35
+## 2026-10-30 15:12
   drop KT_MINDSET2/raisefrequency: hook - 789px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v77w5tc__s0 (KT_MINDSET2): 1 of 2 passed pre-render gates
 
@@ -118,7 +128,7 @@ RENDER mindset_v77w5tc__s0
 ## mindset_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-30 14:33
+## 2026-10-30 15:14
   drop KT_MINDSET3/champattitude: ending - cuts mid-sentence
 mindset_v7fa774__s0 (KT_MINDSET3): 1 of 2 passed pre-render gates
 
@@ -129,7 +139,7 @@ RENDER mindset_v7fa774__s0
 ## mindset_v7fa774_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:28
+## 2026-10-30 15:06
 mindset_v7fa774_p2__s0 (KT_MINDSET20): 1 of 1 passed pre-render gates
 
 RENDER mindset_v7fa774_p2__s0
@@ -139,7 +149,7 @@ RENDER mindset_v7fa774_p2__s0
 ## success_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-30 14:37
+## 2026-10-30 15:08
 success_v7fa774__s0 (KT_SUCCESS2): 2 of 2 passed pre-render gates
 
 RENDER success_v7fa774__s0
@@ -150,7 +160,7 @@ RENDER success_v7fa774__s0
 ## wealth_v74m5mg: 0 of 2 clip(s) passed every gate
 
 
-## 2026-10-30 14:43
+## 2026-10-30 15:14
   drop KT_WEALTH2/onassisroom: ending - cuts mid-sentence
 wealth_v74m5mg__s0 (KT_WEALTH2): 1 of 2 passed pre-render gates
 
@@ -161,7 +171,7 @@ RENDER wealth_v74m5mg__s0
 ## wealth_v78i2g6_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-10-30 14:36
+## 2026-10-30 15:03
 wealth_v78i2g6_p2__s0 (KT_WEALTH3): 1 of 1 passed pre-render gates
 
 RENDER wealth_v78i2g6_p2__s0

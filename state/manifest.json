@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2895,8 +2895,14 @@
    "file": "KT_MEMORY/02_chicagoschools_43s.mp4",
    "caption": "He offered free memory training to a whole school system. The answer was no.\n\nKevin Trudeau says that in the eighties he went to the Chicago school system and offered memory training to every teacher and student, free. It would have been a year of live events.\n\nHe saw it as a win-win: students would do better, and he would gain publicity. The offer was declined anyway.\n\nShould schools teach students how to remember?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #memory #success #education",
    "bytes": 31232399,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
@@ -2905,7 +2911,15 @@
    "style": "T5",
    "cover": "KT_MEMORY--02_chicagoschools_43s__cover.jpg",
    "cover_v": 4,
-   "broll": "library_13061431"
+   "broll": "library_13061431",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1106135018934039/",
+    "instagram": "https://www.instagram.com/reel/DfIieGeAftf/",
+    "youtube": "https://youtube.com/shorts/Q1z0uG5Cd7U"
+   },
+   "caption_at_post": "He offered free memory training to a whole school system. The answer was no.\n\nKevin Trudeau says that in the eighties he went to the Chicago school system and offered memory training to every teacher and student, free. It would have been a year of live events.\n\nHe saw it as a win-win: students would do better, and he would gain publicity. The offer was declined anyway.\n\nShould schools teach students how to remember?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #memory #success #education",
+   "posted_at": "2026-10-30T17:25"
   },
   {
    "file": "KT_SUCCESS8/01_professornobusiness_52s.mp4",
@@ -2914,7 +2928,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 105,
@@ -2930,7 +2944,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 106,
@@ -2976,7 +2990,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -3001,7 +3015,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -3019,7 +3033,7 @@
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3055,7 +3069,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3073,7 +3087,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T14:33",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3091,7 +3105,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T13:40",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3109,7 +3123,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T17:11",
+   "scheduled_at": "2026-10-30T18:07",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3119,7 +3133,10 @@
    "bytes": 41996773,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-31T07:12",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS11/02_citywalls_56s.mp4",
@@ -3127,7 +3144,10 @@
    "bytes": 43532802,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-10-31T09:47",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

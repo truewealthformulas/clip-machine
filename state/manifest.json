@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2863,13 +2863,12 @@
    "file": "KT_GOALS/02_carnegiesentence_53s.mp4",
    "caption": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 23310536,
-   "done": true,
+   "done": false,
    "status": {
     "facebook": "posted",
     "instagram": "posted",
     "instagram_story": "story posted",
-    "youtube": "posted",
-    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202610301855544FEEEBE917F89E980891'}}"
+    "youtube": "posted"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-30T00:59",
@@ -2887,7 +2886,13 @@
     "youtube": "https://youtube.com/shorts/3ABr1JoqadQ"
    },
    "caption_at_post": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
-   "posted_at": "2026-10-30T06:55"
+   "posted_at": "2026-10-30T06:55",
+   "retry_only": [
+    "tiktok"
+   ],
+   "agent_retried": [
+    "tiktok"
+   ]
   },
   {
    "file": "KT_MEMORY/02_chicagoschools_43s.mp4",

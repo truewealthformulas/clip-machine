@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -2863,12 +2863,12 @@
    "file": "KT_GOALS/02_carnegiesentence_53s.mp4",
    "caption": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 23310536,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
-    "youtube": "posted"
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-30T00:59",
@@ -2886,10 +2886,7 @@
     "youtube": "https://youtube.com/shorts/3ABr1JoqadQ"
    },
    "caption_at_post": "Why Carnegie had one answer ready for everyone.\n\nKevin explains that when anyone asked Andrew Carnegie what he wanted, he gave the same sentence every time: to build the largest, most profitable steel company in the world.\n\nReporter or board member, the answer never changed. Kevin says it was ingrained in his mind.\n\nCould you state what you want in one clear sentence, instantly?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
-   "posted_at": "2026-10-30T06:55",
-   "retry_only": [
-    "tiktok"
-   ],
+   "posted_at": "2026-10-30T12:56",
    "agent_retried": [
     "tiktok"
    ]
@@ -2901,7 +2898,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "lesson": 104,
@@ -2917,7 +2914,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "lesson": 105,
@@ -2933,7 +2930,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "lesson": 106,
@@ -2979,7 +2976,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -3004,7 +3001,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -3022,7 +3019,7 @@
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T12:14",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3058,7 +3055,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T07:39",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3094,7 +3091,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T09:35",
+   "scheduled_at": "2026-10-30T13:40",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },

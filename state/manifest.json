@@ -2955,8 +2955,14 @@
    "file": "KT_SUCCESS8/02_moneybad_54s.mp4",
    "caption": "Most people secretly believe money is bad.\n\nKevin Trudeau says surveys show most people answer that having a lot of money is bad. He argues that belief sits deep in our memory, and it can work against us when we want more.\n\nHis answer: it is the love of money that is the root of evil, not money itself. You can do wonderful things with money.\n\nWhat did you grow up hearing about money?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #wealth",
    "bytes": 22387250,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-10-30T21:46",
    "cta_keyword": "GOALS",
@@ -2965,7 +2971,15 @@
    "style": "T5",
    "cover": "KT_SUCCESS8--02_moneybad_54s__cover.jpg",
    "cover_v": 4,
-   "broll": "car_9460402"
+   "broll": "car_9460402",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1423042036146510/",
+    "instagram": "https://www.instagram.com/reel/DfJk7wrDZzC/",
+    "youtube": "https://youtube.com/shorts/LXY6u4iZk3U"
+   },
+   "caption_at_post": "Most people secretly believe money is bad.\n\nKevin Trudeau says surveys show most people answer that having a lot of money is bad. He argues that belief sits deep in our memory, and it can work against us when we want more.\n\nHis answer: it is the love of money that is the root of evil, not money itself. You can do wonderful things with money.\n\nWhat did you grow up hearing about money?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #wealth",
+   "posted_at": "2026-10-31T03:06"
   },
   {
    "file": "KT_SUCCESS9/01_onassisrubsoff_58s.mp4",
@@ -3004,7 +3018,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "lesson": 108,
@@ -3029,7 +3043,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -3047,7 +3061,7 @@
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3065,7 +3079,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_biggestlie_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 5
   },
@@ -3083,7 +3097,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3101,7 +3115,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3119,7 +3133,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3137,7 +3151,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-30T21:46",
+   "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },

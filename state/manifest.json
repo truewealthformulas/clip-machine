@@ -3015,8 +3015,14 @@
    "file": "KT_SUCCESS9/02_givingrockefeller_45s.mp4",
    "caption": "Most people wait to be wealthy before they give. Rockefeller did not.\n\nKevin Trudeau says what you sow, you reap. He points to John D. Rockefeller, one of the richest men who ever lived. Rockefeller began giving a tenth of his income from his very first job, when he earned almost nothing. He said it was that giving that made him wealthy.\n\nKevin says very wealthy people give a large share of their income away because they understand giving and receiving.\n\nWhen did you last give without expecting anything back?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
    "bytes": 20713050,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-10-31T03:48",
    "cta_keyword": "GOALS",
@@ -3025,7 +3031,15 @@
    "style": "T5",
    "cover": "KT_SUCCESS9--02_givingrockefeller_45s__cover.jpg",
    "cover_v": 4,
-   "broll": "gold_29336321"
+   "broll": "gold_29336321",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4500756076853080/",
+    "instagram": "https://www.instagram.com/reel/DfKSkTYk2wp/",
+    "youtube": "https://youtube.com/shorts/0L_YLiFZqJI"
+   },
+   "caption_at_post": "Most people wait to be wealthy before they give. Rockefeller did not.\n\nKevin Trudeau says what you sow, you reap. He points to John D. Rockefeller, one of the richest men who ever lived. Rockefeller began giving a tenth of his income from his very first job, when he earned almost nothing. He said it was that giving that made him wealthy.\n\nKevin says very wealthy people give a large share of their income away because they understand giving and receiving.\n\nWhen did you last give without expecting anything back?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
+   "posted_at": "2026-10-31T09:45"
   },
   {
    "file": "KT_BUSINESS/92_winorlearn_58s.mp4",
@@ -3043,7 +3057,7 @@
    "cta_kind": "question",
    "cta_variant": 2,
    "cta_keyword": "GOALS",
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
    "cover_v": 4
   },
@@ -3061,7 +3075,7 @@
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3079,7 +3093,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_biggestlie_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 5
   },
@@ -3097,7 +3111,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3115,7 +3129,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3133,7 +3147,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3151,7 +3165,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T03:48",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3162,7 +3176,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-31T07:12",
+   "scheduled_at": "2026-10-31T10:27",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",

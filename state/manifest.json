@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3145,8 +3145,14 @@
    "file": "KT_KARMA/02_threesteps_35s.mp4",
    "caption": "What you resist persists. Here is what to do instead.\n\nKevin Trudeau shares a simple three-step procedure for when something hard shows up in your life.\n\nFirst, acknowledge it and don't deny it. Second, accept it and welcome it instead of fighting it. Third, learn the lesson and take full responsibility.\n\nKevin says that when you do this, it burns off and is gone.\n\nWhen did resisting something only make it stick around longer for you?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #karma #mindset #habits",
    "bytes": 16194813,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "chess_30182768",
    "t5_from": null,
@@ -3157,7 +3163,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2258057721793707/",
+    "instagram": "https://www.instagram.com/reel/DfN0zIvDdzJ/",
+    "youtube": "https://youtube.com/shorts/lVCF-0vdCkk"
+   },
+   "caption_at_post": "What you resist persists. Here is what to do instead.\n\nKevin Trudeau shares a simple three-step procedure for when something hard shows up in your life.\n\nFirst, acknowledge it and don't deny it. Second, accept it and welcome it instead of fighting it. Third, learn the lesson and take full responsibility.\n\nKevin says that when you do this, it burns off and is gone.\n\nWhen did resisting something only make it stick around longer for you?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #karma #mindset #habits",
+   "posted_at": "2026-11-01T17:41"
   },
   {
    "file": "KT_MINDSET28/01_badreview_50s.mp4",
@@ -3173,7 +3187,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T14:43",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3191,7 +3205,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T14:43",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3209,7 +3223,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T14:43",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3220,7 +3234,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T14:43",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",
@@ -3270,7 +3284,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T14:43",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "money_30754336",
@@ -3306,7 +3320,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T16:27",
+   "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",

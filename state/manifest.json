@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3044,8 +3044,13 @@
   {
    "file": "KT_BUSINESS/92_winorlearn_58s.mp4",
    "caption": "Why every failure is a lesson, not a loss.\n\nKevin shares that he made plenty of mistakes early in his career and lost a lot along the way. What mattered was that he learned something from every failure.\n\nHe quotes Rockefeller: in every adversity are the seeds of a greater benefit, and you have to find them. Then he tells the Edison story: not 10,000 failures, but 10,000 ways that did not work.\n\nWhat was your last failure really trying to teach you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #habits",
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261101084033AAE0533B25E97F306C78'}}"
+   },
    "style": "T5",
    "repost_of": "KT_BUSINESS/01_winorlearn_58s.mp4",
    "t5_v": 2,
@@ -3059,7 +3064,15 @@
    "cta_keyword": "GOALS",
    "scheduled_at": "2026-10-31T14:53",
    "cover": "KT_BUSINESS--92_winorlearn_58s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1643858317129297/",
+    "instagram": "https://www.instagram.com/reel/DfLJqgzjefL/",
+    "youtube": "https://youtube.com/shorts/CgbIAEtiKPo"
+   },
+   "caption_at_post": "Why every failure is a lesson, not a loss.\n\nKevin shares that he made plenty of mistakes early in his career and lost a lot along the way. What mattered was that he learned something from every failure.\n\nHe quotes Rockefeller: in every adversity are the seeds of a greater benefit, and you have to find them. Then he tells the Edison story: not 10,000 failures, but 10,000 ways that did not work.\n\nWhat was your last failure really trying to teach you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #habits",
+   "posted_at": "2026-10-31T20:40"
   },
   {
    "file": "KT_KARMA/01_behindbacks_52s.mp4",
@@ -3075,7 +3088,7 @@
    "style": "T5",
    "cover": "KT_KARMA--01_behindbacks_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3093,7 +3106,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_biggestlie_52s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 5
   },
@@ -3111,7 +3124,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3129,7 +3142,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3147,7 +3160,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3165,7 +3178,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3176,7 +3189,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-31T14:53",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",
@@ -3226,7 +3239,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-10-31T16:36",
+   "scheduled_at": "2026-10-31T21:25",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "money_30754336",

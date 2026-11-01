@@ -3113,8 +3113,14 @@
    "file": "KT_KARMA/02_biggestlie_52s.mp4",
    "caption": "The biggest lie is always the one you tell yourself.\n\nKevin Trudeau says the second biggest lie is the half truth. Then he gives a simple image: the best time to plant a tree was twenty years ago, and the second best time is today.\n\nYou can't go back and plant it in the past, but you can start planting now.\n\nKevin applies the same idea to the good karma you create: the best time was long ago, and the second best time is today.\n\nWhat is one thing you've told yourself that deserves a second look?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #karma",
    "bytes": 24563129,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "summit_2410769",
    "t5_from": null,
@@ -3125,7 +3131,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-01T09:45",
    "cta_keyword": "GOALS",
-   "cta_variant": 5
+   "cta_variant": 5,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1702494214767124/",
+    "instagram": "https://www.instagram.com/reel/DfNbot6D6Q-/",
+    "youtube": "https://youtube.com/shorts/hun4O_YtvZE"
+   },
+   "caption_at_post": "The biggest lie is always the one you tell yourself.\n\nKevin Trudeau says the second biggest lie is the half truth. Then he gives a simple image: the best time to plant a tree was twenty years ago, and the second best time is today.\n\nYou can't go back and plant it in the past, but you can start planting now.\n\nKevin applies the same idea to the good karma you create: the best time was long ago, and the second best time is today.\n\nWhat is one thing you've told yourself that deserves a second look?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #karma",
+   "posted_at": "2026-11-01T14:02"
   },
   {
    "file": "KT_KARMA/02_threesteps_35s.mp4",
@@ -3141,7 +3155,7 @@
    "style": "T5",
    "cover": "KT_KARMA--02_threesteps_35s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },
@@ -3159,7 +3173,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--01_badreview_50s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3177,7 +3191,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3195,7 +3209,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3206,7 +3220,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",
@@ -3256,7 +3270,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T09:45",
+   "scheduled_at": "2026-11-01T14:43",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "money_30754336",
@@ -3273,7 +3287,10 @@
    "bytes": 27324313,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-01T19:58",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MANIFESTING4/02_becomebelieve_41s.mp4",
@@ -3281,7 +3298,10 @@
    "bytes": 28593121,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-01T16:27",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   }
  ]
 }

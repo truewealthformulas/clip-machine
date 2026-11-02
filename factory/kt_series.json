@@ -1809,5 +1809,41 @@
     "cta_kind": "offer"
    }
   ]
+ },
+ "business_v700gbc_p2": {
+  "source": "v700gbc.mp4",
+  "brand": "KT_BUSINESS2",
+  "note": "",
+  "clips": [
+   {
+    "slug": "acornforest",
+    "in": 2363.62,
+    "out": 2407.39,
+    "hook": [
+     "What Vision Really Means",
+     "For Success"
+    ],
+    "caption": "One question about an acorn shows how big success thinking can get.\n\nKevin Trudeau tells of a night at a bar in Denver, where he met the past president of Tandy Corporation. Asked for the secret of his success, the man said one word: vision. He held up a pack of matches and asked Kevin to imagine it was an acorn.\n\nKevin said he saw a tree. The man said he saw a forest. The difference, he explained, was the size of the vision and the time it takes.\n\nWhat would you see in the acorn?\n\n#ad #success #mindset #kevintrudeau",
+    "cta_kind": "offer"
+   }
+  ]
+ },
+ "wealth_v6zos3k_p2": {
+  "source": "v6zos3k.mp4",
+  "brand": "KT_WEALTH8",
+  "note": "",
+  "clips": [
+   {
+    "slug": "cellularcall",
+    "in": 1221.7,
+    "out": 1276.07,
+    "hook": [
+     "The Business Call",
+     "Before Cell Phones"
+    ],
+    "caption": "The phone call that explained cellular before anyone believed it.\n\nKevin Trudeau recalls a friend asking if he had a phone in his car. He did, a radio phone tied to one tower in Chicago that lost signal when he drove far away.\n\nHis friend described something new called cellular, with many small towers passing calls along. Kevin doubted the big phones would ever shrink. The answer: they will make them small.\n\nKevin's point is that spotting what is coming often starts with knowing the right people.\n\nWhat obvious thing today do you think will look different in ten years?\n\n#ad #business #wealth #success",
+    "cta_kind": "question"
+   }
+  ]
  }
 }

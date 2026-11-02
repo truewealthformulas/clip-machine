@@ -1,7 +1,7 @@
 ## control_v70lzte: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:03
+## 2026-11-02 17:14
 control_v70lzte__s0 (KT_CONTROL): 1 of 1 passed pre-render gates
 
 RENDER control_v70lzte__s0
@@ -11,7 +11,7 @@ RENDER control_v70lzte__s0
 ## fasting_v6uxtgp: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:04
+## 2026-11-02 17:17
 fasting_v6uxtgp__s0 (KT_FASTING): 1 of 1 passed pre-render gates
 
 RENDER fasting_v6uxtgp__s0
@@ -21,7 +21,7 @@ RENDER fasting_v6uxtgp__s0
 ## luck_v768cno: 0 of 3 clip(s) passed every gate
 
 
-## 2026-11-01 15:01
+## 2026-11-02 17:15
 luck_v768cno__s1 (KT_LUCK): 1 of 1 passed pre-render gates
 
 RENDER luck_v768cno__s1
@@ -29,41 +29,53 @@ RENDER luck_v768cno__s1
 
 
 
-## 2026-11-01 15:05
+## 2026-11-02 17:20
   drop KT_LUCK/createluck: ending - cuts mid-sentence
   drop KT_LUCK/richpicksluck: ending - cuts mid-sentence
 luck_v768cno__s0 (KT_LUCK): 0 of 2 passed pre-render gates
 nothing to build
 
 
-## manifesting_v6z25lm: 2 of 2 clip(s) passed every gate
-
-
-## 2026-11-01 15:12
-manifesting_v6z25lm__s0 (KT_MANIFESTING4): 2 of 2 passed pre-render gates
-
-RENDER manifesting_v6z25lm__s0
-  PASS 01_possiblefirst_45s.mp4  01_possiblefirst_45s.mp4                               11 captions vs the sound  median +0
-       FIRST 5s : There are some very wealthy people that say exactly what I'm saying. | LAST  8s : Learn how to use your mind. You also said, "I always knew I was going to be rich."
-  PASS 02_becomebelieve_41s.mp4  02_becomebelieve_41s.mp4                               15 captions vs the sound  median +0
-       FIRST 5s : Stephen Jobs, very successful guy. He says you have to trust | LAST  8s : It's the magic of believing. But if you have counter intention and you don't eliminate that, it's not going to work
-TEST MODE - passing clips NOT uploaded or queued: KT_MANIFESTING4
-
-
 ## manifesting_v73yyiw_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:04
+## 2026-11-02 17:20
 manifesting_v73yyiw_p2__s0 (KT_MANIFESTING3): 1 of 1 passed pre-render gates
 
 RENDER manifesting_v73yyiw_p2__s0
   FAIL 01_wealthywontdo_53s.mp4: [FAIL] 01_wealthywontdo_53s.mp4                               8 captions vs the sound  median +0.65s  worst-10% 0.76s  | words captioned 98%
 
 
+## mindset_v6zdmb0: 4 of 4 clip(s) passed every gate
+
+
+## 2026-11-02 17:31
+mindset_v6zdmb0__s0 (KT_MINDSET30): 2 of 2 passed pre-render gates
+
+RENDER mindset_v6zdmb0__s0
+  PASS 01_lowtargets_65s.mp4  01_lowtargets_65s.mp4                                  13 captions vs the sound  median +0
+       FIRST 5s : So I was just with a guy the other day, and he says, "Yeah, we set our targets really high." | LAST  8s : Knowing that I'll probably hit this in the first 10 days of the month. Someone said
+  PASS 02_fantasyisland_34s.mp4  02_fantasyisland_34s.mp4                               8 captions vs the sound  median +0.
+       FIRST 5s : Yeah, well, they're living in fantasy land. Welcome to Fantasy Island. | LAST  8s : They love it. The journey is the reward.
+TEST MODE - passing clips NOT uploaded or queued: KT_MINDSET30
+
+
+
+## 2026-11-02 17:27
+mindset_v6zdmb0__s1 (KT_MINDSET30): 2 of 2 passed pre-render gates
+
+RENDER mindset_v6zdmb0__s1
+  PASS 01_neverusecourse_46s.mp4  01_neverusecourse_46s.mp4                              12 captions vs the sound  median +0
+       FIRST 5s : And they buy a course on how to get rich in real estate. And if they just listen, Carlton Sheets was a friend of mine who | LAST  8s : It's creating you to self-sabotage your success. And u
+  PASS 02_cancelhabit_60s.mp4  02_cancelhabit_60s.mp4                                 10 captions vs the sound  median +0
+       FIRST 5s : Then I moved. I moved into a different house. So I went downtown. | LAST  8s : How you break a counter intention or a bad habit. It starts with awareness.
+TEST MODE - passing clips NOT uploaded or queued: KT_MINDSET30
+
+
 ## mindset_v71ktjy_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-01 15:09
+## 2026-11-02 17:24
   drop KT_MINDSET23/dreambeforemoney: hook - 964px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s0 (KT_MINDSET23): 1 of 2 passed pre-render gates
 
@@ -72,7 +84,7 @@ RENDER mindset_v71ktjy_p3__s0
 
 
 
-## 2026-11-01 15:01
+## 2026-11-02 17:19
   drop KT_MINDSET23/lifeisaplay: hook - 885px wide at 44px - over the 780px safe zone, will be cut off on a phone
   drop KT_MINDSET23/adversityforyou: hook - 1097px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s1 (KT_MINDSET23): 0 of 2 passed pre-render gates
@@ -82,7 +94,7 @@ nothing to build
 ## mindset_v72iprm_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 14:59
+## 2026-11-02 17:11
 mindset_v72iprm_p2__s0 (KT_MINDSET17): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72iprm_p2__s0
@@ -92,7 +104,7 @@ RENDER mindset_v72iprm_p2__s0
 ## mindset_v72tj4g: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:04
+## 2026-11-02 17:22
 mindset_v72tj4g__s0 (KT_MINDSET10): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g__s0
@@ -102,7 +114,7 @@ RENDER mindset_v72tj4g__s0
 ## mindset_v72tj4g_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-01 15:15
+## 2026-11-02 17:36
 mindset_v72tj4g_p3__s0 (KT_MINDSET18): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s0
@@ -110,7 +122,7 @@ RENDER mindset_v72tj4g_p3__s0
 
 
 
-## 2026-11-01 15:20
+## 2026-11-02 17:34
 mindset_v72tj4g_p3__s1 (KT_MINDSET18): 2 of 2 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s1
@@ -121,7 +133,7 @@ RENDER mindset_v72tj4g_p3__s1
 ## mindset_v75l4i8_p3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:10
+## 2026-11-02 17:28
 mindset_v75l4i8_p3__s0 (KT_MINDSET24): 1 of 1 passed pre-render gates
 
 RENDER mindset_v75l4i8_p3__s0
@@ -131,7 +143,7 @@ RENDER mindset_v75l4i8_p3__s0
 ## mindset_v77w5tc: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-01 15:21
+## 2026-11-02 17:32
   drop KT_MINDSET2/raisefrequency: hook - 789px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v77w5tc__s0 (KT_MINDSET2): 1 of 2 passed pre-render gates
 
@@ -142,7 +154,7 @@ RENDER mindset_v77w5tc__s0
 ## mindset_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-01 15:28
+## 2026-11-02 17:33
   drop KT_MINDSET3/champattitude: ending - cuts mid-sentence
 mindset_v7fa774__s0 (KT_MINDSET3): 1 of 2 passed pre-render gates
 
@@ -153,7 +165,7 @@ RENDER mindset_v7fa774__s0
 ## mindset_v7fa774_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:14
+## 2026-11-02 17:31
 mindset_v7fa774_p2__s0 (KT_MINDSET20): 1 of 1 passed pre-render gates
 
 RENDER mindset_v7fa774_p2__s0
@@ -163,7 +175,7 @@ RENDER mindset_v7fa774_p2__s0
 ## success_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-01 15:18
+## 2026-11-02 17:36
 success_v7fa774__s0 (KT_SUCCESS2): 2 of 2 passed pre-render gates
 
 RENDER success_v7fa774__s0
@@ -174,7 +186,7 @@ RENDER success_v7fa774__s0
 ## wealth_v74m5mg: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-01 15:21
+## 2026-11-02 17:40
   drop KT_WEALTH2/onassisroom: ending - cuts mid-sentence
 wealth_v74m5mg__s0 (KT_WEALTH2): 1 of 2 passed pre-render gates
 
@@ -185,7 +197,7 @@ RENDER wealth_v74m5mg__s0
 ## wealth_v78i2g6_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-01 15:17
+## 2026-11-02 17:37
 wealth_v78i2g6_p2__s0 (KT_WEALTH3): 1 of 1 passed pre-render gates
 
 RENDER wealth_v78i2g6_p2__s0
@@ -193,11 +205,15 @@ RENDER wealth_v78i2g6_p2__s0
 
 
 ## UPLOAD
-2 clip(s) to add:
-   KT_MANIFESTING4/01_possiblefirst_45s.mp4  (27 MB)
-   KT_MANIFESTING4/02_becomebelieve_41s.mp4  (29 MB)
-   added KT_MANIFESTING4/01_possiblefirst_45s.mp4
-   added KT_MANIFESTING4/02_becomebelieve_41s.mp4
+4 clip(s) to add:
+   KT_MINDSET30/01_lowtargets_65s.mp4  (38 MB)
+   KT_MINDSET30/01_neverusecourse_46s.mp4  (28 MB)
+   KT_MINDSET30/02_cancelhabit_60s.mp4  (36 MB)
+   KT_MINDSET30/02_fantasyisland_34s.mp4  (20 MB)
+   added KT_MINDSET30/01_lowtargets_65s.mp4
+   added KT_MINDSET30/01_neverusecourse_46s.mp4
+   added KT_MINDSET30/02_cancelhabit_60s.mp4
+   added KT_MINDSET30/02_fantasyisland_34s.mp4
 
-manifest now holds 120 clips
+manifest now holds 124 clips
 commit and push state/manifest.json to let the machine see them

@@ -3177,8 +3177,14 @@
    "file": "KT_MINDSET28/01_badreview_50s.mp4",
    "caption": "Ten good reviews, one bad one. Which one sticks with you?\n\nKevin says we accept anything negative more readily than anything positive. He describes studies showing that people read one bad review of a restaurant next to ten good ones, and then skip the place.\n\nHe calls that being manipulated by other people's opinions, and says it holds many people back from the life they want.\n\nWhose opinion has talked you out of something you wanted?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 22749841,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "library_37165246",
    "t5_from": null,
@@ -3189,7 +3195,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-01T18:24",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1157041013532375/",
+    "instagram": "https://www.instagram.com/reel/DfOKog4jO6T/",
+    "youtube": "https://youtube.com/shorts/SFW2WeIcBe4"
+   },
+   "caption_at_post": "Ten good reviews, one bad one. Which one sticks with you?\n\nKevin says we accept anything negative more readily than anything positive. He describes studies showing that people read one bad review of a restaurant next to ten good ones, and then skip the place.\n\nHe calls that being manipulated by other people's opinions, and says it holds many people back from the life they want.\n\nWhose opinion has talked you out of something you wanted?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
+   "posted_at": "2026-11-01T20:52"
   },
   {
    "file": "KT_MINDSET28/02_resistfear_40s.mp4",
@@ -3205,7 +3219,7 @@
    "style": "T5",
    "cover": "KT_MINDSET28--02_resistfear_40s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T18:24",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3223,7 +3237,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T18:24",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3234,7 +3248,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T18:24",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",
@@ -3284,7 +3298,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T18:24",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "money_30754336",
@@ -3302,7 +3316,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T19:58",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "broll": "jet_13779629",
@@ -3320,7 +3334,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T18:24",
+   "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",

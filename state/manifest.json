@@ -3209,8 +3209,14 @@
    "file": "KT_MINDSET28/02_resistfear_40s.mp4",
    "caption": "What you resist will persist. Why do we keep fighting it?\n\nKevin explains that most people deny what is happening, or complain about it, and that only gives it more power. He says you have to acknowledge it, not deny it and not resist it.\n\nWhen something painful hits, you can't pretend you feel fine. Accept it, let the feeling move through you, and allow yourself a good cry.\n\nWhat are you resisting in your life right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
    "bytes": 18553238,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "summit_18616759",
    "t5_from": null,
@@ -3221,7 +3227,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-01T21:33",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1080010968353418/",
+    "instagram": "https://www.instagram.com/reel/DfO6soOD3RT/",
+    "youtube": "https://youtube.com/shorts/7-2N_FgH1gc"
+   },
+   "caption_at_post": "What you resist will persist. Why do we keep fighting it?\n\nKevin explains that most people deny what is happening, or complain about it, and that only gives it more power. He says you have to acknowledge it, not deny it and not resist it.\n\nWhen something painful hits, you can't pretend you feel fine. Accept it, let the feeling move through you, and allow yourself a good cry.\n\nWhat are you resisting in your life right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
+   "posted_at": "2026-11-02T03:52"
   },
   {
    "file": "KT_MINDSET29/01_ownvoice_49s.mp4",
@@ -3237,7 +3251,7 @@
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-01T21:33",
+   "scheduled_at": "2026-11-02T04:34",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -3248,7 +3262,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T21:33",
+   "scheduled_at": "2026-11-02T04:34",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",
@@ -3298,7 +3312,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T21:33",
+   "scheduled_at": "2026-11-02T04:34",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "money_30754336",
@@ -3316,7 +3330,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T21:33",
+   "scheduled_at": "2026-11-02T04:34",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "broll": "jet_13779629",
@@ -3334,7 +3348,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-01T21:33",
+   "scheduled_at": "2026-11-02T04:34",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_13311790",

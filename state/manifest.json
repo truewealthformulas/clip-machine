@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3386,8 +3386,14 @@
    "file": "KT_MINDSET30/01_neverusecourse_46s.mp4",
    "caption": "Why most people never use the courses they buy.\n\nKevin Trudeau tells of a famous real estate course that works if you apply it. Most buyers shoved the tapes under the bed. Others started and quit, and others listened to them all and said they would start tomorrow.\n\nKevin calls this a counter intention, a block that leads to self-sabotage of success.\n\nWhat is one thing you keep saying you will start tomorrow?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
    "bytes": 22052262,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "sunrise_18856065",
    "t5_from": null,
@@ -3398,7 +3404,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-02T21:23",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2505984176562361/",
+    "instagram": "https://www.instagram.com/reel/DfRdpyniCEZ/",
+    "youtube": "https://youtube.com/shorts/TFiTBehW9w4"
+   },
+   "caption_at_post": "Why most people never use the courses they buy.\n\nKevin Trudeau tells of a famous real estate course that works if you apply it. Most buyers shoved the tapes under the bed. Others started and quit, and others listened to them all and said they would start tomorrow.\n\nKevin calls this a counter intention, a block that leads to self-sabotage of success.\n\nWhat is one thing you keep saying you will start tomorrow?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
+   "posted_at": "2026-11-03T03:36"
   },
   {
    "file": "KT_MINDSET30/02_cancelhabit_60s.mp4",
@@ -3414,7 +3428,7 @@
    "style": "T5",
    "cover": "KT_MINDSET30--02_cancelhabit_60s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-02T21:23",
+   "scheduled_at": "2026-11-03T04:18",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },

@@ -3378,7 +3378,7 @@
    "style": "T5",
    "cover": "KT_MINDSET30--01_lowtargets_65s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-03T06:20",
+   "scheduled_at": "2026-11-03T12:14",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3418,8 +3418,14 @@
    "file": "KT_MINDSET30/02_cancelhabit_60s.mp4",
    "caption": "How two words stopped a bad driving habit.\n\nKevin Trudeau tells how he moved house and kept driving to the old one on autopilot. The next time he caught himself halfway and said two words: cancel, cancel. By the third trip he told himself, I know where I live.\n\nHe says that is how you break a counter intention or a bad habit, and it starts with awareness.\n\nWhat habit do you run on autopilot?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #success",
    "bytes": 28085956,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_kind": "offer",
    "broll": "summit_13311790",
    "t5_from": null,
@@ -3430,7 +3436,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-03T04:18",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1424208426494428/",
+    "instagram": "https://www.instagram.com/reel/DfSUJYzFBjY/",
+    "youtube": "https://youtube.com/shorts/Ng-ypOPbJyM"
+   },
+   "caption_at_post": "How two words stopped a bad driving habit.\n\nKevin Trudeau tells how he moved house and kept driving to the old one on autopilot. The next time he caught himself halfway and said two words: cancel, cancel. By the third trip he told himself, I know where I live.\n\nHe says that is how you break a counter intention or a bad habit, and it starts with awareness.\n\nWhat habit do you run on autopilot?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #success",
+   "posted_at": "2026-11-03T11:32"
   },
   {
    "file": "KT_MINDSET30/02_fantasyisland_34s.mp4",
@@ -3471,7 +3485,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-03T09:03",
+   "scheduled_at": "2026-11-03T12:14",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_18616759",
@@ -3506,7 +3520,10 @@
    "bytes": 32156882,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-03T13:53",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS13/02_willpowerdecides_57s.mp4",
@@ -3514,7 +3531,10 @@
    "bytes": 30675710,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-03T16:21",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

@@ -3396,7 +3396,7 @@
    "style": "T5",
    "cover": "KT_MINDSET30--01_neverusecourse_46s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-02T16:41",
+   "scheduled_at": "2026-11-02T21:23",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -3414,7 +3414,7 @@
    "style": "T5",
    "cover": "KT_MINDSET30--02_cancelhabit_60s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-02T19:09",
+   "scheduled_at": "2026-11-02T21:23",
    "cta_keyword": "GOALS",
    "cta_variant": 2
   },
@@ -3422,8 +3422,14 @@
    "file": "KT_MINDSET30/02_fantasyisland_34s.mp4",
    "caption": "Why success looks easy but takes hard work.\n\nKevin Trudeau says the idea that everything should come easy is fantasy island. He points out that people with huge wealth work extremely hard. They wake up early, go to bed late and don't sit around waiting for money to flow in.\n\nThe difference, Kevin says, is that they love it. For them the journey is the reward.\n\nWhat would you work this hard for, simply because you love it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #habits #mindset",
    "bytes": 15455542,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "broll": "road_672597",
    "t5_from": null,
@@ -3434,7 +3440,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-02T14:54",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2134336163854830/",
+    "instagram": "https://www.instagram.com/reel/DfQuIR2DjtP/",
+    "youtube": "https://youtube.com/shorts/QEg647Q8e7o"
+   },
+   "caption_at_post": "Why success looks easy but takes hard work.\n\nKevin Trudeau says the idea that everything should come easy is fantasy island. He points out that people with huge wealth work extremely hard. They wake up early, go to bed late and don't sit around waiting for money to flow in.\n\nThe difference, Kevin says, is that they love it. For them the journey is the reward.\n\nWhat would you work this hard for, simply because you love it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #habits #mindset",
+   "posted_at": "2026-11-02T20:40"
   },
   {
    "file": "KT_BUSINESS2/01_acornforest_44s.mp4",
@@ -3442,7 +3456,10 @@
    "bytes": 31033748,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-03T09:03",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_WEALTH8/02_cellularcall_54s.mp4",
@@ -3450,7 +3467,10 @@
    "bytes": 34009788,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-03T12:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ]
 }

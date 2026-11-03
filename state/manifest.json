@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3554,6 +3554,30 @@
    "style": "T5",
    "cover": "KT_SUCCESS13--02_willpowerdecides_57s__cover.jpg",
    "cover_v": 4
+  },
+  {
+   "file": "KT_MANIFESTING5/01_cakeingredients_49s.mp4",
+   "caption": "You can follow the recipe and still never bake the cake.\n\nKevin Trudeau uses a chocolate cake to make his point. If the recipe says flour, water and salt, you are missing the eggs, the vanilla and even the chocolate. Some of the ingredients you are given are simply wrong.\n\nHe says the books on manifesting often work the same way. They give you part of the recipe, so you never get the result they describe.\n\nHave you ever followed good advice and still felt something was missing?\n\n#ad #success #goals #kevintrudeau",
+   "bytes": 31345154,
+   "done": false,
+   "status": {},
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_MANIFESTING5/01_nomeditation_54s.mp4",
+   "caption": "The advice online sounds good. Kevin Trudeau says the rich don't follow it.\n\nHe was with a group of very wealthy men and asked each one if they had ever meditated or visualized their wealth while they were building it. They looked at him like he was insane.\n\nKevin's point is that a lot of advice is theory. He wants to share what people who actually get results really do.\n\nHave you ever followed advice that sounded smart and went nowhere?\n\n#ad #money #wealth #mindset",
+   "bytes": 38298173,
+   "done": false,
+   "status": {},
+   "cta_kind": "offer"
+  },
+  {
+   "file": "KT_MANIFESTING5/02_wrongfrequency_56s.mp4",
+   "caption": "You can want something with all your heart and still not be heard.\n\nKevin Trudeau compares the universe to a radio. You may be broadcasting your desire for more money with great intensity, all day long. But if you are on 97.9 FM and the receiver is tuned to AM 1040, nothing comes through.\n\nHis point is that wanting something is not enough. The frequency you send it on matters too.\n\nWhere in your life do you feel you are sending a strong signal and getting no answer?\n\n#ad #money #mindset #success",
+   "bytes": 39269832,
+   "done": false,
+   "status": {},
+   "cta_kind": "question"
   }
  ]
 }

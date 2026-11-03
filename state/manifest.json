@@ -3378,7 +3378,7 @@
    "style": "T5",
    "cover": "KT_MINDSET30--01_lowtargets_65s__cover.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-03T12:14",
+   "scheduled_at": "2026-11-03T17:42",
    "cta_keyword": "GOALS",
    "cta_variant": 3
   },
@@ -3418,12 +3418,12 @@
    "file": "KT_MINDSET30/02_cancelhabit_60s.mp4",
    "caption": "How two words stopped a bad driving habit.\n\nKevin Trudeau tells how he moved house and kept driving to the old one on autopilot. The next time he caught himself halfway and said two words: cancel, cancel. By the third trip he told himself, I know where I live.\n\nHe says that is how you break a counter intention or a bad habit, and it starts with awareness.\n\nWhat habit do you run on autopilot?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #success",
    "bytes": 28085956,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
-    "youtube": "posted"
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
    "broll": "summit_13311790",
@@ -3443,10 +3443,7 @@
     "youtube": "https://youtube.com/shorts/Ng-ypOPbJyM"
    },
    "caption_at_post": "How two words stopped a bad driving habit.\n\nKevin Trudeau tells how he moved house and kept driving to the old one on autopilot. The next time he caught himself halfway and said two words: cancel, cancel. By the third trip he told himself, I know where I live.\n\nHe says that is how you break a counter intention or a bad habit, and it starts with awareness.\n\nWhat habit do you run on autopilot?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #success",
-   "posted_at": "2026-11-03T11:32",
-   "retry_only": [
-    "tiktok"
-   ],
+   "posted_at": "2026-11-03T16:58",
    "agent_retried": [
     "tiktok"
    ]
@@ -3490,7 +3487,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-03T12:14",
+   "scheduled_at": "2026-11-03T17:42",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_18616759",
@@ -3508,7 +3505,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-03T12:32",
+   "scheduled_at": "2026-11-03T17:42",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "broll": "ocean_38939600",
@@ -3526,7 +3523,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-03T13:53",
+   "scheduled_at": "2026-11-03T17:42",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "broll": "summit_2410769",
@@ -3544,7 +3541,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-03T16:21",
+   "scheduled_at": "2026-11-03T17:42",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "broll": "road_672597",
@@ -3561,7 +3558,10 @@
    "bytes": 31345154,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-03T19:47",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MANIFESTING5/01_nomeditation_54s.mp4",
@@ -3569,7 +3569,10 @@
    "bytes": 38298173,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-04T07:02",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MANIFESTING5/02_wrongfrequency_56s.mp4",
@@ -3577,7 +3580,10 @@
    "bytes": 39269832,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-04T10:02",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ]
 }

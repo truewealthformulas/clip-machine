@@ -1,7 +1,7 @@
 ## control_v70lzte: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:19
+## 2026-11-03 15:50
 control_v70lzte__s0 (KT_CONTROL): 1 of 1 passed pre-render gates
 
 RENDER control_v70lzte__s0
@@ -11,7 +11,7 @@ RENDER control_v70lzte__s0
 ## fasting_v6uxtgp: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:22
+## 2026-11-03 15:55
 fasting_v6uxtgp__s0 (KT_FASTING): 1 of 1 passed pre-render gates
 
 RENDER fasting_v6uxtgp__s0
@@ -21,7 +21,7 @@ RENDER fasting_v6uxtgp__s0
 ## luck_v768cno: 0 of 3 clip(s) passed every gate
 
 
-## 2026-11-03 15:19
+## 2026-11-03 15:51
 luck_v768cno__s1 (KT_LUCK): 1 of 1 passed pre-render gates
 
 RENDER luck_v768cno__s1
@@ -29,7 +29,7 @@ RENDER luck_v768cno__s1
 
 
 
-## 2026-11-03 15:21
+## 2026-11-03 15:57
   drop KT_LUCK/createluck: ending - cuts mid-sentence
   drop KT_LUCK/richpicksluck: ending - cuts mid-sentence
 luck_v768cno__s0 (KT_LUCK): 0 of 2 passed pre-render gates
@@ -39,7 +39,7 @@ nothing to build
 ## manifesting_v73yyiw_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:28
+## 2026-11-03 15:58
 manifesting_v73yyiw_p2__s0 (KT_MANIFESTING3): 1 of 1 passed pre-render gates
 
 RENDER manifesting_v73yyiw_p2__s0
@@ -49,7 +49,7 @@ RENDER manifesting_v73yyiw_p2__s0
 ## mindset_v71ktjy_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-03 15:28
+## 2026-11-03 16:04
   drop KT_MINDSET23/dreambeforemoney: hook - 964px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s0 (KT_MINDSET23): 1 of 2 passed pre-render gates
 
@@ -58,7 +58,7 @@ RENDER mindset_v71ktjy_p3__s0
 
 
 
-## 2026-11-03 15:28
+## 2026-11-03 15:59
   drop KT_MINDSET23/lifeisaplay: hook - 885px wide at 44px - over the 780px safe zone, will be cut off on a phone
   drop KT_MINDSET23/adversityforyou: hook - 1097px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s1 (KT_MINDSET23): 0 of 2 passed pre-render gates
@@ -68,7 +68,7 @@ nothing to build
 ## mindset_v72iprm_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:17
+## 2026-11-03 15:51
 mindset_v72iprm_p2__s0 (KT_MINDSET17): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72iprm_p2__s0
@@ -78,7 +78,7 @@ RENDER mindset_v72iprm_p2__s0
 ## mindset_v72tj4g: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:22
+## 2026-11-03 15:55
 mindset_v72tj4g__s0 (KT_MINDSET10): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g__s0
@@ -88,7 +88,7 @@ RENDER mindset_v72tj4g__s0
 ## mindset_v72tj4g_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-03 15:27
+## 2026-11-03 16:02
 mindset_v72tj4g_p3__s0 (KT_MINDSET18): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s0
@@ -96,7 +96,7 @@ RENDER mindset_v72tj4g_p3__s0
 
 
 
-## 2026-11-03 15:29
+## 2026-11-03 16:09
 mindset_v72tj4g_p3__s1 (KT_MINDSET18): 2 of 2 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s1
@@ -107,7 +107,7 @@ RENDER mindset_v72tj4g_p3__s1
 ## mindset_v75l4i8_p3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:28
+## 2026-11-03 15:57
 mindset_v75l4i8_p3__s0 (KT_MINDSET24): 1 of 1 passed pre-render gates
 
 RENDER mindset_v75l4i8_p3__s0
@@ -117,7 +117,7 @@ RENDER mindset_v75l4i8_p3__s0
 ## mindset_v77w5tc: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-03 15:38
+## 2026-11-03 16:09
   drop KT_MINDSET2/raisefrequency: hook - 789px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v77w5tc__s0 (KT_MINDSET2): 1 of 2 passed pre-render gates
 
@@ -128,7 +128,7 @@ RENDER mindset_v77w5tc__s0
 ## mindset_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-03 15:41
+## 2026-11-03 16:15
   drop KT_MINDSET3/champattitude: ending - cuts mid-sentence
 mindset_v7fa774__s0 (KT_MINDSET3): 1 of 2 passed pre-render gates
 
@@ -139,17 +139,31 @@ RENDER mindset_v7fa774__s0
 ## mindset_v7fa774_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:31
+## 2026-11-03 16:07
 mindset_v7fa774_p2__s0 (KT_MINDSET20): 1 of 1 passed pre-render gates
 
 RENDER mindset_v7fa774_p2__s0
   FAIL 01_dreambigsteps_50s.mp4: [????] 01_dreambigsteps_50s.mp4                               only 0 pause-anchored captions - too few to judge
 
 
+## success_v7aqp6u_p2: 2 of 2 clip(s) passed every gate
+
+
+## 2026-11-03 16:18
+success_v7aqp6u_p2__s0 (KT_SUCCESS13): 2 of 2 passed pre-render gates
+
+RENDER success_v7aqp6u_p2__s0
+  PASS 01_copyingswing_53s.mp4  01_copyingswing_53s.mp4                                6 captions vs the sound  median +0.
+       FIRST 5s : It's what works for you. You look at golfers. You know, there's a golfer like Scotty Sheffield. | LAST  8s : A million dollars a year because they've done a few things. The stars lined up. 
+  PASS 02_willpowerdecides_57s.mp4  02_willpowerdecides_57s.mp4                            12 captions vs the sound  median +0
+       FIRST 5s : Now, let me give you a very, very powerful statement. | LAST  8s : You have to submit because the person you are, the creator of your universe, you're the master of your life.
+TEST MODE - passing clips NOT uploaded or queued: KT_SUCCESS13
+
+
 ## success_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-03 15:32
+## 2026-11-03 16:11
 success_v7fa774__s0 (KT_SUCCESS2): 2 of 2 passed pre-render gates
 
 RENDER success_v7fa774__s0
@@ -160,7 +174,7 @@ RENDER success_v7fa774__s0
 ## wealth_v74m5mg: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-03 15:37
+## 2026-11-03 16:14
   drop KT_WEALTH2/onassisroom: ending - cuts mid-sentence
 wealth_v74m5mg__s0 (KT_WEALTH2): 1 of 2 passed pre-render gates
 
@@ -171,8 +185,19 @@ RENDER wealth_v74m5mg__s0
 ## wealth_v78i2g6_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-03 15:34
+## 2026-11-03 16:09
 wealth_v78i2g6_p2__s0 (KT_WEALTH3): 1 of 1 passed pre-render gates
 
 RENDER wealth_v78i2g6_p2__s0
   FAIL 01_safeworthy_54s.mp4: [????] 01_safeworthy_54s.mp4                                  only 0 pause-anchored captions - too few to judge
+
+
+## UPLOAD
+2 clip(s) to add:
+   KT_SUCCESS13/01_copyingswing_53s.mp4  (32 MB)
+   KT_SUCCESS13/02_willpowerdecides_57s.mp4  (31 MB)
+   added KT_SUCCESS13/01_copyingswing_53s.mp4
+   added KT_SUCCESS13/02_willpowerdecides_57s.mp4
+
+manifest now holds 128 clips
+commit and push state/manifest.json to let the machine see them

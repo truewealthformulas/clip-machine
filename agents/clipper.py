@@ -33,7 +33,11 @@ TARGET_DAYS = int(os.environ.get("TARGET_DAYS", "7"))
 MAX_EPISODES = int(sys.argv[sys.argv.index("--max-episodes") + 1]) if "--max-episodes" in sys.argv \
     else int(os.environ.get("MAX_EPISODES_PER_RUN", "3"))
 PENDING_GRACE_H = 3           # a factory build takes ~40 min; a plan still not built after 3h produced nothing and must not block
-CLIPS_PER_EPISODE = 3         # what we expect on average, for the deficit maths
+# ONE CLIP PER EPISODE (4 Nov 2026): Instagram shows the first clip from a
+# recording and buries the rest (0-6 views vs 100-180), so each episode now
+# gives ONE clip - the best one - and more episodes are planned instead.
+KEEP_PER_EPISODE = int(os.environ.get("KEEP_PER_EPISODE", "1"))
+CLIPS_PER_EPISODE = KEEP_PER_EPISODE   # what we expect on average, for the deficit maths
 DRY = "--dry" in sys.argv
 # TEST MODE: plans are rendered and checked but never posted (CLAUDE.md step 5).
 # Turned on for the first run so the owner can watch the clips before they go live.
@@ -260,6 +264,16 @@ def write_plan(vid, entry, taken_brands):
     # AGENT 2: nothing reaches the factory without passing the rules check.
     plan, report = R.review_plan(plan, transcript_text=text,
                                  use_model=not os.environ.get("AGENT_NO_REVIEW_MODEL"))
+    if KEEP_PER_EPISODE and len(plan.get("clips") or []) > KEEP_PER_EPISODE:
+        def score(c):
+            h = " ".join(c.get("hook") or [])
+            d = float(c.get("out", 0)) - float(c.get("in", 0))
+            return (bool(R.KEYWORDS.search(h)) or bool(R.KEYWORDS.search(c.get("caption", "")[:120])),
+                    30 <= d <= 45, -abs(d - 38))
+        best = sorted(plan["clips"], key=score, reverse=True)[:KEEP_PER_EPISODE]
+        report.append(f"kept the best {len(best)} of {len(plan['clips'])} approved clip(s) "
+                      f"(one per episode): {[' '.join(c.get('hook') or []) for c in best]}")
+        plan["clips"] = best
     return key_for(vid, topic), plan, report
 
 

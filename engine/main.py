@@ -305,14 +305,29 @@ def plan(man):
         #
         # Counts clips ALREADY scheduled too, so a re-plan cannot stack onto a
         # day that is already carrying that source.
-        PER_SOURCE_PER_DAY = 2
+        # ONE PER RECORDING, AND A REST BETWEEN (4 Nov 2026). The owner: "lets do
+        # the changes so we can continue having better results". Instagram's own
+        # numbers: the FIRST clip from a recording usually reached 100-180 views;
+        # the second and third from the same recording reached 0-6, the same day
+        # or days later. Instagram treats them as repeats. So a recording gets
+        # at most one post a day and then rests SOURCE_REST_DAYS before its next.
+        PER_SOURCE_PER_DAY = int(os.environ.get("KT_PER_SOURCE_DAY", "1"))
+        SOURCE_REST_DAYS = int(os.environ.get("KT_SOURCE_REST_DAYS", "3"))
         last_src = [None]          # source of the post placed immediately before
         used = {}
+        src_days = {}              # recording -> dates it posted or is booked
         for c in man["clips"]:
             sa = c.get("scheduled_at")
             if sa and not c.get("done") and not c.get("posted_at"):
                 d0 = used.setdefault(sa[:10], {})
                 d0[brand_of(c)] = d0.get(brand_of(c), 0) + 1
+            when_c = c.get("posted_at") or (sa if not c.get("done") else None)
+            if when_c:
+                try:
+                    src_days.setdefault(brand_of(c), set()).add(
+                        datetime.strptime(when_c[:10], "%Y-%m-%d").date())
+                except ValueError:
+                    pass
 
         # ORDER, 5 Sept 2026. the owner: "posting all clips from a same video all
         # together following on another its bored, it need to be separate kind
@@ -406,14 +421,20 @@ def plan(man):
                     b = brand_of(man["clips"][qi])
                     if spent.get(b, 0) >= PER_SOURCE_PER_DAY:
                         return False
+                    if any(abs((when.date() - d).days) < SOURCE_REST_DAYS and d != when.date()
+                           for d in src_days.get(b, ())):
+                        return False
                     # and not the same source as the post immediately before it
                     return not (strict and b == last_src[0])
 
                 pick = next((n for n, qi in enumerate(queue) if ok(qi, True)),
                             next((n for n, qi in enumerate(queue)
-                                  if ok(qi, False)), 0))
+                                  if ok(qi, False)), None))
+                if pick is None:
+                    continue       # nothing fresh for this slot; leave it empty rather than repeat a recording
                 nxt = man["clips"][queue.pop(pick)]
                 spent[brand_of(nxt)] = spent.get(brand_of(nxt), 0) + 1
+                src_days.setdefault(brand_of(nxt), set()).add(when.date())
                 last_src[0] = brand_of(nxt)
                 nxt["scheduled_at"] = key
                 # ROTATE THE COMMENT KEYWORD, IN POSTING ORDER. Daniel's point

@@ -107,6 +107,29 @@ def main():
     if freed:
         engine.save(man)
 
+    # MISSED SLOTS ARE RE-PLANNED, NOT LOST (4 Nov 2026). due_clips() marks a
+    # clip "stale" when its slot passed by more than STALE_AFTER (GitHub's timer
+    # often runs this job late), and plan() never touches a clip that still has
+    # a slot - so a stale clip sat in the queue forever. Five did; that is part
+    # of why the day had ~3.5 posts instead of 6. Give them a new slot instead.
+    # REPLAN_V: bumping it clears every future booking once, so the whole queue
+    # is re-planned under new rules (v2: one clip per recording + rest days).
+    REPLAN_V = 2
+    replan = (man.get("replan_v") or 1) < REPLAN_V
+    cleared = 0
+    for c in man["clips"]:
+        if c.get("done") or c.get("posted_at") or c.get("posting") or not c.get("scheduled_at"):
+            continue
+        if c.get("stale") or replan:
+            c.pop("stale", None)
+            c.pop("scheduled_at", None)
+            cleared += 1
+    if replan:
+        man["replan_v"] = REPLAN_V
+    if cleared or replan:
+        log(f"re-planning {cleared} clip(s)" + (" (new rules)" if replan else " (missed slots)"))
+        engine.save(man)
+
     changed = engine.plan(man)
     if changed:
         log(f"scheduled {changed} clip(s)")

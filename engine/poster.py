@@ -356,7 +356,10 @@ def with_call(platform, cap, now=None):
 # (a viewer who sees AUDIO again knows what it gets), then the hook line, then
 # the clip's question, then at most 4 hashtags with #ad first. The owner sends
 # the link to every AUDIO comment himself (his choice, 14 Oct).
-PAID_LABEL = os.environ.get("IG_PAID_LABEL", "0") == "1"
+# 4 Nov 2026: back ON. Without it Instagram flagged EVERY reel as "branded
+# content without the paid-partnership label" and stopped showing them (median
+# 1 view, 12 of 22 reels at 0-2). IG_PAID_LABEL=0 turns it off.
+PAID_LABEL = os.environ.get("IG_PAID_LABEL", "1") == "1"
 IG_KEYWORD = os.environ.get("KT_IG_KEYWORD", "AUDIO").strip().upper() or "AUDIO"
 IG_ASK = ("Comment \u201c{kw}\u201d to get access to Kevin Trudeau\u2019s legendary "
           "audio training \U0001F525\u2b07\ufe0f")

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3639,42 +3639,77 @@
   {
    "file": "KT_ADVERSITY/01_criticwins_51s.mp4",
    "caption": "If you're criticizing, you don't count - a quote worth a pause.\n\nKevin Trudeau explains that to see the seed of a greater benefit in every problem, you have to cut back your judgment and criticism of others and of yourself.\n\nHe shares a quote he believes came from Roosevelt: it's not the critic who counts, not the one who points out how the strong man stumbles.\n\nIt's a blunt idea, and it's worth a moment of thought.\n\nDo you criticize yourself more than you criticize anyone else?\n\n#ad #mindset #success",
-   "bytes": 29520293,
+   "bytes": 22356774,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "broll": "sunrise_18856065",
+   "t5_from": null,
+   "t5_v": 2,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY--01_criticwins_51s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ADVERSITY/01_dontjudge_34s.mp4",
    "caption": "Why do bad things happen to good people? Start here.\n\nKevin Trudeau says that when you see something happen in someone else's life, you can't know what is in their heart, what they want, or what has to play out for them.\n\nSo his first rule is simple: don't judge and don't criticize. He applies it to his own story too, asking whether you could know what he was asking for.\n\nIt's a thought worth sitting with before you react to anyone.\n\nWhen did you last judge a situation before knowing the whole story?\n\n#ad #mindset #success",
-   "bytes": 22218182,
+   "bytes": 17974860,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "broll": "summit_18616759",
+   "t5_from": null,
+   "t5_v": 2,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY--01_dontjudge_34s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ADVERSITY2/01_notspecial_53s.mp4",
    "caption": "Why even successful people never run out of problems.\n\nKevin Trudeau says there is not a person in the world without problems, obstacles or disasters to overcome. Most people just do not talk about them, so you never see what others are facing.\n\nHe quotes Earl Nightingale: successful people are not people without problems. They are simply people who have learned how to overcome them.\n\nDo you ever feel like everyone else has it easier?\n\n#ad #success #mindset #habits",
-   "bytes": 29591561,
+   "bytes": 22186999,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "broll": "road_12371017",
+   "t5_from": null,
+   "t5_v": 2,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY2--01_notspecial_53s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ADVERSITY2/01_painmustdriver_40s.mp4",
    "caption": "Comfort never changed anyone's life. Pain did.\n\nKevin Trudeau says you have to have adversity to grow. Until something in your life becomes so painful that you cannot take it anymore, change stays a wish.\n\nWhen it turns into a must, a have-to, a need, that is the driver. It pushes you toward ideas that were never on your radar before.\n\nWhat is the one thing in your life you must change?\n\n#ad #success #goals #mindset",
-   "bytes": 24428372,
+   "bytes": 18542675,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "broll": "road_12371017",
+   "t5_from": null,
+   "t5_v": 2,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY2--01_painmustdriver_40s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ADVERSITY2/02_goldmine_51s.mp4",
    "caption": "Faced with a mountain, do you quit or fight?\n\nKevin Trudeau shares the Possibility Thinkers Creed: climb over it, find a pass through, tunnel underneath, or stay and turn the mountain into a gold mine.\n\nHe says that is the mindset of a winner. The obstacle in front of you is not the end. It is the thing you work with.\n\nWhat mountain are you facing right now?\n\n#ad #mindset #success #goals",
-   "bytes": 24315761,
+   "bytes": 18425804,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "broll": "summit_18616759",
+   "t5_from": null,
+   "t5_v": 2,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY2--02_goldmine_51s__cover.jpg",
+   "cover_v": 4
   }
  ]
 }

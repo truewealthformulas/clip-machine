@@ -3689,8 +3689,14 @@
    "file": "KT_ADVERSITY2/01_painmustdriver_40s.mp4",
    "caption": "Comfort never changed anyone's life. Pain did.\n\nKevin Trudeau says you have to have adversity to grow. Until something in your life becomes so painful that you cannot take it anymore, change stays a wish.\n\nWhen it turns into a must, a have-to, a need, that is the driver. It pushes you toward ideas that were never on your radar before.\n\nWhat is the one thing in your life you must change?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #mindset",
    "bytes": 18542675,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "broll": "road_12371017",
    "t5_from": null,
@@ -3701,7 +3707,15 @@
    "cover_v": 4,
    "scheduled_at": "2026-11-04T19:00",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1619307612647292/",
+    "instagram": "https://www.instagram.com/reel/DfWBx-SAS9Z/",
+    "youtube": "https://youtube.com/shorts/Y0sT7SUli_c"
+   },
+   "caption_at_post": "Comfort never changed anyone's life. Pain did.\n\nKevin Trudeau says you have to have adversity to grow. Until something in your life becomes so painful that you cannot take it anymore, change stays a wish.\n\nWhen it turns into a must, a have-to, a need, that is the driver. It pushes you toward ideas that were never on your radar before.\n\nWhat is the one thing in your life you must change?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #mindset",
+   "posted_at": "2026-11-04T22:08"
   },
   {
    "file": "KT_ADVERSITY2/02_goldmine_51s.mp4",

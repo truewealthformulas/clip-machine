@@ -114,7 +114,7 @@ def main():
     # of why the day had ~3.5 posts instead of 6. Give them a new slot instead.
     # REPLAN_V: bumping it clears every future booking once, so the whole queue
     # is re-planned under new rules (v2: one clip per recording + rest days).
-    REPLAN_V = 2
+    REPLAN_V = 3       # v3: 5 posts a day (5 Nov 2026)
     replan = (man.get("replan_v") or 1) < REPLAN_V
     cleared = 0
     for c in man["clips"]:

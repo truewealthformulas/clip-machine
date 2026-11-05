@@ -3581,8 +3581,14 @@
    "file": "KT_MANIFESTING5/01_cakeingredients_49s.mp4",
    "caption": "You can follow the recipe and still never bake the cake.\n\nKevin Trudeau uses a chocolate cake to make his point. If the recipe says flour, water and salt, you are missing the eggs, the vanilla and even the chocolate. Some of the ingredients you are given are simply wrong.\n\nHe says the books on manifesting often work the same way. They give you part of the recipe, so you never get the result they describe.\n\nHave you ever followed good advice and still felt something was missing?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 24001437,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
@@ -3593,7 +3599,15 @@
    "cover": "KT_MANIFESTING5--01_cakeingredients_49s__cover.jpg",
    "cover_v": 4,
    "t5_best": 36.4,
-   "scheduled_at": "2026-11-05T15:51"
+   "scheduled_at": "2026-11-05T15:51",
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2306157350167775/",
+    "instagram": "https://www.instagram.com/reel/DfYQyW_iQQe/",
+    "youtube": "https://youtube.com/shorts/TJbV8myfQuE"
+   },
+   "caption_at_post": "You can follow the recipe and still never bake the cake.\n\nKevin Trudeau uses a chocolate cake to make his point. If the recipe says flour, water and salt, you are missing the eggs, the vanilla and even the chocolate. Some of the ingredients you are given are simply wrong.\n\nHe says the books on manifesting often work the same way. They give you part of the recipe, so you never get the result they describe.\n\nHave you ever followed good advice and still felt something was missing?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #goals #kevintrudeau",
+   "posted_at": "2026-11-05T18:58"
   },
   {
    "file": "KT_MANIFESTING5/01_nomeditation_54s.mp4",
@@ -3849,7 +3863,10 @@
    "bytes": 61713359,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-08T16:38",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MONEY/01_richbuyhomes_35s.mp4",
@@ -3857,7 +3874,10 @@
    "bytes": 36578036,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-08T18:59",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

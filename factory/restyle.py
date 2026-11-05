@@ -352,7 +352,11 @@ def add_cover(c, hook, styled, tmp):
         name = c["file"].replace("/", "--").replace(".mp4", "__cover.jpg")
         out = os.path.join(tmp, "covers", name)
         os.makedirs(os.path.dirname(out), exist_ok=True)
-        if STYLE == "T5":
+        if STYLE == "T5" and T5_OPEN == "kevin":
+            # the cover is the opening itself: Kevin with the hook fully in
+            sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{T5_HOOK - 0.4:.2f}", "-i", styled,
+               "-frames:v", "1", "-q:v", "2", out)
+        elif STYLE == "T5":
             t5_cover_jpg(t5_photo(c, hook, tmp), hook, out)
         else:
             cover_jpg(styled, hook, out)
@@ -860,7 +864,7 @@ def t5_cta_png(photo, out, kind=None):
 # keeps his size - full width - and the space above and below is the same
 # picture blurred and darkened. T5_ZOOM records how much a T5 render was
 # zoomed, so the ones made before this fix can be shrunk back (T5 -> T5).
-T5_V = 2
+T5_V = 3      # 3 = Kevin opens the video (5 Nov 2026)
 T5_FROM_T4 = {"KT_WEALTH6/02_appletrust_55s.mp4", "KT_BUSINESS/01_winorlearn_58s.mp4"}  # first-version T5s made from T4
 
 
@@ -923,6 +927,112 @@ def restyle_t5(src, hook, dst, photo, prior=None, zoom=1.0):
        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
        "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
     shutil.rmtree(tmp, ignore_errors=True)
+
+
+# T5 v3 - KEVIN OPENS THE VIDEO (5 Nov 2026). The owner: "change the cover, just
+# put the 3 best second of kevin video". No stock photo any more: the video opens
+# on the 3 loudest seconds of Kevin in the clip itself (a teaser, with his voice),
+# the hook pops in word by word over a dark band, then the clip plays from the
+# start. The cover is a frame of that opening with the hook on it.
+T5_OPEN = os.environ.get("T5_OPEN", "kevin")      # "kevin" | "photo" (T5 v1/v2)
+
+
+def best_window(src, start, end, win=3.0):
+    """Start time of the loudest `win` seconds of `src` between start and end."""
+    import array
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", src, "-ac", "1", "-ar", "8000",
+                          "-f", "s16le", "-"], capture_output=True).stdout
+    a = array.array("h", raw)
+    hop = 800                                    # 0.1 s
+    e = [sum(x * x for x in a[i:i + hop]) / hop for i in range(0, len(a) - hop, hop)]
+    w = int(win * 10)
+    lo, hi = int(start * 10), max(int(start * 10) + 1, int((end - win) * 10))
+    best, bt = -1, start
+    for i in range(lo, min(hi, len(e) - w)):
+        sc = sum(e[i:i + w])
+        if sc > best:
+            best, bt = sc, i / 10
+    return bt
+
+
+def _t5k_text_frames(hook, tmp):
+    """Transparent frames: dark band low on the screen, hook words popping in."""
+    words, end_y = _t5_layout(t5_lines(hook), H * 0.76)
+    band = Image.new("L", (W, H), 0)
+    d0 = ImageDraw.Draw(band)
+    for y in range(H):
+        d0.line((0, y, W, y), fill=int(250 * min(1, max(0, (y - H * 0.48) / (H * 0.08)))))
+    dark = Image.new("RGBA", (W, H), (5, 8, 18, 255))
+    n = int(T5_HOOK * T5_FPS)
+    step = min(0.28, 2.0 / max(1, len(words)))
+    for i in range(n):
+        t = i / T5_FPS
+        fade = min(1.0, max(0.0, (T5_HOOK - t) / 0.25))
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        layer.paste(dark, (0, 0), band.point(lambda v: int(v * min(1.0, t / 0.2 + 0.4) * fade)))
+        d = ImageDraw.Draw(layer)
+        for k, (wd, f, col, x, y) in enumerate(words):
+            t0 = 0.1 + k * step
+            if t < t0:
+                continue
+            e = 1 - (1 - min(1.0, (t - t0) / 0.18)) ** 3
+            a, yy = int(255 * e * fade), y + (1 - e) * 26
+            d.text((x + 3, yy + 4), wd, font=f, fill=(0, 0, 0, int(a * 0.6)))
+            d.text((x, yy), wd, font=f, fill=col + (a,))
+        _t5_sig(d, min(end_y + 30, 1840), int(255 * min(1, max(0, (t - 1.0) / 0.4)) * 0.85 * fade))
+        layer.save(os.path.join(tmp, f"h{i:03d}.png"))
+
+
+def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
+    """T5 v3: Kevin's best 3 s as the opening, hook over it, clip, end card."""
+    tmp = tempfile.mkdtemp()
+    head = 0.0
+    if prior in ("T1", "T2"):
+        y0, y1, tail = BAND, H, (OUTRO_SECS if prior == "T2" else 0)
+    elif prior == "T4":
+        y0, y1, tail = T4_TOP, T4_TOP + T4_VID, OUTRO_SECS
+    elif prior == "T5":
+        y0, y1, tail, head = 0, H, T5_CTA, T5_HOOK + 0.05   # skip the old photo opening
+    else:
+        y0, y1, tail = 0, H, 0
+    fg_w = int(round(W / max(zoom, 1.0) / 2)) * 2
+    end = duration(src) - tail
+    bt = best_window(src, head + 2.0, end - 3.0)
+    _t5k_text_frames(hook, tmp)
+    frame = os.path.join(tmp, "f.png")
+    sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{bt + 1.5:.2f}", "-i", src, "-frames:v", "1",
+       "-vf", f"scale={W}:{H},crop={W}:{y1 - y0}:0:{y0}", frame)
+    cta = os.path.join(tmp, "cta.png")
+    t5_cta_png(frame, cta)
+    kevin = (f"scale={W}:{H},setsar=1,crop={W}:{y1 - y0}:0:{y0},setsar=1,split[ka{{0}}][kb{{0}}];"
+             f"[ka{{0}}]scale=-2:{H},crop={W}:{H},boxblur=40:2,eq=brightness=-0.18:saturation=0.8,setsar=1[bg{{0}}];"
+             f"[kb{{0}}]scale={fg_w}:-2,setsar=1[fg{{0}}];"
+             f"[bg{{0}}][fg{{0}}]overlay=(W-w)/2:(H-h)/2,fps={T5_FPS}")
+    sh("ffmpeg", "-loglevel", "error", "-y", "-i", src,
+       "-framerate", str(T5_FPS), "-i", os.path.join(tmp, "h%03d.png"),
+       "-loop", "1", "-framerate", str(T5_FPS), "-t", str(T5_CTA), "-i", cta,
+       "-f", "lavfi", "-t", str(T5_CTA), "-i", "anullsrc=r=48000:cl=stereo",
+       "-filter_complex",
+       f"[0:v]split[s1][s2];"
+       f"[s1]trim={bt:.3f}:{bt + T5_HOOK:.3f},setpts=PTS-STARTPTS," + kevin.format("t") + "[kt];"
+       f"[kt][1:v]overlay=0:0:eof_action=pass,format=yuv420p[tease];"
+       f"[s2]trim={head:.3f}:{end:.3f},setpts=PTS-STARTPTS," + kevin.format("b") + ",format=yuv420p[body];"
+       f"[2:v]scale={W}:{H},setsar=1,fps={T5_FPS},format=yuv420p,fade=t=in:st=0:d=0.35,"
+       f"zoompan=z='1+0.0006*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={T5_FPS}[c];"
+       f"[0:a]asplit[x1][x2];"
+       f"[x1]atrim={bt:.3f}:{bt + T5_HOOK:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+       f"aformat=sample_fmts=fltp:channel_layouts=stereo,afade=t=out:st={T5_HOOK - 0.15}:d=0.15[at];"
+       f"[x2]atrim={head:.3f}:{end:.3f},asetpts=PTS-STARTPTS,aresample=48000,"
+       f"aformat=sample_fmts=fltp:channel_layouts=stereo,afade=t=in:d=0.1[ab];"
+       f"[3:a]aformat=sample_fmts=fltp:channel_layouts=stereo[ac];"
+       f"[tease][at][body][ab][c][ac]concat=n=3:v=1:a=1[v][a]",
+       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+       "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    if cover:
+        sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{T5_HOOK - 0.4:.2f}", "-i", dst,
+           "-frames:v", "1", "-q:v", "2", cover)
+    shutil.rmtree(tmp, ignore_errors=True)
+    return bt
 
 
 def hooks_index():
@@ -996,8 +1106,7 @@ def main():
     idx, plan_brands = hooks_index()
     todo = [c for c in man.get("clips", [])
             if not c.get("done") and not c.get("posting")
-            and (c.get("style") != STYLE or (STYLE == "T5" and (c.get("t5_v") or 1) < T5_V
-                                             and c["file"] in T5_FROM_T4))
+            and (c.get("style") != STYLE or (STYLE == "T5" and (c.get("t5_v") or 1) < T5_V))
             and not any("posted" in str(v) for v in (c.get("status") or {}).values())]
     tmp = tempfile.mkdtemp()
     orig = originals(plan_brands, tmp)
@@ -1023,8 +1132,12 @@ def main():
                                          else 1.0))
             try:
                 sh("gh", "release", "download", "media", "-R", REPO, "-p", asset, "-O", src, "--clobber")
-                photo = t5_photo(c, hook, tmp)
-                restyle_t5(src, hook, dst, photo, prior=prior, zoom=zoom)
+                if T5_OPEN == "kevin":
+                    c["t5_best"] = restyle_t5k(src, hook, dst, prior=prior, zoom=zoom)
+                    c.pop("broll", None)
+                else:
+                    photo = t5_photo(c, hook, tmp)
+                    restyle_t5(src, hook, dst, photo, prior=prior, zoom=zoom)
                 c.setdefault("t5_from", "T4" if c["file"] in T5_FROM_T4 else prior)
                 c["t5_v"], c["t5_zoom"] = T5_V, 1.0
             except Exception as e:

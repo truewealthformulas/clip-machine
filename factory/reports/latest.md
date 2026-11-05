@@ -1,55 +1,31 @@
-## adversity_v67ions: 2 of 3 clip(s) passed every gate
+## adversity_v6h8ik7: 1 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:41
-adversity_v67ions__s1 (KT_ADVERSITY): 1 of 1 passed pre-render gates
+## 2026-11-05 17:13
+adversity_v6h8ik7__s0 (KT_ADVERSITY3): 1 of 1 passed pre-render gates
 
-RENDER adversity_v67ions__s1
-  PASS 01_dontjudge_34s.mp4  01_dontjudge_34s.mp4                                   7 captions vs the sound  median +0.
-       FIRST 5s : And why do bad things happen to good people? You can't know when you | LAST  8s : What are you looking for when all this thing happened? No, you don't, do you? Oh, you couldn't have been as
-TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY
-
-
-
-## 2026-11-04 16:52
-adversity_v67ions__s0 (KT_ADVERSITY): 2 of 2 passed pre-render gates
-
-RENDER adversity_v67ions__s0
-  PASS 01_criticwins_51s.mp4  01_criticwins_51s.mp4                                  16 captions vs the sound  median +0
-       FIRST 5s : Judgment and criticism is something that if you | LAST  8s : Criticize. Well, guess what? It's not the critic who counts. If you're criticizing, you don't count.
-  FAIL 02_nobuttons_56s.mp4: [FAIL] 02_nobuttons_56s.mp4                                   9 captions vs the sound  median +0.38s  worst-10% 1.36s  | words captioned 100%
-TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY
+RENDER adversity_v6h8ik7__s0
+  PASS 01_eyeongoal_42s.mp4  01_eyeongoal_42s.mp4                                   11 captions vs the sound  median +0
+       FIRST 5s : Are you looking at the problem, or are you keeping your eye on | LAST  8s : The universe will come to your aid because you become what you think about most of the time.
+TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY3
 
 
-## adversity_v6hqxya: 3 of 4 clip(s) passed every gate
+## adversity_v6j5tha: 1 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:52
-adversity_v6hqxya__s0 (KT_ADVERSITY2): 2 of 2 passed pre-render gates
+## 2026-11-05 17:05
+adversity_v6j5tha__s0 (KT_ADVERSITY4): 1 of 1 passed pre-render gates
 
-RENDER adversity_v6hqxya__s0
-  PASS 01_notspecial_53s.mp4  01_notspecial_53s.mp4                                  9 captions vs the sound  median +0.
-       FIRST 5s : There's not a person in the world who doesn't have problems in their life. | LAST  8s : There are simply people who have learned how to overcome their problems.
-  PASS 02_goldmine_51s.mp4  02_goldmine_51s.mp4                                    9 captions vs the sound  median +0.
-       FIRST 5s : There is another great quote by the great Robert Shuler, one of the founders of | LAST  8s : This adversity into a gold mine. That is a mindset. It's the millionaire mindset.
-TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY2
-
-
-
-## 2026-11-04 16:48
-  drop KT_ADVERSITY2/winnersfight: hook - 826px wide at 44px - over the 780px safe zone, will be cut off on a phone
-adversity_v6hqxya__s1 (KT_ADVERSITY2): 1 of 2 passed pre-render gates
-
-RENDER adversity_v6hqxya__s1
-  PASS 01_painmustdriver_40s.mp4  01_painmustdriver_40s.mp4                              5 captions vs the sound  median +0.
-       FIRST 5s : Unless you have adversity, you don't have pain. | LAST  8s : And give you ultimate success in life, massive success in life.
-TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY2
+RENDER adversity_v6j5tha__s0
+  PASS 01_eyeondream_39s.mp4  01_eyeondream_39s.mp4                                  13 captions vs the sound  median +0
+       FIRST 5s : And the hack is, where do you look when you're dealing with adversity? | LAST  8s : Not on the problem. When you keep your eye on the dream, then you'll overcome the problem.
+TEST MODE - passing clips NOT uploaded or queued: KT_ADVERSITY4
 
 
 ## control_v70lzte: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:42
+## 2026-11-05 17:09
 control_v70lzte__s0 (KT_CONTROL): 1 of 1 passed pre-render gates
 
 RENDER control_v70lzte__s0
@@ -59,7 +35,7 @@ RENDER control_v70lzte__s0
 ## fasting_v6uxtgp: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:45
+## 2026-11-05 17:09
 fasting_v6uxtgp__s0 (KT_FASTING): 1 of 1 passed pre-render gates
 
 RENDER fasting_v6uxtgp__s0
@@ -69,7 +45,7 @@ RENDER fasting_v6uxtgp__s0
 ## kroc_v6qunfi: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:38
+## 2026-11-05 17:06
   drop KT_KROC/colonelsanders: hook - 970px wide at 44px - over the 780px safe zone, will be cut off on a phone
 kroc_v6qunfi__s0 (KT_KROC): 0 of 1 passed pre-render gates
 nothing to build
@@ -78,7 +54,7 @@ nothing to build
 ## luck_v768cno: 0 of 3 clip(s) passed every gate
 
 
-## 2026-11-04 16:41
+## 2026-11-05 17:07
 luck_v768cno__s1 (KT_LUCK): 1 of 1 passed pre-render gates
 
 RENDER luck_v768cno__s1
@@ -86,7 +62,7 @@ RENDER luck_v768cno__s1
 
 
 
-## 2026-11-04 16:57
+## 2026-11-05 17:17
   drop KT_LUCK/createluck: ending - cuts mid-sentence
   drop KT_LUCK/richpicksluck: ending - cuts mid-sentence
 luck_v768cno__s0 (KT_LUCK): 0 of 2 passed pre-render gates
@@ -96,7 +72,7 @@ nothing to build
 ## manifesting_v73yyiw_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:46
+## 2026-11-05 17:18
 manifesting_v73yyiw_p2__s0 (KT_MANIFESTING3): 1 of 1 passed pre-render gates
 
 RENDER manifesting_v73yyiw_p2__s0
@@ -106,7 +82,7 @@ RENDER manifesting_v73yyiw_p2__s0
 ## mindset_v71ktjy_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-04 16:55
+## 2026-11-05 17:15
   drop KT_MINDSET23/dreambeforemoney: hook - 964px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s0 (KT_MINDSET23): 1 of 2 passed pre-render gates
 
@@ -115,7 +91,7 @@ RENDER mindset_v71ktjy_p3__s0
 
 
 
-## 2026-11-04 17:29
+## 2026-11-05 17:16
   drop KT_MINDSET23/lifeisaplay: hook - 885px wide at 44px - over the 780px safe zone, will be cut off on a phone
   drop KT_MINDSET23/adversityforyou: hook - 1097px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v71ktjy_p3__s1 (KT_MINDSET23): 0 of 2 passed pre-render gates
@@ -125,7 +101,7 @@ nothing to build
 ## mindset_v72iprm_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:50
+## 2026-11-05 17:12
 mindset_v72iprm_p2__s0 (KT_MINDSET17): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72iprm_p2__s0
@@ -135,7 +111,7 @@ RENDER mindset_v72iprm_p2__s0
 ## mindset_v72tj4g: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 17:03
+## 2026-11-05 17:16
 mindset_v72tj4g__s0 (KT_MINDSET10): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g__s0
@@ -145,7 +121,7 @@ RENDER mindset_v72tj4g__s0
 ## mindset_v72tj4g_p3: 0 of 4 clip(s) passed every gate
 
 
-## 2026-11-04 16:56
+## 2026-11-05 17:45
 mindset_v72tj4g_p3__s0 (KT_MINDSET18): 1 of 1 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s0
@@ -153,7 +129,7 @@ RENDER mindset_v72tj4g_p3__s0
 
 
 
-## 2026-11-04 17:05
+## 2026-11-05 17:43
 mindset_v72tj4g_p3__s1 (KT_MINDSET18): 2 of 2 passed pre-render gates
 
 RENDER mindset_v72tj4g_p3__s1
@@ -164,7 +140,7 @@ RENDER mindset_v72tj4g_p3__s1
 ## mindset_v75l4i8_p3: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 16:57
+## 2026-11-05 17:15
 mindset_v75l4i8_p3__s0 (KT_MINDSET24): 1 of 1 passed pre-render gates
 
 RENDER mindset_v75l4i8_p3__s0
@@ -174,7 +150,7 @@ RENDER mindset_v75l4i8_p3__s0
 ## mindset_v77w5tc: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-04 17:07
+## 2026-11-05 17:23
   drop KT_MINDSET2/raisefrequency: hook - 789px wide at 44px - over the 780px safe zone, will be cut off on a phone
 mindset_v77w5tc__s0 (KT_MINDSET2): 1 of 2 passed pre-render gates
 
@@ -185,7 +161,7 @@ RENDER mindset_v77w5tc__s0
 ## mindset_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-04 17:14
+## 2026-11-05 17:51
   drop KT_MINDSET3/champattitude: ending - cuts mid-sentence
 mindset_v7fa774__s0 (KT_MINDSET3): 1 of 2 passed pre-render gates
 
@@ -196,17 +172,75 @@ RENDER mindset_v7fa774__s0
 ## mindset_v7fa774_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 17:01
+## 2026-11-05 17:24
 mindset_v7fa774_p2__s0 (KT_MINDSET20): 1 of 1 passed pre-render gates
 
 RENDER mindset_v7fa774_p2__s0
   FAIL 01_dreambigsteps_50s.mp4: [????] 01_dreambigsteps_50s.mp4                               only 0 pause-anchored captions - too few to judge
 
 
+## reading_v7htumc: 3 of 6 clip(s) passed every gate
+
+
+## 2026-11-05 17:28
+reading_v7htumc__s1 (KT_READING): 2 of 2 passed pre-render gates
+
+RENDER reading_v7htumc__s1
+  FAIL 01_willingtopay_35s.mp4: [????] 01_willingtopay_35s.mp4                                only 1 pause-anchored captions - too few to judge
+  PASS 02_mindfirst_55s.mp4  02_mindfirst_55s.mp4                                   8 captions vs the sound  median +0.
+       FIRST 5s : I have a very busy day. When people come and they do a fly-in-the-wall training with me for 24 hours, they live | LAST  8s : First, as Warren Buffett said, personal development. Work on bec
+TEST MODE - passing clips NOT uploaded or queued: KT_READING
+
+
+
+## 2026-11-05 17:25
+reading_v7htumc__s2 (KT_READING): 2 of 2 passed pre-render gates
+
+RENDER reading_v7htumc__s2
+  PASS 01_knowdontdo_33s.mp4  01_knowdontdo_33s.mp4                                  10 captions vs the sound  median +0
+       FIRST 5s : I read "Thinking Grow Rich" years ago. Really. Really. | LAST  8s : If you don't know it, really, you can't remember it. To know and not to do is not to know. You're not applying it. I guar
+  PASS 02_tenminutes_44s.mp4  02_tenminutes_44s.mp4                                  13 captions vs the sound  median +0
+       FIRST 5s : One day a week, put it on your calendar, make an appointment with yourself. | LAST  8s : To what Elon Musk does. Five days a week, one hour. Uninterrupted. Door shut. Door locked. Phone off
+TEST MODE - passing clips NOT uploaded or queued: KT_READING
+
+
+
+## 2026-11-05 17:29
+  drop KT_READING/buffettmind: ending - cuts mid-sentence
+reading_v7htumc__s0 (KT_READING): 1 of 2 passed pre-render gates
+
+RENDER reading_v7htumc__s0
+  FAIL 01_richestreads_37s.mp4: [FAIL] 01_richestreads_37s.mp4                                8 captions vs the sound  median -0.02s  worst-10% 0.81s  | words captioned 100%
+
+
+## relationships_v6jxezj: 0 of 1 clip(s) passed every gate
+
+
+## 2026-11-05 17:28
+relationships_v6jxezj__s0 (KT_RELATIONSHIPS2): 1 of 1 passed pre-render gates
+
+RENDER relationships_v6jxezj__s0
+  FAIL 01_threefingers_51s.mp4: [FAIL] 01_threefingers_51s.mp4                                10 captions vs the sound  median +0.07s  worst-10% 0.86s  | words captioned 100%
+
+
+- dropped 01_richorspiritual_42s.mp4: not Kevin on screen (Kevin in 0% of face frames (median match 0.15))
+
+## success_v6tnhm7: 0 of 1 clip(s) passed every gate (1 dropped: not Kevin on screen)
+
+
+## 2026-11-05 17:27
+success_v6tnhm7__s0 (KT_SUCCESS14): 1 of 1 passed pre-render gates
+
+RENDER success_v6tnhm7__s0
+  PASS 01_richorspiritual_42s.mp4  01_richorspiritual_42s.mp4                             5 captions vs the sound  median +0.
+       FIRST 5s : You are either going to be rich or you are going to be spiritual. If you look from a Christian perspective, | LAST  8s : So, it is a really little misunderstanding of what it says.
+TEST MODE - passing clips NOT uploaded or queued: KT_SUCCESS14
+
+
 ## success_v7fa774: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-04 17:16
+## 2026-11-05 17:38
 success_v7fa774__s0 (KT_SUCCESS2): 2 of 2 passed pre-render gates
 
 RENDER success_v7fa774__s0
@@ -214,10 +248,22 @@ RENDER success_v7fa774__s0
   FAIL 02_memoryinstitute_37s.mp4: [????] 02_memoryinstitute_37s.mp4                             only 0 pause-anchored captions - too few to judge
 
 
+## wealth_v6epqd7: 1 of 1 clip(s) passed every gate
+
+
+## 2026-11-05 17:31
+wealth_v6epqd7__s0 (KT_WEALTH9): 1 of 1 passed pre-render gates
+
+RENDER wealth_v6epqd7__s0
+  PASS 01_loveusemoney_36s.mp4  01_loveusemoney_36s.mp4                                5 captions vs the sound  median +0.
+       FIRST 5s : Spiritually enlighten people who attain great amounts of wealth or | LAST  8s : It is the root of all evil, because when you love money, you are putting money above God. You are putting mon
+TEST MODE - passing clips NOT uploaded or queued: KT_WEALTH9
+
+
 ## wealth_v74m5mg: 0 of 2 clip(s) passed every gate
 
 
-## 2026-11-04 17:12
+## 2026-11-05 17:42
   drop KT_WEALTH2/onassisroom: ending - cuts mid-sentence
 wealth_v74m5mg__s0 (KT_WEALTH2): 1 of 2 passed pre-render gates
 
@@ -228,7 +274,7 @@ RENDER wealth_v74m5mg__s0
 ## wealth_v78i2g6_p2: 0 of 1 clip(s) passed every gate
 
 
-## 2026-11-04 17:06
+## 2026-11-05 17:34
 wealth_v78i2g6_p2__s0 (KT_WEALTH3): 1 of 1 passed pre-render gates
 
 RENDER wealth_v78i2g6_p2__s0
@@ -236,17 +282,19 @@ RENDER wealth_v78i2g6_p2__s0
 
 
 ## UPLOAD
-5 clip(s) to add:
-   KT_ADVERSITY/01_criticwins_51s.mp4  (30 MB)
-   KT_ADVERSITY/01_dontjudge_34s.mp4  (22 MB)
-   KT_ADVERSITY2/01_notspecial_53s.mp4  (30 MB)
-   KT_ADVERSITY2/01_painmustdriver_40s.mp4  (24 MB)
-   KT_ADVERSITY2/02_goldmine_51s.mp4  (24 MB)
-   added KT_ADVERSITY/01_criticwins_51s.mp4
-   added KT_ADVERSITY/01_dontjudge_34s.mp4
-   added KT_ADVERSITY2/01_notspecial_53s.mp4
-   added KT_ADVERSITY2/01_painmustdriver_40s.mp4
-   added KT_ADVERSITY2/02_goldmine_51s.mp4
+6 clip(s) to add:
+   KT_ADVERSITY3/01_eyeongoal_42s.mp4  (27 MB)
+   KT_ADVERSITY4/01_eyeondream_39s.mp4  (26 MB)
+   KT_READING/01_knowdontdo_33s.mp4  (17 MB)
+   KT_READING/02_mindfirst_55s.mp4  (27 MB)
+   KT_READING/02_tenminutes_44s.mp4  (22 MB)
+   KT_WEALTH9/01_loveusemoney_36s.mp4  (22 MB)
+   added KT_ADVERSITY3/01_eyeongoal_42s.mp4
+   added KT_ADVERSITY4/01_eyeondream_39s.mp4
+   added KT_READING/01_knowdontdo_33s.mp4
+   added KT_READING/02_mindfirst_55s.mp4
+   added KT_READING/02_tenminutes_44s.mp4
+   added KT_WEALTH9/01_loveusemoney_36s.mp4
 
-manifest now holds 136 clips
+manifest now holds 142 clips
 commit and push state/manifest.json to let the machine see them

@@ -129,9 +129,13 @@ def main():
         return
     ig, tok = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
     media = {"video_url": url} if kind == "video" else {"image_url": url}
-    # Affiliate promotion -> Instagram's "Paid partnership" label (15 Oct 2026).
-    c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok,
-             is_paid_partnership="true", **media)
+    # "Paid partnership" label: off since 5 Nov 2026 (the owner: "take it away the
+    # colaboracion pagada"). STORY_PAID_LABEL=1 puts it back.
+    if os.environ.get("STORY_PAID_LABEL", "0") == "1":
+        c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok,
+                 is_paid_partnership="true", **media)
+    else:
+        c = {}
     if not c.get("id"):
         c = call("POST", f"{ig}/media", media_type="STORIES", access_token=tok, **media)
     status = "container failed: " + str(c)[:200]

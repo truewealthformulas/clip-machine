@@ -142,5 +142,29 @@
   "offer": "daily",
   "type": "image",
   "highlight": "photo 6435ecdd"
+ },
+ {
+  "file": "story--hl_26.mp4",
+  "offer": "gin",
+  "type": "video",
+  "highlight": "club: inside the success club"
+ },
+ {
+  "file": "story--hl_27.mp4",
+  "offer": "gin",
+  "type": "video",
+  "highlight": "club: members"
+ },
+ {
+  "file": "story--hl_28.mp4",
+  "offer": "gin",
+  "type": "video",
+  "highlight": "club: connections"
+ },
+ {
+  "file": "story--hl_29.mp4",
+  "offer": "gin",
+  "type": "video",
+  "highlight": "club: member's take"
  }
 ]

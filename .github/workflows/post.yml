@@ -91,10 +91,10 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run && '1' || '0' }}
           KT_MEDIA_REMOTE: "1"
           KT_TZ: America/New_York
-          # 6 a day, 29 Oct 2026, the owner: "lets come back to 6 post a day".
-          KT_SLOTS: "07:00,09:30,12:00,14:30,17:00,19:30"
+          # 5 a day, 5 Nov 2026, the owner: "lets post 5 per day".
+          KT_SLOTS: "07:00,10:00,13:00,16:00,19:00"
           # Instagram on every slot again (was 3 a day, 4 h apart, while under review).
-          IG_PER_DAY: "6"
+          IG_PER_DAY: "5"
           IG_MIN_GAP_H: "0.75"   # under the 45-min post gap, so it never drops Instagram from a clip
           AR_SLOTS: ${{ secrets.AR_SLOTS }}
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}

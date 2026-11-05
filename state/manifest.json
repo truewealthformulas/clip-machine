@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3738,68 +3738,110 @@
   {
    "file": "KT_ADVERSITY3/01_eyeongoal_42s.mp4",
    "caption": "Where you look decides whether the problem wins.\n\nKevin explains that the simple technique for facing adversity is to keep your eye on the goal, not on the problem. He asks whether you are staring at what's wrong or at what you want.\n\nWhen your eye stays on the dream, he says, the problem gets overcome along the way, because you become what you think about most of the time.\n\nWhere is your attention right now?\n\n#ad #goals #mindset #success",
-   "bytes": 26615811,
+   "bytes": 21974303,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-07T15:37",
    "cta_keyword": "GOALS",
-   "cta_variant": 10
+   "cta_variant": 10,
+   "t5_best": 2.7,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY3--01_eyeongoal_42s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ADVERSITY4/01_eyeondream_39s.mp4",
    "caption": "Where do you look when life gets hard? Kevin has a hack.\n\nKevin Trudeau says the simple hack for overcoming adversity is where you keep your eye. Not on the problem, but on the dream, on what you want, on your goal.\n\nHe says that when you keep your eye on the dream, you'll overcome the problem, because you become what you think about most of the time.\n\nWhere is your eye right now: the problem or the goal?\n\n#ad #mindset #goals #success",
-   "bytes": 26427809,
+   "bytes": 21625512,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-07T13:40",
    "cta_keyword": "GOALS",
-   "cta_variant": 9
+   "cta_variant": 9,
+   "t5_best": 7.7,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY4--01_eyeondream_39s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_READING/01_knowdontdo_33s.mp4",
    "caption": "Reading a classic once is not the same as knowing it.\n\nKevin Trudeau has a simple answer for people who say they read the classics years ago. Would you skip lunch today because you ate lunch years ago?\n\nHe says you feed your body every day, so you need to feed your mind every day. And to know and not to do is not to know.\n\nWhat is one lesson you know but have never applied?\n\n#ad #success #mindset #habits",
-   "bytes": 16889533,
+   "bytes": 15995547,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-05T19:14",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "t5_best": 23.9,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_READING--01_knowdontdo_33s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_READING/02_mindfirst_55s.mp4",
    "caption": "The first thing to study is how your mind works.\n\nKevin Trudeau describes his own long, busy days: up at six in the morning, in his room late at night, and still time to read and study.\n\nHe says the most important thing to learn is how the mind works, and he points to Warren Buffett's advice on personal development. In his words, work on becoming a better you.\n\nWhat excuse are you ready to drop today?\n\n#ad #money #mindset #success",
-   "bytes": 27023525,
+   "bytes": 24035328,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-11T07:38",
    "cta_keyword": "GOALS",
-   "cta_variant": 19
+   "cta_variant": 19,
+   "t5_best": 27.8,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_READING--02_mindfirst_55s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_READING/02_tenminutes_44s.mp4",
    "caption": "You do not have to start with an hour a day.\n\nKevin Trudeau says that if you cannot jump straight to what Elon Musk does, begin small. Pick one day a week, put it on your calendar and make an appointment with yourself. Spend ten minutes alone, with the door shut, reading about how the mind works.\n\nThen build up to two days, then three, then longer sessions, step by step.\n\nWhen could you fit ten quiet minutes into your week?\n\n#ad #habits #mindset #goals",
-   "bytes": 21523331,
+   "bytes": 18720328,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-08T06:52",
    "cta_keyword": "GOALS",
-   "cta_variant": 12
+   "cta_variant": 12,
+   "t5_best": 27.5,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_READING--02_tenminutes_44s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH9/01_loveusemoney_36s.mp4",
    "caption": "Why the love of money is the problem, not money itself.\n\nKevin Trudeau explains that wealthy, enlightened people love people and use money, instead of loving money and using people.\n\nHe says things go wrong when money gets put above everything that actually matters, and that attachment is the key.\n\nThe idea is simple: money is a tool, not the goal.\n\nWhich way around do you live?\n\n#ad #money #wealth #success",
-   "bytes": 22276532,
+   "bytes": 19056322,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-06T19:27",
    "cta_keyword": "GOALS",
-   "cta_variant": 6
+   "cta_variant": 6,
+   "t5_best": 29.1,
+   "t5_from": null,
+   "t5_v": 3,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WEALTH9--01_loveusemoney_36s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

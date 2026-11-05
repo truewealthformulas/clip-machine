@@ -2082,5 +2082,41 @@
     "cta_kind": "question"
    }
   ]
+ },
+ "luck_v6mpcxl": {
+  "source": "v6mpcxl.mp4",
+  "brand": "KT_LUCK4",
+  "note": "",
+  "clips": [
+   {
+    "slug": "casinoguard",
+    "in": 1007.74,
+    "out": 1072.24,
+    "hook": [
+     "A Forgotten Credit",
+     "Changed Everything"
+    ],
+    "caption": "A guard with a gun ran after them. Kevin thought he was in trouble.\n\nKevin Trudeau tells what happened when he turned around in a casino, sure he had done something wrong. The guard only wanted to tell him a credit was still sitting in one machine because he forgot to pull the handle.\n\nThey walked back together, he pulled it, and he passed the winnings out to his friends. His verdict on the whole story: that's luck.\n\nWhat is the luckiest thing that ever happened to you?\n\n#ad #money #luck #kevintrudeau",
+    "cta_kind": "question"
+   }
+  ]
+ },
+ "money_v6t23wt": {
+  "source": "v6t23wt.mp4",
+  "brand": "KT_MONEY",
+  "note": "",
+  "clips": [
+   {
+    "slug": "richbuyhomes",
+    "in": 1184.34,
+    "out": 1219.1,
+    "hook": [
+     "How Rich People",
+     "Buy Homes"
+    ],
+    "caption": "Why do wealthy buyers pay cash for their homes?\n\nKevin Trudeau says they see a mortgage as the worst kind of loan. So they buy the home outright, then use the home itself as collateral for a line of credit.\n\nThat gives them access to cash when they need it, and if they don't use it, they pay no interest. Kevin presents it as a different way of thinking about credit.\n\nHad you ever heard of buying a home this way?\n\n#ad #money #wealth",
+    "cta_kind": "question"
+   }
+  ]
  }
 }

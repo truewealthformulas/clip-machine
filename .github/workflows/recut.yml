@@ -1,0 +1,85 @@
+# Re-cut the queued clips from the HD episodes in the wide frame (factory/recut.py).
+# 6 Nov 2026, the owner: "cut them again". One server per clip; the swap + restyle
+# run under the `post` lock so a half-finished clip is never published.
+name: recut
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+  KT_ZOOM: "0.3"
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.l.outputs.matrix }}
+      count: ${{ steps.l.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - id: l
+        run: python factory/recut.py list
+
+  cut:
+    needs: list
+    if: needs.list.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        file: ${{ fromJSON(needs.list.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Render this clip wide from the HD episode
+        run: python factory/recut.py one "${{ matrix.file }}"
+      - id: n
+        run: echo "name=recut-$(echo '${{ matrix.file }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.n.outputs.name }}
+          path: /tmp/recut_out
+          retention-days: 7
+
+  swap:
+    needs: cut
+    if: always() && needs.cut.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    concurrency:
+      group: post
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q numpy pillow opencv-python-headless
+      - uses: actions/download-artifact@v4
+        with: { pattern: "recut-*", path: /tmp/recuts }
+      - name: Swap in the wide cuts
+        run: python factory/recut.py commit /tmp/recuts
+      - name: Apply the opening + ending again
+        run: python factory/restyle.py
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add state/manifest.json
+          git diff --staged --quiet && exit 0
+          git commit -q -m "recut: queued clips in the wide frame $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

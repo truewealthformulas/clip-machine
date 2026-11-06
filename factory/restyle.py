@@ -864,7 +864,7 @@ def t5_cta_png(photo, out, kind=None):
 # keeps his size - full width - and the space above and below is the same
 # picture blurred and darkened. T5_ZOOM records how much a T5 render was
 # zoomed, so the ones made before this fix can be shrunk back (T5 -> T5).
-T5_V = 3      # 3 = Kevin opens the video (5 Nov 2026)
+T5_V = 4      # 3 = Kevin opens the video (5 Nov 2026); 4 = never too close (6 Nov)
 T5_FROM_T4 = {"KT_WEALTH6/02_appletrust_55s.mp4", "KT_BUSINESS/01_winorlearn_58s.mp4"}  # first-version T5s made from T4
 
 
@@ -934,6 +934,8 @@ def restyle_t5(src, hook, dst, photo, prior=None, zoom=1.0):
 # on the 3 loudest seconds of Kevin in the clip itself (a teaser, with his voice),
 # the hook pops in word by word over a dark band, then the clip plays from the
 # start. The cover is a frame of that opening with the hook on it.
+T5_BAND = int(os.environ.get("T5_BAND", "179"))   # band behind the hook: navy at 70% (6 Nov 2026, the owner)
+T5_BAND_RGB = (10, 26, 72)                          # dark navy (6 Nov 2026, the owner: "more dark blue")
 T5_OPEN = os.environ.get("T5_OPEN", "kevin")      # "kevin" | "photo" (T5 v1/v2)
 
 
@@ -961,8 +963,8 @@ def _t5k_text_frames(hook, tmp):
     band = Image.new("L", (W, H), 0)
     d0 = ImageDraw.Draw(band)
     for y in range(H):
-        d0.line((0, y, W, y), fill=int(250 * min(1, max(0, (y - H * 0.48) / (H * 0.08)))))
-    dark = Image.new("RGBA", (W, H), (5, 8, 18, 255))
+        d0.line((0, y, W, y), fill=int(T5_BAND * min(1, max(0, (y - H * 0.48) / (H * 0.08)))))
+    dark = Image.new("RGBA", (W, H), T5_BAND_RGB + (255,))
     n = int(T5_HOOK * T5_FPS)
     step = min(0.28, 2.0 / max(1, len(words)))
     for i in range(n):
@@ -983,6 +985,39 @@ def _t5k_text_frames(hook, tmp):
         layer.save(os.path.join(tmp, f"h{i:03d}.png"))
 
 
+T5_FACE = float(os.environ.get("T5_FACE", "0.30"))   # widest Kevin's face may be, share of screen width
+
+
+def t5_face_scale(src, y0, y1, start, end, n=6):
+    """Factor (<=1) that brings Kevin's face down to T5_FACE of the width."""
+    try:
+        import cv2
+        if not _DET:
+            _DET.append(cv2.FaceDetectorYN.create(os.path.join(ROOT, "factory", "assets", "yunet.onnx"),
+                                                  "", (540, 450), 0.6))
+        widths = []
+        for k in range(n):
+            t = start + (end - start) * (k + 0.5) / n
+            raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src,
+                                  "-frames:v", "1", "-vf", f"scale={W}:{H},crop={W}:{y1 - y0}:0:{y0},scale=540:-2",
+                                  "-f", "rawvideo", "-pix_fmt", "bgr24", "-"], capture_output=True).stdout
+            hh = len(raw) // (540 * 3)
+            if not hh:
+                continue
+            img = np.frombuffer(raw[:540 * 3 * hh], np.uint8).reshape(hh, 540, 3)
+            _DET[0].setInputSize((540, hh))
+            _, faces = _DET[0].detect(img)
+            if faces is not None and len(faces):
+                widths.append(max(f[2] for f in faces) / 540)
+        if not widths:
+            return 1.0
+        fw = sorted(widths)[len(widths) // 2]
+        return max(0.70, min(1.0, T5_FACE / fw))
+    except Exception as e:
+        print(f"face scale skipped: {e}", flush=True)
+        return 1.0
+
+
 def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
     """T5 v3: Kevin's best 3 s as the opening, hook over it, clip, end card."""
     tmp = tempfile.mkdtemp()
@@ -995,8 +1030,13 @@ def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
         y0, y1, tail, head = 0, H, T5_CTA, T5_HOOK + 0.05   # skip the old photo opening
     else:
         y0, y1, tail = 0, H, 0
-    fg_w = int(round(W / max(zoom, 1.0) / 2)) * 2
     end = duration(src) - tail
+    # NOT TOO CLOSE (6 Nov 2026, the owner: "the last video post in instagram was
+    # to zoom in"). Some recordings film Kevin so tight his face fills the
+    # screen. Measure his face on a few frames; if it is wider than T5_FACE of
+    # the screen, shrink his picture until it is not (blurred fill around it).
+    fs = t5_face_scale(src, y0, y1, head, end)
+    fg_w = int(round(W / max(zoom, 1.0) * fs / 2)) * 2
     bt = best_window(src, head + 2.0, end - 3.0)
     _t5k_text_frames(hook, tmp)
     frame = os.path.join(tmp, "f.png")
@@ -1274,8 +1314,12 @@ def main():
                      "style": STYLE, "repost_of": f, "t5_v": T5_V, "t5_zoom": 1.0,
                      "t5_from": "T4" if f in T5_FROM_T4 else "T2", "lesson": old.get("lesson"),
                      "broll": old.get("broll")}
-            photo = t5_photo(entry, hook, tmp)
-            restyle_t5(src, hook, dst, photo, prior="T5", zoom=zoom)
+            if T5_OPEN == "kevin":
+                entry["t5_best"] = restyle_t5k(src, hook, dst, prior="T5", zoom=1.0)
+                entry["t5_v"] = T5_V
+            else:
+                photo = t5_photo(entry, hook, tmp)
+                restyle_t5(src, hook, dst, photo, prior="T5", zoom=zoom)
             sh("gh", "release", "upload", "media", dst, "-R", REPO, "--clobber")
             entry["bytes"] = os.path.getsize(dst)
             for k in ("cta_kind", "cta_variant", "cta_keyword"):

@@ -1246,7 +1246,12 @@ def run_series(key, spec, apply, only):
         return 0
     cues = burn.parse_srt(srt_for(spec["source"]))
     cx = float(spec.get("cx", 0.5))
-    zoom = float(spec.get("zoom", 1.0))
+    # WIDER BY DEFAULT (6 Nov 2026, the owner, twice: "the video is still too zoom
+    # in on kevin body"). A full-height 9:16 slice of a 16:9 recording is the
+    # tightest framing there is. 0.7 takes a window 1/0.7 wider - Kevin from
+    # further back, edge to edge, blurred frame above and below. A plan's own
+    # "zoom" still wins.
+    zoom = float(spec.get("zoom", os.environ.get("KT_ZOOM", "0.7")))
     brand = spec["brand"]
     n = 0
     for i, c in enumerate(spec["clips"], 1):

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3265,7 +3265,7 @@
    "cta_kind": "question",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
-   "scheduled_at": "2026-11-06T16:27",
+   "scheduled_at": "2026-11-06T17:26",
    "recut_v": 1,
    "t5_best": 35.1,
    "t5_from": null,
@@ -3564,8 +3564,14 @@
    "file": "KT_SUCCESS13/01_copyingswing_53s.mp4",
    "caption": "Why the number one golfer's swing would ruin yours.\n\nKevin explains that the top players have swings that look strange, but they fit their own bodies. Copy one exactly and it will not work for you. Musicians and athletes are the same.\n\nHe says making money works the same way. When someone has a big year because a few things lined up, teaching it as a system for everyone misses the point.\n\nWhen did you last copy someone else's path and find it didn't fit you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #money #mindset",
    "bytes": 16670817,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
@@ -3577,7 +3583,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_SUCCESS13--01_copyingswing_53s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1446109561032587/",
+    "instagram": "https://www.instagram.com/reel/DfamMfdj-le/",
+    "youtube": "https://youtube.com/shorts/TanJSFlZFcQ"
+   },
+   "caption_at_post": "Why the number one golfer's swing would ruin yours.\n\nKevin explains that the top players have swings that look strange, but they fit their own bodies. Copy one exactly and it will not work for you. Musicians and athletes are the same.\n\nHe says making money works the same way. When someone has a big year because a few things lined up, teaching it as a system for everyone misses the point.\n\nWhen did you last copy someone else's path and find it didn't fit you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #money #mindset",
+   "posted_at": "2026-11-06T16:44"
   },
   {
    "file": "KT_SUCCESS13/02_willpowerdecides_57s.mp4",
@@ -3696,7 +3710,7 @@
    "cta_kind": "offer",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
-   "scheduled_at": "2026-11-06T16:11",
+   "scheduled_at": "2026-11-06T17:26",
    "recut_v": 1,
    "t5_best": 24.8,
    "t5_from": null,

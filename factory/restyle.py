@@ -963,7 +963,7 @@ def _t5k_text_frames(hook, tmp):
     band = Image.new("L", (W, H), 0)
     d0 = ImageDraw.Draw(band)
     for y in range(H):
-        d0.line((0, y, W, y), fill=int(T5_BAND * min(1, max(0, (y - H * 0.48) / (H * 0.08)))))
+        d0.line((0, y, W, y), fill=int(T5_BAND * min(1, max(0, (y - H * 0.60) / (H * 0.05)))))
     dark = Image.new("RGBA", (W, H), T5_BAND_RGB + (255,))
     n = int(T5_HOOK * T5_FPS)
     step = min(0.28, 2.0 / max(1, len(words)))

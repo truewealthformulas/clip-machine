@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3789,8 +3789,14 @@
    "file": "KT_READING/01_knowdontdo_33s.mp4",
    "caption": "Reading a classic once is not the same as knowing it.\n\nKevin Trudeau has a simple answer for people who say they read the classics years ago. Would you skip lunch today because you ate lunch years ago?\n\nHe says you feed your body every day, so you need to feed your mind every day. And to know and not to do is not to know.\n\nWhat is one lesson you know but have never applied?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
    "bytes": 15995547,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-05T19:14",
    "cta_keyword": "GOALS",
@@ -3801,7 +3807,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_READING--01_knowdontdo_33s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1163501192781857/",
+    "instagram": "https://www.instagram.com/reel/DfY1anFEsHO/",
+    "youtube": "https://youtube.com/shorts/5Vuxx_f1nbw"
+   },
+   "caption_at_post": "Reading a classic once is not the same as knowing it.\n\nKevin Trudeau has a simple answer for people who say they read the classics years ago. Would you skip lunch today because you ate lunch years ago?\n\nHe says you feed your body every day, so you need to feed your mind every day. And to know and not to do is not to know.\n\nWhat is one lesson you know but have never applied?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
+   "posted_at": "2026-11-06T00:18"
   },
   {
    "file": "KT_READING/02_mindfirst_55s.mp4",

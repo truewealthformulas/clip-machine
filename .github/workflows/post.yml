@@ -29,19 +29,20 @@ on:
         type: string
         default: "v21.0"
 
-# Never two runs at once. Two overlapping passes would each see a clip as due
-# and publish it twice - the exact duplicate-post failure this project has
-# already paid for once.
-concurrency:
-  group: post
-  cancel-in-progress: false
-
 permissions:
   contents: write               # to commit the state file back
   issues: write                 # queue_alarm.py emails the owner via an issue
+  actions: write                # the "next" job starts the following run
 
 jobs:
   post:
+    # Never two runs at once. Two overlapping passes would each see a clip as due
+    # and publish it twice - the exact duplicate-post failure this project has
+    # already paid for once. (Job level since 6 Nov, so "next" below can wait
+    # without holding the lock.)
+    concurrency:
+      group: post
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
@@ -175,3 +176,27 @@ jobs:
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           git push
+
+  # THE CLOCK (6 Nov 2026). GitHub was starting the 20-minute schedule only every
+  # 5-7 hours (runs at 11:04, 18:48, 23:55, 05:16, 13:00 UTC), so 5 slots a day
+  # became 2-3 posts. So each run now starts the next one itself, 10 minutes
+  # later. Only one waiter can exist at a time (cancel-in-progress), so the
+  # chain never multiplies; the schedule above stays as the backstop that
+  # restarts it if it ever breaks. It waits OUTSIDE the "post" lock, so restyle
+  # and the rest still get their turn.
+  next:
+    needs: post
+    if: ${{ always() && !inputs.dry_run && inputs.trial == '' }}
+    concurrency:
+      group: post-next
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Wait, then start the next pass
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 600
+          gh workflow run post.yml -R "$GITHUB_REPOSITORY" -f dry_run=false
+

@@ -1251,7 +1251,7 @@ def run_series(key, spec, apply, only):
     # tightest framing there is. 0.7 takes a window 1/0.7 wider - Kevin from
     # further back, edge to edge, blurred frame above and below. A plan's own
     # "zoom" still wins.
-    zoom = float(spec.get("zoom", os.environ.get("KT_ZOOM", "0.7")))
+    zoom = float(spec.get("zoom", os.environ.get("KT_ZOOM", "0.3")))   # 0.3 = the whole 16:9 frame edge to edge (owner, 6 Nov: "this is what i am talking")
     brand = spec["brand"]
     n = 0
     for i, c in enumerate(spec["clips"], 1):

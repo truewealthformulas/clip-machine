@@ -3872,8 +3872,14 @@
    "file": "KT_ADVERSITY4/01_eyeondream_39s.mp4",
    "caption": "Where do you look when life gets hard? Kevin has a hack.\n\nKevin Trudeau says the simple hack for overcoming adversity is where you keep your eye. Not on the problem, but on the dream, on what you want, on your goal.\n\nHe says that when you keep your eye on the dream, you'll overcome the problem, because you become what you think about most of the time.\n\nWhere is your eye right now: the problem or the goal?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #goals #success",
    "bytes": 10863104,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-07T13:40",
    "cta_keyword": "GOALS",
@@ -3885,7 +3891,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ADVERSITY4--01_eyeondream_39s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1158443950083072/",
+    "instagram": "https://www.instagram.com/reel/Dfc22eRDaDo/",
+    "youtube": "https://youtube.com/shorts/YZDRr49LnCw"
+   },
+   "caption_at_post": "Where do you look when life gets hard? Kevin has a hack.\n\nKevin Trudeau says the simple hack for overcoming adversity is where you keep your eye. Not on the problem, but on the dream, on what you want, on your goal.\n\nHe says that when you keep your eye on the dream, you'll overcome the problem, because you become what you think about most of the time.\n\nWhere is your eye right now: the problem or the goal?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #goals #success",
+   "posted_at": "2026-11-07T13:47"
   },
   {
    "file": "KT_READING/01_knowdontdo_33s.mp4",

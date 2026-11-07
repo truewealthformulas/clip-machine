@@ -4211,7 +4211,10 @@
    "bytes": 16338856,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-11T16:08",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ADVERSITY8/01_mountainwisdom_57s.mp4",
@@ -4219,7 +4222,10 @@
    "bytes": 18125882,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-12T12:35",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_ATTITUDE2/01_factsopinions_45s.mp4",
@@ -4227,7 +4233,10 @@
    "bytes": 14655491,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-11T19:29",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_LUCK5/01_berightonce_37s.mp4",
@@ -4235,7 +4244,10 @@
    "bytes": 15474017,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-12T09:29",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MONEY3/01_harderslower_42s.mp4",
@@ -4243,7 +4255,10 @@
    "bytes": 16267383,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-12T07:17",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ],
  "replan_v": 3

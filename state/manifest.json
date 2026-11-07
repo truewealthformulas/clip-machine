@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3241,8 +3241,14 @@
    "file": "KT_MINDSET29/01_ownvoice_49s.mp4",
    "caption": "Why does your voice sound strange on a recording? Kevin explains.\n\nKevin Trudeau says that when you speak, only a small part of the sound travels through the air to your ear. Most of it travels through the bone in your head, which is why a recording sounds different.\n\nSo when you say something like I can do this or I'm a winner, he says it vibrates through your whole body, not just your brain.\n\nHe calls your own words the easiest and fastest way to program yourself for success.\n\nWhat is the first thing you say to yourself each morning?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success",
    "bytes": 9660859,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
@@ -3254,7 +3260,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET29--01_ownvoice_49s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1783325076288378/",
+    "instagram": "https://www.instagram.com/reel/Dfce2VKlJKi/",
+    "youtube": "https://youtube.com/shorts/HGdJEwNysUk"
+   },
+   "caption_at_post": "Why does your voice sound strange on a recording? Kevin explains.\n\nKevin Trudeau says that when you speak, only a small part of the sound travels through the air to your ear. Most of it travels through the bone in your head, which is why a recording sounds different.\n\nSo when you say something like I can do this or I'm a winner, he says it vibrates through your whole body, not just your brain.\n\nHe calls your own words the easiest and fastest way to program yourself for success.\n\nWhat is the first thing you say to yourself each morning?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success",
+   "posted_at": "2026-11-07T10:19"
   },
   {
    "file": "KT_SUCCESS11/01_edforman_49s.mp4",
@@ -4064,7 +4078,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ADVERSITY5--01_problemsecret_39s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-09T16:13",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ADVERSITY6/01_sufferingoptional_34s.mp4",
@@ -4079,7 +4096,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ADVERSITY6--01_sufferingoptional_34s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-11T13:03",
+   "cta_keyword": "GOALS",
+   "cta_variant": 6
   },
   {
    "file": "KT_MANIFESTING6/01_nobillionairegoal_41s.mp4",
@@ -4094,7 +4114,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MANIFESTING6--01_nobillionairegoal_41s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-09T18:41",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_MEDITATION/01_ownwork_53s.mp4",
@@ -4109,7 +4132,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MEDITATION--01_ownwork_53s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-10T16:30",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_PERSISTENCE/01_ruthlesswithyou_39s.mp4",
@@ -4124,7 +4150,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_PERSISTENCE--01_ruthlesswithyou_39s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-10T10:01",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_READING2/01_howdoyouknow_48s.mp4",
@@ -4139,7 +4168,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_READING2--01_howdoyouknow_48s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-10T19:07",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_WEALTH10/01_spiritualrich_45s.mp4",
@@ -4154,7 +4186,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_WEALTH10--01_spiritualrich_45s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "scheduled_at": "2026-11-10T13:06",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   }
  ],
  "replan_v": 3

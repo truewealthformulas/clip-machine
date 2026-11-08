@@ -445,7 +445,7 @@ CLUB_LINE = os.environ.get(
     "\u2192 {where}")
 CLUB_WHERE = {"instagram": "link in my bio \u2b06\ufe0f", "facebook": "link in my bio \u2b06\ufe0f",
               "tiktok": "DM \u201cclub\u201d",   # owner 8 Nov: TikTok ends with DM "club"
-              "youtube": "link below \u2b07\ufe0f"}
+              "youtube": "link in my bio \u2b06\ufe0f"}   # owner 8 Nov: same line as Facebook
 
 
 def with_club(platform, out, brand=""):

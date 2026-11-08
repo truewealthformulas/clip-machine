@@ -433,7 +433,36 @@ BIO_LINE = os.environ.get(
     "link in my bio")
 
 
+# THE CLUB LINE ON EVERY POST (8 Nov 2026, the owner: "this account we are
+# selling the club, lets put it every post"). It opens every caption on every
+# platform - the first line is the one people see before "more". The owner wrote
+# "link in the video"; there is no link in the video, so each platform names
+# where the link really is. KT_CLUB=0 takes it off.
+CLUB_LINE = os.environ.get(
+    "KT_CLUB_LINE",
+    "If you\u2019re looking to improve your finances, improve your health, create great "
+    "long-lasting relationships with like-minded people and feel better about yourself "
+    "\u2192 {where}")
+CLUB_WHERE = {"instagram": "link in my bio \u2b06\ufe0f", "facebook": "link in my bio \u2b06\ufe0f",
+              "tiktok": "tap the Instagram icon on my profile \U0001F446",
+              "youtube": "link below \u2b07\ufe0f"}
+
+
+def with_club(platform, out, brand=""):
+    if (not out or os.environ.get("KT_CLUB", "1") != "1"
+            or cred_prefix(brand) not in FALLBACK_BRANDS):
+        return out
+    line = CLUB_LINE.format(where=CLUB_WHERE.get(platform, "link in my bio"))
+    if line in out:
+        return out
+    return line + "\n\n" + out
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
+    return with_club(platform, _caption_core(platform, caption, brand, keyword, ask, variant), brand)
+
+
+def _caption_core(platform, caption, brand="", keyword="", ask="", variant=None):
     if platform == "instagram" and cred_prefix(brand) in FALLBACK_BRANDS \
             and os.environ.get("KT_IG_SHORT", "1") == "1":
         return ig_short(caption, variant)

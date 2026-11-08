@@ -233,10 +233,10 @@ def main():
         # YOUTUBE + FACEBOOK: FEWER, NEVER TWICE (8 Nov 2026). Both went to ~0
         # views from 24 Oct: 229 Shorts in four weeks, the same reel uploaded up
         # to three times, the same footage other pages post. So each gets
-        # YTFB_PER_DAY (default 2) a day, YTFB_MIN_GAP_H apart, and a repost
+        # YTFB_PER_DAY (default 3; owner 8 Nov: "3 a day") a day, YTFB_MIN_GAP_H apart, and a repost
         # (repost_of) never goes to them again - it was already there once.
         side_held = {}
-        ycap = int(os.environ.get("YTFB_PER_DAY", "2") or 0)
+        ycap = int(os.environ.get("YTFB_PER_DAY", "3") or 0)
         if ycap > 0 and not clip.get("retry_only"):
             from datetime import datetime
             now = engine.now_local()

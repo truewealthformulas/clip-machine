@@ -4400,7 +4400,10 @@
    "bytes": 11123964,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-12T18:37",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MEDITATION2/01_leafhabit_44s.mp4",
@@ -4408,7 +4411,10 @@
    "bytes": 14029889,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-13T09:58",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_PRIORITIES2/01_sixtasksrule_40s.mp4",
@@ -4416,7 +4422,10 @@
    "bytes": 10302674,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-13T07:06",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

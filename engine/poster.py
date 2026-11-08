@@ -444,7 +444,7 @@ CLUB_LINE = os.environ.get(
     "long-lasting relationships with like-minded people and feel better about yourself "
     "\u2192 {where}")
 CLUB_WHERE = {"instagram": "link in my bio \u2b06\ufe0f", "facebook": "link in my bio \u2b06\ufe0f",
-              "tiktok": "tap the Instagram icon on my profile \U0001F446",
+              "tiktok": "DM \u201cclub\u201d",   # owner 8 Nov: TikTok ends with DM "club"
               "youtube": "link below \u2b07\ufe0f"}
 
 

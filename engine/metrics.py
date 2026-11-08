@@ -210,6 +210,23 @@ def facebook_stats(clips):
             "comments": ((d.get("comments") or {}).get("summary") or {}).get(
                 "total_count"),
         }
+        # VIEWS (8 Nov 2026): Facebook views were never collected, so the drop to
+        # zero on Facebook never showed in the numbers. Reels report plays in
+        # video_insights; a failure here keeps likes/comments.
+        try:
+            ins = _j(requests.get(f"https://graph.facebook.com/v21.0/{vid}/video_insights",
+                                  timeout=T, params={"access_token": tok,
+                                  "metric": "blue_reels_play_count,fb_reels_total_plays,"
+                                            "post_impressions_unique"}))
+            for row in ins.get("data") or []:
+                v = ((row.get("values") or [{}])[0]).get("value")
+                if isinstance(v, (int, float)):
+                    key = {"blue_reels_play_count": "views", "fb_reels_total_plays": "plays",
+                           "post_impressions_unique": "reach"}.get(row.get("name"))
+                    if key:
+                        out[c["file"]][key] = v
+        except Exception:
+            pass
     return out
 
 

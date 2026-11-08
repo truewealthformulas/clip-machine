@@ -3990,7 +3990,6 @@
    "done": false,
    "status": {
     "facebook": "posted",
-    "instagram": "could not fetch the video: Error: Media upload has failed with error code 2207077",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -4012,7 +4011,13 @@
     "youtube": "https://youtube.com/shorts/H5ba6_Ftdww"
    },
    "caption_at_post": "You do not have to start with an hour a day.\n\nKevin Trudeau says that if you cannot jump straight to what Elon Musk does, begin small. Pick one day a week, put it on your calendar and make an appointment with yourself. Spend ten minutes alone, with the door shut, reading about how the mind works.\n\nThen build up to two days, then three, then longer sessions, step by step.\n\nWhen could you fit ten quiet minutes into your week?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #goals",
-   "posted_at": "2026-11-08T06:58"
+   "posted_at": "2026-11-08T06:58",
+   "retry_only": [
+    "instagram"
+   ],
+   "agent_retried": [
+    "instagram"
+   ]
   },
   {
    "file": "KT_WEALTH9/01_loveusemoney_36s.mp4",

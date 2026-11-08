@@ -3988,7 +3988,12 @@
    "caption": "You do not have to start with an hour a day.\n\nKevin Trudeau says that if you cannot jump straight to what Elon Musk does, begin small. Pick one day a week, put it on your calendar and make an appointment with yourself. Spend ten minutes alone, with the door shut, reading about how the mind works.\n\nThen build up to two days, then three, then longer sessions, step by step.\n\nWhen could you fit ten quiet minutes into your week?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #goals",
    "bytes": 10852060,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "instagram": "could not fetch the video: Error: Media upload has failed with error code 2207077",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-08T06:52",
    "cta_keyword": "GOALS",
@@ -4000,7 +4005,14 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_READING--02_tenminutes_44s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1443338997909952/",
+    "youtube": "https://youtube.com/shorts/H5ba6_Ftdww"
+   },
+   "caption_at_post": "You do not have to start with an hour a day.\n\nKevin Trudeau says that if you cannot jump straight to what Elon Musk does, begin small. Pick one day a week, put it on your calendar and make an appointment with yourself. Spend ten minutes alone, with the door shut, reading about how the mind works.\n\nThen build up to two days, then three, then longer sessions, step by step.\n\nWhen could you fit ten quiet minutes into your week?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #goals",
+   "posted_at": "2026-11-08T06:58"
   },
   {
    "file": "KT_WEALTH9/01_loveusemoney_36s.mp4",

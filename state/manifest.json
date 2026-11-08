@@ -3693,8 +3693,14 @@
    "file": "KT_MANIFESTING5/01_nomeditation_54s.mp4",
    "caption": "The advice online sounds good. Kevin Trudeau says the rich don't follow it.\n\nHe was with a group of very wealthy men and asked each one if they had ever meditated or visualized their wealth while they were building it. They looked at him like he was insane.\n\nKevin's point is that a lot of advice is theory. He wants to share what people who actually get results really do.\n\nHave you ever followed advice that sounded smart and went nowhere?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #mindset",
    "bytes": 14908689,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
@@ -3706,7 +3712,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MANIFESTING5--01_nomeditation_54s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1078735835166308/",
+    "instagram": "https://www.instagram.com/reel/DffNkG6HYse/",
+    "youtube": "https://youtube.com/shorts/u0EacgcNRJg"
+   },
+   "caption_at_post": "The advice online sounds good. Kevin Trudeau says the rich don't follow it.\n\nHe was with a group of very wealthy men and asked each one if they had ever meditated or visualized their wealth while they were building it. They looked at him like he was insane.\n\nKevin's point is that a lot of advice is theory. He wants to share what people who actually get results really do.\n\nHave you ever followed advice that sounded smart and went nowhere?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #mindset",
+   "posted_at": "2026-11-08T11:45"
   },
   {
    "file": "KT_MANIFESTING5/02_wrongfrequency_56s.mp4",

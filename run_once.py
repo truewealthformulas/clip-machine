@@ -230,8 +230,42 @@ def main():
                 log(f"flagged source {sorted(srcs & flagged)}: skipping Instagram and Facebook")
         except Exception as e:
             log(f"flagged-source check skipped: {e}")
+        # YOUTUBE + FACEBOOK: FEWER, NEVER TWICE (8 Nov 2026). Both went to ~0
+        # views from 24 Oct: 229 Shorts in four weeks, the same reel uploaded up
+        # to three times, the same footage other pages post. So each gets
+        # YTFB_PER_DAY (default 2) a day, YTFB_MIN_GAP_H apart, and a repost
+        # (repost_of) never goes to them again - it was already there once.
+        side_held = {}
+        ycap = int(os.environ.get("YTFB_PER_DAY", "2") or 0)
+        if ycap > 0 and not clip.get("retry_only"):
+            from datetime import datetime
+            now = engine.now_local()
+            today = now.strftime("%Y-%m-%d")
+            gap = float(os.environ.get("YTFB_MIN_GAP_H", "5"))
+            board = engine.load()["clips"]
+            for plat in ("youtube", "facebook"):
+                if plat not in poster.ENABLED:
+                    continue
+                if clip.get("repost_of"):
+                    side_held[plat] = f"held - repost, already on {plat.title()} once"
+                    continue
+                done = [c.get("posted_at") or "" for c in board
+                        if (c.get("status") or {}).get(plat) == "posted"
+                        and (c.get("posted_at") or "").startswith(today)]
+                last = max(done) if done else ""
+                mins = ((now.replace(tzinfo=None) - datetime.strptime(last[:16], "%Y-%m-%dT%H:%M"))
+                        .total_seconds() / 60) if last else 1e9
+                if len(done) >= ycap:
+                    side_held[plat] = f"held - {plat.title()} limited to {ycap} a day"
+                elif mins < gap * 60:
+                    side_held[plat] = f"held - {plat.title()} spaced {gap:g}h apart"
+            if side_held:
+                only = [p for p in (only or poster.ENABLED) if p not in side_held]
+                log(f"youtube/facebook gate: {side_held}")
         result, links = poster.publish(
             clip, path, media_url(clip["file"]), only=only)
+        for plat, why in side_held.items():
+            result[plat] = why
         if held:
             result["instagram"] = held
         if meta_held:

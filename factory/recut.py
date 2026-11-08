@@ -18,7 +18,7 @@ ROOT = os.path.dirname(HERE)
 MAN = os.path.join(ROOT, "state", "manifest.json")
 K = os.path.expanduser("~/ClipMachine")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-RECUT_V = 1
+RECUT_V = 2   # 2: again, without the face-scale box
 OUT = "/tmp/recut_out"
 
 

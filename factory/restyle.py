@@ -1035,7 +1035,11 @@ def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
     # to zoom in"). Some recordings film Kevin so tight his face fills the
     # screen. Measure his face on a few frames; if it is wider than T5_FACE of
     # the screen, shrink his picture until it is not (blurred fill around it).
-    fs = t5_face_scale(src, y0, y1, head, end)
+    # A fresh factory clip is already the WIDE frame (6 Nov: KT_ZOOM 0.3) - Kevin
+    # small, sharp band across the middle, blurred copy above and below. The
+    # detector sees the giant blurred face and shrank it into a box, so no
+    # face scaling on fresh clips.
+    fs = 1.0 if prior is None else t5_face_scale(src, y0, y1, head, end)
     fg_w = int(round(W / max(zoom, 1.0) * fs / 2)) * 2
     bt = best_window(src, head + 2.0, end - 3.0)
     _t5k_text_frames(hook, tmp)

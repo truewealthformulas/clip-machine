@@ -4124,7 +4124,12 @@
    "caption": "Why do wealthy buyers pay cash for their homes?\n\nKevin Trudeau says they see a mortgage as the worst kind of loan. So they buy the home outright, then use the home itself as collateral for a line of credit.\n\nThat gives them access to cash when they need it, and if they don't use it, they pay no interest. Kevin presents it as a different way of thinking about credit.\n\nHad you ever heard of buying a home this way?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth",
    "bytes": 15187533,
    "done": false,
-   "status": {},
+   "status": {
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube limited to 3 a day",
+    "facebook": "held - Facebook limited to 3 a day",
+    "instagram": "held - Instagram limited to 5 a day while under review"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-08T20:04",
    "cta_keyword": "GOALS",
@@ -4136,7 +4141,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MONEY--01_richbuyhomes_35s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {},
+   "posted_at": "2026-11-08T20:12"
   },
   {
    "file": "KT_READING/92_knowdontdo_33s.mp4",

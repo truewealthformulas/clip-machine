@@ -3790,10 +3790,11 @@
    "file": "KT_ADVERSITY/01_criticwins_51s.mp4",
    "caption": "If you're criticizing, you don't count - a quote worth a pause.\n\nKevin Trudeau explains that to see the seed of a greater benefit in every problem, you have to cut back your judgment and criticism of others and of yourself.\n\nHe shares a quote he believes came from Roosevelt: it's not the critic who counts, not the one who points out how the strong man stumbles.\n\nIt's a blunt idea, and it's worth a moment of thought.\n\nDo you criticize yourself more than you criticize anyone else?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success",
    "bytes": 12092616,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -3810,14 +3811,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfh4FuvgRf6/"
+    "instagram": "https://www.instagram.com/reel/Dfh4FuvgRf6/",
+    "facebook": "https://facebook.com/reel/4752190088356441/",
+    "youtube": "https://youtube.com/shorts/RB-Qk02e6gY"
    },
    "caption_at_post": "If you're criticizing, you don't count - a quote worth a pause.\n\nKevin Trudeau explains that to see the seed of a greater benefit in every problem, you have to cut back your judgment and criticism of others and of yourself.\n\nHe shares a quote he believes came from Roosevelt: it's not the critic who counts, not the one who points out how the strong man stumbles.\n\nIt's a blunt idea, and it's worth a moment of thought.\n\nDo you criticize yourself more than you criticize anyone else?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success",
-   "posted_at": "2026-11-09T12:35",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-09T15:14",
    "agent_retried": [
     "facebook",
     "youtube"

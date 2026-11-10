@@ -4639,7 +4639,10 @@
    "bytes": 15954793,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-13T18:58",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ADVERSITY9/01_businessempire_31s.mp4",
@@ -4647,7 +4650,10 @@
    "bytes": 8847648,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-14T09:51",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_READING3/01_seedphrase_33s.mp4",
@@ -4655,7 +4661,10 @@
    "bytes": 10036414,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-14T07:35",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

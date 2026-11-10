@@ -1,0 +1,18 @@
+{
+ "source": "v6qunfi.mp4",
+ "brand": "KT_PERSISTENCE2",
+ "test": false,
+ "clips": [
+  {
+   "slug": "edisonfailure",
+   "in": 602.0,
+   "out": 642.8,
+   "hook": [
+    "The Success Secret",
+    "In Every Failure"
+   ],
+   "caption": "Edison failed thousands of times. His answer changed how Kevin sees failure.\n\nKevin Trudeau retells the famous story. Asked how it felt to fail so many times, Edison said he didn't fail. He found thousands of ways it didn't work, and each one brought him closer.\n\nKevin says that is what persistence really is. When you are committed, impossible stops existing.\n\nWhat have you given up on that deserves one more try?\n\n#ad #success #mindset #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

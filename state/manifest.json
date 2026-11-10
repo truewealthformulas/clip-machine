@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4350,9 +4350,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube spaced 5h apart",
-    "facebook": "held - Facebook spaced 5h apart"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-10T16:30",
@@ -4371,7 +4369,15 @@
     "instagram": "https://www.instagram.com/reel/Dfk4nOpgZnz/"
    },
    "caption_at_post": "Do you have to meditate to achieve great success?\n\nKevin says no. Most successful people never sit down and repeat a mantra.\n\nBut he says very wealthy people do some form of quiet focus, such as walking in nature, watching a leaf or listening closely to music. In his view, it helps the brain settle so goals can be clearer.\n\nWhat quiet habit helps you think clearly?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
-   "posted_at": "2026-11-10T16:37"
+   "posted_at": "2026-11-10T16:37",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_PERSISTENCE/01_ruthlesswithyou_39s.mp4",
@@ -4381,9 +4387,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube spaced 5h apart",
-    "facebook": "held - Facebook spaced 5h apart"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-10T10:01",
@@ -4402,7 +4406,15 @@
     "instagram": "https://www.instagram.com/reel/DfkLt10ALUb/"
    },
    "caption_at_post": "You don't have to be ruthless to anyone else. Only to yourself.\n\nKevin explains that mega-successful people like Ray Kroc were ruthless in business, but you don't have to be like that.\n\nWhat he asks is to be ruthless with yourself: your persistence, your personal development and your attitude. Keep sharpening the axe so your attitude works when you need it.\n\nWhere in your life do you need to be tougher on yourself?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #habits #mindset #kevintrudeau",
-   "posted_at": "2026-11-10T10:05"
+   "posted_at": "2026-11-10T10:05",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_READING2/01_howdoyouknow_48s.mp4",
@@ -4661,7 +4673,7 @@
   },
   {
    "file": "KT_ADVERSITY10/01_bottomtop_51s.mp4",
-   "caption": "What you need at the top is learned at the bottom.\n\nKevin Trudeau quotes John D. Rockefeller: only by enduring what others cannot bear can you do what others cannot do.\n\nA great multimillionaire said everything he knew at the top, he learned at the bottom. Kevin asks you to see adversity as a chance to learn, grow and find something you hadn't thought of before.\n\nWhat has your hardest time taught you?\n\n#ad #wealth #success #kevintrudeau",
+   "caption": "What you need at the top is learned at the bottom.\n\nKevin Trudeau quotes John D. Rockefeller: only by enduring what others cannot bear can you do what others cannot do.\n\nA great multimillionaire said everything he knew at the top, he learned at the bottom. Kevin asks you to see adversity as a chance to learn, grow and find something you hadn't thought of before.\n\nWhat has your hardest time taught you?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 13848487,
    "done": false,
    "status": {},
@@ -4679,7 +4691,7 @@
   },
   {
    "file": "KT_ADVERSITY9/01_businessempire_31s.mp4",
-   "caption": "He ran companies on several continents. Then he changed course.\n\nKevin Trudeau describes running in ten directions, with offices and staff all over the world.\n\nThen he reached the moment he knew it was time to follow his purpose and mission.\n\nA big enterprise is not the same as a life that points where you want to go.\n\nWhat would you do if you followed your own purpose?\n\n#ad #business #success #mindset",
+   "caption": "He ran companies on several continents. Then he changed course.\n\nKevin Trudeau describes running in ten directions, with offices and staff all over the world.\n\nThen he reached the moment he knew it was time to follow his purpose and mission.\n\nA big enterprise is not the same as a life that points where you want to go.\n\nWhat would you do if you followed your own purpose?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #success #mindset",
    "bytes": 8455182,
    "done": false,
    "status": {},
@@ -4697,7 +4709,7 @@
   },
   {
    "file": "KT_READING3/01_seedphrase_33s.mp4",
-   "caption": "Can one short sentence change how you think?\n\nKevin Trudeau shares simple phrases to chew on. Yesterday is history, tomorrow is a mystery, and today is a gift, which is why it's called the present.\n\nAnother: what you give your attention to will always grow.\n\nHe says one nugget contains it all, like a seed that holds the entire tree and all its fruit.\n\nWhat are you giving your attention to today?\n\n#ad #mindset #goals #kevintrudeau",
+   "caption": "Can one short sentence change how you think?\n\nKevin Trudeau shares simple phrases to chew on. Yesterday is history, tomorrow is a mystery, and today is a gift, which is why it's called the present.\n\nAnother: what you give your attention to will always grow.\n\nHe says one nugget contains it all, like a seed that holds the entire tree and all its fruit.\n\nWhat are you giving your attention to today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #goals #kevintrudeau",
    "bytes": 9388615,
    "done": false,
    "status": {},
@@ -4715,7 +4727,7 @@
   },
   {
    "file": "KT_MANIFESTING7/01_booksmissingingredients_38s.mp4",
-   "caption": "Great success books can still leave out key ingredients.\n\nKevin Trudeau lists books he recommends: Think and Grow Rich, The Secret, Ask and It Is Given, The Magic of Believing and The Magic of Thinking Big.\n\nHis point is that even among the top best-sellers on success and manifesting, each one misses key ingredients. Those missing pieces, he says, are what very successful people actually do.\n\nHave you ever read a great book and still felt something was missing?\n\n#ad #success #goals #kevintrudeau",
+   "caption": "Great success books can still leave out key ingredients.\n\nKevin Trudeau lists books he recommends: Think and Grow Rich, The Secret, Ask and It Is Given, The Magic of Believing and The Magic of Thinking Big.\n\nHis point is that even among the top best-sellers on success and manifesting, each one misses key ingredients. Those missing pieces, he says, are what very successful people actually do.\n\nHave you ever read a great book and still felt something was missing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 13023442,
    "done": false,
    "status": {},
@@ -4726,7 +4738,7 @@
   },
   {
    "file": "KT_MONEY5/01_twocars_60s.mp4",
-   "caption": "A four-year-old car at one third of the new price.\n\nKevin Trudeau shares how he bought two used cars instead of new ones. One was ten years old with very low mileage, the other four years old. He says he paid about a third of the new price for the second.\n\nHis point: a new car loses about two thirds of its value in four years, so buy used, at least three years old, and favor things that hold their value.\n\nWhat was the last big purchase you made that lost value fast?\n\n#ad #money #rich #kevintrudeau",
+   "caption": "A four-year-old car at one third of the new price.\n\nKevin Trudeau shares how he bought two used cars instead of new ones. One was ten years old with very low mileage, the other four years old. He says he paid about a third of the new price for the second.\n\nHis point: a new car loses about two thirds of its value in four years, so buy used, at least three years old, and favor things that hold their value.\n\nWhat was the last big purchase you made that lost value fast?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #rich #kevintrudeau",
    "bytes": 25064027,
    "done": false,
    "status": {},

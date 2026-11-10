@@ -3862,8 +3862,14 @@
    "file": "KT_ADVERSITY2/01_notspecial_53s.mp4",
    "caption": "Why even successful people never run out of problems.\n\nKevin Trudeau says there is not a person in the world without problems, obstacles or disasters to overcome. Most people just do not talk about them, so you never see what others are facing.\n\nHe quotes Earl Nightingale: successful people are not people without problems. They are simply people who have learned how to overcome them.\n\nDo you ever feel like everyone else has it easier?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
    "bytes": 13779936,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "cta_keyword": "GOALS",
    "cta_variant": 14,
@@ -3875,7 +3881,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ADVERSITY2--01_notspecial_53s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1434823665368105/",
+    "instagram": "https://www.instagram.com/reel/Dfj5lehDEnn/",
+    "youtube": "https://youtube.com/shorts/2pVoNr74EYE"
+   },
+   "caption_at_post": "Why even successful people never run out of problems.\n\nKevin Trudeau says there is not a person in the world without problems, obstacles or disasters to overcome. Most people just do not talk about them, so you never see what others are facing.\n\nHe quotes Earl Nightingale: successful people are not people without problems. They are simply people who have learned how to overcome them.\n\nDo you ever feel like everyone else has it easier?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #habits",
+   "posted_at": "2026-11-10T07:26"
   },
   {
    "file": "KT_ADVERSITY2/01_painmustdriver_40s.mp4",

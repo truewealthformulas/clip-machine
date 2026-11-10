@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4245,9 +4245,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-09T16:13",
@@ -4266,7 +4264,15 @@
     "instagram": "https://www.instagram.com/reel/DfiSZXGG3Va/"
    },
    "caption_at_post": "Your prayer may be answered inside the disaster.\n\nKevin Trudeau says every problem holds the seed of a greater benefit. The answer you have been asking the universe for may be hiding inside the calamity.\n\nHe says you just have to unpack it, see it as a gift, and be thankful and grateful.\n\nWhat problem are you facing that might be hiding an answer?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-09T16:24"
+   "posted_at": "2026-11-09T16:24",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_ADVERSITY6/01_sufferingoptional_34s.mp4",
@@ -4295,9 +4301,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-09T18:41",
@@ -4316,7 +4320,15 @@
     "instagram": "https://www.instagram.com/reel/DfiiShajSe2/"
    },
    "caption_at_post": "Not everyone wants to be a billionaire. That is fine.\n\nKevin explains that these ideas work for any goal. You might want to be the best teacher in the world, the best gardener, or build a loving home and a fulfilling life.\n\nHe uses money as his example only because you can measure it. Whatever your dream is, he says you want it to come into your life quickly and easily.\n\nWhat is the one goal you would pick if money didn't matter?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
-   "posted_at": "2026-11-09T18:43"
+   "posted_at": "2026-11-09T18:43",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_MEDITATION/01_ownwork_53s.mp4",
@@ -4563,7 +4575,7 @@
   },
   {
    "file": "KT_MINDSET31/01_spiritmoney_41s.mp4",
-   "caption": "You can be spiritual and still enjoy nice things.\n\nKevin Trudeau explains an idea he calls spiritual materialism: a spiritual life and a material life are not opposites. In his view, you can enjoy the things you want and still live a deeply spiritual life.\n\nThe difference, Kevin says, is attachment. He shares a simple phrase for it: love people and use things, instead of loving things and using people.\n\nWhich one do you catch yourself doing more often?\n\n#ad #mindset #success #money",
+   "caption": "You can be spiritual and still enjoy nice things.\n\nKevin Trudeau explains an idea he calls spiritual materialism: a spiritual life and a material life are not opposites. In his view, you can enjoy the things you want and still live a deeply spiritual life.\n\nThe difference, Kevin says, is attachment. He shares a simple phrase for it: love people and use things, instead of loving things and using people.\n\nWhich one do you catch yourself doing more often?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #money",
    "bytes": 13007807,
    "done": false,
    "status": {},
@@ -4581,7 +4593,7 @@
   },
   {
    "file": "KT_CONTROL2/01_soundpattern_49s.mp4",
-   "caption": "Sand on a metal plate can show you what sound looks like.\n\nKevin Trudeau describes a sound plate. You put sand on a square piece of metal with a speaker underneath. Turn on a frequency and the plate vibrates, and the sand forms a symmetrical pattern.\n\nChange the frequency and the pattern changes. Kevin says these patterns look like a mandala, and that every frequency creates its own image.\n\nIf sound can move sand, what do you think it does to you?\n\n#ad #mindset #energy #kevintrudeau",
+   "caption": "Sand on a metal plate can show you what sound looks like.\n\nKevin Trudeau describes a sound plate. You put sand on a square piece of metal with a speaker underneath. Turn on a frequency and the plate vibrates, and the sand forms a symmetrical pattern.\n\nChange the frequency and the pattern changes. Kevin says these patterns look like a mandala, and that every frequency creates its own image.\n\nIf sound can move sand, what do you think it does to you?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #energy #kevintrudeau",
    "bytes": 12022921,
    "done": false,
    "status": {},

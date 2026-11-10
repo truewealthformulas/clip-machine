@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4241,10 +4241,11 @@
    "file": "KT_ADVERSITY5/01_problemsecret_39s.mp4",
    "caption": "Your prayer may be answered inside the disaster.\n\nKevin Trudeau says every problem holds the seed of a greater benefit. The answer you have been asking the universe for may be hiding inside the calamity.\n\nHe says you just have to unpack it, see it as a gift, and be thankful and grateful.\n\nWhat problem are you facing that might be hiding an answer?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 11138353,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -4261,14 +4262,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfiSZXGG3Va/"
+    "instagram": "https://www.instagram.com/reel/DfiSZXGG3Va/",
+    "facebook": "https://facebook.com/reel/2211720053089516/",
+    "youtube": "https://youtube.com/shorts/Jey--dElL7I"
    },
    "caption_at_post": "Your prayer may be answered inside the disaster.\n\nKevin Trudeau says every problem holds the seed of a greater benefit. The answer you have been asking the universe for may be hiding inside the calamity.\n\nHe says you just have to unpack it, see it as a gift, and be thankful and grateful.\n\nWhat problem are you facing that might be hiding an answer?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-09T16:24",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-09T22:00",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -4304,7 +4303,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-09T18:41",
+   "scheduled_at": "2026-11-09T22:45",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "recut_v": 2,

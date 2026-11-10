@@ -2465,5 +2465,59 @@
     "cta_kind": "offer"
    }
   ]
+ },
+ "adversity_v67ions_p3": {
+  "source": "v67ions.mp4",
+  "brand": "KT_ADVERSITY9",
+  "note": "",
+  "clips": [
+   {
+    "slug": "businessempire",
+    "in": 1717.62,
+    "out": 1748.4,
+    "hook": [
+     "Why Leave A Business",
+     "Empire Behind"
+    ],
+    "caption": "He ran companies on several continents. Then he changed course.\n\nKevin Trudeau describes running in ten directions, with offices and staff all over the world.\n\nThen he reached the moment he knew it was time to follow his purpose and mission.\n\nA big enterprise is not the same as a life that points where you want to go.\n\nWhat would you do if you followed your own purpose?\n\n#ad #business #success #mindset",
+    "cta_kind": "question"
+   }
+  ]
+ },
+ "adversity_v6hqxya_p3": {
+  "source": "v6hqxya.mp4",
+  "brand": "KT_ADVERSITY10",
+  "note": "",
+  "clips": [
+   {
+    "slug": "bottomtop",
+    "in": 551.66,
+    "out": 602.85,
+    "hook": [
+     "How Adversity",
+     "Builds Success"
+    ],
+    "caption": "What you need at the top is learned at the bottom.\n\nKevin Trudeau quotes John D. Rockefeller: only by enduring what others cannot bear can you do what others cannot do.\n\nA great multimillionaire said everything he knew at the top, he learned at the bottom. Kevin asks you to see adversity as a chance to learn, grow and find something you hadn't thought of before.\n\nWhat has your hardest time taught you?\n\n#ad #wealth #success #kevintrudeau",
+    "cta_kind": "question"
+   }
+  ]
+ },
+ "reading_v7htumc_p3": {
+  "source": "v7htumc.mp4",
+  "brand": "KT_READING3",
+  "note": "",
+  "clips": [
+   {
+    "slug": "seedphrase",
+    "in": 1054.3,
+    "out": 1087.51,
+    "hook": [
+     "One Phrase Can Change",
+     "Your Mind"
+    ],
+    "caption": "Can one short sentence change how you think?\n\nKevin Trudeau shares simple phrases to chew on. Yesterday is history, tomorrow is a mystery, and today is a gift, which is why it's called the present.\n\nAnother: what you give your attention to will always grow.\n\nHe says one nugget contains it all, like a seed that holds the entire tree and all its fruit.\n\nWhat are you giving your attention to today?\n\n#ad #mindset #goals #kevintrudeau",
+    "cta_kind": "question"
+   }
+  ]
  }
 }

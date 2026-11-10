@@ -4347,7 +4347,13 @@
    "caption": "Do you have to meditate to achieve great success?\n\nKevin says no. Most successful people never sit down and repeat a mantra.\n\nBut he says very wealthy people do some form of quiet focus, such as walking in nature, watching a leaf or listening closely to music. In his view, it helps the brain settle so goals can be clearer.\n\nWhat quiet habit helps you think clearly?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 15116737,
    "done": false,
-   "status": {},
+   "status": {
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube spaced 5h apart",
+    "facebook": "held - Facebook spaced 5h apart"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-10T16:30",
    "cta_keyword": "GOALS",
@@ -4359,7 +4365,13 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MEDITATION--01_ownwork_53s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfk4nOpgZnz/"
+   },
+   "caption_at_post": "Do you have to meditate to achieve great success?\n\nKevin says no. Most successful people never sit down and repeat a mantra.\n\nBut he says very wealthy people do some form of quiet focus, such as walking in nature, watching a leaf or listening closely to music. In his view, it helps the brain settle so goals can be clearer.\n\nWhat quiet habit helps you think clearly?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
+   "posted_at": "2026-11-10T16:37"
   },
   {
    "file": "KT_PERSISTENCE/01_ruthlesswithyou_39s.mp4",
@@ -4707,7 +4719,10 @@
    "bytes": 13023442,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-14T12:36",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MONEY5/01_twocars_60s.mp4",
@@ -4715,7 +4730,10 @@
    "bytes": 25064027,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-14T15:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

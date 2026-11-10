@@ -4296,10 +4296,11 @@
    "file": "KT_MANIFESTING6/01_nobillionairegoal_41s.mp4",
    "caption": "Not everyone wants to be a billionaire. That is fine.\n\nKevin explains that these ideas work for any goal. You might want to be the best teacher in the world, the best gardener, or build a loving home and a fulfilling life.\n\nHe uses money as his example only because you can measure it. Whatever your dream is, he says you want it to come into your life quickly and easily.\n\nWhat is the one goal you would pick if money didn't matter?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
    "bytes": 12923847,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4316,14 +4317,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfiiShajSe2/"
+    "instagram": "https://www.instagram.com/reel/DfiiShajSe2/",
+    "facebook": "https://facebook.com/reel/1670770131332937/",
+    "youtube": "https://youtube.com/shorts/cAwbGzqLsUY"
    },
    "caption_at_post": "Not everyone wants to be a billionaire. That is fine.\n\nKevin explains that these ideas work for any goal. You might want to be the best teacher in the world, the best gardener, or build a loving home and a fulfilling life.\n\nHe uses money as his example only because you can measure it. Whatever your dream is, he says you want it to come into your life quickly and easily.\n\nWhat is the one goal you would pick if money didn't matter?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
-   "posted_at": "2026-11-09T18:43",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-09T22:50",
    "agent_retried": [
     "facebook",
     "youtube"

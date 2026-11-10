@@ -4346,10 +4346,11 @@
    "file": "KT_MEDITATION/01_ownwork_53s.mp4",
    "caption": "Do you have to meditate to achieve great success?\n\nKevin says no. Most successful people never sit down and repeat a mantra.\n\nBut he says very wealthy people do some form of quiet focus, such as walking in nature, watching a leaf or listening closely to music. In his view, it helps the brain settle so goals can be clearer.\n\nWhat quiet habit helps you think clearly?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 15116737,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4366,14 +4367,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfk4nOpgZnz/"
+    "instagram": "https://www.instagram.com/reel/Dfk4nOpgZnz/",
+    "facebook": "https://facebook.com/reel/948550598338305/",
+    "youtube": "https://youtube.com/shorts/Sm-8sxN-fOY"
    },
    "caption_at_post": "Do you have to meditate to achieve great success?\n\nKevin says no. Most successful people never sit down and repeat a mantra.\n\nBut he says very wealthy people do some form of quiet focus, such as walking in nature, watching a leaf or listening closely to music. In his view, it helps the brain settle so goals can be clearer.\n\nWhat quiet habit helps you think clearly?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
-   "posted_at": "2026-11-10T16:37",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-10T17:29",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -4390,7 +4389,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-10T17:22",
+   "scheduled_at": "2026-11-10T18:14",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "recut_v": 2,

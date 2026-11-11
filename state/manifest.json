@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4822,13 +4822,20 @@
   {
    "file": "KT_SUCCESS21/01_richmastermind_51s.mp4",
    "caption": "You can't pick up a success mindset from people who don't have one.\n\nKevin explains that the most successful people he talks about all built a mastermind: close relationships with people who have more money, more intelligence, more health and more connections.\n\nHe says without a group like that, you never take on that mentality. Arnold Schwarzenegger trained with champions and learned how they thought, not just how they trained.\n\nWho in your life makes you think bigger?\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 16597720,
+   "bytes": 15035596,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-14T19:34",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "t5_best": 39.3,
+   "t5_from": null,
+   "t5_v": 4,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_SUCCESS21--01_richmastermind_51s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

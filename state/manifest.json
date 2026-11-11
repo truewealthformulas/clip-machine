@@ -4058,8 +4058,14 @@
    "file": "KT_READING/02_mindfirst_55s.mp4",
    "caption": "The first thing to study is how your mind works.\n\nKevin Trudeau describes his own long, busy days: up at six in the morning, in his room late at night, and still time to read and study.\n\nHe says the most important thing to learn is how the mind works, and he points to Warren Buffett's advice on personal development. In his words, work on becoming a better you.\n\nWhat excuse are you ready to drop today?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
    "bytes": 14653821,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-11T07:38",
    "cta_keyword": "GOALS",
@@ -4071,7 +4077,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_READING--02_mindfirst_55s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2403114217173581/",
+    "instagram": "https://www.instagram.com/reel/DfmgA38Cpoa/",
+    "youtube": "https://youtube.com/shorts/_YkaH4bNYvk"
+   },
+   "caption_at_post": "The first thing to study is how your mind works.\n\nKevin Trudeau describes his own long, busy days: up at six in the morning, in his room late at night, and still time to read and study.\n\nHe says the most important thing to learn is how the mind works, and he points to Warren Buffett's advice on personal development. In his words, work on becoming a better you.\n\nWhat excuse are you ready to drop today?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
+   "posted_at": "2026-11-11T07:41"
   },
   {
    "file": "KT_READING/02_tenminutes_44s.mp4",

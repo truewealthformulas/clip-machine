@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -3771,10 +3771,11 @@
    "file": "KT_MANIFESTING5/02_wrongfrequency_56s.mp4",
    "caption": "You can want something with all your heart and still not be heard.\n\nKevin Trudeau compares the universe to a radio. You may be broadcasting your desire for more money with great intensity, all day long. But if you are on 97.9 FM and the receiver is tuned to AM 1040, nothing comes through.\n\nHis point is that wanting something is not enough. The frequency you send it on matters too.\n\nWhere in your life do you feel you are sending a strong signal and getting no answer?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
    "bytes": 16416627,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -3791,14 +3792,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfmv2-XERAY/"
+    "instagram": "https://www.instagram.com/reel/Dfmv2-XERAY/",
+    "facebook": "https://facebook.com/reel/4750549171846542/",
+    "youtube": "https://youtube.com/shorts/Chj32I1va24"
    },
    "caption_at_post": "You can want something with all your heart and still not be heard.\n\nKevin Trudeau compares the universe to a radio. You may be broadcasting your desire for more money with great intensity, all day long. But if you are on 97.9 FM and the receiver is tuned to AM 1040, nothing comes through.\n\nHis point is that wanting something is not enough. The frequency you send it on matters too.\n\nWhere in your life do you feel you are sending a strong signal and getting no answer?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #mindset #success",
-   "posted_at": "2026-11-11T09:59",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-11T11:44",
    "agent_retried": [
     "facebook",
     "youtube"

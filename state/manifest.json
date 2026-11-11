@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4326,9 +4326,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-11T13:03",
@@ -4347,7 +4345,15 @@
     "instagram": "https://www.instagram.com/reel/DfnF2Xkibmw/"
    },
    "caption_at_post": "Pain is inevitable. Suffering is optional.\n\nKevin shares the Buddha's famous line, then explains the mindset of successful people. They do not focus on the problem, and they know trouble will come, so it is never a surprise.\n\nHe points to John D. Rockefeller, who looked at adversity as a gift, and to Napoleon Hill's line that every adversity holds the seeds of a greater benefit.\n\nThe difference is where you put your attention.\n\nWhere do you put yours when life pushes back?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-11T13:11"
+   "posted_at": "2026-11-11T13:11",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_MANIFESTING6/01_nobillionairegoal_41s.mp4",
@@ -4821,7 +4827,7 @@
   },
   {
    "file": "KT_SUCCESS21/01_richmastermind_51s.mp4",
-   "caption": "You can't pick up a success mindset from people who don't have one.\n\nKevin explains that the most successful people he talks about all built a mastermind: close relationships with people who have more money, more intelligence, more health and more connections.\n\nHe says without a group like that, you never take on that mentality. Arnold Schwarzenegger trained with champions and learned how they thought, not just how they trained.\n\nWho in your life makes you think bigger?\n\n#ad #success #mindset #kevintrudeau",
+   "caption": "You can't pick up a success mindset from people who don't have one.\n\nKevin explains that the most successful people he talks about all built a mastermind: close relationships with people who have more money, more intelligence, more health and more connections.\n\nHe says without a group like that, you never take on that mentality. Arnold Schwarzenegger trained with champions and learned how they thought, not just how they trained.\n\nWho in your life makes you think bigger?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 15035596,
    "done": false,
    "status": {},

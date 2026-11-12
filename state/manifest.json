@@ -4590,8 +4590,12 @@
    "file": "KT_ATTITUDE2/01_factsopinions_45s.mp4",
    "caption": "Most of what you call facts may just be someone's opinion.\n\nKevin Trudeau says most people get hung up on the facts and on how something is going to work. They can't figure it out, so they get stuck.\n\nHe says the right attitude is different: it doesn't look like it can be done, but we're making the decision to do it anyway.\n\nHe calls that the correct attitude, and says that with it the facts bend to your will.\n\nWhat fact have you accepted that might only be an opinion?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 13380992,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4607,18 +4611,18 @@
    "cover": "KT_ATTITUDE2--01_factsopinions_45s__cover.jpg",
    "cover_v": 4,
    "posting": false,
-   "links": {},
-   "posted_at": "2026-11-11T22:28",
-   "retry_only": [
-    "youtube",
-    "facebook",
-    "instagram"
-   ],
+   "links": {
+    "facebook": "https://facebook.com/reel/1500819421934052/",
+    "instagram": "https://www.instagram.com/reel/Dfoq8TojWDY/",
+    "youtube": "https://youtube.com/shorts/l7JPJkuFs5Q"
+   },
+   "posted_at": "2026-11-12T03:55",
    "agent_retried": [
     "facebook",
     "instagram",
     "youtube"
-   ]
+   ],
+   "caption_at_post": "Most of what you call facts may just be someone's opinion.\n\nKevin Trudeau says most people get hung up on the facts and on how something is going to work. They can't figure it out, so they get stuck.\n\nHe says the right attitude is different: it doesn't look like it can be done, but we're making the decision to do it anyway.\n\nHe calls that the correct attitude, and says that with it the facts bend to your will.\n\nWhat fact have you accepted that might only be an opinion?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau"
   },
   {
    "file": "KT_LUCK5/01_berightonce_37s.mp4",

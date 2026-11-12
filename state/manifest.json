@@ -4586,7 +4586,12 @@
    "caption": "Most of what you call facts may just be someone's opinion.\n\nKevin Trudeau says most people get hung up on the facts and on how something is going to work. They can't figure it out, so they get stuck.\n\nHe says the right attitude is different: it doesn't look like it can be done, but we're making the decision to do it anyway.\n\nHe calls that the correct attitude, and says that with it the facts bend to your will.\n\nWhat fact have you accepted that might only be an opinion?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 13380992,
    "done": false,
-   "status": {},
+   "status": {
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube limited to 3 a day",
+    "facebook": "held - Facebook limited to 3 a day",
+    "instagram": "held - Instagram limited to 5 a day while under review"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-11T22:20",
    "cta_keyword": "GOALS",
@@ -4598,7 +4603,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ATTITUDE2--01_factsopinions_45s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {},
+   "posted_at": "2026-11-11T22:28"
   },
   {
    "file": "KT_LUCK5/01_berightonce_37s.mp4",

@@ -4927,7 +4927,10 @@
    "bytes": 16645150,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-15T07:05",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS23/01_adversityseeds_46s.mp4",
@@ -4935,7 +4938,10 @@
    "bytes": 16007670,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-15T13:39",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_SUCCESS24/01_friendsmoney_43s.mp4",
@@ -4943,7 +4949,10 @@
    "bytes": 15507582,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-15T09:56",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

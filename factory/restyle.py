@@ -684,7 +684,7 @@ T5_SANS = os.path.join(ROOT, "factory", "assets", "Montserrat.ttf")
 T5_SERIF = os.path.join(ROOT, "factory", "assets", "PlayfairDisplay-Italic.ttf")
 T5_HOOK, T5_CTA, T5_FPS = 3.0, 3.5, 30
 T5_GOLD = (232, 190, 92)
-T5_CTA_KIND = os.environ.get("T5_CTA", "audio")      # "audio" | "gin"
+T5_CTA_KIND = os.environ.get("T5_CTA", "youtube")    # "youtube" (12 Nov: Kevin's YouTube channel) | "audio" | "gin"
 T5_THEMES = [   # first match wins; words are checked against the hook
     (r"mortgage|bank|tax|debt|loan|credit|wall street|system|government", ["wallst", "city"]),
     (r"money|rich|wealth|cash|paycheck|millionaire|broke|income|saving|invest", ["gold", "money", "jet", "car"]),
@@ -791,6 +791,10 @@ def _t5_shade(im):
 
 
 def _t5_sig(d, y, alpha=235):
+    # 12 Nov 2026, the owner: "take away the name ... Kevin Trudeau". The
+    # signature under the hook and on the end card is off; T5_SIG=1 brings it back.
+    if os.environ.get("T5_SIG", "0") != "1":
+        return
     sf = _t5_font(T5_SANS, 30, 600)
     sig = "K E V I N   T R U D E A U"
     d.text(((W - d.textlength(sig, font=sf)) / 2, y), sig, font=sf, fill=(235, 235, 235, alpha))
@@ -838,7 +842,18 @@ def t5_cta_png(photo, out, kind=None):
         d.text(((W - w) / 2 + 2, y + 3), txt, font=f, fill=(0, 0, 0))
         d.text(((W - w) / 2, y), txt, font=f, fill=col)
     it = _t5_font(T5_SERIF, 128, 700)
-    if kind == "gin":
+    if kind == "youtube":
+        # 12 Nov 2026, the owner: "now we are promoting Kevin Trudeau YouTube
+        # channel with the full video". The clip is a taste; the end card sends
+        # people to the whole talk.
+        ct("W A N T   T H E   F U L L   V I D E O ?", _t5_font(T5_SANS, 38, 700), 600, WHITE)
+        d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
+        ct("Watch it free", it, 730, T5_GOLD)
+        ct("on YouTube", it, 880, T5_GOLD)
+        ct("KEVIN'S FULL TALKS & TRAINING", _t5_font(T5_SANS, 40, 700), 1060, (225, 225, 225))
+        ct("Tap the link in my bio", _t5_font(T5_SANS, 54, 800), 1250, WHITE)
+        ct("to watch now  \u2192", _t5_font(T5_SANS, 54, 800), 1325, WHITE)
+    elif kind == "gin":
         it = _t5_font(T5_SERIF, 112, 700)
         ct("J O I N   T H E   C L U B", _t5_font(T5_SANS, 44, 700), 600, WHITE)
         d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
@@ -864,7 +879,7 @@ def t5_cta_png(photo, out, kind=None):
 # keeps his size - full width - and the space above and below is the same
 # picture blurred and darkened. T5_ZOOM records how much a T5 render was
 # zoomed, so the ones made before this fix can be shrunk back (T5 -> T5).
-T5_V = 4      # 3 = Kevin opens the video (5 Nov 2026); 4 = never too close (6 Nov)
+T5_V = 5      # 5 = headline stays on top, no name (12 Nov); 3 = Kevin opens the video (5 Nov 2026); 4 = never too close (6 Nov)
 T5_FROM_T4 = {"KT_WEALTH6/02_appletrust_55s.mp4", "KT_BUSINESS/01_winorlearn_58s.mp4"}  # first-version T5s made from T4
 
 
@@ -985,6 +1000,33 @@ def _t5k_text_frames(hook, tmp):
         layer.save(os.path.join(tmp, f"h{i:03d}.png"))
 
 
+def _t5k_headline_png(hook, out):
+    """The hook as a headline that STAYS at the top for the whole clip.
+
+    12 Nov 2026. The best Instagram week (21-22 Oct, ~1,000 views a day) was the
+    style with the topic written across the top of the frame the whole time; T5
+    showed it only in the first 3 s, then nothing but blur above Kevin. Navy box
+    in the blurred area above the picture, no name."""
+    words, end_y = _t5_layout(t5_lines(hook), H * 0.19)
+    sc = 0.78
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    big = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(big)
+    for wd, f, col, x, y in words:
+        d.text((x + 3, y + 4), wd, font=f, fill=(0, 0, 0, 150))
+        d.text((x, y), wd, font=f, fill=col + (255,))
+    box = big.getbbox() or (0, 0, W, 1)
+    txt = big.crop(box)
+    txt = txt.resize((int(txt.width * sc), int(txt.height * sc)), Image.LANCZOS)
+    pad_x, pad_y = 50, 38
+    bw, bh = min(W - 80, txt.width + 2 * pad_x), txt.height + 2 * pad_y
+    top = int(H * 0.19 - bh / 2)
+    ImageDraw.Draw(im).rounded_rectangle(((W - bw) // 2, top, (W + bw) // 2, top + bh), radius=36,
+                                          fill=T5_BAND_RGB + (195,))
+    im.alpha_composite(txt, ((W - txt.width) // 2, top + pad_y))
+    im.save(out)
+
+
 T5_FACE = float(os.environ.get("T5_FACE", "0.30"))   # widest Kevin's face may be, share of screen width
 
 
@@ -1039,10 +1081,15 @@ def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
     # small, sharp band across the middle, blurred copy above and below. The
     # detector sees the giant blurred face and shrank it into a box, so no
     # face scaling on fresh clips.
-    fs = 1.0 if prior is None else t5_face_scale(src, y0, y1, head, end)
+    # 12 Nov: every clip is the wide frame now (re-cut 8 Nov), and on a wide
+    # frame the detector reads the big blurred copy as a close-up and boxes the
+    # picture. No face scaling at all.
+    fs = 1.0
     fg_w = int(round(W / max(zoom, 1.0) * fs / 2)) * 2
     bt = best_window(src, head + 2.0, end - 3.0)
     _t5k_text_frames(hook, tmp)
+    headline = os.path.join(tmp, "headline.png")
+    _t5k_headline_png(hook, headline)
     frame = os.path.join(tmp, "f.png")
     sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{bt + 1.5:.2f}", "-i", src, "-frames:v", "1",
        "-vf", f"scale={W}:{H},crop={W}:{y1 - y0}:0:{y0}", frame)
@@ -1056,11 +1103,13 @@ def restyle_t5k(src, hook, dst, prior=None, zoom=1.0, cover=None):
        "-framerate", str(T5_FPS), "-i", os.path.join(tmp, "h%03d.png"),
        "-loop", "1", "-framerate", str(T5_FPS), "-t", str(T5_CTA), "-i", cta,
        "-f", "lavfi", "-t", str(T5_CTA), "-i", "anullsrc=r=48000:cl=stereo",
+       "-loop", "1", "-framerate", str(T5_FPS), "-i", headline,
        "-filter_complex",
        f"[0:v]split[s1][s2];"
        f"[s1]trim={bt:.3f}:{bt + T5_HOOK:.3f},setpts=PTS-STARTPTS," + kevin.format("t") + "[kt];"
        f"[kt][1:v]overlay=0:0:eof_action=pass,format=yuv420p[tease];"
-       f"[s2]trim={head:.3f}:{end:.3f},setpts=PTS-STARTPTS," + kevin.format("b") + ",format=yuv420p[body];"
+       f"[s2]trim={head:.3f}:{end:.3f},setpts=PTS-STARTPTS," + kevin.format("b") + "[b0];"
+       f"[b0][4:v]overlay=0:0:shortest=1,format=yuv420p[body];"
        f"[2:v]scale={W}:{H},setsar=1,fps={T5_FPS},format=yuv420p,fade=t=in:st=0:d=0.35,"
        f"zoompan=z='1+0.0006*on':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps={T5_FPS}[c];"
        f"[0:a]asplit[x1][x2];"

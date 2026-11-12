@@ -4989,7 +4989,10 @@
    "bytes": 13379424,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-15T15:44",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_SUCCESS25/01_deservemoney_41s.mp4",
@@ -4997,7 +5000,10 @@
    "bytes": 13551359,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-16T06:23",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_WEALTH12/01_thinkbiggermansion_40s.mp4",
@@ -5005,7 +5011,10 @@
    "bytes": 14269485,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-15T18:43",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

@@ -4628,8 +4628,14 @@
    "file": "KT_LUCK5/01_berightonce_37s.mp4",
    "caption": "You don't have to be right most of the time.\n\nKevin Trudeau explains that building wealth doesn't mean being right a hundred percent of the time. Some people assume 51% is the bar. His answer is no. All you have to do is be right once.\n\nHe says luck works the same way. You only need to tilt things in your favor a little. That inch, that centimeter, can make the difference.\n\nWhat would you try if you only had to be right once?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #luck #mindset",
    "bytes": 13659460,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-12T09:29",
    "cta_keyword": "GOALS",
@@ -4641,7 +4647,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_LUCK5--01_berightonce_37s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1851740475956103/",
+    "instagram": "https://www.instagram.com/reel/DfpRrF4HPKn/",
+    "youtube": "https://youtube.com/shorts/lyx0jSwgeDk"
+   },
+   "caption_at_post": "You don't have to be right most of the time.\n\nKevin Trudeau explains that building wealth doesn't mean being right a hundred percent of the time. Some people assume 51% is the bar. His answer is no. All you have to do is be right once.\n\nHe says luck works the same way. You only need to tilt things in your favor a little. That inch, that centimeter, can make the difference.\n\nWhat would you try if you only had to be right once?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #luck #mindset",
+   "posted_at": "2026-11-12T09:33"
   },
   {
    "file": "KT_MONEY3/01_harderslower_42s.mp4",

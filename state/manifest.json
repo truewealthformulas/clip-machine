@@ -4536,7 +4536,13 @@
    "caption": "Comfort rarely makes anyone change. Pain often does.\n\nKevin Trudeau says you have to have adversity to grow. Unless something in your life is something you can't take anymore, you won't change.\n\nHe explains it has to become a must, a have-to, a need. That is the driver that pushes you to find what was off your radar screen.\n\nWhat is the thing you can no longer put up with?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
    "bytes": 14431869,
    "done": false,
-   "status": {},
+   "status": {
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube limited to 3 a day",
+    "facebook": "held - Facebook limited to 3 a day"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-11T21:32",
    "cta_keyword": "GOALS",
@@ -4548,7 +4554,13 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_ADVERSITY7--01_painisdriver_44s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/Dfn_iH9FdSE/"
+   },
+   "caption_at_post": "Comfort rarely makes anyone change. Pain often does.\n\nKevin Trudeau says you have to have adversity to grow. Unless something in your life is something you can't take anymore, you won't change.\n\nHe explains it has to become a must, a have-to, a need. That is the driver that pushes you to find what was off your radar screen.\n\nWhat is the thing you can no longer put up with?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
+   "posted_at": "2026-11-11T21:35"
   },
   {
    "file": "KT_ADVERSITY8/01_mountainwisdom_57s.mp4",
@@ -4576,7 +4588,7 @@
    "done": false,
    "status": {},
    "cta_kind": "question",
-   "scheduled_at": "2026-11-11T21:32",
+   "scheduled_at": "2026-11-11T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "recut_v": 2,

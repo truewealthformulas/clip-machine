@@ -448,10 +448,43 @@ CLUB_WHERE = {"instagram": "link in my bio \u2b06\ufe0f", "facebook": "link in m
               "youtube": "link in the channel \u2b06\ufe0f"}   # owner 8 Nov
 
 
+# THE OFFER IS KEVIN'S YOUTUBE NOW (12 Nov 2026, the owner: "now we are
+# promoting Kevin Trudeau YouTube channel with the full video"). The bio links go
+# to tv.kevintrudeau.com, the end card says "Watch it free on YouTube", so every
+# caption line that still sold the free audio is swapped for the full-video line
+# and every old freeyourwish link for the new one. KT_WATCH=0 turns it off.
+WATCH_URL = os.environ.get("KT_WATCH_URL", "https://tv.kevintrudeau.com/?ref=ftad8p")
+WATCH_LINE = {
+    "instagram": "\U0001F3AC Watch the full video free on Kevin\u2019s YouTube \u2192 link in my bio \u2b06\ufe0f",
+    "facebook": "\U0001F3AC Watch the full video free on Kevin\u2019s YouTube \u2192 link in my bio \u2b06\ufe0f",
+    "tiktok": "\U0001F3AC Want the full video? DM \u201cclub\u201d and I\u2019ll send you the link",
+    "youtube": "\U0001F3AC Watch the full video free on Kevin\u2019s YouTube: " + WATCH_URL,
+}
+
+
+def _watch(platform, out):
+    if os.environ.get("KT_WATCH", "1") != "1":
+        return out
+    new = WATCH_LINE.get(platform, WATCH_LINE["instagram"])
+    lines, done = [], False
+    for ln in out.split("\n"):
+        low = ln.lower()
+        if ("your wish is your command" in low or "audio training" in low or "free audio" in low
+                or "freeyourwish." in low or low.strip().startswith("get access here")):
+            if not done:
+                lines.append(new)
+                done = True
+            continue
+        lines.append(ln)
+    out = re.sub(r"https?://freeyourwish\.\S+", WATCH_URL, "\n".join(lines))
+    return re.sub(r"\n{3,}", "\n\n", out)
+
+
 def with_club(platform, out, brand=""):
     if (not out or os.environ.get("KT_CLUB", "1") != "1"
             or cred_prefix(brand) not in FALLBACK_BRANDS):
         return out
+    out = _watch(platform, out)
     line = CLUB_LINE.format(where=CLUB_WHERE.get(platform, "link in my bio"))
     if line in out:
         return out

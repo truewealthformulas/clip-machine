@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4661,10 +4661,11 @@
    "file": "KT_MONEY3/01_harderslower_42s.mp4",
    "caption": "Why knowing exactly what you want makes everything easier.\n\nKevin Trudeau says he does hundreds of one-on-one calls, and only a handful of people can state what they want the same way every time. He says it should be as instant as your name, your phone number or your address.\n\nHe says that without that clarity, reaching big goals doesn't become impossible. It just becomes harder and slower.\n\nCould you say what you want in one instant sentence?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
    "bytes": 14897318,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -4681,14 +4682,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfpCziqmdGA/"
+    "instagram": "https://www.instagram.com/reel/DfpCziqmdGA/",
+    "facebook": "https://facebook.com/reel/1162056609615579/",
+    "youtube": "https://youtube.com/shorts/A2y8QgG4-vQ"
    },
    "caption_at_post": "Why knowing exactly what you want makes everything easier.\n\nKevin Trudeau says he does hundreds of one-on-one calls, and only a handful of people can state what they want the same way every time. He says it should be as instant as your name, your phone number or your address.\n\nHe says that without that clarity, reaching big goals doesn't become impossible. It just becomes harder and slower.\n\nCould you say what you want in one instant sentence?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
-   "posted_at": "2026-11-12T07:23",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-12T12:09",
    "agent_retried": [
     "facebook",
     "youtube"

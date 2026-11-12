@@ -4710,7 +4710,12 @@
    "caption": "Locked in solitary confinement, he said thank you.\n\nKevin Trudeau describes his nightly ritual in prison. He gave thanks for his mind, his health, the people who love him, the ability to love others freely, and blessings he did not even know about yet.\n\nHe ended each night with the words: I love my life. He says doing this helps you release and let go.\n\nWhat could you be thankful for tonight, even on a hard day?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #happiness #mindset",
    "bytes": 10530282,
    "done": false,
-   "status": {},
+   "status": {
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube limited to 3 a day",
+    "facebook": "held - Facebook limited to 3 a day",
+    "instagram": "held - Instagram limited to 5 a day while under review"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-12T16:11",
    "cta_keyword": "GOALS",
@@ -4721,7 +4726,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_LETTINGGO2--01_solitarythanks_49s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {},
+   "posted_at": "2026-11-12T16:24"
   },
   {
    "file": "KT_MANUFACTURING2/01_parksbathrooms_35s.mp4",

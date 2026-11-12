@@ -4736,7 +4736,12 @@
    "caption": "Want to know how a country is really doing? Check the park.\n\nKevin says to look at the grass, the swings and the public bathrooms. In wealthy countries, he says, they are pristine. At home he finds rusted swing sets and bathrooms that are disgusting.\n\nHis point is that these everyday places show the quality of life and standard of living of a country's people.\n\nWhat does the nearest park say about where you live?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 10158330,
    "done": false,
-   "status": {},
+   "status": {
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "youtube": "held - Youtube limited to 3 a day",
+    "facebook": "held - Facebook limited to 3 a day",
+    "instagram": "held - Instagram limited to 5 a day while under review"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-12T18:37",
    "cta_keyword": "GOALS",
@@ -4747,7 +4752,10 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MANUFACTURING2--01_parksbathrooms_35s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {},
+   "posted_at": "2026-11-12T18:44"
   },
   {
    "file": "KT_MEDITATION2/01_leafhabit_44s.mp4",

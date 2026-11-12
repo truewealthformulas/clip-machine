@@ -1,0 +1,18 @@
+{
+ "source": "v700gbc.mp4",
+ "brand": "KT_BUSINESS3",
+ "test": false,
+ "clips": [
+  {
+   "slug": "poorernow",
+   "in": 2206.0,
+   "out": 2237.9,
+   "hook": [
+    "The Money Truth",
+    "Nobody Admits"
+   ],
+   "caption": "Your grandparents' generation may have lived better than you.\n\nKevin Trudeau says that around the world the standard of living is lower than in the '50s and '60s. Back then, over 60% of homes bought were brand new, and people bought new cars. Today most people buy used.\n\nHe calls it a fact few people want to admit.\n\nDo you think life got easier or harder to afford?\n\n#ad #money #wealth #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4535,10 +4535,11 @@
    "file": "KT_ADVERSITY7/01_painisdriver_44s.mp4",
    "caption": "Comfort rarely makes anyone change. Pain often does.\n\nKevin Trudeau says you have to have adversity to grow. Unless something in your life is something you can't take anymore, you won't change.\n\nHe explains it has to become a must, a have-to, a need. That is the driver that pushes you to find what was off your radar screen.\n\nWhat is the thing you can no longer put up with?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
    "bytes": 14431869,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4555,14 +4556,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfn_iH9FdSE/"
+    "instagram": "https://www.instagram.com/reel/Dfn_iH9FdSE/",
+    "facebook": "https://facebook.com/reel/1919083539461485/",
+    "youtube": "https://youtube.com/shorts/vEDsMa0Vnpw"
    },
    "caption_at_post": "Comfort rarely makes anyone change. Pain often does.\n\nKevin Trudeau says you have to have adversity to grow. Unless something in your life is something you can't take anymore, you won't change.\n\nHe explains it has to become a must, a have-to, a need. That is the driver that pushes you to find what was off your radar screen.\n\nWhat is the thing you can no longer put up with?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset",
-   "posted_at": "2026-11-11T21:35",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-12T02:57",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -4596,7 +4595,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-11T22:20",
+   "scheduled_at": "2026-11-12T03:42",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "recut_v": 2,

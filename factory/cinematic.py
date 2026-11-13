@@ -33,7 +33,12 @@ import restyle as R  # noqa: E402
 MAN = os.path.join(ROOT, "state", "manifest.json")
 K = os.path.expanduser("~/ClipMachine")
 REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
-CINE_V = 1
+# REAL VIDEO FOOTAGE (13 Nov 2026, the owner: "ok lets do it!"). With a free
+# Pexels key in the PEXELS_API_KEY secret, the cutaways are real video clips
+# found for each theme; without it, the 36 still photos. Adding the key bumps the
+# version, so the queue is cut again with video on the next run.
+PEXELS = os.environ.get("PEXELS_API_KEY", "").strip()
+CINE_V = 2 if PEXELS else 1
 OUT = "/tmp/cine_out"
 BROLL_DIR = "/tmp/broll"
 W, H, FPS = 1080, 1920, 30
@@ -59,6 +64,22 @@ THEMES = [
     ("car", r"drive|driving|car|ferrari|luxury|lifestyle"),
 ]
 FALLBACK = ["sunrise", "road", "summit", "ocean", "city"]
+# What to search Pexels for, per theme (several, so clips do not repeat).
+QUERIES = {
+    "money": ["counting money", "cash dollars", "wealth luxury", "business success money"],
+    "gold": ["gold bars", "golden light", "treasure gold"],
+    "wallst": ["stock market screen", "business meeting", "city business district", "handshake deal"],
+    "city": ["city night timelapse", "busy office people", "phone call business", "busy street people"],
+    "chess": ["chess game", "man thinking", "focus work desk", "strategy planning"],
+    "library": ["writing notebook", "reading book", "library books", "student studying"],
+    "summit": ["mountain summit hiker", "climbing mountain", "man on mountain top", "finish line"],
+    "sunrise": ["sunrise timelapse", "morning light", "new day sunrise", "dawn sky"],
+    "road": ["road trip drone", "walking path", "running road", "highway sunset"],
+    "jet": ["private jet", "airplane flying", "travel freedom"],
+    "ocean": ["ocean waves calm", "peaceful nature", "meditation sunrise", "forest light"],
+    "car": ["luxury car driving", "sports car", "driving car road"],
+}
+PEX_DIR = "/tmp/pexels"
 STOP = set("the a an and or but of to in on at for with from into that this these those it its is are was "
            "were be been being i you he she we they them his her our your their my me us do does did "
            "dont don't not no so if then than just very really there here what when where who why how "
@@ -133,12 +154,68 @@ def photos():
     return out
 
 
+def _http_json(url):
+    import urllib.request
+    req = urllib.request.Request(url, headers={"Authorization": PEXELS, "User-Agent": "clip-machine"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode())
+
+
+def pexels_videos(theme):
+    """[(id, duration, link)] landscape HD clips for a theme, cached per runner."""
+    if not PEXELS:
+        return []
+    os.makedirs(PEX_DIR, exist_ok=True)
+    cache = os.path.join(PEX_DIR, f"q_{theme}.json")
+    if os.path.exists(cache):
+        return json.load(open(cache))
+    out = []
+    from urllib.parse import quote
+    for q in QUERIES.get(theme, [theme]):
+        try:
+            d = _http_json("https://api.pexels.com/videos/search?query=" + quote(q)
+                           + "&orientation=landscape&size=medium&per_page=12")
+        except Exception as e:
+            print(f"  pexels '{q}': {type(e).__name__}")
+            continue
+        for v in d.get("videos", []):
+            files = [f for f in v.get("video_files", [])
+                     if (f.get("width") or 0) >= 1280 and (f.get("width") or 0) <= 1920
+                     and (f.get("width") or 0) > (f.get("height") or 0) and f.get("link")]
+            if not files or (v.get("duration") or 0) < 5:
+                continue
+            f = max(files, key=lambda x: x["width"])
+            out.append((v["id"], v["duration"], f["link"]))
+    json.dump(out, open(cache, "w"))
+    return out
+
+
+def pexels_file(vid, link):
+    p = os.path.join(PEX_DIR, f"v_{vid}.mp4")
+    if not os.path.exists(p):
+        import urllib.request
+        req = urllib.request.Request(link, headers={"User-Agent": "clip-machine"})
+        with urllib.request.urlopen(req, timeout=120) as r, open(p + ".part", "wb") as fh:
+            shutil.copyfileobj(r, fh)
+        os.replace(p + ".part", p)
+    return p
+
+
 def plan(phrases, body, seed):
     """[(a, b, kind, photo)] covering 0..body. kind 'K' (Kevin) or 'B' (footage)."""
     lib = photos()
     used, cuts = set(), []
 
     def pick(theme):
+        vids = [v for v in pexels_videos(theme) if ("v", v[0]) not in used]
+        if vids:
+            v = vids[int(hashlib.md5((seed + theme).encode()).hexdigest(), 16) % len(vids)]
+            try:
+                p = pexels_file(v[0], v[2])
+                used.add(("v", v[0]))
+                return p
+            except Exception as e:
+                print(f"  pexels download {v[0]}: {type(e).__name__}")
         cands = lib.get(theme) or []
         cands = [p for p in cands if p not in used] or cands
         if not cands:
@@ -289,6 +366,22 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
             sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{t_in + a:.3f}", "-t", f"{d:.3f}", "-i", src,
                "-an", "-vf", strip_filter(), "-frames:v", str(n),
                "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out)
+        elif ph.endswith(".mp4"):
+            # a real video cutaway: a stretch from its middle, graded like the photos
+            try:
+                vd = dur(ph)
+            except Exception:
+                vd = d + 1
+            off = max(0.0, min(vd * 0.3, vd - d - 0.2))
+            sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{off:.2f}", "-t", f"{d:.3f}", "-i", ph, "-an",
+               "-vf", strip_filter().replace(",format=yuv420p", "")
+               + ",eq=contrast=1.06:saturation=0.9:brightness=-0.03,vignette=PI/5,format=yuv420p",
+               "-frames:v", str(n), "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out)
+            if dur(out) < d - 0.3:                     # clip shorter than asked: hold its last frame
+                sh("ffmpeg", "-loglevel", "error", "-y", "-i", out, "-vf",
+                   f"tpad=stop_mode=clone:stop_duration={d:.2f}", "-frames:v", str(n),
+                   "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", out + ".p.mp4")
+                os.replace(out + ".p.mp4", out)
         else:
             sh("ffmpeg", "-loglevel", "error", "-y", "-loop", "1", "-i", ph, "-vf",
                f"scale=2160:-2,crop=2160:1216,zoompan=z='1+0.10*on/{n}':x='iw/2-(iw/zoom/2)+40*on/{n}'"

@@ -38,7 +38,11 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
 # found for each theme; without it, the 36 still photos. Adding the key bumps the
 # version, so the queue is cut again with video on the next run.
 PEXELS = os.environ.get("PEXELS_API_KEY", "").strip()
-CINE_V = 2 if PEXELS else 1
+# 13 Nov 2026: Pexels paused new API keys the day we asked. MIXKIT instead: free
+# stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
+# lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
+MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
+CINE_V = 3
 OUT = "/tmp/cine_out"
 BROLL_DIR = "/tmp/broll"
 W, H, FPS = 1080, 1920, 30
@@ -190,6 +194,39 @@ def pexels_videos(theme):
     return out
 
 
+def mixkit_videos(theme):
+    """[(id, None, None)] for a theme from videos.txt."""
+    out = []
+    if os.path.exists(MIXKIT_LIST):
+        for ln in open(MIXKIT_LIST):
+            ps = ln.split()
+            if len(ps) >= 2 and not ln.startswith("#") and ps[0] == theme:
+                out.append(("mk" + ps[1], None, None))
+    return out
+
+
+def mixkit_file(mid):
+    """Download one Mixkit clip (largest size it has), cached per runner."""
+    n = mid[2:]
+    p = os.path.join(PEX_DIR, f"v_{mid}.mp4")
+    if os.path.exists(p):
+        return p
+    os.makedirs(PEX_DIR, exist_ok=True)
+    import urllib.request
+    for size in ("1080", "720", "360"):
+        url = f"https://assets.mixkit.co/videos/{n}/{n}-{size}.mp4"
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 clip-machine"})
+            with urllib.request.urlopen(req, timeout=120) as r, open(p + ".part", "wb") as fh:
+                shutil.copyfileobj(r, fh)
+            if os.path.getsize(p + ".part") > 50000:
+                os.replace(p + ".part", p)
+                return p
+        except Exception:
+            continue
+    raise RuntimeError(f"mixkit {n}: no downloadable size")
+
+
 def pexels_file(vid, link):
     p = os.path.join(PEX_DIR, f"v_{vid}.mp4")
     if not os.path.exists(p):
@@ -207,15 +244,17 @@ def plan(phrases, body, seed):
     used, cuts = set(), []
 
     def pick(theme):
-        vids = [v for v in pexels_videos(theme) if ("v", v[0]) not in used]
-        if vids:
-            v = vids[int(hashlib.md5((seed + theme).encode()).hexdigest(), 16) % len(vids)]
+        vids = [v for v in (pexels_videos(theme) or mixkit_videos(theme)) if ("v", v[0]) not in used]
+        start = int(hashlib.md5((seed + theme).encode()).hexdigest(), 16)
+        for k in range(min(3, len(vids))):          # a dead link falls through to the next clip
+            v = vids[(start + k) % len(vids)]
             try:
-                p = pexels_file(v[0], v[2])
+                p = mixkit_file(v[0]) if str(v[0]).startswith("mk") else pexels_file(v[0], v[2])
                 used.add(("v", v[0]))
                 return p
             except Exception as e:
-                print(f"  pexels download {v[0]}: {type(e).__name__}")
+                print(f"  video {v[0]}: {type(e).__name__}")
+                used.add(("v", v[0]))
         cands = lib.get(theme) or []
         cands = [p for p in cands if p not in used] or cands
         if not cands:

@@ -1199,6 +1199,7 @@ def main():
     idx, plan_brands = hooks_index()
     todo = [c for c in man.get("clips", [])
             if not c.get("done") and not c.get("posting")
+            and not c.get("cine_v")      # 13 Nov: a cinematic cut is finished in its own style
             and (c.get("style") != STYLE or (STYLE == "T5" and (c.get("t5_v") or 1) < T5_V))
             and not any("posted" in str(v) for v in (c.get("status") or {}).values())]
     tmp = tempfile.mkdtemp()

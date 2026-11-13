@@ -1,0 +1,105 @@
+# The cinematic cut (factory/cinematic.py). 13 Nov 2026, the owner after the
+# "not original" flag on Instagram: Kevin's voice throughout, matching footage
+# about half the time, words one by one, a cinema strip on black. One server per
+# clip, from the HD episode; the swap runs under the `post` lock so a clip is
+# never replaced while it is being published. Runs after every restyle (so new
+# factory clips follow) and every 6 hours as a safety net.
+name: cinematic
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Test ONE clip (BRAND/file.mp4): uploaded as CINETEST--..., the queue is not touched"
+        required: false
+        default: ""
+  workflow_run:
+    workflows: [restyle]
+    types: [completed]
+  schedule:
+    - cron: "45 */6 * * *"
+permissions:
+  contents: write
+  actions: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  GH_TOKEN: ${{ github.token }}
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.l.outputs.matrix }}
+      count: ${{ steps.l.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q numpy pillow
+      - id: l
+        env: { ONLY: "${{ inputs.only }}" }
+        run: |
+          if [ -n "$ONLY" ]; then
+            printf 'matrix=["%s"]\ncount=1\n' "$ONLY" >> "$GITHUB_OUTPUT"
+          else
+            python factory/cinematic.py list
+          fi
+
+  cut:
+    needs: list
+    if: needs.list.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        file: ${{ fromJSON(needs.list.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - name: Cut this clip cinematic from the HD episode
+        run: python factory/cinematic.py one "${{ matrix.file }}"
+      - name: Test copy (only)
+        if: ${{ inputs.only != '' && inputs.only != null }}
+        run: |
+          for f in /tmp/cine_out/CINE__*; do cp "$f" "/tmp/$(basename "$f" | sed 's/^CINE__/CINETEST--/')"; gh release upload media "/tmp/$(basename "$f" | sed 's/^CINE__/CINETEST--/')" -R "$GITHUB_REPOSITORY" --clobber; done
+      - id: n
+        run: echo "name=cine-$(echo '${{ matrix.file }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.n.outputs.name }}
+          path: /tmp/cine_out
+          retention-days: 7
+
+  swap:
+    needs: cut
+    if: ${{ always() && needs.cut.result != 'skipped' && (inputs.only == '' || inputs.only == null) }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: post
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q numpy pillow
+      - uses: actions/download-artifact@v4
+        with: { pattern: "cine-*", path: /tmp/cines }
+      - name: Swap in the cinematic cuts
+        run: python factory/cinematic.py commit /tmp/cines
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add state/manifest.json
+          git diff --staged --quiet && exit 0
+          git commit -q -m "cinematic: queued clips in the cinematic cut $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

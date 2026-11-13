@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5021,35 +5021,56 @@
   {
    "file": "KT_BUSINESS3/01_poorernow_32s.mp4",
    "caption": "Your grandparents' generation may have lived better than you.\n\nKevin Trudeau says that around the world the standard of living is lower than in the '50s and '60s. Back then, over 60% of homes bought were brand new, and people bought new cars. Today most people buy used.\n\nHe calls it a fact few people want to admit.\n\nDo you think life got easier or harder to afford?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
-   "bytes": 13379424,
+   "bytes": 11179256,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-15T15:44",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "t5_best": 20.0,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_BUSINESS3--01_poorernow_32s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS25/01_deservemoney_41s.mp4",
    "caption": "One old belief about an honest day's pay can shape how you see money.\n\nKevin Trudeau describes a belief many people inherit from their parents: an honest day's work earns an honest day's pay, and anything more is stealing.\n\nHe says that thinking is the difference between a broke mentality and a wealth mentality, and that the wealth mentality says no to it.\n\nWhich belief about earning did you grow up with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #mindset",
-   "bytes": 13551359,
+   "bytes": 12105822,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-16T06:23",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "t5_best": 29.5,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_SUCCESS25--01_deservemoney_41s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH12/01_thinkbiggermansion_40s.mp4",
    "caption": "You say you want a mansion. Kevin says that is not big enough.\n\nKevin Trudeau plays a game. Someone names what they want, a mansion, and he keeps answering that they are not thinking big enough. Then come a lake house, a boat and owning everything outright.\n\nEvery time someone answers, he says to think bigger. His point is that most people shrink their dreams long before they ever test them.\n\nHow big would your dream be if nobody was watching?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #goals",
-   "bytes": 14269485,
+   "bytes": 12758617,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-15T18:43",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "t5_best": 17.6,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WEALTH12--01_thinkbiggermansion_40s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

@@ -62,7 +62,13 @@ FALLBACK = ["sunrise", "road", "summit", "ocean", "city"]
 STOP = set("the a an and or but of to in on at for with from into that this these those it its is are was "
            "were be been being i you he she we they them his her our your their my me us do does did "
            "dont don't not no so if then than just very really there here what when where who why how "
-           "can could would should will shall have has had get got going gonna want".split())
+           "can could would should will shall have has had get got going gonna want about because "
+           "it's that's there's here's you're i'm we're they're what's let's isn't aren't wasn't "
+           "doesn't didn't can't won't wouldn't couldn't shouldn't i've you've we've i'll you'll "
+           "it'll i'd you'd he's she's thing things something anything everything someone "
+           "going really actually basically maybe little other another every always never "
+           "said says say tell told know knew think thought make made take took give gave "
+           "come came look looked like just only even still also".split())
 
 
 def sh(*a, **k):
@@ -104,9 +110,10 @@ def emphasis(words):
     best, score = None, 0
     for i, w in enumerate(words):
         c = _clean(w)
-        if not c or c in STOP or len(c) < 4:
+        th = theme_of(c)[0]
+        if not c or c in STOP or (len(c) < 5 and not th):
             continue
-        s = len(c) + (10 if theme_of(c)[0] else 0)
+        s = len(c) + (10 if th else 0)
         if s > score:
             best, score = i, s
     return best

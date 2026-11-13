@@ -4806,8 +4806,14 @@
    "file": "KT_PRIORITIES2/01_sixtasksrule_40s.mp4",
    "caption": "Write six things tonight. Tomorrow, do only the first one.\n\nKevin explains a simple daily method. List the six most important things for tomorrow in order of importance, then put the list in front of you at work and look only at the first item.\n\nNo interruptions, no phone calls, no mail. Stay on it until it is finished or there is nothing more you can do with it today. Only then move on to the next one.\n\nWhat would change if you gave one task your full focus tomorrow?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 9177096,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-13T07:06",
    "cta_keyword": "GOALS",
@@ -4818,7 +4824,15 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_PRIORITIES2--01_sixtasksrule_40s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1837172603950761/",
+    "instagram": "https://www.instagram.com/reel/Dfrmnt3gHQj/",
+    "youtube": "https://youtube.com/shorts/l2_Env2G8qY"
+   },
+   "caption_at_post": "Write six things tonight. Tomorrow, do only the first one.\n\nKevin explains a simple daily method. List the six most important things for tomorrow in order of importance, then put the list in front of you at work and look only at the first item.\n\nNo interruptions, no phone calls, no mail. Stay on it until it is finished or there is nothing more you can do with it today. Only then move on to the next one.\n\nWhat would change if you gave one task your full focus tomorrow?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "posted_at": "2026-11-13T07:15"
   },
   {
    "file": "KT_MINDSET31/01_spiritmoney_41s.mp4",

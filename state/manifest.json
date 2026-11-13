@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5115,35 +5115,56 @@
   {
    "file": "KT_ADVERSITY11/01_mountaingoldmine_54s.mp4",
    "caption": "Faced with a mountain, do you quit or fight? Kevin has a creed for it.\n\nKevin Trudeau reads Robert Schuller's Possibility Thinker's Creed. You climb over it, find a pass, tunnel underneath, or stay and turn the mountain into a goldmine.\n\nHe calls this the winner mindset. It is a way of thinking, not a talent you either have or don't. Napoleon Hill's line sits behind it: in every adversity are the seeds of a greater benefit.\n\nWhich would you try first: climb over, tunnel through, or go around?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 14826758,
+   "bytes": 13178963,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-16T10:14",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "t5_best": 46.5,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ADVERSITY11--01_mountaingoldmine_54s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_ATTITUDE3/01_mostfactsopinions_45s.mp4",
    "caption": "What if most of the facts holding you back are just opinions?\n\nKevin Trudeau says that when your attitude is right, what you think are facts today stop counting. Most of them were someone's opinion anyway.\n\nThe few that are real get replaced by new facts you cannot see yet, because they are off your radar screen.\n\nHis point is that the obstacles you are staring at can fall away once your attitude changes.\n\nWhich fact are you treating as untouchable?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 16616138,
+   "bytes": 15203144,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-16T16:16",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "t5_best": 37.3,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_ATTITUDE3--01_mostfactsopinions_45s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH13/01_whoyouknow_42s.mp4",
    "caption": "Would you trust a call that said: buy Amazon?\n\nKevin explains that it is not only what you know, it is who you know. An expert can point you to something early, like a little satellite dish.\n\nHe describes a call about Jeff Bezos, a man everyone thought was starting an online bookstore. The caller said it was really a technology company. Nobody understood it. It was called Amazon.\n\nThe point: people with real knowledge often see what the crowd misses.\n\nWho do you trust enough to listen to their advice?\n\n#ad #wealth #mindset #kevintrudeau",
-   "bytes": 11775160,
+   "bytes": 10177703,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-16T13:28",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "t5_best": 30.2,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WEALTH13--01_whoyouknow_42s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

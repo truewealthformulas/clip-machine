@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4571,10 +4571,11 @@
    "file": "KT_ADVERSITY8/01_mountainwisdom_57s.mp4",
    "caption": "Einstein didn't say he was smarter. He said he stayed longer.\n\nKevin Trudeau asks you to picture a mountain. Can you change it or not? If you can't, don't resist it. If you can, find the courage.\n\nHe shares Einstein's line: it's not that I'm so smart, it's that I stay with problems longer, working towards solutions.\n\nThat's keeping your eye on the dream, and embracing the challenge instead of fearing it.\n\nWhich problem could you stay with a little longer?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 15824909,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -4591,14 +4592,12 @@
    "cover_v": 4,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfpphrRmWm7/"
+    "instagram": "https://www.instagram.com/reel/DfpphrRmWm7/",
+    "facebook": "https://facebook.com/reel/1670633324754401/",
+    "youtube": "https://youtube.com/shorts/c2XIuY5hbx4"
    },
    "caption_at_post": "Einstein didn't say he was smarter. He said he stayed longer.\n\nKevin Trudeau asks you to picture a mountain. Can you change it or not? If you can't, don't resist it. If you can, find the courage.\n\nHe shares Einstein's line: it's not that I'm so smart, it's that I stay with problems longer, working towards solutions.\n\nThat's keeping your eye on the dream, and embracing the challenge instead of fearing it.\n\nWhich problem could you stay with a little longer?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "posted_at": "2026-11-12T13:01",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-12T20:38",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -4720,7 +4719,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-12T16:11",
+   "scheduled_at": "2026-11-12T21:23",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "t5_best": 26.5,
@@ -4753,7 +4752,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-12T18:37",
+   "scheduled_at": "2026-11-12T21:23",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "t5_best": 21.1,

@@ -5118,7 +5118,10 @@
    "bytes": 14826758,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-16T10:14",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ATTITUDE3/01_mostfactsopinions_45s.mp4",
@@ -5126,7 +5129,10 @@
    "bytes": 16616138,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-16T16:16",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_WEALTH13/01_whoyouknow_42s.mp4",
@@ -5134,7 +5140,10 @@
    "bytes": 11775160,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-16T13:28",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

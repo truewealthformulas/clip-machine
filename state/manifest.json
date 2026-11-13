@@ -4751,8 +4751,12 @@
    "file": "KT_MANUFACTURING2/01_parksbathrooms_35s.mp4",
    "caption": "Want to know how a country is really doing? Check the park.\n\nKevin says to look at the grass, the swings and the public bathrooms. In wealthy countries, he says, they are pristine. At home he finds rusted swing sets and bathrooms that are disgusting.\n\nHis point is that these everyday places show the quality of life and standard of living of a country's people.\n\nWhat does the nearest park say about where you live?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 10158330,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4767,18 +4771,18 @@
    "cover": "KT_MANUFACTURING2--01_parksbathrooms_35s__cover.jpg",
    "cover_v": 4,
    "posting": false,
-   "links": {},
-   "posted_at": "2026-11-12T18:44",
-   "retry_only": [
-    "youtube",
-    "facebook",
-    "instagram"
-   ],
+   "links": {
+    "facebook": "https://facebook.com/reel/28883065148028997/",
+    "instagram": "https://www.instagram.com/reel/DfqqmW8EZDn/",
+    "youtube": "https://youtube.com/shorts/3o6MdoDX5wA"
+   },
+   "posted_at": "2026-11-12T22:29",
    "agent_retried": [
     "facebook",
     "instagram",
     "youtube"
-   ]
+   ],
+   "caption_at_post": "Want to know how a country is really doing? Check the park.\n\nKevin says to look at the grass, the swings and the public bathrooms. In wealthy countries, he says, they are pristine. At home he finds rusted swing sets and bathrooms that are disgusting.\n\nHis point is that these everyday places show the quality of life and standard of living of a country's people.\n\nWhat does the nearest park say about where you live?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau"
   },
   {
    "file": "KT_MEDITATION2/01_leafhabit_44s.mp4",

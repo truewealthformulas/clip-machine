@@ -5310,7 +5310,10 @@
    "bytes": 17699657,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-17T10:37",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MEDITATION3/01_thoughtsok_39s.mp4",
@@ -5318,7 +5321,10 @@
    "bytes": 13574214,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-18T07:05",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_MONEY7/01_chinastarving_35s.mp4",
@@ -5326,7 +5332,10 @@
    "bytes": 10724785,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-17T13:27",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_PRIORITIES3/01_handwritingmind_42s.mp4",
@@ -5334,7 +5343,10 @@
    "bytes": 13094336,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-17T18:57",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_RELATIONSHIPS7/01_deepakmirror_57s.mp4",
@@ -5342,7 +5354,10 @@
    "bytes": 16280557,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-17T15:26",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   }
  ],
  "replan_v": 3

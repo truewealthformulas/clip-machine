@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4887,10 +4887,11 @@
    "file": "KT_CONTROL2/01_soundpattern_49s.mp4",
    "caption": "Sand on a metal plate can show you what sound looks like.\n\nKevin Trudeau describes a sound plate. You put sand on a square piece of metal with a speaker underneath. Turn on a frequency and the plate vibrates, and the sand forms a symmetrical pattern.\n\nChange the frequency and the pattern changes. Kevin says these patterns look like a mandala, and that every frequency creates its own image.\n\nIf sound can move sand, what do you think it does to you?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #energy #kevintrudeau",
    "bytes": 9863403,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -4907,14 +4908,12 @@
    "cine_v": 1,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfsjymyHLpX/"
+    "instagram": "https://www.instagram.com/reel/DfsjymyHLpX/",
+    "facebook": "https://facebook.com/reel/1669633264614723/",
+    "youtube": "https://youtube.com/shorts/g-WauAyUPHU"
    },
    "caption_at_post": "Sand on a metal plate can show you what sound looks like.\n\nKevin Trudeau describes a sound plate. You put sand on a square piece of metal with a speaker underneath. Turn on a frequency and the plate vibrates, and the sand forms a symmetrical pattern.\n\nChange the frequency and the pattern changes. Kevin says these patterns look like a mandala, and that every frequency creates its own image.\n\nIf sound can move sand, what do you think it does to you?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #energy #kevintrudeau",
-   "posted_at": "2026-11-13T16:10",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-13T20:06",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -4931,7 +4930,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-13T18:58",
+   "scheduled_at": "2026-11-13T20:51",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "t5_best": 8.2,

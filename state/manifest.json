@@ -5028,10 +5028,11 @@
    "file": "KT_MANIFESTING7/01_booksmissingingredients_38s.mp4",
    "caption": "Great success books can still leave out key ingredients.\n\nKevin Trudeau lists books he recommends: Think and Grow Rich, The Secret, Ask and It Is Given, The Magic of Believing and The Magic of Thinking Big.\n\nHis point is that even among the top best-sellers on success and manifesting, each one misses key ingredients. Those missing pieces, he says, are what very successful people actually do.\n\nHave you ever read a great book and still felt something was missing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #goals #kevintrudeau",
    "bytes": 9408090,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -5048,14 +5049,12 @@
    "cine_v": 3,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfuwodVjpwO/"
+    "instagram": "https://www.instagram.com/reel/DfuwodVjpwO/",
+    "facebook": "https://facebook.com/reel/2319129332243254/",
+    "youtube": "https://youtube.com/shorts/L4yaRXwtEb8"
    },
    "caption_at_post": "Great success books can still leave out key ingredients.\n\nKevin Trudeau lists books he recommends: Think and Grow Rich, The Secret, Ask and It Is Given, The Magic of Believing and The Magic of Thinking Big.\n\nHis point is that even among the top best-sellers on success and manifesting, each one misses key ingredients. Those missing pieces, he says, are what very successful people actually do.\n\nHave you ever read a great book and still felt something was missing?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #goals #kevintrudeau",
-   "posted_at": "2026-11-14T12:40",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-14T14:31",
    "agent_retried": [
     "facebook",
     "youtube"

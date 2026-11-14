@@ -49,9 +49,10 @@ MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
 CINE_V = 5
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
-STYLE = os.environ.get("CINE_STYLE", "auto").strip().lower()
+STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
+# The owner prefers the editorial ("HD") look for everything (14 Nov 2026).
 # "auto": the documentary look when Kevin is telling his own story (lots of
-# I / my / me), the editorial look otherwise. "editorial", "doc" force one.
+# I / my / me), the editorial look otherwise. "doc" forces the documentary one.
 
 
 def look_for(phrases):

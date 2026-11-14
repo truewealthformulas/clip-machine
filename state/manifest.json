@@ -4978,8 +4978,14 @@
    "file": "KT_READING3/01_seedphrase_33s.mp4",
    "caption": "Can one short sentence change how you think?\n\nKevin Trudeau shares simple phrases to chew on. Yesterday is history, tomorrow is a mystery, and today is a gift, which is why it's called the present.\n\nAnother: what you give your attention to will always grow.\n\nHe says one nugget contains it all, like a seed that holds the entire tree and all its fruit.\n\nWhat are you giving your attention to today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #goals #kevintrudeau",
    "bytes": 7342206,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-14T07:35",
    "cta_keyword": "GOALS",
@@ -4991,7 +4997,15 @@
    "style": "T5",
    "cover": "KT_READING3--01_seedphrase_33s__cover.jpg",
    "cover_v": 4,
-   "cine_v": 3
+   "cine_v": 3,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1790413072492614/",
+    "instagram": "https://www.instagram.com/reel/DfuOQxHEtNK/",
+    "youtube": "https://youtube.com/shorts/6qp-DSLypgY"
+   },
+   "caption_at_post": "Can one short sentence change how you think?\n\nKevin Trudeau shares simple phrases to chew on. Yesterday is history, tomorrow is a mystery, and today is a gift, which is why it's called the present.\n\nAnother: what you give your attention to will always grow.\n\nHe says one nugget contains it all, like a seed that holds the entire tree and all its fruit.\n\nWhat are you giving your attention to today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #goals #kevintrudeau",
+   "posted_at": "2026-11-14T07:39"
   },
   {
    "file": "KT_MANIFESTING7/01_booksmissingingredients_38s.mp4",

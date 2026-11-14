@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -4959,10 +4959,11 @@
    "file": "KT_ADVERSITY9/01_businessempire_31s.mp4",
    "caption": "He ran companies on several continents. Then he changed course.\n\nKevin Trudeau describes running in ten directions, with offices and staff all over the world.\n\nThen he reached the moment he knew it was time to follow his purpose and mission.\n\nA big enterprise is not the same as a life that points where you want to go.\n\nWhat would you do if you followed your own purpose?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #success #mindset",
    "bytes": 7709321,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -4979,14 +4980,12 @@
    "cine_v": 3,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfud78SiijK/"
+    "instagram": "https://www.instagram.com/reel/Dfud78SiijK/",
+    "facebook": "https://facebook.com/reel/1431840711951625/",
+    "youtube": "https://youtube.com/shorts/fQPuDtlcH_U"
    },
    "caption_at_post": "He ran companies on several continents. Then he changed course.\n\nKevin Trudeau describes running in ten directions, with offices and staff all over the world.\n\nThen he reached the moment he knew it was time to follow his purpose and mission.\n\nA big enterprise is not the same as a life that points where you want to go.\n\nWhat would you do if you followed your own purpose?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #success #mindset",
-   "posted_at": "2026-11-14T09:56",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-14T13:32",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -5036,7 +5035,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-14T12:36",
+   "scheduled_at": "2026-11-14T14:16",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "t5_best": 22.8,

@@ -853,6 +853,17 @@ def t5_cta_png(photo, out, kind=None):
         ct("KEVIN'S FULL TALKS & TRAINING", _t5_font(T5_SANS, 40, 700), 1060, (225, 225, 225))
         ct("Tap the link in my bio", _t5_font(T5_SANS, 54, 800), 1250, WHITE)
         ct("to watch now  \u2192", _t5_font(T5_SANS, 54, 800), 1325, WHITE)
+    elif kind == "youtube_es":
+        # 14 Nov 2026: the Spanish account. Same offer, in Spanish; the talks
+        # themselves are in English, so the card says so.
+        it = _t5_font(T5_SERIF, 116, 700)
+        ct("\u00bf Q U I E R E S   E L   V I D E O   C O M P L E T O ?", _t5_font(T5_SANS, 34, 700), 600, WHITE)
+        d.line((W / 2 - 120, 680, W / 2 + 120, 680), fill=T5_GOLD, width=3)
+        ct("M\u00edralo gratis", it, 730, T5_GOLD)
+        ct("en YouTube", it, 880, T5_GOLD)
+        ct("CHARLAS COMPLETAS DE KEVIN (EN INGL\u00c9S)", _t5_font(T5_SANS, 36, 700), 1060, (225, 225, 225))
+        ct("Toca el enlace en mi perfil", _t5_font(T5_SANS, 52, 800), 1250, WHITE)
+        ct("para verlo ahora  \u2192", _t5_font(T5_SANS, 52, 800), 1325, WHITE)
     elif kind == "gin":
         it = _t5_font(T5_SERIF, 112, 700)
         ct("J O I N   T H E   C L U B", _t5_font(T5_SANS, 44, 700), 600, WHITE)

@@ -38,11 +38,52 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "truewealthformulas/clip-machine")
 # found for each theme; without it, the 36 still photos. Adding the key bumps the
 # version, so the queue is cut again with video on the next run.
 PEXELS = os.environ.get("PEXELS_API_KEY", "").strip()
+# SPANISH (14 Nov 2026, the owner: a second account, "Éxito Diario"-style, in
+# Spanish). CINE_LANG=es: the footage is chosen from Kevin's English words as
+# always, but the words on screen, the title and the end card are Spanish.
+LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # 13 Nov 2026: Pexels paused new API keys the day we asked. MIXKIT instead: free
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 3
+CINE_V = 5
+# 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
+# (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
+STYLE = os.environ.get("CINE_STYLE", "auto").strip().lower()
+# "auto": the documentary look when Kevin is telling his own story (lots of
+# I / my / me), the editorial look otherwise. "editorial", "doc" force one.
+
+
+def look_for(phrases):
+    if STYLE in ("editorial", "doc", "classic"):
+        return STYLE
+    ws = [re.sub(r"[^a-z']", "", w.lower()) for _, _, t in phrases for w in t.split()]
+    ws = [w for w in ws if w]
+    first = sum(1 for w in ws if w in ("i", "i'm", "i've", "i'd", "i'll", "my", "me", "myself", "we", "our"))
+    return "doc" if ws and first / len(ws) >= 0.07 else "editorial"
+
+
+def music_bed(seconds, out, seed="x"):
+    """A quiet, generated documentary pad (no licence questions): a slow minor
+    chord that breathes, low-passed, with a little echo."""
+    h = int(hashlib.md5(seed.encode()).hexdigest(), 16)
+    roots = [110.0, 98.0, 87.31, 116.54]
+    r = roots[h % len(roots)]
+    ex = (f"0.16*sin(2*PI*{r}*t)*(0.6+0.4*sin(2*PI*0.07*t))"
+          f"+0.10*sin(2*PI*{r * 1.2:.3f}*t)*(0.6+0.4*sin(2*PI*0.05*t+1))"
+          f"+0.09*sin(2*PI*{r * 1.5:.3f}*t)*(0.6+0.4*sin(2*PI*0.09*t+2))"
+          f"+0.05*sin(2*PI*{r * 2:.3f}*t)*(0.5+0.5*sin(2*PI*0.11*t+3))")
+    sh("ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i",
+       f"aevalsrc={ex}:s=48000:d={seconds:.2f}",
+       "-af", "lowpass=f=900,aecho=0.8:0.7:120|260:0.25|0.15,afade=t=in:d=1.5,"
+       f"afade=t=out:st={max(0.0, seconds - 2):.2f}:d=2", "-ac", "2", out)
+    return out
+# NO TEASER (14 Nov 2026, the owner: "the first 3 seconds say something then they
+# start from another point of the conversation"). The opening used to be Kevin's
+# loudest 3 s lifted from later in the clip, then the clip from its start: the
+# viewer hears a line out of order. Now the clip simply plays from its start,
+# title on from frame one. CINE_TEASE=1 brings the old opening back.
+TEASE = os.environ.get("CINE_TEASE", "0") == "1"
 OUT = "/tmp/cine_out"
 BROLL_DIR = "/tmp/broll"
 W, H, FPS = 1080, 1920, 30
@@ -130,13 +171,47 @@ def theme_of(text):
     return None, None
 
 
+STOP_ES = set("el la los las un una unos unas y o pero de del a al en con por para que qu\u00e9 se su sus "
+              "es son fue era ser estar est\u00e1 est\u00e1n lo le les me te nos mi mis tu tus muy m\u00e1s menos "
+              "como c\u00f3mo cuando cu\u00e1ndo donde d\u00f3nde porque si s\u00ed no ya hay este esta esto ese esa eso "
+              "aqu\u00ed all\u00ed tambi\u00e9n solo s\u00f3lo cada todo todos toda todas nada algo alguien \u00e9l ella "
+              "ellos ellas usted ustedes yo t\u00fa nosotros entonces bueno tener tiene tengo hacer hace "
+              "decir dice dijo puede pueden poder sobre entre hasta desde muy bien".split())
+
+
+def translate_es(phrases, hook):
+    """Phrases (a, b, text) and the hook, in natural Spanish; same count, same timing."""
+    sys.path.insert(0, os.path.join(ROOT, "agents"))
+    import common as AC
+    texts = [t for _, _, t in phrases]
+    hook_txt = " / ".join(hook) if isinstance(hook, (list, tuple)) else str(hook)
+    sysmsg = ("You translate on-screen captions of a motivational talk into natural Latin American "
+              "Spanish. Keep each caption short, spoken and punchy; keep the meaning; never add "
+              "claims. Return JSON only.")
+    user = ("Translate each caption in order (same number of items). Also translate the title; "
+            "keep any word wrapped in *asterisks* wrapped in asterisks, and keep ' / ' line breaks.\n"
+            + json.dumps({"title": hook_txt, "captions": texts}, ensure_ascii=False)
+            + '\nReply: {"title": "...", "captions": ["...", ...]}')
+    out = AC.ask_json(sysmsg, user, max_tokens=4000)
+    caps = out.get("captions") or []
+    if len(caps) != len(texts):
+        raise RuntimeError(f"translation returned {len(caps)} captions for {len(texts)}")
+    title = [x.strip() for x in str(out.get("title") or hook_txt).split(" / ") if x.strip()]
+    return [(a, b, c) for (a, b, _), c in zip(phrases, caps)], title
+
+
 def emphasis(words):
     """Index of the word to set in gold script: a theme word, else the longest real word."""
     best, score = None, 0
     for i, w in enumerate(words):
         c = _clean(w)
         th = theme_of(c)[0]
-        if not c or c in STOP or (len(c) < 5 and not th):
+        if LANG == "es":
+            c = re.sub(r"[^a-z\u00e1\u00e9\u00ed\u00f3\u00fa\u00f1\u00fc']", "", w.lower())
+            th = None
+            if not c or c in STOP_ES or len(c) < 5:
+                continue
+        elif not c or c in STOP or (len(c) < 5 and not th):
             continue
         s = len(c) + (10 if th else 0)
         if s > score:
@@ -390,11 +465,18 @@ def strip_filter():
             f"setsar=1,fps={FPS},format=yuv420p")
 
 
+LAST_LOOK = ["classic"]
+
+
 def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
     """One cinematic clip from the HD episode. phrases are clip-relative (a, b, text)."""
     tmp = tempfile.mkdtemp()
     body = t_out - t_in
-    segs = plan(phrases, body, seed)
+    segs = plan(phrases, body, seed)          # footage is matched on Kevin's own (English) words
+    cta_kind = "youtube"
+    if LANG == "es":
+        phrases, hook = translate_es(phrases, hook)
+        cta_kind = "youtube_es"
     # 1. the strip: Kevin and footage, cut on the phrases
     parts = []
     for i, (a, b, kind, ph) in enumerate(segs):
@@ -436,18 +518,30 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
     title = title_png(hook, os.path.join(tmp, "title.png"))
     tdir = os.path.join(tmp, "tx")
     os.makedirs(tdir)
-    caps = caption_frames(phrases, body, tdir, title)
+    look = look_for(phrases)
+    LAST_LOOK[0] = look
+    if look in ("editorial", "doc"):
+        import editorial as ED
+        ed = os.path.join(tmp, "strip_ed.mp4")
+        ED.apply(strip, ed, [(max(0.0, a), min(b, body), t) for a, b, t in phrases if b > 0 and a < body],
+                 segs, body, emphasis, BW, BH, FPS, mode=look, hook=hook)
+        strip = ed
+        title = os.path.join(tmp, "blank.png")
+        Image.new("RGBA", (W, H), (0, 0, 0, 0)).save(title)
+        caps = caption_frames([], body, tdir, title)
+    else:
+        caps = caption_frames(phrases, body, tdir, title)
     # 3. the opening: Kevin's strongest 3 s, title above
     ca = os.path.join(tmp, "a.wav")
     sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{t_in:.3f}", "-t", f"{body:.3f}", "-i", src,
        "-vn", "-ac", "1", "-ar", "8000", ca)
-    bw = t_in + R.best_window(ca, 0.0, max(R.T5_HOOK + 0.1, body - 2.5))
+    bw = t_in + (R.best_window(ca, 0.0, max(R.T5_HOOK + 0.1, body - 2.5)) if TEASE else 0.0)
     bw = min(max(bw, t_in), t_out - R.T5_HOOK)
     # 4. the end card
     still = os.path.join(tmp, "still.png")
     sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{t_in + body / 2:.2f}", "-i", src, "-frames:v", "1", still)
     cta = os.path.join(tmp, "cta.png")
-    R.t5_cta_png(still, cta, "youtube")
+    R.t5_cta_png(still, cta, cta_kind)
     fo = min(0.6, body * 0.1)
     hk = R.T5_HOOK
     fc = (
@@ -465,6 +559,10 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
         f"[3:v]scale={W}:{H},setsar=1,fps={FPS},format=yuv420p,fade=t=in:st=0:d=0.35[cv];"
         f"[4:a]aformat=sample_fmts=fltp:channel_layouts=stereo[ca];"
         f"[hv][ha][bv][ba][cv][ca]concat=n=3:v=1:a=1[v][a]")
+    if not TEASE:                                    # straight from the start, no lifted opening
+        fc = fc.split(f"color=c=black:s={W}x{H}:r={FPS}:d={body:.3f}[bg1];", 1)[1]
+        fc = f"color=c=black:s={W}x{H}:r={FPS}:d={body:.3f}[bg1];" + fc
+        fc = fc.replace("[hv][ha][bv][ba][cv][ca]concat=n=3", "[bv][ba][cv][ca]concat=n=2")
     sh("ffmpeg", "-loglevel", "error", "-y",
        "-ss", f"{t_in:.3f}", "-t", f"{body:.3f}", "-i", src,
        "-i", strip,
@@ -475,8 +573,16 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
        "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
        "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "9000k", "-bufsize", "18000k",
        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", dst)
+    if LAST_LOOK[0] == "doc":                 # the documentary music bed under Kevin's voice
+        bed = music_bed(dur(dst), os.path.join(tmp, "bed.wav"), seed=str(seed))
+        mixed = dst + ".m.mp4"
+        sh("ffmpeg", "-loglevel", "error", "-y", "-i", dst, "-i", bed, "-filter_complex",
+           "[1:a]volume=0.22[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]",
+           "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+           "-movflags", "+faststart", mixed)
+        os.replace(mixed, dst)
     if cover:
-        sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{hk - 0.4:.2f}", "-i", dst,
+        sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{(hk - 0.4) if TEASE else 1.2:.2f}", "-i", dst,
            "-frames:v", "1", "-q:v", "2", cover)
     shutil.rmtree(tmp, ignore_errors=True)
     return segs

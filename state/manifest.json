@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5319,57 +5319,92 @@
   {
    "file": "KT_LETTINGGO3/01_carryingluggage_49s.mp4",
    "caption": "How much old baggage are you carrying around?\n\nKevin Trudeau asks you to picture every hurt you've collected: names you were called as a kid, a breakup, a business betrayal, a colleague who lied about you, even guilt over something you did.\n\nEach one goes into the bag. He says it all weighs you down and stops you from going forward.\n\nWhich piece of luggage would you set down first?\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 17699657,
+   "bytes": 14932981,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-17T10:37",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "t5_best": 42.6,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_LETTINGGO3--01_carryingluggage_49s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_MEDITATION3/01_thoughtsok_39s.mp4",
    "caption": "Noticing your thoughts is part of the practice.\n\nKevin Trudeau says that when you realize you are thinking, you should not criticize yourself, judge, or get frustrated. He says you should have no emotion about it, and that this moment is meditation.\n\nThe thoughts will come up, and being aware of them is part of the process itself.\n\nHow do you usually react when your mind wanders?\n\n#ad #mindset #habits #happiness",
-   "bytes": 13574214,
+   "bytes": 11385721,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-18T07:05",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "t5_best": 16.0,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_MEDITATION3--01_thoughtsok_39s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_MONEY7/01_chinastarving_35s.mp4",
    "caption": "Eat everything on your plate, there are starving people in China.\n\nKevin remembers hearing that growing up. He says China had no manufacturing in 1970, almost no infrastructure, and many people were starving.\n\nHis point is simple: the wealth China has today came from one thing, manufacturing.\n\nWhat did you grow up believing about money that turned out to be wrong?\n\n#ad #money #success #kevintrudeau",
-   "bytes": 10724785,
+   "bytes": 9933208,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-17T13:27",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "t5_best": 28.5,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_MONEY7--01_chinastarving_35s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_PRIORITIES3/01_handwritingmind_42s.mp4",
    "caption": "You typed it into your phone. That may be why you forgot it.\n\nKevin Trudeau says research shows typing on a keyboard activates only about nine neural pathways. Printing activates around 37, and cursive activates hundreds.\n\nSo when you write a to-do by hand, your brain is far more engaged. You don't forget it, and your subconscious keeps working on it.\n\nWhat do you still write by hand, and what do you only type?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mind #habits #kevintrudeau",
-   "bytes": 13094336,
+   "bytes": 11585323,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-17T18:57",
    "cta_keyword": "GOALS",
-   "cta_variant": 3
+   "cta_variant": 3,
+   "t5_best": 24.7,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_PRIORITIES3--01_handwritingmind_42s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_RELATIONSHIPS7/01_deepakmirror_57s.mp4",
    "caption": "His son made a harsh film about him. His reply was perfect.\n\nKevin explains how a reporter asked Deepak Chopra about a scathing documentary his son made. Deepak said his son didn't make a film about him. He made a film about himself.\n\nKevin's point: what you see in others is often what is in you. He describes authors who write about love and label every ex, never noticing that three fingers are pointing back at themselves.\n\nWhat do you keep pointing at in other people?\n\n#ad #mindset #relationships #kevintrudeau",
-   "bytes": 16280557,
+   "bytes": 13307390,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-17T15:26",
    "cta_keyword": "GOALS",
-   "cta_variant": 2
+   "cta_variant": 2,
+   "t5_best": 45.6,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_RELATIONSHIPS7--01_deepakmirror_57s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

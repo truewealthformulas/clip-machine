@@ -5492,7 +5492,10 @@
    "bytes": 8523139,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-18T09:26",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MEMORY3/01_businessmemory_44s.mp4",
@@ -5500,7 +5503,10 @@
    "bytes": 15913642,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-18T16:23",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_MINDSET36/01_fillglass_47s.mp4",
@@ -5508,7 +5514,10 @@
    "bytes": 15563476,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-18T12:33",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

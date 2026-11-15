@@ -291,25 +291,47 @@ def mixkit_videos(theme):
     return out
 
 
+_MK_BAD = set()
+
+
+def _fetch(url, dst, deadline_s=40):
+    """Download with a WHOLE-FILE deadline. 15 Nov 2026: four cuts hung 50+
+    minutes - urlopen's timeout is per socket read, so a server trickling bytes
+    never trips it. Now a download that is not done in deadline_s is dropped."""
+    import time
+    import urllib.request
+    t0 = time.time()
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 clip-machine"})
+    with urllib.request.urlopen(req, timeout=15) as r, open(dst, "wb") as fh:
+        while True:
+            b = r.read(1 << 16)
+            if not b:
+                break
+            fh.write(b)
+            if time.time() - t0 > deadline_s:
+                raise TimeoutError(f"download over {deadline_s}s")
+
+
 def mixkit_file(mid):
     """Download one Mixkit clip (largest size it has), cached per runner."""
     n = mid[2:]
     p = os.path.join(PEX_DIR, f"v_{mid}.mp4")
     if os.path.exists(p):
         return p
+    if mid in _MK_BAD:
+        raise RuntimeError(f"mixkit {n}: failed earlier in this run")
     os.makedirs(PEX_DIR, exist_ok=True)
     import urllib.request
     for size in ("1080", "720", "360"):
         url = f"https://assets.mixkit.co/videos/{n}/{n}-{size}.mp4"
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 clip-machine"})
-            with urllib.request.urlopen(req, timeout=120) as r, open(p + ".part", "wb") as fh:
-                shutil.copyfileobj(r, fh)
+            _fetch(url, p + ".part")
             if os.path.getsize(p + ".part") > 50000:
                 os.replace(p + ".part", p)
                 return p
         except Exception:
             continue
+    _MK_BAD.add(mid)
     raise RuntimeError(f"mixkit {n}: no downloadable size")
 
 

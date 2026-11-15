@@ -1311,6 +1311,7 @@ def main():
     # COVERS for clips styled before covers existed (queued, style T, no cover).
     for c in man.get("clips", []):
         if (c.get("done") or c.get("posting") or c.get("cover_v") == COVER_V or c.get("style") != STYLE
+                or c.get("cine_v")        # cinematic clips carry their own cover (15 Nov: no navy band)
                 or not STYLE.startswith("T")
                 or any("posted" in str(v) for v in (c.get("status") or {}).values())):
             continue

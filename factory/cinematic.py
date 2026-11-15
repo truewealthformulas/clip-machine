@@ -46,7 +46,7 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 5
+CINE_V = 7   # 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
 STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
@@ -583,8 +583,23 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
            "-movflags", "+faststart", mixed)
         os.replace(mixed, dst)
     if cover:
-        sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{(hk - 0.4) if TEASE else 1.2:.2f}", "-i", dst,
-           "-frames:v", "1", "-q:v", "2", cover)
+        made = False
+        if LAST_LOOK[0] in ("editorial", "doc"):
+            # 15 Nov 2026: full-bleed covers, no navy band (editorial.make_cover)
+            try:
+                import editorial as ED
+                ks = [(a, b) for a, b, k, _ in segs if k == "K" and b - a > 1.0]
+                a, b = (ks[len(ks) // 2] if ks else (1.0, 2.0))
+                kinds = [k for k in os.environ.get("CINE_COVERS", "headline").split(",") if k]
+                kind = kinds[int(hashlib.md5(str(seed).encode()).hexdigest(), 16) % len(kinds)]
+                ED.make_cover(src, t_in + (a + b) / 2, hook, cover, kind=kind, emphasis=emphasis)
+                made = True
+                print(f"  cover: {kind}", flush=True)
+            except Exception as e:
+                print(f"  cover: designed cover failed ({type(e).__name__}: {e}); using a frame", flush=True)
+        if not made:
+            sh("ffmpeg", "-loglevel", "error", "-y", "-ss", f"{(hk - 0.4) if TEASE else 1.2:.2f}", "-i", dst,
+               "-frames:v", "1", "-q:v", "2", cover)
     shutil.rmtree(tmp, ignore_errors=True)
     return segs
 
@@ -617,6 +632,50 @@ def cmd_list():
         fh.write(f"matrix={json.dumps(files)}\ncount={len(files)}\n")
 
 
+MAX_LEN = float(os.environ.get("CINE_MAX_LEN", "90"))
+
+
+def finish_thought(srt, t_in, t_out):
+    """FINISH THE STORY (14 Nov 2026, the owner: "Why cut it? Finish the last
+    story in the clip"). The friends-and-money clip ended on "When I was..." -
+    Kevin starting a story the clip never told. Read the episode transcript
+    around the cut and move the end to where the sentence or story that is
+    running at the cut actually concludes (the clip stays under MAX_LEN).
+    Claude decides where the story ends; without it, at least the sentence is
+    finished."""
+    import kt_render
+    cues = [c for c in kt_render.burn.parse_srt(srt) if c[1] > t_out - 20 and c[0] < t_out + 70]
+    limit = min(t_in + MAX_LEN - R.T5_CTA, t_out + 60)
+    after = [c for c in cues if c[0] >= t_out - 0.5 and c[1] <= limit]
+    if not after:
+        return t_out
+    new = t_out
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "agents"))
+        import common as AC
+        lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(cues) if b <= limit)
+        out = AC.ask_json(
+            "You edit short video clips of a speaker. A clip must never end in the middle of a "
+            "sentence or in the middle of a story. Return JSON only.",
+            f"The clip currently ends at {t_out:.1f}s. Transcript lines around that point:\n{lines}\n\n"
+            "If a sentence, point or story is still unfinished at the cut, give the index of the line "
+            "where it naturally concludes (the punchline or lesson of the story included). If the clip "
+            "already ends cleanly, give the index of the line ending at or just before the cut. "
+            'Reply: {"end_index": N, "why": "..."}', max_tokens=600)
+        i = int(out.get("end_index"))
+        if 0 <= i < len(cues) and cues[i][1] <= limit:
+            new = max(t_out, cues[i][1] + 0.35)
+            print(f"  end: {t_out:.1f}s -> {new:.1f}s ({str(out.get('why'))[:100]})", flush=True)
+            return new
+    except Exception as e:
+        print(f"  end check by Claude unavailable ({type(e).__name__}: {e}); finishing the sentence", flush=True)
+    for a, b, t in after:                       # fallback: through the end of the running sentence
+        new = b + 0.35
+        if t.rstrip().endswith((".", "?", "!")):
+            break
+    return max(t_out, new)
+
+
 def cmd_one(f):
     os.makedirs(OUT, exist_ok=True)
     sys.path.insert(0, K)
@@ -635,6 +694,8 @@ def cmd_one(f):
                         "-in", f"/tmp/{vid}.srt.enc", "-out", srt], check=True)
     import kt_render
     t_in, t_out = float(clip["in"]), float(clip["out"])
+    if os.environ.get("CINE_FINISH", "1") == "1":
+        t_out = finish_thought(srt, t_in, t_out)
     phrases = []
     try:
         import kt_words
@@ -680,9 +741,13 @@ def cmd_commit(d):
             cname = asset.replace(".mp4", "__cover.jpg")
             cup = os.path.join("/tmp", cname)
             shutil.copy(cv, cup)
-            subprocess.run(["gh", "release", "upload", "media", cup, "-R", REPO, "--clobber"], check=False)
+            ok = subprocess.run(["gh", "release", "upload", "media", cup, "-R", REPO, "--clobber"]).returncode == 0
             os.remove(cup)
-            c["cover"], c["cover_v"] = cname, R.COVER_V
+            if ok:
+                c["cover"], c["cover_v"] = cname, R.COVER_V
+                c["cine_cover"] = CINE_V
+            else:
+                print("  cover upload FAILED:", cname, flush=True)
         # restyle must leave it alone: it is finished in its own style
         c["style"], c["t5_v"], c["cine_v"] = R.STYLE, R.T5_V, CINE_V
         c["bytes"] = os.path.getsize(p)

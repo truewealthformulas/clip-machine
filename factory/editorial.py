@@ -23,6 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 HERE = os.path.dirname(os.path.abspath(__file__))
 SANS = os.path.join(HERE, "assets", "Montserrat.ttf")
 SERIF = os.path.join(HERE, "assets", "PlayfairDisplay-Italic.ttf")
+SERIF_R = os.path.join(HERE, "assets", "PlayfairDisplay.ttf")
 BLACK = os.path.join(HERE, "assets", "mont_black.ttf")
 CREAM = (244, 232, 205)
 WHITE = (250, 250, 250)
@@ -36,8 +37,8 @@ _F = {}
 def _font(kind, size, w=700):
     k = (kind, size, w)
     if k not in _F:
-        f = ImageFont.truetype({"sans": SANS, "serif": SERIF, "black": BLACK}[kind], size)
-        if kind == "sans":
+        f = ImageFont.truetype({"sans": SANS, "serif": SERIF, "black": BLACK, "roman": SERIF_R}[kind], size)
+        if kind in ("sans", "roman"):
             try:
                 f.set_variation_by_axes([w])
             except Exception:
@@ -362,4 +363,166 @@ def apply(strip, out, phrases, segs, body, emphasis, BW, BH, FPS, mode="editoria
     enc.wait()
     dec.wait()
     print(f"  editorial: {n} frames, text {side}, giant words {[' '.join(w) for _, _, w in bigs]}", flush=True)
+    return out
+
+
+# ------------------------------------------------------------------ covers
+# 15 Nov 2026, the owner: "take away from the videos the blue label" (the navy
+# band of the old T5 cover) and, with the @kevins_apprentice grid: "let's do
+# something like this". Two full-bleed covers, no band, no box:
+#   "word"  - Kevin close, filling the frame, one or two words low in the frame
+#             (bold caps + the key word in cream italic), like their "Secret".
+#   "giant" - the key word huge BEHIND Kevin, like their "PURPOSE IN LIFE".
+# Everything that matters sits inside the 3:4 the profile grid shows.
+
+def _hook_parts(hook):
+    txt = " ".join(hook) if isinstance(hook, (list, tuple)) else str(hook)
+    words = txt.replace("/", " ").split()
+    emph = [i for i, w in enumerate(words) if w.startswith("*")]
+    clean = [w.strip("*") for w in words]
+    return clean, (emph[0] if emph else None)
+
+
+def _portrait(src, t, W=1080, H=1920):
+    """A 9:16 frame from the source around Kevin, at full source resolution."""
+    probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                            "stream=width,height", "-of", "csv=p=0", src], capture_output=True, text=True)
+    sw, shh = [int(x) for x in probe.stdout.strip().split(",")[:2]]
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src, "-frames:v", "1",
+                          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+    fr = Image.frombytes("RGB", (sw, shh), raw)
+    m = np.asarray(person_mask(fr), dtype=np.float32) / 255.0
+    rows = np.where(m.sum(axis=1) > sw * 0.03)[0]
+    top = int(rows[0]) if len(rows) else int(shh * 0.1)
+    band = m[top:int(min(shh, top + shh * 0.3))]
+    bc = band.sum(axis=0)
+    fx = float((bc * np.arange(sw)).sum() / max(1.0, bc.sum())) if bc.sum() > 0 else sw / 2
+    ch = int(shh * 0.92)                      # a little tighter than the full height
+    cw = int(ch * W / H)
+    l = int(min(max(fx - cw / 2, 0), sw - cw))
+    t0 = int(min(max(top - ch * 0.10, 0), shh - ch))
+    im = fr.crop((l, t0, l + cw, t0 + ch)).resize((W, H), Image.LANCZOS)
+    im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
+    return im
+
+
+def make_cover(src, t, hook, out, kind="word", emphasis=None):
+    W, H = 1080, 1920
+    im = _portrait(src, t, W, H).convert("RGBA")
+    words, ei = _hook_parts(hook)
+    if ei is None and emphasis:
+        ei = emphasis(words)
+    key = words[ei] if ei is not None else max(words, key=len)
+    key = key.strip(",.!?:;\"'")
+    d = ImageDraw.Draw(im)
+    if kind == "headline":
+        # @kevin_trudeau_student (15 Nov 2026): Kevin full-frame, the hook in
+        # white serif capitals across the middle, soft shadow, nothing else.
+        im = im.convert("RGB")
+        from PIL import ImageEnhance
+        im = ImageEnhance.Brightness(im).enhance(0.88).convert("RGBA")
+        txt = " ".join(words).upper().split()
+        f = _font("roman", 74, 650)
+        best = None                      # balanced lines, like their two-line titles
+        for n in (1, 2, 3):
+            if n > len(txt):
+                break
+            import itertools
+            for cuts in itertools.combinations(range(1, len(txt)), n - 1):
+                ls = [" ".join(txt[i:j]) for i, j in zip((0,) + cuts, cuts + (len(txt),))]
+                wmax = max(d.textlength(x, font=f) for x in ls)
+                if wmax <= W * 0.86 and (best is None or (n, wmax) < (best[0], best[1])):
+                    best = (n, wmax, ls)
+            if best:
+                break
+        lines = best[2] if best else [" ".join(txt)]
+        if not best:
+            f = _font("roman", 54, 650)
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        dl = ImageDraw.Draw(lay)
+        lh = int(f.size * 1.18)
+        y = int(H * 0.60) - lh * len(lines) // 2
+        for ln in lines:
+            dl.text(((W - dl.textlength(ln, font=f)) / 2, y), ln, font=f, fill=(255, 255, 255, 255))
+            y += lh
+        sh = lay.split()[3].filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * 0.85))
+        shadow = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+        shadow.putalpha(sh)
+        im.alpha_composite(shadow)
+        im.alpha_composite(lay)
+    elif kind == "giant":
+        # the wide shot on black, the word huge behind Kevin (their "PURPOSE IN LIFE")
+        raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src, "-frames:v", "1",
+                              "-vf", "scale=1080:608", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
+                             capture_output=True).stdout
+        strip = Image.frombytes("RGB", (1080, 608), raw)
+        sw, sh_ = 1080, 608
+        sc = 1.25                              # a touch closer than the video
+        strip = strip.resize((int(sw * sc), int(sh_ * sc)), Image.LANCZOS)
+        strip = strip.crop(((strip.width - 1080) // 2, 0, (strip.width - 1080) // 2 + 1080, strip.height))
+        strip = strip.filter(ImageFilter.UnsharpMask(radius=2, percent=50, threshold=2))
+        im = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+        y0 = (H - strip.height) // 2
+        im.paste(strip, (0, y0))
+        person = strip.convert("RGBA")
+        person.putalpha(person_mask(strip))
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        dl = ImageDraw.Draw(lay)
+        txt = [w.upper() for w in key.split()] if " " in key else [key.upper()]
+        rest = [w for i, w in enumerate(words) if i != ei]
+        # two lines when the key word is short and a neighbour helps: "PURPOSE / IN LIFE"
+        lines = txt
+        y = y0 + strip.height * 0.06
+        for ln in lines:
+            f = _font("black", 300)
+            tw = dl.textlength(ln, font=f)
+            if tw > W - 40:
+                f = _font("black", max(120, int(300 * (W - 40) / tw)))
+                tw = dl.textlength(ln, font=f)
+            dl.text(((W - tw) / 2, y), ln, font=f, fill=(255, 255, 255, 255))
+            y += f.size * 0.95
+        im.alpha_composite(lay)
+        im.alpha_composite(person, (0, y0))
+        sub = " ".join(rest[:7]).upper()
+        if sub:
+            fs = _font("sans", 40, 800)
+            d2 = ImageDraw.Draw(im)
+            ly, line, out_l = y0 + strip.height + 50, "", []
+            for w in sub.split():
+                if line and d2.textlength(line + " " + w, font=fs) > W * 0.8:
+                    out_l.append(line)
+                    line = w
+                else:
+                    line = (line + " " + w).strip()
+            out_l.append(line)
+            for ln in out_l:
+                d2.text(((W - d2.textlength(ln, font=fs)) / 2, ly), ln, font=fs, fill=WHITE)
+                ly += 54
+    else:
+        g = Image.linear_gradient("L").resize((W, H)).point(lambda v: int(max(0, v - 120) * 1.6))
+        shade = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+        shade.putalpha(g)
+        im.alpha_composite(shade)
+        d = ImageDraw.Draw(im)
+        rest = [w for i, w in enumerate(words) if i != ei][:6]
+        small = " ".join(rest).upper()
+        fs = _font("sans", 44, 800)
+        lines, line = [], ""
+        for w in small.split():
+            if line and d.textlength(line + " " + w, font=fs) > W * 0.78:
+                lines.append(line)
+                line = w
+            else:
+                line = (line + " " + w).strip()
+        if line:
+            lines.append(line)
+        fe = _font("serif", 170)
+        while d.textlength(key.lower(), font=fe) > W * 0.86 and fe.size > 90:
+            fe = _font("serif", fe.size - 10)
+        y = 1660 - fe.size * 1.1 - len(lines) * 56
+        for ln in lines:
+            d.text(((W - d.textlength(ln, font=fs)) / 2, y), ln, font=fs, fill=WHITE)
+            y += 56
+        d.text(((W - d.textlength(key.lower(), font=fe)) / 2, y), key.lower(), font=fe, fill=CREAM)
+    im.convert("RGB").save(out, quality=92)
     return out

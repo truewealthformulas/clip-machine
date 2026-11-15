@@ -5242,10 +5242,11 @@
    "file": "KT_BUSINESS3/01_poorernow_32s.mp4",
    "caption": "Your grandparents' generation may have lived better than you.\n\nKevin Trudeau says that around the world the standard of living is lower than in the '50s and '60s. Back then, over 60% of homes bought were brand new, and people bought new cars. Today most people buy used.\n\nHe calls it a fact few people want to admit.\n\nDo you think life got easier or harder to afford?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
    "bytes": 8797330,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -5263,14 +5264,12 @@
    "tiktok_file": "KT_BUSINESS3--01_poorernow_32s__tt.mp4",
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfxrGTEgsRr/"
+    "instagram": "https://www.instagram.com/reel/DfxrGTEgsRr/",
+    "facebook": "https://facebook.com/reel/1084211457925432/",
+    "youtube": "https://youtube.com/shorts/9ubQT-D1llE"
    },
    "caption_at_post": "Your grandparents' generation may have lived better than you.\n\nKevin Trudeau says that around the world the standard of living is lower than in the '50s and '60s. Back then, over 60% of homes bought were brand new, and people bought new cars. Today most people buy used.\n\nHe calls it a fact few people want to admit.\n\nDo you think life got easier or harder to afford?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
-   "posted_at": "2026-11-15T15:49",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-15T17:28",
    "agent_retried": [
     "facebook",
     "youtube"

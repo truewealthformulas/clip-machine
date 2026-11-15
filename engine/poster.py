@@ -1161,6 +1161,19 @@ def _tt_saved(write=None):
 
 
 def tiktok(path, caption, public_url, clip=None):
+    # 15 Nov 2026: TikTok gets its own cut (classic black-and-title look), made
+    # by factory/cinematic.py as <asset>__tt.mp4. Falls back to the main file.
+    alt = (clip or {}).get("tiktok_file")
+    if alt and public_url and "/" in public_url:
+        try:
+            rr = requests.get(public_url.rsplit("/", 1)[0] + "/" + alt, timeout=180)
+            if rr.ok and len(rr.content) > 200000:
+                p2 = path + ".tt.mp4"
+                with open(p2, "wb") as fh:
+                    fh.write(rr.content)
+                path = p2
+        except Exception:
+            pass
     brand = brand_of(clip)
     main_acct = cred_prefix(brand) in FALLBACK_BRANDS or not brand
     saved = _tt_saved() if main_acct else None

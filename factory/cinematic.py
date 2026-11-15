@@ -46,7 +46,7 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 7   # 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
+CINE_V = 8   # 8: + TikTok copy in the classic black-and-title look. 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
 STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
@@ -55,7 +55,17 @@ STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
 # I / my / me), the editorial look otherwise. "doc" forces the documentary one.
 
 
+FORCE_LOOK = [None]
+# TIKTOK KEEPS THE BLACK-AND-TITLE LOOK (15 Nov 2026, the owner: "For TikTok
+# let's continue doing this style black with the title"). Every clip is cut a
+# second time in the classic look (title above the strip, words under Kevin);
+# that copy is uploaded as <asset>__tt.mp4 and poster.tiktok() posts it.
+TT_CLASSIC = os.environ.get("CINE_TT_CLASSIC", "1") == "1"
+
+
 def look_for(phrases):
+    if FORCE_LOOK[0]:
+        return FORCE_LOOK[0]
     if STYLE in ("editorial", "doc", "classic"):
         return STYLE
     ws = [re.sub(r"[^a-z']", "", w.lower()) for _, _, t in phrases for w in t.split()]
@@ -717,6 +727,15 @@ def cmd_one(f):
     dst = os.path.join(OUT, "CINE__" + asset)
     cover = os.path.join(OUT, "CINE__" + asset.replace(".mp4", "__cover.jpg"))
     segs = render(src, t_in, t_out, hook, phrases, dst, clip["slug"], cover)
+    if TT_CLASSIC:
+        try:
+            FORCE_LOOK[0] = "classic"
+            render(src, t_in, t_out, hook, phrases, os.path.join(OUT, "CINETT__" + asset), clip["slug"], None)
+            print(f"  tiktok copy: classic look", flush=True)
+        except Exception as e:
+            print(f"  tiktok copy failed ({type(e).__name__}: {e})", flush=True)
+        finally:
+            FORCE_LOOK[0] = None
     b = sum(y - x for x, y, k, _ in segs if k == "B")
     print(f"cinematic {f}: {len(segs)} shots, footage {b:.1f}s of {t_out - t_in:.1f}s")
 
@@ -748,6 +767,14 @@ def cmd_commit(d):
                 c["cine_cover"] = CINE_V
             else:
                 print("  cover upload FAILED:", cname, flush=True)
+        tt = os.path.join(os.path.dirname(p), "CINETT__" + asset)
+        if os.path.exists(tt):
+            tname = asset.replace(".mp4", "__tt.mp4")
+            tup = os.path.join("/tmp", tname)
+            shutil.copy(tt, tup)
+            if subprocess.run(["gh", "release", "upload", "media", tup, "-R", REPO, "--clobber"]).returncode == 0:
+                c["tiktok_file"] = tname
+            os.remove(tup)
         # restyle must leave it alone: it is finished in its own style
         c["style"], c["t5_v"], c["cine_v"] = R.STYLE, R.T5_V, CINE_V
         c["bytes"] = os.path.getsize(p)

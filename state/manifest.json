@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5176,9 +5176,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-15T13:39",
@@ -5198,7 +5196,15 @@
     "instagram": "https://www.instagram.com/reel/DfxcwEMk60Q/"
    },
    "caption_at_post": "Why every great fortune starts with a setback.\n\nKevin explains that if you pick ten of the most successful founders, such as the people behind Honda, Toyota, Kraft, Federal Express and UPS, each faced several catastrophes and came close to bankruptcy.\n\nOut of that pressure came the idea that built their businesses. He closes with a Napoleon Hill phrase: in every adversity are the seeds of a greater benefit.\n\nWhich setback in your own life turned out to be a turning point?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "posted_at": "2026-11-15T13:44"
+   "posted_at": "2026-11-15T13:44",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_SUCCESS24/01_friendsmoney_43s.mp4",
@@ -5241,9 +5247,7 @@
    "status": {
     "instagram": "posted",
     "instagram_story": "story posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-15T15:44",
@@ -5263,7 +5267,15 @@
     "instagram": "https://www.instagram.com/reel/DfxrGTEgsRr/"
    },
    "caption_at_post": "Your grandparents' generation may have lived better than you.\n\nKevin Trudeau says that around the world the standard of living is lower than in the '50s and '60s. Back then, over 60% of homes bought were brand new, and people bought new cars. Today most people buy used.\n\nHe calls it a fact few people want to admit.\n\nDo you think life got easier or harder to afford?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #kevintrudeau",
-   "posted_at": "2026-11-15T15:49"
+   "posted_at": "2026-11-15T15:49",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_SUCCESS25/01_deservemoney_41s.mp4",
@@ -5500,7 +5512,7 @@
   },
   {
    "file": "KT_KARMA3/01_biggestlie_33s.mp4",
-   "caption": "The biggest lie is the one you tell yourself.\n\nKevin Trudeau was asked the biggest lie people believe about karma. His answer: that you are stuck with it and can do nothing about it.\n\nHe calls that a half truth, and says the story you tell yourself is the real trap.\n\nWhich story do you repeat to yourself most often?\n\n#ad #mindset #success #kevintrudeau",
+   "caption": "The biggest lie is the one you tell yourself.\n\nKevin Trudeau was asked the biggest lie people believe about karma. His answer: that you are stuck with it and can do nothing about it.\n\nHe calls that a half truth, and says the story you tell yourself is the real trap.\n\nWhich story do you repeat to yourself most often?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 8523139,
    "done": false,
    "status": {},
@@ -5511,7 +5523,7 @@
   },
   {
    "file": "KT_MEMORY3/01_businessmemory_44s.mp4",
-   "caption": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\n#ad #memory #business #success",
+   "caption": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #memory #business #success",
    "bytes": 15913642,
    "done": false,
    "status": {},
@@ -5522,7 +5534,7 @@
   },
   {
    "file": "KT_MINDSET36/01_fillglass_47s.mp4",
-   "caption": "The glass is neither half full nor half empty.\n\nKevin Trudeau starts with a TV character who is broke and simply says he is \"illiquid.\" That is reframing: changing how you describe your situation so you can act on it.\n\nThen he gives the classic glass test. A true millionaire mindset says it doesn't matter whether the glass is half full or half empty, because you can always fill it up.\n\nWhen did you last reframe a problem instead of complaining about it?\n\n#ad #mindset #wealth",
+   "caption": "The glass is neither half full nor half empty.\n\nKevin Trudeau starts with a TV character who is broke and simply says he is \"illiquid.\" That is reframing: changing how you describe your situation so you can act on it.\n\nThen he gives the classic glass test. A true millionaire mindset says it doesn't matter whether the glass is half full or half empty, because you can always fill it up.\n\nWhen did you last reframe a problem instead of complaining about it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #wealth",
    "bytes": 15563476,
    "done": false,
    "status": {},

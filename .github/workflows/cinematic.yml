@@ -70,7 +70,7 @@ jobs:
       - name: Test copy (only)
         if: ${{ inputs.only != '' && inputs.only != null }}
         run: |
-          for f in /tmp/cine_out/CINE__*; do cp "$f" "/tmp/$(basename "$f" | sed 's/^CINE__/CINETEST--/')"; gh release upload media "/tmp/$(basename "$f" | sed 's/^CINE__/CINETEST--/')" -R "$GITHUB_REPOSITORY" --clobber; done
+          for f in /tmp/cine_out/CINE*__*; do n="$(basename "$f" | sed 's/^CINE__/CINETEST--/; s/^CINETT__/CINETEST-TT--/')"; cp "$f" "/tmp/$n"; gh release upload media "/tmp/$n" -R "$GITHUB_REPOSITORY" --clobber; done
       - id: n
         run: echo "name=cine-$(echo '${{ matrix.file }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v4

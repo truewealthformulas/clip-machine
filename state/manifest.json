@@ -5279,10 +5279,11 @@
    "file": "KT_SUCCESS25/01_deservemoney_41s.mp4",
    "caption": "One old belief about an honest day's pay can shape how you see money.\n\nKevin Trudeau describes a belief many people inherit from their parents: an honest day's work earns an honest day's pay, and anything more is stealing.\n\nHe says that thinking is the difference between a broke mentality and a wealth mentality, and that the wealth mentality says no to it.\n\nWhich belief about earning did you grow up with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #mindset",
    "bytes": 16261544,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -5300,14 +5301,12 @@
    "tiktok_file": "KT_SUCCESS25--01_deservemoney_41s__tt.mp4",
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/DfzPjGYj3hM/"
+    "instagram": "https://www.instagram.com/reel/DfzPjGYj3hM/",
+    "facebook": "https://facebook.com/reel/2154247488795637/",
+    "youtube": "https://youtube.com/shorts/aercx8sIDP0"
    },
    "caption_at_post": "One old belief about an honest day's pay can shape how you see money.\n\nKevin Trudeau describes a belief many people inherit from their parents: an honest day's work earns an honest day's pay, and anything more is stealing.\n\nHe says that thinking is the difference between a broke mentality and a wealth mentality, and that the wealth mentality says no to it.\n\nWhich belief about earning did you grow up with?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #wealth #mindset",
-   "posted_at": "2026-11-16T06:26",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-16T14:23",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -5417,7 +5416,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-16T14:15",
+   "scheduled_at": "2026-11-16T15:07",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "t5_best": 30.2,

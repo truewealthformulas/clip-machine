@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5530,7 +5530,7 @@
   {
    "file": "KT_KARMA3/01_biggestlie_33s.mp4",
    "caption": "The biggest lie is the one you tell yourself.\n\nKevin Trudeau was asked the biggest lie people believe about karma. His answer: that you are stuck with it and can do nothing about it.\n\nHe calls that a half truth, and says the story you tell yourself is the real trap.\n\nWhich story do you repeat to yourself most often?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 7593043,
+   "bytes": 17191887,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -5543,12 +5543,14 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_KARMA3--01_biggestlie_33s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "tiktok_file": "KT_KARMA3--01_biggestlie_33s__tt.mp4",
+   "cine_v": 8
   },
   {
    "file": "KT_MEMORY3/01_businessmemory_44s.mp4",
    "caption": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #memory #business #success",
-   "bytes": 14825214,
+   "bytes": 18522441,
    "done": false,
    "status": {},
    "cta_kind": "offer",
@@ -5561,12 +5563,14 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MEMORY3--01_businessmemory_44s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "tiktok_file": "KT_MEMORY3--01_businessmemory_44s__tt.mp4",
+   "cine_v": 8
   },
   {
    "file": "KT_MINDSET36/01_fillglass_47s.mp4",
    "caption": "The glass is neither half full nor half empty.\n\nKevin Trudeau starts with a TV character who is broke and simply says he is \"illiquid.\" That is reframing: changing how you describe your situation so you can act on it.\n\nThen he gives the classic glass test. A true millionaire mindset says it doesn't matter whether the glass is half full or half empty, because you can always fill it up.\n\nWhen did you last reframe a problem instead of complaining about it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #wealth",
-   "bytes": 14370109,
+   "bytes": 9732274,
    "done": false,
    "status": {},
    "cta_kind": "offer",
@@ -5579,7 +5583,9 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET36--01_fillglass_47s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "tiktok_file": "KT_MINDSET36--01_fillglass_47s__tt.mp4",
+   "cine_v": 8
   }
  ],
  "replan_v": 3

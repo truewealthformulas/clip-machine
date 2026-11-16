@@ -5409,10 +5409,11 @@
    "file": "KT_WEALTH13/01_whoyouknow_42s.mp4",
    "caption": "Would you trust a call that said: buy Amazon?\n\nKevin explains that it is not only what you know, it is who you know. An expert can point you to something early, like a little satellite dish.\n\nHe describes a call about Jeff Bezos, a man everyone thought was starting an online bookstore. The caller said it was really a technology company. Nobody understood it. It was called Amazon.\n\nThe point: people with real knowledge often see what the crowd misses.\n\nWho do you trust enough to listen to their advice?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #mindset #kevintrudeau",
    "bytes": 10346616,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
@@ -5430,14 +5431,12 @@
    "tiktok_file": "KT_WEALTH13--01_whoyouknow_42s__tt.mp4",
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Dfz_--KkUn4/"
+    "instagram": "https://www.instagram.com/reel/Dfz_--KkUn4/",
+    "facebook": "https://facebook.com/reel/3172188952983558/",
+    "youtube": "https://youtube.com/shorts/zDz4T43HFrg"
    },
    "caption_at_post": "Would you trust a call that said: buy Amazon?\n\nKevin explains that it is not only what you know, it is who you know. An expert can point you to something early, like a little satellite dish.\n\nHe describes a call about Jeff Bezos, a man everyone thought was starting an online bookstore. The caller said it was really a technology company. Nobody understood it. It was called Amazon.\n\nThe point: people with real knowledge often see what the crowd misses.\n\nWho do you trust enough to listen to their advice?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #mindset #kevintrudeau",
-   "posted_at": "2026-11-16T13:30",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-16T15:15",
    "agent_retried": [
     "facebook",
     "youtube"

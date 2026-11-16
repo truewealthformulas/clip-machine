@@ -1,5 +1,5 @@
 {
- "n": 31,
+ "n": 32,
  "posted": [
   {
    "date": "2026-10-12",
@@ -271,6 +271,13 @@
    "date": "2026-11-15",
    "offer": "book",
    "look": "story--hl_22.jpg",
+   "ok": true,
+   "status": "posted"
+  },
+  {
+   "date": "2026-11-16",
+   "offer": "training",
+   "look": "story--hl_17.mp4",
    "ok": true,
    "status": "posted"
   }

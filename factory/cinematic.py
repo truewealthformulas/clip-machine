@@ -46,7 +46,7 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 8   # 8: + TikTok copy in the classic black-and-title look. 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
+CINE_V = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
 STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
@@ -346,6 +346,77 @@ def pexels_file(vid, link):
     return p
 
 
+# FOOTAGE THAT MATCHES THE WORDS (16 Nov 2026, the owner: "It shows a city and
+# he is talking about a pad of paper"). The old picker matched a dozen broad
+# themes and filled the rest with generic city/sunrise shots. Now Claude reads
+# the phrases and names only the moments with something concrete to show
+# ("pad of paper" -> "hand writing on a notepad"), Mixkit is searched for exactly
+# that, and every other moment stays on Kevin. No match = no cutaway.
+SMART = os.environ.get("CINE_SMART", "1") == "1"
+
+
+def smart_picks(phrases, lo, hi):
+    """{phrase index: search query} for literal, showable moments, or None if Claude is unavailable."""
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "agents"))
+        import common as AC
+    except Exception:
+        return None
+    lines = "\n".join(f"[{i}] {a:.1f}s: {t}" for i, (a, b, t) in enumerate(phrases) if a >= lo and b <= hi)
+    if not lines:
+        return {}
+    try:
+        out = AC.ask_json(
+            "You pick stock-footage cutaways for a talking-head clip. A cutaway must SHOW LITERALLY "
+            "what the speaker is saying at that moment (an object, an action, a place he names). "
+            "Never pick a cutaway for abstract talk. Return JSON only.",
+            "Kevin's words, numbered, with start times:\n" + lines + "\n\n"
+            "Choose at most 5 moments, at least 6 seconds apart, where a short stock video would show "
+            "exactly what he says (e.g. 'pad of paper' -> 'hand writing on notepad', 'phone calls' -> "
+            "'phone ringing on desk', 'open the mail' -> 'opening envelope', 'gold' -> 'gold bars'). "
+            "For each give a 2-4 word stock-video search query in English. Skip anything abstract. "
+            'Reply: {"picks": [{"i": N, "query": "..."}]}', max_tokens=800)
+        res = {}
+        for p in out.get("picks") or []:
+            i, q = int(p.get("i")), str(p.get("query") or "").strip()
+            if q and 0 <= i < len(phrases):
+                res[i] = q
+        print(f"  cutaways: {res}", flush=True)
+        return res
+    except Exception as e:
+        print(f"  cutaway picks unavailable ({type(e).__name__}: {e})", flush=True)
+        return None
+
+
+def mixkit_search(query, seed=""):
+    """Download the best Mixkit video for a search query (search page -> mp4)."""
+    import urllib.request
+    slug = re.sub(r"[^a-z0-9]+", "-", query.lower()).strip("-")
+    key = "mks_" + slug
+    p = os.path.join(PEX_DIR, f"v_{key}.mp4")
+    if os.path.exists(p):
+        return p
+    os.makedirs(PEX_DIR, exist_ok=True)
+    req = urllib.request.Request(f"https://mixkit.co/free-stock-video/{slug}/",
+                                 headers={"User-Agent": "Mozilla/5.0 clip-machine"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        html = r.read(3_000_000).decode("utf-8", "ignore")
+    urls = []
+    for u in re.findall(r"https://assets\.mixkit\.co/[^\"'\s]+?-360\.mp4", html):
+        if u not in urls:
+            urls.append(u)
+    for u in urls[:4]:
+        for size in ("720", "1080", "360"):
+            try:
+                _fetch(u[:-len("360.mp4")] + size + ".mp4", p + ".part")
+                if os.path.getsize(p + ".part") > 50000:
+                    os.replace(p + ".part", p)
+                    return p
+            except Exception:
+                continue
+    raise RuntimeError(f"mixkit search '{query}': nothing downloadable")
+
+
 def plan(phrases, body, seed):
     """[(a, b, kind, photo)] covering 0..body. kind 'K' (Kevin) or 'B' (footage)."""
     lib = photos()
@@ -373,6 +444,28 @@ def plan(phrases, body, seed):
 
     lo, hi = 3.0, body - 2.5          # Kevin opens and closes the body
     budget = SHARE * body
+    smart = smart_picks(phrases, lo, hi) if SMART else None
+    if smart is not None:
+        cuts = []
+        for i in sorted(smart):
+            a, b, _ = phrases[i]
+            a2, b2 = a, min(max(b, a + 2.4), a + 4.0, hi)
+            if b2 - a2 < 2.0 or any(not (b2 + 2.0 <= x or a2 >= y + 2.0) for x, y, _ in cuts):
+                continue
+            try:
+                cuts.append((a2, b2, mixkit_search(smart[i], seed)))
+            except Exception as e:
+                print(f"  cutaway '{smart[i]}': {type(e).__name__}: {e}", flush=True)
+        cuts.sort()
+        segs, t = [], 0.0
+        for a, b, ph in cuts:
+            if a > t:
+                segs.append((t, a, "K", None))
+            segs.append((a, b, "B", ph))
+            t = b
+        if t < body:
+            segs.append((t, body, "K", None))
+        return segs
     cand = []
     for a, b, text in phrases:
         if a < lo or b > hi:
@@ -394,8 +487,7 @@ def plan(phrases, body, seed):
         if any(not (b2 + 2.0 <= x or a2 >= y + 2.0) for x, y, _ in cuts):
             continue
         if th is None:
-            th = FALLBACK[gi % len(FALLBACK)]
-            gi += 1
+            continue              # 16 Nov 2026: no unrelated filler footage
         ph = pick(th)
         if not ph:
             continue
@@ -750,10 +842,16 @@ def cmd_one(f):
     cover = os.path.join(OUT, "CINE__" + asset.replace(".mp4", "__cover.jpg"))
     segs = render(src, t_in, t_out, hook, phrases, dst, clip["slug"], cover)
     if TT_CLASSIC:
+        # 16 Nov 2026: TikTok gets the full-screen cut (factory/tiktok_cut.py);
+        # CINE_TT=classic gives back the black-and-title copy.
         try:
-            FORCE_LOOK[0] = "classic"
-            render(src, t_in, t_out, hook, phrases, os.path.join(OUT, "CINETT__" + asset), clip["slug"], None)
-            print(f"  tiktok copy: classic look", flush=True)
+            if os.environ.get("CINE_TT", "full") == "classic":
+                FORCE_LOOK[0] = "classic"
+                render(src, t_in, t_out, hook, phrases, os.path.join(OUT, "CINETT__" + asset), clip["slug"], None)
+            else:
+                import tiktok_cut as TC
+                TC.render_tt(src, t_in, t_out, hook, phrases, segs, os.path.join(OUT, "CINETT__" + asset), emphasis)
+            print(f"  tiktok copy: {os.environ.get('CINE_TT', 'full')}", flush=True)
         except Exception as e:
             print(f"  tiktok copy failed ({type(e).__name__}: {e})", flush=True)
         finally:
@@ -778,11 +876,25 @@ def cmd_commit(d):
         subprocess.run(["gh", "release", "upload", "media", up, "-R", REPO, "--clobber"], check=True)
         os.remove(up)
         cv = p.replace(".mp4", "__cover.jpg")
+        print(f"  cover file {'found' if os.path.exists(cv) else 'MISSING'}: {os.path.basename(cv)}", flush=True)
         if os.path.exists(cv):
-            cname = asset.replace(".mp4", "__cover.jpg")
+            # A NEW NAME, NOT --clobber (15 Nov 2026). The queue kept the old
+            # navy-band covers: re-uploading a small file over a same-named asset
+            # right after --clobber deleted it fails ("already exists") while the
+            # big mp4 got through. A versioned name never collides; retried too.
+            cname = asset.replace(".mp4", f"__cover{CINE_V}.jpg")
             cup = os.path.join("/tmp", cname)
             shutil.copy(cv, cup)
-            ok = subprocess.run(["gh", "release", "upload", "media", cup, "-R", REPO, "--clobber"]).returncode == 0
+            ok = False
+            for i in range(3):
+                r = subprocess.run(["gh", "release", "upload", "media", cup, "-R", REPO, "--clobber"],
+                                   capture_output=True, text=True)
+                if r.returncode == 0:
+                    ok = True
+                    break
+                print(f"  cover upload try {i + 1}: {r.stderr.strip()[:200]}", flush=True)
+                import time
+                time.sleep(8)
             os.remove(cup)
             if ok:
                 c["cover"], c["cover_v"] = cname, R.COVER_V

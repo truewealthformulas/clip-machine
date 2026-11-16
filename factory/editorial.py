@@ -375,6 +375,43 @@ def apply(strip, out, phrases, segs, body, emphasis, BW, BH, FPS, mode="editoria
 #   "giant" - the key word huge BEHIND Kevin, like their "PURPOSE IN LIFE".
 # Everything that matters sits inside the 3:4 the profile grid shows.
 
+def kevin_pos(img):
+    """(x of Kevin's face centre, top of his head) in a full-resolution frame, or None.
+
+    16 Nov 2026: on two-person podcast sets (host left, Kevin right) the person
+    mask picked the middle of the two, and the TikTok crop showed a shoulder and
+    the gap between the panels. Now every face is fingerprinted (YuNet + SFace,
+    factory/kevin_face.py) and the crop goes to the one that is Kevin."""
+    try:
+        import kevin_face as KF
+        cv2, det, rec, ref = KF._load()
+        w, h = img.size
+        sc = 960.0 / w
+        small = np.asarray(img.convert("RGB").resize((960, int(h * sc))))[:, :, ::-1].copy()
+        det.setInputSize((small.shape[1], small.shape[0]))
+        _, faces = det.detect(small)
+        if faces is None or not len(faces):
+            return None
+        best, bs = None, -1.0
+        for f in faces:
+            if f[2] < 24:
+                continue
+            e = rec.feature(rec.alignCrop(small, f)).reshape(-1)
+            e = e / (np.linalg.norm(e) or 1)
+            sim = float(np.max(ref @ e))
+            if sim > bs:
+                best, bs = f, sim
+        if best is None:
+            return None
+        if bs < 0.30:                      # nobody recognisable: the biggest face
+            best = max(faces, key=lambda r: r[2] * r[3])
+        x, y, fw, fh = [float(v) / sc for v in best[:4]]
+        return x + fw / 2, max(0.0, y - fh * 0.45)
+    except Exception as e:
+        print(f"  kevin_pos: {type(e).__name__}: {e}", flush=True)
+        return None
+
+
 def _hook_parts(hook):
     txt = " ".join(hook) if isinstance(hook, (list, tuple)) else str(hook)
     words = txt.replace("/", " ").split()
@@ -391,12 +428,16 @@ def _portrait(src, t, W=1080, H=1920):
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{t:.2f}", "-i", src, "-frames:v", "1",
                           "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
     fr = Image.frombytes("RGB", (sw, shh), raw)
-    m = np.asarray(person_mask(fr), dtype=np.float32) / 255.0
-    rows = np.where(m.sum(axis=1) > sw * 0.03)[0]
-    top = int(rows[0]) if len(rows) else int(shh * 0.1)
-    band = m[top:int(min(shh, top + shh * 0.3))]
-    bc = band.sum(axis=0)
-    fx = float((bc * np.arange(sw)).sum() / max(1.0, bc.sum())) if bc.sum() > 0 else sw / 2
+    kp = kevin_pos(fr)
+    if kp:
+        fx, top = kp[0], int(kp[1])
+    else:
+        m = np.asarray(person_mask(fr), dtype=np.float32) / 255.0
+        rows = np.where(m.sum(axis=1) > sw * 0.03)[0]
+        top = int(rows[0]) if len(rows) else int(shh * 0.1)
+        band = m[top:int(min(shh, top + shh * 0.3))]
+        bc = band.sum(axis=0)
+        fx = float((bc * np.arange(sw)).sum() / max(1.0, bc.sum())) if bc.sum() > 0 else sw / 2
     ch = int(shh * 0.92)                      # a little tighter than the full height
     cw = int(ch * W / H)
     l = int(min(max(fx - cw / 2, 0), sw - cw))

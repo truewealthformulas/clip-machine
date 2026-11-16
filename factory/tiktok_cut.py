@@ -36,7 +36,11 @@ def _frame(src, t, sw, shh):
 
 
 def _face_x(img):
-    """x of Kevin's head (centre of the top band of the person mask)."""
+    """x of Kevin's face and the top of his head: his fingerprinted face first,
+    the person mask only when no face is found."""
+    kp = ED.kevin_pos(img)
+    if kp:
+        return kp
     m = np.asarray(ED.person_mask(img), dtype=np.float32) / 255.0
     w, h = img.size
     rows = np.where(m.sum(axis=1) > w * 0.03)[0]

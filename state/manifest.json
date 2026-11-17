@@ -5464,8 +5464,14 @@
    "file": "KT_LUCK6/01_guidancesystem_46s.mp4",
    "caption": "Not your head. Not your heart. Look lower.\n\nKevin Trudeau says there is an emotional guidance system in the solar plexus. He says it's the first thing to learn if you want luck.\n\nHis instruction is simple: be conscious of it, stay aware, and tune in to what you actually feel at any given moment.\n\nWhat feeling is loudest in you right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 16550520,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-16T23:03",
    "cta_keyword": "GOALS",
@@ -5477,20 +5483,19 @@
    "cover_v": 4,
    "tiktok_file": "KT_LUCK6--01_guidancesystem_46s__tt.mp4",
    "posting": false,
-   "links": {},
-   "posted_at": "2026-11-16T18:40",
-   "retry_only": [
-    "tiktok",
-    "youtube",
-    "facebook",
-    "instagram"
-   ],
+   "links": {
+    "facebook": "https://facebook.com/reel/1697541781743941/",
+    "instagram": "https://www.instagram.com/reel/Df1CpM6jsYQ/",
+    "youtube": "https://youtube.com/shorts/w-8mUZGLZBE"
+   },
+   "posted_at": "2026-11-16T23:13",
    "agent_retried": [
     "facebook",
     "instagram",
     "tiktok",
     "youtube"
-   ]
+   ],
+   "caption_at_post": "Not your head. Not your heart. Look lower.\n\nKevin Trudeau says there is an emotional guidance system in the solar plexus. He says it's the first thing to learn if you want luck.\n\nHis instruction is simple: be conscious of it, stay aware, and tune in to what you actually feel at any given moment.\n\nWhat feeling is loudest in you right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau"
   },
   {
    "file": "KT_MONEY2/01_appreciatingassets_38s.mp4",

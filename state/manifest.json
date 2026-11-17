@@ -5818,7 +5818,10 @@
    "bytes": 20012379,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-19T12:53",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   }
  ],
  "replan_v": 3

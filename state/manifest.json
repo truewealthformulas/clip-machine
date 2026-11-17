@@ -5501,8 +5501,14 @@
    "file": "KT_MONEY2/01_appreciatingassets_38s.mp4",
    "caption": "Rich people and broke people buy different kinds of things.\n\nKevin Trudeau explains what he calls the magic phrase: rich people buy appreciating assets, things that go up in value over time. Broke people buy things that go down in value over time.\n\nA car, he says, is a depreciating asset. It is still an asset because you can sell it, but its value drops, most of all in the first three years.\n\nWhat have you bought that lost value the longer you owned it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #rich #kevintrudeau",
    "bytes": 21583441,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "uploaded but TikTok still processing after ~40s - last status PROCESSING_UPLOAD"
+   },
    "cta_kind": "offer",
    "t5_best": 30.4,
    "t5_from": null,
@@ -5516,7 +5522,15 @@
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "tiktok_file": "KT_MONEY2--01_appreciatingassets_38s__tt.mp4",
-   "cine_cover": 12
+   "cine_cover": 12,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1137378675941308/",
+    "instagram": "https://www.instagram.com/reel/Df18uSGGRmy/",
+    "youtube": "https://youtube.com/shorts/LeZVHouQVzc"
+   },
+   "caption_at_post": "Rich people and broke people buy different kinds of things.\n\nKevin Trudeau explains what he calls the magic phrase: rich people buy appreciating assets, things that go up in value over time. Broke people buy things that go down in value over time.\n\nA car, he says, is a depreciating asset. It is still an asset because you can sell it, but its value drops, most of all in the first three years.\n\nWhat have you bought that lost value the longer you owned it?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #rich #kevintrudeau",
+   "posted_at": "2026-11-17T07:40"
   },
   {
    "file": "KT_LETTINGGO3/01_carryingluggage_49s.mp4",

@@ -46,7 +46,8 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
+CINE_V = 12   # 12: clips start where the thought starts, end where the sentence ends.
+CINE_V_PREV = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
 STYLE = os.environ.get("CINE_STYLE", "editorial").strip().lower()
@@ -788,6 +789,12 @@ def finish_thought(srt, t_in, t_out):
             'Reply: {"end_index": N, "why": "..."}', max_tokens=600)
         i = int(out.get("end_index"))
         if 0 <= i < len(cues) and cues[i][1] <= limit:
+            # 16 Nov 2026 (the owner: "the last video is missing information"):
+            # a transcript line can stop mid-sentence ("...your goals and dreams
+            # in"), so keep going to the line that closes the sentence.
+            while (i + 1 < len(cues) and not cues[i][2].rstrip().endswith((".", "?", "!"))
+                   and cues[i + 1][1] <= limit):
+                i += 1
             new = max(t_out, cues[i][1] + 0.35)
             print(f"  end: {t_out:.1f}s -> {new:.1f}s ({str(out.get('why'))[:100]})", flush=True)
             return new
@@ -798,6 +805,86 @@ def finish_thought(srt, t_in, t_out):
         if t.rstrip().endswith((".", "?", "!")):
             break
     return max(t_out, new)
+
+
+def start_thought(srt, t_in, t_out):
+    """THE BEGINNING TOO (16 Nov 2026). A clip opening on "...when your attitude
+    is right" has lost the setup. Claude reads the lines before the cut and moves
+    the start back to where the point begins (at most 25 s, and the clip stays
+    under MAX_LEN); without Claude, at least to the start of the sentence."""
+    import kt_render
+    cues = [c for c in kt_render.burn.parse_srt(srt) if c[1] > t_in - 30 and c[0] < t_in + 12]
+    if not cues:
+        return t_in
+    floor = max(0.0, t_in - 25, t_out + R.T5_CTA - MAX_LEN)
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "agents"))
+        import common as AC
+        lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(cues) if a >= floor)
+        idx = [i for i, (a, b, t) in enumerate(cues) if a >= floor]
+        out = AC.ask_json(
+            "You edit short video clips of a speaker. A clip must start where a thought starts, never "
+            "in the middle of a sentence or after the setup of the point. Return JSON only.",
+            f"The clip currently starts at {t_in:.1f}s. Transcript lines around that point:\n{lines}\n\n"
+            "Give the index of the line where the thought that is running at the start actually begins "
+            "(its setup included). If the clip already starts cleanly, give the index of the line that "
+            'starts at the cut. Reply: {"start_index": N, "why": "..."}', max_tokens=600)
+        i = int(out.get("start_index"))
+        if i in idx:
+            new = min(t_in, max(floor, cues[i][0] - 0.15))
+            if new < t_in - 0.3:
+                print(f"  start: {t_in:.1f}s -> {new:.1f}s ({str(out.get('why'))[:100]})", flush=True)
+            return new
+    except Exception as e:
+        print(f"  start check by Claude unavailable ({type(e).__name__}: {e})", flush=True)
+    before = [c for c in cues if c[0] < t_in and c[0] >= floor]
+    for k in range(len(before) - 1, -1, -1):        # back to the start of the running sentence
+        if k == 0 or before[k - 1][2].rstrip().endswith((".", "?", "!")):
+            return min(t_in, before[k][0] - 0.15)
+    return t_in
+
+
+POINT_MIN = int(os.environ.get("CINE_POINT_MIN", "7"))
+
+
+def point_window(srt, t_in, t_out):
+    """ONE CLEAR POINT OR NOTHING (16 Nov 2026, the owner on the gut-feeling clip:
+    "That video makes no point or sense... says nothing").
+
+    Claude reads the transcript from 40 s before the clip to 60 s after it and
+    picks the window (setup -> point -> payoff, whole sentences, 25-85 s) that a
+    stranger would understand on its own, and scores it 1-10. Returns
+    (t_in, t_out, score, why); score None when Claude is unavailable."""
+    import kt_render
+    cues = [c for c in kt_render.burn.parse_srt(srt) if c[1] > t_in - 40 and c[0] < t_out + 60]
+    if not cues:
+        return t_in, t_out, None, ""
+    sys.path.insert(0, os.path.join(ROOT, "agents"))
+    import common as AC
+    lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(cues))
+    out = AC.ask_json(
+        "You are a strict editor of short social clips of a speaker (Kevin Trudeau). Every clip must make "
+        "ONE clear, complete point that a stranger understands with no context: the setup, the point "
+        "itself and its payoff or lesson, in whole sentences. Never start or end mid-sentence. Return JSON only.",
+        f"The clip is currently {t_in:.1f}s-{t_out:.1f}s. Transcript lines around it:\n{lines}\n\n"
+        "Choose the best window (start line index, end line index) between 25 and 85 seconds long that "
+        "makes one clear point on its own, staying close to the current clip. Then score that window 1-10: "
+        "10 = a stranger gets a clear, valuable point; 5 = vague or depends on missing context; "
+        "1 = says nothing. Be honest; vague motivational talk without a concrete point scores 5 or less. "
+        'Reply: {"start": N, "end": M, "score": S, "point": "the point in one sentence", "why": "..."}',
+        max_tokens=800)
+    a, b = int(out.get("start")), int(out.get("end"))
+    sc = int(out.get("score"))
+    if not (0 <= a <= b < len(cues)):
+        raise ValueError(f"bad window {a}-{b}")
+    while b + 1 < len(cues) and not cues[b][2].rstrip().endswith((".", "?", "!")):
+        b += 1
+    new_in, new_out = cues[a][0] - 0.15, cues[b][1] + 0.35
+    if new_out - new_in > MAX_LEN - R.T5_CTA:
+        new_out = new_in + MAX_LEN - R.T5_CTA
+    print(f"  point ({sc}/10): {str(out.get('point'))[:120]} | {t_in:.1f}-{t_out:.1f}s -> "
+          f"{new_in:.1f}-{new_out:.1f}s", flush=True)
+    return new_in, new_out, sc, str(out.get("point") or "")
 
 
 def cmd_one(f):
@@ -819,7 +906,20 @@ def cmd_one(f):
     import kt_render
     t_in, t_out = float(clip["in"]), float(clip["out"])
     if os.environ.get("CINE_FINISH", "1") == "1":
-        t_out = finish_thought(srt, t_in, t_out)
+        score = None
+        try:
+            t_in, t_out, score, _ = point_window(srt, t_in, t_out)
+        except Exception as e:
+            print(f"  point check unavailable ({type(e).__name__}: {e}); trimming to whole thoughts", flush=True)
+            t_in = start_thought(srt, t_in, t_out)
+            t_out = finish_thought(srt, t_in, t_out)
+        if score is not None and score < POINT_MIN:
+            # not worth posting: tell the swap to take it out of the queue
+            os.makedirs(OUT, exist_ok=True)
+            with open(os.path.join(OUT, "DROP__" + f.replace("/", "--") + ".json"), "w") as fh:
+                json.dump({"file": f, "score": score}, fh)
+            print(f"cinematic {f}: DROPPED - no clear point (score {score}/10)", flush=True)
+            return
     phrases = []
     try:
         import kt_words
@@ -860,6 +960,19 @@ def cmd_one(f):
     print(f"cinematic {f}: {len(segs)} shots, footage {b:.1f}s of {t_out - t_in:.1f}s")
 
 
+def _drops(d, m):
+    """Clips Claude scored as saying nothing: out of the queue, never posted."""
+    n = 0
+    for p in glob.glob(os.path.join(d, "**", "DROP__*.json"), recursive=True):
+        info = json.load(open(p))
+        for c in m.get("clips", []):
+            if c.get("file") == info["file"] and not c.get("posted_at") and not c.get("done"):
+                c["done"] = True
+                c["dropped"] = f"no clear point ({info['score']}/10)"
+                n += 1
+    return n
+
+
 def cmd_commit(d):
     man = json.load(open(MAN))
     by = {c["file"]: c for c in queued(man)}
@@ -875,7 +988,11 @@ def cmd_commit(d):
         shutil.copy(p, up)
         subprocess.run(["gh", "release", "upload", "media", up, "-R", REPO, "--clobber"], check=True)
         os.remove(up)
-        cv = p.replace(".mp4", "__cover.jpg")
+        # THE REAL COVER BUG (16 Nov 2026): the artifact folder is named after the
+        # clip ("cine-KT_X-01_y.mp4/"), so p.replace(".mp4", ...) rewrote the
+        # FOLDER too and the cover was never found - every queue kept the old
+        # navy-band cover. Only the file name is changed now.
+        cv = os.path.join(os.path.dirname(p), os.path.basename(p)[:-4] + "__cover.jpg")
         print(f"  cover file {'found' if os.path.exists(cv) else 'MISSING'}: {os.path.basename(cv)}", flush=True)
         if os.path.exists(cv):
             # A NEW NAME, NOT --clobber (15 Nov 2026). The queue kept the old
@@ -915,6 +1032,10 @@ def cmd_commit(d):
         n += 1
         print("cinematic in:", f)
         json.dump(man, open(MAN, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    dn = _drops(d, man)
+    if dn:
+        json.dump(man, open(MAN, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+        print(f"{dn} clip(s) dropped: no clear point")
     print(f"{n} clip(s) now cinematic")
 
 

@@ -1,0 +1,89 @@
+# TikTok backlog (17 Nov 2026, the owner: "5 more posts on TikTok per day, 10 in
+# total"). Cuts the TikTok version (factory/tiktok_cut.py, full screen, the
+# one-clear-point check) of clips already posted elsewhere that never reached
+# TikTok; tiktok_extra.py posts them in the extra TikTok slots. Daily, 6 at a time.
+name: tiktok-backlog
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 5 * * *"
+permissions:
+  contents: write
+  actions: write
+env:
+  FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
+  PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  GH_TOKEN: ${{ github.token }}
+  CINE_TT_ONLY: "1"
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.l.outputs.matrix }}
+      count: ${{ steps.l.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q numpy pillow
+      - id: l
+        run: python factory/cinematic.py list
+
+  cut:
+    needs: list
+    if: needs.list.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        file: ${{ fromJSON(needs.list.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - run: pip install -q anthropic onnxruntime
+      - name: Cut this clip cinematic from the HD episode
+        run: python factory/cinematic.py one "${{ matrix.file }}"
+      - id: n
+        run: echo "name=ttx-$(echo '${{ matrix.file }}' | tr '/' '-')" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.n.outputs.name }}
+          path: /tmp/cine_out
+          retention-days: 7
+
+  swap:
+    needs: cut
+    if: ${{ always() && needs.cut.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: post
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -q numpy pillow
+      - uses: actions/download-artifact@v4
+        with: { pattern: "ttx-*", path: /tmp/cines }
+      - name: Mark the TikTok versions ready
+        run: python factory/cinematic.py commit /tmp/cines
+      - name: Save
+        if: always()
+        run: |
+          git config user.name "clip-agents"
+          git config user.email "clip-agents@users.noreply.github.com"
+          git add state/manifest.json
+          git diff --staged --quiet && exit 0
+          git commit -q -m "tiktok backlog: versions ready $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

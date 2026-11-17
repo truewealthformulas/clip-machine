@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16"
   },
   {
@@ -123,7 +123,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1"
   },
@@ -5538,10 +5538,11 @@
    "file": "KT_LETTINGGO3/01_carryingluggage_49s.mp4",
    "caption": "How much old baggage are you carrying around?\n\nKevin Trudeau asks you to picture every hurt you've collected: names you were called as a kid, a breakup, a business betrayal, a colleague who lied about you, even guilt over something you did.\n\nEach one goes into the bag. He says it all weighs you down and stops you from going forward.\n\nWhich piece of luggage would you set down first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 10681702,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -5560,14 +5561,12 @@
    "cine_cover": 12,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Df2RbcBk1ER/"
+    "instagram": "https://www.instagram.com/reel/Df2RbcBk1ER/",
+    "facebook": "https://facebook.com/reel/1811201303492567/",
+    "youtube": "https://youtube.com/shorts/PA_RpoBgUcQ"
    },
    "caption_at_post": "How much old baggage are you carrying around?\n\nKevin Trudeau asks you to picture every hurt you've collected: names you were called as a kid, a breakup, a business betrayal, a colleague who lied about you, even guilt over something you did.\n\nEach one goes into the bag. He says it all weighs you down and stops you from going forward.\n\nWhich piece of luggage would you set down first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-17T10:41",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-17T18:46",
    "agent_retried": [
     "facebook",
     "youtube"
@@ -5605,7 +5604,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-17T13:27",
+   "scheduled_at": "2026-11-17T19:30",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "t5_best": 28.5,

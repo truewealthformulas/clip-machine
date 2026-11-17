@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,8 +22,9 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
-   "posted_at": "2026-10-08T20:16"
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "posted_at": "2026-10-08T20:16",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MIND/01_inprocess_36s.mp4",
@@ -50,7 +51,8 @@
    "agent_retried": [
     "facebook"
    ],
-   "style": "none"
+   "style": "none",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MIND/01_selfimageblocks_47s.mp4",
@@ -75,7 +77,8 @@
    },
    "caption_at_post": "Ad: Kevin Trudeau on the picture you carry of yourself, and why saying something that doesn't match it creates conflict instead of results. What does your picture say?",
    "posted_at": "2026-10-09T15:35",
-   "style": "C1"
+   "style": "C1",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MIND/01_wantingbackfires_65s.mp4",
@@ -100,7 +103,8 @@
     "youtube": "https://youtube.com/shorts/U892YS361xE"
    },
    "caption_at_post": "Ad: Kevin Trudeau on why saying \"I want to be a millionaire\" can trigger old beliefs that fight back. Which belief about money did you grow up with?",
-   "posted_at": "2026-10-10T11:35"
+   "posted_at": "2026-10-10T11:35",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MIND/02_firstwordwish_63s.mp4",
@@ -123,9 +127,10 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
-   "style": "C1"
+   "style": "C1",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MIND/02_lastwords_47s.mp4",
@@ -150,7 +155,8 @@
    },
    "caption_at_post": "Ad: Kevin Trudeau on why \"I am a millionaire\" is where you finish, not where you start. Where are you on the ladder right now?",
    "posted_at": "2026-10-09T19:33",
-   "style": "C1"
+   "style": "C1",
+   "tt_extra": "dropped - no clear point (6/10)"
   },
   {
    "file": "KT_MINDSET/01_becomewhatthink_52s.mp4",

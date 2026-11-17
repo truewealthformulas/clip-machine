@@ -488,6 +488,16 @@ def with_club(platform, out, brand=""):
     line = CLUB_LINE.format(where=CLUB_WHERE.get(platform, "link in my bio"))
     if line in out:
         return out
+    if platform == "tiktok" and os.environ.get("KT_TT_CLUB_LAST", "1") == "1":
+        # 17 Nov 2026 (TikTok stuck at ~200 views a video): every TikTok OPENED
+        # with the same club sentence, so the only text people saw - and the
+        # text TikTok reads to decide who the video is for - was an identical
+        # sales line on every post. The hook opens now; the club goes last,
+        # just above the hashtags.
+        parts = out.rstrip().split("\n")
+        if parts and parts[-1].lstrip().startswith("#"):
+            return "\n".join(parts[:-1]).rstrip() + "\n\n" + line + "\n\n" + parts[-1]
+        return out.rstrip() + "\n\n" + line
     return line + "\n\n" + out
 
 

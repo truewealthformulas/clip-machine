@@ -184,8 +184,38 @@ def render_tt(src, t_in, t_out, hook, phrases, segs, dst, emphasis):
     enc.stdin.close()
     enc.wait()
     dec.wait()
+    joined = os.path.join(tmp, "j.mp4")
     _sh("ffmpeg", "-loglevel", "error", "-y", "-i", vid, "-ss", f"{t_in:.3f}", "-t", f"{body:.3f}", "-i", src,
-        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest",
-        "-movflags", "+faststart", dst)
+        "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-shortest", joined)
+    jumpcut(joined, phrases, body, dst)
     subprocess.run(["rm", "-rf", tmp])
+    return dst
+
+
+def jumpcut(src, phrases, body, dst, max_gap=float(os.environ.get("TT_MAX_GAP", "0.3"))):
+    """NO DEAD AIR (17 Nov 2026, TikTok stuck under 185 views). Every pause
+    longer than max_gap between Kevin's phrases is cut down to it - the pace of
+    the edits that do well on TikTok. Captions are already burned in, so they
+    move with the picture."""
+    ph = sorted((max(0.0, a), min(b, body)) for a, b, _ in phrases if b > a)
+    keep, cur = [], [0.0, 0.0]
+    for a, b in ph:
+        if a - cur[1] > max_gap:
+            keep.append((cur[0], cur[1] + max_gap / 2))
+            cur = [a - max_gap / 2, b]
+        else:
+            cur[1] = max(cur[1], b)
+    keep.append((cur[0], min(body, cur[1] + 0.4)))
+    keep = [(max(0.0, a), b) for a, b in keep if b - a > 0.05]
+    cut = body - sum(b - a for a, b in keep)
+    if cut < 0.5 or len(keep) > 120:
+        os.replace(src, dst)
+        return dst
+    sel = "+".join(f"between(t,{a:.3f},{b:.3f})" for a, b in keep)
+    _sh("ffmpeg", "-loglevel", "error", "-y", "-i", src,
+        "-vf", f"select='{sel}',setpts=N/FRAME_RATE/TB",
+        "-af", f"aselect='{sel}',asetpts=N/SR/TB",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-c:a", "aac", "-b:a", "160k",
+        "-movflags", "+faststart", dst)
+    print(f"  jump cuts: {cut:.1f}s of pauses removed ({len(keep)} pieces)", flush=True)
     return dst

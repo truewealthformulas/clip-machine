@@ -46,7 +46,8 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 12   # 12: clips start where the thought starts, end where the sentence ends.
+CINE_V = 13   # 13: TikTok copy 20-40 s + jump cuts.
+CINE_V_12 = 12   # 12: clips start where the thought starts, end where the sentence ends.
 CINE_V_PREV = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
 # (factory/editorial.py). CINE_STYLE=classic gives back the title + caption bar.
@@ -748,10 +749,34 @@ def find(series, f):
     return None, None, None
 
 
+# TIKTOK x2 (17 Nov 2026, the owner: "Let's make 5 more posts on TikTok per day
+# so in total 10"). Instagram's queue only feeds 5 a day, so the extra five come
+# from the BACKLOG: clips already posted elsewhere that never reached TikTok (63
+# of them died on the October token failure). CINE_TT_ONLY=1 cuts just their
+# TikTok version (full screen, the one-clear-point check included);
+# tiktok_extra.py posts them in the extra TikTok slots.
+TT_ONLY = os.environ.get("CINE_TT_ONLY") == "1"
+TT_BATCH = int(os.environ.get("CINE_TT_BATCH", "6"))
+
+
+def tt_backlog(man, series):
+    out = []
+    for c in man["clips"]:
+        t = str((c.get("status") or {}).get("tiktok") or "")
+        if (c.get("posted_at") and not c.get("tt_extra") and not c.get("dropped")
+                and not any(k in t for k in ("inbox", "posted", "rocess"))
+                and find(series, c["file"])[0]):
+            out.append(c["file"])
+    return out
+
+
 def cmd_list():
     man = json.load(open(MAN))
     series = json.load(open(os.path.join(HERE, "kt_series.json")))
-    files = [c["file"] for c in queued(man) if find(series, c["file"])[0]]
+    if TT_ONLY:
+        files = tt_backlog(man, series)[:TT_BATCH]
+    else:
+        files = [c["file"] for c in queued(man) if find(series, c["file"])[0]]
     print(f"{len(files)} clip(s) to cut cinematic: {files}")
     with open(os.environ.get("GITHUB_OUTPUT", "/dev/null"), "a") as fh:
         fh.write(f"matrix={json.dumps(files)}\ncount={len(files)}\n")
@@ -887,6 +912,52 @@ def point_window(srt, t_in, t_out):
     return new_in, new_out, sc, str(out.get("point") or "")
 
 
+TT_MAX = float(os.environ.get("TT_MAX_LEN", "40"))
+
+
+def tt_short(phrases):
+    """SHORT FOR TIKTOK (17 Nov 2026: TikTok stuck under 185 views since the
+    clips grew to 55-75 s). TikTok pushes what people watch to the end, so its
+    copy keeps only the strongest 20-40 s that still make the point - Claude
+    picks the phrases; the other platforms keep the full story.
+    Returns (first, last) phrase indexes, or None to keep everything."""
+    if not phrases or phrases[-1][1] - phrases[0][0] <= TT_MAX:
+        return None
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "agents"))
+        import common as AC
+        lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(phrases))
+        out = AC.ask_json(
+            "You cut TikToks from a speaker's clip. TikTok rewards videos people watch to the end, so "
+            "you keep only the strongest 20-40 seconds that still make ONE complete point a stranger "
+            "understands, ideally opening on the most gripping line. Whole sentences only. Return JSON only.",
+            f"Phrases of the clip:\n{lines}\n\nPick a contiguous range (first, last) lasting 20-{TT_MAX:.0f} s. "
+            'Reply: {"first": N, "last": M, "why": "..."}', max_tokens=500)
+        a, b = int(out["first"]), int(out["last"])
+        while b + 1 < len(phrases) and not phrases[b][2].rstrip().endswith((".", "?", "!")) \
+                and phrases[b + 1][1] - phrases[a][0] <= TT_MAX + 8:
+            b += 1
+        if 0 <= a <= b < len(phrases) and 12 <= phrases[b][1] - phrases[a][0] <= TT_MAX + 8:
+            print(f"  tiktok window: phrases {a}-{b} ({phrases[b][1] - phrases[a][0]:.1f}s) {out.get('why', '')[:90]}",
+                  flush=True)
+            return a, b
+    except Exception as e:
+        print(f"  tiktok window unavailable ({type(e).__name__}: {e})", flush=True)
+    return None
+
+
+def render_tiktok(src, t_in, t_out, hook, phrases, segs, dst, seed):
+    import tiktok_cut as TC
+    w = tt_short(phrases)
+    if w:
+        a, b = w
+        s0, s1 = max(0.0, phrases[a][0] - 0.15), phrases[b][1] + 0.35
+        ph2 = [(x - s0, y - s0, t) for x, y, t in phrases[a:b + 1]]
+        segs2 = plan(ph2, s1 - s0, seed)
+        return TC.render_tt(src, t_in + s0, t_in + s1, hook, ph2, segs2, dst, emphasis)
+    return TC.render_tt(src, t_in, t_out, hook, phrases, segs, dst, emphasis)
+
+
 def cmd_one(f):
     os.makedirs(OUT, exist_ok=True)
     sys.path.insert(0, K)
@@ -916,7 +987,7 @@ def cmd_one(f):
         if score is not None and score < POINT_MIN:
             # not worth posting: tell the swap to take it out of the queue
             os.makedirs(OUT, exist_ok=True)
-            with open(os.path.join(OUT, "DROP__" + f.replace("/", "--") + ".json"), "w") as fh:
+            with open(os.path.join(OUT, ("DROPTT__" if TT_ONLY else "DROP__") + f.replace("/", "--") + ".json"), "w") as fh:
                 json.dump({"file": f, "score": score}, fh)
             print(f"cinematic {f}: DROPPED - no clear point (score {score}/10)", flush=True)
             return
@@ -938,6 +1009,11 @@ def cmd_one(f):
     idx, _ = R.hooks_index()
     hook = idx.get(R.slug_of(f)) or clip.get("hook") or [clip["slug"]]
     asset = f.replace("/", "--")
+    if TT_ONLY:
+        segs = plan(phrases, t_out - t_in, clip["slug"])
+        render_tiktok(src, t_in, t_out, hook, phrases, segs, os.path.join(OUT, "TTX__" + asset), clip["slug"])
+        print(f"tiktok backlog {f}: cut ({t_out - t_in:.1f}s)", flush=True)
+        return
     dst = os.path.join(OUT, "CINE__" + asset)
     cover = os.path.join(OUT, "CINE__" + asset.replace(".mp4", "__cover.jpg"))
     segs = render(src, t_in, t_out, hook, phrases, dst, clip["slug"], cover)
@@ -949,8 +1025,7 @@ def cmd_one(f):
                 FORCE_LOOK[0] = "classic"
                 render(src, t_in, t_out, hook, phrases, os.path.join(OUT, "CINETT__" + asset), clip["slug"], None)
             else:
-                import tiktok_cut as TC
-                TC.render_tt(src, t_in, t_out, hook, phrases, segs, os.path.join(OUT, "CINETT__" + asset), emphasis)
+                render_tiktok(src, t_in, t_out, hook, phrases, segs, os.path.join(OUT, "CINETT__" + asset), clip["slug"])
             print(f"  tiktok copy: {os.environ.get('CINE_TT', 'full')}", flush=True)
         except Exception as e:
             print(f"  tiktok copy failed ({type(e).__name__}: {e})", flush=True)
@@ -1032,6 +1107,25 @@ def cmd_commit(d):
         n += 1
         print("cinematic in:", f)
         json.dump(man, open(MAN, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    for p in sorted(glob.glob(os.path.join(d, "**", "TTX__*.mp4"), recursive=True)):
+        asset = os.path.basename(p)[len("TTX__"):]
+        f = asset.replace("--", "/", 1)
+        c = next((x for x in man["clips"] if x["file"] == f), None)
+        if not c:
+            continue
+        tname = asset.replace(".mp4", "__tt.mp4")
+        tup = os.path.join("/tmp", tname)
+        shutil.copy(p, tup)
+        if subprocess.run(["gh", "release", "upload", "media", tup, "-R", REPO, "--clobber"]).returncode == 0:
+            c["tiktok_file"], c["tt_extra"] = tname, "ready"
+            print("tiktok backlog ready:", f)
+        os.remove(tup)
+    for p in glob.glob(os.path.join(d, "**", "DROPTT__*.json"), recursive=True):
+        info = json.load(open(p))
+        c = next((x for x in man["clips"] if x["file"] == info["file"]), None)
+        if c:
+            c["tt_extra"] = f"dropped - no clear point ({info['score']}/10)"
+    json.dump(man, open(MAN, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     dn = _drops(d, man)
     if dn:
         json.dump(man, open(MAN, "w", encoding="utf-8"), indent=1, ensure_ascii=False)

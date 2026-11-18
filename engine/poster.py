@@ -1417,6 +1417,14 @@ ADAPTERS = {"tiktok": tiktok, "instagram": instagram,
 ENABLED = [p.strip() for p in
            os.environ.get("KT_PLATFORMS", "instagram,facebook").split(",")
            if p.strip()]
+# INSTAGRAM REELS PAUSED (18 Nov 2026). Account Status: not recommendable to
+# non-followers - "Contenido no original". Instagram lifts that when most posts
+# of a rolling 30 days are original, so until IG_REELS_PAUSE_UNTIL the clips do
+# not go to Instagram at all; agents/carousel.py posts 3 original carousels a
+# day there instead. Everything else keeps posting.
+_PAUSE = os.environ.get("IG_REELS_PAUSE_UNTIL", "2026-12-18")
+if "instagram" in ENABLED and time.strftime("%Y-%m-%d") < _PAUSE:
+    ENABLED = [p for p in ENABLED if p != "instagram"]
 
 
 

@@ -34,7 +34,8 @@ jobs:
       FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       AGENT_MODEL: ${{ vars.AGENT_MODEL || 'claude-sonnet-5-5' }}
-      POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '7' }}
+      POSTS_PER_DAY: "10"            # 18 Nov 2026: 10 a day on YouTube and TikTok
+      KEEP_PER_EPISODE: "3"          # 18 Nov: Instagram reels are paused, so the 1-per-episode rule (an Instagram problem) is relaxed
       TARGET_DAYS: ${{ vars.TARGET_DAYS || '7' }}
       AGENT_TEST_PLANS: ${{ inputs.test && '1' || '0' }}
       MAX_EPISODES_PER_RUN: ${{ inputs.max_episodes || '8' }}   # one clip per episode now (4 Nov 2026)

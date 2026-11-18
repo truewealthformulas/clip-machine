@@ -226,7 +226,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101111335990D7377CB8E08D78E426'}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T07:31",
@@ -242,7 +242,10 @@
    "caption_at_post": "Every word he said was true. He still wasn't honest.\n\nA man comes home from lunch and tells his wife where he went and what he ate. All true.\n\nWhat he leaves out is who he had lunch with. He didn't lie, but he wasn't honest either.\n\nKevin says telling the truth and being honest are not the same thing, and small omissions build a quiet wall between people.\n\nWhere have you noticed the gap between the two?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #communication #kevintrudeau",
    "posted_at": "2026-10-11T07:33",
    "tiktok_file": "KT_RELATIONSHIPS--01_truthhonesty_32s__tt.mp4",
-   "tt_extra": "ready"
+   "tt_extra": "sent",
+   "tt_extra_at": "2026-11-18T12:32",
+   "tt_extra_slot": "12:30",
+   "tt_note": "old"
   },
   {
    "file": "KT_RELATIONSHIPS/01_yourcircle_30s.mp4",

@@ -257,7 +257,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '20261010205140181FF8B5F852665A5089'}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-10T16:34",
@@ -273,7 +273,10 @@
    "caption_at_post": "Asked what he'd do with a messy roommate, his answer surprised everyone.\n\nKevin says he simply wouldn't have that roommate, because he wouldn't be in that situation.\n\nThe people around him are honest, kind, loving and good communicators. Nobody pushes his buttons.\n\nHis view: the people in your world reflect the person you are, and what you attract.\n\nWhat does your circle reflect back to you?\n\n#ad #mindset #relationships #kevintrudeau",
    "posted_at": "2026-10-10T16:51",
    "tiktok_file": "KT_RELATIONSHIPS--01_yourcircle_30s__tt.mp4",
-   "tt_extra": "ready"
+   "tt_extra": "sent",
+   "tt_extra_at": "2026-11-18T13:47",
+   "tt_extra_slot": "13:45",
+   "tt_note": "old"
   },
   {
    "file": "KT_RELATIONSHIPS/02_soulmate_57s.mp4",

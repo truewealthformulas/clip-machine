@@ -10,9 +10,8 @@ on:
         description: "Post today's story (off = only build the cards)"
         type: boolean
         default: true
-  schedule:
-    - cron: "15 16 * * *"      # 12:15 New York (EDT)
-    - cron: "5 13 * * *"       # 09:05 New York - only used while a call campaign runs (agents/offer_story.py)
+  # 18 Nov 2026: schedule OFF - the owner: "we have to take away the stories call
+  # to action" (the daily old-offer story with the "Reply KEYWORD" band).
 concurrency:
   group: post
   cancel-in-progress: false

@@ -168,7 +168,7 @@
     "instagram": "posted",
     "instagram_story": "story posted",
     "youtube": "posted",
-    "tiktok": "token refresh failed 200: {'error': 'invalid_grant', 'error_description': 'Refresh token is invalid or expired.', 'log_id': '2026101116534797433458835DE8A87041'}"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-10-11T12:37",
@@ -184,7 +184,10 @@
    "caption_at_post": "The strangest secret is one sentence, and most people laugh at it.\n\nKevin recalls the classic Earl Nightingale recording: you become what you think about most of the time.\n\nHe laughed the first time he heard it, because as a young man he was always thinking about girls. The room laughed too, but they got the point. You become what you think about and feel about most of the time.\n\nThoughts are things. So control your thoughts and feelings, feel good now, and keep working on a better you.\n\nWhat do you think about most of the time?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #thoughts #kevintrudeau",
    "posted_at": "2026-10-11T12:53",
    "tiktok_file": "KT_MINDSET--01_becomewhatthink_52s__tt.mp4",
-   "tt_extra": "ready"
+   "tt_extra": "sent",
+   "tt_extra_at": "2026-11-18T11:55",
+   "tt_extra_slot": "11:45",
+   "tt_note": "old"
   },
   {
    "file": "KT_MINDSET/01_fivesecondmiracle_36s.mp4",

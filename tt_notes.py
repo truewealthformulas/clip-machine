@@ -16,6 +16,10 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "engine"))
 os.environ.setdefault("KT_DATA", os.path.join(HERE, "state"))
+# 17 Nov 2026: WITHOUT THIS LINE engine.load() checks for the video files on
+# disk, finds none on a runner, returns ZERO clips - and the save below wrote
+# that empty board over the real one. Never again: remote media, and a guard.
+os.environ["KT_MEDIA_REMOTE"] = "1"
 
 
 def main():
@@ -46,6 +50,10 @@ def main():
             sent += 1
         else:
             print("tt_notes: issue failed:", r.stderr[:200])
+    raw = json.load(open(engine.MANIFEST))
+    if len(man["clips"]) < len(raw.get("clips", [])) or not man["clips"]:
+        print("tt_notes: REFUSING to save - the board would lose clips")
+        return
     engine.save(man)
     print(f"tt_notes: {sent} description(s) sent")
 

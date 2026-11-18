@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -5760,10 +5760,11 @@
    "file": "KT_PRIORITIES3/01_handwritingmind_42s.mp4",
    "caption": "You typed it into your phone. That may be why you forgot it.\n\nKevin Trudeau says research shows typing on a keyboard activates only about nine neural pathways. Printing activates around 37, and cursive activates hundreds.\n\nSo when you write a to-do by hand, your brain is far more engaged. You don't forget it, and your subconscious keeps working on it.\n\nWhat do you still write by hand, and what do you only type?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mind #habits #kevintrudeau",
    "bytes": 8601351,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story posted",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -5782,15 +5783,13 @@
    "cine_cover": 12,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Df3fqTojtuE/"
+    "instagram": "https://www.instagram.com/reel/Df3fqTojtuE/",
+    "facebook": "https://facebook.com/reel/1002761019550497/",
+    "youtube": "https://youtube.com/shorts/119gYdHBNTQ"
    },
    "caption_at_post": "You typed it into your phone. That may be why you forgot it.\n\nKevin Trudeau says research shows typing on a keyboard activates only about nine neural pathways. Printing activates around 37, and cursive activates hundreds.\n\nSo when you write a to-do by hand, your brain is far more engaged. You don't forget it, and your subconscious keeps working on it.\n\nWhat do you still write by hand, and what do you only type?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mind #habits #kevintrudeau",
-   "posted_at": "2026-11-17T22:04",
+   "posted_at": "2026-11-18T03:11",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/40",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
    "agent_retried": [
     "facebook",
     "youtube"

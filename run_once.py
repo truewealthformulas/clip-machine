@@ -241,9 +241,17 @@ def main():
             from datetime import datetime
             now = engine.now_local()
             today = now.strftime("%Y-%m-%d")
-            gap = float(os.environ.get("YTFB_MIN_GAP_H", "5"))
             board = engine.load()["clips"]
             for plat in ("youtube", "facebook"):
+                # 18 Nov 2026, the owner: "Let's post 10 times in YouTube reels".
+                # YouTube gets its own cap (YT_PER_DAY, default 10) and a short
+                # gap; Facebook keeps 3 a day, 5 h apart.
+                if plat == "youtube":
+                    cap = int(os.environ.get("YT_PER_DAY", "10") or 0)
+                    gap = float(os.environ.get("YT_MIN_GAP_H", "0.5"))
+                else:
+                    cap = ycap
+                    gap = float(os.environ.get("YTFB_MIN_GAP_H", "5"))
                 if plat not in poster.ENABLED:
                     continue
                 if clip.get("repost_of"):
@@ -255,8 +263,8 @@ def main():
                 last = max(done) if done else ""
                 mins = ((now.replace(tzinfo=None) - datetime.strptime(last[:16], "%Y-%m-%dT%H:%M"))
                         .total_seconds() / 60) if last else 1e9
-                if len(done) >= ycap:
-                    side_held[plat] = f"held - {plat.title()} limited to {ycap} a day"
+                if len(done) >= cap:
+                    side_held[plat] = f"held - {plat.title()} limited to {cap} a day"
                 elif mins < gap * 60:
                     side_held[plat] = f"held - {plat.title()} spaced {gap:g}h apart"
             if side_held:

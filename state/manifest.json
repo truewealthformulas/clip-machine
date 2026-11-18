@@ -5721,10 +5721,11 @@
    "file": "KT_MONEY7/01_chinastarving_35s.mp4",
    "caption": "Eat everything on your plate, there are starving people in China.\n\nKevin remembers hearing that growing up. He says China had no manufacturing in 1970, almost no infrastructure, and many people were starving.\n\nHis point is simple: the wealth China has today came from one thing, manufacturing.\n\nWhat did you grow up believing about money that turned out to be wrong?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #success #kevintrudeau",
    "bytes": 11906784,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
@@ -5743,14 +5744,12 @@
    "cine_cover": 12,
    "posting": false,
    "links": {
-    "instagram": "https://www.instagram.com/reel/Df2lc_8AqUX/"
+    "instagram": "https://www.instagram.com/reel/Df2lc_8AqUX/",
+    "facebook": "https://facebook.com/reel/2293158817925781/",
+    "youtube": "https://youtube.com/shorts/Q4IJd3cKasY"
    },
    "caption_at_post": "Eat everything on your plate, there are starving people in China.\n\nKevin remembers hearing that growing up. He says China had no manufacturing in 1970, almost no infrastructure, and many people were starving.\n\nHis point is simple: the wealth China has today came from one thing, manufacturing.\n\nWhat did you grow up believing about money that turned out to be wrong?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #success #kevintrudeau",
-   "posted_at": "2026-11-17T13:36",
-   "retry_only": [
-    "youtube",
-    "facebook"
-   ],
+   "posted_at": "2026-11-17T22:57",
    "agent_retried": [
     "facebook",
     "youtube"

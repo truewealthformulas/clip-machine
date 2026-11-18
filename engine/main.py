@@ -667,6 +667,19 @@ def load():
 
 
 def save(m):
+    # NEVER WRITE AN EMPTIED BOARD (17 Nov 2026). A helper loaded the manifest
+    # without KT_MEDIA_REMOTE, load() filtered every clip out (no files on a
+    # runner) and save() wrote "clips": [] over 193 clips. Refuse any save that
+    # would lose more than a handful of clips at once.
+    try:
+        with open(MANIFEST) as fh:
+            old = len(json.load(fh).get("clips", []))
+    except (ValueError, OSError):
+        old = 0
+    new = len(m.get("clips", []))
+    if old and (new == 0 or new < old - 10):
+        sys.stderr.write(f"manifest: REFUSED to save {new} clips over {old}\n")
+        return
     tmp = MANIFEST + ".tmp"
     with open(tmp, "w") as fh:
         json.dump(m, fh, indent=1)

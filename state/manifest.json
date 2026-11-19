@@ -6025,8 +6025,12 @@
    "file": "KT_READING4/01_muskhabit_38s.mp4",
    "caption": "The richest man alive does one thing five days a week.\n\nKevin Trudeau says Elon Musk blocks out one hour a day, five days a week, for one thing. It isn't a meeting or a trade.\n\nHe says it's probably the most important thing Elon does. Kevin warns that once you hear what it is, you may wish he hadn't told you, because it's so simple.\n\nWhat is one simple thing you know you should do daily but don't?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 11121089,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-19T09:20",
    "cta_keyword": "GOALS",
@@ -6037,7 +6041,15 @@
    "tiktok_file": "KT_READING4--01_muskhabit_38s__tt.mp4",
    "style": "T5",
    "t5_v": 5,
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1521383229823219/",
+    "youtube": "https://youtube.com/shorts/NNpIHoeEcHE"
+   },
+   "caption_at_post": "The richest man alive does one thing five days a week.\n\nKevin Trudeau says Elon Musk blocks out one hour a day, five days a week, for one thing. It isn't a meeting or a trade.\n\nHe says it's probably the most important thing Elon does. Kevin warns that once you hear what it is, you may wish he hadn't told you, because it's so simple.\n\nWhat is one simple thing you know you should do daily but don't?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
+   "posted_at": "2026-11-19T09:25",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/47"
   },
   {
    "file": "KT_ADVERSITY14/01_turnaround_46s.mp4",

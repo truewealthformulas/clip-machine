@@ -1135,8 +1135,27 @@ def facebook(path, caption, public_url, clip=None):
                 day = time.strftime("%d %b", time.localtime(when))
                 return (f"DUPLICATE - Facebook already published this on {day}",
                         "https://facebook.com" + d["permalink_url"])
+            _fb_cover(vid, tok, public_url, clip)
             return "posted", "https://facebook.com" + d["permalink_url"]
+    _fb_cover(vid, tok, public_url, clip)
     return "posted", f"https://facebook.com/reel/{vid}"
+
+
+def _fb_cover(vid, tok, public_url, clip):
+    """18 Nov 2026: the reel gets OUR cover (the @kevin_trudeau_student look),
+    not a frame Facebook picks. Silent on failure - a cover never fails a post."""
+    try:
+        if not (clip and clip.get("cover") and str(public_url).endswith(".mp4")):
+            return
+        url = public_url.rsplit("/", 1)[0] + "/" + clip["cover"]
+        img = requests.get(url, timeout=T)
+        if img.status_code != 200 or len(img.content) < 5000:
+            return
+        requests.post(f"https://graph.facebook.com/v21.0/{vid}/thumbnails",
+                      data={"access_token": tok, "is_preferred": "true"},
+                      files={"source": ("cover.jpg", img.content, "image/jpeg")}, timeout=T)
+    except Exception:
+        pass
 
 
 # ---------------------------------------------------------------------- TikTok

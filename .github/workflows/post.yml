@@ -236,6 +236,7 @@ jobs:
           FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
           FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FACTORY_KEY: ${{ secrets.FACTORY_KEY }}
         run: |
           pip install -q pillow anthropic
           python agents/carousel.py --due

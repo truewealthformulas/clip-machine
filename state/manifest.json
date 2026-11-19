@@ -5918,8 +5918,9 @@
    "file": "KT_MEMORY3/01_businessmemory_44s.mp4",
    "caption": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #memory #business #success",
    "bytes": 13631731,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -5939,14 +5940,12 @@
    "cine_cover": 13,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/myAtO2yfemg"
+    "youtube": "https://youtube.com/shorts/myAtO2yfemg",
+    "facebook": "https://facebook.com/reel/1075527628877018/"
    },
    "caption_at_post": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #memory #business #success",
-   "posted_at": "2026-11-18T16:25",
+   "posted_at": "2026-11-18T22:06",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/45",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]

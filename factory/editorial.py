@@ -447,6 +447,85 @@ def _portrait(src, t, W=1080, H=1920):
     return im
 
 
+def _split_hook(words):
+    """'How a $2 billion app happened' -> ('HOW A $2', 'Billion app happened.')"""
+    n = len(words)
+    if n <= 2:
+        return " ".join(words).upper(), ""
+    k = max(2, min(4, (n + 1) // 2))
+    head = " ".join(words[:k]).upper()
+    sub = " ".join(words[k:]).rstrip(",;:")
+    sub = sub[:1].upper() + sub[1:]
+    if sub and sub[-1] not in ".!?":
+        sub += "."
+    return head, sub
+
+
+def student_cover(im, words, out):
+    """18 Nov 2026, the owner, showing @kevin_trudeau_student ("he is doing it
+    and having results"): Kevin in black and white, a small spaced KEVIN TRUDEAU,
+    a thin red bar, the headline in heavy white capitals and the rest of the
+    line in italic serif under it - low on the frame, inside the 3:4 the grid shows."""
+    from PIL import ImageEnhance, ImageOps
+    W, H = im.size
+    g = ImageOps.grayscale(im.convert("RGB"))
+    g = ImageEnhance.Contrast(g).enhance(1.18)
+    g = ImageEnhance.Brightness(g).enhance(0.92)
+    base = Image.merge("RGB", (g, g, g)).convert("RGBA")
+    shade = Image.new("L", (1, H))
+    for y in range(H):                                # dark from the middle down
+        v = 0 if y < H * 0.50 else int(215 * min(1.0, (y - H * 0.50) / (H * 0.30)))
+        shade.putpixel((0, y), v)
+    blk = Image.new("RGBA", (W, H), (0, 0, 0, 255))
+    blk.putalpha(shade.resize((W, H)))
+    base.alpha_composite(blk)
+    d = ImageDraw.Draw(base)
+    head, sub = _split_hook(words)
+    x0, maxw = int(W * 0.115), int(W * 0.80)
+    # the headline: up to two lines, as big as fits
+    for size in (104, 96, 88, 80, 72, 64, 58):
+        f = _font("black", size)
+        ws, lines, cur = head.split(), [], ""
+        for w in ws:
+            if cur and d.textlength(cur + " " + w, font=f) > maxw:
+                lines.append(cur)
+                cur = w
+            else:
+                cur = (cur + " " + w).strip()
+        lines.append(cur)
+        if len(lines) <= 2 and all(d.textlength(l, font=f) <= maxw for l in lines):
+            break
+    fs = _font("serif", 58)
+    sl, cur = [], ""
+    for w in sub.split():
+        if cur and d.textlength(cur + " " + w, font=fs) > maxw:
+            sl.append(cur)
+            cur = w
+        else:
+            cur = (cur + " " + w).strip()
+    if cur:
+        sl.append(cur)
+    sl = sl[:2]
+    lh, slh = int(f.size * 1.02), int(fs.size * 1.22)
+    block = lh * len(lines) + (14 + slh * len(sl) if sl else 0)
+    y = int(H * 0.745) - block // 2
+    fl = _font("sans", 26, 600)
+    lab, lx = "KEVIN TRUDEAU", x0
+    for ch in lab:                                    # letter-spaced label
+        d.text((lx, y - 62), ch, font=fl, fill=(235, 235, 235, 255))
+        lx += d.textlength(ch, font=fl) + 7
+    d.rectangle((x0 - 30, y + 6, x0 - 22, y + block - 4), fill=(200, 30, 36, 255))
+    for ln in lines:
+        d.text((x0, y), ln, font=f, fill=(255, 255, 255, 255))
+        y += lh
+    y += 14
+    for ln in sl:
+        d.text((x0, y), ln, font=fs, fill=(240, 236, 228, 255))
+        y += slh
+    base.convert("RGB").save(out, quality=92)
+    return out
+
+
 def make_cover(src, t, hook, out, kind="word", emphasis=None):
     W, H = 1080, 1920
     im = _portrait(src, t, W, H).convert("RGBA")
@@ -456,6 +535,8 @@ def make_cover(src, t, hook, out, kind="word", emphasis=None):
     key = words[ei] if ei is not None else max(words, key=len)
     key = key.strip(",.!?:;\"'")
     d = ImageDraw.Draw(im)
+    if kind == "student":
+        return student_cover(im, words, out)
     if kind == "headline":
         # @kevin_trudeau_student (15 Nov 2026): Kevin full-frame, the hook in
         # white serif capitals across the middle, soft shadow, nothing else.

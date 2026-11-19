@@ -46,7 +46,8 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 13   # 13: TikTok copy 20-40 s + jump cuts.
+CINE_V = 14   # 14: @kevin_trudeau_student covers (B&W, red bar, caps + italic).
+CINE_V_13 = 13   # 13: TikTok copy 20-40 s + jump cuts.
 CINE_V_12 = 12   # 12: clips start where the thought starts, end where the sentence ends.
 CINE_V_PREV = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
 # 14 Nov 2026, the owner: "Like it, let's change them all" - the editorial look
@@ -716,7 +717,7 @@ def render(src, t_in, t_out, hook, phrases, dst, seed, cover=None):
                 import editorial as ED
                 ks = [(a, b) for a, b, k, _ in segs if k == "K" and b - a > 1.0]
                 a, b = (ks[len(ks) // 2] if ks else (1.0, 2.0))
-                kinds = [k for k in os.environ.get("CINE_COVERS", "headline").split(",") if k]
+                kinds = [k for k in os.environ.get("CINE_COVERS", "student").split(",") if k]
                 kind = kinds[int(hashlib.md5(str(seed).encode()).hexdigest(), 16) % len(kinds)]
                 ED.make_cover(src, t_in + (a + b) / 2, hook, cover, kind=kind, emphasis=emphasis)
                 made = True
@@ -892,7 +893,7 @@ def point_window(srt, t_in, t_out):
         "ONE clear, complete point that a stranger understands with no context: the setup, the point "
         "itself and its payoff or lesson, in whole sentences. Never start or end mid-sentence. Return JSON only.",
         f"The clip is currently {t_in:.1f}s-{t_out:.1f}s. Transcript lines around it:\n{lines}\n\n"
-        "Choose the best window (start line index, end line index) between 25 and 85 seconds long that "
+        f"Choose the best window (start line index, end line index) between {PW_MIN:.0f} and {PW_MAX:.0f} seconds long that "
         "makes one clear point on its own, staying close to the current clip. Then score that window 1-10: "
         "10 = a stranger gets a clear, valuable point; 5 = vague or depends on missing context; "
         "1 = says nothing. Be honest; vague motivational talk without a concrete point scores 5 or less. "
@@ -904,6 +905,12 @@ def point_window(srt, t_in, t_out):
         raise ValueError(f"bad window {a}-{b}")
     while b + 1 < len(cues) and not cues[b][2].rstrip().endswith((".", "?", "!")):
         b += 1
+    # Facebook (18 Nov 2026): "post more reels over 60 seconds - views up 50%".
+    # Too short -> carry on to the end of the next whole sentences.
+    while cues[b][1] - cues[a][0] < PW_MIN and b + 1 < len(cues) and cues[b + 1][1] - cues[a][0] <= PW_MAX:
+        b += 1
+        while b + 1 < len(cues) and not cues[b][2].rstrip().endswith((".", "?", "!")):
+            b += 1
     new_in, new_out = cues[a][0] - 0.15, cues[b][1] + 0.35
     if new_out - new_in > MAX_LEN - R.T5_CTA:
         new_out = new_in + MAX_LEN - R.T5_CTA
@@ -913,6 +920,10 @@ def point_window(srt, t_in, t_out):
 
 
 TT_MAX = float(os.environ.get("TT_MAX_LEN", "40"))
+# 18 Nov 2026, the owner: "Facebook mention 1 min videos". The full story (YouTube,
+# Instagram, Facebook) runs 62-85 s; TikTok keeps its own 20-40 s copy.
+PW_MIN = float(os.environ.get("POINT_MIN_S", "62"))
+PW_MAX = float(os.environ.get("POINT_MAX_S", "85"))
 
 
 def tt_short(phrases):

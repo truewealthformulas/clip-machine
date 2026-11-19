@@ -6155,7 +6155,10 @@
    "bytes": 11423088,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-19T16:39",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_MINDSET38/02_lovewithoutcondition_43s.mp4",
@@ -6163,7 +6166,10 @@
    "bytes": 11924391,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T06:56",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

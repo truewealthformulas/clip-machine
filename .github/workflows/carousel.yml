@@ -1,4 +1,4 @@
-# 3 ORIGINAL carousels a day on Instagram (agents/carousel.py), 18 Nov 2026:
+# 3 ORIGINAL carousels a day on Instagram AND the Facebook Page (18 Nov) (agents/carousel.py), 18 Nov 2026:
 # Account Status said "Contenido no original", so the Kevin reels are paused on
 # Instagram for 30 days (engine/poster.py IG_REELS_PAUSE_UNTIL) and these take
 # their place. Times are New York: 9:00, 13:00, 19:30.
@@ -27,6 +27,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4

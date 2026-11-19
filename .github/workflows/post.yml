@@ -223,6 +223,23 @@ jobs:
           KT_DATA: state
         run: python queue_alarm.py
 
+      # CAROUSEL CATCH-UP (18 Nov 2026): GitHub ran the 13:00 carousel at 18:41
+      # and skipped the 19:30 one, so the chain posts any carousel that is due.
+      - name: Carousel catch-up
+        if: ${{ !inputs.dry_run && inputs.trial == '' }}
+        continue-on-error: true
+        timeout-minutes: 10
+        env:
+          GH_TOKEN: ${{ github.token }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          pip install -q pillow anthropic
+          python agents/carousel.py --due
+
       - name: Remember what was posted
         if: ${{ !inputs.dry_run && inputs.trial == '' }}
         run: |
@@ -231,6 +248,7 @@ jobs:
           git add state/manifest.json state/metrics.json docs
           if [ -f state/tiktok_token.enc ]; then git add state/tiktok_token.enc; fi
           if [ -f state/ig_daily.json ]; then git add state/ig_daily.json; fi
+          if [ -f state/carousels.json ]; then git add state/carousels.json; fi
           # Nothing due is the normal case; an empty commit would be noise.
           git diff --staged --quiet || git commit -m "state: $(date -u +%FT%TZ)"
           git push

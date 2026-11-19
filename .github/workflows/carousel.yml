@@ -37,7 +37,7 @@ jobs:
         with: { python-version: "3.11" }
       - run: pip install -q pillow requests anthropic
       - name: Make and post one carousel
-        run: python agents/carousel.py ${{ inputs.dry && '--dry' || '' }}
+        run: python agents/carousel.py ${{ inputs.dry && '--dry' || '' }} ${{ github.event_name == 'schedule' && '--due' || '' }}
       - name: Upload the slides (to look at)
         if: always()
         uses: actions/upload-artifact@v4

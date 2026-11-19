@@ -6074,8 +6074,12 @@
    "file": "KT_MONEY9/01_joneses_38s.mp4",
    "caption": "Are you buying what you want, or what impresses others?\n\nKevin Trudeau says many people have a syndrome called keeping up with the Joneses, and his answer is delayed gratification.\n\nHis idea: choose a much less expensive home than the one you were considering. Over a few years you build savings, and when you sell, you may be able to put much more down or buy in full.\n\nHe says that is how you start.\n\nWhat would you do differently if nobody was watching?\n\n#ad #money #wealth #habits",
    "bytes": 16399621,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-18T19:31",
    "cta_keyword": "GOALS",
@@ -6089,7 +6093,15 @@
    "cover_v": 4,
    "cine_cover": 13,
    "tiktok_file": "KT_MONEY9--01_joneses_38s__tt.mp4",
-   "cine_v": 13
+   "cine_v": 13,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1195976426330580/",
+    "youtube": "https://youtube.com/shorts/PRaH2_ht-SM"
+   },
+   "caption_at_post": "Are you buying what you want, or what impresses others?\n\nKevin Trudeau says many people have a syndrome called keeping up with the Joneses, and his answer is delayed gratification.\n\nHis idea: choose a much less expensive home than the one you were considering. Over a few years you build savings, and when you sell, you may be able to put much more down or buy in full.\n\nHe says that is how you start.\n\nWhat would you do differently if nobody was watching?\n\n#ad #money #wealth #habits",
+   "posted_at": "2026-11-18T19:37",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/46"
   }
  ],
  "replan_v": 3

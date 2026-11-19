@@ -6153,8 +6153,12 @@
    "file": "KT_MINDSET38/01_whoistalking_35s.mp4",
    "caption": "Who is talking in your head, and who is listening?\n\nKevin Trudeau points out a strange fact. When you hear a voice in your head, one part of you talks and another part listens.\n\nHe says the mind is the one talking, while the real you is the observer. The problem, he says, is that the mind ends up controlling you.\n\nHis lessons aim to flip that, so you control the mind instead.\n\nDo you run your thoughts, or do they run you?\n\n#ad #mind #mindset #kevintrudeau",
    "bytes": 15474741,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-19T16:39",
    "cta_keyword": "GOALS",
@@ -6168,7 +6172,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_MINDSET38--01_whoistalking_35s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1638722644051684/",
+    "youtube": "https://youtube.com/shorts/p2Fhtz_a-RI"
+   },
+   "caption_at_post": "Who is talking in your head, and who is listening?\n\nKevin Trudeau points out a strange fact. When you hear a voice in your head, one part of you talks and another part listens.\n\nHe says the mind is the one talking, while the real you is the observer. The problem, he says, is that the mind ends up controlling you.\n\nHis lessons aim to flip that, so you control the mind instead.\n\nDo you run your thoughts, or do they run you?\n\n#ad #mind #mindset #kevintrudeau",
+   "posted_at": "2026-11-19T16:44",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/50"
   },
   {
    "file": "KT_MINDSET38/02_lovewithoutcondition_43s.mp4",

@@ -247,6 +247,30 @@ def ig_post(urls, caption):
     return p["id"], link.get("permalink")
 
 
+def fb_post(urls, caption):
+    """The same carousel on the Facebook Page as a multi-photo post (18 Nov 2026,
+    the owner: "Let's improve Facebook"). Meta: Pages "receive the greatest
+    distribution when they consist primarily of original content", and the
+    same original content may go to every Page and profile you run."""
+    page, tok = os.environ.get("FB_PAGE_ID"), os.environ.get("FB_ACCESS_TOKEN")
+    if not page or not tok:
+        return None
+    ids = []
+    for u in urls:
+        r = requests.post(f"{G}/{page}/photos", data={"url": u, "published": "false", "access_token": tok},
+                          timeout=90).json()
+        if not r.get("id"):
+            raise RuntimeError(f"facebook photo refused: {str(r)[:200]}")
+        ids.append(r["id"])
+    data = {"message": caption.replace("link in my bio ⬆️", "link on my page ⬆️"), "access_token": tok}
+    for i, pid in enumerate(ids):
+        data[f"attached_media[{i}]"] = json.dumps({"media_fbid": pid})
+    r = requests.post(f"{G}/{page}/feed", data=data, timeout=90).json()
+    if not r.get("id"):
+        raise RuntimeError(f"facebook post refused: {str(r)[:200]}")
+    return r["id"]
+
+
 def main():
     dry = "--dry" in sys.argv
     state = json.load(open(STATE)) if os.path.exists(STATE) else {"posts": []}
@@ -265,9 +289,20 @@ def main():
         return 0
     urls = upload(paths, slug)
     time.sleep(5)
-    mid, link = ig_post(urls, caption)
+    mid, link = None, None
+    try:
+        mid, link = ig_post(urls, caption)
+    except Exception as e:
+        AC.log(f"carousel: Instagram failed: {e}")
+    fid = None
+    try:
+        fid = fb_post(urls, caption)
+    except Exception as e:
+        AC.log(f"carousel: Facebook failed: {e}")
+    if not mid and not fid:
+        raise RuntimeError("carousel posted nowhere")
     state["posts"].append({"file": clip["file"], "title": c["title"], "at": time.strftime("%Y-%m-%dT%H:%M"),
-                           "id": mid, "link": link})
+                           "id": mid, "link": link, "fb": fid})
     json.dump(state, open(STATE, "w"), indent=1, ensure_ascii=False)
     AC.log(f"carousel posted: {link}")
     return 0

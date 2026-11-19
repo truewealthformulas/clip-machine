@@ -271,9 +271,39 @@ def fb_post(urls, caption):
     return r["id"]
 
 
+SLOTS = [(9, 0), (13, 0), (19, 30)]   # New York
+
+
+def due(state):
+    """18 Nov 2026: GitHub started the 13:00 carousel at 18:41 and the 19:30 one
+    not at all. So the 10-minute post chain asks too: one carousel per slot
+    already passed today (New York), at least 2 h apart."""
+    from datetime import datetime, timezone, timedelta
+    from zoneinfo import ZoneInfo
+    ny = ZoneInfo("America/New_York")
+    now = datetime.now(ny)
+    passed = sum(1 for h, m in SLOTS if (now.hour, now.minute) >= (h, m))
+    today, last = 0, None
+    for p in state.get("posts", []):
+        try:
+            t = datetime.strptime(p["at"], "%Y-%m-%dT%H:%M").replace(tzinfo=timezone.utc).astimezone(ny)
+        except Exception:
+            continue
+        today += t.date() == now.date()
+        last = t if last is None or t > last else last
+    if today >= passed:
+        return False
+    if last and now - last < timedelta(hours=2):
+        return False
+    return True
+
+
 def main():
     dry = "--dry" in sys.argv
     state = json.load(open(STATE)) if os.path.exists(STATE) else {"posts": []}
+    if "--due" in sys.argv and not due(state):
+        print("carousel: nothing due")
+        return 0
     clip = pick_source(state)
     if not clip:
         AC.log("carousel: no source left")

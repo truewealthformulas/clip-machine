@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -5921,8 +5921,7 @@
    "done": false,
    "status": {
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-18T16:23",
@@ -5944,7 +5943,13 @@
    },
    "caption_at_post": "You don't need a good memory anymore. Or do you?\n\nKevin Trudeau agrees that phones and laptops now hold every address and phone number. But he says there is one thing no computer can do for you: remember people's names.\n\nHe points back to Dale Carnegie, who taught that a person's name is the sweetest sound in the language to them. And he recalls the idea that people don't care how much you know until they know how much you care.\n\nWhose name do you wish you had held on to?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #memory #business #success",
    "posted_at": "2026-11-18T16:25",
-   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/45"
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/45",
+   "retry_only": [
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook"
+   ]
   },
   {
    "file": "KT_MINDSET36/01_fillglass_47s.mp4",
@@ -5952,9 +5957,7 @@
    "bytes": 9136096,
    "done": false,
    "status": {
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "youtube": "held - Youtube limited to 3 a day",
-    "facebook": "held - Facebook limited to 3 a day"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-18T13:28",
@@ -5973,7 +5976,15 @@
    "posting": false,
    "links": {},
    "posted_at": "2026-11-18T13:36",
-   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/44"
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/44",
+   "retry_only": [
+    "youtube",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "youtube"
+   ]
   },
   {
    "file": "KT_MANIFESTING9/01_howwillpresent_40s.mp4",

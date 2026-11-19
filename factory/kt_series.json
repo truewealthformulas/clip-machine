@@ -3045,7 +3045,8 @@
      "Wealth And Success"
     ],
     "caption": "A great life and a billionaire's life are not the same thing.\n\nKevin Trudeau talks about his own dad. He worked nine to five and had bowling nights, cards with the family and fishing on weekends. Kevin calls it a great, great life.\n\nBut he says that level of success doesn't leave every night and weekend free. A balanced life isn't bad. It's a choice with a trade-off. Kevin says being ruthless means being ruthless with yourself: commitment, persistence and determination.\n\nWhat are you willing to trade for the life you want?\n\n#ad #wealth #success #kevintrudeau",
-    "cta_kind": "offer"
+    "cta_kind": "offer",
+    "locked": true
    }
   ]
  },
@@ -3065,6 +3066,34 @@
     "caption": "Are you buying what you want, or what impresses others?\n\nKevin Trudeau says many people have a syndrome called keeping up with the Joneses, and his answer is delayed gratification.\n\nHis idea: choose a much less expensive home than the one you were considering. Over a few years you build savings, and when you sell, you may be able to put much more down or buy in full.\n\nHe says that is how you start.\n\nWhat would you do differently if nobody was watching?\n\n#ad #money #wealth #habits",
     "cta_kind": "offer",
     "locked": true
+   }
+  ]
+ },
+ "mindset_v6wv03u_p2": {
+  "source": "v6wv03u.mp4",
+  "brand": "KT_MINDSET38",
+  "note": "",
+  "clips": [
+   {
+    "slug": "lovewithoutcondition",
+    "in": 2512.62,
+    "out": 2555.51,
+    "hook": [
+     "The Love Rule",
+     "With No Conditions"
+    ],
+    "caption": "What if the secret of life is simpler than you think?\n\nKevin Trudeau shares what a great guru once told him: love everyone without exception and without condition. And remember there is only one.\n\nHe says you are not separate from anyone or anything. That idea, to him, is the secret of the universe.\n\nIt is a simple lesson about relationships that asks a lot of us.\n\nWho in your life would change if you loved them without conditions?\n\n#ad #love #relationships #kevintrudeau",
+    "cta_kind": "offer"
+   },
+   {
+    "slug": "whoistalking",
+    "in": 2348.82,
+    "out": 2383.5,
+    "hook": [
+     "What Controls Your Mind"
+    ],
+    "caption": "Who is talking in your head, and who is listening?\n\nKevin Trudeau points out a strange fact. When you hear a voice in your head, one part of you talks and another part listens.\n\nHe says the mind is the one talking, while the real you is the observer. The problem, he says, is that the mind ends up controlling you.\n\nHis lessons aim to flip that, so you control the mind instead.\n\nDo you run your thoughts, or do they run you?\n\n#ad #mind #mindset #kevintrudeau",
+    "cta_kind": "question"
    }
   ]
  }

@@ -6152,7 +6152,7 @@
   {
    "file": "KT_MINDSET38/01_whoistalking_35s.mp4",
    "caption": "Who is talking in your head, and who is listening?\n\nKevin Trudeau points out a strange fact. When you hear a voice in your head, one part of you talks and another part listens.\n\nHe says the mind is the one talking, while the real you is the observer. The problem, he says, is that the mind ends up controlling you.\n\nHis lessons aim to flip that, so you control the mind instead.\n\nDo you run your thoughts, or do they run you?\n\n#ad #mind #mindset #kevintrudeau",
-   "bytes": 11002568,
+   "bytes": 15474741,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -6164,14 +6164,17 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_MINDSET38--01_whoistalking_35s__cover.jpg",
-   "cover_v": 4
+   "cover": "KT_MINDSET38--01_whoistalking_35s__cover14.jpg",
+   "cover_v": 4,
+   "cine_cover": 14,
+   "tiktok_file": "KT_MINDSET38--01_whoistalking_35s__tt.mp4",
+   "cine_v": 14
   },
   {
    "file": "KT_MINDSET38/02_lovewithoutcondition_43s.mp4",
    "caption": "What if the secret of life is simpler than you think?\n\nKevin Trudeau shares what a great guru once told him: love everyone without exception and without condition. And remember there is only one.\n\nHe says you are not separate from anyone or anything. That idea, to him, is the secret of the universe.\n\nIt is a simple lesson about relationships that asks a lot of us.\n\nWho in your life would change if you loved them without conditions?\n\n#ad #love #relationships #kevintrudeau",
    "bytes": 10795127,
-   "done": false,
+   "done": true,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T06:56",
@@ -6183,7 +6186,8 @@
    "t5_zoom": 1.0,
    "style": "T5",
    "cover": "KT_MINDSET38--02_lovewithoutcondition_43s__cover.jpg",
-   "cover_v": 4
+   "cover_v": 4,
+   "dropped": "no clear point (5/10)"
   }
  ],
  "replan_v": 3

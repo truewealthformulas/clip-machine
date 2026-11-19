@@ -6087,8 +6087,12 @@
    "file": "KT_SUCCESS26/01_ninetofive_51s.mp4",
    "caption": "A great life and a billionaire's life are not the same thing.\n\nKevin Trudeau talks about his own dad. He worked nine to five and had bowling nights, cards with the family and fishing on weekends. Kevin calls it a great, great life.\n\nBut he says that level of success doesn't leave every night and weekend free. A balanced life isn't bad. It's a choice with a trade-off. Kevin says being ruthless means being ruthless with yourself: commitment, persistence and determination.\n\nWhat are you willing to trade for the life you want?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
    "bytes": 14456706,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-19T12:53",
    "cta_keyword": "GOALS",
@@ -6102,7 +6106,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_SUCCESS26--01_ninetofive_51s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1183192367712159/",
+    "youtube": "https://youtube.com/shorts/AJOn3asw3g0"
+   },
+   "caption_at_post": "A great life and a billionaire's life are not the same thing.\n\nKevin Trudeau talks about his own dad. He worked nine to five and had bowling nights, cards with the family and fishing on weekends. Kevin calls it a great, great life.\n\nBut he says that level of success doesn't leave every night and weekend free. A balanced life isn't bad. It's a choice with a trade-off. Kevin says being ruthless means being ruthless with yourself: commitment, persistence and determination.\n\nWhat are you willing to trade for the life you want?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #success #kevintrudeau",
+   "posted_at": "2026-11-19T12:58",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/48"
   },
   {
    "file": "KT_MONEY9/01_joneses_38s.mp4",

@@ -6207,7 +6207,10 @@
    "bytes": 17600790,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-19T19:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   }
  ],
  "replan_v": 3

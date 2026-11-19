@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -6152,24 +6152,38 @@
   {
    "file": "KT_MINDSET38/01_whoistalking_35s.mp4",
    "caption": "Who is talking in your head, and who is listening?\n\nKevin Trudeau points out a strange fact. When you hear a voice in your head, one part of you talks and another part listens.\n\nHe says the mind is the one talking, while the real you is the observer. The problem, he says, is that the mind ends up controlling you.\n\nHis lessons aim to flip that, so you control the mind instead.\n\nDo you run your thoughts, or do they run you?\n\n#ad #mind #mindset #kevintrudeau",
-   "bytes": 11423088,
+   "bytes": 11002568,
    "done": false,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-19T16:39",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "t5_best": 23.7,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_MINDSET38--01_whoistalking_35s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_MINDSET38/02_lovewithoutcondition_43s.mp4",
    "caption": "What if the secret of life is simpler than you think?\n\nKevin Trudeau shares what a great guru once told him: love everyone without exception and without condition. And remember there is only one.\n\nHe says you are not separate from anyone or anything. That idea, to him, is the secret of the universe.\n\nIt is a simple lesson about relationships that asks a lot of us.\n\nWho in your life would change if you loved them without conditions?\n\n#ad #love #relationships #kevintrudeau",
-   "bytes": 11924391,
+   "bytes": 10795127,
    "done": false,
    "status": {},
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T06:56",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "t5_best": 3.0,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_MINDSET38--02_lovewithoutcondition_43s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

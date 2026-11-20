@@ -1,0 +1,29 @@
+{
+ "source": "v700gbc.mp4",
+ "brand": "KT_BUSINESS4",
+ "test": false,
+ "clips": [
+  {
+   "slug": "prisonstory",
+   "in": 1233.0,
+   "out": 1276.9,
+   "hook": [
+    "How Copywriting Built",
+    "A Business"
+   ],
+   "caption": "Nine years in prison, no sales skills. Then came a new path.\n\nKevin Trudeau tells the story of a man who came out of prison with no marketing or sales presentation skills. Kevin taught him copywriting, and he was good at it because he liked to write. He started offering his copywriting services from home, while on home confinement.\n\nKevin's point: you don't have to be a natural salesman to begin. You learn the skill step by step.\n\nWhat would you try if you knew you could learn it step by step?\n\n#ad #business #success #kevintrudeau",
+   "cta_kind": "offer"
+  },
+  {
+   "slug": "billgates",
+   "in": 2311.0,
+   "out": 2358.9,
+   "hook": [
+    "What Bill Gates Said",
+    "About Success"
+   ],
+   "caption": "Was it luck? Bill Gates gave an honest answer on live TV.\n\nKevin Trudeau recalls Larry King asking Bill Gates the secret to his success. Gates said he was in the right place at the right time and that luck played a part. Kevin adds that you create your own luck with your own thoughts.\n\nGates also said many people stood in the same place he did. The difference was that he had vision. He saw the potential in the computer business and most people didn't.\n\nWhat potential are you not seeing yet?\n\n#ad #success #mindset #kevintrudeau",
+   "cta_kind": "offer"
+  }
+ ]
+}

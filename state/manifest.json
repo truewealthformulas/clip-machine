@@ -6205,12 +6205,24 @@
    "file": "KT_MINDSET39/01_wallflowerstage_50s.mp4",
    "caption": "Too afraid to speak, then holding the mic a year later.\n\nKevin Trudeau describes members who could not imagine telling their story on stage. The fear of public speaking felt overwhelming, and they entered rooms like wallflowers who never wanted to meet anyone.\n\nHe says that a year or two later some of them are on stage, talking about how their self-image and confidence have changed. They describe feeling heard, having more friends and feeling better about themselves.\n\nWhat would you say if you had the stage for one minute?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #kevintrudeau",
    "bytes": 17600790,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-19T19:32",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2617555012054814/",
+    "youtube": "https://youtube.com/shorts/6vMEDOkfOrY"
+   },
+   "caption_at_post": "Too afraid to speak, then holding the mic a year later.\n\nKevin Trudeau describes members who could not imagine telling their story on stage. The fear of public speaking felt overwhelming, and they entered rooms like wallflowers who never wanted to meet anyone.\n\nHe says that a year or two later some of them are on stage, talking about how their self-image and confidence have changed. They describe feeling heard, having more friends and feeling better about themselves.\n\nWhat would you say if you had the stage for one minute?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #confidence #mindset #kevintrudeau",
+   "posted_at": "2026-11-19T19:36",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/51"
   }
  ],
  "replan_v": 3

@@ -38,7 +38,7 @@ jobs:
       KEEP_PER_EPISODE: "3"          # 18 Nov: Instagram reels are paused, so the 1-per-episode rule (an Instagram problem) is relaxed
       TARGET_DAYS: ${{ vars.TARGET_DAYS || '7' }}
       AGENT_TEST_PLANS: ${{ inputs.test && '1' || '0' }}
-      MAX_EPISODES_PER_RUN: ${{ inputs.max_episodes || '8' }}   # one clip per episode now (4 Nov 2026)
+      MAX_EPISODES_PER_RUN: ${{ inputs.max_episodes || '20' }}   # 20 Nov: 8 gave ~2 usable plans a run (most episodes left are health/conspiracy) - read more per run
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 50 }

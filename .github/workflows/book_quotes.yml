@@ -1,0 +1,41 @@
+# Short quotes from "Your Wish Is Your Command" (the owner's audiobook) for the
+# captions - see agents/book_quotes.py. The repository is public: the chapter
+# links arrive encrypted to a key made in this run; only the quotes are committed.
+name: book-quotes
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number the encrypted chapter links are posted to"
+        required: true
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: book-quotes
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      BOOK_ISSUE: ${{ inputs.issue }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - uses: actions/cache@v4
+        with: { path: ~/wcache, key: whisper-2ca53bb-small-en-v1 }
+      - run: bash factory/setup.sh
+      - run: pip install -q anthropic requests cryptography
+      - run: python agents/book_quotes.py
+      - name: Keep the quotes
+        if: always()
+        run: |
+          git config user.name "kt-machine"
+          git config user.email "noreply@github.com"
+          git add agents/book_quotes.json 2>/dev/null || exit 0
+          git diff --cached --quiet && exit 0
+          git commit -q -m "book quotes: Your Wish Is Your Command"
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

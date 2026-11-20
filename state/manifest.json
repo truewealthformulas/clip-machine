@@ -6239,8 +6239,12 @@
    "file": "KT_ATTITUDE4/01_fordv8_36s.mp4",
    "caption": "Every engineer said it couldn't be done. Henry Ford wanted it anyway.\n\nKevin explains how the brilliant engineers called the V8 engine impossible, because on paper the mechanics and ratios didn't work.\n\nHenry Ford said he didn't know much about engineering, but he knew he wanted that engine. He gave the team six weeks to deliver it, and Kevin says the result transformed the automotive industry.\n\nWhich of your \"facts\" would you test if you kept your eye on what you want?\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 12060624,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-20T16:36",
    "cta_keyword": "GOALS",
@@ -6254,7 +6258,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_ATTITUDE4--01_fordv8_36s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2088713845113948/",
+    "youtube": "https://youtube.com/shorts/gK7j5T2Mi6E"
+   },
+   "caption_at_post": "Every engineer said it couldn't be done. Henry Ford wanted it anyway.\n\nKevin explains how the brilliant engineers called the V8 engine impossible, because on paper the mechanics and ratios didn't work.\n\nHenry Ford said he didn't know much about engineering, but he knew he wanted that engine. He gave the team six weeks to deliver it, and Kevin says the result transformed the automotive industry.\n\nWhich of your \"facts\" would you test if you kept your eye on what you want?\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-20T16:39",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/52"
   },
   {
    "file": "KT_ATTITUDE4/02_dailyattitude_53s.mp4",

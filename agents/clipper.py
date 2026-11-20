@@ -137,6 +137,13 @@ def pending_plans():
 
 
 MAX_PASSES = int(os.environ.get("CLIPPER_MAX_PASSES", "4"))
+MAX_PASSES_HOT = int(os.environ.get("CLIPPER_MAX_PASSES_HOT", "10"))
+HOT = re.compile(r"money|rich|wealth|million|billion|success|credit|debt|business|side hustle|mind|habit|"
+                 r"luck|adversity|tough times|goal|time|winning|stuck|memory|remember|shark tank|"
+                 r"manifest|wish|letting go|losers|crypto|bitcoin|marketing|books", re.I)
+COLD = re.compile(r"alien|brotherhood|secret societ|ritual|prayer|pray|karma|elite|dna|curse|"
+                  r"health|supplement|arter|depress|biohack|young & fit|meditation|government|"
+                  r"control|program you|banned|censored|exposes|disclosure", re.I)
 
 
 def used_ranges(vid):
@@ -186,7 +193,15 @@ def candidates(idx):
     for vid, e in idx.items():
         if e.get("status") != "stocked" or e.get("test") or not e.get("transcript"):
             continue
-        if vid in planned and (passes(vid) >= MAX_PASSES
+        title = e.get("title", "")
+        # 20 Nov 2026: the episodes left unplanned were aliens, the Brotherhood,
+        # prayer and health shows - 30+ clips a run were thrown out for the
+        # rules. Those titles are not read any more; the success and money
+        # episodes get more passes instead (owner: "fresh success and money").
+        if COLD.search(title) and not HOT.search(title):
+            continue
+        cap = MAX_PASSES_HOT if HOT.search(title) else MAX_PASSES
+        if vid in planned and (passes(vid) >= cap
                                or float(e.get("duration", 0)) < 20 * 60):
             continue
         if e.get("height", 1080) < 1080:
@@ -198,9 +213,8 @@ def candidates(idx):
     # then the newest uploads.
     # Episodes whose title names a high-interest topic go first (10 Oct 2026, the
     # owner: money, health, success - "things that people will like to see").
-    hot = re.compile(r"money|rich|wealth|success|credit|debt|business|mind|habit|secret|"
-                     r"love|relationship|marri|health|energy|happ|freedom|confiden|goal", re.I)
-    out.sort(key=lambda ve: (ve[0] not in planned, -passes(ve[0]), bool(hot.search(ve[1].get("title", ""))),
+    hot = HOT
+    out.sort(key=lambda ve: (bool(hot.search(ve[1].get("title", ""))), ve[0] not in planned, -passes(ve[0]),
                              float(ve[1].get("stops_per_min") or 0) >= 8,
                              ve[1].get("uploaded", "")), reverse=True)
     return out

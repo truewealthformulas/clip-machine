@@ -1,0 +1,18 @@
+{
+ "source": "v79sijs.mp4",
+ "brand": "KT_DEBT2",
+ "test": false,
+ "clips": [
+  {
+   "slug": "usedcreditlimit",
+   "in": 1117.7,
+   "out": 1162.9,
+   "hook": [
+    "How Maxed Cards",
+    "Hurt Your Credit"
+   ],
+   "caption": "Using your whole credit limit can quietly hurt your credit score.\n\nKevin Trudeau explains one thing credit scoring looks at: how much of your limit you have used. Use all of it and, he says, you lose a lot of points.\n\nHis point is that a stronger score comes from using only a small fraction of what is available to you. Most people never hear this.\n\nHow much of your credit limit do you tend to use?\n\n#ad #credit #money #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

@@ -501,8 +501,37 @@ def with_club(platform, out, brand=""):
     return line + "\n\n" + out
 
 
+_BOOK = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "agents", "book_quotes.json")
+
+
+def book_line(seed):
+    """20 Nov 2026, the owner: a phrase from the audiobook in every description.
+    One short line from "Your Wish Is Your Command" (agents/book_quotes.py),
+    the same one for the same clip, a different one from clip to clip."""
+    try:
+        qs = json.load(open(_BOOK, encoding="utf-8"))["quotes"]
+    except Exception:
+        return ""
+    if not qs or os.environ.get("KT_BOOK_LINE", "1") != "1":
+        return ""
+    import hashlib
+    q = qs[int(hashlib.md5(seed.encode("utf-8")).hexdigest(), 16) % len(qs)]["q"]
+    return f"📖 “{q}” - Kevin Trudeau, Your Wish Is Your Command"
+
+
+def with_book(out, seed):
+    line = book_line(seed or out[:80])
+    if not out or not line or "Your Wish Is Your Command" in out:
+        return out
+    parts = out.rstrip().split("\n")
+    if parts and parts[-1].lstrip().startswith("#"):
+        return "\n".join(parts[:-1]).rstrip() + "\n\n" + line + "\n\n" + parts[-1]
+    return out.rstrip() + "\n\n" + line
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
-    return with_club(platform, _caption_core(platform, caption, brand, keyword, ask, variant), brand)
+    return with_book(with_club(platform, _caption_core(platform, caption, brand, keyword, ask, variant), brand),
+                     (caption or "")[:120])
 
 
 def _caption_core(platform, caption, brand="", keyword="", ask="", variant=None):

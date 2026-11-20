@@ -286,7 +286,43 @@ def label(d, text, x, y, fill=(235, 235, 235)):
         x += d.textlength(ch, font=f) + 7
 
 
+PHOTO_SLIDES = int(os.environ.get("PHOTO_SLIDES", "2"))
+
+
+def render_two(c, photos, out_dir):
+    """20 Nov 2026, the owner: "only do 2 photos per post". Two full photos,
+    one exact Kevin line on each; the second also points to the bio link."""
+    os.makedirs(out_dir, exist_ok=True)
+    out = []
+    for i, q in enumerate(c["quotes"][:2]):
+        im = _cover_crop(Image.open(photos[i]).convert("RGB"), W, H)
+        im = _fade(im, int(H * 0.30), int(H * 0.62), 242)
+        d = ImageDraw.Draw(im)
+        q2 = "“" + q.rstrip() + "”"
+        fq = fit(d, q2, SER, 70, 860, 6)
+        lines = wrap(d, q2, fq, 860)
+        lh = int(fq.size * 1.26)
+        y = (1130 if i else 1190) - len(lines) * lh
+        label(d, "KEVIN TRUDEAU", 120, y - 62)
+        d.rectangle((90, y + 8, 98, y + len(lines) * lh), fill=RED)
+        for ln in lines:
+            d.text((120, y), ln, font=fq, fill=(255, 255, 255))
+            y += lh
+        if i:
+            d.text((120, y + 24), "Hear the rest free on Kevin's YouTube · link in bio", font=SANS(32, 700),
+                   fill=(232, 190, 92))
+        d.text((100, 1262), HANDLE, font=SANS(30, 600), fill=(210, 210, 210))
+        t = "Swipe  →" if not i else "2/2"
+        d.text((W - 100 - d.textlength(t, font=SANS(32, 700)), 1262), t, font=SANS(32, 700), fill=(255, 255, 255))
+        p = os.path.join(out_dir, f"s{i + 1}.jpg")
+        im.save(p, "JPEG", quality=92)
+        out.append(p)
+    return out
+
+
 def render_photo(c, photos, out_dir):
+    if PHOTO_SLIDES <= 2:
+        return render_two(c, photos, out_dir)
     os.makedirs(out_dir, exist_ok=True)
     quotes = c["quotes"]
     tot = len(quotes) + 2
@@ -485,7 +521,8 @@ def main():
         c = write_photo(rng)
         clip = {"file": "photo:" + c["source"] + time.strftime(":%Y%m%d%H")}
         slug = "gin-" + re.sub(r"[^a-z0-9]+", "-", c["title"].lower()).strip("-")[:34] + time.strftime("-%m%d%H")
-        paths = render_photo(c, pick_photos(state, len(c["quotes"]) + 2, rng), f"/tmp/carousel/{slug}")
+        n = 2 if PHOTO_SLIDES <= 2 else len(c["quotes"]) + 2
+        paths = render_photo(c, pick_photos(state, n, rng), f"/tmp/carousel/{slug}")
     else:
         clip = pick_source(state)
         if not clip:

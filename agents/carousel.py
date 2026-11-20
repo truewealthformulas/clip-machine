@@ -532,6 +532,12 @@ def main():
         slug = re.sub(r"[^a-z0-9]+", "-", c["title"].lower()).strip("-")[:40] + time.strftime("-%m%d%H")
         paths = render(c, f"/tmp/carousel/{slug}", int(time.time()) // 3600)
     caption = c["caption"].strip() + "\n\n" + CLUB + "\n\n🎬 Watch the full video free on Kevin’s YouTube → link in my bio ⬆️"
+    try:  # 20 Nov 2026: one line from the audiobook too
+        sys.path.insert(0, os.path.join(ROOT, "engine"))
+        from poster import with_book
+        caption = with_book(caption, c["title"])
+    except Exception as e:
+        AC.log(f"carousel: no book line ({e})")
     AC.log(f"carousel: '{c['title']}' from {clip['file']} ({len(paths)} slides)")
     if dry:
         print(json.dumps(c, indent=1, ensure_ascii=False))

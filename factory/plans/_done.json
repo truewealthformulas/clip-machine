@@ -15,6 +15,8 @@
  "attitude_v7h6jyi",
  "attitude_v7h6jyi_p2",
  "attitude_v7h6jyi_p3",
+ "attitude_v7h6jyi_p4",
+ "belief_v72tj4g",
  "business_v700gbc",
  "business_v700gbc_p2",
  "business_v700gbc_p3",
@@ -57,6 +59,7 @@
  "mindset_v6y4es4",
  "mindset_v6z25lm",
  "mindset_v6zdmb0",
+ "mindset_v6zdmb0_p2",
  "mindset_v70c41q",
  "mindset_v70c41q_p3",
  "mindset_v71ktjy",
@@ -82,6 +85,7 @@
  "money_v6tylxb",
  "money_v6y4es4",
  "money_v7gisy0",
+ "money_v7gisy0_p2",
  "persistence_v6qunfi",
  "prayer_v7afnp8",
  "prayer_v7afnp8_p2",
@@ -125,6 +129,7 @@
  "success_v75wjxi",
  "success_v75wjxi_p2",
  "success_v76l9y0",
+ "success_v76l9y0_p2",
  "success_v78um7w",
  "success_v7aqp6u",
  "success_v7aqp6u_p2",
@@ -133,6 +138,7 @@
  "wealth_v6epqd7",
  "wealth_v6epqd7_p2",
  "wealth_v6y4es4",
+ "wealth_v6y4es4_p2",
  "wealth_v6zos3k",
  "wealth_v6zos3k_p2",
  "wealth_v6zos3k_p3",
@@ -142,5 +148,6 @@
  "wealth_v7gisy0",
  "words_v74afc8",
  "words_v74afc8_p2",
- "words_v7dqhzo"
+ "words_v7dqhzo",
+ "words_v7dqhzo_p2"
 ]

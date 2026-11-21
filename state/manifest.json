@@ -6647,8 +6647,12 @@
    "file": "KT_SUCCESS32/01_leadersreaders_49s.mp4",
    "caption": "One hour a day, door locked, phone off: a habit of leaders.\n\nKevin Trudeau says leaders are always readers. He points to Elon Musk, who has said that one of the most important things he does is lock the door and shut off the phone.\n\nNo interruptions. No distractions. For one hour, five days a week, he learns something new, mostly by reading.\n\nKevin says consistency and persistency of effort is the key. You have to do the right things long enough.\n\nWhen did you last give yourself one hour with no phone?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 12327698,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-21T12:01",
    "cta_keyword": "GOALS",
@@ -6662,7 +6666,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_SUCCESS32--01_leadersreaders_49s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1174179795143788/",
+    "youtube": "https://youtube.com/shorts/gdkj4MVGn9A"
+   },
+   "caption_at_post": "One hour a day, door locked, phone off: a habit of leaders.\n\nKevin Trudeau says leaders are always readers. He points to Elon Musk, who has said that one of the most important things he does is lock the door and shut off the phone.\n\nNo interruptions. No distractions. For one hour, five days a week, he learns something new, mostly by reading.\n\nKevin says consistency and persistency of effort is the key. You have to do the right things long enough.\n\nWhen did you last give yourself one hour with no phone?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "posted_at": "2026-11-21T12:07",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/59"
   }
  ],
  "replan_v": 3

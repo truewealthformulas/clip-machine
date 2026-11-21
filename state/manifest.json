@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -6470,9 +6470,7 @@
    "bytes": 15678274,
    "done": false,
    "status": {
-    "youtube": "posted",
-    "tiktok": "ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-    "facebook": "held - Facebook spaced 2.5h apart"
+    "youtube": "posted"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-21T12:52",
@@ -6493,7 +6491,15 @@
     "youtube": "https://youtube.com/shorts/hbA5U7i-bU8"
    },
    "caption_at_post": "Even when it looks like the end, there may be a seed of something better.\n\nKevin Trudeau tells of a huge legal judgment he could not pay. He expected everything to be taken, from the houses to the forks and knives, and every business shut down.\n\nHis answer was a belief he keeps coming back to: in every adversity are the seeds of a greater benefit.\n\nWhen things go wrong, which do you notice first, the loss or the seed?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-21T13:00"
+   "posted_at": "2026-11-21T13:00",
+   "retry_only": [
+    "tiktok",
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook",
+    "tiktok"
+   ]
   },
   {
    "file": "KT_ADVERSITY17/01_persistence_50s.mp4",
@@ -6651,8 +6657,7 @@
    "done": false,
    "status": {
     "youtube": "posted",
-    "tiktok": "in your TikTok inbox - open TikTok and tap post",
-    "facebook": "held - Facebook spaced 2.5h apart"
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-21T13:57",
@@ -6674,7 +6679,13 @@
    },
    "caption_at_post": "Most people drift through life like a boat with no rudder.\n\nKevin explains being at cause or at effect with a sailboat. With a sail and a rudder, you can even steer straight into the wind. Without them, the boat goes wherever the wind and tide push it.\n\nHe says many people let outside conditions decide how they feel.\n\nAre you steering right now, or drifting with the wind?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "posted_at": "2026-11-21T14:08",
-   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/60"
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/60",
+   "retry_only": [
+    "facebook"
+   ],
+   "agent_retried": [
+    "facebook"
+   ]
   },
   {
    "file": "KT_SUCCESS32/01_leadersreaders_49s.mp4",

@@ -1,0 +1,29 @@
+{
+ "source": "v700gbc.mp4",
+ "brand": "KT_BUSINESS5",
+ "test": false,
+ "clips": [
+  {
+   "slug": "commskills",
+   "in": 403.0,
+   "out": 432.9,
+   "hook": [
+    "Why Money Starts",
+    "With Communication"
+   ],
+   "caption": "Why communication comes before every online sale.\n\nKevin Trudeau says social media has left many people unsure how to communicate.\n\nHe explains that everything earned online rests on how well you talk to a potential customer. You can call it sales copy or advertising, but he says it is communication first and foremost.\n\nHow clearly do you get your point across?\n\n#ad #money #business #kevintrudeau",
+   "cta_kind": "offer"
+  },
+  {
+   "slug": "royalties",
+   "in": 545.0,
+   "out": 579.9,
+   "hook": [
+    "How Royalties Built",
+    "His Wealth"
+   ],
+   "caption": "How writing once can keep paying for decades.\n\nKevin Trudeau explains how he became financially independent early. He learned to write ad copy, and people hired him to write direct mail ads for them.\n\nHe took a small percentage of the results. He says some of those royalties kept arriving 10 or 20 years after he wrote the ad.\n\nHis point is that one skill, used well, can be rewarded again and again.\n\nWhat could you create once that keeps paying off?\n\n#ad #money #wealth #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

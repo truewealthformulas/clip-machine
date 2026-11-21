@@ -6726,7 +6726,10 @@
    "bytes": 13775827,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-23T19:37",
+   "cta_keyword": "GOALS",
+   "cta_variant": 17
   },
   {
    "file": "KT_ADVERSITY19/01_resistpersists_33s.mp4",
@@ -6734,7 +6737,10 @@
    "bytes": 11437484,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-21T18:47",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ADVERSITY19/01_tibetanmonks_58s.mp4",
@@ -6742,7 +6748,10 @@
    "bytes": 21329957,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-27T06:43",
+   "cta_keyword": "GOALS",
+   "cta_variant": 25
   },
   {
    "file": "KT_ADVERSITY19/02_frankl_43s.mp4",
@@ -6750,7 +6759,10 @@
    "bytes": 13907834,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T07:20",
+   "cta_keyword": "GOALS",
+   "cta_variant": 18
   },
   {
    "file": "KT_ATTITUDE5/01_oilhole_39s.mp4",
@@ -6758,7 +6770,10 @@
    "bytes": 14294382,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T09:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_ATTITUDE5/02_stupidstatement_53s.mp4",
@@ -6766,7 +6781,10 @@
    "bytes": 15575245,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-25T11:24",
+   "cta_keyword": "GOALS",
+   "cta_variant": 24
   },
   {
    "file": "KT_BUSINESS5/01_commskills_34s.mp4",
@@ -6774,7 +6792,10 @@
    "bytes": 17312336,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T21:49",
+   "cta_keyword": "GOALS",
+   "cta_variant": 12
   },
   {
    "file": "KT_KROC2/01_mountaingoldmine_51s.mp4",
@@ -6782,7 +6803,10 @@
    "bytes": 19003873,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T15:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 9
   },
   {
    "file": "KT_LETTINGGO5/01_letgomyth_41s.mp4",
@@ -6790,7 +6814,10 @@
    "bytes": 13427626,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T08:15",
+   "cta_keyword": "GOALS",
+   "cta_variant": 19
   },
   {
    "file": "KT_LETTINGGO5/01_tirednotbored_38s.mp4",
@@ -6798,7 +6825,10 @@
    "bytes": 12396970,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-21T21:02",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_LETTINGGO5/02_bedtimebless_41s.mp4",
@@ -6806,7 +6836,10 @@
    "bytes": 13420693,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-27T10:36",
+   "cta_keyword": "GOALS",
+   "cta_variant": 27
   },
   {
    "file": "KT_LUCK8/01_mindrandom_69s.mp4",
@@ -6814,7 +6847,10 @@
    "bytes": 30123633,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-23T16:06",
+   "cta_keyword": "GOALS",
+   "cta_variant": 16
   },
   {
    "file": "KT_MANIFESTING12/01_moremoney_41s.mp4",
@@ -6822,7 +6858,10 @@
    "bytes": 10704080,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-22T11:30",
+   "cta_keyword": "GOALS",
+   "cta_variant": 6
   },
   {
    "file": "KT_MANIFESTING12/02_feelbetter_46s.mp4",
@@ -6830,7 +6869,10 @@
    "bytes": 12381886,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-25T09:50",
+   "cta_keyword": "GOALS",
+   "cta_variant": 23
   },
   {
    "file": "KT_MANIFESTING13/01_rightfrequency_35s.mp4",
@@ -6838,7 +6880,10 @@
    "bytes": 13316790,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-23T13:21",
+   "cta_keyword": "GOALS",
+   "cta_variant": 15
   },
   {
    "file": "KT_MANIFESTING14/01_recipemushroom_55s.mp4",
@@ -6846,7 +6891,10 @@
    "bytes": 16961815,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-23T10:12",
+   "cta_keyword": "GOALS",
+   "cta_variant": 13
   },
   {
    "file": "KT_MEMORY4/01_namedeal_53s.mp4",
@@ -6854,7 +6902,10 @@
    "bytes": 18861108,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-22T19:35",
+   "cta_keyword": "GOALS",
+   "cta_variant": 10
   },
   {
    "file": "KT_MILLIONAIRE4/01_magnificentobsession_50s.mp4",
@@ -6862,7 +6913,10 @@
    "bytes": 18483302,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-25T08:30",
+   "cta_keyword": "GOALS",
+   "cta_variant": 22
   },
   {
    "file": "KT_MILLIONAIRE4/02_easiertoday_41s.mp4",
@@ -6870,7 +6924,10 @@
    "bytes": 15114421,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T09:00",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_MINDSET45/01_missingfirststep_46s.mp4",
@@ -6878,7 +6935,10 @@
    "bytes": 17293228,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-23T12:15",
+   "cta_keyword": "GOALS",
+   "cta_variant": 14
   },
   {
    "file": "KT_MONEY12/01_richsay_56s.mp4",
@@ -6886,7 +6946,10 @@
    "bytes": 21547388,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-22T12:15",
+   "cta_keyword": "GOALS",
+   "cta_variant": 7
   },
   {
    "file": "KT_SUCCESS33/01_puppetstrings_43s.mp4",
@@ -6894,7 +6957,10 @@
    "bytes": 14892863,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-27T07:53",
+   "cta_keyword": "GOALS",
+   "cta_variant": 26
   },
   {
    "file": "KT_SUCCESS33/01_spiritualwealth_36s.mp4",
@@ -6902,7 +6968,10 @@
    "bytes": 10688759,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-21T20:25",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_SUCCESS33/02_richartifacts_41s.mp4",
@@ -6910,7 +6979,10 @@
    "bytes": 13846731,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-24T09:53",
+   "cta_keyword": "GOALS",
+   "cta_variant": 20
   },
   {
    "file": "KT_SUCCESS36/01_thinkbig_43s.mp4",
@@ -6918,7 +6990,10 @@
    "bytes": 17064171,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-22T06:56",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_SUCCESS36/01_wrongrecipe_63s.mp4",
@@ -6926,7 +7001,10 @@
    "bytes": 19846725,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-28T07:02",
+   "cta_keyword": "GOALS",
+   "cta_variant": 28
   },
   {
    "file": "KT_SUCCESS36/02_whatwant_50s.mp4",
@@ -6934,7 +7012,10 @@
    "bytes": 15579812,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-25T06:58",
+   "cta_keyword": "GOALS",
+   "cta_variant": 21
   },
   {
    "file": "KT_WEALTH19/01_deliberateintent_36s.mp4",
@@ -6942,7 +7023,10 @@
    "bytes": 11407226,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T20:52",
+   "cta_keyword": "GOALS",
+   "cta_variant": 11
   },
   {
    "file": "KT_WEALTH20/02_triggersgifts_38s.mp4",
@@ -6950,7 +7034,10 @@
    "bytes": 13880749,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-22T13:32",
+   "cta_keyword": "GOALS",
+   "cta_variant": 8
   }
  ],
  "replan_v": 3

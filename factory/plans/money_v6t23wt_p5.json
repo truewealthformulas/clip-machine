@@ -1,0 +1,18 @@
+{
+ "source": "v6t23wt.mp4",
+ "brand": "KT_MONEY12",
+ "test": false,
+ "clips": [
+  {
+   "slug": "richsay",
+   "in": 127.2,
+   "out": 180.6,
+   "hook": [
+    "What The Rich Say",
+    "About Spending"
+   ],
+   "caption": "Ask people who built wealth if they lived within their means.\n\nKevin Trudeau says they all answer the same way: no, of course not. They lived below their means on the way up.\n\nHe says most people do the opposite. They use credit cards and payment plans, then judge a purchase by whether the monthly payment fits.\n\nWhich approach sounds closer to how you think about spending?\n\n#ad #money #wealth #kevintrudeau",
+   "cta_kind": "question"
+  }
+ ]
+}

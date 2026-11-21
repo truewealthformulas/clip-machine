@@ -6468,9 +6468,11 @@
    "file": "KT_ADVERSITY16/01_nothingleft_49s.mp4",
    "caption": "Even when it looks like the end, there may be a seed of something better.\n\nKevin Trudeau tells of a huge legal judgment he could not pay. He expected everything to be taken, from the houses to the forks and knives, and every business shut down.\n\nHis answer was a belief he keeps coming back to: in every adversity are the seeds of a greater benefit.\n\nWhen things go wrong, which do you notice first, the loss or the seed?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 15678274,
-   "done": false,
+   "done": true,
    "status": {
-    "youtube": "posted"
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-21T16:59",
@@ -6488,18 +6490,16 @@
    "cine_v": 14,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/hbA5U7i-bU8"
+    "youtube": "https://youtube.com/shorts/hbA5U7i-bU8",
+    "facebook": "https://facebook.com/reel/1183224007465252/"
    },
    "caption_at_post": "Even when it looks like the end, there may be a seed of something better.\n\nKevin Trudeau tells of a huge legal judgment he could not pay. He expected everything to be taken, from the houses to the forks and knives, and every business shut down.\n\nHis answer was a belief he keeps coming back to: in every adversity are the seeds of a greater benefit.\n\nWhen things go wrong, which do you notice first, the loss or the seed?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-21T13:00",
-   "retry_only": [
-    "tiktok",
-    "facebook"
-   ],
+   "posted_at": "2026-11-21T17:08",
    "agent_retried": [
     "facebook",
     "tiktok"
-   ]
+   ],
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/62"
   },
   {
    "file": "KT_ADVERSITY17/01_persistence_50s.mp4",
@@ -6660,7 +6660,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-21T16:59",
+   "scheduled_at": "2026-11-21T17:52",
    "cta_keyword": "GOALS",
    "cta_variant": 7,
    "t5_best": 33.5,

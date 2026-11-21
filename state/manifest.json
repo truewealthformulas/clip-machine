@@ -6459,8 +6459,9 @@
    "file": "KT_BUSINESS4/01_prisonstory_45s.mp4",
    "caption": "Nine years in prison, no sales skills. Then came a new path.\n\nKevin Trudeau tells the story of a man who came out of prison with no marketing or sales presentation skills. Kevin taught him copywriting, and he was good at it because he liked to write. He started offering his copywriting services from home, while on home confinement.\n\nKevin's point: you don't have to be a natural salesman to begin. You learn the skill step by step.\n\nWhat would you try if you knew you could learn it step by step?\n\n#ad #business #success #kevintrudeau",
    "bytes": 21460568,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -6470,14 +6471,12 @@
    "cta_variant": 0,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/lAcnPduUis4"
+    "youtube": "https://youtube.com/shorts/lAcnPduUis4",
+    "facebook": "https://facebook.com/reel/1033466166439037/"
    },
    "caption_at_post": "Nine years in prison, no sales skills. Then came a new path.\n\nKevin Trudeau tells the story of a man who came out of prison with no marketing or sales presentation skills. Kevin taught him copywriting, and he was good at it because he liked to write. He started offering his copywriting services from home, while on home confinement.\n\nKevin's point: you don't have to be a natural salesman to begin. You learn the skill step by step.\n\nWhat would you try if you knew you could learn it step by step?\n\n#ad #business #success #kevintrudeau",
-   "posted_at": "2026-11-20T20:28",
+   "posted_at": "2026-11-20T21:20",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/56",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]
@@ -6511,7 +6510,7 @@
    "done": false,
    "status": {},
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-20T21:13",
+   "scheduled_at": "2026-11-20T22:05",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },

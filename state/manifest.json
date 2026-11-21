@@ -6374,8 +6374,12 @@
    "file": "KT_MONEY10/02_gurusnever_51s.mp4",
    "caption": "Today's gurus keep selling something new. The old formula was simple.\n\nKevin Trudeau says the old success books told you to write down what you want. He says almost no new success teacher says it today, and that they keep inventing something new to sell a new seminar.\n\nHe points back to Napoleon Hill's Think and Grow Rich: define your dream, and write it down. A dream that stays in your head is not yet in the physical world.\n\nHave you ever written your goal on paper?\n\n#ad #success #goals #kevintrudeau",
    "bytes": 15657618,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-20T19:30",
    "cta_keyword": "GOALS",
@@ -6389,7 +6393,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_MONEY10--02_gurusnever_51s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/4081462092161035/",
+    "youtube": "https://youtube.com/shorts/Ij5y-7tSNqA"
+   },
+   "caption_at_post": "Today's gurus keep selling something new. The old formula was simple.\n\nKevin Trudeau says the old success books told you to write down what you want. He says almost no new success teacher says it today, and that they keep inventing something new to sell a new seminar.\n\nHe points back to Napoleon Hill's Think and Grow Rich: define your dream, and write it down. A dream that stays in your head is not yet in the physical world.\n\nHave you ever written your goal on paper?\n\n#ad #success #goals #kevintrudeau",
+   "posted_at": "2026-11-20T19:40",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/54"
   },
   {
    "file": "KT_WORDS4/01_mimicking_49s.mp4",

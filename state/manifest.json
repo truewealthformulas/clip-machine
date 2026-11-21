@@ -6435,8 +6435,12 @@
    "file": "KT_ADVERSITY15/01_lostbusiness_42s.mp4",
    "caption": "Everything was gone. Then he made a decision.\n\nKevin Trudeau tells how a business takeover left him with no income, and he couldn't even continue in the work he was known for.\n\nHe says he didn't know what to do, but he knew there were seeds of a greater benefit in the pain. He decided he would be bigger than ever, even without knowing how.\n\nWhen did a setback last push you to decide something big?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #mindset",
    "bytes": 15445574,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-21T16:12",
    "cta_keyword": "GOALS",
@@ -6450,7 +6454,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_ADVERSITY15--01_lostbusiness_42s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1143802724674180/",
+    "youtube": "https://youtube.com/shorts/WqkSWhY9muQ"
+   },
+   "caption_at_post": "Everything was gone. Then he made a decision.\n\nKevin Trudeau tells how a business takeover left him with no income, and he couldn't even continue in the work he was known for.\n\nHe says he didn't know what to do, but he knew there were seeds of a greater benefit in the pain. He decided he would be bigger than ever, even without knowing how.\n\nWhen did a setback last push you to decide something big?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #business #mindset",
+   "posted_at": "2026-11-21T16:14",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/61"
   },
   {
    "file": "KT_ADVERSITY16/01_nothingleft_49s.mp4",

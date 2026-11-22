@@ -46,7 +46,8 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 14   # 14: @kevin_trudeau_student covers (B&W, red bar, caps + italic).
+CINE_V = 15   # 15: TikTok copy keeps the opening (context), 35-65 s.
+CINE_V_14 = 14     # 14: @kevin_trudeau_student covers (B&W, red bar, caps + italic).
 CINE_V_13 = 13   # 13: TikTok copy 20-40 s + jump cuts.
 CINE_V_12 = 12   # 12: clips start where the thought starts, end where the sentence ends.
 CINE_V_PREV = 11   # 11: cutaways chosen by Claude to match the words. 10: 10: TikTok full-screen cut. 9: 9: covers under a versioned name (the clobbered upload kept failing). 7: designed full-bleed covers, no navy band. 6: the clip ends where Kevin's story ends (finish_thought)
@@ -919,7 +920,12 @@ def point_window(srt, t_in, t_out):
     return new_in, new_out, sc, str(out.get("point") or "")
 
 
-TT_MAX = float(os.environ.get("TT_MAX_LEN", "40"))
+# 22 Nov 2026, the owner: "the last 3 TikTok videos have no context, are too
+# short and miss what Kevin is previously talking about". The TikTok copy now
+# KEEPS THE OPENING (the setup the full clip was chosen to start on) and only
+# ends earlier, at the first place the point is complete - 35 to 65 s.
+TT_MAX = float(os.environ.get("TT_MAX_LEN", "65"))
+TT_MIN = float(os.environ.get("TT_MIN_LEN", "35"))
 # 18 Nov 2026, the owner: "Facebook mention 1 min videos". The full story (YouTube,
 # Instagram, Facebook) runs 62-85 s; TikTok keeps its own 20-40 s copy.
 PW_MIN = float(os.environ.get("POINT_MIN_S", "62"))
@@ -939,16 +945,17 @@ def tt_short(phrases):
         import common as AC
         lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(phrases))
         out = AC.ask_json(
-            "You cut TikToks from a speaker's clip. TikTok rewards videos people watch to the end, so "
-            "you keep only the strongest 20-40 seconds that still make ONE complete point a stranger "
-            "understands, ideally opening on the most gripping line. Whole sentences only. Return JSON only.",
-            f"Phrases of the clip:\n{lines}\n\nPick a contiguous range (first, last) lasting 20-{TT_MAX:.0f} s. "
-            'Reply: {"first": N, "last": M, "why": "..."}', max_tokens=500)
-        a, b = int(out["first"]), int(out["last"])
+            "You shorten a speaker's clip for TikTok. The clip ALWAYS starts at phrase 0 - that is where "
+            "he sets up what he is talking about, and a stranger needs it. You only choose where it ENDS: "
+            "the earliest phrase where his point is complete and lands (the payoff line), so nothing "
+            "important is cut. Whole sentences only. Return JSON only.",
+            f"Phrases of the clip:\n{lines}\n\nPick the last phrase so the clip runs {TT_MIN:.0f}-{TT_MAX:.0f} s "
+            'from phrase 0 and ends on the payoff. Reply: {"last": M, "why": "..."}', max_tokens=500)
+        a, b = 0, int(out["last"])
         while b + 1 < len(phrases) and not phrases[b][2].rstrip().endswith((".", "?", "!")) \
                 and phrases[b + 1][1] - phrases[a][0] <= TT_MAX + 8:
             b += 1
-        if 0 <= a <= b < len(phrases) and 12 <= phrases[b][1] - phrases[a][0] <= TT_MAX + 8:
+        if 0 <= a <= b < len(phrases) and TT_MIN - 8 <= phrases[b][1] - phrases[a][0] <= TT_MAX + 8:
             print(f"  tiktok window: phrases {a}-{b} ({phrases[b][1] - phrases[a][0]:.1f}s) {out.get('why', '')[:90]}",
                   flush=True)
             return a, b

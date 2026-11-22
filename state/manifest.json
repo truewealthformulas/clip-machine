@@ -6821,8 +6821,12 @@
    "file": "KT_ATTITUDE5/01_oilhole_39s.mp4",
    "caption": "You can't find oil ten feet from the surface.\n\nKevin Trudeau uses an oil driller to make a point about success. Drill ten feet here and ten feet there and you only end up with lots of shallow holes.\n\nHe says the treasure comes from picking one spot and going down hundreds of feet.\n\nWhere in your life are you digging lots of shallow holes?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 14298516,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T09:52",
    "cta_keyword": "GOALS",
@@ -6836,7 +6840,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_ATTITUDE5--01_oilhole_39s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1630123195825604/",
+    "youtube": "https://youtube.com/shorts/MXZz3U3sLsw"
+   },
+   "caption_at_post": "You can't find oil ten feet from the surface.\n\nKevin Trudeau uses an oil driller to make a point about success. Drill ten feet here and ten feet there and you only end up with lots of shallow holes.\n\nHe says the treasure comes from picking one spot and going down hundreds of feet.\n\nWhere in your life are you digging lots of shallow holes?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-22T09:57",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/68"
   },
   {
    "file": "KT_ATTITUDE5/02_stupidstatement_53s.mp4",

@@ -7223,8 +7223,12 @@
    "file": "KT_SUCCESS36/01_thinkbig_43s.mp4",
    "caption": "Your dreams may be too small to ever work.\n\nKevin Trudeau tells you to think so big it would take three lifetimes to accomplish. Use your imagination like a kid who wanted to fly like Superman, and picture the things you want.\n\nHe says that if you never expand your imagination, nothing else he teaches will work. He points to the classic book The Magic of Thinking Big.\n\nWhen did you last let yourself dream without limits?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #kevintrudeau",
    "bytes": 16048191,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-22T06:56",
    "cta_keyword": "GOALS",
@@ -7238,7 +7242,15 @@
    "cover_v": 4,
    "cine_cover": 14,
    "tiktok_file": "KT_SUCCESS36--01_thinkbig_43s__tt.mp4",
-   "cine_v": 14
+   "cine_v": 14,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1847982836947220/",
+    "youtube": "https://youtube.com/shorts/hloM7YEMoHg"
+   },
+   "caption_at_post": "Your dreams may be too small to ever work.\n\nKevin Trudeau tells you to think so big it would take three lifetimes to accomplish. Use your imagination like a kid who wanted to fly like Superman, and picture the things you want.\n\nHe says that if you never expand your imagination, nothing else he teaches will work. He points to the classic book The Magic of Thinking Big.\n\nWhen did you last let yourself dream without limits?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #mindset #kevintrudeau",
+   "posted_at": "2026-11-22T07:05",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/67"
   },
   {
    "file": "KT_SUCCESS36/01_wrongrecipe_63s.mp4",

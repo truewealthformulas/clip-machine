@@ -6897,7 +6897,11 @@
    "caption": "Why this creed keeps a person going when every door slams shut.\n\nKevin Trudeau explains how Ray Kroc kept going into his fifties, listening to positive recordings every morning and night and staying persistent and focused.\n\nHe lived by the possibility thinkers creed: go around the mountain, go over it, dig a tunnel, or turn it into a gold mine.\n\nKevin points out that Ray was 52 when he started McDonald's.\n\nWhat mountain could you look at differently today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 15239056,
    "done": false,
-   "status": {},
+   "status": {
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '202611230455513848A6717233449625D1'}}",
+    "facebook": "held - Facebook limited to 5 a day"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T15:52",
    "cta_keyword": "GOALS",
@@ -6911,7 +6915,13 @@
    "cover_v": 4,
    "cine_cover": 15,
    "tiktok_file": "KT_KROC2--01_mountaingoldmine_51s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/qhxq02tV3nY"
+   },
+   "caption_at_post": "Why this creed keeps a person going when every door slams shut.\n\nKevin Trudeau explains how Ray Kroc kept going into his fifties, listening to positive recordings every morning and night and staying persistent and focused.\n\nHe lived by the possibility thinkers creed: go around the mountain, go over it, dig a tunnel, or turn it into a gold mine.\n\nKevin points out that Ray was 52 when he started McDonald's.\n\nWhat mountain could you look at differently today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-22T15:55"
   },
   {
    "file": "KT_LETTINGGO5/01_letgomyth_41s.mp4",

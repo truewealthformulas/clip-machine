@@ -7344,7 +7344,11 @@
    "caption": "When someone pushes your buttons, it may be pointing at something useful.\n\nKevin Trudeau says the first question to ask is whether you responded or simply reacted. Usually, someone pushed a button.\n\nHe says that is the moment to say thank you, because something has come to the surface that you can clear out. In his words, the universe doesn't do things to us. It does things for us.\n\nWhen did a hard moment last show you something about yourself?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
    "bytes": 13771726,
    "done": false,
-   "status": {},
+   "status": {
+    "youtube": "posted",
+    "tiktok": "init failed 400: {'error': {'code': 'spam_risk_too_many_pending_share', 'message': 'spam_risk_too_many_pending_share', 'log_id': '20261123023824949CA927053F36802F72'}}",
+    "facebook": "held - Facebook limited to 5 a day"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T13:32",
    "cta_keyword": "GOALS",
@@ -7358,7 +7362,13 @@
    "cover_v": 4,
    "cine_cover": 15,
    "tiktok_file": "KT_WEALTH20--02_triggersgifts_38s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/Ab8yjGs8SOg"
+   },
+   "caption_at_post": "When someone pushes your buttons, it may be pointing at something useful.\n\nKevin Trudeau says the first question to ask is whether you responded or simply reacted. Usually, someone pushed a button.\n\nHe says that is the moment to say thank you, because something has come to the surface that you can clear out. In his words, the universe doesn't do things to us. It does things for us.\n\nWhen did a hard moment last show you something about yourself?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
+   "posted_at": "2026-11-22T13:38"
   }
  ],
  "replan_v": 3

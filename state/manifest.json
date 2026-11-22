@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -6741,8 +6741,9 @@
    "file": "KT_ADVERSITY19/01_resistpersists_33s.mp4",
    "caption": "The harder you fight a problem, the bigger it gets.\n\nKevin explains that you become what you think about most of the time. If your mind stays on the problem, you give it more energy.\n\nHis point, in Earl Nightingale's words: what you resist persists. The way through is to welcome the challenge and overcome it instead of pushing back.\n\nWhich do you do more often, welcome a problem or push it away?\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 11437484,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -6752,14 +6753,12 @@
    "cta_variant": 0,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/9QFPdR587iA"
+    "youtube": "https://youtube.com/shorts/9QFPdR587iA",
+    "facebook": "https://facebook.com/reel/981435051273512/"
    },
    "caption_at_post": "The harder you fight a problem, the bigger it gets.\n\nKevin explains that you become what you think about most of the time. If your mind stays on the problem, you give it more energy.\n\nHis point, in Earl Nightingale's words: what you resist persists. The way through is to welcome the challenge and overcome it instead of pushing back.\n\nWhich do you do more often, welcome a problem or push it away?\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-21T18:54",
+   "posted_at": "2026-11-22T02:39",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/63",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]
@@ -6900,7 +6899,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-21T21:17",
+   "scheduled_at": "2026-11-22T03:24",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -7009,7 +7008,7 @@
   },
   {
    "file": "KT_MANIFESTING14/01_recipemushroom_55s.mp4",
-   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to sauté mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to saut\u00e9 mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 14860385,
    "done": false,
    "status": {},
@@ -7143,7 +7142,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-21T20:25",
+   "scheduled_at": "2026-11-22T03:24",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "posting": false,

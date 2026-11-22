@@ -6913,8 +6913,9 @@
    "file": "KT_LETTINGGO5/01_tirednotbored_38s.mp4",
    "caption": "Imagine going to bed with a smile instead of anger.\n\nKevin Trudeau says that when you release old regret and bitterness, your days change. You go to bed tired, not bored, with a smile instead of anger, and you wake up excited.\n\nHis point is that holding on drains you tremendously, and that letting go gives that energy back.\n\nWhat would your mornings feel like without that weight?\n\n#ad #energy #happiness #kevintrudeau",
    "bytes": 12396970,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -6924,14 +6925,12 @@
    "cta_variant": 2,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/AUhfeVaVFa0"
+    "youtube": "https://youtube.com/shorts/AUhfeVaVFa0",
+    "facebook": "https://facebook.com/reel/1941315513522391/"
    },
    "caption_at_post": "Imagine going to bed with a smile instead of anger.\n\nKevin Trudeau says that when you release old regret and bitterness, your days change. You go to bed tired, not bored, with a smile instead of anger, and you wake up excited.\n\nHis point is that holding on drains you tremendously, and that letting go gives that energy back.\n\nWhat would your mornings feel like without that weight?\n\n#ad #energy #happiness #kevintrudeau",
-   "posted_at": "2026-11-21T21:26",
+   "posted_at": "2026-11-22T03:33",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/66",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]
@@ -7185,7 +7184,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-22T03:24",
+   "scheduled_at": "2026-11-22T04:18",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "posting": false,

@@ -7178,8 +7178,9 @@
    "file": "KT_SUCCESS33/01_spiritualwealth_36s.mp4",
    "caption": "Why money and inner peace can go together.\n\nKevin Trudeau explains the law of detachment: you can enjoy a beautiful house and fine cars and still feel free, as long as you are not attached to them.\n\nHe says materialism and spirituality are not opposites. The difference is attachment.\n\nHis axiom: love people and use things, instead of loving things and using people.\n\nWhich one do you catch yourself doing more often?\n\n#ad #money #mindset #success #kevintrudeau",
    "bytes": 10688759,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -7189,14 +7190,12 @@
    "cta_variant": 1,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/ac3t6rpnOsc"
+    "youtube": "https://youtube.com/shorts/ac3t6rpnOsc",
+    "facebook": "https://facebook.com/reel/1159427589778324/"
    },
    "caption_at_post": "Why money and inner peace can go together.\n\nKevin Trudeau explains the law of detachment: you can enjoy a beautiful house and fine cars and still feel free, as long as you are not attached to them.\n\nHe says materialism and spirituality are not opposites. The difference is attachment.\n\nHis axiom: love people and use things, instead of loving things and using people.\n\nWhich one do you catch yourself doing more often?\n\n#ad #money #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-21T20:32",
+   "posted_at": "2026-11-22T04:18",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/64",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]

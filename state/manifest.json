@@ -6875,8 +6875,9 @@
    "file": "KT_BUSINESS5/01_commskills_34s.mp4",
    "caption": "Why communication comes before every online sale.\n\nKevin Trudeau says social media has left many people unsure how to communicate.\n\nHe explains that everything earned online rests on how well you talk to a potential customer. You can call it sales copy or advertising, but he says it is communication first and foremost.\n\nHow clearly do you get your point across?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #business #kevintrudeau",
    "bytes": 24117155,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -6896,14 +6897,12 @@
    "cine_v": 15,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/7rZ6fEjLSJ0"
+    "youtube": "https://youtube.com/shorts/7rZ6fEjLSJ0",
+    "facebook": "https://facebook.com/reel/1131764463186713/"
    },
    "caption_at_post": "Why communication comes before every online sale.\n\nKevin Trudeau says social media has left many people unsure how to communicate.\n\nHe explains that everything earned online rests on how well you talk to a potential customer. You can call it sales copy or advertising, but he says it is communication first and foremost.\n\nHow clearly do you get your point across?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #business #kevintrudeau",
-   "posted_at": "2026-11-22T21:55",
+   "posted_at": "2026-11-23T04:17",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/71",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]
@@ -7375,7 +7374,7 @@
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-23T04:07",
+   "scheduled_at": "2026-11-23T05:02",
    "cta_keyword": "GOALS",
    "cta_variant": 11,
    "t5_best": 29.7,

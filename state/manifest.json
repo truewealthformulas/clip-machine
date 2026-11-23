@@ -6876,7 +6876,11 @@
    "caption": "Why communication comes before every online sale.\n\nKevin Trudeau says social media has left many people unsure how to communicate.\n\nHe explains that everything earned online rests on how well you talk to a potential customer. You can call it sales copy or advertising, but he says it is communication first and foremost.\n\nHow clearly do you get your point across?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #business #kevintrudeau",
    "bytes": 24117155,
    "done": false,
-   "status": {},
+   "status": {
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "facebook": "held - Facebook limited to 5 a day"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-22T21:49",
    "cta_keyword": "GOALS",
@@ -6890,7 +6894,14 @@
    "cover_v": 4,
    "cine_cover": 15,
    "tiktok_file": "KT_BUSINESS5--01_commskills_34s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/7rZ6fEjLSJ0"
+   },
+   "caption_at_post": "Why communication comes before every online sale.\n\nKevin Trudeau says social media has left many people unsure how to communicate.\n\nHe explains that everything earned online rests on how well you talk to a potential customer. You can call it sales copy or advertising, but he says it is communication first and foremost.\n\nHow clearly do you get your point across?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #money #business #kevintrudeau",
+   "posted_at": "2026-11-22T21:55",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/71"
   },
   {
    "file": "KT_KROC2/01_mountaingoldmine_51s.mp4",

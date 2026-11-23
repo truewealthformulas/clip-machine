@@ -6290,8 +6290,12 @@
    "file": "KT_ATTITUDE4/02_dailyattitude_53s.mp4",
    "caption": "One question, asked every day, changed how Kevin worked.\n\nKevin explains that he kept asking himself whether his attitude was right today. He repeated it again and again, and says he was determined to reach the goal no matter how many obstacles showed up.\n\nAs he worked on his attitude, he says the facts that told him it couldn't be done began to fall away. His takeaway is that the universe will yield and bend to your will.\n\nWhat would change if you asked yourself that question every morning?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #success #mindset",
    "bytes": 15066835,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-23T08:19",
    "cta_keyword": "GOALS",
@@ -6305,7 +6309,15 @@
    "cover_v": 4,
    "cine_cover": 15,
    "tiktok_file": "KT_ATTITUDE4--02_dailyattitude_53s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1855452595662543/",
+    "youtube": "https://youtube.com/shorts/P9S6fKtvP2c"
+   },
+   "caption_at_post": "One question, asked every day, changed how Kevin worked.\n\nKevin explains that he kept asking himself whether his attitude was right today. He repeated it again and again, and says he was determined to reach the goal no matter how many obstacles showed up.\n\nAs he worked on his attitude, he says the facts that told him it couldn't be done began to fall away. His takeaway is that the universe will yield and bend to your will.\n\nWhat would change if you asked yourself that question every morning?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #success #mindset",
+   "posted_at": "2026-11-23T08:20",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/76"
   },
   {
    "file": "KT_BELIEF/01_selfdoubtprogram_43s.mp4",

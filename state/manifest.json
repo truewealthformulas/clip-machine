@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -7155,7 +7155,7 @@
   },
   {
    "file": "KT_MANIFESTING14/01_recipemushroom_55s.mp4",
-   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to sauté mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to saut\u00e9 mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 14860385,
    "done": true,
    "status": {},
@@ -8308,7 +8308,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_DEBT4--01_blamenobody_39s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-25T09:50",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_SUCCESS42/01_failurehabits_48s.mp4",
@@ -8326,7 +8329,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS42--01_failurehabits_48s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-24T21:47",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   },
   {
    "file": "KT_TEACHABILITY/01_emptycupzen_46s.mp4",
@@ -8344,7 +8350,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY--01_emptycupzen_46s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-24T20:44",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_TEACHABILITY/01_greatestbowdown_60s.mp4",
@@ -8362,7 +8371,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY--01_greatestbowdown_60s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-27T13:14",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_WEALTH27/01_abracadabra_41s.mp4",
@@ -8380,7 +8392,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-25T08:30",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_WEALTH28/01_peoplelikeyou_47s.mp4",
@@ -8398,7 +8413,10 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "scheduled_at": "2026-11-25T13:05",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_WORDS6/01_parentswords_52s.mp4",

@@ -766,9 +766,25 @@ def youtube(path, caption, public_url, clip=None):
     TikTok, so the fix belongs here and nowhere else - one platform, one rule.
     """
     yt = os.path.splitext(path)[0] + "__yt59" + os.path.splitext(path)[1]
+    cover = os.path.splitext(path)[0] + "__thumb.jpg"
     if os.path.exists(yt):
         path = yt
-    cover = os.path.splitext(path)[0] + "__thumb.jpg"
+    elif os.environ.get("YT_USE_SHORT_CUT", "1") == "1":
+        # 23 Nov 2026: YouTube views dropped once the clips grew to 62-85 s for
+        # Facebook - over 60 s Content ID blocks or buries Shorts (see above).
+        # YouTube now gets the short 22-40 s cut made for TikTok; Facebook
+        # keeps the long one.
+        alt = (clip or {}).get("tiktok_file")
+        if alt and public_url and "/" in public_url:
+            try:
+                rr = requests.get(public_url.rsplit("/", 1)[0] + "/" + alt, timeout=180)
+                if rr.ok and len(rr.content) > 200000:
+                    p2 = os.path.splitext(path)[0] + "__ytshort.mp4"
+                    with open(p2, "wb") as fh:
+                        fh.write(rr.content)
+                    path = p2
+            except Exception:
+                pass
     (cid, secret, refresh), missing = _cfg(
         "YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN",
         brand=brand_of(clip))

@@ -883,6 +883,18 @@ def instagram(path, caption, public_url, clip=None, trial=False):
         return clash
     if not public_url:
         return "no public URL available (KT_BASE_URL unset)"
+    # 24 Nov 2026, the owner: "I am posting the best TikTok videos to Instagram
+    # and they are not flagged". The TikTok cut (full screen on Kevin, big
+    # captions, jump cuts, 22-40 s) reads as an edit of its own; the editorial
+    # 16:9-in-9:16 cut was the one flagged as unoriginal. Instagram gets it too.
+    alt = (clip or {}).get("tiktok_file")
+    if alt and "/" in public_url and os.environ.get("IG_USE_SHORT_CUT", "1") == "1":
+        u2 = public_url.rsplit("/", 1)[0] + "/" + alt
+        try:
+            if requests.head(u2, timeout=30, allow_redirects=True).ok:
+                public_url = u2
+        except Exception:
+            pass
     body = {"media_type": "REELS", "video_url": public_url,
             "caption": caption[:2100],
             "share_to_feed": "true", "access_token": tok}

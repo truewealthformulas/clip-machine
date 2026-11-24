@@ -46,7 +46,8 @@ LANG = os.environ.get("CINE_LANG", "en").strip().lower() or "en"
 # stock video, no key, licensed for use in videos. factory/assets/broll/videos.txt
 # lists hand-picked clips per theme; Pexels (if a key ever exists) is tried first.
 MIXKIT_LIST = os.path.join(HERE, "assets", "broll", "videos.txt")
-CINE_V = 15   # 15: TikTok copy keeps the opening (context), 35-65 s.
+CINE_V = 16   # 16: TikTok back to 22-40 s, standalone opening.
+CINE_V_15 = 15     # 15: TikTok copy keeps the opening (context), 35-65 s.
 CINE_V_14 = 14     # 14: @kevin_trudeau_student covers (B&W, red bar, caps + italic).
 CINE_V_13 = 13   # 13: TikTok copy 20-40 s + jump cuts.
 CINE_V_12 = 12   # 12: clips start where the thought starts, end where the sentence ends.
@@ -924,8 +925,14 @@ def point_window(srt, t_in, t_out):
 # short and miss what Kevin is previously talking about". The TikTok copy now
 # KEEPS THE OPENING (the setup the full clip was chosen to start on) and only
 # ends earlier, at the first place the point is complete - 35 to 65 s.
-TT_MAX = float(os.environ.get("TT_MAX_LEN", "65"))
-TT_MIN = float(os.environ.get("TT_MIN_LEN", "35"))
+# 23 Nov 2026, the owner: the 54-73 s TikToks stayed under 200 views - "go
+# back to less seconds". So 22-40 s again, but the cut must STAND ALONE: it
+# opens on a line that introduces the topic itself (never "that / so / and /
+# because..."), and when no such opening exists inside 40 s it keeps phrase 0.
+TT_MAX = float(os.environ.get("TT_MAX_LEN", "40"))
+TT_MIN = float(os.environ.get("TT_MIN_LEN", "22"))
+_TT_BAD_OPEN = re.compile(r"^(and|but|so|because|that|this|those|these|it|it's|he|she|they|them|which|"
+                          r"or|then|also|now|well|yeah|right|okay|ok)\b", re.I)
 # 18 Nov 2026, the owner: "Facebook mention 1 min videos". The full story (YouTube,
 # Instagram, Facebook) runs 62-85 s; TikTok keeps its own 20-40 s copy.
 PW_MIN = float(os.environ.get("POINT_MIN_S", "62"))
@@ -945,13 +952,21 @@ def tt_short(phrases):
         import common as AC
         lines = "\n".join(f"[{i}] {a:.1f}-{b:.1f}s: {t}" for i, (a, b, t) in enumerate(phrases))
         out = AC.ask_json(
-            "You shorten a speaker's clip for TikTok. The clip ALWAYS starts at phrase 0 - that is where "
-            "he sets up what he is talking about, and a stranger needs it. You only choose where it ENDS: "
-            "the earliest phrase where his point is complete and lands (the payoff line), so nothing "
-            "important is cut. Whole sentences only. Return JSON only.",
-            f"Phrases of the clip:\n{lines}\n\nPick the last phrase so the clip runs {TT_MIN:.0f}-{TT_MAX:.0f} s "
-            'from phrase 0 and ends on the payoff. Reply: {"last": M, "why": "..."}', max_tokens=500)
-        a, b = 0, int(out["last"])
+            "You cut a short TikTok from a speaker's clip. A stranger scrolling must understand it with NO "
+            "earlier context: the first phrase you keep must itself name the topic or set up the idea "
+            "(a question, a claim, 'here is the secret of...'), never a line that points back to "
+            "something said before ('that', 'so', 'and', 'because', 'this is why', 'he said'). It must "
+            "end on the payoff line that completes the point. Prefer phrase 0 as the start when it "
+            "fits. Whole sentences only. Return JSON only.",
+            f"Phrases of the clip:\n{lines}\n\nPick a contiguous range (first, last) of {TT_MIN:.0f}-{TT_MAX:.0f} s "
+            'that a stranger fully understands. Reply: {"first": N, "last": M, "why": "..."}', max_tokens=500)
+        a, b = int(out["first"]), int(out["last"])
+        if a and (_TT_BAD_OPEN.match(phrases[a][2].strip()) or not phrases[a - 1][2].rstrip().endswith((".", "?", "!"))):
+            a = 0                       # it would open mid-thought - keep the real opening
+            if phrases[b][1] - phrases[0][0] > TT_MAX + 8:
+                ends = [i for i in range(len(phrases)) if phrases[i][1] - phrases[0][0] <= TT_MAX + 5
+                        and phrases[i][2].rstrip().endswith((".", "?", "!"))]
+                b = ends[-1] if ends else b
         while b + 1 < len(phrases) and not phrases[b][2].rstrip().endswith((".", "?", "!")) \
                 and phrases[b + 1][1] - phrases[a][0] <= TT_MAX + 8:
             b += 1

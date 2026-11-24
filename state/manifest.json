@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -6852,7 +6852,7 @@
    "file": "KT_ADVERSITY19/02_frankl_43s.mp4",
    "caption": "They can control everything except one thing.\n\nKevin points to Viktor Frankl's book Man's Search for Meaning. Frankl was held in a concentration camp, and he said they could take everything from him except his mind.\n\nHe controlled his thoughts, and that made his mind more powerful than anything done to him.\n\nKevin says he applied the same idea when he faced years in prison.\n\nWhen did you last feel in control of your own thoughts?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #confidence #kevintrudeau",
    "bytes": 13614993,
-   "done": false,
+   "done": true,
    "status": {},
    "cta_kind": "question",
    "scheduled_at": "2026-11-24T07:20",
@@ -6867,7 +6867,8 @@
    "cover_v": 4,
    "cine_cover": 15,
    "tiktok_file": "KT_ADVERSITY19--02_frankl_43s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "dropped": "no clear point (6/10)"
   },
   {
    "file": "KT_ATTITUDE5/01_oilhole_39s.mp4",
@@ -7041,7 +7042,7 @@
   {
    "file": "KT_LETTINGGO5/02_bedtimebless_41s.mp4",
    "caption": "The old bedtime prayer was never about asking for things.\n\nKevin Trudeau remembers what children were taught to do before sleep. They didn't ask for a car or fame. They blessed the people they loved, and then they blessed the people who had hurt them.\n\nKevin says that second step is the part nobody practices, and it is a simple way to start letting go of resentment each night.\n\nWho would be hardest for you to bless tonight?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #love #kevintrudeau",
-   "bytes": 15184431,
+   "bytes": 14886814,
    "done": false,
    "status": {},
    "cta_kind": "offer",
@@ -7053,11 +7054,11 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_LETTINGGO5--02_bedtimebless_41s__cover15.jpg",
+   "cover": "KT_LETTINGGO5--02_bedtimebless_41s__cover16.jpg",
    "cover_v": 4,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_LETTINGGO5--02_bedtimebless_41s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_LUCK8/01_mindrandom_69s.mp4",
@@ -7140,7 +7141,7 @@
   },
   {
    "file": "KT_MANIFESTING14/01_recipemushroom_55s.mp4",
-   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to saut\u00e9 mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to sauté mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 14860385,
    "done": true,
    "status": {},
@@ -7288,11 +7289,11 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_SUCCESS33--01_puppetstrings_43s__cover15.jpg",
+   "cover": "KT_SUCCESS33--01_puppetstrings_43s__cover16.jpg",
    "cover_v": 4,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS33--01_puppetstrings_43s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_SUCCESS33/01_spiritualwealth_36s.mp4",
@@ -7375,7 +7376,7 @@
   {
    "file": "KT_SUCCESS36/01_wrongrecipe_63s.mp4",
    "caption": "Why most people use the wrong success recipe.\n\nKevin Trudeau says that if you asked him how to improve your finances, he wouldn't hand you an app, an AI program or a crypto course. He says real success starts when you program what you want into your subconscious mind.\n\nHe points out that people read books, go to seminars and watch videos, yet every teacher forgets the one most powerful ingredient. Kevin's blunt verdict: most people are using the wrong recipe.\n\nWhich recipe are you following right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 13021576,
+   "bytes": 11992565,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7387,16 +7388,16 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_SUCCESS36--01_wrongrecipe_63s__cover15.jpg",
+   "cover": "KT_SUCCESS36--01_wrongrecipe_63s__cover16.jpg",
    "cover_v": 4,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS36--01_wrongrecipe_63s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_SUCCESS36/02_whatwant_50s.mp4",
    "caption": "You know your name instantly. Why not what you want?\n\nKevin Trudeau says the first step to success is answering one question: what do you want? He notes you can say your name, phone number and address without thinking, but when he asks what you want, most people have to stop and think.\n\nHe calls that the number one error. Saying you want more money is vague, and he says your desire must be specific.\n\nCould you answer that question right now, out loud?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
-   "bytes": 14140425,
+   "bytes": 14148901,
    "done": false,
    "status": {},
    "cta_kind": "offer",
@@ -7408,11 +7409,11 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_SUCCESS36--02_whatwant_50s__cover15.jpg",
+   "cover": "KT_SUCCESS36--02_whatwant_50s__cover16.jpg",
    "cover_v": 4,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS36--02_whatwant_50s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_WEALTH19/01_deliberateintent_36s.mp4",
@@ -7510,7 +7511,7 @@
    "file": "KT_ADVERSITY20/02_winnersfight_30s.mp4",
    "caption": "A problem can scare one person and fire up another.\n\nKevin Trudeau says step one is how you react to adversity. A winner gets fired up, motivated and ready for a fight. A loser caves in and says, \"Oh no, how am I going to deal with this?\"\n\nHe calls it a mindset, and the same problem can look very different depending on yours.\n\nWhich reaction shows up first in you?\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 12405243,
-   "done": false,
+   "done": true,
    "status": {},
    "cta_kind": "offer",
    "t5_best": 23.4,
@@ -7525,7 +7526,8 @@
    "cta_variant": 5,
    "cine_cover": 15,
    "tiktok_file": "KT_ADVERSITY20--02_winnersfight_30s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "dropped": "no clear point (6/10)"
   },
   {
    "file": "KT_ADVERSITY21/01_worsethanyou_38s.mp4",
@@ -7539,19 +7541,19 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_ADVERSITY21--01_worsethanyou_38s__cover15.jpg",
+   "cover": "KT_ADVERSITY21--01_worsethanyou_38s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-25T11:24",
    "cta_keyword": "GOALS",
    "cta_variant": 13,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_ADVERSITY21--01_worsethanyou_38s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_ADVERSITY22/01_giftsentence_44s.mp4",
    "caption": "Ten years in prison, and he still called it a gift.\n\nKevin Trudeau says he was sentenced for contempt of court, which he points out is not a misdemeanor or a felony. He sat there shocked at the length of the sentence.\n\nThen he made a choice. He told himself adversity is a gift. He says he did not know why yet, but he decided to believe it anyway.\n\nWhen did you last choose your attitude before you knew the outcome?\n\n#ad #mindset #fear #kevintrudeau",
-   "bytes": 12850558,
+   "bytes": 15493822,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7560,14 +7562,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_ADVERSITY22--01_giftsentence_44s__cover15.jpg",
+   "cover": "KT_ADVERSITY22--01_giftsentence_44s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-24T14:23",
    "cta_keyword": "GOALS",
    "cta_variant": 6,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_ADVERSITY22--01_giftsentence_44s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_ADVERSITY22/02_coldmind_47s.mp4",
@@ -7610,7 +7612,7 @@
   {
    "file": "KT_LETTINGGO6/01_fakinghappy_57s.mp4",
    "caption": "Why saying you're fine can bury the feeling.\n\nKevin Trudeau says positive thinking goes wrong when people say what they don't feel. They are afraid that naming a bad feeling will make it grow, so they say they are wonderful instead.\n\nHe compares it to burying the energy in the basement: you aren't getting rid of it, you're just hiding it for a while. His answer is to acknowledge what you are feeling.\n\nHow often do you say you're fine when it isn't true?\n\n#ad #mindset #fear #kevintrudeau",
-   "bytes": 16356067,
+   "bytes": 14999351,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7619,14 +7621,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover15.jpg",
+   "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-25T15:56",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_LETTINGGO6--01_fakinghappy_57s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_LUCK9/01_dnaplanet_56s.mp4",
@@ -7688,7 +7690,7 @@
   {
    "file": "KT_MANIFESTING16/01_heartattack_56s.mp4",
    "caption": "One wish came true in a way he never expected.\n\nKevin explains how a friend wanted to quit smoking and went through his manifesting steps with him. A week later, the friend was in the hospital.\n\nWhen he came out, he told Kevin the universe had given him exactly what he needed. For the sake of his five young daughters, he was done with smoking.\n\nKevin's point: what you ask for can arrive in a form you never expected.\n\nWhat unexpected event turned out to be exactly what you needed?\n\n#ad #habits #mindset #kevintrudeau",
-   "bytes": 15444209,
+   "bytes": 15411201,
    "done": false,
    "status": {},
    "cta_kind": "offer",
@@ -7697,14 +7699,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_MANIFESTING16--01_heartattack_56s__cover15.jpg",
+   "cover": "KT_MANIFESTING16--01_heartattack_56s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-25T19:00",
    "cta_keyword": "GOALS",
    "cta_variant": 17,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_MANIFESTING16--01_heartattack_56s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_MANIFESTING17/01_billionairemindwave_46s.mp4",
@@ -7747,7 +7749,7 @@
   {
    "file": "KT_MANIFESTING17/02_stairsnosebreath_53s.mp4",
    "caption": "Two or three flights of stairs, and no mouth breathing allowed.\n\nKevin Trudeau tells how his training group ran stairs breathing in and out through the nose only. They timed who broke down first, then tried again the next day.\n\nEveryone improved, until they could keep it up for 20 or 30 minutes straight. Small daily practice built real ability.\n\nWhat small thing could you practice every day until it gets easy?\n\n#ad #habits #success #kevintrudeau",
-   "bytes": 14705554,
+   "bytes": 15022175,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7756,14 +7758,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_MANIFESTING17--02_stairsnosebreath_53s__cover15.jpg",
+   "cover": "KT_MANIFESTING17--02_stairsnosebreath_53s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-29T08:12",
    "cta_keyword": "GOALS",
    "cta_variant": 27,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_MANIFESTING17--02_stairsnosebreath_53s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_MILLIONAIRE5/01_obsessionjourney_33s.mp4",
@@ -7787,7 +7789,7 @@
   {
    "file": "KT_MILLIONAIRE5/02_voicebrain_49s.mp4",
    "caption": "Think a thought, and nothing vibrates. Say it out loud, and your whole brain does.\n\nKevin Trudeau explains that when you only listen, just your eardrum vibrates. When you speak, your whole head and brain vibrate.\n\nHe says this is why professional athletes give themselves pep talks out loud, and why spoken words build different neural pathways than silent thoughts.\n\nWhat would you say out loud to yourself right now?\n\n#ad #mindset #confidence #kevintrudeau",
-   "bytes": 15609509,
+   "bytes": 15633153,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7796,20 +7798,20 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_MILLIONAIRE5--02_voicebrain_49s__cover15.jpg",
+   "cover": "KT_MILLIONAIRE5--02_voicebrain_49s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-27T06:43",
    "cta_keyword": "GOALS",
    "cta_variant": 21,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_MILLIONAIRE5--02_voicebrain_49s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_MONEY13/01_rollsroycejoe_59s.mp4",
    "caption": "Why successful people start small before they ever buy big.\n\nKevin Trudeau asked a Chicago car dealer named Joe if his first house was bought with cash. It wasn't. They lived in a small apartment and saved everything, then put half down on a first house, sold it, and paid cash for the second.\n\nKevin's lesson: successful people are willing to do what others won't.\n\nWhat would you give up for a few years to build something?\n\n#ad #success #money #kevintrudeau",
    "bytes": 18954524,
-   "done": false,
+   "done": true,
    "status": {},
    "cta_kind": "question",
    "t5_best": 45.8,
@@ -7824,7 +7826,8 @@
    "cta_variant": 11,
    "cine_cover": 15,
    "tiktok_file": "KT_MONEY13--01_rollsroycejoe_59s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 15,
+   "dropped": "no clear point (6/10)"
   },
   {
    "file": "KT_PERSISTENCE3/01_dreamaddslife_37s.mp4",
@@ -7848,7 +7851,7 @@
   {
    "file": "KT_PERSISTENCE3/01_persistencecarbon_45s.mp4",
    "caption": "No carbon, no steel. No persistence, no character.\n\nKevin shares Napoleon Hill's idea that persistence is to character what carbon is to steel: the most important element.\n\nHe says most people fail because they stop making new plans when the old ones fail. Ray Kroc did the opposite and stayed committed to his goal, not to one venture.\n\nWhat plan did you drop too soon?\n\n#ad #success #mindset #goals",
-   "bytes": 10155998,
+   "bytes": 10241290,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7857,19 +7860,19 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_PERSISTENCE3--01_persistencecarbon_45s__cover15.jpg",
+   "cover": "KT_PERSISTENCE3--01_persistencecarbon_45s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-29T07:24",
    "cta_keyword": "GOALS",
    "cta_variant": 26,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_PERSISTENCE3--01_persistencecarbon_45s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_PERSISTENCE3/02_lovepullsthree_43s.mp4",
    "caption": "Two horses together pull three times the weight, not two.\n\nKevin explains that when two people work as a team, there is a synergy neither has alone.\n\nHe says it is strongest in a romantic couple, when both are pulling for each other in tandem. He calls it an unstoppable force.\n\nWho is pulling the wagon with you?\n\n#ad #love #relationships #success",
-   "bytes": 16731958,
+   "bytes": 16690607,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -7878,14 +7881,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_PERSISTENCE3--02_lovepullsthree_43s__cover15.jpg",
+   "cover": "KT_PERSISTENCE3--02_lovepullsthree_43s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-26T08:53",
    "cta_keyword": "GOALS",
    "cta_variant": 20,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_PERSISTENCE3--02_lovepullsthree_43s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_READING5/01_magicbelieving_58s.mp4",
@@ -7956,14 +7959,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_SUCCESS38--01_sensesliemind_53s__cover15.jpg",
+   "cover": "KT_SUCCESS38--01_sensesliemind_53s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-25T12:28",
    "cta_keyword": "GOALS",
    "cta_variant": 14,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS38--01_sensesliemind_53s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_WEALTH21/01_rightpeople_40s.mp4",
@@ -8006,7 +8009,7 @@
   {
    "file": "KT_WEALTH23/01_losteverything_55s.mp4",
    "caption": "How enjoying things without needing them changes everything.\n\nKevin Trudeau describes a life with dozens of cars, homes in cities around the world and fine art, all staffed and running at once. When it was all taken away, people asked how he was coping.\n\nHis answer: he wasn't attached to any of it. He had simply enjoyed it, and it was someone else's turn.\n\nWhich do you do more: enjoy things or need them?\n\n#ad #wealth #freedom #kevintrudeau",
-   "bytes": 14934876,
+   "bytes": 14690728,
    "done": false,
    "status": {},
    "cta_kind": "question",
@@ -8015,14 +8018,14 @@
    "t5_v": 5,
    "t5_zoom": 1.0,
    "style": "T5",
-   "cover": "KT_WEALTH23--01_losteverything_55s__cover15.jpg",
+   "cover": "KT_WEALTH23--01_losteverything_55s__cover16.jpg",
    "cover_v": 4,
    "scheduled_at": "2026-11-24T19:34",
    "cta_keyword": "GOALS",
    "cta_variant": 8,
-   "cine_cover": 15,
+   "cine_cover": 16,
    "tiktok_file": "KT_WEALTH23--01_losteverything_55s__tt.mp4",
-   "cine_v": 15
+   "cine_v": 16
   },
   {
    "file": "KT_WORDS5/01_richdontknowwhy_45s.mp4",

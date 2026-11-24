@@ -97,8 +97,9 @@ jobs:
           YTFB_PER_DAY: "5"   # 18 Nov: owner "5 videos in Facebook" (+3 image carousels)
           YTFB_MIN_GAP_H: "2.5"
           # Instagram on every slot again (was 3 a day, 4 h apart, while under review).
-          IG_PER_DAY: "5"
-          IG_MIN_GAP_H: "0.75"   # under the 45-min post gap, so it never drops Instagram from a clip
+          IG_PER_DAY: "2"        # 24 Nov: reels back, in the TikTok cut - 2 a day beside 3 original carousels
+          IG_MIN_GAP_H: "4"
+          IG_REELS_PAUSE_UNTIL: "2026-11-24"
           AR_SLOTS: ${{ secrets.AR_SLOTS }}
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
           KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}
@@ -140,8 +141,9 @@ jobs:
           KT_SLOTS: "07:00,08:30,10:00,11:45,12:30,13:45,16:00,19:00,20:30,21:30"   # 18 Nov: 10 a day (YouTube + TikTok)
           TT_EXTRA_SLOTS: ""   # 18 Nov: the main queue now gives TikTok 10 a day itself
           # Instagram on every slot again (was 3 a day, 4 h apart, while under review).
-          IG_PER_DAY: "5"
-          IG_MIN_GAP_H: "0.75"   # under the 45-min post gap, so it never drops Instagram from a clip
+          IG_PER_DAY: "2"        # 24 Nov: reels back, in the TikTok cut - 2 a day beside 3 original carousels
+          IG_MIN_GAP_H: "4"
+          IG_REELS_PAUSE_UNTIL: "2026-11-24"
           AR_SLOTS: ${{ secrets.AR_SLOTS }}
           KT_PLATFORMS: ${{ secrets.KT_PLATFORMS }}
           KT_CTA_KEYWORDS: ${{ secrets.KT_CTA_KEYWORDS }}

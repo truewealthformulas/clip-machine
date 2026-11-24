@@ -8173,6 +8173,7 @@
    "bytes": 14730325,
    "done": false,
    "status": {
+    "facebook": "posted",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8192,14 +8193,12 @@
    "cine_v": 16,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/61YHmbKz_ZY"
+    "youtube": "https://youtube.com/shorts/61YHmbKz_ZY",
+    "facebook": "https://facebook.com/reel/1556370379360046/"
    },
    "caption_at_post": "You see an eagle in the clouds. A second later it's gone.\n\nKevin Trudeau says a goal you only think about works the same way. You think, I want a Lamborghini, and the thought drifts off like the cloud.\n\nHis answer is to capture it. When you write it down on paper, he says, you transfer it from thought into the physical world, and it becomes real.\n\nIt's a simple habit you can try today.\n\nWhat goal have you let drift away without writing it down?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #goals #success #kevintrudeau",
-   "posted_at": "2026-11-24T13:05",
+   "posted_at": "2026-11-24T15:23",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/80",
-   "retry_only": [
-    "facebook"
-   ],
    "agent_retried": [
     "facebook"
    ]

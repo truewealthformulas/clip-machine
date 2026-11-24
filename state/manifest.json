@@ -8052,7 +8052,10 @@
    "bytes": 12574792,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-24T07:20",
+   "cta_keyword": "GOALS",
+   "cta_variant": 0
   },
   {
    "file": "KT_ATTITUDE6/01_nextshinything_55s.mp4",
@@ -8060,7 +8063,10 @@
    "bytes": 17009775,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-30T06:34",
+   "cta_keyword": "GOALS",
+   "cta_variant": 7
   },
   {
    "file": "KT_ATTITUDE6/02_nothingstops_36s.mp4",
@@ -8068,7 +8074,10 @@
    "bytes": 11186304,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-27T11:56",
+   "cta_keyword": "GOALS",
+   "cta_variant": 5
   },
   {
    "file": "KT_GOALS2/01_thinkbigfirst_40s.mp4",
@@ -8076,7 +8085,10 @@
    "bytes": 14208255,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T11:23",
+   "cta_keyword": "GOALS",
+   "cta_variant": 3
   },
   {
    "file": "KT_MANIFESTING18/01_goalsclouds_34s.mp4",
@@ -8084,7 +8096,10 @@
    "bytes": 9038825,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T12:56",
+   "cta_keyword": "GOALS",
+   "cta_variant": 4
   },
   {
    "file": "KT_MINDSET49/01_affirmationlying_44s.mp4",
@@ -8092,7 +8107,10 @@
    "bytes": 15140441,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T09:53",
+   "cta_keyword": "GOALS",
+   "cta_variant": 2
   },
   {
    "file": "KT_WEALTH25/01_roompower_43s.mp4",
@@ -8100,7 +8118,10 @@
    "bytes": 14832728,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "scheduled_at": "2026-11-27T12:59",
+   "cta_keyword": "GOALS",
+   "cta_variant": 6
   },
   {
    "file": "KT_WEALTH25/02_presentfear_34s.mp4",
@@ -8108,7 +8129,10 @@
    "bytes": 11542535,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "scheduled_at": "2026-11-24T08:15",
+   "cta_keyword": "GOALS",
+   "cta_variant": 1
   }
  ],
  "replan_v": 3

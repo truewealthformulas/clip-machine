@@ -2,7 +2,7 @@
  "clips": [
   {
    "file": "KT_MIND/01_iamamillionaire_62s.mp4",
-   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "bytes": 42027239,
    "done": true,
    "status": {
@@ -22,7 +22,7 @@
     "instagram": "https://www.instagram.com/reel/DeQMrrQDAKe/",
     "youtube": "https://youtube.com/shorts/UGIy4qyf9vk"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" \u2014 and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
+   "caption_at_post": "Ad: Kevin Trudeau on the exact moment you've earned the right to say \"I am a millionaire\" — and why saying it before you believe it just keeps you stuck. Which stage are you on right now?",
    "posted_at": "2026-10-08T20:16",
    "tt_extra": "dropped - no clear point (6/10)"
   },
@@ -127,7 +127,7 @@
     "facebook": "https://facebook.com/reel/1116887407455460/",
     "instagram": "https://www.instagram.com/reel/DeUGnxmAhbz/"
    },
-   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" \u2014 it's a much smaller word. Would you actually say it out loud?",
+   "caption_at_post": "Ad: Kevin Trudeau on why the very first step toward a big goal isn't \"I want\" — it's a much smaller word. Would you actually say it out loud?",
    "posted_at": "2026-10-10T08:40",
    "style": "C1",
    "tt_extra": "dropped - no clear point (6/10)"
@@ -7155,7 +7155,7 @@
   },
   {
    "file": "KT_MANIFESTING14/01_recipemushroom_55s.mp4",
-   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to saut\u00e9 mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
+   "caption": "Good results start with instructions anyone can follow.\n\nKevin explains how chef Julia Child had housewives cook her recipe while she watched. Nobody got it right, and the problem was her instructions, not the cooks. One step said to sauté mushrooms, and the cook covered the pan and steamed them.\n\nSo she rewrote it with detailed steps. Clear steps lead to clear results.\n\nWhere could a clearer step help you today?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #habits #kevintrudeau",
    "bytes": 14860385,
    "done": true,
    "status": {},
@@ -8279,66 +8279,122 @@
   {
    "file": "KT_CRYPTO/01_packergambler_43s.mp4",
    "caption": "Why every gambler swears they always win.\n\nKevin explains that he once met Kerry Packer, a famous high-roller, in Australia in 1999. Packer told him he came out ahead every time he went to Las Vegas.\n\nKevin's private thought: every gambler says that, because they never count their losses. Remembering only the wins is a mindset trap anyone can fall into.\n\nWhat do you only remember the wins from?\n\n#ad #money #mind #kevintrudeau",
-   "bytes": 14247579,
+   "bytes": 12708382,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "t5_best": 22.5,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_CRYPTO--01_packergambler_43s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_DEBT4/01_blamenobody_39s.mp4",
    "caption": "Why taking ownership is the first step with debt.\n\nKevin Trudeau argues that spending habits are the one part of money you control. Instead of pointing outward, he says to look at the choices made with money you don't have.\n\nIt is a blunt message, and the good news is that choices can change. His closing advice is two words: be smart.\n\nWhen did you last take full responsibility for a hard situation?\n\n#ad #money #debt #mindset",
-   "bytes": 11841977,
+   "bytes": 10936895,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "t5_best": 22.6,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_DEBT4--01_blamenobody_39s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_SUCCESS42/01_failurehabits_48s.mp4",
    "caption": "Being late is not a flaw in your character. It's a habit.\n\nKevin Trudeau explains that successful people live on autopilot with success habits, while failures live on autopilot with failure habits.\n\nHe cites J. Paul Getty's book How to Be Rich and its chapter on habits: being on time, listening instead of talking, taking action instead of putting it off.\n\nWhich habit are you still repeating without noticing?\n\n#ad #habits #success #money",
-   "bytes": 13227173,
+   "bytes": 11053809,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "t5_best": 27.0,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_SUCCESS42--01_failurehabits_48s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_TEACHABILITY/01_emptycupzen_46s.mp4",
    "caption": "Why can't some people learn anything new, even from the best teacher?\n\nKevin Trudeau tells a Zen story. A student demands the secret of enlightenment. The teacher pours tea into his cup until it overflows onto the floor. When the student protests, the master explains that his mind is already full.\n\nAnything poured in will be read through what he already thinks. Kevin says there's no room for the truth until you empty your cup.\n\nWhat would you have to let go of to learn something new?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "bytes": 11984024,
+   "bytes": 10261719,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "t5_best": 17.7,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_TEACHABILITY--01_emptycupzen_46s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_TEACHABILITY/01_greatestbowdown_60s.mp4",
    "caption": "How can someone bow down to a person they may be ahead of?\n\nKevin Trudeau gets asked this when he shows photos of himself with monks and the Dalai Lama. He says the greatest always bow down, humble themselves, and keep filling themselves up. Even Jesus was baptized by John the Baptist.\n\nThe axiom behind it is that the wise man learns from the fool, but the fool doesn't learn from the wise man. Kevin asks you to think about that strongly.\n\nWhich one are you in your own life?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "bytes": 19066820,
+   "bytes": 16380199,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "t5_best": 20.6,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_TEACHABILITY--01_greatestbowdown_60s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH27/01_abracadabra_41s.mp4",
    "caption": "Abracadabra doesn't mean what you think it means.\n\nKevin explains that the word has a Persian origin and means \"I now create with my words.\" He says the ancient mystics understood the power of speech.\n\nThe takeaway is simple: words are not harmless noise. Kevin teaches that you should watch what comes out of your mouth, because speaking shapes how you move through life.\n\nWhich words do you use most when you talk about your own life?\n\n#ad #mindset #habits #kevintrudeau",
-   "bytes": 15981920,
+   "bytes": 14635222,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "t5_best": 31.4,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WEALTH27--01_abracadabra_41s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WEALTH28/01_peoplelikeyou_47s.mp4",
    "caption": "Learn people first, then learn the system behind success.\n\nKevin Trudeau says to study human nature: how to communicate, how to speak and how to get along with other people. Then, he says, learn the system the most successful people have used, which he traces to Think and Grow Rich by Napoleon Hill.\n\nHe notes that celebrities and multi-millionaires alike credit that book. If you haven't read it, Kevin says you need to.\n\nWhich of those skills would you work on first?\n\n#ad #success #relationships #kevintrudeau",
-   "bytes": 17232493,
+   "bytes": 15552663,
    "done": false,
    "status": {},
-   "cta_kind": "offer"
+   "cta_kind": "offer",
+   "t5_best": 19.4,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WEALTH28--01_peoplelikeyou_47s__cover.jpg",
+   "cover_v": 4
   },
   {
    "file": "KT_WORDS6/01_parentswords_52s.mp4",
    "caption": "Old voices from childhood can still shape how you think about money.\n\nKevin Trudeau explains that when you practice saying a big goal out loud, old programming can come to the surface. A guidance counselor who said you would never amount to anything. A parent who said you would struggle your whole life.\n\nHe says that is exactly why the exercise is worth doing. The words bring up what you absorbed long ago, so you can see it for what it is.\n\nWhat you were told as a kid may still be running your adult choices.\n\nWhose voice do you hear when you think about money?\n\n#ad #money #mindset #kevintrudeau",
-   "bytes": 21623467,
+   "bytes": 19688134,
    "done": false,
    "status": {},
-   "cta_kind": "question"
+   "cta_kind": "question",
+   "t5_best": 44.0,
+   "t5_from": null,
+   "t5_v": 5,
+   "t5_zoom": 1.0,
+   "style": "T5",
+   "cover": "KT_WORDS6--01_parentswords_52s__cover.jpg",
+   "cover_v": 4
   }
  ],
  "replan_v": 3

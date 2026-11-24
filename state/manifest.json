@@ -7568,8 +7568,14 @@
    "file": "KT_ADVERSITY22/01_giftsentence_44s.mp4",
    "caption": "Ten years in prison, and he still called it a gift.\n\nKevin Trudeau says he was sentenced for contempt of court, which he points out is not a misdemeanor or a felony. He sat there shocked at the length of the sentence.\n\nThen he made a choice. He told himself adversity is a gift. He says he did not know why yet, but he decided to believe it anyway.\n\nWhen did you last choose your attitude before you knew the outcome?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
    "bytes": 15493822,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "t5_best": 28.0,
    "t5_from": null,
@@ -7583,7 +7589,16 @@
    "cta_variant": 6,
    "cine_cover": 16,
    "tiktok_file": "KT_ADVERSITY22--01_giftsentence_44s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1922153768950499/",
+    "instagram": "https://www.instagram.com/reel/DgItMcnGQ46/",
+    "youtube": "https://youtube.com/shorts/_b5ELUrRmwI"
+   },
+   "caption_at_post": "Ten years in prison, and he still called it a gift.\n\nKevin Trudeau says he was sentenced for contempt of court, which he points out is not a misdemeanor or a felony. He sat there shocked at the length of the sentence.\n\nThen he made a choice. He told himself adversity is a gift. He says he did not know why yet, but he decided to believe it anyway.\n\nWhen did you last choose your attitude before you knew the outcome?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
+   "posted_at": "2026-11-24T14:30",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/81"
   },
   {
    "file": "KT_ADVERSITY22/02_coldmind_47s.mp4",

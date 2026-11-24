@@ -8195,8 +8195,12 @@
    "file": "KT_WEALTH25/02_presentfear_34s.mp4",
    "caption": "The past is where pain is. The future is where fear is.\n\nKevin Trudeau says most people spend their time in yesterday, last month, or a future they cannot know. What we actually have is today, and this moment.\n\nHe says that doing things with full awareness brings you into present time, where he finds nothing but bliss.\n\nWhen did you last feel completely here?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
    "bytes": 16104007,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-24T08:15",
    "cta_keyword": "GOALS",
@@ -8210,7 +8214,15 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH25--02_presentfear_34s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/997879946202929/",
+    "youtube": "https://youtube.com/shorts/G30uxhWFkpw"
+   },
+   "caption_at_post": "The past is where pain is. The future is where fear is.\n\nKevin Trudeau says most people spend their time in yesterday, last month, or a future they cannot know. What we actually have is today, and this moment.\n\nHe says that doing things with full awareness brings you into present time, where he finds nothing but bliss.\n\nWhen did you last feel completely here?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #happiness #kevintrudeau",
+   "posted_at": "2026-11-24T08:24",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/78"
   }
  ],
  "replan_v": 3

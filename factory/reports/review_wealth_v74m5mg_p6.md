@@ -1,0 +1,14 @@
+# Rules review: wealth_v74m5mg_p6 (KT_WEALTH25, source v74m5mg.mp4)
+
+3 clip(s) approved.
+
+- DROP `hollywoodsecret`: Main point is secret society/Brotherhood content (conspiracy territory). Starts on a question about rituals and ends mid-thought setting up 'I'll give you one of them'. Hook 'Secret Society Lie' is banned focus. Caption also mentions GIN in first person ('my highlights'), which breaks the no-impersonation rule.
+- DROP `privaterooms`: Secret-society 'private houses' content, tied to the Brotherhood, so conspiracy-adjacent. Mid-thought start ('Masons have buildings') and the ending drifts into a Napoleon Hill/Carnegie/Brotherhood claim. No clean payoff.
+- DROP `boringritual`: Secret-society ritual framing, and the clip cuts off mid-thought ('Other people collect cars.'). The caption claims a payoff the clip never delivers.
+- DROP `beautyinvest`: Ends by claiming a 'money, love, luck, health attractor field', plus 'the elites know this' (elite-hiding framing) and unsupported science claims. Starts mid-thought ('And he went around the world...'). Cannot be fixed cleanly.
+- FIXED `illiquid`: Good story with a clear payoff, 50.8s. Hook says 'Broke' (targeting) and exceeds 6 words; the caption uses 'my highlights' (impersonation) and the first line is outside the 40-90 character range. Rewritten. (hook was 'Broke Right Now, / Wealth Later: The Mindset')
+- FIXED `presentfear`: Self-contained and a clear payoff, 33.9s. It's a mindset clip, not a medical claim. The hook is ok in structure but the caption has 'my highlights' impersonation, and the 'Happiness' tag is fine. The ending runs into 'defies human comprehension'; rewritten to stay on the present-moment idea. (hook was 'Why Fear Lives / In Your Future')
+- FIXED `roompower`: Clear teaching, 44.8s, ends on the ritual line. Starts mid-thought ('Everyone kind of felt it') is minor; the caption has a question for the first line and 'my highlights' impersonation. The 10 or 12 number in the caption is fine. Rewritten, with the claim softened to what Kevin says. (hook was 'Why Rich Rooms / Change Your Confidence')
+- FIXED `supportgroup`: Good practical teaching about choosing friends and groups. It ends on 'And here's how it works.', which is a setup line, so the cut must end at 1154.9. Caption first line is a viewer-targeting question; 'my highlights' impersonation. Rewritten. Trim the last 2 seconds before shipping. (hook was 'Why Your Circle / Decides Your Success')
+- DROP `activateawareness`: Main point is amulets, heirlooms and talismans having power, which is superstition and religion-adjacent, and it ends on an interviewer question ('In closing, Kevin, what did you learn in the Brotherhood?'), so it ends mid-thought and on a Brotherhood setup.
+kept the best 3 of 4 approved clip(s) (one per episode): ['Why Your Circle Decides Your Success', 'Why Fear Lives In Your Future', 'Why Rich Rooms Build Your Confidence']

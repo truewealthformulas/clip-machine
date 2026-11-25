@@ -8374,8 +8374,11 @@
    "file": "KT_TEACHABILITY/01_emptycupzen_46s.mp4",
    "caption": "Why can't some people learn anything new, even from the best teacher?\n\nKevin Trudeau tells a Zen story. A student demands the secret of enlightenment. The teacher pours tea into his cup until it overflows onto the floor. When the student protests, the master explains that his mind is already full.\n\nAnything poured in will be read through what he already thinks. Kevin says there's no room for the truth until you empty your cup.\n\nWhat would you have to let go of to learn something new?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 10376851,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8395,15 +8398,13 @@
    "cta_variant": 0,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/yE57sKBFHDs"
+    "youtube": "https://youtube.com/shorts/yE57sKBFHDs",
+    "facebook": "https://facebook.com/reel/2115285705827310/",
+    "instagram": "https://www.instagram.com/reel/DgJzErQutf9/"
    },
    "caption_at_post": "Why can't some people learn anything new, even from the best teacher?\n\nKevin Trudeau tells a Zen story. A student demands the secret of enlightenment. The teacher pours tea into his cup until it overflows onto the floor. When the student protests, the master explains that his mind is already full.\n\nAnything poured in will be read through what he already thinks. Kevin says there's no room for the truth until you empty your cup.\n\nWhat would you have to let go of to learn something new?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
-   "posted_at": "2026-11-24T20:50",
+   "posted_at": "2026-11-25T00:40",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/83",
-   "retry_only": [
-    "facebook",
-    "instagram"
-   ],
    "agent_retried": [
     "facebook",
     "instagram"

@@ -529,7 +529,28 @@ def with_book(out, seed):
     return out.rstrip() + "\n\n" + line
 
 
+def ig_clean(caption):
+    """25 Nov 2026, the owner: Instagram flagged the reels as branded content
+    ("add a paid partnership label") - "Instagram: reels with no promotions".
+    So an Instagram reel carries only Kevin's teaching: the hook and the
+    question, three topic hashtags. No keyword ask, no link, no #ad, no free
+    training, no club line, no book line. The link lives in the bio only."""
+    lines = [l.strip() for l in (caption or "").split("\n")]
+    promo = re.compile(r"comment |link in|bio|free|training|highlights|http|club|zoom|access|"
+                       r"your wish is your command|\bdm\b|#ad\b", re.I)
+    body = [l for l in lines if l and not l.startswith("#") and not promo.search(l)]
+    tags = [t for l in lines if l.startswith("#") for t in l.split()
+            if t.lower() not in ("#ad", "#sponsored", "#affiliate")][:3]
+    if not body:
+        return " ".join(tags)
+    question = next((l for l in reversed(body[1:]) if l.endswith("?")), "")
+    out = [body[0]] + (["", question] if question else [])
+    return "\n".join(out + ([""," ".join(tags)] if tags else []))
+
+
 def caption_for(platform, caption, brand="", keyword="", ask="", variant=None):
+    if platform == "instagram" and os.environ.get("IG_NO_PROMO", "1") == "1":
+        return ig_clean(caption)
     return with_book(with_club(platform, _caption_core(platform, caption, brand, keyword, ask, variant), brand),
                      (caption or "")[:120])
 

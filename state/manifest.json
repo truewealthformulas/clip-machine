@@ -7412,8 +7412,14 @@
    "file": "KT_SUCCESS36/02_whatwant_50s.mp4",
    "caption": "You know your name instantly. Why not what you want?\n\nKevin Trudeau says the first step to success is answering one question: what do you want? He notes you can say your name, phone number and address without thinking, but when he asks what you want, most people have to stop and think.\n\nHe calls that the number one error. Saying you want more money is vague, and he says your desire must be specific.\n\nCould you answer that question right now, out loud?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
    "bytes": 14148901,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "offer",
    "scheduled_at": "2026-11-25T06:58",
    "cta_keyword": "GOALS",
@@ -7427,7 +7433,16 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS36--02_whatwant_50s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1178190458204889/",
+    "instagram": "https://www.instagram.com/reel/DgKeswvAc7p/",
+    "youtube": "https://youtube.com/shorts/kGgZV-f42cI"
+   },
+   "caption_at_post": "You know your name instantly. Why not what you want?\n\nKevin Trudeau says the first step to success is answering one question: what do you want? He notes you can say your name, phone number and address without thinking, but when he asks what you want, most people have to stop and think.\n\nHe calls that the number one error. Saying you want more money is vague, and he says your desire must be specific.\n\nCould you answer that question right now, out loud?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #goals #success #kevintrudeau",
+   "posted_at": "2026-11-25T07:02",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/85"
   },
   {
    "file": "KT_WEALTH19/01_deliberateintent_36s.mp4",

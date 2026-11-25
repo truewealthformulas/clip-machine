@@ -94,8 +94,8 @@ jobs:
           KT_TZ: America/New_York
           # 5 a day, 5 Nov 2026, the owner: "lets post 5 per day".
           KT_SLOTS: "07:00,08:30,10:00,11:45,12:30,13:45,16:00,19:00,20:30,21:30"   # 18 Nov: 10 a day (YouTube + TikTok)
-          YTFB_PER_DAY: "5"   # 18 Nov: owner "5 videos in Facebook" (+3 image carousels)
-          YTFB_MIN_GAP_H: "2.5"
+          YTFB_PER_DAY: "10"   # 25 Nov: owner "10 videos in TikTok, YouTube and Facebook"
+          YTFB_MIN_GAP_H: "0.7"
           # Instagram on every slot again (was 3 a day, 4 h apart, while under review).
           IG_PER_DAY: "2"        # 24 Nov: reels back, in the TikTok cut - 2 a day beside 3 original carousels
           IG_MIN_GAP_H: "4"

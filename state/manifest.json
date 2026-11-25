@@ -7566,7 +7566,12 @@
    "caption": "What Henry Ford's lawsuit teaches about adversity.\n\nKevin Trudeau points to Henry Ford, who was sued over his right to keep making cars. If he lost, his business was finished.\n\nKevin asks how anyone faces that, and what mindset it takes to stay steady so close to disaster. He also looks at soldiers in battle.\n\nHis point: the adversity most of us face is small next to what the ultra successful have been through.\n\nWhat would change if you saw your biggest problem as small?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 15889790,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "offer",
    "t5_best": 16.6,
    "t5_from": null,
@@ -7580,7 +7585,15 @@
    "cta_variant": 13,
    "cine_cover": 16,
    "tiktok_file": "KT_ADVERSITY21--01_worsethanyou_38s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2053711238677665/",
+    "youtube": "https://youtube.com/shorts/3GCD_yU_M0U"
+   },
+   "caption_at_post": "What Henry Ford's lawsuit teaches about adversity.\n\nKevin Trudeau points to Henry Ford, who was sued over his right to keep making cars. If he lost, his business was finished.\n\nKevin asks how anyone faces that, and what mindset it takes to stay steady so close to disaster. He also looks at soldiers in battle.\n\nHis point: the adversity most of us face is small next to what the ultra successful have been through.\n\nWhat would change if you saw your biggest problem as small?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-25T17:59",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/88"
   },
   {
    "file": "KT_ADVERSITY22/01_giftsentence_44s.mp4",
@@ -7670,7 +7683,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T17:58",
+   "scheduled_at": "2026-11-25T18:43",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -8008,7 +8021,7 @@
    "style": "T5",
    "cover": "KT_SUCCESS38--01_sensesliemind_53s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T17:58",
+   "scheduled_at": "2026-11-25T18:43",
    "cta_keyword": "GOALS",
    "cta_variant": 14,
    "cine_cover": 16,
@@ -8486,7 +8499,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T17:58",
+   "scheduled_at": "2026-11-25T18:43",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8522,7 +8535,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T17:58",
+   "scheduled_at": "2026-11-25T18:43",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },

@@ -8040,7 +8040,13 @@
    "caption": "How enjoying things without needing them changes everything.\n\nKevin Trudeau describes a life with dozens of cars, homes in cities around the world and fine art, all staffed and running at once. When it was all taken away, people asked how he was coping.\n\nHis answer: he wasn't attached to any of it. He had simply enjoyed it, and it was someone else's turn.\n\nWhich do you do more: enjoy things or need them?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #freedom #kevintrudeau",
    "bytes": 14690728,
    "done": false,
-   "status": {},
+   "status": {
+    "instagram": "posted",
+    "instagram_story": "story rejected - likely over the 60s story cap; no 59s cut was available for this clip",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "facebook": "held - Facebook limited to 5 a day"
+   },
    "cta_kind": "question",
    "t5_best": 18.0,
    "t5_from": null,
@@ -8054,7 +8060,15 @@
    "cta_variant": 8,
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH23--01_losteverything_55s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "instagram": "https://www.instagram.com/reel/DgJRc-ygusC/",
+    "youtube": "https://youtube.com/shorts/5fPu0MOKYCs"
+   },
+   "caption_at_post": "How enjoying things without needing them changes everything.\n\nKevin Trudeau describes a life with dozens of cars, homes in cities around the world and fine art, all staffed and running at once. When it was all taken away, people asked how he was coping.\n\nHis answer: he wasn't attached to any of it. He had simply enjoyed it, and it was someone else's turn.\n\nWhich do you do more: enjoy things or need them?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #wealth #freedom #kevintrudeau",
+   "posted_at": "2026-11-24T19:47",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/82"
   },
   {
    "file": "KT_WORDS5/01_richdontknowwhy_45s.mp4",

@@ -8334,8 +8334,11 @@
    "file": "KT_SUCCESS42/01_failurehabits_48s.mp4",
    "caption": "Being late is not a flaw in your character. It's a habit.\n\nKevin Trudeau explains that successful people live on autopilot with success habits, while failures live on autopilot with failure habits.\n\nHe cites J. Paul Getty's book How to Be Rich and its chapter on habits: being on time, listening instead of talking, taking action instead of putting it off.\n\nWhich habit are you still repeating without noticing?\n\n#ad #habits #success #money",
    "bytes": 14614060,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8355,15 +8358,13 @@
    "cta_variant": 1,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/Kgq-oS43KWM"
+    "youtube": "https://youtube.com/shorts/Kgq-oS43KWM",
+    "facebook": "https://facebook.com/reel/1095179846841633/",
+    "instagram": "https://www.instagram.com/reel/DgJs2FczKNP/"
    },
    "caption_at_post": "Being late is not a flaw in your character. It's a habit.\n\nKevin Trudeau explains that successful people live on autopilot with success habits, while failures live on autopilot with failure habits.\n\nHe cites J. Paul Getty's book How to Be Rich and its chapter on habits: being on time, listening instead of talking, taking action instead of putting it off.\n\nWhich habit are you still repeating without noticing?\n\n#ad #habits #success #money",
-   "posted_at": "2026-11-24T21:54",
+   "posted_at": "2026-11-24T23:45",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/84",
-   "retry_only": [
-    "facebook",
-    "instagram"
-   ],
    "agent_retried": [
     "facebook",
     "instagram"
@@ -8389,7 +8390,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY--01_emptycupzen_46s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-24T23:36",
+   "scheduled_at": "2026-11-25T00:28",
    "cta_keyword": "GOALS",
    "cta_variant": 0,
    "posting": false,

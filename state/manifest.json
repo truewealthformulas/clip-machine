@@ -7674,7 +7674,12 @@
    "caption": "Why saying you're fine can bury the feeling.\n\nKevin Trudeau says positive thinking goes wrong when people say what they don't feel. They are afraid that naming a bad feeling will make it grow, so they say they are wonderful instead.\n\nHe compares it to burying the energy in the basement: you aren't getting rid of it, you're just hiding it for a while. His answer is to acknowledge what you are feeling.\n\nHow often do you say you're fine when it isn't true?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
    "bytes": 14999351,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "question",
    "t5_best": 38.8,
    "t5_from": null,
@@ -7688,7 +7693,15 @@
    "cta_variant": 16,
    "cine_cover": 16,
    "tiktok_file": "KT_LETTINGGO6--01_fakinghappy_57s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1146745391172467/",
+    "youtube": "https://youtube.com/shorts/fZ9a2lMRG6E"
+   },
+   "caption_at_post": "Why saying you're fine can bury the feeling.\n\nKevin Trudeau says positive thinking goes wrong when people say what they don't feel. They are afraid that naming a bad feeling will make it grow, so they say they are wonderful instead.\n\nHe compares it to burying the energy in the basement: you aren't getting rid of it, you're just hiding it for a while. His answer is to acknowledge what you are feeling.\n\nHow often do you say you're fine when it isn't true?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
+   "posted_at": "2026-11-25T18:52",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/89"
   },
   {
    "file": "KT_LUCK9/01_dnaplanet_56s.mp4",
@@ -8021,7 +8034,7 @@
    "style": "T5",
    "cover": "KT_SUCCESS38--01_sensesliemind_53s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T18:43",
+   "scheduled_at": "2026-11-25T19:36",
    "cta_keyword": "GOALS",
    "cta_variant": 14,
    "cine_cover": 16,
@@ -8499,7 +8512,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T18:44",
+   "scheduled_at": "2026-11-25T19:36",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8535,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T18:43",
+   "scheduled_at": "2026-11-25T19:36",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },

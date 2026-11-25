@@ -8332,7 +8332,12 @@
    "caption": "Being late is not a flaw in your character. It's a habit.\n\nKevin Trudeau explains that successful people live on autopilot with success habits, while failures live on autopilot with failure habits.\n\nHe cites J. Paul Getty's book How to Be Rich and its chapter on habits: being on time, listening instead of talking, taking action instead of putting it off.\n\nWhich habit are you still repeating without noticing?\n\n#ad #habits #success #money",
    "bytes": 14614060,
    "done": false,
-   "status": {},
+   "status": {
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "facebook": "held - Facebook limited to 5 a day",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "question",
    "t5_best": 27.0,
    "t5_from": null,
@@ -8346,7 +8351,14 @@
    "cine_v": 16,
    "scheduled_at": "2026-11-24T21:47",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "youtube": "https://youtube.com/shorts/Kgq-oS43KWM"
+   },
+   "caption_at_post": "Being late is not a flaw in your character. It's a habit.\n\nKevin Trudeau explains that successful people live on autopilot with success habits, while failures live on autopilot with failure habits.\n\nHe cites J. Paul Getty's book How to Be Rich and its chapter on habits: being on time, listening instead of talking, taking action instead of putting it off.\n\nWhich habit are you still repeating without noticing?\n\n#ad #habits #success #money",
+   "posted_at": "2026-11-24T21:54",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/84"
   },
   {
    "file": "KT_TEACHABILITY/01_emptycupzen_46s.mp4",

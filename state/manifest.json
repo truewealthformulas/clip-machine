@@ -7980,9 +7980,11 @@
    "file": "KT_PERSISTENCE3/02_lovepullsthree_43s.mp4",
    "caption": "Two horses together pull three times the weight, not two.\n\nKevin explains that when two people work as a team, there is a synergy neither has alone.\n\nHe says it is strongest in a romantic couple, when both are pulling for each other in tandem. He calls it an unstoppable force.\n\nWho is pulling the wagon with you?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #love #relationships #success",
    "bytes": 16690607,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8003,14 +8005,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1501819188528841/",
-    "youtube": "https://youtube.com/shorts/J9ETTsTjnkI"
+    "youtube": "https://youtube.com/shorts/J9ETTsTjnkI",
+    "instagram": "https://www.instagram.com/reel/DgOO5NQhqZi/"
    },
    "caption_at_post": "Two horses together pull three times the weight, not two.\n\nKevin explains that when two people work as a team, there is a synergy neither has alone.\n\nHe says it is strongest in a romantic couple, when both are pulling for each other in tandem. He calls it an unstoppable force.\n\nWho is pulling the wagon with you?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #love #relationships #success",
-   "posted_at": "2026-11-26T09:03",
+   "posted_at": "2026-11-26T18:01",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/96",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
@@ -8694,7 +8694,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_ADVERSITY24--01_primetimeprison_48s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T17:50",
+   "scheduled_at": "2026-11-26T18:42",
    "cta_keyword": "GOALS",
    "cta_variant": 3,
    "posting": false,

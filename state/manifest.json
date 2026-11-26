@@ -8052,9 +8052,11 @@
    "file": "KT_SUCCESS38/01_sensesliemind_53s.mp4",
    "caption": "Your senses pick up only a tiny slice of what is there.\n\nKevin Trudeau explains that our eyes catch only a small spectrum of light. A bat would say it sees more, a dog smells and hears far more than we do, and a dog whistle makes no sound to us at all.\n\nHe says what we actually experience with our physical senses is incredibly small. He also shares that as a child he never thought it unusual to see energy.\n\nWhat might you be missing because you trust only what you can see?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #kevintrudeau",
    "bytes": 12377809,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8075,14 +8077,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1374326811306828/",
-    "youtube": "https://youtube.com/shorts/Sfi4ibTQIi4"
+    "youtube": "https://youtube.com/shorts/Sfi4ibTQIi4",
+    "instagram": "https://www.instagram.com/reel/DgM1DOCvH6F/"
    },
    "caption_at_post": "Your senses pick up only a tiny slice of what is there.\n\nKevin Trudeau explains that our eyes catch only a small spectrum of light. A bat would say it sees more, a dog smells and hears far more than we do, and a dog whistle makes no sound to us at all.\n\nHe says what we actually experience with our physical senses is incredibly small. He also shares that as a child he never thought it unusual to see energy.\n\nWhat might you be missing because you trust only what you can see?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #kevintrudeau",
-   "posted_at": "2026-11-25T21:33",
+   "posted_at": "2026-11-26T04:55",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/91",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
@@ -8599,7 +8599,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T04:46",
+   "scheduled_at": "2026-11-26T05:38",
    "cta_keyword": "GOALS",
    "cta_variant": 4,
    "posting": false,
@@ -8707,7 +8707,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_RELATIONSHIPS11--01_wrongquestion_45s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T04:46",
+   "scheduled_at": "2026-11-26T05:38",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "posting": false,

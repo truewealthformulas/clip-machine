@@ -7692,7 +7692,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T20:32",
+   "scheduled_at": "2026-11-25T21:24",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -7775,7 +7775,12 @@
    "caption": "One wish came true in a way he never expected.\n\nKevin explains how a friend wanted to quit smoking and went through his manifesting steps with him. A week later, the friend was in the hospital.\n\nWhen he came out, he told Kevin the universe had given him exactly what he needed. For the sake of his five young daughters, he was done with smoking.\n\nKevin's point: what you ask for can arrive in a form you never expected.\n\nWhat unexpected event turned out to be exactly what you needed?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
    "bytes": 15411201,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "offer",
    "t5_best": 13.9,
    "t5_from": null,
@@ -7789,7 +7794,15 @@
    "cta_variant": 17,
    "cine_cover": 16,
    "tiktok_file": "KT_MANIFESTING16--01_heartattack_56s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/29563010466663952/",
+    "youtube": "https://youtube.com/shorts/BTRyPtRwWsY"
+   },
+   "caption_at_post": "One wish came true in a way he never expected.\n\nKevin explains how a friend wanted to quit smoking and went through his manifesting steps with him. A week later, the friend was in the hospital.\n\nWhen he came out, he told Kevin the universe had given him exactly what he needed. For the sake of his five young daughters, he was done with smoking.\n\nKevin's point: what you ask for can arrive in a form you never expected.\n\nWhat unexpected event turned out to be exactly what you needed?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #mindset #kevintrudeau",
+   "posted_at": "2026-11-25T20:40",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/90"
   },
   {
    "file": "KT_MANIFESTING17/01_billionairemindwave_46s.mp4",
@@ -8044,7 +8057,7 @@
    "style": "T5",
    "cover": "KT_SUCCESS38--01_sensesliemind_53s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T20:30",
+   "scheduled_at": "2026-11-25T21:24",
    "cta_keyword": "GOALS",
    "cta_variant": 14,
    "cine_cover": 16,
@@ -8522,7 +8535,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T20:32",
+   "scheduled_at": "2026-11-25T21:24",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8558,7 +8571,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T20:30",
+   "scheduled_at": "2026-11-25T21:24",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -8685,7 +8698,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY2--01_opencup_36s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T20:32",
+   "scheduled_at": "2026-11-25T21:24",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },

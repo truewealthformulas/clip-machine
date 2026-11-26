@@ -7692,7 +7692,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-26T00:02",
+   "scheduled_at": "2026-11-26T00:47",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -8548,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T00:02",
+   "scheduled_at": "2026-11-26T00:47",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8724,8 +8724,14 @@
    "file": "KT_TEACHABILITY2/01_opencup_36s.mp4",
    "caption": "Going to a teacher just to check what you already know is a waste of time.\n\nKevin Trudeau shares a teaching on the qualities of a sincere student. If you go to learn with a cup that is already full, even good wisdom has nowhere to go. The teacher would love to pour, but it overflows and goes to waste.\n\nKevin's advice is to go empty and open: \"I'm an open cup, please pour in all you can.\"\n\nWhere in your life is your cup already full?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
    "bytes": 12219235,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "t5_best": 2.0,
    "t5_from": null,
@@ -8739,7 +8745,16 @@
    "cine_v": 16,
    "scheduled_at": "2026-11-26T00:01",
    "cta_keyword": "GOALS",
-   "cta_variant": 0
+   "cta_variant": 0,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2113171435989972/",
+    "instagram": "https://www.instagram.com/reel/DgMTu8UvWxZ/",
+    "youtube": "https://youtube.com/shorts/ete9agvoXl8"
+   },
+   "caption_at_post": "Going to a teacher just to check what you already know is a waste of time.\n\nKevin Trudeau shares a teaching on the qualities of a sincere student. If you go to learn with a cup that is already full, even good wisdom has nowhere to go. The teacher would love to pour, but it overflows and goes to waste.\n\nKevin's advice is to go empty and open: \"I'm an open cup, please pour in all you can.\"\n\nWhere in your life is your cup already full?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #success #kevintrudeau",
+   "posted_at": "2026-11-26T00:04",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/94"
   },
   {
    "file": "KT_TEACHABILITY2/02_servelab_49s.mp4",

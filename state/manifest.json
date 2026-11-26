@@ -7692,7 +7692,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T21:25",
+   "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -8048,7 +8048,12 @@
    "caption": "Your senses pick up only a tiny slice of what is there.\n\nKevin Trudeau explains that our eyes catch only a small spectrum of light. A bat would say it sees more, a dog smells and hears far more than we do, and a dog whistle makes no sound to us at all.\n\nHe says what we actually experience with our physical senses is incredibly small. He also shares that as a child he never thought it unusual to see energy.\n\nWhat might you be missing because you trust only what you can see?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #kevintrudeau",
    "bytes": 12377809,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "offer",
    "t5_best": 46.1,
    "t5_from": null,
@@ -8062,7 +8067,15 @@
    "cta_variant": 14,
    "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS38--01_sensesliemind_53s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1374326811306828/",
+    "youtube": "https://youtube.com/shorts/Sfi4ibTQIi4"
+   },
+   "caption_at_post": "Your senses pick up only a tiny slice of what is there.\n\nKevin Trudeau explains that our eyes catch only a small spectrum of light. A bat would say it sees more, a dog smells and hears far more than we do, and a dog whistle makes no sound to us at all.\n\nHe says what we actually experience with our physical senses is incredibly small. He also shares that as a child he never thought it unusual to see energy.\n\nWhat might you be missing because you trust only what you can see?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #kevintrudeau",
+   "posted_at": "2026-11-25T21:33",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/91"
   },
   {
    "file": "KT_WEALTH21/01_rightpeople_40s.mp4",
@@ -8535,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T21:25",
+   "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8571,7 +8584,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH28--01_peoplelikeyou_47s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T21:24",
+   "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 4
   },
@@ -8661,7 +8674,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_RELATIONSHIPS11--01_wrongquestion_45s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T21:25",
+   "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -8698,7 +8711,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY2--01_opencup_36s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T21:24",
+   "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },

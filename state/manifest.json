@@ -7678,9 +7678,11 @@
    "file": "KT_LETTINGGO6/01_fakinghappy_57s.mp4",
    "caption": "Why saying you're fine can bury the feeling.\n\nKevin Trudeau says positive thinking goes wrong when people say what they don't feel. They are afraid that naming a bad feeling will make it grow, so they say they are wonderful instead.\n\nHe compares it to burying the energy in the basement: you aren't getting rid of it, you're just hiding it for a while. His answer is to acknowledge what you are feeling.\n\nHow often do you say you're fine when it isn't true?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
    "bytes": 14999351,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -7701,14 +7703,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1146745391172467/",
-    "youtube": "https://youtube.com/shorts/fZ9a2lMRG6E"
+    "youtube": "https://youtube.com/shorts/fZ9a2lMRG6E",
+    "instagram": "https://www.instagram.com/reel/DgMaCithjoq/"
    },
    "caption_at_post": "Why saying you're fine can bury the feeling.\n\nKevin Trudeau says positive thinking goes wrong when people say what they don't feel. They are afraid that naming a bad feeling will make it grow, so they say they are wonderful instead.\n\nHe compares it to burying the energy in the basement: you aren't getting rid of it, you're just hiding it for a while. His answer is to acknowledge what you are feeling.\n\nHow often do you say you're fine when it isn't true?\n\nKevin's daily nutrition pick is in my highlights.\n\n#ad #mindset #fear #kevintrudeau",
-   "posted_at": "2026-11-25T18:52",
+   "posted_at": "2026-11-26T00:59",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/89",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
@@ -8548,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T00:49",
+   "scheduled_at": "2026-11-26T01:41",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,

@@ -8690,9 +8690,11 @@
    "file": "KT_RELATIONSHIPS11/01_wrongquestion_45s.mp4",
    "caption": "Before you cut someone out, ask this one question first.\n\nKevin explains that most articles on toxic relationships jump straight to getting rid of the person. He says the first question is why that person is in your life at all.\n\nHe admits you may not like the answer, but he believes you can handle it. In his view, the people who push your buttons point back to you, not to them.\n\nWhen did you last blame someone for a feeling that was really yours?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #mindset #kevintrudeau",
    "bytes": 15522660,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8713,14 +8715,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/2979453045742133/",
-    "youtube": "https://youtube.com/shorts/sx3qMQBiqig"
+    "youtube": "https://youtube.com/shorts/sx3qMQBiqig",
+    "instagram": "https://www.instagram.com/reel/DgNBqcsg76V/"
    },
    "caption_at_post": "Before you cut someone out, ask this one question first.\n\nKevin explains that most articles on toxic relationships jump straight to getting rid of the person. He says the first question is why that person is in your life at all.\n\nHe admits you may not like the answer, but he believes you can handle it. In his view, the people who push your buttons point back to you, not to them.\n\nWhen did you last blame someone for a feeling that was really yours?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #mindset #kevintrudeau",
-   "posted_at": "2026-11-25T23:17",
+   "posted_at": "2026-11-26T06:45",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/93",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]

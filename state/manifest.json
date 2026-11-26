@@ -7692,7 +7692,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T23:12",
+   "scheduled_at": "2026-11-26T00:01",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -8548,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T23:12",
+   "scheduled_at": "2026-11-26T00:01",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8675,7 +8675,12 @@
    "caption": "Before you cut someone out, ask this one question first.\n\nKevin explains that most articles on toxic relationships jump straight to getting rid of the person. He says the first question is why that person is in your life at all.\n\nHe admits you may not like the answer, but he believes you can handle it. In his view, the people who push your buttons point back to you, not to them.\n\nWhen did you last blame someone for a feeling that was really yours?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #mindset #kevintrudeau",
    "bytes": 15522660,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "question",
    "t5_best": 19.0,
    "t5_from": null,
@@ -8689,7 +8694,15 @@
    "cine_v": 16,
    "scheduled_at": "2026-11-25T23:11",
    "cta_keyword": "GOALS",
-   "cta_variant": 1
+   "cta_variant": 1,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/2979453045742133/",
+    "youtube": "https://youtube.com/shorts/sx3qMQBiqig"
+   },
+   "caption_at_post": "Before you cut someone out, ask this one question first.\n\nKevin explains that most articles on toxic relationships jump straight to getting rid of the person. He says the first question is why that person is in your life at all.\n\nHe admits you may not like the answer, but he believes you can handle it. In his view, the people who push your buttons point back to you, not to them.\n\nWhen did you last blame someone for a feeling that was really yours?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #relationships #mindset #kevintrudeau",
+   "posted_at": "2026-11-25T23:17",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/93"
   },
   {
    "file": "KT_RELATIONSHIPS11/02_deepakson_55s.mp4",
@@ -8724,7 +8737,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY2--01_opencup_36s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T23:11",
+   "scheduled_at": "2026-11-26T00:01",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },

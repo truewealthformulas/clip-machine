@@ -8677,9 +8677,11 @@
    "file": "KT_ADVERSITY24/01_primetimeprison_48s.mp4",
    "caption": "No phone, no emails: how Kevin turned prison time into lessons\n\nKevin Trudeau says that while serving his sentence he looked for the gift instead of the loss. With no phone calls and no emails, he finally had time to meditate, exercise, learn German and Italian, and focus.\n\nHe used those hours to put on paper everything he had been taught about success and the mind. Every day he sat down and wrote another lesson.\n\nWhat would you do with time nobody could interrupt?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #freedom #mindset #kevintrudeau",
    "bytes": 14756225,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8700,14 +8702,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/2595486774292015/",
-    "youtube": "https://youtube.com/shorts/dFmEPCMaXME"
+    "youtube": "https://youtube.com/shorts/dFmEPCMaXME",
+    "instagram": "https://www.instagram.com/reel/DgOVLROsvax/"
    },
    "caption_at_post": "No phone, no emails: how Kevin turned prison time into lessons\n\nKevin Trudeau says that while serving his sentence he looked for the gift instead of the loss. With no phone calls and no emails, he finally had time to meditate, exercise, learn German and Italian, and focus.\n\nHe used those hours to put on paper everything he had been taught about success and the mind. Every day he sat down and wrote another lesson.\n\nWhat would you do with time nobody could interrupt?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #freedom #mindset #kevintrudeau",
-   "posted_at": "2026-11-26T10:29",
+   "posted_at": "2026-11-26T18:55",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/97",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]

@@ -7692,7 +7692,7 @@
    "style": "T5",
    "cover": "KT_LETTINGGO6--01_fakinghappy_57s__cover16.jpg",
    "cover_v": 4,
-   "scheduled_at": "2026-11-25T22:18",
+   "scheduled_at": "2026-11-25T23:11",
    "cta_keyword": "GOALS",
    "cta_variant": 16,
    "cine_cover": 16,
@@ -8548,7 +8548,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_WEALTH27--01_abracadabra_41s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T22:18",
+   "scheduled_at": "2026-11-25T23:11",
    "cta_keyword": "GOALS",
    "cta_variant": 2,
    "posting": false,
@@ -8572,7 +8572,12 @@
    "caption": "Learn people first, then learn the system behind success.\n\nKevin Trudeau says to study human nature: how to communicate, how to speak and how to get along with other people. Then, he says, learn the system the most successful people have used, which he traces to Think and Grow Rich by Napoleon Hill.\n\nHe notes that celebrities and multi-millionaires alike credit that book. If you haven't read it, Kevin says you need to.\n\nWhich of those skills would you work on first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #relationships #kevintrudeau",
    "bytes": 16348783,
    "done": false,
-   "status": {},
+   "status": {
+    "facebook": "posted",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post",
+    "instagram": "held - Instagram limited to 2 a day while under review"
+   },
    "cta_kind": "offer",
    "t5_best": 19.4,
    "t5_from": null,
@@ -8586,7 +8591,15 @@
    "cine_v": 16,
    "scheduled_at": "2026-11-25T22:17",
    "cta_keyword": "GOALS",
-   "cta_variant": 4
+   "cta_variant": 4,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1463870569214025/",
+    "youtube": "https://youtube.com/shorts/Mx4U_bBOuNw"
+   },
+   "caption_at_post": "Learn people first, then learn the system behind success.\n\nKevin Trudeau says to study human nature: how to communicate, how to speak and how to get along with other people. Then, he says, learn the system the most successful people have used, which he traces to Think and Grow Rich by Napoleon Hill.\n\nHe notes that celebrities and multi-millionaires alike credit that book. If you haven't read it, Kevin says you need to.\n\nWhich of those skills would you work on first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #relationships #kevintrudeau",
+   "posted_at": "2026-11-25T22:27",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/92"
   },
   {
    "file": "KT_WORDS6/01_parentswords_52s.mp4",
@@ -8674,7 +8687,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_RELATIONSHIPS11--01_wrongquestion_45s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T22:17",
+   "scheduled_at": "2026-11-25T23:11",
    "cta_keyword": "GOALS",
    "cta_variant": 1
   },
@@ -8711,7 +8724,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY2--01_opencup_36s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-25T22:17",
+   "scheduled_at": "2026-11-25T23:11",
    "cta_keyword": "GOALS",
    "cta_variant": 0
   },

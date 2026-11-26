@@ -162,6 +162,17 @@ def main():
         return 1 if missing else 0
     if moved:
         log(f"pushed {moved} clip(s) past the spacing gap")
+    # QUIET HOURS (26 Nov 2026, the owner: "maybe we are posting a lot at the
+    # same time"). After the queue ran dry and refilled, the clips that were
+    # overdue went out back to back through the night - ten TikTok drafts
+    # between 00:04 and 10:29 on 26 Nov. Nothing posts between KT_QUIET_FROM
+    # and KT_QUIET_TO (local); overdue clips wait for the day, not the night.
+    if idxs and not dry:
+        hr = engine.now_local().hour
+        qf, qt = int(os.environ.get("KT_QUIET_FROM", "23")), int(os.environ.get("KT_QUIET_TO", "7"))
+        if (hr >= qf or hr < qt) if qf > qt else (qf <= hr < qt):
+            log(f"quiet hours ({qf}:00-{qt}:00) - {len(idxs)} clip(s) wait for the morning")
+            idxs = []
     if not idxs:
         engine.save(man)
         log("nothing due this run")
@@ -242,23 +253,32 @@ def main():
             now = engine.now_local()
             today = now.strftime("%Y-%m-%d")
             board = engine.load()["clips"]
-            for plat in ("youtube", "facebook"):
+            for plat in ("youtube", "facebook", "tiktok"):
                 # 18 Nov 2026, the owner: "Let's post 10 times in YouTube reels".
                 # YouTube gets its own cap (YT_PER_DAY, default 10) and a short
                 # gap; Facebook keeps 3 a day, 5 h apart.
                 if plat == "youtube":
                     cap = int(os.environ.get("YT_PER_DAY", "10") or 0)
                     gap = float(os.environ.get("YT_MIN_GAP_H", "0.5"))
+                elif plat == "tiktok":
+                    # 26 Nov 2026: TikTok gets FEWER, SPACED drafts - TT_PER_DAY
+                    # (default 4), TT_MIN_GAP_H (default 3) apart, so each one
+                    # gets its own test audience instead of fighting the last.
+                    cap = int(os.environ.get("TT_PER_DAY", "4") or 0)
+                    gap = float(os.environ.get("TT_MIN_GAP_H", "3"))
+                    if cap <= 0:
+                        continue
                 else:
                     cap = ycap
                     gap = float(os.environ.get("YTFB_MIN_GAP_H", "5"))
                 if plat not in poster.ENABLED:
                     continue
-                if clip.get("repost_of"):
+                if clip.get("repost_of") and plat != "tiktok":
                     side_held[plat] = f"held - repost, already on {plat.title()} once"
                     continue
+                ok_word = ("posted", "in your tiktok inbox") if plat == "tiktok" else ("posted",)
                 done = [c.get("posted_at") or "" for c in board
-                        if (c.get("status") or {}).get(plat) == "posted"
+                        if str((c.get("status") or {}).get(plat) or "").lower().startswith(ok_word)
                         and (c.get("posted_at") or "").startswith(today)]
                 last = max(done) if done else ""
                 mins = ((now.replace(tzinfo=None) - datetime.strptime(last[:16], "%Y-%m-%dT%H:%M"))

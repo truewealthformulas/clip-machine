@@ -8532,8 +8532,11 @@
    "file": "KT_WEALTH27/01_abracadabra_41s.mp4",
    "caption": "Abracadabra doesn't mean what you think it means.\n\nKevin explains that the word has a Persian origin and means \"I now create with my words.\" He says the ancient mystics understood the power of speech.\n\nThe takeaway is simple: words are not harmless noise. Kevin teaches that you should watch what comes out of your mouth, because speaking shapes how you move through life.\n\nWhich words do you use most when you talk about your own life?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #habits #kevintrudeau",
    "bytes": 19304021,
-   "done": false,
+   "done": true,
    "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8553,15 +8556,13 @@
    "cta_variant": 2,
    "posting": false,
    "links": {
-    "youtube": "https://youtube.com/shorts/tX_Pxpu9YM0"
+    "youtube": "https://youtube.com/shorts/tX_Pxpu9YM0",
+    "facebook": "https://facebook.com/reel/1531519382138940/",
+    "instagram": "https://www.instagram.com/reel/DgMgQZzhkqf/"
    },
    "caption_at_post": "Abracadabra doesn't mean what you think it means.\n\nKevin explains that the word has a Persian origin and means \"I now create with my words.\" He says the ancient mystics understood the power of speech.\n\nThe takeaway is simple: words are not harmless noise. Kevin teaches that you should watch what comes out of your mouth, because speaking shapes how you move through life.\n\nWhich words do you use most when you talk about your own life?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #mindset #habits #kevintrudeau",
-   "posted_at": "2026-11-25T08:35",
+   "posted_at": "2026-11-26T01:53",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/86",
-   "retry_only": [
-    "facebook",
-    "instagram"
-   ],
    "agent_retried": [
     "facebook",
     "instagram"

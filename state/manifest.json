@@ -8582,9 +8582,11 @@
    "file": "KT_WEALTH28/01_peoplelikeyou_47s.mp4",
    "caption": "Learn people first, then learn the system behind success.\n\nKevin Trudeau says to study human nature: how to communicate, how to speak and how to get along with other people. Then, he says, learn the system the most successful people have used, which he traces to Think and Grow Rich by Napoleon Hill.\n\nHe notes that celebrities and multi-millionaires alike credit that book. If you haven't read it, Kevin says you need to.\n\nWhich of those skills would you work on first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #relationships #kevintrudeau",
    "bytes": 16348783,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8605,14 +8607,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1463870569214025/",
-    "youtube": "https://youtube.com/shorts/Mx4U_bBOuNw"
+    "youtube": "https://youtube.com/shorts/Mx4U_bBOuNw",
+    "instagram": "https://www.instagram.com/reel/DgM7h33CYzK/"
    },
    "caption_at_post": "Learn people first, then learn the system behind success.\n\nKevin Trudeau says to study human nature: how to communicate, how to speak and how to get along with other people. Then, he says, learn the system the most successful people have used, which he traces to Think and Grow Rich by Napoleon Hill.\n\nHe notes that celebrities and multi-millionaires alike credit that book. If you haven't read it, Kevin says you need to.\n\nWhich of those skills would you work on first?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #relationships #kevintrudeau",
-   "posted_at": "2026-11-25T22:27",
+   "posted_at": "2026-11-26T05:51",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/92",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
@@ -8707,7 +8707,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_RELATIONSHIPS11--01_wrongquestion_45s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-26T05:40",
+   "scheduled_at": "2026-11-26T06:35",
    "cta_keyword": "GOALS",
    "cta_variant": 1,
    "posting": false,

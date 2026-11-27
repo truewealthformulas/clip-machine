@@ -8302,12 +8302,12 @@
    "file": "KT_ATTITUDE6/02_nothingstops_36s.mp4",
    "caption": "One decision can change how you meet every obstacle.\n\nKevin Trudeau describes an attitude with no obstacle you can't overcome, no challenge you can't win and no setback that stops your progress. He calls it a decision, not a feeling.\n\nHe says that in his experience, the universe bends to the person who holds it, and he repeats the line: when your attitude is right, the facts don't count.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 12423372,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
     "instagram": "posted",
-    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
-    "youtube": "posted"
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
    "cta_kind": "question",
    "scheduled_at": "2026-11-27T18:32",
@@ -8330,13 +8330,11 @@
     "youtube": "https://youtube.com/shorts/xA1RVUTbxi4"
    },
    "caption_at_post": "One decision can change how you meet every obstacle.\n\nKevin Trudeau describes an attitude with no obstacle you can't overcome, no challenge you can't win and no setback that stops your progress. He calls it a decision, not a feeling.\n\nHe says that in his experience, the universe bends to the person who holds it, and he repeats the line: when your attitude is right, the facts don't count.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "posted_at": "2026-11-27T11:59",
-   "retry_only": [
-    "tiktok"
-   ],
+   "posted_at": "2026-11-27T18:34",
    "agent_retried": [
     "tiktok"
-   ]
+   ],
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/105"
   },
   {
    "file": "KT_GOALS2/01_thinkbigfirst_40s.mp4",
@@ -8436,7 +8434,7 @@
     "youtube": "posted"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-27T18:32",
+   "scheduled_at": "2026-11-27T19:18",
    "cta_keyword": "GOALS",
    "cta_variant": 6,
    "t5_best": 33.8,
@@ -8653,7 +8651,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY--01_greatestbowdown_60s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-27T18:32",
+   "scheduled_at": "2026-11-27T19:18",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
    "posting": false,

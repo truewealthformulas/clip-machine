@@ -7067,9 +7067,11 @@
    "file": "KT_LETTINGGO5/02_bedtimebless_41s.mp4",
    "caption": "The old bedtime prayer was never about asking for things.\n\nKevin Trudeau remembers what children were taught to do before sleep. They didn't ask for a car or fame. They blessed the people they loved, and then they blessed the people who had hurt them.\n\nKevin says that second step is the part nobody practices, and it is a simple way to start letting go of resentment each night.\n\nWho would be hardest for you to bless tonight?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #love #kevintrudeau",
    "bytes": 14886814,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -7090,14 +7092,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/2978010212557396/",
-    "youtube": "https://youtube.com/shorts/nOB2hdT7s10"
+    "youtube": "https://youtube.com/shorts/nOB2hdT7s10",
+    "instagram": "https://www.instagram.com/reel/DgQyMTXBzb3/"
    },
    "caption_at_post": "The old bedtime prayer was never about asking for things.\n\nKevin Trudeau remembers what children were taught to do before sleep. They didn't ask for a car or fame. They blessed the people they loved, and then they blessed the people who had hurt them.\n\nKevin says that second step is the part nobody practices, and it is a simple way to start letting go of resentment each night.\n\nWho would be hardest for you to bless tonight?\n\nKevin's book, Your Wish Is Your Command, is in my highlights.\n\n#ad #habits #love #kevintrudeau",
-   "posted_at": "2026-11-27T10:43",
+   "posted_at": "2026-11-27T17:47",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/100",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
@@ -8310,7 +8310,7 @@
     "youtube": "posted"
    },
    "cta_kind": "question",
-   "scheduled_at": "2026-11-27T17:38",
+   "scheduled_at": "2026-11-27T18:30",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
    "t5_best": 19.3,
@@ -8436,7 +8436,7 @@
     "youtube": "posted"
    },
    "cta_kind": "offer",
-   "scheduled_at": "2026-11-27T17:38",
+   "scheduled_at": "2026-11-27T18:30",
    "cta_keyword": "GOALS",
    "cta_variant": 6,
    "t5_best": 33.8,
@@ -8653,7 +8653,7 @@
    "cine_cover": 16,
    "tiktok_file": "KT_TEACHABILITY--01_greatestbowdown_60s__tt.mp4",
    "cine_v": 16,
-   "scheduled_at": "2026-11-27T17:38",
+   "scheduled_at": "2026-11-27T18:30",
    "cta_keyword": "GOALS",
    "cta_variant": 5,
    "posting": false,

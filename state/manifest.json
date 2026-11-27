@@ -8290,8 +8290,14 @@
    "file": "KT_ATTITUDE6/02_nothingstops_36s.mp4",
    "caption": "One decision can change how you meet every obstacle.\n\nKevin Trudeau describes an attitude with no obstacle you can't overcome, no challenge you can't win and no setback that stops your progress. He calls it a decision, not a feeling.\n\nHe says that in his experience, the universe bends to the person who holds it, and he repeats the line: when your attitude is right, the facts don't count.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 12423372,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
+    "youtube": "posted",
+    "tiktok": "held - Tiktok spaced 3h apart"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-27T11:56",
    "cta_keyword": "GOALS",
@@ -8305,7 +8311,15 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_ATTITUDE6--02_nothingstops_36s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1099519696421694/",
+    "instagram": "https://www.instagram.com/reel/DgQKWSBuDsw/",
+    "youtube": "https://youtube.com/shorts/xA1RVUTbxi4"
+   },
+   "caption_at_post": "One decision can change how you meet every obstacle.\n\nKevin Trudeau describes an attitude with no obstacle you can't overcome, no challenge you can't win and no setback that stops your progress. He calls it a decision, not a feeling.\n\nHe says that in his experience, the universe bends to the person who holds it, and he repeats the line: when your attitude is right, the facts don't count.\n\nWhat decision have you been putting off?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-27T11:59"
   },
   {
    "file": "KT_GOALS2/01_thinkbigfirst_40s.mp4",

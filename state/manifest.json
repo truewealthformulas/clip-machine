@@ -7897,8 +7897,14 @@
    "file": "KT_MILLIONAIRE5/02_voicebrain_49s.mp4",
    "caption": "Think a thought, and nothing vibrates. Say it out loud, and your whole brain does.\n\nKevin Trudeau explains that when you only listen, just your eardrum vibrates. When you speak, your whole head and brain vibrate.\n\nHe says this is why professional athletes give themselves pep talks out loud, and why spoken words build different neural pathways than silent thoughts.\n\nWhat would you say out loud to yourself right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #confidence #kevintrudeau",
    "bytes": 15633153,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "t5_best": 6.8,
    "t5_from": null,
@@ -7912,7 +7918,16 @@
    "cta_variant": 21,
    "cine_cover": 16,
    "tiktok_file": "KT_MILLIONAIRE5--02_voicebrain_49s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1819778405974616/",
+    "instagram": "https://www.instagram.com/reel/DgPpMgyPa82/",
+    "youtube": "https://youtube.com/shorts/jvf3S_KMRlc"
+   },
+   "caption_at_post": "Think a thought, and nothing vibrates. Say it out loud, and your whole brain does.\n\nKevin Trudeau explains that when you only listen, just your eardrum vibrates. When you speak, your whole head and brain vibrate.\n\nHe says this is why professional athletes give themselves pep talks out loud, and why spoken words build different neural pathways than silent thoughts.\n\nWhat would you say out loud to yourself right now?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #mindset #confidence #kevintrudeau",
+   "posted_at": "2026-11-27T07:10",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/99"
   },
   {
    "file": "KT_MONEY13/01_rollsroycejoe_59s.mp4",

@@ -7439,8 +7439,14 @@
    "file": "KT_SUCCESS36/01_wrongrecipe_63s.mp4",
    "caption": "Why most people use the wrong success recipe.\n\nKevin Trudeau says that if you asked him how to improve your finances, he wouldn't hand you an app, an AI program or a crypto course. He says real success starts when you program what you want into your subconscious mind.\n\nHe points out that people read books, go to seminars and watch videos, yet every teacher forgets the one most powerful ingredient. Kevin's blunt verdict: most people are using the wrong recipe.\n\nWhich recipe are you following right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 11992565,
-   "done": false,
-   "status": {},
+   "done": true,
+   "status": {
+    "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
+    "youtube": "posted",
+    "tiktok": "in your TikTok inbox - open TikTok and tap post"
+   },
    "cta_kind": "question",
    "scheduled_at": "2026-11-28T07:02",
    "cta_keyword": "GOALS",
@@ -7454,7 +7460,16 @@
    "cover_v": 4,
    "cine_cover": 16,
    "tiktok_file": "KT_SUCCESS36--01_wrongrecipe_63s__tt.mp4",
-   "cine_v": 16
+   "cine_v": 16,
+   "posting": false,
+   "links": {
+    "facebook": "https://facebook.com/reel/1951722866234835/",
+    "instagram": "https://www.instagram.com/reel/DgSNa5DuOvv/",
+    "youtube": "https://youtube.com/shorts/nt8JxZOEctE"
+   },
+   "caption_at_post": "Why most people use the wrong success recipe.\n\nKevin Trudeau says that if you asked him how to improve your finances, he wouldn't hand you an app, an AI program or a crypto course. He says real success starts when you program what you want into your subconscious mind.\n\nHe points out that people read books, go to seminars and watch videos, yet every teacher forgets the one most powerful ingredient. Kevin's blunt verdict: most people are using the wrong recipe.\n\nWhich recipe are you following right now?\n\nKevin's network for money and success thinking (GIN) is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
+   "posted_at": "2026-11-28T07:05",
+   "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/107"
   },
   {
    "file": "KT_SUCCESS36/02_whatwant_50s.mp4",

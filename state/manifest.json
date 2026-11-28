@@ -8635,9 +8635,11 @@
    "file": "KT_TEACHABILITY/01_greatestbowdown_60s.mp4",
    "caption": "How can someone bow down to a person they may be ahead of?\n\nKevin Trudeau gets asked this when he shows photos of himself with monks and the Dalai Lama. He says the greatest always bow down, humble themselves, and keep filling themselves up. Even Jesus was baptized by John the Baptist.\n\nThe axiom behind it is that the wise man learns from the fool, but the fool doesn't learn from the wise man. Kevin asks you to think about that strongly.\n\nWhich one are you in your own life?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
    "bytes": 11770021,
-   "done": false,
+   "done": true,
    "status": {
     "facebook": "posted",
+    "instagram": "posted",
+    "instagram_story": "story publish failed: {'error': {'message': 'Fatal', 'code': -1, 'type': 'OAuthException', 'error_subcode': 2207032, 'is_transient': False, 'e",
     "youtube": "posted",
     "tiktok": "in your TikTok inbox - open TikTok and tap post"
    },
@@ -8658,14 +8660,12 @@
    "posting": false,
    "links": {
     "facebook": "https://facebook.com/reel/1175242665007237/",
-    "youtube": "https://youtube.com/shorts/nJoHb_u1lCM"
+    "youtube": "https://youtube.com/shorts/nJoHb_u1lCM",
+    "instagram": "https://www.instagram.com/reel/DgREMHMBpNm/"
    },
    "caption_at_post": "How can someone bow down to a person they may be ahead of?\n\nKevin Trudeau gets asked this when he shows photos of himself with monks and the Dalai Lama. He says the greatest always bow down, humble themselves, and keep filling themselves up. Even Jesus was baptized by John the Baptist.\n\nThe axiom behind it is that the wise man learns from the fool, but the fool doesn't learn from the wise man. Kevin asks you to think about that strongly.\n\nWhich one are you in your own life?\n\nKevin's free training, Your Wish Is Your Command, is in my highlights.\n\n#ad #success #mindset #kevintrudeau",
-   "posted_at": "2026-11-27T14:11",
+   "posted_at": "2026-11-27T20:24",
    "tt_note": "https://github.com/truewealthformulas/clip-machine/issues/102",
-   "retry_only": [
-    "instagram"
-   ],
    "agent_retried": [
     "instagram"
    ]
